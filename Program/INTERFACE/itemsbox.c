@@ -39,12 +39,6 @@ aref box4;
 void InitInterface_RS(string iniName, ref itemsRef, string faceID)
 {
 	ReplaceTreasureMapPartCopies(itemsRef, PChar);
-	if (loadedLocation.id == Get_My_Cabin())
-	{
-		aref chests;
-		makearef(chests,loadedLocation.locators.box);
-		chestsnum = GetAttributesNum(chests);
-	}
 	sFaceID = faceID;
 	sInterfaceType = sGetInterfaceType();
 	if(sInterfaceType == INTERFACETYPE_BARREL)
@@ -241,7 +235,7 @@ void InterfaceInitButtons(ref _refCharacter)
 	SetNodeUsing("GETALL_BUTTON", false);
 	SetNodeUsing("DELBODY_BUTTON", false);
 	SetNodeUsing("SKULL_BUTTON", false);
-	SetNodeUsing("CYCLE_CHEST", false);
+	SetNodeUsing("AUTOPICK", false);
 	SetNodeUsing("PUT_MATERIALS", false);
 	SetNodeUsing("PUT_JEWELRY", false);
 	SetNodeUsing("PUT_IDOLS", false);
@@ -273,7 +267,7 @@ void InterfaceInitButtons(ref _refCharacter)
 				SetNodeUsing("PUT_MATERIALS", true);
 				SetNodeUsing("PUT_JEWELRY", true);
 				SetNodeUsing("PUT_IDOLS", true);
-				SetNodeUsing("CYCLE_CHEST", true);
+				SetNodeUsing("AUTOPICK", true);
 			}
 		break;
 
@@ -424,16 +418,9 @@ void ShowItemsWeight()
 {
 	string sInterfaceType = sGetInterfaceType();
 	int iWeight, iMaxWeight;
-	CreateString(true, "ToCharacterWeightStr", "", FONT_NORMAL, COLOR_NORMAL, 702, 110, SCRIPT_ALIGN_CENTER, 0.9);
+	CreateString(true, "ToCharacterWeightStr", "", FONT_NORMAL, COLOR_NORMAL, 698, 110, SCRIPT_ALIGN_CENTER, 0.9);
 
-	if(sInterfaceType == INTERFACETYPE_EXCHANGE_ITEMS)
-	{
-		GameInterface.strings.ToCharacterWeightStr =  XI_ConvertString("Weight") + ": " + FloatToString(GetItemsWeight(refToChar), 1) + " / " + GetMaxItemsWeight(refToChar);
-	}
-	else
-	{
-		GameInterface.strings.ToCharacterWeightStr = "";
-	}
+	GameInterface.strings.ToCharacterWeightStr =  XI_ConvertString("Weight") + ": " + FloatToString(GetItemsWeight(refToChar), 1) + " / " + GetMaxItemsWeight(refToChar);
 
 	CreateString(true, "MyCharacterWeightStr", XI_ConvertString("Weight") + ": " + FloatToString(GetItemsWeight(refCharacter), 1) + " / " + GetMaxItemsWeight(refCharacter), FONT_NORMAL, COLOR_NORMAL, 108, 110, SCRIPT_ALIGN_CENTER, 0.9);
 }
@@ -675,6 +662,24 @@ void ProcCommand()
 				PutStuff("jewelry");
 			}
 		break;
+		
+		case "AUTOPICK":
+			if(comName == "activate" || comName == "click")
+			{
+				int iOfficer = -1;
+				ref _chr;
+				for(int z = 0; z < MAX_NUM_FIGHTERS+6; z++)
+				{
+					iOfficer = GetOfficersIndex(pchar, z);
+					if(iOfficer != -1)
+					{
+						_chr = &characters[iOfficer];
+						AutoequipFromCabin(_chr);
+					}
+				}
+				AddToTable(refToChar);
+			}
+		break;
 
 		//navy --> Убрать тело ;)
 		case "DELBODY_BUTTON":
@@ -711,39 +716,6 @@ void ProcCommand()
 				OfficerReincarnation(&characters[sti(refToChar.index)]);
 				Dead_DelLoginedCharacter(refToChar);
 				ProcessCancelExit();
-			}
-		break;
-		case "CYCLE_CHEST":
-			if(comName=="activate" || comName=="click")
-			{
-				aref chest;
-				string box;
-				if (curchest <= chestsnum)
-				{
-					box = "box"+curchest;
-					makearef(chest,loadedLocation.(box));
-					SetCharactersMoneyOnExit();
-					SetCharacterMoneyToGold(refCharacter); // Переводим деньги ГГ в золото
-					SetCharacterMoneyToGold(chest);
-					iSetCharIDToCharactersArroy(refCharacter); // Заносим в список ГГ
-					AddToTable(chest);
-					SetFormatedText("STORECAPTION1",GetConvertStrWithReplace("Variable_itemsbox_19", "Interface.txt", "#space#", " ")+curchest);
-					curchest = curchest+1;
-				}
-				else
-				{
-					curchest = 1;
-					box = "box"+curchest;
-					makearef(chest,loadedLocation.(box));
-					SetCharactersMoneyOnExit();
-					SetCharacterMoneyToGold(refCharacter); // Переводим деньги ГГ в золото
-					SetCharacterMoneyToGold(chest);
-					iSetCharIDToCharactersArroy(refCharacter); // Заносим в список ГГ
-					AddToTable(chest);
-					SetFormatedText("STORECAPTION1",GetConvertStrWithReplace("Variable_itemsbox_20", "Interface.txt", "#space#", " ")+curchest);
-					curchest = curchest+1;
-				}
-				StartAboveForm(false);
 			}
 		break;
 	}
@@ -862,6 +834,31 @@ void FillCharactersScroll()
 	int iCharIDX;
 
 	int m = 0;
+	bool cabin = loadedLocation.id == Get_My_Cabin();
+	bool bank = HasSubStr(loadedLocation.id,"_bank") && HasSubStr(arChest.id,"_usurer") && Pchar.SystemInfo.CabinType != "";
+	if (cabin || bank)//фикс - ошибки в логе, если ГГ без корабля и каюты
+	{
+		ref cabinloc = &locations[FindLocation(Pchar.SystemInfo.CabinType)];
+		chestsnum = 0;
+		string ass = "";
+		if (bank) pchar.boxx = "ass";
+		if (CheckAttribute(cabinloc,"box1") && pchar.boxx != "box1") {chestsnum++; makearef(box1,cabinloc.box1); ass = ass+"1"}
+		if (CheckAttribute(cabinloc,"box2") && pchar.boxx != "box2") {chestsnum++; makearef(box2,cabinloc.box2); ass = ass+"2"}
+		if (CheckAttribute(cabinloc,"box3") && pchar.boxx != "box3") {chestsnum++; makearef(box3,cabinloc.box3); ass = ass+"3"}
+		if (CheckAttribute(cabinloc,"box4") && pchar.boxx != "box4") {chestsnum++; makearef(box4,cabinloc.box4); ass = ass+"4"}
+		for (i = 1;i <= 4;i++)
+		{
+			if (HasSubStr(ass,its(i)))
+			{
+				attributeName = "pic" + (m + 1);
+				GameInterface.CHARACTERS_SCROLL.(attributeName).character = "box"+i;
+				GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = "BoxImage";
+				GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","BOX_IMAGE");
+				m++;
+			}
+		}
+		GameInterface.CHARACTERS_SCROLL.current = m;
+	}
 	if(sInterfaceType != INTERFACETYPE_EXCHANGE_ITEMS)
 	{
 		attributeName = "pic" + (m + 1);
@@ -906,7 +903,8 @@ void FillCharactersScroll()
 				m++;
 				continue;
 			}
-			if(IsOfficer(&characters[_curCharIdx]) && PChar.location != Characters[_curCharIdx].location && HasSubStr(pchar.location,"_bank"))  // fix - ячейка банковская и аборды
+			bool EnemyCabinOrBank = HasSubStr(pchar.location,"_bank") || CheckAttribute(loadedLocation, "CabinType");
+			if(IsOfficer(&characters[_curCharIdx]) && PChar.location != Characters[_curCharIdx].location && EnemyCabinOrBank)  // fix - ячейка банковская и аборды
 			{
 				if(sCharID == characters[_curCharIdx].ID) continue;
 
@@ -918,23 +916,6 @@ void FillCharactersScroll()
 				GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","FACE128_"+Characters[_curCharIdx].FaceID);
 				m++;
 			}
-		}
-	}
-	if (HasSubStr(loadedLocation.id,"_bank") && HasSubStr(arChest.id,"_usurer") && Pchar.SystemInfo.CabinType != "")//фикс - ошибки в логе, если ГГ без корабля и каюты
-	{
-		ref cabinloc = &locations[FindLocation(Pchar.SystemInfo.CabinType)];
-		chestsnum = 0;
-		if (CheckAttribute(cabinloc,"box1")) {chestsnum++; makearef(box1,cabinloc.box1);}
-		if (CheckAttribute(cabinloc,"box2")) {chestsnum++; makearef(box2,cabinloc.box2);}
-		if (CheckAttribute(cabinloc,"box3")) {chestsnum++; makearef(box3,cabinloc.box3);}
-		if (CheckAttribute(cabinloc,"box4")) {chestsnum++; makearef(box4,cabinloc.box4);}
-		for (i = 1;i <= chestsnum;i++)
-		{
-			attributeName = "pic" + (m + 1);
-			GameInterface.CHARACTERS_SCROLL.(attributeName).character = "box"+i;
-			GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = "BoxImage";
-			GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","BOX_IMAGE");
-			m++;
 		}
 	}
 }
@@ -1363,7 +1344,7 @@ void FillCharactersImages()
 {
 	string sInterfaceType = sGetInterfaceType();
 	if (CheckAttribute(refCharacter,"faceid")) SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\portraits\128\face_" + refCharacter.FaceId + ".tga");
-	else SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\BoxImage.tga");
+	else SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\BoxImage.dds");
 
 	switch(sInterfaceType)
 	{

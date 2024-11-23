@@ -7215,7 +7215,7 @@ void Winterwood_Prepare_Fight()
 		PChar.Quest.Duel_Fight_Right_Now.function = "Winterwood_Fight_Right_Now";
 
 		LocationMakeClone(pchar.location);
-		Locations[FindLocation("Clone_location")].image = "loading\jonny_load\inside\fight_taverna_"+rand(1)+".tga";
+		Locations[FindLocation("Clone_location")].image = "loading\jonny_load\inside\fight_taverna_"+rand(1)+".dds";
 		DoReloadCharacterToLocation("Clone_location", pchar.location.group, pchar.location.locator);
 		PlaceCharacter(npchar, "goto", "Clone_location")
 	}
@@ -7537,7 +7537,8 @@ void ReturnToPlantation3()
 
     //pchar.GenQuestBox.BridgeTown_Plantation.stay = true; fix
     pchar.GenQuestBox.BridgeTown_Plantation.box1.items.blade6 = 1;
-    pchar.GenQuestBox.BridgeTown_Plantation.box1.items.potion1 = 3;
+    pchar.GenQuestBox.BridgeTown_Plantation.box1.items.potion1 = 15; // LEO: Упростить болванов не могу, но плюшек накину
+    pchar.GenQuestBox.BridgeTown_Plantation.box1.items.Food1 = 50; // LEO: Упростить болванов не могу, но плюшек накину
 
    	pchar.quest.CapBloodEscape3.win_condition.l1 = "locator";
 	pchar.quest.CapBloodEscape3.win_condition.l1.location = "BridgeTown_Plantation";
@@ -9284,65 +9285,64 @@ void Findship_Over(string qName)//просрочили найти корабль
 //zagolski - побег офицера
 void mOfficer_fc(string qName)
 {
+	if(GetCharacterIndex(Pchar.questTemp.MunityOfficerID) != -1) sld = CharacterFromID(Pchar.questTemp.MunityOfficerID);
+	else return;
 	if (IsEntity(worldMap))
-    	{
-		ref sld = &Characters[sti(Pchar.questTemp.MunityOfficerIDX)];
+	{
 		if(sti(sld.Payment) == true)
 		{
 			if (sti(sld.ship.type) != SHIP_NOTUSED)
 			{
 				Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_24", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_25", "Logs.txt", "#space#", " ") + sld.ship.name + "");
-				Pchar.questTemp.MunityOfficerIDX.begin = "0";
+				Pchar.questTemp.MunityOfficerID.begin = "0";
 			}
 			else
 			{
-		Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_26", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_27", "Logs.txt", "#space#", " ") + pchar.ship.name + "");
-
-		if (GetCrewQuantity(pchar) > 0 && !IsEquipCharacterByArtefact(pchar, "talisman16"))
-		{
-			AddCharacterExpToSkill(PChar, "Leadership", 200);
-			MunityOnShip("ShipMunity");
+				Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_26", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_27", "Logs.txt", "#space#", " ") + pchar.ship.name + "");
+				if (GetCrewQuantity(pchar) > 0 && !IsEquipCharacterByArtefact(pchar, "talisman16"))
+				{
+					AddCharacterExpToSkill(PChar, "Leadership", 200);
+					MunityOnShip("ShipMunity");
 				}
-				else Pchar.questTemp.MunityOfficerIDX.begin = "0";
+				else Pchar.questTemp.MunityOfficerID.begin = "0";
 			}
 			sld.LifeDay = 0;
 			RemovePassenger(Pchar, sld);
 		}
-		else Pchar.questTemp.MunityOfficerIDX.begin = "0";
-
-        }
+		else Pchar.questTemp.MunityOfficerID.begin = "0";
+	}
 	else
-        {
-            	pchar.quest.mOfficer_fc2.win_condition.l1 = "MapEnter";
+	{
+		pchar.quest.mOfficer_fc2.win_condition.l1 = "MapEnter";
 		pchar.quest.mOfficer_fc2.function    = "mOfficer_fc2";
-        }
+	}
 }
 
 void mOfficer_fc2(string qName)
 {
-	ref sld = &Characters[sti(Pchar.questTemp.MunityOfficerIDX)];
-		if(sti(sld.Payment) == true)
-		{
-			if (sti(sld.ship.type) != SHIP_NOTUSED)
-			{
-				Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_28", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_29", "Logs.txt", "#space#", " ") + sld.ship.name + "");
-				Pchar.questTemp.MunityOfficerIDX.begin = "0";
-			}
-			else
-			{
-	Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_30", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_31", "Logs.txt", "#space#", " ") + pchar.ship.name + "");
-
-        if (GetCrewQuantity(pchar) > 0 && !IsEquipCharacterByArtefact(pchar, "talisman16"))
+	if(GetCharacterIndex(Pchar.questTemp.MunityOfficerID) != -1) sld = CharacterFromID(Pchar.questTemp.MunityOfficerID);
+	else return;
+	if(sti(sld.Payment) == true)
 	{
-		AddCharacterExpToSkill(PChar, "Leadership", 200);
-		MunityOnShip("ShipMunity");
-				}
-				else Pchar.questTemp.MunityOfficerIDX.begin = "0";
-			}
-			sld.LifeDay = 0;
-			RemovePassenger(Pchar, sld);
+		if (sti(sld.ship.type) != SHIP_NOTUSED)
+		{
+			Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_28", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_29", "Logs.txt", "#space#", " ") + sld.ship.name + "");
+			Pchar.questTemp.MunityOfficerID.begin = "0";
 		}
-		else Pchar.questTemp.MunityOfficerIDX.begin = "0";
+		else
+		{
+			Log_SetStringToLog(GetConvertStrWithReplace("Variable_reaction_functions_30", "Logs.txt", "#space#", " ") + GetFullName(sld) + GetConvertStrWithReplace("Variable_reaction_functions_31", "Logs.txt", "#space#", " ") + pchar.ship.name + "");
+			if (GetCrewQuantity(pchar) > 0 && !IsEquipCharacterByArtefact(pchar, "talisman16"))
+			{
+				AddCharacterExpToSkill(PChar, "Leadership", 200);
+				MunityOnShip("ShipMunity");
+			}
+			else Pchar.questTemp.MunityOfficerID.begin = "0";
+		}
+		sld.LifeDay = 0;
+		RemovePassenger(Pchar, sld);
+	}
+	else Pchar.questTemp.MunityOfficerID.begin = "0";
 }
 
 //zagolski. битва в бухте по квесту шарпа
@@ -10818,7 +10818,7 @@ void PDM_PI_Skelety_v_more_paluba(string qName)
 	//int i;
 	MakeCloneShipDeck(pchar, true); // подмена палубы
 	//i = FindLocation("Ship_deck");
-	//Locations[i].image = "loading\jonny_load\load\rebel.tga";
+	//Locations[i].image = "loading\jonny_load\load\rebel.dds";
 	DoQuestReloadToLocation("Ship_deck", "goto", "goto10", "PDM_PI_Skelety_on_Ship");
 }
 void PDM_PI_Vykl_Music(string qName)
@@ -12084,7 +12084,8 @@ void ActiveShowAfterReload(string qName)
 		{
 			if( CheckAttribute(arPerk,"active") )
 			{
-				AddPerkToActiveList(GetAttributeName(arPerk));
+				string tmpStr = GetAttributeName(arPerk);
+				AddAndUpdatePerkIcon(GetAttributeName(arPerk), sti(ChrPerksList.list.(tmpStr).UseAnimationIconCnt) - sti(arPerk.active)-1);
 			}
 		}
 	}

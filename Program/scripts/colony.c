@@ -706,7 +706,7 @@ void TWN_FightInTown()
 					}
 					else
 					{
-						sModel = NationShortName(natEsc) + "_mush_" + i;
+						sModel = NationShortName(natEsc) + "_mush_" + (rand(2)+1);
 					}
 					sld = GetCharacter(NPC_GenerateCharacter("GenChar_", sModel, "man", "mushketer", 5, natEsc, 0, false));
 					SetFantomParamFromRank(sld, sti(pchar.rank)+MOD_SKILL_ENEMY_RATE*3, true);
@@ -857,6 +857,11 @@ void TWN_FightInTown_OpenNext()
 	{
 		pchar.CSM.LootCollector.CanBeRun = true;
 		csmLootCollector();
+	}
+	if (CheckAttribute(PChar, "BS_NassauWaitingForSiege") && pchar.location == "Nassau_town")
+	{
+		BS_NassauEntriesDisable();
+		DoQuestFunctionDelay("BS_NassauSiegeWin", 5.0);
 	}
 }
 

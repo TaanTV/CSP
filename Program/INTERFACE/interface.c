@@ -1189,6 +1189,32 @@ void EndCancelInterface(bool bYesRelease)
 
     Start_InterfaceDoExit();
 	if(bYesRelease)	PostEvent("evntQuestsCheck",1);
+	SetExpLogsBack(); //собственно то, что на основе кэша опыта возвращает строчки после прыжка в гейминтерфейс
+}
+
+void SetExpLogsBack()
+{
+	if (sti(InterfaceStates.ShowExpLogs)==1)
+	{
+		int z;
+		string EXP;
+		if (bSeaActive && !bAbordageStarted)
+		{
+			for (z = 1; z < 11; z++)
+			{
+				EXP = "EXP"+z;
+				BattleInterface.textinfo.(EXP).text = pchar.BIEXP.(EXP);
+			}
+		}
+		else
+		{
+			for (z = 1; z < 9; z++)
+			{
+				EXP = "EXP"+z;
+				objLandInterface.textinfo.(EXP).text = pchar.LIEXP.(EXP);
+			}
+		}
+	}
 }
 
 // стек для вложенных интерфейсов
@@ -1700,11 +1726,11 @@ void procInfoShow()
 			break;
 
 			case "game prepare":
-				objInfoList[nInfoIdx].picbackfilename = "loading\jonny_load\load\load_0"+rand(8)+".tga";
+				objInfoList[nInfoIdx].picbackfilename = "loading\jonny_load\load\load_"+rand(8)+".dds";
 			break;
 
 			case "MainMenuLaunch":
-				objInfoList[nInfoIdx].picbackfilename = "interfaces\mainmenu_ss.tga";
+				objInfoList[nInfoIdx].picbackfilename = "interfaces\mainmenu_ss.dds";
 			break;
 
 			case "OptionsBreak":

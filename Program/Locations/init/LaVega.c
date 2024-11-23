@@ -6,7 +6,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LaVega_town";
 	locations[n].id.label = "Street";
-	locations[n].image = "loading\jonny_load\city\Town_LaVega.tga";
+	locations[n].image = "loading\jonny_load\city\Town_LaVega.dds";
 	locations[n].worldmap = "LaVega_town";
 	locations[n].filespath.models = "locations\Town_LaVega\Town\";
 	locations[n].citizens = true;
@@ -171,7 +171,7 @@ int LocationInitLaVega(int n)
  	locations[n].id = "LaVega_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern09\";
-	locations[n].image = "loading\jonny_load\inside\Tavern09.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern09.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "LaVega";
@@ -217,7 +217,7 @@ int LocationInitLaVega(int n)
 	locations[n].id = "LaVega_tavern_upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Inside";
@@ -257,7 +257,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LaVega_store";
 	locations[n].id.label = "Store";
-	locations[n].image = "loading\jonny_load\inside\StoreSmall.tga";
+	locations[n].image = "loading\jonny_load\inside\StoreSmall.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Inside";
@@ -304,7 +304,7 @@ int LocationInitLaVega(int n)
 	locations[n].id = "LaVega_townhall";
 	locations[n].filespath.models = "locations\inside\residence_PKM";
 	locations[n].id.label = "Residence";
-	locations[n].image = "loading\jonny_load\inside\Residencepkm.tga";
+	locations[n].image = "loading\jonny_load\inside\Residencepkm.dds";
 	//locations[n].MustSetReloadBack = true;
 
 	//Town sack
@@ -346,7 +346,7 @@ int LocationInitLaVega(int n)
 	locations[n].id = "LaVega_Shipyard";
 	locations[n].id.label = "packhouse";
 	locations[n].filespath.models = "locations\inside\Shipyard01\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard01.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard01.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Hispaniola";
@@ -391,7 +391,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LaVega_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Hispaniola";
@@ -435,7 +435,7 @@ int LocationInitLaVega(int n)
 	locations[n].id = "LaVega_roof";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\flamhouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Inside";
@@ -488,7 +488,7 @@ int LocationInitLaVega(int n)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LaVega_MH12";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\SD_MH12.tga";
+	locations[n].image = "loading\jonny_load\inside\SD_MH12.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Inside";
@@ -532,7 +532,7 @@ int LocationInitLaVega(int n)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LaVega_JinoRoom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\JinoRoom.tga";
+	locations[n].image = "loading\jonny_load\inside\JinoRoom.dds";
 	//Town sack
 	locations[n].townsack = "LaVega";
 	locations[n].lockWeather = "Inside";
@@ -575,7 +575,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LaVega_CommonRoom_MH9_2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse09_2.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse09_2.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "LaVega";
@@ -620,7 +620,7 @@ int LocationInitLaVega(int n)
 	locations[n].id = "LaVega_Hut1";
 	locations[n].filespath.models = "locations\inside\Hut1_KNS";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "LaVega";

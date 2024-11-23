@@ -28,16 +28,6 @@ void LocationInit()
 	locDisableUpdateTime = false;
 	locTmpTime = 0.0;
 }
-/*
-void LocationTestProcess()
-{
-	SetReloadProgressBackImage("Loading\initialization.tga.tx");
-	ReloadProgressStart();
-	LocationInit();
-	Locations_TestAll();
-	ReloadProgressEnd();
-}
-*/
 
 int FindLoadedLocation()
 {

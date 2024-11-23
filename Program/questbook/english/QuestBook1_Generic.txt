@@ -2031,7 +2031,7 @@ Deliver a passenger named @<sName> to @<sCity>
 
 #TEXT   1
 
-I took@<sSex> to deliver a passenger named @<sName> to the tavern @<sCity> for @<sDay>. If successful, my fee will be @<sMoney>.
+I took@<sSex> to deliver a passenger named @<sName> to the tavern @<sCity>, for @<sDay>. If successful, my fee will be @<sMoney>.
 
 #TEXT   2
 

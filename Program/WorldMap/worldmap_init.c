@@ -35,7 +35,7 @@ void wdmInitWorldMap()
 	worldMap.icon.num = 8;
 	worldMap.icon.frames = 8;
 	worldMap.icon.fps = 45;
-	worldMap.icon.texture = "icons.tga";
+	worldMap.icon.texture = "icons.dds";
 	//Label types description
 	worldMap.labeltype.Island.icon = -1;				//Default icon
 	worldMap.labeltype.Island.font = "ISLANDS_MAPS";			//Default font

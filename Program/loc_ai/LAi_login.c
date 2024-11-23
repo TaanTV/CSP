@@ -316,29 +316,80 @@ void LAi_CharacterPostLogin(ref location)
 		PGG_GraveyardCheckIsPGGHere(location);
 		CheckHighOnDrugs();
 		CheckLootCollector();
-		CheckBSFinish();
+		CheckBSFinish(location);
 		GovernorManInviting();
 	}
 }
 
-void CheckBSFinish()
+void CheckBSFinish(ref location)
 {
 	if(!CheckAttribute(pchar, "BSFinish") && sti(pchar.rank) >= 25)
 	{
-		if (CheckAttribute(pchar,"questTemp.Headhunter") && pchar.questTemp.Headhunter == "end_quest_full")
-		{
-			//if (!CheckAttribute(pchar, "BSInProgress"))	pchar.BSStart = true;
-		}
 		if (CheckAttribute(pchar,"questTemp.BlueBird") && pchar.questTemp.BlueBird == "over")
 		{
-			if (!CheckAttribute(pchar, "BSInProgress"))	pchar.BSStart = true;
-			//bWorldAlivePause = true;
+			if (!CheckAttribute(pchar, "BSInProgress"))	{ pchar.BSStart = true; }
 		}
-		/*else
+	}
+	
+	if (LAi_IsCapturedLocation) return;
+	if (chrDisableReloadToLocation) return;
+	if (location.type != "jungle") return;
+	if (LAi_grp_alarmactive == true) return;
+	
+	string typeHunter, sTemp, sCapId;
+	ref    sld;
+	bool   ok;
+	
+	if (CheckAttribute(PChar, "BS_PiratesStoreMassacre") && rand(4) == 1)
+    {
+		if (CheckAttribute(PChar, "BS_PiratesStoreMassacreDate") && GetQuestPastMonthParam("BS_PiratesStoreMassacreDate") >= 6) { DeleteAttribute(PChar, "BS_PiratesStoreMassacre"); }
+		typeHunter = "BShh";
+		sCapId = typeHunter + "LandHunter0";
+		sTemp = "LAND_HUNTER";
+		ok = true;
+		int hhqty = 3 + GetOfficersQuantity(PChar);
+		int irank = 100;
+		if (hhqty > 8) hhqty = 8;
+		for (int i = 1; i <= hhqty; i++) 
+		{			
+			sld = GetCharacter(NPC_GenerateCharacter(sCapId + i, "OZG_" + (rand(9) + 1), "man", "man", irank, ENGLAND, 0, true));
+			if (MOD_SKILL_ENEMY_RATE == 3 && bHardAnimations) sld.model.animation = "man_fast";
+			irank = sti(pchar.rank) + makeint(MOD_SKILL_ENEMY_RATE*sti(PChar.rank)/4) + rand(3);
+			FantomMakeCoolFighterWRankDepend(sld, irank, 55+MOD_SKILL_ENEMY_RATE*15, 55+MOD_SKILL_ENEMY_RATE*15, 100*MOD_SKILL_ENEMY_RATE)
+			sld.name = GetConvertStr("Variable_bountyhunters_0.1", "Names.txt");
+			sld.lastname = "";
+			sld.Dialog.CurrentNode = "First time";
+			sld.dialog.filename = "Hunter_dialog.c";
+			sld.greeting = "Gr_HUNTER";
+			if (bHardBoss) sld.AlwaysReload = true;
+			sld.location = "none";
+			LAi_SetActorTypeNoGroup(sld);
+			LAi_SetCheckMinHP(sld, (LAi_GetCharacterHP(sld) - 1), false, "Battle_Hunters_Land");
+			if (PlaceCharacter(sld, "goto", "random_must_be_near") == "" && i == 1)
+			{
+				ok = false;
+				break;
+			}
+			LAi_ActorFollow(sld, pchar, "", 8.0);
+			LAi_group_MoveCharacter(sld, sTemp);
+		}
+
+		LAi_group_SetRelation(sTemp, LAI_GROUP_PLAYER, LAI_GROUP_NEITRAL);
+		LAi_group_SetRelation(sTemp, LAI_GROUP_PLAYER_OWN, LAI_GROUP_NEITRAL);
+
+		LAi_group_ClearAllTargets();
+		LAi_SetFightModeForOfficers(false);
+		if (ok)
 		{
-			//DeleteAttribute(pchar, "BSStart");
-			//pchar.BSInProgress = true;
-		}*/
+	        PChar.HunterCost = 5000*sti(PChar.rank)*MOD_SKILL_ENEMY_RATE + drand(10000);
+			PChar.HunterCost.TempHunterType = typeHunter;
+			PChar.HunterCost.Qty = i;
+			sld = characterFromID(sCapId + "1");
+			LAi_type_actor_Reset(sld);
+			LAi_ActorDialog(sld, pchar, "", 4.0, 0);
+			chrDisableReloadToLocation = true;
+			DoQuestCheckDelay("OpenTheDoors", 5.0);
+		}
 	}
 }
 
@@ -634,7 +685,7 @@ void GenerateSpySeeker(ref location)
 	if(!CheckAttribute(pchar, "SpySeeker.dayrandom")) pchar.SpySeeker.dayrandom = 0;
 
 	if (CheckAttribute(Pchar, "questTemp.CapBloodLine") && Pchar.questTemp.CapBloodLine == true) return;
-	if(HasSubStr(location.id, "Common") && rand(1000) > 750 && pchar.dayrandom != pchar.SpySeeker.dayrandom && !HasSubStr(location.id, "Crypt") && GetCityNation(location.fastreload) != 4 && Characters[GetFortCommanderIDX(colonies[findcolony(location.fastreload)].id)].fort.mode != FORT_DEAD)
+	if(HasSubStr(location.id, "Common") && rand(1000) > 750 && pchar.dayrandom != pchar.SpySeeker.dayrandom && !HasSubStr(location.id, "Crypt") && !HasSubStr(location.id, "Packhouse") && GetCityNation(location.fastreload) != 4 && Characters[GetFortCommanderIDX(colonies[findcolony(location.fastreload)].id)].fort.mode != FORT_DEAD)
 	{
 		if(bOK || bOK2)
 		{
@@ -669,12 +720,15 @@ void GenerateSpySeeker(ref location)
 //Евент с искателем лазутчиков Lipsar//
 void GovernorManInviting()
 {
-	string sNationname;
 	if (FindCharacterItemByGroup(Pchar, PATENT_ITEM_TYPE) != "") return;
+	if (LAi_IsCapturedLocation) return;
+	if (chrDisableReloadToLocation) return;
+	if (LAi_grp_alarmactive == true)  return;	
+	string sNationname;
 	for(int i = 0; i < 4; i++)
 	{
 		sNationname = GetNationNameByType(i));
-		if (CheckAttribute(pchar, sNationname+".quest.mayor") && sti(pchar.(sNationname).quest.mayor) >= 10 && findsubstr(pchar.location, "_town", 0) != -1 && sti(pchar.(sNationname).quest.mayor.done) == 0)
+		if (CheckAttribute(pchar, sNationname+".quest.mayor") && sti(pchar.(sNationname).quest.mayor) >= 10 && findsubstr(pchar.location, "_town", 0) != -1 && sti(pchar.(sNationname).quest.mayor.done) == 0 && sti(Colonies[FindColony(GetCurrentTown())].nation) == i)
 		{
 			int iChar = NPC_GenerateCharacter(sNationname+"_Governor_Man", "off_"+NationShortName(i)+"_1", "man", "man", sti(pchar.rank), i, 1, 0);
 			ref rChar = GetCharacter(iChar);

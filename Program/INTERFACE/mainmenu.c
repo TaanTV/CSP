@@ -286,7 +286,7 @@ void ShowChangesWindow()
 	{
 		case 1: hintnum = rand(29); break; //тексты 1 записки, иначе не работают переносы
 		case 2: hintnum = 30+rand(29); break; //тексты 2 записки, иначе не работают переносы
-		case 3: hintnum = 60+rand(26); break; //тексты 3 записки, иначе не работают переносы
+		case 3: hintnum = 60+rand(31); break; //тексты 3 записки, иначе не работают переносы
 	}
 	SetFormatedText("CHANGES_TEXT"+number, LanguageConvertString(tmpLangFileID, "Hints_"+hintnum));
 	SetAlignmentFormatedText("CHANGES_TEXT"+number, SCRIPT_ALIGN_LEFT);

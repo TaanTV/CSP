@@ -234,7 +234,7 @@ void InitInterface(string iniName)
 	//Show boundaries
 	if(SHOW_BOUNDARIES == 1)
 	{
-		SetNewPicture("BOUNDARIES", "interfaces\maps\map_good_boundaries.tga");
+		SetNewPicture("BOUNDARIES", "interfaces\maps\map_good_boundaries.dds");
 		SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, "BOUNDARIES", 4,
 			argb(makeint(255/(makefloat(100)/BOUNDARIES_OPACITY)), BOUNDARIES_R, BOUNDARIES_G, BOUNDARIES_B));
 	}

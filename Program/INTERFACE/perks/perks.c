@@ -1,5 +1,6 @@
 
 #event_handler("evntChrPerkDelay","procChrPerkDelay");
+#event_handler("evntChrPerkDelayAnim","procChrPerkDelayAnim");
 
 object ChrPerksList;
 
@@ -92,6 +93,7 @@ void ActivateCharacterPerk(ref chref, string perkName)
 	{	timeDelay = sti(ChrPerksList.list.(perkName).TimeDelay);
 		if(timeDuration<=0)	{timeDuration=timeDelay;}
 	}
+	
     // boal fix
     // иначе после применения давался ГГ
 
@@ -193,14 +195,17 @@ void CharacterPerkOff(ref chref, string perkName)
 	Event("eSwitchPerks","l", GetMainCharacterIndex());
 	if (sti(chref.index) == nMainCharacterIndex || isOfficerInShip(chref, false)) // наследие перка от офа boal 30.06.06
 	{
-		DelPerkFromActiveList(perkName);
+		/* Удаляем перки без анимации с экрана. У перков с анимацией свой путь */
+		if(!CheckAttribute(&ChrPerksList, "list." + perkName + ".UseAnimation"))
+		{
+			DelPerkFromActiveList(perkName);
+		}
 	}
 }
 
 bool CheckOfficersPerk(ref chref, string perkName)
 { // активность перка в данный момент, для временных - режим активности, а не задержки
 	bool ret = CheckOfficersPerkWOSelf(chref, perkName);
-
 	if (ret) return true;
 	// самого НПС
 	if(IsCharacterPerkOn(chref,perkName) == true)
@@ -247,8 +252,20 @@ bool CheckCompanionsPerk(ref chref, string perkName)
 	return false; // fix by boal
 }
 
+void procChrPerkDelayAnim()
+{
+	string perkName = GetEventData();
+	int iActive = GetEventData();
+	UpdatePerkIcon(perkName, sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) - iActive);
+	if(iActive - 1 > 0)
+	{
+		PostEvent("evntChrPerkDelayAnim",(sti(ChrPerksList.list.(perkName).TimeDuration) * 1000) / sti(ChrPerksList.list.(perkName).UseAnimationIconCnt),"sl",perkName,iActive - 1);
+	}
+}
+
 void procChrPerkDelay()
 {
+	
 	string perkName = GetEventData();
 	int chrIdx = GetEventData();
 
@@ -256,28 +273,133 @@ void procChrPerkDelay()
 	makearef(arPerk,Characters[chrIdx].perks.list.(perkName));
 	if( !CheckAttribute(arPerk,"delay") ) return;
 	int delay = sti(arPerk.delay);
- 	// фикс в каюте, палубе, абордаже
+	// фикс в каюте, палубе, абордаже
  	bool ok;
  	ok = (!bAbordageStarted) && (!bSeaReloadStarted);
  	if (ok || perkName == "Rush")
  	{
 		delay--;
 	}
+	/* Проверяем, что перк наш или офицера а не компаньона */
+	int iOfficer = 1;
+	if(CheckAttribute(&ChrPerksList, "list." + perkName + ".OfficerType"))
+	{
+		string sOfficerType = ChrPerksList.list.(perkName).OfficerType;
+		iOfficer = sti(pchar.Fellows.Passengers.(sOfficerType));
+	}
 
 	if( CheckAttribute(arPerk,"active") )
 	{
 		int iActive = sti(arPerk.active)-1;
-		if( iActive>0 )	{arPerk.active = iActive;}
+		if( iActive>0 )
+		{
+			arPerk.active = iActive;
+			/* Включение анимации для отрисованных перков */
+			/* chrIdx 1 - ГГ, проверка что перк выдал не компаньон, иначе анимация будет накладываться при использовании перка компаньонами */
+			if (chrIdx == iOfficer || chrIdx == 1)
+			{
+				/* Рисуем анимацию если она поддерживается перком */
+				if(CheckAttribute(&ChrPerksList, "list." + perkName + ".UseAnimation"))
+				{
+					/* Проверяем переход между сушей и морем */
+					bool seaStateAnim = sti(ChrPerksList.list.(perkName).seaPerk) && (bSeaActive) && (!bSeaReloadStarted);
+                    bool landStateAnim = (!sti(ChrPerksList.list.(perkName).seaPerk)) && (!bSeaActive) && (bSeaReloadStarted);
+                    bool rush_abord = false;
+                    if(perkName == "Rush" && bAbordageStarted)
+                    {
+                        rush_abord = true;
+                    }
+
+                    if(seaStateAnim || landStateAnim || rush_abord)
+					{
+						/* Для перков, у которых количество кадров сделано под время действия, т.е. 1 fps, например у морских */
+						if(sti(ChrPerksList.list.(perkName).TimeDuration) >= sti(ChrPerksList.list.(perkName).UseAnimationIconCnt))
+						{
+							if(!isPerkInActiveList(perkName))
+							{
+								AddAndUpdatePerkIcon(perkName, sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) - iActive);
+							}
+							else
+							{
+								UpdatePerkIcon(perkName, sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) - iActive);
+							}
+						}
+						/* Для перков, у которых количество кадров больше чем время действия, т.е. 1 fps, например для берсерка */
+						else
+						{
+							if(getPerkCurrentIconID(perkName) == 0)
+							{
+								/* 10 - кол-во кадров в секунду */
+								if(getPerkCurrentIconID(perkName) != sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) - ((iActive + 1) * (sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) / 10)))
+								{
+									if(!isPerkInActiveList(perkName))
+									{
+										AddAndUpdatePerkIcon(perkName, sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) - iActive);
+									}
+									PostEvent("evntChrPerkDelayAnim",0,"sl",perkName, ((iActive + 1) * (sti(ChrPerksList.list.(perkName).UseAnimationIconCnt) / 10)));
+								}
+							}
+						}
+					}
+					else
+					{
+						/* Перешли с суши на море или наоборот и нужно удалить перк с экрана */
+						if(CheckAttribute(&ChrPerksList, "list." + perkName + ".UseAnimation"))
+						{
+							DelPerkFromActiveList(perkName);
+						}
+					}
+				}
+			}
+		}
 		else
 		{
+			/* Сюда попадаем когда перка закончил действие */
 			CharacterPerkOff(GetCharacter(chrIdx),perkName);
+		}
+	}
+	else
+	{
+		/* chrIdx 1 - ГГ, проверка что перк выдал не компаньон, иначе анимация будет накладываться при откате перка компаньонами */
+		if (chrIdx == iOfficer || chrIdx == 1)
+		{
+			/* Рисуем анимацию отката */
+			if(CheckAttribute(&ChrPerksList, "list." + perkName + ".UseAnimation") && delay > 1)
+			{
+				/* Проверяем переход между сушей и морем */
+				bool seaStateCoolDown = sti(ChrPerksList.list.(perkName).seaPerk) && (bSeaActive) && (!bSeaReloadStarted);
+				bool landStateCoolDown = (!sti(ChrPerksList.list.(perkName).seaPerk)) && (!bSeaActive) && (bSeaReloadStarted);
+				if(seaStateCoolDown || landStateCoolDown)
+				{
+					int tmp = getAnimFpsCnt(perkName);
+					if(tmp != 0)
+					{
+						/* Проверяем наличие иконки перка на экране через объект objActivePerkShower и если её нет - рисуем согласно проценту заполнения */
+						if(!isPerkInActiveList(perkName))
+						{
+							AddAndUpdatePerkIcon(perkName, (delay / tmp) - 1);
+						}
+						else if(delay % tmp == 0)
+						{
+							UpdatePerkIcon(perkName, (delay / tmp) - 1);
+						}
+					}
+				}
+			}
 		}
 	}
 
 	if( delay<=0 )
-	{	DeleteAttribute(&Characters[chrIdx],"perks.list."+perkName+".delay");
+	{
+		/* Сюда попадаем, когда закончился кулдаун */
+		DeleteAttribute(&Characters[chrIdx],"perks.list."+perkName+".delay");
 		DeleteAttribute(&Characters[chrIdx],"perks.list."+perkName+".active");
 		PostEvent("evntPerkAgainUsable",1);
+		/* Удаляем анимированный перк с экрана. Неанимированный перк удаляется раньше в CharacterPerkOff */
+		if(CheckAttribute(&ChrPerksList, "list." + perkName + ".UseAnimation"))
+		{
+			DelPerkFromActiveList(perkName);
+		}
 	}
 	else
 	{
@@ -309,7 +431,6 @@ void PerkLoad(bool noDelay)
 	string locName = pchar.location;
 	aref arPerksRoot,arPerk;
 	int i,j,n,tmpi;
-
 	for(i=0; i<MAX_CHARACTERS; i++)
 	{
 		makearef(arPerksRoot,Characters[i].perks.list);

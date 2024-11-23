@@ -50,14 +50,14 @@ void wdmReloadToSea()
 	SendMessage(&wdm_fader, "lfl", FADER_OUT, fadeOutTime, true);
 	SendMessage(&wdm_fader, "l", FADER_STARTFRAME);
 	//Установим картинку для фейдера
-	string imageName = "loading\jonny_load\sea\sea_"+rand(3)+".tga";
+	string imageName = "loading\jonny_load\sea\sea_"+rand(3)+".dds";
 	if(isShipEncounterType)
 	{
-		imageName = "loading\jonny_load\battle\battle_0"+rand(5)+".tga";
+		imageName = "loading\jonny_load\battle\battle_"+rand(5)+".dds";
 	}
 	if(MakeInt(wdmLoginToSea.storm) != 0)
 	{
-		imageName = "loading\jonny_load\storm\storm_0" + rand(2) + ".tga";
+		imageName = "loading\jonny_load\storm\storm_" + rand(2) + ".dds";
 		/*if(MakeInt(wdmLoginToSea.tornado) != 0)
 		{
 			imageName = "loading\Twister.tga";

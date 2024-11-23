@@ -288,10 +288,18 @@ void ProcessDialogEvent()
             PlayVoice("Kopcapkz\Voices\Arena\ArenaHead_"+rand(7)+".wav");
 			link.l1 = LinkRandPhrase("Передай этим участникам, что у них никаких шансов в схватке со мной!", "Давай уже начинать - мне не терпится кого-нибудь уделать!", "Приз будет моим - даже не сомневайся.");
 			AddDialogExitQuestFunction("ArenaTournamentTalkWithRandEnemy");
+			bDisableCharacterMenu = true;
+			string sQuest = "AT_LooserDetector_1_4";
+			PChar.quest.(sQuest).win_condition.l1 = "locator";
+			PChar.quest.(sQuest).win_condition.l1.location = "FencingTown_Arena";
+			PChar.quest.(sQuest).win_condition.l1.locator_group = "item";
+			PChar.quest.(sQuest).win_condition.l1.locator = "looser_detector";
+			PChar.quest.(sQuest).function = "ArenaTournamentLooserDetector";
 		break;
 
 
 		case "FightInArena_7":
+			bDisableCharacterMenu = false;
 			switch(sti(PChar.Arena.Tournament.Win))
 			{
 				case 0:

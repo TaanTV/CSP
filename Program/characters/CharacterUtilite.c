@@ -615,7 +615,7 @@ float GetSailRPD(ref _refCharacter) // процент ремонта парус�
 	float repairSkill = GetSummonSkillFromNameToOld(_refCharacter, SKILL_REPAIR);
 	if(CheckOfficersPerk(_refCharacter, "Carpenter"))
 	{
-		repairSkill = repairSkill * 1.1;
+		repairSkill = repairSkill + 1;//+10 навыка ремонт
 	}
 	if(IsEquipCharacterByArtefact(_refCharacter, "talisman7")) repairSkill = repairSkill * 1.5;
 	float damagePercent = 100.0 - GetSailPercent(_refCharacter);
@@ -631,7 +631,7 @@ float GetHullRPD(ref _refCharacter) // процент ремонта корпу�
 	float repairSkill = GetSummonSkillFromNameToOld(_refCharacter, SKILL_REPAIR);
 	if(CheckOfficersPerk(_refCharacter, "Carpenter"))
 	{
-		repairSkill = repairSkill * 1.1;
+		repairSkill = repairSkill + 1;//+10 навыка ремонт
 	}
 	if(IsEquipCharacterByArtefact(_refCharacter, "talisman7")) repairSkill = repairSkill * 1.5;
 	float damagePercent = 100.0 - GetHullPercent(_refCharacter);
@@ -2365,10 +2365,16 @@ string FindCharacterItemByGroup(ref chref, string groupID)
 bool IsEquipCharacterByItem(ref chref, string itemID)
 {
 	aref arEquip;
-	makearef(arEquip,chref.equip);
+	//if (!CheckAttribute(chref, "equip")) {//если будет ошибка "not ref or aref"
+	//	trace("Error! chref:" + chref.id + " don't have equip! itemID:" + itemID);
+	//	return false;
+	//}
+	makearef(arEquip, chref.equip);
 	int q = GetAttributesNum(arEquip);
-	for(int i=0; i<q; i++)
-	{	if(GetAttributeValue(GetAttributeN(arEquip,i))==itemID) return true;
+	for(int i=0; i < q; i++) {
+		if(GetAttributeValue(GetAttributeN(arEquip,i)) == itemID) {
+			return true;
+		}
 	}
 	return false;
 }
@@ -2825,7 +2831,9 @@ void EquipCharacterByItem(ref chref, string itemID)
 	{	SetEquipedItemToCharacter(chref, groupName, itemID);
 	}
 	if(groupName==GUN_ITEM_TYPE && sti(chref.index)==GetMainCharacterIndex())
-	{	LAi_GunSetUnload(chref);
+	{	
+		if(CheckAttribute(chref, "chargestage." + itemID)) chref.chr_ai.charge = stf(chref.chargestage.(itemID));
+		else LAi_GunSetUnload(chref);
 	}
 	if (CheckAttribute(arItm, "HeadAccessory"))
 	{
@@ -3840,9 +3848,9 @@ bool CanEquipMushketOnLocation(string LocationID)
 }
 
 // Есть ли для нашего ГГ мушкетерская модель?
-bool IsPCharHaveMushketerModel()
+bool IsCharHaveMushketerModel(ref Character)
 {
-	String sModel = PChar.Model;
+	String sModel = Character.Model;
 
 	if(HasSubStr(sModel, "Blad") ||
 	HasSubStr(sModel, "Whisper") ||
@@ -3912,7 +3920,8 @@ bool IsPCharHaveMushketerModel()
 	HasSubStr(sModel, "PGG_Meriman") ||
 	HasSubStr(sModel, "PGG_WillTerner") ||
 	HasSubStr(sModel, "PGG_Kneepel") ||
-	HasSubStr(sModel, "PGG_Rozencraft"))
+	HasSubStr(sModel, "PGG_Rozencraft") ||
+	HasSubStr(sModel, "Tichingitu"))
 	{
 		return true;
 	}
@@ -4258,13 +4267,13 @@ int GetCharacterItemWithCabin(ref _refCharacter,string itemName,bool ignore)
 	return qty;
 }
 
-void TakeNItemsWithCabin(ref _refCharacter,string itemName,int quant)
+void TakeNItemsWithCabin(ref _refCharacter,string itemName,int quant, bool onlycabin)
 {
 	/*int lngFileID = LanguageOpenFile("ItemsDescribe.txt");
 	string itmname = LanguageConvertString(lngFileID, "itmname_"+itemName);
 	LanguageCloseFile(lngFileID);*/
 	int qty = quant;
-	if(CheckAttribute(_refCharacter,"Items."+itemName) && sti(_refCharacter.Items.(itemName)) != 0)
+	if(!onlycabin && CheckAttribute(_refCharacter,"Items."+itemName) && sti(_refCharacter.Items.(itemName)) != 0)
 	{
 		if (sti(_refCharacter.Items.(itemName)) >= -qty) 
 		{
@@ -4303,7 +4312,6 @@ void TakeNItemsWithCabin(ref _refCharacter,string itemName,int quant)
 			}
 		}
 	}
-
 }
 
 int CheckCabinBoxes(ref loca)
@@ -4314,4 +4322,73 @@ int CheckCabinBoxes(ref loca)
 		if (CheckAttribute(loca,"box"+i)) qty++;
 	}
 	return qty;
+}
+
+void AutoequipFromCabin(ref chr)
+{
+	int 	qty = 0;
+	int 	i, iCost;
+	int		curqty = 0;
+	int		curTraderQty = 0;
+	float	freeWeight, fItemWeight;
+
+	string sTemp = "";
+	if (CheckAttribute(chr,"sex") && chr.sex == "woman") sTemp = GetConvertStrWithReplace("Variable_itemstrade_22", "Interface.txt", "#space#", " ");
+
+	freeWeight = GetMaxItemsWeight(chr) - GetItemsWeight(chr);
+	if (freeWeight < 0.1)
+	{
+		Log_Info(GetFullName(chr) + GetConvertStrWithReplace("Variable_itemstrade_23", "Interface.txt", "#space#", " ") + sTemp + GetConvertStrWithReplace("Variable_itemstrade_24", "Interface.txt", "#space#", " "));
+		return;
+	}
+
+	int idLngFile = LanguageOpenFile("ItemsDescribe.txt");
+
+	aref arInventory, arItem;
+	string sItem;
+	ref rItem;
+
+	makearef(arInventory, chr.TransferItems.I);
+	for (i = 0; i < GetAttributesNum(arInventory); i++)
+	{
+		arItem = GetAttributeN(arInventory, i);
+		sItem = GetAttributeName(arItem);
+		rItem = ItemsFromID(sItem);
+
+		if (IsGenerableItem(sItem)) continue;
+		if (!CheckAttribute(rItem, "sortIndex"))
+		{
+			if (!HasSubStr(sItem, "CompCraft")) continue;//в списке только расходники
+		}
+		else
+		{
+			if (rItem.SortIndex == 1 || rItem.SortIndex == 2); else continue;//в списке расходники и крафт
+		}
+		if (rItem.ItemType == "CRAFTCOMPONENTS") continue;
+
+		if (sItem == "Lockpick") continue;//отмычки пропускаем
+		if (sItem == "CompCraft_Tools" || sItem == "CompCraft_Locksmith" || sItem == "CompCraft_Puleleyka") continue; //исключение выбранных Шахом штук
+		curTraderQty = GetCharacterItemWithCabin(chr, sItem, false);
+
+		qty = sti(arInventory.(sItem));
+		curqty = GetCharacterItem(chr, sItem);
+		if (qty > curqty) {qty = qty - curqty;}
+			else continue;//этого припаса уже было достаточно
+		if (qty > curTraderQty) {qty = curTraderQty;}
+		if (qty == 0) continue; //нечего купить у торговца
+
+		fItemWeight = GetItemWeight(sItem);
+		if (qty > makeint(freeWeight / fItemWeight)) qty = makeint(freeWeight / fItemWeight);
+		if (qty == 0) continue; //не хватает места даже для одного такого предмета
+
+		if (qty == 0) continue; //не хватает денег даже на один такой предмет
+
+		TakeNItemsWithCabin(chr, sItem, -qty, true);
+		TakeNItems(chr, sItem, qty);
+		
+		if (qty > 0) Log_Info(GetFullName(chr) + " " + GetConvertStrWithReplace("Variable_itemstrade_50", "Interface.txt", "#space#", " ") + "'" + LanguageConvertString(idLngFile, rItem.name) + "' " + qty + GetConvertStrWithReplace("Variable_itemstrade_27", "Interface.txt", "#space#", " "));
+		freeWeight -= fItemWeight*qty;
+	}
+
+	LanguageCloseFile(idLngFile);
 }

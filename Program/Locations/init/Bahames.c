@@ -10,7 +10,7 @@ int LocationInitBahames(int n)
 	locations[n].islandId = "Bahames";
 	
 	locations[n].filespath.models = "locations\Town_Nassau\Town\";
-	locations[n].image = "loading\jonny_load\city\Nassau_town.tga";
+	locations[n].image = "loading\jonny_load\city\Nassau_town.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -133,12 +133,11 @@ int LocationInitBahames(int n)
 	locations[n].reload.l13.label = "DEstre House";
 	locations[n].reload.l13.disable = 1;
 
-	locations[n].reload.l14.name = "houseS2";
-	locations[n].reload.l14.go = "Nassau_HouseSp2";
+	locations[n].reload.l14.name = "houseS1"; // Резиденция Гатри
+	locations[n].reload.l14.go = "Nassau_OfisGatri";
 	locations[n].reload.l14.emerge = "reload1";
 	locations[n].reload.l14.autoreload = "0";
-	locations[n].reload.l14.label = "DEstre House";
-	locations[n].reload.l14.close_for_night = 1;
+	locations[n].reload.l14.label = "House";
 
 	locations[n].reload.l15.name = "houseD1";
 	locations[n].reload.l15.go = "Nassau_HouseHut";
@@ -168,11 +167,12 @@ int LocationInitBahames(int n)
 	locations[n].reload.l18.label = "DEstre House";
 	locations[n].reload.l18.close_for_night = 1;
 
-	locations[n].reload.l19.name = "houseS1";
-	locations[n].reload.l19.go = "Nassau_CobHouse";
+	locations[n].reload.l19.name = "houseS2";
+	locations[n].reload.l19.go = "Nassau_HouseSp2";
 	locations[n].reload.l19.emerge = "reload1";
 	locations[n].reload.l19.autoreload = "0";
-	locations[n].reload.l19.label = "House";
+	locations[n].reload.l19.label = "DEstre House";
+	locations[n].reload.l19.close_for_night = 1;
 	
 	locations[n].reload.l20.name = "houseF4";
 	locations[n].reload.l20.go = "CommonRoom_MH3";
@@ -216,7 +216,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\tavern05\";
-	locations[n].image = "loading\jonny_load\inside\Tavern05.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern05.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "Nassau";
@@ -261,7 +261,7 @@ int LocationInitBahames(int n)
 				
 	locations[n].id = "Nassau_tavern_upstairs";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -299,7 +299,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Nassau_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\jonny_load\inside\smallresidence.tga";
+	locations[n].image = "loading\jonny_load\inside\SmallResidence.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -338,7 +338,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store03\";
-	locations[n].image = "loading\jonny_load\inside\store03.tga";
+	locations[n].image = "loading\jonny_load\inside\store03.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -381,7 +381,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard02\";
-	locations[n].image = "loading\jonny_load\inside\shipyard02.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard02.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -423,7 +423,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Nassau_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\church_IM.tga";
+	locations[n].image = "loading\jonny_load\inside\church_IM.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -459,7 +459,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Nassau_bank";
 	locations[n].id.label = "Usurer House";
-	locations[n].image = "loading\jonny_load\inside\bank03.tga";
+	locations[n].image = "loading\jonny_load\inside\bank03.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -497,7 +497,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_Brothel";
 	locations[n].id.label = "Brothel";
 	locations[n].filespath.models = "locations\inside\Brothel\";
-	locations[n].image = "loading\jonny_load\inside\brothel.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -546,7 +546,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_Brothel_room";
 	locations[n].id.label = "Brothel Room";
 	locations[n].filespath.models = "locations\inside\Brothel_room\";
-	locations[n].image = "loading\jonny_load\inside\Brothel_room.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel_room.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -581,7 +581,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Nassau_SecBrRoom";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\Residence07PKM.tga";
+	locations[n].image = "loading\jonny_load\inside\Residence07PKM.dds";
  	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -618,7 +618,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Nassau_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\PortOfficeNassau.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOfficeNassau.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -654,7 +654,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_HouseSp2";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\flamhouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -711,7 +711,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_HouseHut";
 	locations[n].filespath.models = "locations\inside\Hut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\hut.tga";
+	locations[n].image = "loading\jonny_load\inside\hut.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -754,7 +754,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_Hut3_Kns";
 	locations[n].filespath.models = "locations\inside\Hut3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut3_Kns.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut3_KNS.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "Nassau";
@@ -792,7 +792,7 @@ int LocationInitBahames(int n)
 	locations[n].id = "Nassau_HouseHut1";
 	locations[n].filespath.models = "locations\inside\Hut1_KNS";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -827,10 +827,9 @@ int LocationInitBahames(int n)
 	locations[n].reload.l2.label = "Street";
 	n = n + 1;
 
-	locations[n].id = "Nassau_CobHouse";
-	locations[n].filespath.models = "locations\inside\CobHouse";
-	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\CobHouse.tga";
+	locations[n].id = "Nassau_OfisGatri";
+	locations[n].id.label = "Townhall";
+	locations[n].image = "loading\jonny_load\inside\OfisGatri.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -839,26 +838,28 @@ int LocationInitBahames(int n)
 	locations[n].fastreload = "Nassau";
  	locations[n].islandId = "Bahames";
 	//Models
+	locations[n].filespath.models = "locations\inside\OfisGatri";
 	//Always
-	locations[n].models.always.tavern = "CobHouse";
-	locations[n].models.always.tavern.level = 65538;
-	locations[n].models.always.window = "CobHouse_window";
+	//Always
+	locations[n].models.always.l1 = "OfisGatri";
+	locations[n].models.always.l1.level = 65538;
+	locations[n].models.always.l2 = "OfisGatri1";
+	locations[n].models.always.locators = "OfisGatri_locators";
+	locations[n].models.always.window = "OfisGatri_windows";
 	locations[n].models.always.window.tech = "LocationWindows";
 	locations[n].models.always.window.level = 65539;
-	locations[n].models.day.locators = "CobHouse_locators";
-	locations[n].models.night.locators = "CobHouse_Nlocators";
-
 	locations[n].models.always.back = "..\inside_back";
 	locations[n].models.always.back.level = 65529;
 	//Day
-	locations[n].models.day.charactersPatch = "CobHouse_patch";
+	locations[n].models.day.charactersPatch = "OfisGatri_patch";
 	//Night
-	locations[n].models.night.charactersPatch = "CobHouse_patch";
+	locations[n].models.night.charactersPatch = "OfisGatri_patch";
+	locations[n].models.night.locators = "OfisGatri_locatorsN";
 	//Environment
 	locations[n].environment.weather = "true";
 	locations[n].environment.sea = "false";
 	//Reload map
-	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.name = "reload1_back";
 	locations[n].reload.l1.go = "Nassau_town";
 	locations[n].reload.l1.emerge = "houseS1";
 	locations[n].reload.l1.autoreload = "0";
@@ -868,13 +869,29 @@ int LocationInitBahames(int n)
 	locations[n].reload.l2.go = "Nassau_BedRoomK2";
 	locations[n].reload.l2.emerge = "reload1";
 	locations[n].reload.l2.autoreload = "0";
-	locations[n].reload.l2.label = "Room";
+	locations[n].reload.l2.label = "BedRoom";
+	locations[n].reload.l2.close_for_night = 1;
+
+	locations[n].reload.l3.name = "reload3";
+	locations[n].reload.l3.go = "OfisGatri";
+	locations[n].reload.l3.emerge = "reload1";
+	locations[n].reload.l3.autoreload = "0";
+	locations[n].reload.l3.label = "Room";
+	locations[n].reload.l3.disable = 1;
+
+	locations[n].private1.key = "keyGatri";
+	locations[n].private1.key.delItem = true;
+	locations[n].private1.money = 250000;
+	locations[n].private1.items.cirass5 = 1; // Красная кираса
+	locations[n].private1.items.suit_3 = 1; // Одежда дворнина
+	locations[n].private1.items.book3_1 = 1;
+	locations[n].private1.map_Bahames = 1;
 	n = n + 1;
 
 	locations[n].id = "Nassau_BedRoomK2";
 	locations[n].id.label = "BedRoom";
 	locations[n].filespath.models = "locations\inside\ResBedRoom";
-	locations[n].image = "loading\jonny_load\inside\ResBedroomPKM.tga";
+	locations[n].image = "loading\jonny_load\inside\ResBedroomPKM.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	locations[n].lockWeather = "Inside";
@@ -903,7 +920,7 @@ int LocationInitBahames(int n)
 	locations[n].environment.sea = "false";
 	//Reload map
 	locations[n].reload.l1.name = "reload1";
-	locations[n].reload.l1.go = "Nassau_CobHouse";
+	locations[n].reload.l1.go = "Nassau_OfisGatri";
 	locations[n].reload.l1.emerge = "reload2";
 	locations[n].reload.l1.autoreload = "0";
 	locations[n].reload.l1.label = "Townhall";
@@ -911,7 +928,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Nassau_sklad02";
 	locations[n].id.label = "packhouse";
-	locations[n].image = "loading\jonny_load\inside\sklad02.tga";
+	locations[n].image = "loading\jonny_load\inside\Sklad02.dds";
 	locations[n].MustSetReloadBack = true;
 	locations[n].packhouse = true;
 	//Town sack
@@ -946,13 +963,13 @@ int LocationInitBahames(int n)
 	n = n + 1;
 
 	locations[n].id = "Nassau_ExitTown";
+	locations[n].fastreload = "Nassau";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\Jungle3.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle3.dds";
 	//Town sack
 	locations[n].townsack = "Nassau";
 	//Sound
 	locations[n].type = "jungle";
-	locations[n].fastreload = "Nassau";
  	locations[n].islandId = "Bahames";
 	//Models
 	//Always
@@ -1003,7 +1020,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle5.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle5.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";
@@ -1056,7 +1073,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle1.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";
@@ -1101,7 +1118,7 @@ int LocationInitBahames(int n)
 
     locations[n].id = "Bahames_jungle_03";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle8.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle8.dds";
  	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";
@@ -1146,7 +1163,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_jungle_04";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle6.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle6.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";
@@ -1198,10 +1215,9 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_jungle_05";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle4.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle4.dds";
 	//Sound
 	locations[n].type = "jungle";
-	locations[n].fastreload = "Nassau";
 	locations[n].islandId = "Bahames";
 	//Models
 	//Always
@@ -1251,7 +1267,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";
@@ -1296,7 +1312,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_Grot";
 	locations[n].id.label = "Grot";
-	locations[n].image = "loading\jonny_load\inside\grotto1.tga";
+	locations[n].image = "loading\jonny_load\inside\grotto1.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "Bahames";
@@ -1334,7 +1350,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Shore68";
 	locations[n].id.label = "Shore68";
-	locations[n].image = "loading\jonny_load\shores\Rockshore.tga";
+	locations[n].image = "loading\jonny_load\shores\Rockshore.dds";
 	locations[n].worldmap = "Shore68";
 	//Sound
 	locations[n].type = "seashore";
@@ -1376,7 +1392,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Shore69";
 	locations[n].id.label = "Shore69";
-	locations[n].image = "loading\jonny_load\shores\ShoreShip2.tga";
+	locations[n].image = "loading\jonny_load\shores\ShoreShip2.dds";
 	locations[n].worldmap = "Shore69";
 	//Sound
 	locations[n].type = "seashore";
@@ -1417,7 +1433,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_Jungle_06";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle10B.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle10B.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";
@@ -1462,7 +1478,7 @@ int LocationInitBahames(int n)
 
 	locations[n].id = "Bahames_deadlock";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle9.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle9.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Bahames";

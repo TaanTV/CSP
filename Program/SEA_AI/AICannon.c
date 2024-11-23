@@ -88,6 +88,7 @@ void Cannon_RecalculateParameters(int iCharacterIndex)
 	{
 	    rCharacter.Ship.Cannons.SpeedV0 = stf(rCannon.SpeedV0) * stf(rBall.SpeedV0) * sqrt(1.0 + p * 0.03);
 	}
+	if (HasSubStr(rCharacter.id, " Fort Commander")) rCharacter.Ship.Cannons.SpeedV0 = stf(rCharacter.Ship.Cannons.SpeedV0)*1.5;
 	rCharacter.Ship.Cannons.FireAngMax = rCannon.FireAngMax;
 	rCharacter.Ship.Cannons.FireAngMin = rCannon.FireAngMin;
 }
@@ -111,14 +112,16 @@ float Cannon_GetFireHeight()
 }
 
 // calculate recharge time for cannon
-float Cannon_GetRechargeTime()
+float Cannon_GetRechargeTimeValue(ref aCharacter)
 {
-	aref	aCharacter = GetEventData();
+	if(!CheckAttribute(aCharacter, "Ship.type"))	{ return 0.0; }
+	int nShipType = sti(aCharacter.ship.type);
+	if(nShipType == SHIP_NOTUSED)	{ return 0.0; }
 	
 	int		iCannonType = sti(aCharacter.Ship.Cannons.Type);
 	ref		rCannon = GetCannonByType(iCannonType);
 	float	fReloadTime = GetCannonReloadTime(rCannon); // boal 28.01.03 - 09.02.05
-	float	fCannonSkill = 1 + stf(aCharacter.TmpSkill.Cannons);
+	float	fCannonSkill = 1.0 + stf(aCharacter.TmpSkill.Cannons);
 	if (iCannonType >=  CANNON_TYPE_CANNON_LBS8)//пушка или кулеврина
 	{
 		fCannonSkill = fCannonSkill - 0.1 * (MakeFloat(iCannonType) + 1 - CANNON_TYPE_CANNON_LBS8);// <1 штраф, >1 бонус
@@ -127,8 +130,8 @@ float Cannon_GetRechargeTime()
 	{
 		fCannonSkill = fCannonSkill - 0.1 * (MakeFloat(iCannonType) + 1);
 	}
-	if (fCannonSkill > 1.5) fCannonSkill = 1.5;
-	if (fCannonSkill > 0.65) fCannonSkill = 0.65;
+	if (fCannonSkill > 1.5) { fCannonSkill = 1.5; }
+	if (fCannonSkill < 0.65) { fCannonSkill = 0.65; }
 	float fMultiply = 1.0;
 	// boal -->
     fMultiply = AIShip_isPerksUse(aCharacter.TmpPerks.FastReload, 1.0, 0.9);
@@ -144,7 +147,7 @@ float Cannon_GetRechargeTime()
 		//Boyer remove reload speed boost for enemies
 		if (sti(aCharacter.index) != GetMainCharacterIndex())
 		{
-		   fReloadTime -= MOD_SKILL_ENEMY_RATE*3/2; // -10c на невозможном
+		   fReloadTime *= (7.0 - MOD_SKILL_ENEMY_RATE) / 6.0; // -16% на капитане(контра задержки залпа), -33% на невозможном
 		   // if(aCharacter.id == "GhostCapt") fReloadTime = fReloadTime/2;
 		}
 		// boal <--
@@ -171,6 +174,13 @@ float Cannon_GetRechargeTime()
     // boal  корректный учет команды <--
     }
 	return  fMultiply * fReloadTime / fCannonSkill;
+}
+
+// calculate recharge time for cannon
+float Cannon_GetRechargeTime()
+{
+	aref	aCharacter = GetEventData();
+	return Cannon_GetRechargeTimeValue(aCharacter);
 }
 
 // calculate delay before fire

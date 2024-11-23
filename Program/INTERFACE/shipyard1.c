@@ -1,3 +1,9 @@
+//Смена каюты -->
+string sCabins[10] = {"Cabin_Small","Cabin_Small2","New_Cabin1","Cabin_Medium1","Cabin_Medium","Cabin_Medium2","New_Cabin2","Cabin_Quest","Cabin","Cabin_Huge"};//берём из SetCabinTypeEx
+int iCabinsNum = 10;//число видов кают
+int iCurCabin = 0;
+//Смена каюты <--
+
 ref refNPCShipyard;
 ref refStore;
 
@@ -59,6 +65,7 @@ void InitInterface_R(string iniName, ref _shipyarder)
 	SetEventHandler("TableSelectChange", "TableSelectChange", 0);
 	SetEventHandler("ExitMsgMenu", "ExitMsgMenu", 0);
 	SetEventHandler("OnTableClick", "OnTableClick", 0);
+	SetEventHandler("ExitChangeCabinMenu", "ExitChangeCabinMenu",0);
 
 	EI_CreateFrame("SHIP_BIG_PICTURE_BORDER",156,40,366,275); // tak from SHIP_BIG_PICTURE
 	EI_CreateHLine("SHIP_BIG_PICTURE_BORDER", 161,246,361,1, 4);
@@ -88,6 +95,7 @@ void InitInterface_R(string iniName, ref _shipyarder)
 	SetCurrentNode("TABLE_OTHER");
 	sMessageMode = "";
 	SetButtionsAccess();//доступность кнопки GetConvertStrWithReplace("Variable_shipyard1_1", "Interface.txt", "#space#", " ")
+	SetSelectable("BUTTON_CABIN", true);
 }
 
 void ProcessExitCancel()
@@ -106,6 +114,7 @@ void IDoExit(int exitCode)
 	DelEventHandler("TableSelectChange", "TableSelectChange");
 	DelEventHandler("ExitMsgMenu", "ExitMsgMenu");
 	DelEventHandler("OnTableClick", "OnTableClick");
+	DelEventHandler("ExitChangeCabinMenu", "ExitChangeCabinMenu");
 
 	interfaceResultCommand = exitCode;
 	if( CheckAttribute(&InterfaceStates,"ReloadMenuExit"))
@@ -126,6 +135,30 @@ void ProcessCommandExecute()
 
 	switch(nodName)
 	{
+		case "BUTTON_CABIN":
+			if (comName=="click" || comName=="activate")
+			{
+			    ShowChangeCABINMenu();
+			}
+		break;
+		case "CHANGE_CABIN_LEFT":
+			if(comName=="click")
+			{
+				SelectChangeCABIN(true);
+			}
+		break;
+		case "CHANGE_CABIN_RIGHT":
+			if(comName=="click")
+			{
+				SelectChangeCABIN(false);
+			}
+		break;
+		case "CHANGE_CABIN_OK":
+			if(comName=="click")
+			{
+				SetNewCABINToCharacterShip();
+			}
+		break;
 
 		case "B_SKILLUP":
 			if (comName=="click")
@@ -202,7 +235,9 @@ void FillOrderShip(int _iShipBaseType)
 	DeleteAttribute(refNPCShipyard, "Ship.Cargo");
 	NullCharacterGoods(refNPCShipyard);
 	SetRandomNameToShip(refNPCShipyard);
-	SetCabinTypeEx(RealShips[iShip], sti(RealShips[iShip].Class));//рандом каюты //TODO - добавить в интерфейс выбор?
+
+	if (isCabinforClass(sti(refShip.Class))) SetNewCABINToCharacterShip();//ставим выбранную у прошлого корабля каюту, если она подходит классу
+		else SetCabinTypeEx(RealShips[iShip], sti(RealShips[iShip].Class));//рандом каюты
 }
 
 void FillShipParam()
@@ -265,7 +300,7 @@ void FillShipParam()
 		FillPrice();
 
 		string sShip = rRealShip.BaseName;
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".tga");
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".dds");
 		GameInterface.edit_box.str = refNPCShipyard.ship.name;
 		SetFormatedText("SHIP_RANK", rRealShip.Class);
 		SetShipOTHERTable("TABLE_OTHER", refNPCShipyard);
@@ -275,7 +310,7 @@ void FillShipParam()
 	}
 	else
 	{
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.tga");
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.dds");
 		GameInterface.edit_box.str = XI_Convertstring("NoneBoat");
 		SetFormatedText("FRAME_INFO_CAPTION","");
 		SetFormatedText("INFO_TEXT","");
@@ -293,6 +328,8 @@ void ShowInfoWindow()
 	string sHeader, sText1, sText2, sText3, sPicture;
 	string sGroup, sGroupPicture;
 	int iItem;
+	int xx = 64;
+	int yy = 64;
 
 	sPicture = "";
 	string sAttributeName;
@@ -308,9 +345,18 @@ void ShowInfoWindow()
 	{
 		case "SHIP_BIG_PICTURE":
 			iShip = sti(rChr.ship.type);
-			refBaseShip = CreateBaseShip(iShip);
+			refBaseShip = GetRealShip(iShip);
 			sHeader = XI_ConvertString(refBaseShip.BaseName);
 			sText1 = GetConvertStr(refBaseShip.BaseName, "ShipsDescribe.txt");
+			//--> показ каюты по ПКМ на портрете корабля
+			int nLoc = FindLocation(refBaseShip.CabinType);
+			if (nLoc >= 0 && CheckAttribute(&Locations[nLoc],"image"))
+			{
+				sPicture = Locations[nLoc].image;
+				xx = 512;//размер картинки
+				yy = 288;
+			}
+			//<-- показ каюты
 		break;
 
 		case "TABLE_OTHER":
@@ -358,7 +404,7 @@ void ShowInfoWindow()
 	}
 	if (bShowHint)
 	{
-		CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,192,192), sText3, argb(255,192,255,192), "", argb(255,255,255,255), sPicture, sGroup, sGroupPicture, 64, 64);
+		CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,192,192), sText3, argb(255,192,255,192), "", argb(255,255,255,255), sPicture, sGroup, sGroupPicture, xx, yy);
 	}
 }
 
@@ -487,7 +533,7 @@ void FillShipyardTable()
 		sShip = shipstypes[i].Name;
 		GameInterface.TABLE_SHIPYARD.(row).index = i;
 
-		GameInterface.TABLE_SHIPYARD.(row).td1.icon.texture = "interfaces\\ships\\" + sShip + ".tga.tx";
+		GameInterface.TABLE_SHIPYARD.(row).td1.icon.texture = "interfaces\ships\" + sShip + ".dds";
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.uv = "0,0,1,1";
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.width = 46;
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.height = 46;
@@ -509,6 +555,18 @@ void FillShipyardTable()
 		GameInterface.TABLE_SHIPYARD.(row).td2.str = XI_Convertstring(sShip) + sTemp;
 		GameInterface.TABLE_SHIPYARD.(row).td2.align = "left";
 		GameInterface.TABLE_SHIPYARD.(row).td2.scale = 0.82;
+
+		GameInterface.TABLE_SHIPYARD.(row).td2.textoffset = "0,6";//сдвинул текст чуть ниже, для более красивого расположения плашки, по умолчанию пустая строка IG Baron. 
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.width = 51;
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.height = 26;
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.offset = "0, -4";
+		if (LanguageGetLanguage() != "russian") sTemp = "english "; else sTemp = "";
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.group = "ICONS_SPEC";
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.image = sTemp + "universal ship icon"; 
+		if ( sti(shipstypes[i].Type.Merchant) && !sti(shipstypes[i].Type.War)) 
+			GameInterface.TABLE_SHIPYARD.(row).td2.icon.image = sTemp + "trader ship icon";
+		if ( !sti(shipstypes[i].Type.Merchant) && sti(shipstypes[i].Type.War)) 
+			GameInterface.TABLE_SHIPYARD.(row).td2.icon.image = sTemp + "battle ship icon";//плашка для боевого типа корабля (есть ещё для быстрого fast ship icon)
 
 		GameInterface.TABLE_SHIPYARD.(row).td3.str = shipstypes[i].rcannon + "\n" + shipstypes[i].fcannon + "<::::::::::>" + shipstypes[i].bcannon + "\n" + shipstypes[i].lcannon;
 		GameInterface.TABLE_SHIPYARD.(row).td4.str = shipstypes[i].Capacity;
@@ -587,7 +645,7 @@ void SetButtionsAccess()
 	{
 //		if (iRank<-8 && iClass<6) {SetSelectable("BUTTON_BUY", false); sText = "c -8 ранга";}
 //		if (iRank<-3 && iClass<5) {SetSelectable("BUTTON_BUY", false); sText = "c -3 ранга";}
-		if (iRank<2 && iClass<4) {SetSelectable("BUTTON_BUY", false); sText = "c 2 ранга";} 
+		if (iRank<2 && iClass<4) {SetSelectable("BUTTON_BUY", false); sText = "c 2 ранга";}
 		if (iRank<8 && iClass<3) {SetSelectable("BUTTON_BUY", false); sText = "c 8 ранга";}
 		if (iRank<16 && iClass<2) {SetSelectable("BUTTON_BUY", false); sText = "c 16 ранга";}//снижаем требования ранга ГГ
 	}
@@ -1055,3 +1113,77 @@ void InitSAddMassive()
 	sAddString = GetConvertStrWithReplace("Variable_sAdd_8", "Interface.txt", "#enter#", "\n");
 	sAdd[9] = sAddString + " ";
 }
+
+//Смена каюты -->
+void ExitChangeCABINMenu()
+{
+	XI_WindowShow("CHANGE_CABIN_WINDOW", false);
+	XI_WindowDisable("CHANGE_CABIN_WINDOW", true);
+	XI_WindowDisable("MAIN_WINDOW", false);
+	SetCurrentNode("TABLE_OTHER");
+	sMessageMode = "";
+}
+void ShowChangeCABINMenu()
+{
+	XI_WindowShow("CHANGE_CABIN_WINDOW", true);
+	XI_WindowDisable("CHANGE_CABIN_WINDOW", false);
+	XI_WindowDisable("MAIN_WINDOW", true);
+	SetCurrentNode("CHANGE_CABIN_CANCEL");
+
+	ref refShip = GetRealShip(sti(refNPCShipyard.Ship.Type));
+	for (int i=0;i<iCabinsNum;i++)
+	{
+		if (sti(refShip.Class)==7) break;
+		if (refShip.CabinType != sCabins[i]) continue;
+		iCurCabin = i;
+		break;
+	}
+	SetChangeCABINInfo();
+}
+void SetChangeCABINInfo()
+{
+	string sTexture = GetShipTexturesForChangeCABIN();
+	SetNewPicture("CHANGE_CABIN_TYPE", sTexture);
+
+	bool isNewCabin = true;
+	ref refShip = GetRealShip(sti(refNPCShipyard.Ship.Type));
+	if (!isCabinforClass(sti(refShip.Class))) isNewCabin = false;
+
+	if (isNewCabin) SetSelectable("CHANGE_CABIN_OK", true);
+		else SetSelectable("CHANGE_CABIN_OK", false);
+}
+//Каюты, доступные разным классам при смене
+bool isCabinforClass(int iClass)
+{
+	switch (iClass)
+	{
+	case 7: return false; break;									//тут только один тип, так что всегда отказ в смене
+	case 6: if (iCurCabin>-1 && iCurCabin<3) return true; break; 	//0-2
+	case 5: if (iCurCabin>0 && iCurCabin<4) return true; break;		//1-3
+	case 4: if (iCurCabin>2 && iCurCabin<6) return true; break;		//3-5
+	case 3: if (iCurCabin>3 && iCurCabin<7) return true; break; 	//4-6
+	case 2: if (iCurCabin>5 && iCurCabin<9) return true; break;		//6-8
+	case 1: if (iCurCabin>6 && iCurCabin<10) return true; break;	//7-9
+	}
+	return false;
+}
+string GetShipTexturesForChangeCABIN()
+{
+	int nLoc = FindLocation(sCabins[iCurCabin]);
+	if (nLoc >= 0 && CheckAttribute(&Locations[nLoc],"image"))
+	return Locations[nLoc].image;
+}
+void SelectChangeCABIN(bool bLeft)
+{
+	if (bLeft) iCurCabin--; else iCurCabin++;
+	if (iCurCabin < 0) iCurCabin = iCabinsNum-1;
+	if (iCurCabin == iCabinsNum) iCurCabin = 0;
+	SetChangeCABINInfo();
+}
+void SetNewCABINToCharacterShip()
+{
+	ref refShip = GetRealShip(sti(refNPCShipyard.Ship.Type));
+	refShip.CabinType = sCabins[iCurCabin];
+	ExitChangeCABINMenu();
+}
+//Смена каюты <--

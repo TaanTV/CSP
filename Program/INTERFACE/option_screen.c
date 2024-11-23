@@ -5,6 +5,7 @@ int g_ControlsLngFile = -1;
 bool blockkey = true;
 string curkey = "";
 bool g_bToolTipStarted = false;
+int OptionsTab = 1;
 
 float 	fHUDRatio 	= 1.0;
 float 	newBase 	= stf(screenscaling);
@@ -110,6 +111,21 @@ void InitInterface(string iniName)
 	SendMessage(&GameInterface,"lslf",MSG_INTERFACE_MSG_TO_NODE, "HUD_SLIDE", 0, sl);
 	GameInterface.nodes.hud_slide.value = sl;
     newBase = CalcHUDBase(sl, stf(Render.screen_y));
+	
+	OptionsTab = sti(InterfaceStates.menu);
+	SetOptionsWindow(OptionsTab);
+	ChangeVideoColor();
+	ChangeSeaDetail();
+	ChangePerspDetail();
+	ChangePersp2Detail();
+	ChangeRadDetail();
+	ChangeSoundSetting();
+	ChangeMouseSensitivity();
+	ChangeHUDDetail();
+	ChangeGrassDistanceLand();
+	ChangeGrassDistanceSea();
+	ChangeGrassCountLand();
+	ChangeGrassCountSea();
 }
 
 void ProcessCancelExit()
@@ -129,6 +145,14 @@ void ProcessOkExit()
 	SetSeaGridStep(stf(InterfaceStates.SeaDetails));// change sea settings
 	SetPerspectiveSettings();//#20171223-01 Camera perspective option
 	SetPerspective2Settings();//#20190815-01
+	if (sti(InterfaceStates.ShowExpLogs)==0)
+	{
+		objLandInterface.textinfo.EXP1.text = "";
+		objLandInterface.textinfo.EXP2.text = "";
+		objLandInterface.textinfo.EXP3.text = "";
+		objLandInterface.textinfo.EXP4.text = "";
+		objLandInterface.textinfo.EXP5.text = "";
+	}
 }
 
 void ProcessExit()
@@ -263,6 +287,94 @@ void procTabChange()
 		SetControlsTabMode( 4 );
 		return;
 	}
+	
+	if( sNodName == "TABBTN_GRAPHICS" ) {
+		SetOptionsWindow( 1 );
+		return;
+	}
+	if( sNodName == "TABBTN_SOUND" ) {
+		SetOptionsWindow( 2 );
+		return;
+	}
+	if( sNodName == "TABBTN_CONTROLS" ) {
+		SetOptionsWindow( 3 );
+		return;
+	}
+	if( sNodName == "TABBTN_OPTIONS" ) {
+		SetOptionsWindow( 4 );
+		return;
+	}
+}
+
+void SetOptionsWindow(int num)
+{
+	int nColor1 = argb(255,196,196,196);
+	int nColor2 = nColor1;
+	int nColor3 = nColor1;
+	int nColor4 = nColor1;
+
+	string sPic1 = "TabDeSelected";
+	string sPic2 = sPic1;
+	string sPic3 = sPic1;
+	string sPic4 = sPic1;
+
+	switch( num )
+	{
+	case 1: // море от первого лица
+		sPic1 = "TabSelected";
+		nColor1 = argb(255,255,255,255);
+	break;
+	case 2: // режим путешествий на земле
+		sPic2 = "TabSelected";
+		nColor2 = argb(255,255,255,255);
+	break;
+	case 3: // море от 3-го лица
+		sPic3 = "TabSelected";
+		nColor3 = argb(255,255,255,255);
+	break;
+	case 4: // режим боя на земле
+		sPic4 = "TabSelected";
+		nColor4 = argb(255,255,255,255);
+	break;
+	}
+
+	SetNewGroupPicture("TABBTN_GRAPHICS", "TABS", sPic1);
+	SetNewGroupPicture("TABBTN_SOUND", "TABS", sPic2);
+	SetNewGroupPicture("TABBTN_CONTROLS", "TABS", sPic3);
+	SetNewGroupPicture("TABBTN_OPTIONS", "TABS", sPic4);
+	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"TABSTR_GRAPHICS", 8,0,nColor1);
+	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"TABSTR_SOUND", 8,0,nColor2);
+	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"TABSTR_CONTROLS", 8,0,nColor3);
+	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"TABSTR_OPTIONS", 8,0,nColor4);
+	
+	XI_WindowDisable("GRAPHICS_WINDOW",true);
+	XI_WindowDisable("SOUNDS_WINDOW",true);
+	XI_WindowDisable("CONTROLS_WINDOW",true);
+	XI_WindowDisable("OTHERS_WINDOW",true);
+	XI_WindowShow("GRAPHICS_WINDOW",false);
+	XI_WindowShow("SOUNDS_WINDOW",false);
+	XI_WindowShow("CONTROLS_WINDOW",false);
+	XI_WindowShow("OTHERS_WINDOW",false);
+	switch (num)
+	{
+		case 1:
+			XI_WindowShow("GRAPHICS_WINDOW",true);
+			XI_WindowDisable("GRAPHICS_WINDOW",false);
+		break;
+		case 2:
+			XI_WindowShow("SOUNDS_WINDOW",true);
+			XI_WindowDisable("SOUNDS_WINDOW",false);
+		break;
+		case 3:
+			XI_WindowShow("CONTROLS_WINDOW",true);
+			XI_WindowDisable("CONTROLS_WINDOW",false);
+		break;
+		case 4:
+			XI_WindowShow("OTHERS_WINDOW",true);
+			XI_WindowDisable("OTHERS_WINDOW",false);
+		break;
+	}
+	InterfaceStates.menu = num;
 }
 
 void procBtnAction()
@@ -285,6 +397,23 @@ void procBtnAction()
 		RestoreDefaultKeys(1);
 		return;
 	}
+	
+	if( sNodName == "HUD_SCALE_DEFAULT" ) {
+		GameInterface.nodes.hud_slide.value = CalcHUDSlider(roundFloat(stf(Render.screen_y) / 900.0));
+		SendMessage(&GameInterface,"lslf",MSG_INTERFACE_MSG_TO_NODE, "HUD_SLIDE", 0, stf(GameInterface.nodes.hud_slide.value));
+		ChangeHUDDetail();
+		return;
+	}
+	
+	if( sNodName == "HUD_DIALOG_LEFT_BUTTON" ) {
+		ChangeDialogStyle(false);
+		return;
+	}
+	
+	if( sNodName == "HUD_DIALOG_RIGHT_BUTTON" ) {
+		ChangeDialogStyle(true);
+		return;
+	}
 }
 
 void IReadVariableBeforeInit()
@@ -303,6 +432,13 @@ void IReadVariableAfterInit()
 	GetVisualCirassOptionsData();
 	GetAltFontOptionsData();
 	GetBombsParticlesOptionsData();
+	
+	if( CheckAttribute(&InterfaceStates,"DialogStyle") ) SetFormatedText("HUD_DIALOG_TEXT", InterfaceStates.DialogStyle);
+	else 
+	{
+		InterfaceStates.DialogStyle = 1;
+		SetFormatedText("HUD_DIALOG_TEXT", InterfaceStates.DialogStyle);
+	}
 
 	if( !CheckAttribute(&InterfaceStates,"RegionsWorldmap") ) 		InterfaceStates.RegionsWorldmap = 0;
 	if( !CheckAttribute(&InterfaceStates,"SimpleSea") ) 			InterfaceStates.SimpleSea = 0;
@@ -322,6 +458,7 @@ void IReadVariableAfterInit()
 	if( !CheckAttribute(&InterfaceStates,"EnabledCMControls") ) 	InterfaceStates.EnabledCMControls = 0;
 	if( !CheckAttribute(&InterfaceStates,"EnabledOldStore") ) 		InterfaceStates.EnabledOldStore = 0;
 	if( !CheckAttribute(&InterfaceStates,"EnabledAltSoundsGun") ) 	InterfaceStates.EnabledAltSoundsGun = 0;
+	if( !CheckAttribute(&InterfaceStates,"ShowExpLogs") ) 			InterfaceStates.ShowExpLogs = 0;
 	FillSimpleOptionsTable();
 /*
 	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"SIMPLESEA_CHECKBOX", 2, 1, sti(InterfaceStates.SimpleSea) );
@@ -496,6 +633,22 @@ void procSlideChange()
 		ChangeSeaDetail();
 		return;
 	}
+	if( sNodeName == "HERB_LAND_DISTANCE_SLIDE" ) {
+		ChangeGrassDistanceLand();
+		return;
+	}
+	if( sNodeName == "HERB_SEA_DISTANCE_SLIDE" ) {
+		ChangeGrassDistanceSea();
+		return;
+	}
+	if( sNodeName == "HERB_QUANTITY_SLIDE" ) {
+		ChangeGrassCountLand();
+		return;
+	}
+	if( sNodeName == "HERB_TRANSP_SLIDE" ) {
+		ChangeGrassCountSea();
+		return;
+	}
 	//#20171223-01 Camera perspective option
 	if( sNodeName == "CAM_PERSP_SLIDE" ) {
 		ChangePerspDetail();
@@ -528,6 +681,8 @@ void ChangeMouseSensitivity()
 	InterfaceStates.mouse.x_sens = stf(GameInterface.nodes.hmouse_sensitivity_slide.value);
 	InterfaceStates.mouse.y_sens = stf(GameInterface.nodes.vmouse_sensitivity_slide.value);
 	SetRealMouseSensitivity();
+	SetFormatedText("HMOUSE_SENSITIVITY_TEXT", its(makeint(makefloat(InterfaceStates.mouse.x_sens)*100)));
+	SetFormatedText("VMOUSE_SENSITIVITY_TEXT", its(makeint(makefloat(InterfaceStates.mouse.y_sens)*100)));
 }
 
 void ChangeVideoColor()
@@ -549,6 +704,9 @@ void ChangeVideoColor()
 			InterfaceStates.video.brightness = fBright;
 			XI_SetColorCorrection(fContrast,fGamma,fBright);
 	}
+	SetFormatedText("GAMMA_TEXT", its(makeint(fCurGamma*100)));
+	SetFormatedText("BRIGHTNESS_TEXT", its(makeint(fCurBright*100)));
+	SetFormatedText("CONTRAST_TEXT", its(makeint(fCurContrast*100)));
 }
 
 void ChangeSeaDetail()
@@ -559,6 +717,7 @@ void ChangeSeaDetail()
 		(stf(InterfaceStates.SeaDetails)!=fSeaDetail) ) {
 			InterfaceStates.SeaDetails = fSeaDetail;
 	}
+	SetFormatedText("SEA_DETAIL_TEXT", its(makeint(fSeaDetail*100)));
 }
 
 //#20171223-01 Camera perspective option
@@ -568,11 +727,9 @@ void ChangePerspDetail()
 	if( !CheckAttribute(&InterfaceStates,"PerspDetails") ||
 		(stf(InterfaceStates.PerspDetails)!=fCurPerspDetail) ) {
 			InterfaceStates.PerspDetails = fCurPerspDetail;
-			float fCamPersp = CalcSeaPerspective();
-            string sMsg = "#"+ FloatToString(fCamPersp, 3);
-            //PerspMax is 17 in coll.
-            SendMessage(&GameInterface,"lslls",MSG_INTERFACE_MSG_TO_NODE, "TITLES_STR", 1, 17, sMsg);
 	}
+	float fCamPersp = CalcSeaPerspective();
+	SetFormatedText("SEACAMPERSP_TEXT", FloatToString(fCamPersp,3)));
 }
 //#20190815-01
 void ChangePersp2Detail()
@@ -581,11 +738,9 @@ void ChangePersp2Detail()
 	if( !CheckAttribute(&InterfaceStates,"Persp2Details") ||
 		(stf(InterfaceStates.Persp2Details)!=fCurPerspDetail) ) {
 			InterfaceStates.Persp2Details = fCurPerspDetail;
-			float fCamPersp = CalcLandPerspective();
-            string sMsg = "#"+ FloatToString(fCamPersp, 3);
-            //PerspMax2 is 21 in coll.
-            SendMessage(&GameInterface,"lslls",MSG_INTERFACE_MSG_TO_NODE, "TITLES_STR", 1, 21, sMsg);
 	}
+	float fCamPersp = CalcLandPerspective();
+	SetFormatedText("LANDCAMPERSP_TEXT", FloatToString(fCamPersp,3)));
 }
 
 void ChangeRadDetail()
@@ -594,11 +749,9 @@ void ChangeRadDetail()
 	if( !CheckAttribute(&InterfaceStates,"RadDetails") ||
 		(stf(InterfaceStates.RadDetails)!=fCurPerspDetail) ) {
 			InterfaceStates.RadDetails = fCurPerspDetail;
-			float fCamPersp = CalcLandRadiusNew();
-            string sMsg = "#"+ FloatToString(fCamPersp, 1);
-            //CamRadMax is 24 in coll.
-            SendMessage(&GameInterface,"lslls",MSG_INTERFACE_MSG_TO_NODE, "TITLES_STR", 1, 24, sMsg);
 	}
+	float fCamPersp = CalcLandRadiusNew();
+	SetFormatedText("CAMDISTANCE_TEXT", FloatToString(fCamPersp,1)));
 }
 
 void ChangeSoundSetting()
@@ -607,6 +760,9 @@ void ChangeSoundSetting()
 	float fSound = stf(GameInterface.nodes.sound_slide.value);
 	float fDialog = stf(GameInterface.nodes.dialog_slide.value);
 	SendMessage(&sound,"lfff", MSG_SOUND_SET_MASTER_VOLUME, fSound,	fMusic,	fDialog);
+	SetFormatedText("MUSIC_TEXT", its(makeint(fMusic*100)));
+	SetFormatedText("SOUND_TEXT", its(makeint(fSound*100)));
+	SetFormatedText("DIALOG_TEXT", its(makeint(fDialog*100)));
 }
 
 void FillControlsList(int nMode)
@@ -648,20 +804,20 @@ bool AddToControlsList(int row, string sControl, string sKey, bool bRemapable)
 	GameInterface.controls_list.(rowname).userdata.remapable = bRemapable;
 	GameInterface.controls_list.(rowname).userdata.control = sControl;
 	GameInterface.controls_list.(rowname).userdata.key = sKey;
-	GameInterface.controls_list.(rowname).td2.str = LanguageConvertString(g_ControlsLngFile,sControl);
-	GameInterface.controls_list.(rowname).td2.textoffset = "2,-1";
-	if( GameInterface.controls_list.(rowname).td2.str == "" ) {
+	GameInterface.controls_list.(rowname).td1.str = LanguageConvertString(g_ControlsLngFile,sControl);
+	GameInterface.controls_list.(rowname).td1.textoffset = "0,2";
+	if( GameInterface.controls_list.(rowname).td1.str == "" ) {
 		trace("Warning!!! " + sControl + " hav`t translate value");
 	}
 	if( !bRemapable ) { // выделение контролок которые нельзя поменять
-		GameInterface.controls_list.(rowname).td2.color = argb(255,128,128,128);
+		GameInterface.controls_list.(rowname).td1.color = argb(255,128,128,128);
 	}
 	if( CheckAttribute(&objControlsState,"key_codes."+sKey+".img") )
 	{
-		GameInterface.controls_list.(rowname).td1.fontidx = 0;
-		GameInterface.controls_list.(rowname).td1.textoffset = "-2,-1";
-		GameInterface.controls_list.(rowname).td1.scale = 0.5;
-		GameInterface.controls_list.(rowname).td1.str = objControlsState.key_codes.(sKey).img;
+		GameInterface.controls_list.(rowname).td2.fontidx = 0;
+		GameInterface.controls_list.(rowname).td2.textoffset = "-1,-1";
+		GameInterface.controls_list.(rowname).td2.scale = 0.6;
+		GameInterface.controls_list.(rowname).td2.str = objControlsState.key_codes.(sKey).img;
 	}
 	return true;
 }
@@ -713,6 +869,7 @@ void GetVideoOptionsData()
 	//#20190815-01
 	float fE2 = 0.0;
 	float fR = 0.0;
+	int fDS = 0;
 
 	if( CheckAttribute(&InterfaceStates,"video.contrast") ) {
 		fC = stf(InterfaceStates.video.contrast);
@@ -726,6 +883,22 @@ void GetVideoOptionsData()
 
 	if( CheckAttribute(&InterfaceStates,"SeaDetails") ) {
 		fD = stf(InterfaceStates.SeaDetails);
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassDistanceLand") ) {
+		GameInterface.nodes.HERB_LAND_DISTANCE_SLIDE.value = stf(InterfaceStates.GrassDistanceLand);
+		SendMessage(&GameInterface,"lslf",MSG_INTERFACE_MSG_TO_NODE, "HERB_LAND_DISTANCE_SLIDE", 1, stf(GameInterface.nodes.HERB_LAND_DISTANCE_SLIDE.value));
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassDistanceSea") ) {
+		GameInterface.nodes.HERB_SEA_DISTANCE_SLIDE.value = stf(InterfaceStates.GrassDistanceSea);
+		SendMessage(&GameInterface,"lslf",MSG_INTERFACE_MSG_TO_NODE, "HERB_SEA_DISTANCE_SLIDE", 1, stf(GameInterface.nodes.HERB_SEA_DISTANCE_SLIDE.value));
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassCountLand") ) {
+		GameInterface.nodes.HERB_QUANTITY_SLIDE.value = stf(InterfaceStates.GrassCountLand);
+		SendMessage(&GameInterface,"lslf",MSG_INTERFACE_MSG_TO_NODE, "HERB_QUANTITY_SLIDE", 1, stf(GameInterface.nodes.HERB_QUANTITY_SLIDE.value));
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassCountSea") ) {
+		GameInterface.nodes.HERB_TRANSP_SLIDE.value = stf(InterfaceStates.GrassCountSea);
+		SendMessage(&GameInterface,"lslf",MSG_INTERFACE_MSG_TO_NODE, "HERB_TRANSP_SLIDE", 1, stf(GameInterface.nodes.HERB_TRANSP_SLIDE.value));
 	}
     //#20171223-01 Camera perspective option
 	if( CheckAttribute(&InterfaceStates,"PerspDetails") ) {
@@ -1053,7 +1226,7 @@ bool DoMapToOtherKey(int keyIdx,int stickUp)
 
 	CI_CreateAndSetControls( groupName,sControl,keyCode, state, true );
 	GameInterface.controls_list.(srow).userdata.key = arKey;
-	GameInterface.controls_list.(srow).td1.str = arKey.img;
+	GameInterface.controls_list.(srow).td2.str = arKey.img;
 	SendMessage( &GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "CONTROLS_LIST", 0 );
 	curkey = "";
 	blockkey = true;
@@ -1109,8 +1282,8 @@ void ShowSimpleOptionInfo(string sNode)
 			sHeader = XI_ConvertString("RegionsWorldmap");
 			sText1 = XI_ConvertString("RegionsWorldmap Mode_descr");
             sPicture = "INTERFACES\FaqPictures\SEA_REGIONS.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "SimpleSea":		//ПКМ для настроек простых внизу слева
 			sHeader = XI_ConvertString("SimpleSea");
@@ -1120,8 +1293,8 @@ void ShowSimpleOptionInfo(string sNode)
 			sHeader = XI_ConvertString("EnabledShipMarks");
 			sText1 = XI_ConvertString("ShipMark Mode_descr");
             sPicture = "INTERFACES\FaqPictures\SHIPMARK_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "EnabledAutoSaveMode":
 			sHeader = XI_ConvertString("EnabledAutoSaveMode");
@@ -1135,22 +1308,22 @@ void ShowSimpleOptionInfo(string sNode)
 			sHeader = XI_ConvertString("SpyglassTextures");
 			sText1 = XI_ConvertString("SpyglassTextures_desc");
             sPicture = "INTERFACES\FaqPictures\SPYGLASSTEX_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "HUDStyle":
 			sHeader = XI_ConvertString("HUDStyle");
 			sText1 = XI_ConvertString("HUDStyle_desc");
             sPicture = "INTERFACES\FaqPictures\HUDStyle_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "CannonsHUD":
 			sHeader = XI_ConvertString("CannonsHUD");
 			sText1 = XI_ConvertString("CannonsHUD_desc");
             sPicture = "INTERFACES\FaqPictures\CannonsHUD_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "ShowBoardMode":
 			sHeader = XI_ConvertString("ShowBoardMode");
@@ -1177,22 +1350,22 @@ void ShowSimpleOptionInfo(string sNode)
 			sHeader = XI_ConvertString("AltIntIcons");
 			sText1 = XI_ConvertString("AltIntIcons_desc");
             sPicture = "INTERFACES\FaqPictures\ALT_INT_ICONS_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "EnabledQuestsMarks":
 			sHeader = XI_ConvertString("EnabledQuestsMarks");
 			sText1 = XI_ConvertString("QuestMark Mode_descr");
             sPicture = "INTERFACES\FaqPictures\QUESTMARK_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "EnabledFXMarks":
 			sHeader = XI_ConvertString("EnabledFXMarks");
 			sText1 = XI_ConvertString("FXMark Mode_descr");
             sPicture = "INTERFACES\FaqPictures\FXMARK_CHECKBOX.dds";
-			xx = 448;
-			yy = 448;
+			xx = 256;
+			yy = 256;
 		break;
 		case "EnabledCMControls":
 			sHeader = XI_ConvertString("EnabledCMControls");
@@ -1209,6 +1382,13 @@ void ShowSimpleOptionInfo(string sNode)
 			sHeader = XI_ConvertString("EnabledAltSoundsGun");
 			sText1 = XI_ConvertString("AltSoundsGun_descr");
             PlayVoice("CSR\GUNSFIRE_ALT\Fort_cannon_0"+rand(5)+".wav");
+		break;
+		case "ShowExpLogs":
+			sHeader = XI_ConvertString("ShowExpLogs");
+			sText1 = XI_ConvertString("ShowExpLogs_descr");
+            sPicture = "INTERFACES\FaqPictures\SHOWEXPLOGS.dds";
+			xx = 256;
+			yy = 256;
 		break;
 	}
 
@@ -1242,19 +1422,38 @@ void ShowInfo()
 			sHeader = XI_ConvertString("Contrast");
 			sText1 = XI_ConvertString("Contrast_descr");
 		break;
+		case "LAND_DETAILS_SLIDE":
+			sHeader = XI_ConvertString("Land Detail");
+			sText1 = XI_ConvertString("Land Detail_descr");
+			sText2 = XI_ConvertString("ItCanRedusePerfomance");
+			sText3 = XI_ConvertString("NeedToExitFromLand");
+		break;
 		case "SEA_DETAILS_SLIDE":
 			sHeader = XI_ConvertString("Sea Detail");
 			sText1 = XI_ConvertString("Sea Detail_descr");
 			sText2 = XI_ConvertString("ItCanRedusePerfomance");
 			sText3 = XI_ConvertString("NeedToExitFromSea");
 		break;
-
-		case "HERB_CHECKBOX":
+		case "HERB_LAND_DISTANCE_SLIDE":
+            sHeader = XI_ConvertString("Herb Land Distance");
+            sText1 = XI_ConvertString("Herb Land Distance_descr");
+            sText2 = XI_ConvertString("Herb Distance_warning");
+        break;
+		case "HERB_SEA_DISTANCE_SLIDE":
+            sHeader = XI_ConvertString("Herb Sea Distance");
+            sText1 = XI_ConvertString("Herb Sea Distance_descr");
+            sText2 = XI_ConvertString("Herb Distance_warning");
+        break;
+		case "HERB_QUANTITY_SLIDE":
             sHeader = XI_ConvertString("Herb Quantity");
             sText1 = XI_ConvertString("Herb Quantity_descr");
+            sText2 = XI_ConvertString("Herb Distance_warning");
+        break;
+		case "HERB_TRANSP_SLIDE":
+            sHeader = XI_ConvertString("Herb Sea Transp");
+            sText1 = XI_ConvertString("Herb Sea Transp_descr");
             sText2 = XI_ConvertString("ItCanRedusePerfomance");
         break;
-
 		case "MUSIC_SLIDE":
 			sHeader = XI_ConvertString("Music Volume");
 			sText1 = XI_ConvertString("Music Volume_descr");
@@ -1316,12 +1515,18 @@ void ShowInfo()
 			xx = 570;
 			yy = 494;
 		break;
+		case "HUD_DIALOG_BACK":
+			sHeader = XI_ConvertString("Hud Dialog");
+			sText1 = XI_ConvertString("Hud Dialog_descr");
+            sPicture = "INTERFACES\FaqPictures\HUD_DIALOG_SLIDE.dds";
+			xx = 512;
+			yy = 256;
+		break;
 		case "PARTICLES_CHECKBOX":
 			sHeader = XI_ConvertString("Particles_title");
 			sText1 = XI_ConvertString("Particles_descr");
 		break;
 
-		//#20171223-01 Camera perspective option
 		case "CAM_PERSP_SLIDE":
 			sHeader = XI_ConvertString("cameraPersp_title");
 			sText1 = XI_ConvertString("cameraPersp_desc");
@@ -1427,4 +1632,56 @@ void ChangeHUDDetail()
 	newBase = CalcHUDBase(sl, stf(Render.screen_y));
 	fHUDRatio = stf(Render.screen_y) / newBase;
 	SetFormatedText("HUD_DESCRIP_TEXT", Render.screen_y + "  / " + round(newBase) + " : " + roundFloat(fHUDRatio));
+	if (roundFloat(fHUDRatio) != roundFloat(stf(Render.screen_y) / 900.0)) SetSelectable("HUD_SCALE_DEFAULT",true);
+	else SetSelectable("HUD_SCALE_DEFAULT",false);
+}
+
+void ChangeDialogStyle(bool way)
+{
+	int value = sti(InterfaceStates.DialogStyle);
+	if (way)
+	{
+		value++;
+	}
+	else
+	{
+		value--;
+	}
+	if (value < 1) value = 5;
+	else if (value > 5) value = 1;
+	InterfaceStates.DialogStyle = its(value);
+	SetFormatedText("HUD_DIALOG_TEXT", InterfaceStates.DialogStyle);
+}
+
+void ChangeGrassDistanceLand()
+{
+    float gds = stf(GameInterface.nodes.HERB_LAND_DISTANCE_SLIDE.value)
+	float maxd = gds*500.0;
+	InterfaceStates.GrassDistanceLand = gds;
+	SetFormatedText("HERB_LAND_DISTANCE_TEXT", ""+makeint(maxd));
+}
+
+void ChangeGrassDistanceSea()
+{
+    float gds = stf(GameInterface.nodes.HERB_SEA_DISTANCE_SLIDE.value)
+	float maxd = gds*4000.0;
+	InterfaceStates.GrassDistanceSea = gds;
+	SetFormatedText("HERB_SEA_DISTANCE_TEXT", ""+makeint(maxd));
+}
+
+void ChangeGrassCountLand()
+{
+    float gds = stf(GameInterface.nodes.HERB_QUANTITY_SLIDE.value)
+	float maxd = gds*100;
+	InterfaceStates.GrassCountLand = gds;
+	SetFormatedText("HERB_QUANTITY_TEXT", ""+makeint(maxd));
+}
+
+
+void ChangeGrassCountSea()
+{
+    float gds = stf(GameInterface.nodes.HERB_TRANSP_SLIDE.value)
+	float maxd = gds*100;
+	InterfaceStates.GrassCountSea = gds;
+	SetFormatedText("HERB_TRANSP_TEXT", ""+makeint(maxd));
 }

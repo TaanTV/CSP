@@ -10,7 +10,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore65";
 	locations[n].id.label = "Shore65";
-	locations[n].image = "loading\jonny_load\shores\Shore06.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore06.dds";
 	locations[n].worldmap = "StLucia";
 	//Sound
 	locations[n].type = "seashore";
@@ -65,7 +65,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "StLucia_Jungle_09";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle9.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle9.dds";
 	//Sound
 	locations[n].type = "Jungle";
 	locations[n].islandId = "StLucia";
@@ -121,7 +121,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "StLucia_Jungle_10";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle10.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle10.dds";
 	//Sound
 	locations[n].type = "Jungle";
 	locations[n].islandId = "StLucia";
@@ -172,7 +172,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "StLucia_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\caveEnt1.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "StLucia";
@@ -220,7 +220,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Ruins";
 	locations[n].id.label = "Ruins";
-	locations[n].image = "loading\jonny_load\outside\Ruins.tga";
+	locations[n].image = "loading\jonny_load\outside\Ruins.dds";
 	//Sound
 	locations[n].type = "questisland";
 	locations[n].islandId = "StLucia";
@@ -270,7 +270,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "dungeon_02";
 	locations[n].id.label = "dungeon";
-	locations[n].image = "loading\jonny_load\inside\DungeonVault2.tga";
+	locations[n].image = "loading\jonny_load\inside\DungeonVault2.dds";
 	//Sound
 	locations[n].type = "dungeon";
 	locations[n].islandId = "StLucia";
@@ -319,7 +319,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore66";
 	locations[n].id.label = "Shore66";
-	locations[n].image = "loading\jonny_load\shores\Shore11.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore11.dds";
 	locations[n].worldmap = "StLucia";
 	//Sound
 	locations[n].type = "seashore";
@@ -400,7 +400,7 @@ int LocationInitStLucia(int n)
 	locations[n].id = "SantaQuiteriaInside";
 	locations[n].id.label = "SantaQuiteriaInside";
 	locations[n].filespath.models = "locations\Inside\squit";
-	locations[n].image = "loading\jonny_load\quest\externalringinside.tga";
+	locations[n].image = "loading\jonny_load\quest\externalringinside.dds";
 	//Town sack
 	locations[n].lockWeather = "Inside";
 	//Sound
@@ -473,7 +473,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "StLucia_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\jonny_load\inside\grotto1.tga";
+    locations[n].image = "loading\jonny_load\inside\grotto1.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "StLucia";
@@ -519,7 +519,7 @@ int LocationInitStLucia(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "StLucia_GrotKNS";
 	locations[n].id.label = "Grot";
-	locations[n].image = "loading\jonny_load\inside\grotto3.tga";
+	locations[n].image = "loading\jonny_load\inside\grotto3.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "StLucia";

@@ -659,23 +659,23 @@ Variable_character_all_26
 Variable_character_all_27
 {#space#units}
 Variable_character_all_28
-{#space#sec.}
+{#space#s.}
 Variable_character_all_29
-{sec.}
+{s.}
 Variable_character_all_30
-{sec.}
+{s.}
 Variable_character_all_31
-{sec.}
+{s.}
 Variable_character_all_32
-{sec.}
+{s.}
 Variable_character_all_33
-{sec.}
+{s.}
 Variable_character_all_34
-{sec.}
+{s.}
 Variable_character_all_35
-{sec.}
+{s.}
 Variable_character_all_36
-{sec.}
+{ATTACK TYPES}
 Variable_character_all_37
 {threshold of experience}
 Variable_character_all_37.1
@@ -2538,6 +2538,8 @@ Variable_itemstrade_48
 {, Idols#space#}
 Variable_itemstrade_49
 {, Junk#space#}
+Variable_itemstrade_50
+{got from cabin chest#space#}
 Variable_LeaveBattle_1
 {Our ship#space#}
 Variable_LeaveBattle_2
@@ -3623,11 +3625,11 @@ Variable_shipyard1_18
 Variable_shipyard1_19
 {#space#(an English patent is needed)}
 Variable_shipyard1_20
-{(a Spanish patent is needed)}
+{#space#(a Spanish patent is needed)}
 Variable_shipyard1_21
-{#space#(a Fran patetnt is needed)}
+{#space#(a Frеnch patent is needed)}
 Variable_shipyard1_22
-{(a patent is needed)}
+{#space#(a Dutch patent is needed)}
 Variable_shipyard1_23
 {Order}
 Variable_shipyard1_24

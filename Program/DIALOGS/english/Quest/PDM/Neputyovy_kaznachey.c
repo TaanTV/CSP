@@ -76,12 +76,14 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 			NextDiag.TempNode = "Fickler_7";
 
-			sld = GetCharacter(NPC_GenerateCharacter("PDM_NK_Viktor", "officer_15", "man", "man", 10, PIRATE, -1, false));
+			if (MOD_SKILL_ENEMY_RATE == 3 && bHardAnimations) sld = GetCharacter(NPC_GenerateCharacter("PDM_NK_Viktor", "officer_15", "man", "man_fast", 10, PIRATE, -1, false));
+			else sld = GetCharacter(NPC_GenerateCharacter("PDM_NK_Viktor", "officer_15", "man", "man", 10, PIRATE, -1, false));
 			sld.name = "Victor";
 			sld.lastname = "Bretier";
 			FreeSitLocator("Villemstad_tavern", "sit12");
 			sld.city = "Villemstad";
 			sld.location	= "Villemstad_tavern";
+			if (bHardBoss) sld.AlwaysReload = true;//перезарядка независимо от Дозарядки
 			sld.location.group = "sit";
 			sld.location.locator = "sit12";
 			LAi_SetSitType(sld);

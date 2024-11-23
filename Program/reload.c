@@ -226,7 +226,7 @@ int Reload(aref reload_group, string locator_name, string current_location)
 	{
 		if(!CheckAttribute(mc, "todeck"))
 		{
-			pchar.loadscreen = "loading\jonny_load\port\port_" + rand(4) + ".tga";
+			pchar.loadscreen = "loading\jonny_load\port\port_" + rand(4) + ".dds";
 		}
 		else
 		{
@@ -245,7 +245,7 @@ int Reload(aref reload_group, string locator_name, string current_location)
 				if (sGlobalTemp == "afterFDsink")
 				{
 				    //Boyer add #20170401-02
-                    pchar.loadscreen = "loading\jonny_load\load\lifeboat.tga";
+                    pchar.loadscreen = "loading\jonny_load\load\lifeboat.dds";
 					sGlobalTemp = "";
 				}
 				else
@@ -346,6 +346,19 @@ void ReloadStartFade()
 
 void ReloadEndFade()
 {
+	int z; //блок очищения "кэша" опыта. Это необязательно на самом деле, но просто особо негде присвоить эти переменные, а в батле или ланде нельзя
+	string EXP;
+	for (z = 1; z < 11; z++) 
+	{
+		EXP = "EXP"+z;
+		pchar.BIEXP.(EXP) = "";
+	}
+	for (z = 1; z < 9; z++) 
+	{
+		EXP = "EXP"+z;
+		pchar.LIEXP.(EXP) = "";
+	}
+	
     EmptyAllFantomCharacter(); // fix место тут!!!! а не выше, вот вам и баги по квестам, блин boal
     PGG_DailyUpdateReload();
     Siege_DailyUpdate();//homo осады 05/11/06

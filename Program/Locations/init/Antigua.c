@@ -21,7 +21,7 @@ int LocationInitAntigua(int n)
 	locations[n].islandId = "Antigua";
 
 	locations[n].filespath.models = "locations\Town_Antigua\Town\";
-	locations[n].image = "loading\jonny_load\city\Town_Antigua.tga";
+	locations[n].image = "loading\jonny_load\city\Town_Antigua.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -239,7 +239,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\tavern02\";
-	locations[n].image = "loading\jonny_load\inside\Tavern02.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern02.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "SentJons";
@@ -299,7 +299,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "SentJons_tavern_upstairs";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -341,7 +341,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store03\";
-	locations[n].image = "loading\jonny_load\inside\store03.tga";
+	locations[n].image = "loading\jonny_load\inside\store03.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -388,7 +388,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard02\";
-	locations[n].image = "loading\jonny_load\inside\shipyard02.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard02.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -434,7 +434,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\jonny_load\inside\residence01.tga";
+	locations[n].image = "loading\jonny_load\inside\residence01.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -487,7 +487,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "SentJons_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\churchInside1.tga";
+	locations[n].image = "loading\jonny_load\inside\churchInside1.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -530,7 +530,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\Bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -575,7 +575,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "SentJons_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\PortOffice4.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice4.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -618,7 +618,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_HouseF3";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "Morgan's House";
-	locations[n].image = "loading\jonny_load\inside\flamhouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";
@@ -674,7 +674,7 @@ int LocationInitAntigua(int n)
 
 	//////////////////////////  Вход в подземелье Антигуа
 	locations[n].id = "SentJons_TownCave";
-	locations[n].image = "loading\jonny_load\inside\DungeonDuffer1.tga";
+	locations[n].image = "loading\jonny_load\inside\DungeonDuffer1.dds";
 	locations[n].id.label = "Dungeon";
 	//Sound
 	locations[n].townsack = "SentJons";
@@ -721,7 +721,7 @@ int LocationInitAntigua(int n)
     locations[n].id = "SentJons_ExitTown";
 	locations[n].fastreload = "Villemstad";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitY.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitY.dds";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	//Sound
@@ -784,7 +784,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Antigua_Jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle4.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle4.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Antigua";
@@ -839,7 +839,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Antigua_jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle5.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle5.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Antigua";
@@ -894,7 +894,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Antigua_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Antigua";
@@ -942,7 +942,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Antigua_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\jonny_load\inside\grotto1.tga";
+    locations[n].image = "loading\jonny_load\inside\grotto1.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "Antigua";
@@ -985,7 +985,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore1";
 	locations[n].id.label = "Shore1";
-	locations[n].image = "loading\jonny_load\shores\Shore01_Shore04.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore01_Shore04.dds";
 	locations[n].worldmap = "Shore1";
 	//Sound
 	locations[n].type = "seashore";
@@ -1038,7 +1038,7 @@ int LocationInitAntigua(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore2";
 	locations[n].id.label = "Shore2";
-	locations[n].image = "loading\jonny_load\shores\Shore02.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore02.dds";
 	locations[n].worldmap = "Shore2";
 	//Sound
 	locations[n].type = "seashore";

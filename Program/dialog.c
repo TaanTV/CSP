@@ -108,7 +108,9 @@ void StartDialogMain()
 	if(startDialogMainCounter < 3) return;
 
 	DelEventHandler("frame", "StartDialogMain");
-
+	/* Передаем новый путь к текстуре */
+	string str = "dialog\\" + "dialog" + InterfaceStates.DialogStyle + ".dds";
+	Dialog.backgroundTexture = str;
 	CreateEntity(&Dialog, "dialog");
 	Dialog.headModel = CharacterRef.headModel;
 	Dialog.gender = CharacterRef.sex;

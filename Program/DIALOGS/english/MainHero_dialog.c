@@ -492,16 +492,6 @@ void ProcessDialogEvent()
 	    	}
 			Link.l10 = "Prioritize the use of food.";
 	    	Link.l10.go = "food_priority";
-			if (pchar.location == Get_My_Cabin())
-			{
-				Link.l11 = "Use food automatically.";
-				Link.l11.go = "autofood";
-				if(CheckAttribute(pchar, "autofood"))
-				{
-					Link.l11 = "Stop using food automatically.";
-					Link.l11.go = "autofood_stop";
-				}
-			}
 			if (CheckAttribute(pchar, "usepotionbest"))
 			{
 				link.lpotion = "Remove the priority for the use of the best medicinal goods.";
@@ -879,7 +869,7 @@ void ProcessDialogEvent()
 			rLoc.id = "DesMoines_bank";
 			rLoc.id.label = "Usurer House";
 			rLoc.filespath.models = "locations\inside\Pirate_House";
-			rLoc.image = "loading\jonny_load\inside\bank03.tga";
+			rLoc.image = "loading\jonny_load\inside\bank03.dds";
 			rLoc.type = "shop";
 			rLoc.fastreload = "DesMoines";
 			rLoc.models.always.locators = "PirH_l";

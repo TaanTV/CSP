@@ -118,7 +118,7 @@ void ProcessDialogEvent()
             }
 
 			//aw013 --> Найм на постоянку
-			bool bOk = !CheckAttribute(PChar, "questTemp.MunityOfficerIDX") ||  sti(PChar.questTemp.MunityOfficerIDX) != GetCharacterIndex(NPChar.id);
+			bool bOk = !CheckAttribute(PChar, "questTemp.MunityOfficerID") || PChar.questTemp.MunityOfficerID != NPChar.id;
 			if (!bHalfImmortalPGG)
 			{
 				if (!CheckAttribute(NPChar, "OfficerWantToGo.DontGo"))
@@ -720,6 +720,8 @@ void ProcessDialogEvent()
 			Diag.CurrentNode = Diag.TempNode;
 			NPChar.quest.meeting = true;
 			DialogExit();
+			npchar.SystemInfo.ChangePIRATES = true; //пояснение касательно респека. нужно ставить в функцию ниже реф на офицера
+			LaunchCharacter(npchar); //в некоторых случаях он не совпадает с персонажем, с которым идёт диалог, так что нужно внимание
 		break;
 
 		case "exit_fire":
@@ -1027,10 +1029,10 @@ void ProcessDialogEvent()
 		///////////////////////////////////////////////////////////////////////////////////
 		case "WantToGo_Munity":	//zagolski. отыгрыш бегство офицера
 			Diag.TempNode = "Hired";
-			if (sti(Pchar.questTemp.MunityOfficerIDX) != GetCharacterIndex(Npchar.id))
+			if (!CheckAttribute(PChar, "questTemp.MunityOfficerID") || PChar.questTemp.MunityOfficerID != NPChar.id)
 			{
-				Pchar.questTemp.MunityOfficerIDX = GetCharacterIndex(Npchar.id);
-				Pchar.questTemp.MunityOfficerIDX.begin = "1";
+				Pchar.questTemp.MunityOfficerID = Npchar.id;
+				Pchar.questTemp.MunityOfficerID.begin = "1";
 				SetFunctionTimerCondition("mOfficer_fc", 0, 0, 1, false);
 			}
 			Diag.CurrentNode = Diag.TempNode;

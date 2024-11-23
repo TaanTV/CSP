@@ -1139,7 +1139,7 @@ void ProcessDialogEvent()
 
 		case "ColonyBuilding_AutoStore_1":
 			PChar.ColonyBuilding.AutoPurchaseFirst.Disable = true;
-			dialog.Text = "При действующем магазине вы можете обеспечить автоматическую закупку товаров первой необходимости, чтобы живущие в колонии горожане и охраняющий колонию гарнизон могли своевременно получать медикаменты и провиант \n Обратитесь к нашему торговцу, если вас это заинтересовало.";
+			dialog.Text = "При действующем магазине вы можете обеспечить автоматическую закупку товаров первой необходимости, чтобы живущие в колонии горожане и охраняющий колонию гарнизон могли своевременно получать медикаменты и провиант \nОбратитесь к нашему торговцу, если вас это заинтересовало.";
 			Link.l1 = "Интересно. Давай поговорим о другом.";
 			Link.l1.go = "ColonyBuilding_Hovernor_3";
 		break;
@@ -1789,7 +1789,6 @@ void ProcessDialogEvent()
 		case "Mary_brothel_8":
 			DialogExit();
 			SetLaunchFrameFormParam("Прошло несколько минут", "", 0, 5);
-			//SetLaunchFrameFormPic("loading\inside\kiss.tga");
 			LaunchFrameForm();
 			pchar.GenQuest.BrothelLock = true; // всё, больше не походишь по борделям :)
 			DeleteAttribute(pchar, "GenQuest.BrothelCount");

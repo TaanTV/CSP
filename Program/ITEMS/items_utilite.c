@@ -44,7 +44,7 @@ bool EnableFoodUsing(ref mc, aref arItm)
 	}
 	if(CheckAttribute(mc,"chr_ai.noeat"))
 	{
-		if(sti(mc.index)==GetMainCharacterIndex() && !CheckAttribute(pchar, "autofood") && !CheckAttribute(pchar, "query_delay"))
+		if(sti(mc.index)==GetMainCharacterIndex() && !CheckAttribute(pchar, "autofood"))
 		{
 			if (CheckAttribute(pchar, "pressedFoodButton"))
 			{
@@ -53,14 +53,12 @@ bool EnableFoodUsing(ref mc, aref arItm)
 				if (!CheckAttribute(pchar, "foodquery"))
 				{
 					pchar.foodquery = 1;
-					pchar.query_delay = 0.1;
 					Log_SetStringToLog(GetConvertStrWithReplace("Variable_items_utilite_1", "Logs.txt", "#space#", " "));
 					Log_SetStringToLog(GetConvertStrWithReplace("Variable_items_utilite_2", "Logs.txt", "#space#", " ")+pchar.foodquery);
 				}
 				else
 				{
 					pchar.foodquery = sti(pchar.foodquery)+1;
-					pchar.query_delay = 0.1;
 					Log_SetStringToLog(GetConvertStrWithReplace("Variable_items_utilite_3", "Logs.txt", "#space#", " "));
 					Log_SetStringToLog(GetConvertStrWithReplace("Variable_items_utilite_4", "Logs.txt", "#space#", " ")+pchar.foodquery);
 				}
@@ -75,13 +73,51 @@ void DoCharacterUsedFood(ref chref, string itmID)
 {
 	aref arItm;
 	
-	if(strlen(itmID) < 1 || CheckAttribute(chref,"chr_ai.Swift") || !CanBeUseFood(chref)){
+	if(strlen(itmID) < 1 || CheckAttribute(chref,"chr_ai.Swift")){
 		return;
 	}
-	int iItem = Items_FindItem(itmId, &arItm);
+	if( Items_FindItem(itmID,&arItm) < 0 ) {
+		return; 
+	}
 	TakeItemFromCharacter(chref,itmID);
-	chref.chr_ai.noeat = 10.0;
-	LAi_UseEnergyBottle(chref,stf(arItm.Food.energy));
+	//chref.chr_ai.noeat = 10.0;
+
+	float fFoodEnergy = stf(arItm.Food.energy);
+	float fFoodEnergySPD = stf(arItm.Food.energy.speed);
+	int iFoodEnergySPD2X = MakeInt(2 * fFoodEnergySPD);//для корректной работы ифа
+	if(fFoodEnergy <= 0) {
+		return;
+	}
+
+	float fEnergy = stf(chref.chr_ai.energy);
+	float fEnergyMax = stf(chref.chr_ai.energyMax);
+	if (fEnergy >= fEnergyMax) {
+		return;
+	}
+	int iQueryIndex = 0;
+	string sQueryIndex = ""+iQueryIndex;
+	if(!CheckAttribute(chref, "chr_ai.FoodEnergySPD."+sQueryIndex)) {//первая пошла 
+		chref.chr_ai.FoodEnergySPD.(sQueryIndex) = fFoodEnergySPD;
+		chref.chr_ai.FoodEnergy.(sQueryIndex) = fFoodEnergy;
+	}
+	else {
+		while (MakeInt(2 * stf(chref.chr_ai.FoodEnergySPD.(sQueryIndex))) !=  iFoodEnergySPD2X) {	
+			iQueryIndex++;
+			sQueryIndex = ""+iQueryIndex;
+			if(!CheckAttribute(chref, "chr_ai.FoodEnergy."+sQueryIndex)) {//активен ли след слот
+				chref.chr_ai.FoodEnergySPD.(sQueryIndex) = fFoodEnergySPD;
+			}
+		}
+		if(MakeInt(2 * stf(chref.chr_ai.FoodEnergySPD.(sQueryIndex))) ==  iFoodEnergySPD2X) {
+			chref.chr_ai.FoodEnergy.(sQueryIndex) = stf(chref.chr_ai.FoodEnergy.(sQueryIndex)) + fFoodEnergy;
+		}
+		if(!CheckAttribute(chref, "chr_ai.FoodEnergy."+sQueryIndex)) {
+			chref.chr_ai.FoodEnergy.(sQueryIndex) = "0";
+		}
+	}
+	//Log_Info("fFoodEnergySPD:"+chref.chr_ai.FoodEnergySPD.(sQueryIndex));
+	//chref.chr_ai.foodEnrg = stf(chref.chr_ai.foodEnrg) + fFoodEnergy;
+
 	if(sti(chref.index)==GetMainCharacterIndex())
 	{
 		Log_SetStringToLog(XI_ConvertString("Energy Up"));
@@ -111,20 +147,38 @@ void DoCharacterUsedItem(ref chref, string itmID)
 	 // Warship 13.06.09 fix - если только отравлен, а жизни полные (а такое бывает), то нечего и строку в лог выводить об прибавлении жизней
 	if(CheckAttribute(arItm,"potion.health") && LAi_GetCharacterHP(chref) < LAi_GetCharacterMaxHP(chref))
 	{
-		LAi_UseHealthBottle(chref,stf(arItm.potion.health));
+		//список разных активных хилок
+		int iItemHealSpeed = sti(arItm.potion.health.speed);
+		float fItemHealAmt = stf(arItm.potion.health);
+		int iQueryIndex = 0;
+		string sQueryIndex = ""+iQueryIndex;//строка длиной 1 символ === молния маккуин
+		if(!CheckAttribute(chref, "chr_ai.hp_dlt_bottle."+sQueryIndex)) {//первая пошла 
+			chref.chr_ai.hp_dlt_bottle.(sQueryIndex) = iItemHealSpeed;
+			chref.chr_ai.hp_bottle.(sQueryIndex) = fItemHealAmt;
+		}
+		else {
+			while (sti(chref.chr_ai.hp_dlt_bottle.(sQueryIndex)) != iItemHealSpeed) {	
+				iQueryIndex++;
+				sQueryIndex = ""+iQueryIndex;
+				if(!CheckAttribute(chref, "chr_ai.hp_bottle."+sQueryIndex)) {//активен ли след слот
+					chref.chr_ai.hp_dlt_bottle.(sQueryIndex) = iItemHealSpeed;
+				}
+			}
+			if(chref.chr_ai.hp_dlt_bottle.(sQueryIndex) == iItemHealSpeed) {
+				chref.chr_ai.hp_bottle.(sQueryIndex) = stf(chref.chr_ai.hp_bottle.(sQueryIndex)) + fItemHealAmt;
+			}
+			if(!CheckAttribute(chref, "chr_ai.hp_bottle."+sQueryIndex)) {
+				chref.chr_ai.hp_bottle.(sQueryIndex) = "0";
+			}
+		}
+		//Log_info("chref.chr_ai.hp_dlt_bottle."+sQueryIndex+":"+chref.chr_ai.hp_dlt_bottle.(sQueryIndex)+" arItm.potion.health:"+sti(arItm.potion.health)+" chref.chr_ai.hp_bottle."+sQueryIndex+":"+chref.chr_ai.hp_bottle.(sQueryIndex));
+		//список разных активных хилок конец
+
 		if(sti(chref.index)==GetMainCharacterIndex()) {
 			Log_SetStringToLog( XI_ConvertString("Health Up")+" ("+GetConvertStr(arItm.name, "ItemsDescribe.txt")+")");
 			PlaySound("interface\_Glotok_"+rand(3)+".wav");
-		}
-		// boal
-		if( CheckAttribute(arItm,"potion.health.speed") )
-		{
-			LAi_UseHealthBottleSpeed(chref, stf(arItm.potion.health.speed));
-		}
-		if(sti(chref.index)==GetMainCharacterIndex())
-		{
-			pchar.questTemp.healcount = sti(pchar.questTemp.healcount) + 1;
 
+			pchar.questTemp.healcount = sti(pchar.questTemp.healcount) + 1;
 			// Открываем достижения
 			if(sti(pchar.questTemp.healcount) >= 50) UnlockAchievement("heal_bottles", 1);
 			if(sti(pchar.questTemp.healcount) >= 100) UnlockAchievement("heal_bottles", 2);
@@ -199,22 +253,20 @@ string FindHealthForCharacter(ref chref,float fHealth)
 
 	for(int n=0; n<ITEMS_QUANTITY; n++)
 	{
-		if( CheckAttribute(&Items[n],"potion") )
-		{
-			if( CheckAttribute(&Items[n],"potion.health") )
-			{
-				if( GetCharacterItem(chref,Items[n].id)>0 )
-				{
-					ftmp = stf(Items[n].potion.health);
-					if( ftmp<fHealth )	{ftmp = fHealth - ftmp;}
-					else	{ftmp = ftmp - fHealth;}
-					if(ftmp<fdelta)
-					{
-						fdelta = ftmp;
-						sret = Items[n].id;
-					}
-				}
+		if(CheckAttribute(&Items[n],"potion.health") && GetCharacterItem(chref,Items[n].id) > 0) {
+			sret = Items[n].id;
+/*			ftmp = stf(Items[n].potion.health);
+			if(ftmp < fHealth) {
+				ftmp = fHealth - ftmp;
 			}
+			else {
+				ftmp = ftmp - fHealth;
+			}
+			if(ftmp < fdelta) {
+				fdelta = ftmp;
+				sret = Items[n].id;
+			}
+*/
 		}
 	}
 

@@ -506,7 +506,7 @@ void LoadGame()
 
 	CreateEntity(&LanguageObject,"obj_strservice");
 	CreateEntity(&reload_fader, "fader");
-	SendMessage(&reload_fader, "ls",FADER_PICTURE0, "loading\jonny_load\load\load_03.tga");
+	SendMessage(&reload_fader, "ls",FADER_PICTURE0, "loading\jonny_load\load\load_3.dds");
 	SendMessage(&reload_fader, "lfl", FADER_IN, RELOAD_TIME_FADE_IN, true);
 	ReloadProgressStart();
 	pchar.savegamename = saveName;
@@ -903,6 +903,19 @@ void OnLoad()
         Sound_OnSeaAlarm555(seaAlarmed, true);
 
 	iCalculateSaveLoadCount("Load");
+	
+	int z; //блок очищения "кэша" опыта. Это необязательно на самом деле, но просто особо негде присвоить эти переменные, а в батле или ланде нельзя
+	string EXP;
+	for (z = 1; z < 11; z++) 
+	{
+		EXP = "EXP"+z;
+		pchar.BIEXP.(EXP) = "";
+	}
+	for (z = 1; z < 9; z++) 
+	{
+		EXP = "EXP"+z;
+		pchar.LIEXP.(EXP) = "";
+	}
 /*	временно отключено. нет времени разбираться. 
 	//делаем квиксейв, если в профиле пусто. Такое бывает при загрузке чужого сейва, так как в нём другое имя профиля. для проверки баг-репортов
 	//если у нас уже был профиль с таким же именем и сейвами в нём, квиксейв не добавится, это и баг и фича - не добавится посторонних сейвов в нашем прохождении
@@ -923,7 +936,7 @@ void NewGame()
 
 	CreateEntity(&LanguageObject,"obj_strservice");
 	CreateEntity(&reload_fader, "fader");
-	SendMessage(&reload_fader, "ls",FADER_PICTURE0, "loading\jonny_load\load\load_03.tga");
+	SendMessage(&reload_fader, "ls",FADER_PICTURE0, "loading\jonny_load\load\load_3.dds");
 	SendMessage(&reload_fader, "lfl", FADER_IN, RELOAD_TIME_FADE_IN, true);
 
 	bYesBoardStatus=false;
@@ -1205,6 +1218,13 @@ void ProcessControls()
 				}
 			}
 			break;
+			case "GoCabin":
+				if (isShipInside(pchar.location) || CheckShipSituation_GenQuest())
+				{
+					Return2SeaAfterCabin();
+				}
+				return;
+			break;
 /*		    // boal -->
             case "ChrBackward": //ChrStrafeLeft ChrStrafeRight
                 if (bLandInterfaceStart && LAi_IsFightMode(pchar))
@@ -1294,7 +1314,15 @@ void ProcessControls()
 					{
 						ActivateCharacterPerk(pchar, "Rush");
 						PlayVoice(GetSexPhrase("interface\Bers_"+rand(5)+".wav","interface\Bersf_"+rand(4)+".wav"));
-						pchar.chr_ai.energy    = pchar.chr_ai.energyMax;
+						int iQueryIndex = 0;
+						string sQueryIndex = ""+iQueryIndex;
+						float fEnergyMax = pchar.chr_ai.energyMax;
+						while(CheckAttribute(pchar, "chr_ai.FoodEnergy."+sQueryIndex)){
+							iQueryIndex++;
+							sQueryIndex = ""+iQueryIndex;
+						}
+						pchar.chr_ai.FoodEnergy.(sQueryIndex) = 0.8 * fEnergyMax;//100% - 1...5%(existing energy) - 10-15% (regen)
+						pchar.chr_ai.FoodEnergySPD.(sQueryIndex) = 0.08 * fEnergyMax;//0.1 * pchar.chr_ai.FoodEnergy.(sQueryIndex)
 					}
 					else
                     {
@@ -1653,6 +1681,11 @@ void ProcessControls()
 			// if (bBettaTestMode) LaunchPaperMapScreen();
 			if(CheckCharacterItem(PChar, "Map_Best") || bBettaTestMode) LaunchBestMapScreen();
 		break;
+		
+		case "DropMine":
+			if (bSeaActive && !bAbordageStarted && GetCargoGoods(PChar, GOOD_POWDER) >= 200) SetMineFree(PChar, 1); // fix ugeen 21.12.13
+			else PlaySound("interface\knock.wav");
+		break;
 
 		// --> ugeen
 		case "MapView":
@@ -1753,7 +1786,15 @@ void ProcessControls()
 				{
 					ActivateCharacterPerk(pchar, "Rush");
 					PlayVoice(GetSexPhrase("interface\Bers_"+rand(5)+".wav","interface\Bersf_"+rand(4)+".wav"));
-					pchar.chr_ai.energy    = pchar.chr_ai.energyMax;
+					iQueryIndex = 0;
+					sQueryIndex = ""+iQueryIndex;
+					fEnergyMax = pchar.chr_ai.energyMax;
+					while(CheckAttribute(pchar, "chr_ai.FoodEnergy."+sQueryIndex)){
+						iQueryIndex++;
+						sQueryIndex = ""+iQueryIndex;
+					}
+					pchar.chr_ai.FoodEnergy.(sQueryIndex) = 0.8 * fEnergyMax;//100% - 1...5%(existing energy) - 10-15% (regen)
+					pchar.chr_ai.FoodEnergySPD.(sQueryIndex) = 0.08 * fEnergyMax;//0.1 * pchar.chr_ai.FoodEnergy.(sQueryIndex)
 				}
 				else
                 {
@@ -1956,7 +1997,7 @@ void ProcessControls()
 			ChangeShowIntarface();
 		break;
 		case "setEquipment1":
-			if (bLandInterfaceStart)
+			if (bLandInterfaceStart && !bDisableCharacterMenu)
             {
 				if(CheckAttribute(PChar, "AcademyLand"))
 				{
@@ -1969,7 +2010,7 @@ void ProcessControls()
 			}
 		break;
 		case "setEquipment2":
-			if (bLandInterfaceStart)
+			if (bLandInterfaceStart && !bDisableCharacterMenu)
             {
 				if(CheckAttribute(PChar, "AcademyLand"))
 				{
@@ -1982,7 +2023,7 @@ void ProcessControls()
 			}
 		break;
 		case "setEquipment3":
-			if (bLandInterfaceStart)
+			if (bLandInterfaceStart && !bDisableCharacterMenu)
             {
 				if(CheckAttribute(PChar, "AcademyLand"))
 				{
@@ -1995,7 +2036,7 @@ void ProcessControls()
 			}
 		break;
 		case "setEquipment4":
-			if (bLandInterfaceStart)
+			if (bLandInterfaceStart && !bDisableCharacterMenu)
             {
 				if(CheckAttribute(PChar, "AcademyLand"))
 				{
@@ -2008,7 +2049,7 @@ void ProcessControls()
 			}
 		break;
 		case "setEquipment5":
-			if (bLandInterfaceStart)
+			if (bLandInterfaceStart && !bDisableCharacterMenu)
             {
 				if(CheckAttribute(PChar, "AcademyLand"))
 				{
@@ -2021,7 +2062,7 @@ void ProcessControls()
 			}
 		break;
 		case "setEquipment6":
-			if (bLandInterfaceStart)
+			if (bLandInterfaceStart && !bDisableCharacterMenu)
             {
 				if(CheckAttribute(PChar, "AcademyLand"))
 				{
@@ -2141,27 +2182,27 @@ void GameOver(string sName)
 	switch(sName)
 	{
 		case "sea":
-			StartPictureAsVideo( "loading\jonny_load\death\end_game_sea_"+rand(1)+".tga", 4 );
+			StartPictureAsVideo( "loading\jonny_load\death\end_game_sea_"+rand(1)+".dds", 4 );
 			PlayStereoOGG("music_ship_dead");
 		break;
 		case "boarding":
-			StartPictureAsVideo( "loading\jonny_load\death\end_game_sea_"+rand(1)+".tga", 4 );
+			StartPictureAsVideo( "loading\jonny_load\death\end_game_sea_"+rand(1)+".dds", 4 );
 			PlayStereoOGG("music_ship_dead");
 		break;
 		case "land":
-			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".tga", 4 );
+			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".dds", 4 );
 			PlayStereoOGG("music_death");
 		break;
 		case "mutiny":
-			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".tga", 4 );
+			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".dds", 4 );
 			PlayStereoOGG("music_death");
 		break;
 		case "town":
-			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".tga", 4 );
+			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".dds", 4 );
 			PlayStereoOGG("music_death");
 		break;
 		case "blood":
-			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".tga", 4 );
+			StartPictureAsVideo( "loading\jonny_load\death\end_game_"+rand(1)+".dds", 4 );
 			PlayStereoOGG("music_death");
 		break;
 	}
@@ -2347,5 +2388,6 @@ int iCalculateSaveLoadCount(string _SaveLoad)
 void CalcWheelDistance(int where)
 {
     InterfaceStates.RadDetails = Clampf(stf(InterfaceStates.RadDetails)+(0.1*where));
-    SendMessage(&locCamera, "lf", MSG_CAMERA_SET_RADIUS, CalcLandRadiusNew());
+    float fMod = GetMultiplyFromScreenRatio(); //добавил множитель от соотношения сторон экрана
+    SendMessage(&locCamera, "lf", MSG_CAMERA_SET_RADIUS, CalcLandRadiusNew() * fMod);
 }

@@ -73,6 +73,8 @@ bool CheckQuestColonyList(string sColony)
 
     if (CheckAttribute(pchar, "questTemp.State") && pchar.questTemp.State == "EndOfQuestLine") return true;
 
+	if (sColony == "Nassau" && CheckAttribute(&Colonies[FindColony(sColony)], "BSBlackFlag")) return false;
+
     if (CheckAttribute(pchar, "questTemp.NationQuest"))
     {
 		//Захват со сменой владельца исключен паузой мира, вместо них только грабеж должен быть. 
@@ -646,8 +648,10 @@ void  EndOfTheSiege(string tmp)
     int ifortPower = sti(rColony.FortValue);
     int idist = makeint(GetDistanceToColony(aData.Colony));
 
-    if(idist == -1 || idist > 60 || tmp != "")
-    {
+	bool bOk1 = idist == -1 || idist > 60 || tmp != "";
+	bool bOk2 = CheckAttribute(AISea, "Island") && AISea.Island == rColony.island;
+	if(bOk1 && !bOk2)
+	{
         // чистим слухи
         for (l = 1; l <= 4; l++)
         {

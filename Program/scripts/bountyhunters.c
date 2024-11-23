@@ -92,6 +92,7 @@ void LandHunterReactionResult(ref loc)  // отработает после вх�
 	if (LAi_IsCapturedLocation) return;
 	if (chrDisableReloadToLocation) return; // идёт некий другой квест с запретом выхода
 	if (loc.type != "town" && loc.type != "seashore" && loc.type != "port") return;
+	if (loc.id == "Nassau_town" && CheckAttribute(&Colonies[FindColony("Nassau")], "BSBlackFlag")) return;
 	if (CheckAttribute(Pchar, "GenQuest.Hunter2Pause"))
 	{
 		DeleteAttribute(Pchar, "GenQuest.Hunter2Pause");

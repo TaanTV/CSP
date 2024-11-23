@@ -521,7 +521,7 @@ void OnShipScrollChange()
 		}
 		ref refShip = GetRealShip(iShip);
 		string sShip = refShip.BaseName;
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".tga.tx");
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".dds");
 		if (!CheckAttribute(refShip,"QuestShip")) SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",false);
 		else {SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",true); SetNewVideoPicture("SHIP_BIG_PICTURE_VIDEO","SHIP_"+sShip);}
 
@@ -609,7 +609,7 @@ void OnShipScrollChange()
 	}
 	else
 	{
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.tga.tx");
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.dds");
 		GameInterface.edit_box.str = XI_Convertstring("NoneBoat");
 		SetNodeUsing("BAR_Sailors", false);
 		SetNodeUsing("BAR_Cannoners", false);
@@ -665,6 +665,16 @@ void ShowInfoWindow()
 			    refBaseShip = GetRealShip(iShip);
 				sHeader = XI_ConvertString(refBaseShip.BaseName);
 				sText1 = GetConvertStr(refBaseShip.BaseName, "ShipsDescribe.txt");
+
+				//--> показ каюты по ПКМ на портрете корабля
+				int nLoc = FindLocation(refBaseShip.CabinType);
+				if (nLoc >= 0 && CheckAttribute(&Locations[nLoc],"image")) 
+				{
+					sPicture = Locations[nLoc].image;
+					xx = 512;//размер картинки
+					yy = 288;
+				}
+				//<-- показ каюты
 			}
 			else
 			{

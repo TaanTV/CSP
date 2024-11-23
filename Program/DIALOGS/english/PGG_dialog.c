@@ -1307,7 +1307,7 @@ void ProcessDialogEvent()
 		SaveCurrentQuestDateParam("QuestTalk");
 
 		//не взяли груз...
-		PChar.GenQuest.PGG_Quest.FailedPaySum = sti(PChar.GenQuest.PGG_Quest.Days)*10000;
+		PChar.GenQuest.PGG_Quest.FailedPaySum = sti(PChar.GenQuest.PGG_Quest.Days)*100000;
 		Dialog.Text = PCharRepPhrase(
 			RandPhraseSimple(
 				"Bloodthirsty"+ GetSexPhrase("You bastard", "That's rubbish") +"! Everything went down to the sea devil! " + FindRussianMoneyString(sti(PChar.GenQuest.PGG_Quest.FailedPaySum)) + " piastres on a barrel, and I don't want to see you anymore!",
@@ -1469,8 +1469,9 @@ void ProcessDialogEvent()
 		{
 			AddMoneyToCharacter(PChar, -(sti(PChar.GenQuest.PGG_Quest.FailedPaySum)));
 			AddQuestRecord(PGGQuestID, "q1_FailPay");
-			AddQuestUserData(PGGQuestID, "sSex", GetSexPhrase("", "a"));
-			AddQuestUserData(PGGQuestID, "sSex1", GetSexPhrase("en", "on"));
+			AddQuestUserData(PGGQuestID, "sPsName", GetFullName(NPchar));
+			//AddQuestUserData(PGGQuestID, "sSex", GetSexPhrase("", "a"));
+			//AddQuestUserData(PGGQuestID, "sSex1", GetSexPhrase("en", "on"));
 		}
 		ChangeCharacterReputation(NPChar, 10);
 		CloseQuestHeader(PGGQuestID);

@@ -3082,23 +3082,23 @@ Elusive 'Urca'
 
 #TEXT 1
 
-The mysterious British military, the missing Wayne, and a new partner in our one hundred and fifty million dollar deal. I need to check the information about the crashed Ranger and move to Bermudes. How not to miss the money galleon. Maxine said something about Fort Orange. I'm going there.
+Mysterious British military, a missing Wayne, and a new partner in our one hundred and fifty million dollar business. We need to check out the information about the crashed 'Ranger' with the local boozehounds and head for the Bahamas. I don't want to miss the money galleon.
 
 #TEXT 2
 
-Broken masts, pieces of hull, torn rigging and other debris. I need to ask the locals about what happened. The tavern is the source of all the rumors in the archipelago.
+Broken masts, pieces of planking, torn rigging and other debris. We should ask the locals what happened.
 
 #TEXT 3
 
-Wayne is alive, got a new ship, and did his part in distracting the escort. What a corsair! I hope to see him on Bermudes. The job is done, I'm going to a meeting of companions.
+Wayne is alive, has a new ship, and has done his part in diverting the escort. What a corsair! Hope to see you in the Bahamas.
 
 #TEXT 4
 
-The situation with the English raiders has become clearer. Wow. Admiralty intelligence! I need to warn Flint. Scarborough is still hunting somewhere and something needs to be done about it. On the way. To Bermudes.
+The situation with the English raiders has been cleared up. Oh, my. Admiralty Intelligence! We've got to warn Flint. There's still a Scarborough still hunting somewhere, and something's got to be done about it. Let's go. To the Bahamas.
 
 #TEXT 5
 
-I have indirectly accepted the offer of Bons, that is, Blackham, but first ‘Urka'! Such prey should not be missed. I need to write down the password for the meeting with the contact in Antigua. "Fishing was successful. The catch is a sight to behold."
+I accepted indirectly Bones's suggestion, that is, Blackham's. But first, 'Urka! You can't pass up a catch like this. Gotta write down the password to meet the liaison in Antigua. "Fishing was a success. The catch was a sight to behold".
 
 #TEXT 6
 
@@ -3118,11 +3118,11 @@ The galleon was badly battered by the storm and the crew is not visible on board
 
 #TEXT 9
 
-The most interesting thing remains – the division of the loot! It's time to go to Bermudes.
+Now it's time to share the spoils! Time to go to the Bahamas.
 
 #TEXT 10
 
-Wayne's in, I split the loot and catch Flint. I must try to keep him alive. It's time to go to Bermudes.
+Wayne's in, we're splitting the loot and catching Flint. We gotta try to keep him alive. Time to go to the Bahamas.
 
 #TEXT 11
 
@@ -3147,7 +3147,7 @@ Flint couldn't disappear without a trace, and his way to Europe is blocked. Let'
 
 #TEXT 3
 
-Maxine will do the rumor gathering while I check on Wayne and Miss Guthrie. To Bermudes!
+Maxine will do the rumor mill, and I'll check on Wayne and Miss Guthrie.
 
 #TEXT 4
 
@@ -3171,7 +3171,7 @@ A whole flock of fish took the bait! But the main salmon was not among them. The
 
 #TEXT 9
 
-Flint is caught! I tried to talk some nonsense about the Republic and free people. The way to Bermudes, there I will ask in more detail about the Republic, and most importantly – about one hundred and fifty million reasons to get involved in this adventure! Oh, yes! And I need to check on Max in Port Royal. A companion after all.
+Flint's been caught! Trying to talk nonsense about the Republic and free men. Let's go to the Bahamas, where we'll ask him more about the Republic, and most importantly, about the hundred and fifty million reasons to get involved in this adventure! But first we have to check on Max in Port Royal. A companion, after all.
 
 #TEXT 10
 
@@ -3187,7 +3187,7 @@ It's time to check on our decoder!
 
 #TEXT 13
 
-Several hundred possible locations. Years of searching, decades will be spent on this. There is still something to occupy yourself with, treasures, fat merchants, duels and sieges of forts! I'm going to develop my colony or I'm going to become a Main Terror. But I'll always remember Captain James, his mother, Flint, and a hundred and fifty million reasons to hate or love him. The adventure turned out to be memorable! I have to give him his due.
+Several hundred possible locations. Years of searching, decades will go into this. There's still plenty to keep me busy, treasure, greasy peddlers, duels and sieges of forts! I'll develop my colony or become the storm of Maine. But I'll always remember Captain James fucking Flint and a hundred and fifty million reasons to hate or love him. It was a memorable adventure! I gotta hand it to him.
 
 #TEXT 21
 
@@ -3195,7 +3195,7 @@ It's hard to think when I'm constantly throwing up. But something has to be done
 
 #TEXT 22
 
-The message has been sent. I need to go back to Bermudes and look for Wayne. No matter how much he messed up.
+I sent word. We need to go back to the Bahamas and look for Wayne. Don't let him get in trouble.
 
 #TEXT 23
 
@@ -3207,7 +3207,7 @@ I'll take Maxine to Port Royal and let her gather rumors. And then I'll decide w
 
 #TEXT 25
 
-So, I'm at a crossroads. Looking for Wayne and the runaway slave camps? Or to find out how the British Navy can help? Or should I check out Eleanor's version with the hucksters? It's not worth spraying, there simply won't be enough time for everything at once. I'll mark the Dutch right away, even if it sounds logical, but the Company has its own intelligence, and Flint has spoiled a lot of their blood. So the search for Vane or the help of the fleet. It's time to decide!
+So I'm at a crossroads. Search for Wayne and the fugitive slave camps? Or see what the British navy can do to help? Or should I check out Eleanor's version of the peddlers? There's not enough time to do it all at once. I'll dismiss the Dutch at once, though it sounds logical, but the Company has its own intelligence, and Flint has spoiled their blood a lot. So it's either search for Wayne or help from the fleet. Wayne's a big boy, I think he can manage without me, so Antigua it is!
 
 #TEXT 41
 
@@ -3219,7 +3219,7 @@ The Ranger is anchored! Put the boat on the water!
 
 #TEXT 43
 
-The opportunity to follow Vane is lost, and without experienced guides, it is suicide to go into the jungle. Well, I'll wait here.
+The opportunity to follow Wayne is lost, and without experienced guides, it is suicide to go into the jungle. Well, I'll wait here.
 
 #TEXT 44
 
@@ -3247,7 +3247,7 @@ Guthrie is arrested by Newm! Newm, sent by me to feed the fish! I'll hurry to Po
 
 #TEXT 50
 
-Am I becoming Flint? Maybe I should ignore everything on Max's advice and be content with little? How tired I am@<sSex>! I need to check the parking lots indicated by the Bonus.
+Am I becoming Flint? Maybe I should ignore everything on Max's advice and be content with little? How tired I am! I need to check the parking lots indicated by the Bonus.
 
 #TEXT 51
 
@@ -3259,7 +3259,7 @@ Flint seemed to have disappeared through the ground. They killed a lot of mercen
 
 #TEXT 53
 
-Who is this Flint? Maybe the devil himself? How did I become@<sSex> turn into him? An uncompromising, cruel, calculating bastard! Chasing his gold took away a part of me. Wise whore Maxine, I were right. I need to be content with what I have and not chase after someone else's, otherwise I risk losing what I have.
+Who is this Flint? Maybe the devil himself? How did I become turn into him? An uncompromising, cruel, calculating bastard! Chasing his gold took away a part of me. Wise whore Maxine, I were right. I need to be content with what I have and not chase after someone else's, otherwise I risk losing what I have.
 
 #TEXT 61
 
@@ -3275,11 +3275,11 @@ Bones-Blackham is of little use, I need to explore a large piece of the coast of
 
 #TEXT 64
 
-Empty. I'll keep looking. It is necessary to exclude the bays that are in sight of the forts, Flint would not take such a risk. I'll check the map. Yeah. Los Teques Beach, Guajira Bay, Covenas Bay, Mosquitos Bay. Well, let's go.
+It's empty. I'll keep looking. We need to rule out coves that are in sight of forts, Flint wouldn't risk it. I'll check the map. Yep, we're good to go: Los Teques Beach, Guajira Bay, Coveñas Bay, Mosquitos Bay. Well, let's hit the road.
 
 #TEXT 65
 
-It looks like Newm's people. They are looking for clues at the site of the death of the Urca. I need to be on your guard.
+Looks like Newm's people are looking for clues at the Urca wreck site. We need to be on the lookout.
 
 #TEXT 66
 
@@ -3291,12 +3291,23 @@ It's going to be a hot business. Flint is going to free the convicts for his arm
 
 #TEXT 68
 
-Wayne. Damn I. I were my friend! And Bons, damn Bons. While I was looking@<sSex> don't get it, the British have staged a sweep. Guthrie is dead, Jack is in jail. Everything is going to the abyss! It remains to get even with Flint and I don't care what happens next!
+Wayne. Damn you. You were my friend! And Bones, goddamn Bones. While I was looking for the wrong thing, the English did a sweep. Guthrie's dead. It's all going down the drain! All I gotta do is get even with Flint and I don't care what happens next!
 
 #TEXT 69
 
-Somewhere along the way, I made the wrong choice. What was the turning point? Eleanor, Jack, Charles. How would their fates have turned out if I had made other decisions? Would I become a soulless machine under Flint's leadership? Damn, my head hurts! I need to rest.
+Somewhere along the way, I made the wrong choice. What was the turning point? Eleanor, Jack, Charles. How would their fates have turned out if I'd made different choices? Would I have become a soulless machine under Flint's leadership? Damn, I have a headache! I need to rest.
 
+#TEXT 70
+
+That's Bones' ship visible on the horizon! Looks like he's with Flint. Let's go!
+
+#TEXT 71
+
+Near @<sIsland> I almost caught up with Bones, but he's gone full throttle in a northwesterly direction. We must continue the chase!
+
+#TEXT 72
+
+The 'Scarboro' crew along with the remaining pirate hunters have scattered or are feeding the fish.
 
 #QUEST BSChaseBegun
 
@@ -3304,19 +3315,19 @@ Chase has begun
 
 #TEXT 1
 
-It's time to go back to Bermudes. I think 'Ranger' Veyna has already managed to get there and is standing there on the raid. It's worth sending out a boat and finding out how things are going.
+'Walrus' and 'Ranger' are standing by, I'll approach them and send out a dinghy.
 
 #TEXT 2
 
-The meeting of the companions ended in a massacre. Jackman's men attacked us on the beach. Flint immediately came up with a plan to capture the settlement. It must be true that he was once a military officer. I'm moving out to Runa Bay and through the dungeon I'll try to get into the shipyard. Get to work!
+The companions' meeting ended in a massacre. A whole company of English soldiers stormed the town. Flint has given out commands, my job is to sink the ship or ships that brought these soldiers. Let's do it!
 
 #TEXT 3
 
-There's a dungeon and a bunch of corpses behind. I have more and more questions for Jackman. Alexus, as always, is on his own wavelength. It's time to go to the settlement, I'm just in time. Go ahead!
+The transports and the English escort have been sunk. Time to go ashore.
 
 #TEXT 4
 
-A suicidal plan, as far as I'm concerned. But there will be no more opportunities to take the gold. To smash the Spaniards in full view of their fort. Ha, the legends will tell about it. I'm moving out as soon as I'm ready. Vane will lure out the guards, Flint will move out earlier and anchor out of sight of the fort. It's up to me.
+A suicidal plan, as far as I'm concerned. But there will be no more opportunities to take the gold. To smash the Spaniards in full view of their fort. Ha, the legends will tell about it. I'm moving out as soon as I'm ready. Wayne will lure out the guards, Flint will move out earlier and anchor out of sight of the fort. It's up to me.
 
 #TEXT 5
 
@@ -3337,7 +3348,7 @@ Courtly passions
 
 #TEXT 1
 
-Bermudes had a hot fight. What the hell are the English patrols doing here? Well, anyway, Flint will take care of this issue, my task is to get some of the code from Charles Wayne. I'm going to Martinique, I need to land in one of the bays, I never know what will happen there.
+Nassau had a hot fight. What the hell are the English patrols doing here? Well, anyway, Flint will take care of this issue, my task is to get some of the code from Charles Wayne. I'm going to Martinique, I need to land in one of the bays, I never know what will happen there.
 
 #TEXT 2
 
@@ -3349,11 +3360,11 @@ The girl has a page, the girl has pirates, pirates in a casket, a casket on an o
 
 #TEXT 4
 
-Vane's page, where to look for him, is unclear. That leaves only the whore. Let's play on the feelings of an offended woman.
+Wayne's page, where to look for him, is unclear. That leaves only the whore. Let's play on the feelings of an offended woman.
 
 #TEXT 5
 
-At night in the Fort de France dungeon. The fight is going to be hot, I need to prepare. Oh, yes. And don't forget to take Maxine to Port Royal later...
+At night in the dungeons of Fort-de-France. It's going to be a hot fight, so we need to be prepared. Oh, yes. And don't forget to take Maxine to Port Royal afterwards...
 
 #TEXT 6
 
@@ -3365,7 +3376,7 @@ Wayne's been dealt with, now a whore. I need to pick her and Silver up at Le Mar
 
 #TEXT 8
 
-A piece of code and a new ally. It's time to go to Bermudes.
+It's done, now you can go to the Bahamas.
 
 #TEXT 9
 
@@ -3386,7 +3397,7 @@ Eleanor Guthrie. The pirate storm. Now I need to find Flint the fuck himself and
 
 #TEXT 3
 
-The legendary Flint! This business will be profitable and interesting, I feel it in my gut! Let's go to Bermudes!
+The legendary Flint! This business will be profitable and interesting, I feel it in my gut! Let's go to Bahamas!
 
 #TEXT 4
 
@@ -3394,7 +3405,7 @@ One hundred and fifty million pesos! One hundred and fifty fucking million fucki
 
 #TEXT 5
 
-Near Bermudes, I ran into English pirate hunters. I need to dock, fix the rigging, and talk to Flint. Patrols did not usually enter these waters.
+Near Bahamas, I ran into English pirate hunters. I need to dock, fix the rigging, and talk to Flint. Patrols did not usually enter these waters.
 
 
 #QUEST BSPrologue
@@ -3409,11 +3420,11 @@ A family of colonial merchants from Boston, sort of. What did they forget in the
 
 #TEXT 2
 
-That's the story! I need to deliver six hundred measures of gold to Eleanor Guthrie for a period of one month, otherwise my business is bad! Get to work!
+Who would have guessed what the Bluebird adventure would turn out to be! The bigwigs have decided to take over the island. With my hands. We must scout the situation and prepare a squadron. Ms. Guthrie didn't give a timetable, but I don't want it to take too long. Who knows if the Spanish or anyone else might decide to take the colony for themselves? When I'm ready, I'll have to warn that snake that the campaign is on!
 
 #TEXT 3
 
-That Guthrie is a toothy woman. I would not like to have problems with the rest of the family! The matter is settled, the purse is thin. I need a drink!
+That Guthrie's a toothy broad. I wouldn't want to get in trouble with the rest of the family! It's settled. I need a drink!
 
 #TEXT 4
 
@@ -3423,6 +3434,13 @@ That bitch Guthrie sent hunters after me! Perhaps I should hurry up with her err
 
 She's going to update the bounty on my head every month! It looks like I can't get out of it that easily.
 
+#TEXT 6
+
+Who would have thought how the Bluebird adventure would turn out. The bigwigs have decided to take over the island. With my hands. Wrong man! I'll deal with the consequences somehow. It won't be the first time.
+
+#TEXT 7
+
+I still can't believe I got myself into this mess! But it's not in my nature to back down. Raise the Jolly Roger! It's time to give the redcoats some heat! To the Bahamas!
 
 #QUEST DHRaceAgainstTime
 

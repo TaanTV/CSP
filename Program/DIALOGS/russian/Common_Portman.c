@@ -1965,7 +1965,9 @@ void BurntShipQuest_FillStartParams(ref _npchar)
 void SetJornalCapParam(ref npchar)
 {
 	//созадем рассеянного кэпа
-	ref sld = GetCharacter(NPC_GenerateCharacter("PortmansCap_" + npchar.index, "", "man", "man", 20, sti(npchar.nation), -1, true));
+	int iNation = sti(npchar.nation);
+	if (iNation == PIRATE) iNation = rand(3);//если берем этот квест у пиратов, заменяем нацию капитана на другую, чтоб было возможно мирно поговорить
+	ref sld = GetCharacter(NPC_GenerateCharacter("PortmansCap_" + npchar.index, "", "man", "man", 20, iNation, -1, true));
 	SetCaptanModelByEncType(sld, "trade");
 	SetShipToFantom(sld, "trade", true);
 	sld.Ship.Mode = "trade";
@@ -1998,7 +2000,7 @@ void SetJornalCapParam(ref npchar)
 	npchar.quest.PortmansJornal.capName = GetFullName(sld); //имя кэпа
 	npchar.quest.PortmansJornal.shipName = sld.Ship.name; //имя корабля
 	npchar.quest.PortmansJornal.shipTapeName = RealShips[sti(sld.Ship.Type)].BaseName; //название корабля
-	npchar.quest.PortmansJornal.city = SelectNotEnemyColony(npchar); //определим колонию, куда ушёл кэп
+	npchar.quest.PortmansJornal.city = SelectNotEnemyColony(sld); //определим колонию, куда ушёл кэп
 	sld.quest = "InMap"; //личный флаг рассеянного кэпа
 	sld.quest.targetCity = npchar.quest.PortmansJornal.city; //продублируем колонию-цель в структуру кэпа
 	sld.quest.firstCity = npchar.city; //капитану знать откуда вышел в самом начале

@@ -108,7 +108,7 @@ void CheckIslandChange()
         SendMessage(&wdm_fader, "lfl", FADER_OUT, fadeOutTime, true);
         SendMessage(&wdm_fader, "l", FADER_STARTFRAME);
 		
-		string imageName = "Loading\jonny_load\sea\sea_" + rand(3) + ".tga";
+		string imageName = "Loading\jonny_load\sea\sea_" + rand(3) + ".dds";
 		SendMessage(&wdm_fader, "ls", FADER_PICTURE0, imageName);
 	
 		break;

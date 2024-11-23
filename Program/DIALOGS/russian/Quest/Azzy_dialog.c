@@ -159,8 +159,9 @@ void ProcessDialogEvent()
     		link.l2.go = "ToGiveMoney";
     		link.l4 = "Рому.";
     		link.l4.go = "ToGiveRum";
-    		link.l5 = "Хороший корабль.";
-    		link.l5.go = "ToShip";
+			link.l5 = "Хороший корабль.";
+			if(!CheckAttribute(pchar, "GenQuest.GhostShip.LastBattle"))	link.l5.go = "ToShip";
+			else link.l5.go = "ToShipAlt";
     		link.l6 = "Бессмертие.";
     		link.l6.go = "ToImmortal";
     		link.l7 = "Стать генерал-губернатором Ямайки.";
@@ -430,16 +431,32 @@ void ProcessDialogEvent()
     		link.l1 = HeroStringReactionRepeat("Чтобы он по скорости превосходил любой из существующих, чтобы паруса не рвались от ветра и книппелей, чтобы ядра отлетали от бортов, не причиняя вреда...", "Да, корабли - моя любимая тема...", "Я о Чёрной Жемчужине говорил"+ GetSexPhrase("","а") +", но тем не менее все верно.", "Как прощай?! А как же корабли?", npchar, Dialog.CurrentNode);
     		link.l1.go = DialogGoNodeRepeat("Step_41", "Wishes", "Wishes", "", npchar, Dialog.CurrentNode);
 		break;
-
+		
+		case "ToShipAlt":
+        	dialog.text = NPCStringReactionRepeat("Что значит хороший?",
+                                    "Мы уже говорили про корабли...",
+                                    "Опять ты про Летучий Голландец?! Хватит уже про корабли!",
+                                    "Похоже, что ты самый глупый человек в подлунном мире. Прощай.", "quest", 0, npchar, Dialog.CurrentNode);
+    		link.l1 = HeroStringReactionRepeat("Чтобы он по скорости превосходил любой из существующих, чтобы паруса не рвались от ветра и книппелей, чтобы ядра отлетали от бортов, не причиняя вреда...", "Да, корабли - моя любимая тема...", "Я о Чёрной Жемчужине говорил"+ GetSexPhrase("","а") +"...", "Как прощай?! А как же корабли?", npchar, Dialog.CurrentNode);
+    		link.l1.go = DialogGoNodeRepeat("Step_41", "Wishes", "Wishes", "", npchar, Dialog.CurrentNode);
+		break;
+		
 		case "Step_41":
         	dialog.text = "Этого я делать не буду - затратно очень.";
     		link.l1 = "А 'Летучий Голландец'?";
-    		link.l1.go = "Step_42";
+    		if(!CheckAttribute(pchar, "GenQuest.GhostShip.LastBattle"))	link.l1.go = "Step_42";
+			else link.l1.go = "Step_42Alt";
 		break;
 
 		case "Step_42":
         	dialog.text = "'Летучий Голландец' находится под серьёзным проклятием. Куча индейских демонов только тем и занимается, что отслеживает состояние данного проклятия и поддерживает его функциональность.\n"+
                           "Или ты предложишь мне к тебе в команду записаться, чтобы обеспечивать сохранность твоей посудины и поддерживать её хороший ход?!";
+    		link.l1 = "Нет, конечно, даже и в мыслях не было, уважаемый Аззи...";
+    		link.l1.go = "Step_43";
+		break;
+
+		case "Step_42Alt":
+        	dialog.text = "Тебе всё известно о 'Летучем Голландце'. Будешь и дальше морочить мне голову?";
     		link.l1 = "Нет, конечно, даже и в мыслях не было, уважаемый Аззи...";
     		link.l1.go = "Step_43";
 		break;

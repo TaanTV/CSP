@@ -627,7 +627,7 @@ Variable_quests_reaction_12
 Variable_quests_reaction_13
 {Вы слышали, капитан#space#}
 Variable_quests_reaction_14
-{#space#втупил в бой с бандитом по имени#space#}
+{#space#вступил в бой с бандитом по имени#space#}
 Variable_quests_reaction_15
 {Его}
 Variable_quests_reaction_16

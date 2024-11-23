@@ -7,7 +7,7 @@ int LocationInitMartinique(int n)
 	locations[n].id.label = "Street";
 	locations[n].worldmap = "Martinique";
 	locations[n].filespath.models = "locations\Town_Martinique\Town\";
-	locations[n].image = "loading\jonny_load\city\Town_Martinique.tga";
+	locations[n].image = "loading\jonny_load\city\Town_Martinique.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -337,7 +337,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern01\";
-	locations[n].image = "loading\jonny_load\inside\Tavern01.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern01.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "FortFrance";
@@ -385,7 +385,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_tavern_upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -426,7 +426,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store01\";
-	locations[n].image = "loading\jonny_load\inside\store01.tga";
+	locations[n].image = "loading\jonny_load\inside\store01.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -472,7 +472,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_Bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -518,7 +518,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_Brothel";
 	locations[n].id.label = "Brothel";
 	locations[n].filespath.models = "locations\inside\Brothel\";
-	locations[n].image = "loading\jonny_load\inside\brothel.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -571,7 +571,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_Brothel_room";
 	locations[n].id.label = "Brothel Room";
 	locations[n].filespath.models = "locations\inside\Brothel_room\";
-	locations[n].image = "loading\jonny_load\inside\brothel_room.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel_room.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -608,7 +608,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_SecBrRoom"; // вторая комната борделя
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\BigHouse03.tga";
+	locations[n].image = "loading\jonny_load\inside\BigHouse03.dds";
  	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -657,7 +657,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard03\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard03.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard03.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -703,7 +703,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\jonny_load\inside\residence01.tga";
+	locations[n].image = "loading\jonny_load\inside\residence01.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -759,7 +759,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\Church01.tga";
+	locations[n].image = "loading\jonny_load\inside\church01.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -799,7 +799,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portofficeBig.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOfficeBig.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -842,7 +842,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_Malta_Dungeon";
 	locations[n].id.label = "Order of Malta";
-	locations[n].image = "loading\inside\Maltas.tga";
+	locations[n].image = "loading\jonny_load\inside\Maltains.dds";
 	//Town sack
 	locations[n].type = "Dungeon";
 	locations[n].townsack = "FortFrance";
@@ -885,7 +885,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_houseK5";
 	locations[n].id.label = "House";
-	locations[n].image = "Loading\jonny_load\inside\mediumhouse10.tga";
+	locations[n].image = "Loading\jonny_load\inside\mediumhouse10.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -928,7 +928,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_MH9_2";
 	locations[n].id.label = "House";
-	locations[n].image = "Loading\jonny_load\inside\mediumhouse09_2.tga";
+	locations[n].image = "Loading\jonny_load\inside\mediumhouse09_2.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "FortFrance";
@@ -971,7 +971,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_BigHouse6";
  	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\BigHouseKNS.tga"; 
+	locations[n].image = "loading\jonny_load\inside\BigHouseKNS.dds"; 
  	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -1024,7 +1024,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_HouseHut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\hut.tga"; 
+	locations[n].image = "loading\jonny_load\inside\hut.dds"; 
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -1070,7 +1070,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_Dungeon";
 	locations[n].id.label = "Dungeon";
-	locations[n].image = "loading\jonny_load\inside\DungeonVault2.tga";
+	locations[n].image = "loading\jonny_load\inside\DungeonVault2.dds";
 	//Town sack
 	locations[n].type = "Dungeon";
 	locations[n].townsack = "FortFrance";
@@ -1113,7 +1113,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_Hut1";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -1155,7 +1155,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_HouseBig";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\flamhouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "FortFrance";
@@ -1217,7 +1217,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_Hut3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut3_Kns.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut3_KNS.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "FortFrance";
@@ -1258,7 +1258,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_ExitTown";
 	locations[n].fastreload = "FortFrance";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitY.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitY.dds";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	//Sound
@@ -1320,7 +1320,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Martinique_jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle7.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle7.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Martinique";
@@ -1375,7 +1375,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore38";
 	locations[n].id.label = "Shore38";
-	locations[n].image = "loading\jonny_load\shores\Shore12.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore12.dds";
 	locations[n].worldmap = "Shore38";
 	//Sound
 	locations[n].type = "seashore";
@@ -1428,7 +1428,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Martinique_jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle3.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle3.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Martinique";
@@ -1483,7 +1483,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Martinique_jungle_03";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle1.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Martinique";
@@ -1531,7 +1531,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore39";
 	locations[n].id.label = "Shore39";
-	locations[n].image = "loading\jonny_load\shores\shore06.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore06.dds";
 	locations[n].worldmap = "Shore39";
 	//Sound
 	locations[n].type = "seashore";
@@ -1584,7 +1584,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_deadlock";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle9.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle9.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Martinique";
@@ -1627,7 +1627,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_ExitTown";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\ExitJungle.tga";
+	locations[n].image = "loading\jonny_load\jungle\ExitJungle.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	//Sound
@@ -1688,7 +1688,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_town";
 	locations[n].id.label = "Street";
-	locations[n].image = "loading\jonny_load\city\LeFransua_town.tga";
+	locations[n].image = "loading\jonny_load\city\LeFransua_town.dds";
 	locations[n].worldmap = "Martinique";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
@@ -1898,7 +1898,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  	locations[n].id = "LeFransua_tavern";
 	locations[n].id.label = "Tavern";
-	locations[n].image = "loading\jonny_load\inside\Tavern09.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern09.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "LeFransua";
@@ -1944,7 +1944,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_tavern_upstairs";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -1985,7 +1985,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_store";
 	locations[n].id.label = "Store";
-	locations[n].image = "loading\jonny_load\inside\store03.tga";
+	locations[n].image = "loading\jonny_load\inside\store03.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2039,7 +2039,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_townhall";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Residencepkm.tga";
+	locations[n].image = "loading\jonny_load\inside\Residencepkm.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2079,7 +2079,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_House4";
 	locations[n].id.label = "Loy_House";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse01.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse01.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2125,7 +2125,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_barrack";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\barrack.tga";
+	locations[n].image = "loading\jonny_load\inside\barrack.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2165,7 +2165,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_Hut1";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut1_KNS.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2207,7 +2207,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_Hut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut2_KNS.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut2_KNS.dds";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2252,7 +2252,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_MH9_2";
 	locations[n].id.label = "House";
-	locations[n].image = "Loading\jonny_load\inside\mediumhouse09_2.tga";
+	locations[n].image = "Loading\jonny_load\inside\mediumhouse09_2.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "LeFransua";
@@ -2295,7 +2295,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_Hut2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut4_KNS.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut4_KNS.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "LeFransua";

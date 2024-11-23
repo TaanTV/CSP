@@ -322,7 +322,7 @@ void Ship_NationAgressivePatent(ref rCharacter)
 
     if (isMainCharacterPatented())
     {
-        if (sti(rCharacter.nation) != PIRATE && GetNationRelation(sti(Items[sti(rMainCharacter.EquipedPatentId)].Nation), sti(rCharacter.nation)) != RELATION_ENEMY)
+        if (sti(rCharacter.nation) != PIRATE && GetNationRelation(sti(Items[sti(rMainCharacter.EquipedPatentId)].Nation), sti(rCharacter.nation)) != RELATION_ENEMY && !CheckAttribute(rMainCharacter, "NationAgressivePatentDisable"))
         {
         	TakeItemFromCharacter(rMainCharacter, "patent_" + NationShortName(sti(Items[sti(rMainCharacter.EquipedPatentId)].Nation)));
         	ChangeCharacterHunterScore(rMainCharacter, NationShortName(sti(Items[sti(rMainCharacter.EquipedPatentId)].Nation)) + "hunter", 40);
@@ -748,10 +748,10 @@ void Ship_SetTrackSettings(ref rCharacter)
 	rCharacter.Ship.Track.WaveHeight2 = 0.9;
 	rCharacter.Ship.Track.WaveHeight1 = 0.2;
 
-	rCharacter.Ship.Track1.Texture = "ships\trailShip.tga";
+	rCharacter.Ship.Track1.Texture = "ships\trailShip.dds";
 	rCharacter.Ship.Track1.TrackWidthSteps = 12.0;
 
-	rCharacter.Ship.Track2.Texture = "ships\trailKeel.tga";
+	rCharacter.Ship.Track2.Texture = "ships\trailKeel.dds";
 	rCharacter.Ship.Track2.TrackWidthSteps = 4.0;
 
 	rCharacter.Ship.Track1.ZStart = rShip.Track1.ZStart;
@@ -966,8 +966,9 @@ void Ship_Add2Sea(int iCharacterIndex, bool bFromCoast, string sFantomType)
 	SendMessage(&AISea, "liaa", AI_MESSAGE_ADD_SHIP, &Characters[iCharacterIndex], arChar, arShip);
 
 	ReloadProgressUpdate();
-
-	if(CheckAttribute(rCharacter, "ShipWreck"))
+	
+	bool bok = CheckAttribute(PChar, "BonsFlintRunning") && rCharacter.id == "BSBons";
+	if(CheckAttribute(rCharacter, "ShipWreck") || bok)
 	{
 		MakeSailDmg(GetCharacterIndex(rCharacter.id), 90);
 	}

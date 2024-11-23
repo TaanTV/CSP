@@ -1057,7 +1057,7 @@ void  GhostShipOnMap()
 
     if (CheckAttribute(pchar , "GenQuest.GhostShip.LastBattle"))
     {
-		rRealShip.EmblemedSails.normalTex =  "ships\parus_common_torn.tga";
+		rRealShip.EmblemedSails.normalTex =  "ships\parus_common_torn.dds";
 
 		sld.Ship.Type = GenerateShipExt(SHIP_FLYINGDUTCHMAN, true, sld);
 		SetBaseShipData(sld);
@@ -1301,7 +1301,7 @@ void GhostShipInit()
 	ref rRealShip = GetRealShip(sti(sld.Ship.Type));
 	//sld.ship.sailscolor = argb(255,60,60,60);
 	rRealShip.ship.upgrades.sails = 3;
-	rRealShip.EmblemedSails.normalTex =  "ships\parus_common_torn.tga";
+	rRealShip.EmblemedSails.normalTex =  "ships\parus_common_torn.dds";
 	rRealShip.ShipSails.SailsColor = argb(255,60,60,60);
 	rRealShip.MaxCaliber = 48;
     rRealShip.Cannon     = CANNON_TYPE_CANNON_LBS42;

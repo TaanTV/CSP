@@ -538,11 +538,11 @@ void FillShipParam(ref _chr)
 		}
 		ref refBaseShip = GetRealShip(iShip);
 		string sShip = refBaseShip.BaseName;
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".tga");
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".dds");
 		if (!CheckAttribute(refBaseShip,"QuestShip")) SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",false);
 		else
 		{
-			SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".tga.tx");
+			SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".dds");
 			SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",true);
 			SetNewVideoPicture("SHIP_BIG_PICTURE_VIDEO","SHIP_"+sShip);
 		}
@@ -573,7 +573,7 @@ void FillShipParam(ref _chr)
 	}
 	else
 	{
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.tga");
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.dds");
 		SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",false);
 		GameInterface.edit_box.str = XI_Convertstring("NoneBoat");
 		SetFormatedText("FRAME_INFO_CAPTION","");
@@ -649,6 +649,15 @@ void ShowInfoWindow()
 			    refBaseShip = GetRealShip(iShip);
 				sHeader = XI_ConvertString(refBaseShip.BaseName);
 				sText1 = GetConvertStr(refBaseShip.BaseName, "ShipsDescribe.txt");
+				//--> показ каюты по ПКМ на портрете корабля
+				int nLoc = FindLocation(refBaseShip.CabinType);
+				if (nLoc >= 0 && CheckAttribute(&Locations[nLoc],"image")) 
+				{
+					sPicture = Locations[nLoc].image;
+					xx = 512;//размер картинки
+					yy = 288;
+				}
+				//<-- показ каюты
 			}
 			else
 			{
@@ -813,7 +822,8 @@ void TableSelectChange()
     // заполнялка
     if (CurTable == "TABLE_SHIPYARD")
 	{
-        FillShipyardShip(refNPCShipyard, GameInterface.(CurTable).(CurRow).sShipId);
+	    sShipId = GameInterface.(CurTable).(CurRow).sShipId;
+        FillShipyardShip(refNPCShipyard, sShipId);
 		FillShipParam(refNPCShipyard);
 		bShipyardOnTop = true;
 		SetButtionsAccess();
@@ -1093,18 +1103,18 @@ void FillShipyardTable()
 	GameInterface.TABLE_SHIPYARD.hr.td1.str = GetConvertStr("Variable_shipyard_25", "Interface.txt");
 	GameInterface.TABLE_SHIPYARD.hr.td1.scale = 0.9;
 	GameInterface.TABLE_SHIPYARD.hr.td2.str = GetConvertStr("Variable_shipyard_27", "Interface.txt");
-	GameInterface.TABLE_SHIPYARD.hr.td2.scale = 0.9;
-	GameInterface.TABLE_SHIPYARD.hr.td3.str = GetConvertStr("Variable_ship_spec", "Interface.txt");
-	GameInterface.TABLE_SHIPYARD.hr.td3.scale = 0.9;
-	GameInterface.TABLE_SHIPYARD.hr.td4.str = GetConvertStr("Variable_shipyard_28", "Interface.txt");
-	GameInterface.TABLE_SHIPYARD.hr.td4.scale = 0.9;
-	GameInterface.TABLE_SHIPYARD.hr.td5.str = GetConvertStr("Variable_shipyard_29", "Interface.txt");
+	GameInterface.TABLE_SHIPYARD.hr.td2.scale = 0.8;
+	GameInterface.TABLE_SHIPYARD.hr.td3.str = GetConvertStr("Variable_shipyard_28", "Interface.txt");
+	GameInterface.TABLE_SHIPYARD.hr.td3.scale = 0.8;
+	GameInterface.TABLE_SHIPYARD.hr.td4.str = GetConvertStr("Variable_shipyard1_15", "Interface.txt");
+	GameInterface.TABLE_SHIPYARD.hr.td4.scale = 0.8;
+	GameInterface.TABLE_SHIPYARD.hr.td5.str = GetConvertStr("Variable_shipyard_30", "Interface.txt");
 	GameInterface.TABLE_SHIPYARD.hr.td5.scale = 0.8;
-	GameInterface.TABLE_SHIPYARD.hr.td6.str = GetConvertStr("Variable_shipyard_30", "Interface.txt");
+	GameInterface.TABLE_SHIPYARD.hr.td6.str = GetConvertStr("Variable_shipyard1_18", "Interface.txt");
 	GameInterface.TABLE_SHIPYARD.hr.td6.scale = 0.8;
-	GameInterface.TABLE_SHIPYARD.hr.td7.str = GetConvertStr("Variable_shipyard1_17", "Interface.txt");
+	GameInterface.TABLE_SHIPYARD.hr.td7.str = GetConvertStr("Variable_ColonyGuardiang_18", "Interface.txt");
 	GameInterface.TABLE_SHIPYARD.hr.td7.scale = 0.8;
-	GameInterface.TABLE_SHIPYARD.hr.td8.str = GetConvertStr("Variable_shipyard1_18", "Interface.txt");
+	GameInterface.TABLE_SHIPYARD.hr.td8.str = GetConvertStr("Variable_shipyard1_17", "Interface.txt");
 	GameInterface.TABLE_SHIPYARD.hr.td8.scale = 0.8;
 	GameInterface.TABLE_SHIPYARD.select = 0;
 	GameInterface.TABLE_SHIPYARD.top = 0;
@@ -1155,28 +1165,38 @@ void FillShipyardTable()
 		k++;
 		GameInterface.TABLE_SHIPYARD.(row).sShipId = sAttr;
 		GameInterface.TABLE_SHIPYARD.(row).index = i;
-        GameInterface.TABLE_SHIPYARD.(row).td1.icon.texture = "interfaces\\ships\\" + sShip + ".tga.tx";
+        GameInterface.TABLE_SHIPYARD.(row).td1.icon.texture = "interfaces\ships\" + sShip + ".dds";
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.uv = "0,0,1,1";
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.width = 46;
     	GameInterface.TABLE_SHIPYARD.(row).td1.icon.height = 46;
     	GameInterface.TABLE_SHIPYARD.(row).td1.icon.offset = "0, 1";
-		GameInterface.TABLE_SHIPYARD.(row).td1.scale = 0.9;
+		//GameInterface.TABLE_SHIPYARD.(row).td1.scale = 0.9;
 		GameInterface.TABLE_SHIPYARD.(row).td1.str = refShip.Class;
 		GameInterface.TABLE_SHIPYARD.(row).td1.textoffset = "40,-16";
 
-		GameInterface.TABLE_SHIPYARD.(row).td2.str = XI_Convertstring(sShip) + "\n"+refNPCShipyard.ship.name;
-		GameInterface.TABLE_SHIPYARD.(row).td2.scale = 0.82;
+		GameInterface.TABLE_SHIPYARD.(row).td2.str = XI_Convertstring(sShip)/*  + "\n"+refNPCShipyard.ship.name */;
+		GameInterface.TABLE_SHIPYARD.(row).td2.scale = 0.76;
 		GameInterface.TABLE_SHIPYARD.(row).td2.align = "left";
-		GameInterface.TABLE_SHIPYARD.(row).td3.str = GetShipsType(refShip);
-		GameInterface.TABLE_SHIPYARD.(row).td3.scale = 0.85;
 
-		GameInterface.TABLE_SHIPYARD.(row).td4.str = GetShipBuyPrice(iShip, refNPCShipyard);
-		GameInterface.TABLE_SHIPYARD.(row).td4.color = argb(255,255,228,80);
+		GameInterface.TABLE_SHIPYARD.(row).td2.textoffset = "0,6";//сдвинул текст чуть ниже, для более красивого расположения плашки, по умолчанию пустая строка IG Baron. 
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.width = 51;
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.height = 26;
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.offset = "0, -4";
+		if (LanguageGetLanguage() != "russian") sTemp = "english "; else sTemp = "";
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.group = "ICONS_SPEC";
+		GameInterface.TABLE_SHIPYARD.(row).td2.icon.image = sTemp + "universal ship icon"; 
+		if ( sti(refShip.Type.Merchant) && !sti(refShip.Type.War)) 
+			GameInterface.TABLE_SHIPYARD.(row).td2.icon.image = sTemp + "trader ship icon";
+		if ( !sti(refShip.Type.Merchant) && sti(refShip.Type.War)) 
+			GameInterface.TABLE_SHIPYARD.(row).td2.icon.image = sTemp + "battle ship icon";//плашка для боевого типа корабля (есть ещё для быстрого fast ship icon)
 
-		GameInterface.TABLE_SHIPYARD.(row).td5.str = sti(refShip.CannonsQuantity);
-		GameInterface.TABLE_SHIPYARD.(row).td6.str = GetCargoMaxSpace(refNPCShipyard);
-		GameInterface.TABLE_SHIPYARD.(row).td7.str = FloatToString(stf(refShip.SpeedRate),2);
-		GameInterface.TABLE_SHIPYARD.(row).td8.str = sti(refShip.OptCrew);
+		GameInterface.TABLE_SHIPYARD.(row).td3.str = GetShipBuyPrice(iShip, refNPCShipyard);
+		GameInterface.TABLE_SHIPYARD.(row).td3.color = argb(255,255,228,80);
+		GameInterface.TABLE_SHIPYARD.(row).td4.str = refShip.rcannon + "\n" + refShip.fcannon + "<::::::::::>" + refShip.bcannon + "\n" + refShip.lcannon;
+		GameInterface.TABLE_SHIPYARD.(row).td5.str = GetCargoMaxSpace(refNPCShipyard);
+		GameInterface.TABLE_SHIPYARD.(row).td6.str = sti(refShip.OptCrew);
+		GameInterface.TABLE_SHIPYARD.(row).td7.str = sti(refShip.hp);
+		GameInterface.TABLE_SHIPYARD.(row).td8.str = FloatToString(stf(refShip.SpeedRate),1);
 		GameInterface.TABLE_SHIPYARD.(row).td8.textoffset = "-8,0";
     }
 
@@ -1438,7 +1458,7 @@ void FillPassengerScroll()
 		{
 			ok = CheckAttribute(&characters[_curCharIdx], "prisoned") && sti(characters[_curCharIdx].prisoned) == true;
 			bool ob = CheckAttribute(&characters[_curCharIdx], "CompanionDisable") && sti(characters[_curCharIdx].CompanionDisable) == true;
-			if (!ok && !ob && GetRemovable(&characters[_curCharIdx]))
+			if (!ok && !ob && GetRemovable(&characters[_curCharIdx]) && !CheckAttribute(&characters[_curCharIdx], "HPminusDaysNeedtoRestore"))
 			{
 				GameInterface.PASSENGERSLIST.(attributeName).character = _curCharIdx;
 				GameInterface.PASSENGERSLIST.(attributeName).img1 = GetFacePicName(GetCharacter(_curCharIdx));
@@ -2047,20 +2067,15 @@ void DoBuyShip()
 
 void DoBuyShipMain()
 {
-	if (CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".sShipId"))
+	if (!bEmptySlot) // был коарбль или ГГ без корабля
 	{
-	    sShipId = GameInterface.(CurTable).(CurRow).sShipId;
-
-		if (!bEmptySlot) // был коарбль или ГГ без корабля
-		{
-		    DoBuyShip();
-		    ExitMsgMenu();
-		}
-		else
-		{
-		    ExitMsgMenu();
-		    ShipChangeCaptan();
-		}
+	    DoBuyShip();
+	    ExitMsgMenu();
+	}
+	else
+	{
+	    ExitMsgMenu();
+	    ShipChangeCaptan();
 	}
 }
 

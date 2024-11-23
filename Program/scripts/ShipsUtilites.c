@@ -622,7 +622,11 @@ float ShipSpeedBonusFromPeople(ref _refCharacter)
 }
 float ShipSpeedBonusFromSails(ref _refCharacter)
 {	// от повреждения парусов
-	float fSRFromSailDamage = sqrt(Bring2Range(0.001, 1.0, 0.1, 85.0, stf(_refCharacter.ship.sp))); //0.3
+	float fSRFromSailDamage = pow(Bring2Range(0.00001, 1.0, 0.001, 95.0, stf(_refCharacter.ship.sp)), 0.66);//0.3
+	//симулируем запас защищающий от 1 залпа - 5%
+	//считаем мощность парусов - скорость ^1/3
+	//учитываем часть парусов которую нельзя повредить - 35-40%, добавляем условные 35-50% к скорости от не-повреждаемой части.
+	//высчитываем степень Х по среднему значению из высчитанной области
 	return fSRFromSailDamage;
 }
 float ShipSpeedBonusFromSoiling(ref _refCharacter)
@@ -740,7 +744,8 @@ float ShipTurnRateBonusFromPeople(ref _refCharacter)
 }
 float ShipTurnRateBonusFromSails(ref _refCharacter)
 {	// от повреждения парусов
-	float fTRFromSailDamage = sqrt(Bring2Range(0.001, 1.0, 0.1, 85.0, stf(_refCharacter.ship.sp)));
+	float fTRFromSailDamage = pow(Bring2Range(0.00001, 1.0, 0.001, 95.0, stf(_refCharacter.ship.sp)), 0.66);
+	//см. ShipSpeedBonusFromSails
 	return fTRFromSailDamage;
 }
 float ShipTurnRateBonusFromSoiling(ref _refCharacter)
@@ -831,61 +836,6 @@ float FindShipTurnRate(aref refCharacter)
 
 //================//
 
-// calculate recharge time for cannon
-float Cannon_GetRechargeTimeValue(ref aCharacter)
-{
-	if(!CheckAttribute(aCharacter, "Ship.type"))
-	{
-		trace("Character " + aCharacter.id + " have no ship!");
-		return 0.0;
-	}
-	int nShipType = sti(aCharacter.ship.type);
-	if(nShipType == SHIP_NOTUSED)
-	{
-		trace("Character " + aCharacter.id + " have invalid ship!");
-		return 0.0;
-	}
-
-	float	fCannonSkill = 1.0 - makefloat(GetCharacterSkill(aCharacter, SKILL_CANNONS)/100.0) / 3.0;
-
-	ref		rCannon = GetCannonByType(sti(aCharacter.Ship.Cannons.Type));
-	float	fReloadTime = GetCannonReloadTime(rCannon); // boal 28.01.03 - 09.02.05
-
-	float fMultiply = 1.0;
-	if (CheckCharacterPerk(aCharacter, "FastReload")) fMultiply = 0.9;
-	float ImmRel = AIShip_isPerksUse(CheckOfficersPerk(aCharacter, "ImmediateReload"), 1.0, 0.7);
-	fMultiply *= ImmRel;
-	if (CheckAttribute(&RealShips[sti(aCharacter.Ship.Type)], "Tuning.CannonsSpecial")) fMultiply *= 0.9;
-	fMultiply *= (1+CheckOfficersPerk(aCharacter,"InstantRepair"));//x2 времени при активной быстрой починке
-	// boal 060804 для компа поблажки
-	//Boyer remove reload speed boost for enemies
-	if (sti(aCharacter.index) != GetMainCharacterIndex())
-	{
-	   fReloadTime *= (7-MOD_SKILL_ENEMY_RATE)/6; // -16% на капитане(контра задержки залпа), -33% на невозможном
-	}
-	// boal <--
-	float crewQty  = GetCrewQuantity(aCharacter);
-	float OptCrew  = GetOptCrewQuantity(aCharacter);
-	float MaxCrew  = GetMaxCrewQuantity(aCharacter);
-	float fMorale  = GetCharacterCrewMorale(aCharacter);
-
-	if (crewQty > MaxCrew) crewQty = MaxCrew; // fix 14/03/05
-	if (OptCrew > 0)
-	{
-		float  fExp;
-		fExp = 0.001 + stf(GetCrewExp(aCharacter, "Cannoners") * crewQty) / stf(OptCrew * GetCrewExpRate());
-		if (fExp > 1) fExp = 1;
-		fReloadTime = fReloadTime * (1.0 + (1.0 - fExp) * 3.0);
-	}
-	fReloadTime = fReloadTime * (1.0 + (1.0 - fMorale / MORALE_NORMAL) * 0.2);
-
-	if (crewQty <= (GetMinCrewQuantity(aCharacter)))
-	{
-		fReloadTime = fReloadTime * 3.0; //меньше команды - тормозим
-	}
-    // boal  корректный учет команды <--
-	return  fMultiply * fReloadTime * fCannonSkill;
-}
 
 int GetCannonsNum(aref chr)
 {
@@ -1438,7 +1388,7 @@ void MakeCloneFortBoarding(string fromLocId)
 	rClone.boarding.locatorNum = 35;
 	rClone.boarding = "false";
 	rClone.boarding.nextdeck = "Boarding_fortyard"; // Jason
-	rClone.image = "loading\jonny_load\outside\FortVRight.tga";
+	rClone.image = "loading\jonny_load\outside\FortVRight.dds";
 }
 
 int GetPortManPrice(int Price, ref NPChar)
@@ -2294,7 +2244,8 @@ int GetShootDistance(ref chref, string ball)
 
 	ref	rCannon = GetCannonByType(sti(chref.Ship.Cannons.Type));
 	distance = stf(rCannon.FireRange);
-	if (CheckAttribute(chref, "perks.list.LongRangeShoot"))
+	bool bOk = chref.index == GetMainCharacterIndex() && CheckOfficersPerk(chref, "LongRangeShoot");
+	if (CheckAttribute(chref, "perks.list.LongRangeShoot") || bOk)
 	{
 		distance = distance * (1.15+p*0.03);
 	}

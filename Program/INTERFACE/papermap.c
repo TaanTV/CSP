@@ -243,11 +243,11 @@ void showmap() {
 	if (CurMap == -1 || Items[MapList[CurMap]].id == "map_good" || Items[MapList[CurMap]].id == "map_normal" || Items[MapList[CurMap]].id == "map_bad") {
 		LastMainMap = CurMap;
 		//using three map objects with different scales and button responses for different maps
-		SetNewPicture("MAP1", "interfaces\Maps\"+ sMap + "QM.tga.tx");      //"set map
+		SetNewPicture("MAP1", "interfaces\Maps\"+ sMap + "QM.dds");      //"set map
 		SetNodeUsing("MAP1",  true);
 		SetNodeUsing("MAP2",  false);
 	} else {
-		SetNewPicture("MAP2", "interfaces\Maps\"+ sMap + ".tga.tx");      //"set map
+		SetNewPicture("MAP2", "interfaces\Maps\"+ sMap + ".dds");      //"set map
 		SetNodeUsing("MAP1",  false);
 		SetNodeUsing("MAP2",  true);
 	}

@@ -406,7 +406,7 @@ void ProcessDialogEvent()
 			LAi_LockFightMode(Pchar, false);
 			LAi_SetActorTypeNoGroup(Pchar);
 			LAi_ActorTurnToCharacter(Pchar, NPChar);
-			dialog.text = "Приветствую тебя, герой! Наши поиски 'Амулета Некроманта', близки к завершению.";
+			dialog.text = "Приветствую тебя, герой! Наши поиски 'Амулета Некроманта' близки к завершению.";
 			link.l = "Что здесь происходит?! Какой амулет? Что ты такое?";
 			link.l.go = "Alt_start2_2";
 		break;

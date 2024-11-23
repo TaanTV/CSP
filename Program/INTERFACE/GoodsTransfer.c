@@ -531,10 +531,9 @@ void FillGoodsTable()
 	Table_Clear("GOODS_TABLE_LIST", false, true, false);
 	GameInterface.GOODS_TABLE_LIST.hr.td1.str = GetConvertStrWithReplace("Variable_GoodsTransfer_4", "Interface.txt", "#space#", " ");
 	GameInterface.GOODS_TABLE_LIST.hr.td2.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5", "Interface.txt", "#space#", " ");
-	GameInterface.GOODS_TABLE_LIST.hr.td3.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5.1", "Interface.txt", "#enter#", "\n");
-	GameInterface.GOODS_TABLE_LIST.hr.td4.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5.2", "Interface.txt", "#enter#", "\n");
-	GameInterface.GOODS_TABLE_LIST.hr.td5.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5.3", "Interface.txt", "#enter#", "\n");
-	GameInterface.GOODS_TABLE_LIST.hr.td5.scale = 0.8;
+	GameInterface.GOODS_TABLE_LIST.hr.td3.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5.2", "Interface.txt", "#enter#", "\n");
+	GameInterface.GOODS_TABLE_LIST.hr.td4.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5.3", "Interface.txt", "#enter#", "\n");
+	GameInterface.GOODS_TABLE_LIST.hr.td4.scale = 0.8;
 	curBuyGoodsWeight = 0;
 
 	for (i = 0, n = 1; i< GOODS_QUANTITY; i++)
@@ -555,10 +554,8 @@ void FillGoodsTable()
 		if (CheckAttribute(Characters[iCurCompanion], "TransferGoods.G." + sGood)) buyCount = sti(Characters[iCurCompanion].TransferGoods.G.(sGood)); else buyCount = 0;
 		GameInterface.GOODS_TABLE_LIST.(row).td2.str = buyCount;
 		buyCount2 = GetConsumeLimit(Characters[iCurCompanion], sGood);
-		GameInterface.GOODS_TABLE_LIST.(row).td3.str = buyCount2;
-		if (!buyCount2) GameInterface.GOODS_TABLE_LIST.(row).td3.color = argb(255,160,160,160);
-		GameInterface.GOODS_TABLE_LIST.(row).td4.str = Goods[i].Weight + " / " + Goods[i].Units;//вес/пачка
-		GameInterface.GOODS_TABLE_LIST.(row).td5.str = sti(Goods[i].Cost)/sti(Goods[i].Weight) + "\n(" + Goods[i].Cost + ")";
+		GameInterface.GOODS_TABLE_LIST.(row).td3.str = Goods[i].Weight + " / " + Goods[i].Units;//вес/пачка
+		GameInterface.GOODS_TABLE_LIST.(row).td4.str = sti(Goods[i].Cost)/sti(Goods[i].Weight) + "\n(" + Goods[i].Cost + ")";
 		curBuyGoodsWeight = curBuyGoodsWeight + (buyCount+buyCount2)*stf(Goods[i].Weight)/sti(Goods[i].Units);
 		n++;
 	}
@@ -579,8 +576,7 @@ void FillItemsTable()
 	Table_Clear("CONSUME_TABLE_LIST", false, true, false);
 	GameInterface.CONSUME_TABLE_LIST.hr.td1.str = GetConvertStrWithReplace("Variable_GoodsTransfer_8", "Interface.txt", "#space#", " ");
 	GameInterface.CONSUME_TABLE_LIST.hr.td2.str = GetConvertStrWithReplace("Variable_GoodsTransfer_9", "Interface.txt", "#space#", " ");
-	GameInterface.CONSUME_TABLE_LIST.hr.td3.str = GetConvertStrWithReplace("Variable_GoodsTransfer_5.1", "Interface.txt", "#enter#", "\n");
-	GameInterface.CONSUME_TABLE_LIST.hr.td4.str = GetConvertStrWithReplace("Variable_GoodsTransfer_10", "Interface.txt", "#space#", " ");
+	GameInterface.CONSUME_TABLE_LIST.hr.td3.str = GetConvertStrWithReplace("Variable_GoodsTransfer_10", "Interface.txt", "#space#", " ");
 	curBuyItemsWeight = 0;
 
 	for(i = 0, n = 1; i < ITEMS_QUANTITY; i++)
@@ -601,6 +597,7 @@ void FillItemsTable()
 		//но, возможно, лучше напрямую список предметов в массиве указывать... не весь список предметов проверяться будет, и при добавлении новых не возникнет неожиданностей
 		if (sItem == "Lockpick") continue;//отмычки пропускаем
 		if (sItem == "CompCraft_Tools" || sItem == "CompCraft_Locksmith" || sItem == "CompCraft_Puleleyka") continue; //исключение выбранных Шахом штук
+		if (sItem == "powder_pellet" || sItem == "grenade" || sItem == "harpoon" || sItem == "GunCap_colt" || sItem == "shotgun_cartridge" || sItem == "GunEchin" || sItem == "shotgun_bullet" || sItem == "12_gauge") continue; //не встречается в продаже
 		row = "tr" + n;
 
 		if (CheckAttribute(Characters[iCurFighter], "TransferItems.I." + sItem)) buyCount = sti(Characters[iCurFighter].TransferItems.I.(sItem)); else buyCount = 0;
@@ -616,9 +613,7 @@ void FillItemsTable()
 		GameInterface.CONSUME_TABLE_LIST.(row).td1.str = GetConvertStr(Items[i].name, "ItemsDescribe.txt");
 		GameInterface.CONSUME_TABLE_LIST.(row).td2.str = buyCount;
 		buyCount2 = GetConsumeLimit(Characters[iCurFighter], sItem);
-		GameInterface.CONSUME_TABLE_LIST.(row).td3.str = buyCount2;
-		if (!buyCount2) GameInterface.CONSUME_TABLE_LIST.(row).td3.color = argb(255,160,160,160);
-		GameInterface.CONSUME_TABLE_LIST.(row).td4.str = FloatToString(GetItemWeight(sItem), 1);
+		GameInterface.CONSUME_TABLE_LIST.(row).td3.str = FloatToString(GetItemWeight(sItem), 1);
 		curBuyItemsWeight = curBuyItemsWeight + (buyCount + buyCount2) * GetItemWeight(sItem);
 		n++;
 	}

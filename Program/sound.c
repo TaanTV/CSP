@@ -862,6 +862,12 @@ void ResetSound()
 
 void LoadSceneSound()
 {
+	if (CheckAttribute(PChar, "currentsoundtrack"))
+	{
+		string track = pchar.currentsoundtrack;
+		SetMusic(track);
+		return;
+	}
 	int i = FindLoadedLocation();
 	if (i != -1)
 		SetSchemeForLocation(&Locations[i]);

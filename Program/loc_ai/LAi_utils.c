@@ -309,8 +309,6 @@ float LAi_GetCharacterLuckLevel(aref character)
 //Применить повреждение к персонажу
 void LAi_ApplyCharacterDamage(aref chr, int dmg)
 {
-	if(CheckAttribute(chr, "chr_ai.type.bottle"))
-		chr.chr_ai.type.bottle = 0;
 	float damage    = MakeFloat(dmg);
 	bool  bIsOfficer = false;
 	//Офицерам ослабляем поврежрение
@@ -460,106 +458,118 @@ void LAi_CheckKillCharacter(aref chr)
 	if(SendMessage(chr, "ls", MSG_CHARACTER_EX_MSG, "IsDead")) return;
 	if(!CheckAttribute(chr, "chr_ai.hp")) chr.chr_ai.hp = 0.0;
 	//Проверяем
-	if(stf(chr.chr_ai.hp) < 1.0)
+	if(stf(chr.chr_ai.hp) >= 1.0) {
+		return;
+	}
+	int iattackID;
+	if (CheckAttribute(chr, "chr_ai.Blooding.BlooderIDx")) {
+		iattackID = sti(chr.chr_ai.Blooding.BlooderIDx);
+	}
+	if (CheckAttribute(chr, "chr_ai.KilledByIDx")) {
+		iattackID = sti(chr.chr_ai.KilledByIDx);
+	}
+	if (iattackID) {
+		ref rAttack = GetCharacter(iattackID);
+		bool isSetBlade = CheckAttribute(chr, "equip.blade");
+		AddCharacterExpToSkill(rAttack, LAi_GetBladeFencingType(rAttack), LAi_CalcExpForBladeKill( rAttack, chr, isSetBlade));
+	}
+	//Убиваем, если смертен
+	DeleteAttribute(chr,"chr_ai.Blooding");
+	DeleteAttribute(chr,"chr_ai.poison");
+	if(CheckAttribute(chr, "chr_ai.immortal"))
 	{
-		//Убиваем, если смертен
-		DeleteAttribute(chr,"chr_ai.Blooding");
-		DeleteAttribute(chr,"chr_ai.poison");
-		if(CheckAttribute(chr, "chr_ai.immortal"))
+		if(sti(chr.chr_ai.immortal) != 0)
 		{
-			if(sti(chr.chr_ai.immortal) != 0)
-			{
-				chr.chr_ai.hp = 1.0;
-				return;
-			}
-		}
-		if(IsCharacterPerkOn(chr, "Adventurer"))
-		{
-			if (!CheckAttribute(chr, "ScriptedDeath") && !CheckAttribute(chr, "Adventurers_Luck") && rand(10) <= GetCharacterSPECIALSimple(chr, SPECIAL_L))
-			{
-				chr.Adventurers_Luck = true;
-				int hitpoints = LAi_GetCharacterMaxHP(chr) / 2;
-				if (hitpoints > 200)
-				{
-					hitpoints = 200;
-				}
-				if (sti(chr.index) == GetMainCharacterIndex())
-				{
-					chr.chr_ai.hp =  hitpoints;
-					Log_Info(GetConvertStrWithReplace("Variable_LAi_utils_1", "Logs.txt", "#space#", " "));
-					PlaySound("interface\heartbeat.wav");
-					//Сюда можно поставить юз звука
-					return;
-				}
-				else
-				{
-					if (rand(1) == 0 || IsOfficer(chr))
-					{
-						chr.chr_ai.hp =  hitpoints;
-						Log_Info(GetFullName(chr) +  GetConvertStrWithReplace("Variable_LAi_utils_2", "Logs.txt", "#space#", " "));
-						return;
-					}
-				}
-			}
-		}
-
-		if(CheckAttribute(chr, "HalfImmortal") && !IsCompanion(chr))
-		{
-			bool bOkSave = bHalfImmortalPGG && CheckAttribute(chr, "ImmortalOfficer");
-			if (bOkSave || bHalfImmortalPGG == false)
-			{
-				LAi_CheckHalfImmortal(chr);
-				Log_Info(GetConvertStrWithReplace("Variable_LAi_utils_3", "Logs.txt", "#space#", " ") + GetFullName(CharacterFromID(pchar.DeadOfficer)) + GetConvertStrWithReplace("Variable_LAi_utils_4", "Logs.txt", "#space#", " "));
-				return;
-			}
-		}
-
-		// Lugger: Тренировки -->
-		bool bArena = CheckAttribute(chr, "LandAcademy") || CheckAttribute(chr, "ArenaAction") || CheckAttribute(chr, "ArenaEtapsAction") || CheckAttribute(chr, "ArenaTournament") || CheckAttribute(chr, "ArenaOdds");
-		if(bArena)
-		{
-			CheckAcademyAndOtherLoosers(chr);
+			chr.chr_ai.hp = 1.0;
 			return;
 		}
-		// Lugger: Тренировки <--
-		UnmarkCharacter(chr);
-		DeleteAttribute(chr, "quest.questflag");
-
-		chr.chr_ai.hp = 0.0;
-		// boal dead can be searched 14.12.2003 -->
-		Dead_AddLoginedCharacter(chr); // записали ещё живого в список трупов
-		// boal dead can be searched 14.12.2003 <--
-		SetCharacterTask_Dead(chr);
-		Postevent(EVENT_CHARACTER_DEAD, 1, "a", chr);
-		//Переинициируем параметры
-		if(CheckAttribute(chr, "chr_ai.type"))
-		{
-			string func = chr.chr_ai.type;
-			chr.chr_ai.type = "";
-			chr.chr_ai.tmpl = "";
-			if(func != "")
-			{
-				func = "LAi_type_" + func + "_Init";
-				call func(chr);
-			}
-			if(sti(chr.index) == nMainCharacterIndex)
-			{
-				//Если убили игрока, то запретим интерфейс
-				InterfaceStates.Launched = true;
-			}
-		}
-		LAi_Character_Dead_Process(chr);
-
-		if (CheckAttribute(chr, "CantLoot"))
-		{
-			Dead_DelLoginedCharacter(chr);//не обыскивается
-		}
-/* 		if(chr.id == "Mechanic1") // раньше Ведекер мог сдохнуть, но сейчас уже физически не может.
-		{
-			DeleteAttribute(pchar, "VedekerDiscount");
-			Log_Info(GetConvertStrWithReplace("Variable_LAi_utils_7", "Logs.txt", "#space#", " "));
-		} */
 	}
+	if(IsCharacterPerkOn(chr, "Adventurer"))
+	{
+		if (!CheckAttribute(chr, "ScriptedDeath") && !CheckAttribute(chr, "Adventurers_Luck") && rand(10) <= GetCharacterSPECIALSimple(chr, SPECIAL_L))
+		{
+			chr.Adventurers_Luck = true;
+			int hitpoints = LAi_GetCharacterMaxHP(chr) / 2;
+			if (hitpoints > 200)
+			{
+				hitpoints = 200;
+			}
+			if (sti(chr.index) == GetMainCharacterIndex())
+			{
+				chr.chr_ai.hp =  hitpoints;
+				Log_Info(GetConvertStrWithReplace("Variable_LAi_utils_1", "Logs.txt", "#space#", " "));
+				PlaySound("interface\heartbeat.wav");
+				//Сюда можно поставить юз звука
+				return;
+			}
+			else
+			{
+				if (rand(1) == 0 || IsOfficer(chr))
+				{
+					chr.chr_ai.hp =  hitpoints;
+					Log_Info(GetFullName(chr) +  GetConvertStrWithReplace("Variable_LAi_utils_2", "Logs.txt", "#space#", " "));
+					return;
+				}
+			}
+		}
+	}
+
+	if(CheckAttribute(chr, "HalfImmortal") && !IsCompanion(chr))
+	{
+		bool bOkSave = bHalfImmortalPGG && CheckAttribute(chr, "ImmortalOfficer");
+		if (bOkSave || bHalfImmortalPGG == false)
+		{
+			LAi_CheckHalfImmortal(chr);
+			Log_Info(GetConvertStrWithReplace("Variable_LAi_utils_3", "Logs.txt", "#space#", " ") + GetFullName(CharacterFromID(pchar.DeadOfficer)) + GetConvertStrWithReplace("Variable_LAi_utils_4", "Logs.txt", "#space#", " "));
+			return;
+		}
+	}
+
+	// Lugger: Тренировки -->
+	bool bArena = CheckAttribute(chr, "LandAcademy") || CheckAttribute(chr, "ArenaAction") || CheckAttribute(chr, "ArenaEtapsAction") || CheckAttribute(chr, "ArenaTournament") || CheckAttribute(chr, "ArenaOdds");
+	if(bArena)
+	{
+		CheckAcademyAndOtherLoosers(chr);
+		return;
+	}
+	// Lugger: Тренировки <--
+	UnmarkCharacter(chr);
+	DeleteAttribute(chr, "quest.questflag");
+
+	chr.chr_ai.hp = 0.0;
+	// boal dead can be searched 14.12.2003 -->
+	Dead_AddLoginedCharacter(chr); // записали ещё живого в список трупов
+	// boal dead can be searched 14.12.2003 <--
+	SetCharacterTask_Dead(chr);
+	Postevent(EVENT_CHARACTER_DEAD, 1, "a", chr);
+	//Переинициируем параметры
+	if(CheckAttribute(chr, "chr_ai.type"))
+	{
+		string func = chr.chr_ai.type;
+		chr.chr_ai.type = "";
+		chr.chr_ai.tmpl = "";
+		if(func != "")
+		{
+			func = "LAi_type_" + func + "_Init";
+			call func(chr);
+		}
+		if(sti(chr.index) == nMainCharacterIndex)
+		{
+			//Если убили игрока, то запретим интерфейс
+			InterfaceStates.Launched = true;
+		}
+	}
+	LAi_Character_Dead_Process(chr);
+
+	if (CheckAttribute(chr, "CantLoot"))
+	{
+		Dead_DelLoginedCharacter(chr);//не обыскивается
+	}
+/* 		if(chr.id == "Mechanic1") // раньше Ведекер мог сдохнуть, но сейчас уже физически не может.
+	{
+		DeleteAttribute(pchar, "VedekerDiscount");
+		Log_Info(GetConvertStrWithReplace("Variable_LAi_utils_7", "Logs.txt", "#space#", " "));
+	} */
 }
 
 //Создать фантомного персонажа
@@ -1289,50 +1299,30 @@ void MakePoisonAttack(aref attack, aref enemy, int iQuantity)
 		poison = stf(enemy.chr_ai.poison);
 		if(poison < 1.0) poison = 1.0;
 	}
-	enemy.chr_ai.poison = poison + 30 + rand(20) + iQuantity;
+	enemy.chr_ai.poison = poison + iQuantity;
 	MarkCharacter(enemy,"FX_Poison");
 }
 
-void MakePoisonAttackCheckSex(aref attacked, aref enemy)
+int LAi_CalcPoisonChance(ref attack)
 {
-	if (enemy.sex == "skeleton" || enemy.sex == "crab" || HasSubStr(enemy.model, "Canib_") || HasSubStr(enemy.model, "PGG_Chani"))
-	{
-		if (rand(1000) < 150) MakePoisonAttack(enemy, attacked, 30 + rand(20));
+	float coeff = 0.0;
+	if (attack.sex == "skeleton" || attack.sex == "crab" || HasSubStr(attack.model, "Canib_") || HasSubStr(attack.model, "PGG_Chani")) {
+		coeff = 15.0;
 	}
-	if (sti(enemy.chr_ai.special.valueP) != 0)
-	{
-		if (rand(99)<sti(enemy.chr_ai.special.valueP)) MakePoisonAttack(enemy,attacked,20+rand(40));
+	return (sti(attack.chr_ai.special.valueP) + MakeInt(coeff));
+}
+
+float LAi_CalcPoisonDuration(bool bIsRandomOn)
+{
+	return (50.0 + bIsRandomOn * (rand(POISON_TIME_RAND) + rand(POISON_TIME_RAND)));// rBlade.poison.quantity = 30 + 30 + rand(20) + rand(20) + rand(20);
+}
+
+void MakePoisonAttackCheckSex(aref attack, aref enemy)
+{
+	if (!pnrand(attack, LAi_CalcPoisonChance(attack), "poison")) {//основной чек 
+		return;
 	}
-	// Lugger --> травла от клинка.
-
-	/*if(CheckAttribute(enemy, "equip.blade"))
-	{
-		string sBlade = enemy.equip.blade;
-		ref rBlade = ItemsFromID(sBlade);
-
-		if(CheckAttribute(rBlade, "poison"))
-		{
-			if(attacked.sex == "skeleton" || attacked.sex == "crab" || CheckAttribute(enemy, "PoisonImmune"))
-			{
-				return;
-			}
-			else
-			{
-				if (rand(100) < 15)
-				{
-					if(CheckAttribute(rBlade, "poison.quantity"))
-					{
-						int iQuantity = sti(rBlade.poison.quantity);
-						MakePoisonAttack(enemy, attacked, iQuantity);
-
-						rBlade.poison.quantity = 30 + rand(20) + rand(20);
-					}
-				}
-			}
-		}
-	}*/
-
-	// Lugger <--
+	MakePoisonAttack(attack, enemy, LAi_CalcPoisonDuration(1));
 }
 
 string LAi_FindFreeRandomLocator(string group)
@@ -1481,57 +1471,66 @@ void LAi_Explosion(ref chr, int damage)
 }
 
 //Gregg
-void MakeBloodingAttack(aref enemy, aref attacked, float coeff) // Кровоточащая атака
+void MakeBloodingAttack(aref enemy, aref attack, float coeff) // Кровоточащая атака
 {
 	float Blooding = 0.0;
-	if(CheckAttribute(enemy, "chr_ai.Blooding"))
-	{
-		enemy.chr_ai.Blooding.Power = sti(enemy.chr_ai.Blooding.Power)+1;
+	if(CheckAttribute(enemy, "chr_ai.Blooding")) {
+		enemy.chr_ai.Blooding.Power = sti(enemy.chr_ai.Blooding.Power) + 1;
 		Blooding = stf(enemy.chr_ai.Blooding);
 		if(Blooding < 1.0) Blooding = 1.0;
 	}
 	else enemy.chr_ai.Blooding.Power = 1;
-	enemy.chr_ai.Blooding = Blooding + (10+rand(coeff*5)); // Продолжительность 5+(от 0 до коэфф*5)
+	enemy.chr_ai.Blooding = Blooding + coeff; // Продолжительность 5+(от 0 до коэфф*5)
 	FXMarkCharacter(enemy,"FX_Blood");
-
+	enemy.chr_ai.Blooding.BlooderIDx = attack.index;
 	//if(stf(enemy.chr_ai.Blooding) > 200.0) enemy.chr_ai.Blooding = 200.0;
 
-	if (enemy.index == GetMainCharacterIndex())
-	{
-		AddCharacterHealth(pchar, -2.0); // Кровотечение портит здоровье
+	if (enemy.index == GetMainCharacterIndex()) {
+		AddCharacterHealth(enemy, -0.5); // Кровотечение портит здоровье
 	}
+	return;
 }
 
 void MakeSwiftAttack(aref enemy, aref attacked, float coeff) // Резкий удар
 {
 	float Swift = 0.0;
 	enemy.chr_ai.curen = stf(enemy.chr_ai.energy);
-	if(CheckAttribute(enemy, "chr_ai.Swift"))
-	{
+	if(CheckAttribute(enemy, "chr_ai.Swift")) {
 		Swift = stf(enemy.chr_ai.Swift);
-		if(Swift < 1.0) Swift = 1.0;
+		if(Swift < 1.0) { Swift = 1.0; }
 	}
-	enemy.chr_ai.Swift = Swift + (1+rand(4)+coeff); // Продолжительность 1+(от 0 до 4)+коэфф
-	FXMarkCharacter(enemy,"FX_StanS");
-
+	enemy.chr_ai.Swift = Swift + coeff; // Продолжительность 1+(от 0 до 4)+коэфф
+	FXMarkCharacter(enemy, "FX_StanS");
+	return;
 	//if(stf(enemy.chr_ai.Swift) > 200.0) enemy.chr_ai.Swift = 200.0;
+}
+
+int CalcStunDuration(bool bIsRandomOn)
+{
+	return (1 + bIsRandomOn * rand(STUN_TIME_RAND));
 }
 
 void MushketStun(aref enemy) // Мушкетный стан - Gregg
 {
 	LAi_LockFightMode(enemy, true);
-	if(enemy.chr_ai.type == "officer") enemy.chr_ai.backuptype = enemy.chr_ai.type; // фикс слета группы у офицеров из-за двойного стана
+	if(enemy.chr_ai.type == "officer") {
+		enemy.chr_ai.backuptype = enemy.chr_ai.type; // фикс слета группы у офицеров из-за двойного стана
+	}
 	LAi_SetActorTypeNoGroup(enemy);
 	float understun = 0.0;
-	if(CheckAttribute(enemy, "chr_ai.understun"))
-	{
+	if(CheckAttribute(enemy, "chr_ai.understun")) {
 		understun = stf(enemy.chr_ai.understun);
 		if(understun < 1.0) understun = 1.0;
 	}
-	enemy.chr_ai.understun = understun + 1 + rand(2); // Продолжительность 1+(от 0 до 2)
+	enemy.chr_ai.understun = understun + CalcStunDuration(1); // Продолжительность 1+(от 0 до 2)
 	FXMarkCharacter(enemy,"FX_StanH");
-
+	return;
 	//if(stf(enemy.chr_ai.Swift) > 200.0) enemy.chr_ai.Swift = 200.0;
+}
+
+int CalcTraumaDuration(bool bIsRandomOn)
+{
+	return (20 + bIsRandomOn * rand(TRAUMA_TIME_RAND));
 }
 
 void MakeTraumaAttack(aref enemy, aref attacked) // Травма
@@ -1542,6 +1541,7 @@ void MakeTraumaAttack(aref enemy, aref attacked) // Травма
 		Trauma = stf(enemy.chr_ai.Trauma);
 		if(Trauma < 1.0) Trauma = 1.0;
 	}
-	enemy.chr_ai.Trauma = Trauma + (20+rand(40)); // Продолжительность 20-60
+	enemy.chr_ai.Trauma = Trauma + CalcTraumaDuration(1); // Продолжительность 20-60
 	FXMarkCharacter(enemy,"FX_Travma");
+	return;
 }

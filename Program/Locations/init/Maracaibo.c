@@ -14,7 +14,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].islandId = "Mein";
 
 	locations[n].filespath.models = "locations\Town_Maracaibo\Town\";
-	locations[n].image = "loading\jonny_load\city\Town_Maracaibo.tga";
+	locations[n].image = "loading\jonny_load\city\Town_Maracaibo.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -217,7 +217,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\tavern01\";
-	locations[n].image = "loading\jonny_load\inside\Tavern01.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern01.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "Maracaibo";
@@ -263,7 +263,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_tavern_upstairs";
 	locations[n].id.label = "Tavern upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	Locations[n].lockWeather = "Inside";
@@ -304,7 +304,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store03\";
-	locations[n].image = "loading\jonny_load\inside\store03.tga";
+	locations[n].image = "loading\jonny_load\inside\store03.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	Locations[n].lockWeather = "Inside";
@@ -352,7 +352,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_Bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\Bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	locations[n].lockWeather = "Inside";
@@ -398,7 +398,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard01\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard01.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard01.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	Locations[n].lockWeather = "Inside";
@@ -444,7 +444,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence04";
-	locations[n].image = "loading\jonny_load\inside\residence04.tga";
+	locations[n].image = "loading\jonny_load\inside\residence04.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	Locations[n].lockWeather = "Inside";
@@ -486,7 +486,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_church";
 	locations[n].id.label = "Church";
 	locations[n].filespath.models = "locations\inside\Church01";
-	locations[n].image = "loading\jonny_load\inside\Church01.tga";
+	locations[n].image = "loading\jonny_load\inside\church01.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	Locations[n].lockWeather = "Inside";
@@ -525,7 +525,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Maracaibo_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice3.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice3.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	locations[n].lockWeather = "Inside";
@@ -568,7 +568,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_ExitTown";
 	locations[n].fastreload = "Maracaibo";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitY.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitY.dds";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	//Sound
@@ -631,7 +631,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Maracaibo_jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle8.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle8.dds";
  	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";
@@ -687,7 +687,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Maracaibo_jungle_03";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle4.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle4.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";
@@ -743,7 +743,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Maracaibo_Jungle_04";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle10.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle10.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";
@@ -792,7 +792,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Maracaibo_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\caveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";
@@ -843,7 +843,7 @@ int LocationInitMaracaibo(int n)
 	// Пещера
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Maracaibo_Cave";
-	locations[n].image = "loading\jonny_load\inside\cavernMedium2.tga";
+	locations[n].image = "loading\jonny_load\inside\cavernMedium2.dds";
 	locations[n].id.label = "Cave";
 	//Sound
 	locations[n].type = "cave";
@@ -889,7 +889,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore37";
 	locations[n].id.label = "Shore37";
-	locations[n].image = "loading\jonny_load\shores\shore03.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore03.dds";
 	locations[n].worldmap = "Shore37";
 	//Sound
 	locations[n].type = "seashore";
@@ -943,7 +943,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Maracaibo_jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle1.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle1.dds";
  	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";
@@ -992,7 +992,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Maracaibo_CaveEntrance_02";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\caveEnt1.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";

@@ -231,11 +231,11 @@ void PGG_DailyUpdateEx(int i)
 	if (CheckAttribute(chr,"PGGAi.DontUpdate"))
 	{
 		Log_TestInfo(GetFullName(chr)+ GetConvertStrWithReplace("Variable_PsHero_1", "Logs.txt", "#space#", " "));
-		chr.PGGAi.Task.SetSail = true;
+		if(!CheckAttribute(chr,"PGGAi.Task.SetSail")) chr.PGGAi.Task.SetSail = true;
 		if(!CheckAttribute(chr,"LambiniAsoleda") && GetQuestPastDayParam("PGGAlmostDied" + i) >= 20)
 		{
 			DeleteAttribute(chr,"PGGAi.DontUpdate");
-			DeleteAttribute(chr,"PGGAi.Task.SetSail");
+			DeleteAttribute(chr,"PGGAi.Task");
 		}
 		return;
 	}
@@ -764,7 +764,7 @@ void PGG_SetUpForTask(ref chr)
 			}
 			chr.mapEnc.Name = GetHeroName(sti(chr.PGGAi.HeroNum));
 			string sColony = chr.PGGAi.Task.Target;
-			int daysQty = 1 + GetMaxDaysFromIsland2Island(GetArealByCityName(sColony), GetArealByCityName(chr.PGGAi.location.town));
+			int daysQty = 3 + GetMaxDaysFromIsland2Island(GetArealByCityName(sColony), GetArealByCityName(chr.PGGAi.location.town));
 			int iGoods;
 			int iSpace;
 
@@ -2314,7 +2314,6 @@ void PGG_Q1CheckStartState(string qName)
 		}
 	}
 	PChar.GenQuest.PGG_Quest.StartGoods = 0; //GetSquadronGoods(pchar, sti(PChar.GenQuest.PGG_Quest.Goods)); //считаем весь товар в экскадре!
-
 	n = GetCompanionQuantity(PChar);
 	for (i = 0; i < n; i++)
 	{

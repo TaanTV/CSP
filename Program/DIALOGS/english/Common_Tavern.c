@@ -234,6 +234,7 @@ void ProcessDialogEvent()
 				if(GetQuestPastDayParam("BSPrologueEnded") > 7 && sti(pchar.rank) >= 30 && sti(npchar.nation) == PIRATE && npchar.id != "Pirates_tavernkeeper" && !CheckAttribute(pchar, "BSOnTheHorizon"))
 				{
 					pchar.BSOnTheHorizon = true;
+					BSBons_SeaBattle(false);
 					dialog.text = "Hey, isn't our hope and support looking for you, bright-faced Miss Guthrie?";
 					link.l1 = "Oh my God! What is it this time?";
 					link.l1.go = "BS_CPNG_2";
@@ -269,14 +270,15 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_2":
-            dialog.text = "I have no idea. But her messenger asked very convincingly to tell captain "+pchar.name+" that someone is waiting for " + GetSexPhrase("him", "her") + " at the Bermudes store. And if I were this captain, I wouldn't hesitate.";
+            dialog.text = "I have no idea. But her messenger asked very convincingly to tell captain "+pchar.name+" that someone is waiting for " + GetSexPhrase("him", "her") + " at the Guthrie residence in the Bahamas. And if I were this captain, I wouldn't delay.";
             link.l1 = "Okay, I got it.";
 			link.l1.go = "exit";
 			SetQuestHeader("BSOnTheHorizon");
 			AddQuestRecord("BSOnTheHorizon", "1");
-
+			LocatorReloadEnterDisable("Nassau_town", "gate1", true);
+			LocatorReloadEnterDisable("Nassau_ExitTown", "reload2_back", true);
 			PChar.quest.BSOnTheHorizon_start.win_condition.l1 = "location";
-			PChar.quest.BSOnTheHorizon_start.win_condition.l1.location = "Pirates_town";
+			PChar.quest.BSOnTheHorizon_start.win_condition.l1.location = "Nassau_town";
 			PChar.quest.BSOnTheHorizon_start.function = "BSOnTheHorizon_start";
 		break;
 
@@ -1283,6 +1285,13 @@ void ProcessDialogEvent()
 		break;
 
 		case "room":
+			if (CheckAttribute(PChar, "questTemp.BSPrologue.WaitingForNassauSiege") && pchar.location == "Pirates_Tavern")
+			{
+				dialog.text = "I'm sorry, Captain, but all the seats are taken now.";
+				link.l1 = "Too bad...";
+				link.l1.go = "exit";
+				break;
+			}
 			//Квест Виспер
 			if (CheckAttribute(pchar, "Whisper.EsFriendTown") && pchar.location == pchar.Whisper.EsFriendTown+"_tavern")
 			{

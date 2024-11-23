@@ -778,8 +778,6 @@ void DozorToHouseKeyInit(string qName)
 
 void DozorLastDialog(string qName)
 {
-	Log_InfoS(GetConvertStrWithReplace("Variable_Quests_2", "Logs.txt", "#space#", " "));
-
 	TakeNItems(PChar, "Dozor_Key", -1);
 	TakeNItems(PChar, "Dozor_Mekakhrom", -1);
 
@@ -1196,13 +1194,16 @@ void MysteriousIslandFightDavyForserWin(string qName)
 
 void MysteriousIslandMeetingMonchitlan(string qName)
 {
+	ref chr;
 	int iRank = GetRank(PChar, MOD_SKILL_ENEMY_RATE) + 20;
-	ref chr = GetCharacter(NPC_GenerateCharacter("Monchitlan", "mummy", "man", "man", iRank, PIRATE, -1, true));
+	if (MOD_SKILL_ENEMY_RATE == 3 && bHardAnimations) chr = GetCharacter(NPC_GenerateCharacter("Monchitlan", "mummy", "man", "man_fast", iRank, PIRATE, -1, true));
+	else chr = GetCharacter(NPC_GenerateCharacter("Monchitlan", "mummy", "man", "man", iRank, PIRATE, -1, true));
 	chr.name = GetConvertStrWithReplace("Variable_Quests_20", "Names.txt", "#space#", " ");
 	chr.lastname = "";
 	chr.Dialog.FileName = "Quest\KPS\MysteriousIsland\Characters.c";
 	chr.Dialog.CurrentNode = "5";
 	chr.SaveItemsForDead = true;
+	if (bHardBoss) chr.AlwaysReload = true;//перезарядка независимо от Дозарядки
 	FantomMakeCoolFighter(chr, iRank, 100, 100, "topor_01", "pistol6", 1000);
 	SetFoodToCharacter(chr, 2, 15);
 	LAi_SetImmortal(chr, true);

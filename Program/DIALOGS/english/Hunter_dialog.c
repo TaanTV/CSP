@@ -24,13 +24,12 @@ void ProcessDialogEvent()
 		case "First time":
 			chrDisableReloadToLocation = false;
 			//Lai_SetPlayerType(pchar);
-
 			dialog.text = GetFullName(PChar) + "! "+"We've been tracking you for a long time, and now we finally have you in our hands.";
 			if (SFheadhunters(NPChar.id)) dialog.text = "So, you got a lot of silver and you think no one's gonna look for it?"; // СФ
+			if (HasSubStr(NPChar.id, "BShh")) dialog.text = "Influential people have asked me to send you greetings from the Guthrie family.";
 			Link.l1 = "Who are you and what do you want from me?";
 			Link.l1.go = "meeting";
-
-			PChar.GenQuest.HunterStart = true;
+			if (!HasSubStr(NPChar.id, "BShh")) PChar.GenQuest.HunterStart = true;
 		break;
 
 		case "meeting":

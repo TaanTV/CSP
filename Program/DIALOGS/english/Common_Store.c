@@ -118,13 +118,14 @@ void ProcessDialogEvent()
             dialog.text = "Contact Miss Guthrie, she recently arrived from Nassau and took control of the prize deals. In Bermudes, Jackman himself comes to her with a bow.";
             link.l1 = "Hmm. Guthrie... Something familiar. Okay, see you later.";
 			link.l1.go = "exit";
-
 			sld = CharacterFromID("Pirates_trader");
-			if(sld.lastname != "Guthrie")
+			if(sld.lastname != "Guthrie" && !CheckAttribute(PChar, "questTemp.BSPrologue.WaitingForNassauSiege") && !CheckAttribute(PChar, "BS_NassauWaitingForSiege"))
 			{
+				SetFunctionLocationCondition("BST_Pirates_Store", "Pirates_Store", false);
 				BS_ReplaceTraderWithGatri();
 				sld.Dialog.FileName = "Quest\BlackSails\NePluyjVKolodec.c";
 				sld.Dialog.CurrentNode = "BS_NPVK_3";
+				sld.sex = "woman";
 				SetQuestHeader("BSPrologue");
 				AddQuestRecord("BSPrologue", "1");
 
@@ -978,15 +979,15 @@ void ProcessDialogEvent()
 							int iGetMaxDays3 = GetMaxDaysFromIsland2Island(GetArealByCityName(NPChar.city),GetArealByCityName(Characters[sti(npchar.storeMan3)].city));
 							if(CheckOfficersPerk(pchar, "Trader"))
 							{
-								npchar.iDaysExpired1 = iGetMaxDays1 - drand(MakeInt(iGetMaxDays1/2.5)) + 1 + drand(MakeInt(3*iGetMaxDays1/8) - 1));
-								npchar.iDaysExpired2 = iGetMaxDays2 - drand1(MakeInt(iGetMaxDays2/2.5)) + 1 + drand1(MakeInt(3*iGetMaxDays2/8) - 1));
-								npchar.iDaysExpired3 = iGetMaxDays3 - drand2(MakeInt(iGetMaxDays3/2.5)) + 1 + drand2(MakeInt(3*iGetMaxDays3/8) - 1));
+								npchar.iDaysExpired1 = iGetMaxDays1 - drand(MakeInt(iGetMaxDays1/2.5)) + 1 + drand(MakeInt(3*iGetMaxDays1/8) - 1);
+								npchar.iDaysExpired2 = iGetMaxDays2 - drand1(MakeInt(iGetMaxDays2/2.5)) + 1 + drand1(MakeInt(3*iGetMaxDays2/8) - 1);
+								npchar.iDaysExpired3 = iGetMaxDays3 - drand2(MakeInt(iGetMaxDays3/2.5)) + 1 + drand2(MakeInt(3*iGetMaxDays3/8) - 1);
 							}
 							else //Lipsar переделал формулы (ВСЕ(Почти))
 							{
-								npchar.iDaysExpired1 = 2*iGetMaxDays1/3 + 1 + drand(MakeInt(3*iGetMaxDays1/8) - 1));
-								npchar.iDaysExpired2 = 2*iGetMaxDays2/3 + 1 + drand1(MakeInt(3*iGetMaxDays2/8) - 1));
-								npchar.iDaysExpired3 = 2*iGetMaxDays3/3 + 1 + drand2(MakeInt(3*iGetMaxDays3/8) - 1));
+								npchar.iDaysExpired1 = 2*iGetMaxDays1/3 + 1 + drand(MakeInt(3*iGetMaxDays1/8) - 1);
+								npchar.iDaysExpired2 = 2*iGetMaxDays2/3 + 1 + drand1(MakeInt(3*iGetMaxDays2/8) - 1);
+								npchar.iDaysExpired3 = 2*iGetMaxDays3/3 + 1 + drand2(MakeInt(3*iGetMaxDays3/8) - 1);
 							}
 
 							if(CheckOfficersPerk(pchar, "Trader"))
@@ -1165,7 +1166,7 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				if (GetQuestPastDayParam("CargoQuest") == sti(pchar.CargoQuest.iDaysExpired))
+				if (GetQuestPastDayParam("CargoQuest") >= sti(pchar.CargoQuest.iDaysExpired))
 				{
 					dialog.text = "You are 1 day late. Therefore, I will only pay you half the price.";
 					link.l1 = "Ehh, it doesn't happen to anyone, let's";

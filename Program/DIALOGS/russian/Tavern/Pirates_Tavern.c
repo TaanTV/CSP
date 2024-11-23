@@ -42,6 +42,11 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1 = "К тебе в таверну, Джон Эйвори не забегал?";
 				link.l1.go = "StepPL5Berm_1";
 			}
+			if (CheckAttribute(PChar, "questTemp.BSPrologue.WaitingForNassauSiege") && Colonies[FindColony("Nassau")].nation == ENGLAND)
+			{
+				link.l1 = "Мисс Гатри здесь?";
+				link.l1.go = "GatrisBarman";
+			}
             // <== Проверяем поле состояния квестов.
 		break;
 		//шебека Синяя Птица
@@ -141,8 +146,19 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			pchar.questTemp.piratesLine = "PL5Hunter_toOrryHouse";
 		break;
 
-
+		case "GatrisBarman":
+			dialog.text = "Да, она в комнате. Желаете аудиенции?";
+			link.l1 = "Да.";
+			link.l1.go = "GatrisBarmanIndoor";
+			link.l2 = "В другой раз.";
+			link.l2.go = "exit";
+		break;
+		
+		case "GatrisBarmanIndoor":
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit();
+            DoReloadCharacterToLocation("Pirates_tavern_upstairs","goto", "goto1");
+		break;		
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }
-

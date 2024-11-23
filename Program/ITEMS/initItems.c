@@ -79,7 +79,7 @@ int InitItems()
 	itm.picIndex = 10;
 	itm.picTexture = "ITEMS_15";
 	itm.price = 20;
-	itm.Weight = 0.6;
+	itm.Weight = 0.3;
 	itm.Solder_o.rare = 0.3;
 	itm.Solder_o.min = 2;
 	itm.Solder_o.max = 6;
@@ -96,7 +96,7 @@ int InitItems()
 	itm.Food.pic = 4;
 	itm.Food.selpic = 12;
 	itm.Food.energy = 8.0;
-	itm.Food.energy.speed = 25.0;
+	itm.Food.energy.speed = 1.5;
 	itm.minlevel = 0;
 	itm.rare = 0.3;
 	itm.SortIndex = 2;
@@ -111,7 +111,7 @@ int InitItems()
 	itm.picIndex = 6;
 	itm.picTexture = "ITEMS_15";
 	itm.price = 40;
-	itm.Weight = 1.2;
+	itm.Weight = 0.6;
 	itm.Solder_o.rare = 0.3;
 	itm.Solder_o.min = 2;
 	itm.Solder_o.max = 6;
@@ -128,7 +128,7 @@ int InitItems()
 	itm.Food.pic = 0;
 	itm.Food.selpic = 8;
 	itm.Food.energy = 16.0;
-	itm.Food.energy.speed = 15.0;
+	itm.Food.energy.speed = 2.0;
 	itm.minlevel = 0;
 	itm.rare = 0.3;
 	itm.SortIndex = 2;
@@ -143,7 +143,7 @@ int InitItems()
 	itm.picIndex = 7;
 	itm.picTexture = "ITEMS_15";
 	itm.price = 60;
-	itm.Weight = 1.8;
+	itm.Weight = 0.9;
 	itm.Solder_o.rare = 0.3;
 	itm.Solder_o.min = 2;
 	itm.Solder_o.max = 6;
@@ -160,7 +160,7 @@ int InitItems()
 	itm.Food.pic = 1;
 	itm.Food.selpic = 9;
 	itm.Food.energy = 24.0;
-	itm.Food.energy.speed = 15.0;
+	itm.Food.energy.speed = 2.5;
 	itm.minlevel = 0;
 	itm.rare = 0.3;
 	itm.SortIndex = 2;
@@ -175,7 +175,7 @@ int InitItems()
 	itm.picIndex = 8;
 	itm.picTexture = "ITEMS_15";
 	itm.price = 80;
-	itm.Weight = 2.4;
+	itm.Weight = 1.2;
 	itm.Solder_o.rare = 0.3;
 	itm.Solder_o.min = 2;
 	itm.Solder_o.max = 6;
@@ -192,7 +192,7 @@ int InitItems()
 	itm.Food.pic = 2;
 	itm.Food.selpic = 10;
 	itm.Food.energy = 32.0;
-	itm.Food.energy.speed = 10.0;
+	itm.Food.energy.speed = 3.0;
 	itm.minlevel = 0;
 	itm.rare = 0.3;
 	itm.SortIndex = 2;
@@ -207,7 +207,7 @@ int InitItems()
 	itm.picIndex = 9;
 	itm.picTexture = "ITEMS_15";
 	itm.price = 100;
-	itm.Weight = 3.0;
+	itm.Weight = 1.5;
 	itm.Solder_o.rare = 0.3;
 	itm.Solder_o.min = 2;
 	itm.Solder_o.max = 6;
@@ -224,7 +224,7 @@ int InitItems()
 	itm.Food.pic = 3;
 	itm.Food.selpic = 11;
 	itm.Food.energy = 50.0;
-	itm.Food.energy.speed = 5.0;
+	itm.Food.energy.speed = 3.5;
 	itm.minlevel = 0;
 	itm.rare = 0.3;
 	itm.SortIndex = 2;
@@ -8970,10 +8970,10 @@ int InitItems()
 	n++;
 	
 	makeref(itm,Items[n]);
-	itm.id = "Joker";	// Джокер
+	itm.id = "talisman20";	// Джокер
 	itm.groupID = TALISMAN_ITEM_TYPE;
-	itm.name = "itmname_Joker";
-	itm.describe = "itmdescr_Joker";
+	itm.name = "itmname_talisman20";
+	itm.describe = "itmdescr_talisman20";
 	itm.picIndex = 7;
 	itm.picTexture = "ITEMS_21";
 	itm.price = 25000;

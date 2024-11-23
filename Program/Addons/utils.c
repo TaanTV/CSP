@@ -525,6 +525,17 @@ void GetBoardModeToLocation(ref loc)
 				sFile = "deckLineshipVSFrigate_locators";
 			}
 		break;
+		
+		case "Boarding_GunDeck":
+			if(sti(InterfaceStates.ShowBoardMode) == 1)
+			{
+				sFile = "Gdeck_locators_lugger";
+			}
+			else
+			{
+				sFile = "GDeck_locators";
+			}
+		break;
 	}
 
 	loc.models.always.locators = sFile;
@@ -614,24 +625,9 @@ void SetGeraldDetails(ref chr, int iHull, int iColor, string sType, string sGera
 	if(sGerald != "")
 	{
 		rShip.GeraldName = sGerald;
-		rShip.ShipSails.gerald_name = "Ships\Gerald\" + sGerald + ".tga";
+		rShip.ShipSails.gerald_name = "Ships\Gerald\" + sGerald + ".dds";
 	}
 }
-
-
-/*
-string GetNameLugger(ref chr, string sType)
-{
-	string sName = "";
-	switch(sType)
-	{
-		case "n": sName = chr.name; break;
-		case "l": sName = chr.lastname; break;
-		case "f": sName = chr.name + " " + chr.lastname; break;
-	}
-	return sName;
-}
-*/
 
 void CreateCaimanShoreSlaves(ref loc)
 {

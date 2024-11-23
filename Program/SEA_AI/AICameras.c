@@ -20,7 +20,7 @@ void DeleteSeaCamerasEnvironment()
 
 float CalcLandRadiusNew()
 {
-    return 3.0 + Clampf(stf(InterfaceStates.RadDetails))*4.5;
+    return 2.0 + Clampf(stf(InterfaceStates.RadDetails))*3.0;
 }
 
 //#20171223-01 Camera perspective option
@@ -31,7 +31,8 @@ void SetPerspectiveSettings()
     SeaFreeCamera.Perspective = fCamPersp;
 	SeaShipCamera.Perspective = fCamPersp;
 
-	SendMessage(&locCamera, "lf", MSG_CAMERA_SET_RADIUS, CalcLandRadiusNew());
+	float fMod = GetMultiplyFromScreenRatio(); //добавил множитель от соотношения сторон экрана
+	SendMessage(&locCamera, "lf", MSG_CAMERA_SET_RADIUS, CalcLandRadiusNew() * fMod);
 	SendMessage(&locCamera, "lf", MSG_CAMERA_SET_PERSPECTIVE, CalcLandPerspective());
 }
 //#20171223-01 Camera perspective option

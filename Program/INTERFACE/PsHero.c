@@ -236,17 +236,17 @@ void ShowPGGInfo()
 			SetOTHERMiniTable("TABLE_SMALLOTHER", chr);
 			SetFormatedText("OFFICER_NAME", GetFullName(chr));
 			SetNewPicture("CHARACTER_BIG_PICTURE", "interfaces\portraits\256\face_" + chr.faceId + ".tga");
-			SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame3.tga");
+			SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame3.dds");
 			int iShip = sti(chr.ship.type);
 			if (iShip != SHIP_NOTUSED)
 			{
 				ref refShip = GetRealShip(iShip);
 				string sShip = refShip.BaseName;
-				SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".tga.tx");
+				SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".dds");
 			}
-			else {SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.tga.tx");}
-			SetNewPicture("SHIP_FRAME_PICTURE", "interfaces\Frame2.tga");
-			SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(chr)+".tga");
+			else {SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.dds");}
+			SetNewPicture("SHIP_FRAME_PICTURE", "interfaces\Frame2.dds");
+			SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(chr)+".dds");
 	
 			XI_WindowShow("RPG_WINDOW", true);
 			XI_WindowDisable("RPG_WINDOW", false);

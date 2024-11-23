@@ -2459,7 +2459,18 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 
 			shTo = &RealShips[sti(Pchar.Ship.Type)];
 			int HullArm = shTo.HullArmor;
-			int CannonsCal = sti(pchar.Ship.Cannons.Type);
+
+			Pchar.Ship.Cannons.Borts.cannonl = sti(shTo.lcannon) + 2;
+			Pchar.Ship.Cannons.Borts.cannonr = sti(shTo.rcannon) + 2;
+			Pchar.Ship.Cannons.Borts.cannonf = sti(shTo.fcannon);
+			Pchar.Ship.Cannons.Borts.cannonb = sti(shTo.bcannon);
+			Pchar.Ship.Cannons = sti(shTo.CannonsQuantity) + 4;
+
+			aref arTo, arFrom;
+			makearef(arFrom, pchar.Ship.Cannons);
+			makearef(arTo, pchar.tempFD);
+		    CopyAttributes(arTo,arFrom);//запоминаем состояние пушек во временном атрибуте
+
 			float MM = stf(shTo.MastMultiplier);
 			string ShipName = pchar.ship.name;
 
@@ -2485,7 +2496,19 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			shTo = &RealShips[sti(Pchar.Ship.Type)];
 			//shTo.HullArmor = HullArm;
 			shTo.MastMultiplier = MM;
-			pchar.Ship.Cannons.Type = CannonsCal;
+
+			makearef(arFrom, pchar.tempFD);
+			makearef(arTo, pchar.Ship.Cannons);
+		    CopyAttributes(arTo,arFrom);//копируем старые пушки на новый корабль
+			DeleteAttribute(pchar, "tempFD");//удаляем временный атрибут
+			pchar.Ship.Cannons.borts.cannonl.damages.c27 = 1.0; //прописываем 4 дополнительных пушки
+			pchar.Ship.Cannons.borts.cannonl.damages.c28 = 1.0;
+			pchar.Ship.Cannons.borts.lcannon.damages.c27 = 1.0;
+			pchar.Ship.Cannons.borts.lcannon.damages.c28 = 1.0;
+			pchar.Ship.Cannons.borts.cannonr.damages.c27 = 1.0;
+			pchar.Ship.Cannons.borts.cannonr.damages.c28 = 1.0;
+			pchar.Ship.Cannons.borts.rcannon.damages.c27 = 1.0;
+			pchar.Ship.Cannons.borts.rcannonl.damages.c28 = 1.0;
 
 			if (TuneHP)
 			{
@@ -2589,7 +2612,7 @@ void checkMatherial(ref Pchar, ref NPChar, int good1, int good2, int good3)
     {
         amount = sti(NPChar.Tuning.Matherial2);
     }
-    TakeNItemsWithCabin(pchar, good2, -amount);
+    TakeNItemsWithCabin(pchar, good2, -amount, false);
     NPChar.Tuning.Matherial2 = sti(NPChar.Tuning.Matherial2) - amount;
 
     amount = GetCharacterItemWithCabin(pchar, good3,true) - sti(NPChar.Tuning.Matherial3);
@@ -2601,6 +2624,6 @@ void checkMatherial(ref Pchar, ref NPChar, int good1, int good2, int good3)
     {
         amount = sti(NPChar.Tuning.Matherial3);
     }
-    TakeNItemsWithCabin(pchar, good3, -amount);
+    TakeNItemsWithCabin(pchar, good3, -amount, false);
     NPChar.Tuning.Matherial3 = sti(NPChar.Tuning.Matherial3) - amount;
 }

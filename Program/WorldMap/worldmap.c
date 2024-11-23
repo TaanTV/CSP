@@ -205,7 +205,7 @@ void wdmCreateWorldMap()
 	worldMap.rumText.pos.y = cy + 30.0 * fHtRatio;
 
 	worldMap.nationFlag.count = 8;
-	worldMap.nationFlag.texture = "WorldMap/Interfaces/WorldMapEnsigns" + iFlagAllWdm + ".tga";
+	worldMap.nationFlag.texture = "WorldMap/Interfaces/WorldMapEnsigns" + iFlagAllWdm + ".dds";
 	worldMap.nationFlag.height = 48 * fHtRatio;
 	worldMap.nationFlag.topPos = cy + 112 * fHtRatio;
 	if (iFlagAllWdm == 2) 
@@ -257,7 +257,7 @@ void wdmCreateWorldMap()
 	if(IsEntity(wdm_fader) == 0) Trace("Fader not created!!!");
 	float fadeInTime = 0.5;
 	SendMessage(&wdm_fader, "lfl", FADER_IN, fadeInTime, true);
-	SendMessage(&wdm_fader, "ls", FADER_PICTURE0, "jonny_load\sea\sea_"+rand(3)+".tga");
+	SendMessage(&wdm_fader, "ls", FADER_PICTURE0, "jonny_load\sea\sea_"+rand(3)+".dds");
 	//Установим звуковую схему
 	SetSchemeForMap();
 	//Сообщим, что загрузились

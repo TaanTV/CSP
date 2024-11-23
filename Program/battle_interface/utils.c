@@ -579,9 +579,9 @@ void GetTextureUVForShip(int nShipType, ref rLeft, ref rTop, ref rRight, ref rBo
 		int nV = BI_intNRetValue[0] / 32;
 		int nH = BI_intNRetValue[0] - nV * 32;
 		fLeft = stf(nH) * 0.03125;
-		fTop = stf(nV) * 0.03125;//0.25;
+		fTop = stf(nV) * 0.03125*2;//0.25;
+		fBottom = fTop + 0.03125*2;//0.25;
 		fRight = fLeft + 0.03125;
-		fBottom = fTop + 0.03125;//0.25;
 	}
 
 	rLeft = fLeft;

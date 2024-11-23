@@ -102,8 +102,8 @@ void InitInterface_RIS(string iniName, aref chr, int whospeak, string sMode)
 	SetDefaultColorsForAnswers();
 	SetSelectedColorsForAnswers(0);
 
-	SetNewPicture("PORTRAIT_PICTURE", "interfaces\portraits\128\face_" + rSpeakCharacter.FaceId + ".tga.tx");
-	SetNewPicture("PLAYER_PORTRAIT_PICTURE", "interfaces\portraits\128\face_" + pchar.FaceId + ".tga.tx");
+	SetNewPicture("PORTRAIT_PICTURE", "interfaces\portraits\128\face_" + rSpeakCharacter.FaceId + ".tga");
+	SetNewPicture("PLAYER_PORTRAIT_PICTURE", "interfaces\portraits\128\face_" + pchar.FaceId + ".tga");
 
 	sText = XI_ConvertString("ChooseSpeakAnswers");
 	SetFormatedText("HELP", stext);

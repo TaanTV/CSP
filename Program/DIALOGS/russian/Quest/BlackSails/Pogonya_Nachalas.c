@@ -17,19 +17,19 @@ void ProcessDialogEvent()
 			DialogExit();
 		break;
 
-		//Бермуды. На выходе с глобалки запись в СЖ «‘Морж’ и «Рейнджер» стоят на рейде бухты Разбитого корыта, отправляюсь туда же». Собственно поставить туда Моржа и Рейнджера. Не забыть про чёрный флаг иначе файт со всеми и провал квеста.
-		//Высаживаемся. Сильвер, Флинт, Вейн, Рекхэм, Бонни, несколько матросов и мушкетчиков на берегу 12 и более.
-
+		//Багамы. На выходе с глобалки запись в СЖ «‘Морж’ и «Рейнджер» стоят на рейде, подойду к ним и вышлю шлюпку». Собственно поставить туда Моржа и Рейнджера. Не забыть про чёрный флаг иначе файт со всеми и провал квеста.
+		//Высаживаемся. Сильвер, Флинт, Вейн, Рекхэм, Бонни
+		
 		case "BS_PN_shipF":	//Флинт
 			NextDiag.TempNode = "BS_PN_shipF";
-			dialog.text = "Наконец-то вы пришли. Причальте в бухте Разбитого корыта, продолжим разговор на берегу.";
+			dialog.text = "Наконец-то вы пришли. Причаливаем, продолжим разговор на берегу.";
 			link.l1 = "Договорились.";
 			link.l1.go = "exit";
 		break;
 
 		case "BS_PN_shipV":	//Вейн
 			NextDiag.TempNode = "BS_PN_shipV";
-			dialog.text = "Вижу, ты уже здесь. Флинт объявил сходку у Разбитого корыта, встретимся там.";
+			dialog.text = "Вижу, ты уже здесь. Флинт объявил сходку на берегу, встретимся там.";
 			link.l1 = "Хорошо.";
 			link.l1.go = "exit";
 		break;
@@ -49,7 +49,7 @@ void ProcessDialogEvent()
 		case "BS_PN_2exit":
 			sld = CharacterFromID("BS_Silver");
 			LAi_SetActorTypeNoGroup(sld);
-			LAi_ActorGoToLocation(sld, "reload", "sea", Get_My_Cabin(), "", "", "", 10);
+			LAi_ActorGoToLocation(sld, "reload", "sea", "none", "", "", "", 10);
 			sld = CharacterFromID("BS_Vein");
 			LAi_SetStayTypeNoGroup(sld);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
@@ -58,7 +58,7 @@ void ProcessDialogEvent()
 			DoQuestFunctionDelay("VeinSpeech", 0);
 		break;
 
-		//Сильвер уходит из пати в локатор высадки.
+		//Сильвер уходит в таверну 6.04.2023
 
 		case "BS_PN_2":	//Вейн
 			dialog.text = "Знакомься. Это мои компаньоны. Джек Рекхэм и Энн Бонни. Неразлучная парочка. Джэк парень башковитый, и я настаиваю на том, чтобы он помог мистеру Сильверу с расшифровкой. Красотка Энн и её кинжалы побудут с нами.";
@@ -113,7 +113,7 @@ void ProcessDialogEvent()
 
 		case "BS_PN_6exit":
 			LAi_SetActorTypeNoGroup(npchar);
-			LAi_ActorGoToLocation(npchar, "reload", "sea", Get_My_Cabin(), "", "", "", 10);
+			LAi_ActorGoToLocation(npchar, "reload", "sea", "none", "", "", "", 10);
 			sld = CharacterFromID("Flint");
 			LAi_SetStayTypeNoGroup(sld);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
@@ -122,10 +122,10 @@ void ProcessDialogEvent()
 			DoQuestFunctionDelay("FlintSpeech", 0);
 		break;
 
-		//Рекхэм уходит в выгрузку.
+		//Рекхэм уходит таверну 6.04.2023
 
 		case "BS_PN_6":	//Флинт
-			dialog.text = "Встреча с английским патрулём у Бермуд – не случайность. Я был ещё дважды атакован английскими военными, пока добрался сюда.";
+			dialog.text = "Встреча с английским патрулём у Нассау – не случайность. Я был ещё дважды атакован английскими военными, пока добрался сюда.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_7exit";
 		break;
@@ -173,7 +173,7 @@ void ProcessDialogEvent()
 			link.l1.go = "BS_PN_9exit";
 		break;
 
-		//Аларм «К оружию!» Нападает толпа пиратов из перехода в след локу. Файт
+		//Аларм «К оружию!» Нападает толпа англичан из перехода в джунгли. Файт 6.04.23
 
 		//По окончанию
 
@@ -188,18 +188,11 @@ void ProcessDialogEvent()
 			LAi_SetWarriorTypeNoGroup(sld);
 			LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
 			BSChaseBegun_shore_fight();
-
-			LAi_group_SetHearRadius("BSChaseBegun_shore_fight", 100.0);
-			LAi_group_SetRelation("BSChaseBegun_shore_fight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_group_FightGroups("BSChaseBegun_shore_fight", LAI_GROUP_PLAYER, true);
 			AddDialogExitQuest("MainHeroFightModeOn");
-			//pchar.quest.BSChaseBegun_shore_fight_end.win_condition.l1 = "Group_Death";//условие победы
-			//pchar.quest.BSChaseBegun_shore_fight_end.win_condition.l1.group = "BSChaseBegun_shore_fight";//какую группу уничтожить
-			//pchar.quest.BSChaseBegun_shore_fight_end.function = "BSChaseBegun_shore_fight_end";
 		break;
 
 		case "BS_PN_9":	//Вейн
-			dialog.text = "Какого чёрта? Это же люди Джекмена!";
+			dialog.text = "Какого черта? Опять англичане! Откуда они лезли?!";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_10exit";
 		break;
@@ -214,7 +207,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_10":	//Флинт
-			dialog.text = "Элеонора! Нужно срочно попасть в поселение.";
+			dialog.text = "Это уже не случайный патруль! Они высадились в одной бухт.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_11exit";
 		break;
@@ -229,8 +222,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_11":	//Вейн
-			dialog.text = "Она здесь? Чудно, но не удивительно. Большими деньгами запахло.";
-			link.l1 = "Потом разберёмся. Нужно понять, какого чёрта тут происходит.";
+			dialog.text = "Значит прочешем джунгли и бухты.";
+			link.l1 = "А кто-то должен найти их корабль или корабли, не прятались же они по пещерам всё это время!";
 			link.l1.go = "BS_PN_12exit";
 			NextDiag.TempNode = "BS_PN_11_loop";
 			NextDiag.CurrentNode = "BS_PN_11_loop";
@@ -248,16 +241,23 @@ void ProcessDialogEvent()
 
 		case "BS_PN_12":	//Флинт
 			chrDisableReloadToLocation = false;
+			LocatorReloadEnterDisable("Shore69", "reload1_back", true);
+			InterfaceStates.Buttons.Save.enable = true;
+			SetFunctionExitFromLocationCondition("BS_EmptyAdress_Flint", pchar.location, false);
+			SetFunctionExitFromLocationCondition("BS_EmptyAdress_Vein", pchar.location, false);
+			SetFunctionExitFromLocationCondition("BS_EmptyAdress_Silver", pchar.location, false);
+			SetFunctionExitFromLocationCondition("BS_EmptyAdress_Bony", pchar.location, false);
+			SetFunctionExitFromLocationCondition("BS_EmptyAdress_Rakham", pchar.location, false);
 			AddQuestRecord("BSChaseBegun", "2");
-			dialog.text = "Я на 'Морже' заблокирую порт. Вейн, бери своих людей и через джунгли выдвигайся в поселение.\n"+
-							""+pchar.name+", на другой стороне острова, в заливе Руны, есть вход в подземелье, выдвигайся туда, тут есть сквозная пещера, а за ней проход в залив Руны. Ровно через час ударим с трёх сторон и возьмём всё под контроль.";
+			dialog.text = "Я на 'Морже' заблокирую порт. Вейн, бери своих людей и прочесывай джунгли вокруг города.\n"+
+							""+pchar.name+", выходи в море и найди их транспорт. И потопи или абордируй. На твоё усмотрение!";
 			link.l1 = "Так точно, выдвигаюсь!";
 			link.l1.go = "exit";
 			NextDiag.TempNode = "BS_PN_12_loop";
 		break;
 
 		case "BS_PN_12_loop":	//Флинт
-			dialog.text = "Медлить нельзя. Иди через джунгли к заливу Руны. Он на другом конце острова. Обойди немного вдоль берега и увидишь вход в подземелье.";
+			dialog.text = "Медлить нельзя. Приказывай поднять паруса!";
 			link.l1 = "Ладно, иду.";
 			link.l1.go = "exit";
 			NextDiag.TempNode = "BS_PN_12_loop";
@@ -270,9 +270,10 @@ void ProcessDialogEvent()
 			NextDiag.TempNode = "BS_PN_11_loop";
 		break;
 
-		//Запись в СЖ «Встреча компаньонов закончилась резнёй. Люди Джекмена атаковали нас на берегу. Флинт сразу придумал план по захвату поселения. Выдвигаюсь в залив Руны и через подземелье постараюсь проникнуть на верфь. За дело!
+		//Запись в СЖ «Встреча компаньонов закончилась резнёй. Целая рота английских солдат ворвалась в город. Флинт раздал команды, моя задача потопить корабль или корабли, которые привезли этих солдат. За дело! 6.04.2023
 
-		//Подземка. Мясной файт. Пиратов по напихано во все щели. Пробиваемся, выходим на верфь. Говорим с Алексусом.
+		//часть с Алексусом и подземкой уже не нужна. вырезаем всё это
+		//ставим напротив бухты Приватиров что-нибудь большое и пару корветов охранения. морской файт 6.04.2023
 
 		case "BS_PN_13_1":
 			dialog.text = RandPhraseSimple("Чего тебе? Проходи мимо.", "Хватит загораживать дорогу, отвали.");
@@ -300,7 +301,6 @@ void ProcessDialogEvent()
 			PChar.quest.BSChaseBegun_town.win_condition.l1 = "location";
 			PChar.quest.BSChaseBegun_town.win_condition.l1.location = "Pirates_Town";
 			PChar.quest.BSChaseBegun_town.function = "BSChaseBegun_town";
-
 		break;
 
 		case "BS_PN_14_1":
@@ -313,15 +313,12 @@ void ProcessDialogEvent()
 			}
 		break;
 
-		//Запись в СЖ: «Позади подземелье и куча трупов. У меня всё больше вопросов к Джекмену. Алексус как всегда на своей волне. Пора в поселение, по времени как раз успеваю. Вперёд!»
+		//Запись в СЖ: «Транспорты и сопровождени англичан потопленны. Пора на берег» 6.04.2023
 
-		//Выходим в поселение. Бой окончен. На земле горы трупов. Флинт, Вейн, Бонни, бродят несколько «наших» пиратов.
+		//Причаливаем. Бой окончен. На земле горы трупов в разнобой англичане и пираты. Флинт, Вейн, Бонни - стоят напротив дома Гатри. бродят несколько «наших» пиратов.6.04.2023
 
 		case "BS_PN_15":	//Вейн
-			chrDisableReloadToLocation = false
-			sld = CharacterFromID("Atilla");
-			sld.dialog.currentnode = sld.AtillaNode;
-			sld.Dialog.Filename = "Quest\Isabella\Atilla.c";
+			chrDisableReloadToLocation = false;
 			dialog.text = "Вот это дело! Как раз по мне!";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_15_1";
@@ -338,7 +335,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_16":	//Флинт
-			dialog.text = "Резиденция забаррикадирована, готовимся к штурму.";
+			dialog.text = "Дом забаррикадирован, готовимся к штурму.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_16_1";
 		break;
@@ -360,27 +357,22 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_16exit":
-			sld = CharacterFromID("gatri_grunt2");
-			LAi_SetStayTypeNoGroup(sld);
-			ChangeCharacterAddressGroup(sld, PChar.location, "reload", "reload3_back");
-			sld.LifeDay = 0;
-
-			sld = GetCharacter(NPC_GenerateCharacter("Gatri_temp", "BS_Gatry", "woman", "woman", 1, PIRATE, -1, true));
-			ChangeCharacterAddressGroup(sld, PChar.location, "reload", "reload3_back");
-			LAi_SetStayTypeNoGroup(sld);
-			LAi_SetImmortal(sld, true);
-			sld.name = "Элеонора";
-			sld.lastname = "Гатри";
+			DialogExit();
+			sld = CharacterFromID("gatri_home_grunt1");
+			ChangeCharacterAddressGroup(sld, "Nassau_town", "officers", "houseS1_3");
+			LAi_ActorTurnToCharacter(sld, PChar);
+			sld = CharacterFromID("Gatri_temp");
+			ChangeCharacterAddressGroup(sld, "Nassau_town", "reload", "houseS1");
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_17";
-			DialogExit();
+			LAi_SetStayTypeNoGroup(sld);
 			DoQuestFunctionDelay("GatriSpeech", 0);
 		break;
 
 		//Идём к резиденции, из неё выходит Гатри и несколько мушкетчиков.
 
 		case "BS_PN_17":	//Гатри
-			dialog.text = "Джеймс! И Чарльз... Что же, вы очень вовремя. Джекмен решил выдворить меня с острова и подготовил бунт. Три дня резни, стрельбы и крови.\nНо увидев всех вас он наконец понял, что дальнейшее сопротивление бесполезно и только что сложил оружие.";
+			dialog.text = "Джеймс! И Чарльз... Что же, вы очень вовремя. Англичане решили выдворить меня с моего острова! Мне нужно написать дедушке пару писем, это им просто так с рук не сойдёт! Они ещё не знают с кем связались!";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_17_1";
 		break;
@@ -396,7 +388,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_18":	//Флинт
-			dialog.text = "Зашифрованная страница с маршрутом у нас, и Сильвер с Рекхэмом сейчас заняты расшифровкой. Нам нужно решить текущие проблемы. Англичане настойчиво лезут в наши дела, также бунт Джекмена.";
+			dialog.text = "Зашифрованная страница с маршрутом у нас, и Сильвер с Рекхэмом сейчас заняты расшифровкой. Нам нужно решить текущие проблемы. Англичане настойчиво лезут в наши дела и это никак не связано с твоим островом Элеонора! Я знаю как действует флот и это не те методы. И меня страшно бесит то, что я пока не понимаю кто за этим стоит.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_18_1";
 		break;
@@ -412,7 +404,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_19":	//Вейн
-			dialog.text = "Я могу устроить ему допрос, 'с пристрастием'.";
+			dialog.text = "Тут наверняка есть выжившие. Я могу устроить им допрос, 'с пристрастием'.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_19_1";
 		break;
@@ -428,7 +420,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_20":	//Гатри
-			dialog.text = "Это подождёт. Нужно навести тут порядок. Поговорим позже в резиденции.";
+			dialog.text = "Это подождёт. Нужно навести тут порядок. Поговорим позже в моей резиденции.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_20exit";
 		break;
@@ -437,11 +429,11 @@ void ProcessDialogEvent()
 			DialogExit();
 			LAi_MethodDelay("BSChaseBegun_FewDeaysLater",0.1);
 			PChar.quest.BSChaseBegun_townhall.win_condition.l1 = "location";
-			PChar.quest.BSChaseBegun_townhall.win_condition.l1.location = "Pirates_townhall";
+			PChar.quest.BSChaseBegun_townhall.win_condition.l1.location = "Nassau_OfisGatri";
 			PChar.quest.BSChaseBegun_townhall.function = "BSChaseBegun_townhall";
 		break;
 
-		//Картинка «На следующий день» убираем трупы, перемещаем ГГ, Флинта, Вейна, Гатри, Сильвера и Рекхэма в резиденцию.
+		//Картинка «На следующий день» убираем трупы, перемещаем ГГ, Флинта, Вейна, Гатри, Сильвера и Рекхэма в дом Гатри. 6.04.2023
 
 		case "BS_PN_21":	//Сильвер
 			dialog.text = "Итак господа, 'Урка Де Лима', судя по расшифровке, уже в Гаване. Там она возьмёт на борт две роты морской пехоты и в сопровождении четырёх военных кораблей отправится к Пуэрто-Рико, где к эскадре присоединится ещё два корабля охранения. После чего, вся армада отправится в Европу.";
@@ -451,7 +443,7 @@ void ProcessDialogEvent()
 
 		case "BS_PN_21_1":
 			sld = CharacterFromID("Flint");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_22";
@@ -467,7 +459,7 @@ void ProcessDialogEvent()
 
 		case "BS_PN_22_1":
 			sld = CharacterFromID("BS_Silver");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_23";
@@ -483,7 +475,7 @@ void ProcessDialogEvent()
 
 		case "BS_PN_23_1":
 			sld = CharacterFromID("gatri_temp");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_24";
@@ -499,7 +491,7 @@ void ProcessDialogEvent()
 
 		case "BS_PN_24_1":
 			sld = CharacterFromID("Flint");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_25";
@@ -508,14 +500,14 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_PN_25":	//Флинт
-			dialog.text = "Значит прямым ходом в Сан–Хуан. Вейн, есть для тебя работа. Найди тут в Шарп-Тауне сумасшедших головорезов на паре-тройке шлюпов, и не теряя ни минуты выдвигайтесь к северному побережью Каймана. Задача: курсировать неподалёку от мыса Сан Антонио и, заметив движение эскадры, атаковать корабли сопровождения. В бой не ввязываться, а удирать на всех парусах.";
+			dialog.text = "Значит прямым ходом в Сан–Хуан. Вейн, есть для тебя работа. Найди тут или в Пуэрто-Принсипе сумасшедших головорезов на паре-тройке шлюпов, и не теряя ни минуты выдвигайтесь к северному побережью Каймана. Задача: курсировать неподалёку от мыса Сан Антонио и, заметив движение эскадры, атаковать корабли сопровождения. В бой не ввязываться, а удирать на всех парусах.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_25_1";
 		break;
 
 		case "BS_PN_25_1":
 			sld = CharacterFromID("BS_Vein");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_26";
@@ -531,7 +523,7 @@ void ProcessDialogEvent()
 
 		case "BS_PN_26_1":
 			sld = CharacterFromID("Flint");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_27";
@@ -547,14 +539,14 @@ void ProcessDialogEvent()
 
 		case "BS_PN_27_2":	//Флинт
 			npchar.nation = PIRATE;
-			dialog.text = "Прям на глазах гарнизона Санто-Доминго, но вне досягаемости его пушек! Из-за карантина они не смогут ничем помочь 'Урке'.";
+			dialog.text = "Прямо на глазах гарнизона Санто-Доминго, но вне досягаемости его пушек! Из-за карантина они не смогут ничем помочь 'Урке'.";
 			link.l1 = "...";
 			link.l1.go = "BS_PN_27_1";
 		break;
 
 		case "BS_PN_27_1":
 			sld = CharacterFromID("BS_Vein");
-			LAi_SetStayTypeNoGroup(sld);
+			LAi_SetSitTypeNoGroup(sld);
 			LAi_SetImmortal(sld, true);
 			sld.dialog.filename = "Quest\BlackSails\Pogonya_Nachalas.c";
 			sld.dialog.currentnode = "BS_PN_28";
@@ -566,43 +558,21 @@ void ProcessDialogEvent()
 			AddQuestRecord("BSChaseBegun", "4");
 			chrDisableReloadToLocation = false;
 			LocatorReloadEnterDisable(pchar.location.from_sea, "boat", false);
-			LocatorReloadEnterDisable("Bermudes_Cavern", "reload2_back", false);
-			pchar.location.from_sea = "Pirates_town";
 			dialog.text = "Я буду там. После того как загоню сторожевиков на рифы.";
 			link.l1 = "Значит, за дело!";
 			link.l1.go = "BS_PN_28exit";
 		break;
 
-		case "BS_PN_28exit":
+		case "BS_PN_28exit":		
 			PChar.quest.BSChaseBegun_lock_townhall.win_condition.l1 = "location";
-			PChar.quest.BSChaseBegun_lock_townhall.win_condition.l1.location = "Pirates_town";
+			PChar.quest.BSChaseBegun_lock_townhall.win_condition.l1.location = "Nassau_town";
 			PChar.quest.BSChaseBegun_lock_townhall.function = "BSChaseBegun_lock_townhall";
-
+			DeleteAttribute(PChar, "currentsoundtrack");
+			DeleteAttribute(PChar, "BS_permanentblackflag");
+			Flag_Change(PIRATE);
+			LAi_SetPlayerType(PChar);
+			DoReloadCharacterToLocation("Nassau_town", "reload", "houseS1");
 			DialogExit();
-			sld = CharacterFromID("Flint");
-			LAi_SetActorType(sld);
-			LAi_SetImmortal(sld, false);
-			ProcessHullRepair(sld, 100.0);
-			ProcessSailRepair(sld, 100.0);
-			DeleteAttribute(sld, "ship.blots");
-			DeleteAttribute(sld, "ship.sails");
-			RepairMasts(sld);
-
-			sld = CharacterFromID("BS_Silver");
-			LAi_SetActorType(sld);
-
-			sld = CharacterFromID("BS_Rakham");
-			LAi_SetActorType(sld);
-
-			sld = CharacterFromID("BS_Vein");
-			LAi_SetActorType(sld);
-
-			sld = CharacterFromID("BS_Bony");
-			LAi_SetActorType(sld);
-
-			sld = CharacterFromID("gatri_temp");
-			LAi_SetActorType(sld);
-
 			if (WhisperIsHere())
 			{
 				SaveOldDialog(CharacterFromID(pchar.WhisperPGG));
@@ -620,23 +590,22 @@ void ProcessDialogEvent()
 
 		case "BS_PN_30_seabattle":	//Флинт
 			PChar.quest.BSChaseBegun_EndQuest.win_condition.l1 = "location";
-			PChar.quest.BSChaseBegun_EndQuest.win_condition.l1.location = "Pirates_Town";
+			PChar.quest.BSChaseBegun_EndQuest.win_condition.l1.location = "Nassau_Town";
 			PChar.quest.BSChaseBegun_EndQuest.function = "BSChaseBegun_EndQuest";
-
-			dialog.text = "Здесь слишком опасно оставаться. Поговорим в Шарп-Тауне.";
-			link.l1 = "Вы правы. Следуйте за моим судном.";
+			if (Group_isDead("BSChaseBegun_SeaBattle"))
+			{
+				if (!CheckCompanionInCharacter(pchar, npchar.id)){BS_ChaseBegun_WithFlintToNassau();}
+				dialog.text = "Здесь слишком опасно оставаться. Поговорим в Нассау.";
+				link.l1 = "Вы правы. Следуйте за моим судном.";
+			}
+			else
+			{
+				dialog.text = "Потом поговорим! Сначала помоги мне расправиться с испанцами.";
+				link.l1 = "Это можно!";
+			}
 			link.l1.go = "exit";
 			NextDiag.TempNode = "BS_PN_30_seabattle";
-			DeleteAttribute(pchar, "LockMapReload");
-			DeleteAttribute(pchar, "LockShoreReload");
-			SetCompanionIndex(PChar, -1, GetCharacterIndex(npchar.id));//Флинт присоединяется к эскадре
 			Flag_Change(PIRATE);
-
-			for (z = 1; z < 9; z++)
-			{
-				sld CharacterFromID("BSChaseBegun_SeaBattle"+z);
-				sld.LifeDay = 0;
-			}
 		break;
 
 		case "BS_PN_30":	//Флинт
@@ -650,9 +619,7 @@ void ProcessDialogEvent()
 			LAi_SetImmortal(npchar, true);
 			DeleteAttribute(Colonies[FindColony("SantoDomingo")], "DontSetShipInPort");
 			DeleteAttribute(Colonies[FindColony("SantoDomingo")], "BSChaseBegun");
-			Group_SetAddress("Flint_Group", "Bermudes", "Quest_ships", "quest_ship_8");
-
-			dialog.text = "С Сильвером я потолкую. Пока нам нужно залечь на дно. Встретимся на Бермудах. Ищи по своим каналам любую зацепку, я поищу по своим. Нутром чую, 'Урка' ещё на Карибах. Вопрос – где?";
+			dialog.text = "С Сильвером я потолкую. Пока нам нужно залечь на дно. Встретимся на Багамах. Ищи по своим каналам любую зацепку, я поищу по своим. Нутром чую, 'Урка' ещё на Карибах. Вопрос – где?";
 			link.l1 = "Есть у меня одна пташка на примете, послушаю, что она пропоёт.";
 			link.l1.go = "BS_PN_32";
 		break;
@@ -673,7 +640,7 @@ void ProcessDialogEvent()
 			sld.dialog.filename = "Quest\BlackSails\Neulovimaya_Urka.c";
 			sld.dialog.currentnode = "BS_NU_1";
 			BSBons_SeaBattle(false);
-
+			SetFunctionExitFromLocationCondition("BS_EmptyAdress_Flint", pchar.location, false);
 			if (WhisperIsHere())
 			{
 				SaveOldDialog(CharacterFromID(pchar.WhisperPGG));

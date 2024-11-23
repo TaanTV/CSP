@@ -92,7 +92,9 @@ void wdmEvent_AddQuestEncounters()
 				}
 				else
 				{
-					if(!wdmCreateMerchantShipByIndex(1.0, idx, &encID, at.beginlocator, at.endLocator, sti(at.TimeOut)))
+					float traderspeed = 1.0;
+					if (at.characterID == "BSBons" && CheckAttribute(Pchar, "BonsFlintRunning")) traderspeed = 1.35; // квест ЧП
+					if(!wdmCreateMerchantShipByIndex(traderspeed, idx, &encID, at.beginlocator, at.endLocator, sti(at.TimeOut)))
 					{
 						PostEvent("Map_TraderSucces", 100, "s", at.characterID);
 						return;
@@ -428,6 +430,13 @@ void wdmEnterSeaQuest(string _chrId)
 			DeleteAttribute (characters[GetCharacterIndex(_chrId)], "AlwaysFriend");
 			characters[GetCharacterIndex(_chrId)].AlwaysEnemy = true;
 		}
+	}
+	if (_chrId == "BSBons" && CheckAttribute(pchar, "BonsFlintRunning"))
+	{
+		sQuest = "BS_BonsFlintRunning";
+        pchar.quest.(sQuest).win_condition.l1 = "EnterToSea";  // fix homo 20/01/07
+        pchar.quest.(sQuest).win_condition = "BS_BonsFlintRunning_AddRecord";
+        pchar.quest.(sQuest).function = "BS_BonsFlintRunning_AddRecord";
 	}
 	if(findsubstr(NPChar.id, "PsHero_" , 0) != -1 && NPChar.nation == PIRATE && PGG_ChangeRelation2MainCharacter(NPChar, 0) > 40 && !CheckAttribute(NPChar, "PGG_warrior"))
 	{

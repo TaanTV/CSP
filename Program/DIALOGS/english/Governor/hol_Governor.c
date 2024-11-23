@@ -280,6 +280,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
                     }
                     else
                     {
+						if (CheckShipTypeInSquadron(SHIP_TRINITY) > 0 || CheckShipTypeInSquadron(SHIP_ZWAAN) > 0)
+						{
+							dialog.text = "Did you think to deceive me? In your squadron there are manovars produced in Dutch shipyards.";
+							link.l1 = "I'm sorry, Mynheer. So far, I have not managed to capture anything worthy of your attention. But I'm working on it, wait, Mynheer...";
+                            link.l1.go = "exit";
+							break;
+						}
                         if (sti(pchar.questTemp.QtyShips) > tempQty)
                         {
                             if (tempQty > 1)

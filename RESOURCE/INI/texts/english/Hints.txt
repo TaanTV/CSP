@@ -85,3 +85,8 @@ Hints_83	{The national line of pirate quests is combined with any national line.
 Hints_84	{To receive the flag of the nation in the ship's abilities of the Main Hero - it is necessary to capture the ship of the respective nation}
 Hints_85	{When you open a loan shark's cell, you can move items from the ship's chests directly into it. Chests are available at the bottom of the exchange list after all characters}
 Hints_86    {In ground management controls settings you can set up keys for quick equip kits}
+Hints_87 	{While running away from enemies at sea, you can drop a mine using the 'M'} hotkey.
+Hints_88 	{In your ship's cabin chests, added a 'Pick up consumables' button for your officers. The settings are inherited from the treasurer's autopurchase menu}
+Hints_89 	{Finishing a boarding party after killing an enemy captain is now done through the cabin exit}
+Hints_90 	{Officers you can hire in the tavern can be redistributed basic PIRATES points}
+Hints_91 	{Progression of gaining perks in LU and CG is now possible even after skills of 100}

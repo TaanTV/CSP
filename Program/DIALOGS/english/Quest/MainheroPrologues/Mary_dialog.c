@@ -1789,7 +1789,6 @@ Dialog.text = RandPhraseSimple("Today I will go to sea again...",
 		case "Mary_brothel_8":
 			DialogExit();
 			SetLaunchFrameFormParam("It's been a few minutes", "", 0, 5);
-			//SetLaunchFrameFormPic("loading\inside\kiss.tga");
 			LaunchFrameForm();
 			pchar.GenQuest.BrothelLock = true; // всё, больше не походишь по борделям :)
 			DeleteAttribute(pchar, "GenQuest.BrothelCount");

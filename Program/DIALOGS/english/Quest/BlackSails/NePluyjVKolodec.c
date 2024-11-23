@@ -74,11 +74,14 @@ void ProcessDialogEvent()
 		break;
 
 		case "Fight_gatri":
-			pchar.quest.BS_Fail_Prologue.win_condition.l1 = "ExitFromLocation";
-			pchar.quest.BS_Fail_Prologue.win_condition.l1.location = pchar.location;
-			pchar.quest.BS_Fail_Prologue.function = "BS_RestoreGatriTrader";
-
+			AddQuestRecord("BSPrologue", "6");
 			CloseQuestHeader("BSPrologue");
+			PChar.BS_PiratesStoreMassacre = true;
+			SaveCurrentQuestDateParam("BS_PiratesStoreMassacreDate");
+			BS_SL_yes();
+			DeleteAttribute(pchar, "BSStart");
+			BS_QuestCleaning(true);			
+			ChangeCharacterHunterScore(pchar, "enghunter", 200);
 			pchar.questTemp.BlueBird = "declined";//Блокировка ЧП
 			string killGatri;
 			for (i = 1; i < 4; i++)
@@ -93,7 +96,6 @@ void ProcessDialogEvent()
 				LAi_group_MoveCharacter(sld, "EnemyFight");
 				LAi_group_MoveCharacter(npchar, "EnemyFight");
 				LAi_SetHP(sld, 200, 200);
-
 			}
 			killGatri = npchar.id;
 			LAi_SetImmortal(npchar, false);
@@ -105,7 +107,6 @@ void ProcessDialogEvent()
 			pchar.quest.KillGatri1.win_condition.(killGatri).character = npchar.id;
 			pchar.quest.KillGatri.function = "LockWeapons";
 			pchar.quest.KillGatri1.win_condition = "OpenTheDoors";
-
 			chrDisableReloadToLocation = true;
 			LAi_LocationFightDisable(&Locations[FindLocation(pchar.location)], false);
 			AddDialogExitQuest("MainHeroFightModeOn");
@@ -115,18 +116,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_NPVK_7":
-            dialog.text = "One million pesos. At once or in parts – at your choice. And we will forget this misunderstanding.";
-			if (sti(pchar.Money) >= 1000000)
-			{
-				link.l1 = "Take this shitty money... ('quietly' Bitch)";
-				link.l1.go = "BS_NPVK_11";
-			}
-			link.l2 = "How much?! Are you out of your mind? It's incredible!";
-			link.l2.go = "BS_NPVK_8";
-		break;
-
-		case "BS_NPVK_7_1":
-			link.l1 = "How much?! Are you out of your mind? It's incredible!";
+            dialog.text = "Settling our differences, captain, will be easy for you. All we have to do is knock the British out of Fort Nassau.";
+			link.l1 = "Is that what you call 'easy'? Declare war on Britain?";
 			link.l1.go = "BS_NPVK_8";
 		break;
 
@@ -136,71 +127,131 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_NPVK_8":
-            dialog.text = "That's how much my family and its partners suffered from your prank. I hope the benefit was worth it?";
-            link.l1 = "And how do you order to extract such an amount of gold? After all, the merchants are under your thumb!";
+            dialog.text = "No war. Just a group of pirates, under black flags, robbing a remote, not very important colony and disappearing over the horizon. It will take a few years for the Crown to find the means and energy to try to get the colony back, but most likely they'll just turn a blind eye and pretend the colony never happened. The Guthrie family will go to great lengths to keep those eyes closed.";
+            link.l1 = "Has your family gotten crowded in Boston and Philadelphia and are you expanding your area of influence?";
 			link.l1.go = "BS_NPVK_9";
 		break;
 
 		case "BS_NPVK_9":
-            dialog.text = "Aren't you a formidable pirate? A privateer? An adventurer? Have the local seas become impoverished with galleons? Think for yourself. The term is one month. Otherwise, all the bounty hunters in the New and Old World will suddenly be eager to bring me your head.";
-            link.l1 = "Well, goodbye.";
-			link.l1.go = "exit";
-			AddQuestRecord("BSPrologue", "2");
-			SetTimerCondition("Gatri_Hunters", 0, 0, 30, true);//Отсчёт времени до НЗГ
-			NextDiag.TempNode = "BS_NPVK_10";
+            dialog.text = "You're a fast scrambler! Destroy the fort, kill or capture the garrison. You can find the forces for this on your own, but don't even try to get the local pirate barons to sign off on it. This must be the private initiative of a desperate pirate. It's in your best interest to avoid publicity.";
+            link.l1 = "Let's say the city's taken. What's next? You have a plan to hold the colony, don't you?";
+			link.l1.go = "BS_NPVK_10";
 		break;
-
+		
 		case "BS_NPVK_10":
-            dialog.text = "Are you back?";
-			if (sti(pchar.Money) >= 1000000)
-			{
-				link.l1 = "This is what I managed to get.";
-				link.l1.go = "BS_NPVK_11";
-			}
-			link.l2 = "I'm already leaving.";
-			link.l2.go = "exit"
+            dialog.text = "There's a plan, just let me know when you're headed for the Bahamas. And if successful, me and my men will be there in a day or two.";
+            link.l1 = "The Guthrie family 'just happens' to be in the neighborhood and come to the colonists' aid? That's clever. And what happens if I refuse to take this gamble?";
+			link.l1.go = "BS_NPVK_11";
 		break;
-
+		
 		case "BS_NPVK_11":
-			dialog.text = "I see everything is here. For now, our differences are settled. I am always glad to see an executive and savvy earner. Come in again!";
-			if (CheckAttribute(pchar, "BSPrologue.GatriHunters"))
-			{
-				link.l1 = "Will you recall your hunters now?";
-				link.l1.go = "BS_NPVK_12";
-			}
-			link.l2 = "Goodbye.";
-			link.l2.go = "end_quest";
-			AddMoneyToCharacter(pchar, -1000000);
+            dialog.text = "Every bounty hunter in the Old World and the New will suddenly be eager to bring me your head. I assure you, Captain, even kings don't dare quarrel with the Guthrie Trading House. We have the means and the connections to make life very difficult for anyone.";
+            link.l1 = "Who the hell do you think you are, girl? Ha! A bunch of merchants and accountants! I know the best way to settle our differences is with cold steel!";
+			link.l1.go = "Fight_gatri";
+			link.l2 = "This all sounds like complete insanity, but I agree! I need time to prepare. I won't say how long, but I'll let you know. I'll see you around.";
+			link.l2.go = "BS_NPVK_12";
+		break;
+		
+		case "BS_NPVK_12":
+            dialog.text = "That's fine. And you can get everything you need from this store. Bermuda Warehouse is always at your service. You'll find me through the bartender.";
+            link.l1 = "...";
+			link.l1.go = "exit";
+			NextDiag.TempNode = "BS_NPVK_13";
+			BS_SL_yes();
+			AddQuestRecord("BSPrologue", "2");
+			pchar.questTemp.BSPrologue.WaitingForNassauSiege = true;
 		break;
 
-		case "end_quest":
+		case "BS_NPVK_13":
+            dialog.text = "What else? I won't keep you any longer.";
+			link.l1 = "...";
+			link.l1.go = "BS_NPVK_14";
+		break;
+		
+		case "BS_NPVK_14":
+			DialogExit();
+			DoReloadCharacterToLocation("Pirates_town", "reload", "reload6_back");
+		break;
+		
+		case "Woman_FackYou":
+			dialog.text = "Honey, where are you going?! You seemed like a decent person. Now you can't just walk away, beautiful. They're gonna clip your wings...";
+			link.l1 = "Shut up, stupid...";
+			link.l1.go = "Fight_gatri";
+			LAi_SetOwnerTypeNoGroup(npchar);
+		break;
+		
+		case "BS_NPVK_15":
+			dialog.text = "Is the day here? Are you ready to go camping?";
+			link.l1 = "More than enough! Are your men ready?";
+			link.l1.go = "BS_NPVK_16";
+		break;
+		
+		case "BS_NPVK_16":
+			dialog.text = "We'll be in the neighborhood. Good luck, Captain!";
+			link.l1 = "We can use a little luck. Let's do it!";
+			link.l1.go = "exit";
+			AddDialogExitQuestFunction("BS_ToNassauSiege_PiratesTown");
+		break;
+		
+		case "BS_NPVK_17":
+			dialog.text = "The deed is done, your debts are canceled. Now leave the island, I'll contact you through the pirate bartenders if there's any work in your line of work.";
+			link.l1 = "I've got a bunch of thugs who've just had a little bloodshed. You can't just convince them to get in their boats and leave. You know what I'm saying?";
+			link.l1.go = "BS_NPVK_18";
+		break;
+		
+		case "BS_NPVK_18":
+			dialog.text = "I understand perfectly. Well, the colony stores are at your service, take what you can carry and finally leave my island!";
+			link.l1 = "That's the business approach. It's a pleasure to work with an understanding person!";
+			link.l1.go = "BS_NPVK_18_exit";
+			
+		break;
+		
+		case "BS_NPVK_18_exit":
+			NextDiag.CurrentNode = "BS_NPVK_19";
+			DialogExit();
 			SaveCurrentQuestDateParam("BSPrologueEnded");
 			AddQuestRecord("BSPrologue", "3");
 			CloseQuestHeader("BSPrologue");
-			DeleteAttribute(pchar, "BSStart")//Снимаем блокировку торгашей и ежемесячное начисление НЗГ
+			DeleteAttribute(pchar, "BSStart");
 			pchar.BSInProgress = true;
-			//NPChar.Dialog.Filename = "Common_store.c";
-			//NPChar.Dialog.CurrentNode = "Second time";
-			NextDiag.CurrentNode = "end_quest_loop";
+			AddDialogExitQuestFunction("BS_NassauSiegeComplete");
+		break;
+		
+		case "BS_NPVK_19":
+			dialog.text = "It's done.";
+			link.l1 = "Yes.";
+			Link.l1.go = "BS_NPVK_19_loop";
+		break;
+		
+		case "BS_NPVK_19_loop":
+			NextDiag.CurrentNode = "BS_NPVK_19";
 			DialogExit();
-
-			//LAi_CharacterDisableDialog(npchar);
-			pchar.quest.BS_End_Prologue.win_condition.l1 = "ExitFromLocation";
-			pchar.quest.BS_End_Prologue.win_condition.l1.location = pchar.location;
-			pchar.quest.BS_End_Prologue.function = "BS_RestoreGatriTrader";
 		break;
-
-		case "end_quest_loop":
-			NextDiag.TempNode = "end_quest_loop";
-			dialog.text = "I don't need anything from you yet, Captain. You can go now.";
-			link.l2 = "Nice to hear.";
-			link.l2.go = "exit";
+		
+		case "BS_NPVK_20":
+			dialog.text = NPCStringReactionRepeat("I'm busy right now.", "Come back another time.", "Ah, Captain, it's good to see you, but I'm sorry, a lot to do.", "Let's do it another time, it's very busy.", "block", 1, npchar, Dialog.CurrentNode);
+			link.l1 = HeroStringReactionRepeat("Uh, excuse me.", "I will.", "I understand.", "I'm on my way out.", npchar, Dialog.CurrentNode);
+			Link.l1.go = "BS_NPVK_20_loop";			
 		break;
-
-		case "BS_NPVK_12":
-			dialog.text = "I'm afraid I can't help you, you brought these problems on yourself. It was worth doing my errand more efficiently. The money has long been paid, the flywheel is running, and the hunters cannot be stopped with just a click of their fingers. But I'm sure you're a resourceful captain and you can get out of any scrape. For my part, I can only promise that I will not send any new mercenaries to you.";
-			link.l2 = "I really want to be rude to you, but I think I'll refrain. Goodbye.";
-			link.l2.go = "end_quest";
+		
+		case "BS_NPVK_20_meet":
+			if(!CheckAttribute(PChar, "GatriSalutation") || GetQuestPastDayParam ("GatriSalutation") > 0)
+			{
+				SaveCurrentQuestDateParam("GatriSalutation");
+				dialog.text = "Hello.";
+				link.l1 = "Greetings...";				
+			}
+			else
+			{
+				dialog.text = "Did you want something?";
+				link.l1 = "Yes...";
+			}
+			Link.l1.go = "BS_NPVK_20";
+		break;
+		
+		case "BS_NPVK_20_loop":
+			NextDiag.CurrentNode = "BS_NPVK_20_meet";
+			DialogExit();
 		break;
 	}
 }

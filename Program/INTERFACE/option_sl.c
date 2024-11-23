@@ -79,6 +79,22 @@ void GetRealOptions(ref optref)
 	if( CheckAttribute(&InterfaceStates,"SeaDetails") ) {
 		optref.seadetails = stf(InterfaceStates.SeaDetails);
 	}
+	if( CheckAttribute(&InterfaceStates,"GrassDistanceLand") ) {
+		optref.GrassDistanceLand = stf(InterfaceStates.GrassDistanceLand);
+		UpdateLandGrass();
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassDistanceSea") ) {
+		optref.GrassDistanceSea = stf(InterfaceStates.GrassDistanceSea);
+		UpdateSeaGrass();
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassCountLand") ) {
+		optref.GrassCountLand = stf(InterfaceStates.GrassCountLand);
+		UpdateLandGrass();
+	}
+	if( CheckAttribute(&InterfaceStates,"GrassCountSea") ) {
+		optref.GrassCountSea = stf(InterfaceStates.GrassCountSea);
+		UpdateSeaGrass();
+	}
     //#20171223-01 Camera perspective option
 	if( CheckAttribute(&InterfaceStates,"PerspDetails") ) {
 		optref.perspdetails = stf(InterfaceStates.PerspDetails);
@@ -89,6 +105,9 @@ void GetRealOptions(ref optref)
 	}
 	if( CheckAttribute(&InterfaceStates,"RadDetails") ) {
 		optref.raddetails = stf(InterfaceStates.RadDetails);
+	}
+	if( CheckAttribute(&InterfaceStates,"DialogStyle") ) {
+		optref.DialogStyle = sti(InterfaceStates.DialogStyle);
 	}
 	if( CheckAttribute(&InterfaceStates,"InvertCameras") ) {
 		optref.cameramode.InvertCameras = sti(InterfaceStates.InvertCameras);
@@ -136,6 +155,12 @@ void GetRealOptions(ref optref)
 		optref.cameramode.EnabledAltSoundsGun = sti(InterfaceStates.EnabledAltSoundsGun);
 	} else {
 		optref.cameramode.EnabledAltSoundsGun = false;
+	}
+	
+	if( CheckAttribute(&InterfaceStates,"ShowExpLogs") ) {
+		optref.cameramode.ShowExpLogs = sti(InterfaceStates.ShowExpLogs);
+	} else {
+		optref.cameramode.ShowExpLogs = false;
 	}
 
 	if( CheckAttribute(&InterfaceStates,"EnabledShipMarks") ) {
@@ -263,6 +288,11 @@ void GetRealOptions(ref optref)
 	} else {
 		optref.video.brightness = 0.0;
 	}
+	if( CheckAttribute(&InterfaceStates,"menu") ) {
+		optref.menu = InterfaceStates.menu;
+	} else {
+		optref.menu = 1;
+	}
 
 	SeaParametrs.MaxVertices = MaxVertices;
 	SeaParametrs.MaxIndices = MaxIndices;
@@ -341,6 +371,11 @@ void SetCurentOptions(ref optref)
 		InterfaceStates.EnabledAltSoundsGun = optref.cameramode.EnabledAltSoundsGun;
 	} else {
 		InterfaceStates.EnabledAltSoundsGun = false;
+	}
+	if( CheckAttribute(optref,"cameramode.ShowExpLogs") ) {
+		InterfaceStates.ShowExpLogs = optref.cameramode.ShowExpLogs;
+	} else {
+		InterfaceStates.ShowExpLogs = false;
 	}
 
 	if( CheckAttribute(optref,"cameramode.EnabledShipMarks") ) {
@@ -469,6 +504,11 @@ void SetCurentOptions(ref optref)
 	} else {
 		InterfaceStates.video.brightness = 0.0;
 	}
+	if( CheckAttribute(optref,"menu") ) {
+		InterfaceStates.menu = optref.menu;
+	} else {
+		InterfaceStates.menu = 1;
+	}
 
 	if( CheckAttribute(optref,"video.grassquantity") ) {
 		iGrassQuality = sti(optref.video.grassquantity);
@@ -478,6 +518,26 @@ void SetCurentOptions(ref optref)
 	}
 	if( CheckAttribute(optref,"seadetails") ) {
 		InterfaceStates.SeaDetails = stf(optref.seadetails);
+	}
+	if( CheckAttribute(optref,"GrassDistanceLand") ) {
+		InterfaceStates.GrassDistanceLand = stf(optref.GrassDistanceLand);
+	}	else {
+		InterfaceStates.GrassDistanceLand = 0.33;
+	}
+	if( CheckAttribute(optref,"GrassDistanceSea") ) {
+		InterfaceStates.GrassDistanceSea = stf(optref.GrassDistanceSea);
+	}	else {
+		InterfaceStates.GrassDistanceSea = 0.33;
+	}
+	if( CheckAttribute(optref,"GrassCountLand") ) {
+		InterfaceStates.GrassCountLand = stf(optref.GrassCountLand);
+	}	else {
+		InterfaceStates.GrassCountLand = 0.33;
+	}
+	if( CheckAttribute(optref,"GrassCountSea") ) {
+		InterfaceStates.GrassCountSea = stf(optref.GrassCountSea);
+	}	else {
+		InterfaceStates.GrassCountSea = 0.33;
 	}
     //#20171223-01 Camera perspective option
 	if( CheckAttribute(optref,"perspdetails") ) {
@@ -493,6 +553,12 @@ void SetCurentOptions(ref optref)
 			InterfaceStates.RadDetails = stf(optref.raddetails);
 		}
 	}
+	if(!CheckAttribute(InterfaceStates,"DialogStyle"))
+    {        
+        if( CheckAttribute(optref,"DialogStyle") ) {
+            InterfaceStates.DialogStyle = sti(optref.DialogStyle);
+        } else { InterfaceStates.DialogStyle = 1; }
+    }
 	XI_SetColorCorrection(stf(InterfaceStates.video.contrast),stf(InterfaceStates.video.gamma),stf(InterfaceStates.video.brightness));
 
 	aref arControls;

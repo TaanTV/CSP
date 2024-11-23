@@ -13,7 +13,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
     			link.l1 = "Я слышал, что на верфи Порт-Рояля пришли два фрегата, чтобы пополнить запасы оружия и провианта.";
 				link.l1.go = "BlackYosh_1";
 			}
-			if (CheckAttribute(PChar, "questTemp.silverfleet") && pchar.questTemp.silverfleet != "over")
+			if (CheckAttribute(PChar, "questTemp.silverfleet") && pchar.questTemp.silverfleet != "over" && NPChar.name == GetConvertStr("Variable_StoryCharacters_0.1", "Names.txt"))
 			{
 				if (!CheckAttribute(NPChar, "SilverFleetCancelThinking") || GetNpcQuestPastDayParam(NPChar, "SilverFleetCancelThinking") > 0)
 				{

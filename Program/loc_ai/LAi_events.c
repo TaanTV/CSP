@@ -196,40 +196,44 @@ void LAi_CharacterAttack()
 	aref attack = GetEventData();
 	aref enemy = GetEventData();
 	string attackType = GetEventData();
+	string fencing_type = LAi_GetBladeFencingType(attack);
+	float aSkill = LAi_GetCharacterFightLevel(attack);
+
+	//пробитие блока
 	bool isBlocked = GetEventData();
 	bool isSaberGun = GetEventData();
 	int blckTime = GetEventData();
 	bool blockSave = isBlocked;
-	bool bIsBlockBreak = (attackType == "break");
-	if(isBlocked == true)  // блок стоит
+	bool bAtkTypeBreak = (attackType == "break");
+	
+	// основной чек на пробитие - Gregg
+	if(isBlocked && pnrand(attack, LAi_CalcBlockBreakChance(attack, fencing_type, aSkill), "blockbreak"))
 	{
-		if (CheckForBlockBreak(attack,enemy) || bIsBlockBreak) //пробитие с учётом типа оружия - Gregg
-		{
-			if (sti(enemy.index) == GetMainCharacterIndex()) {// идеальный блок - только у гг
-				blockSave = (blckTime < SLIDING_BLK_THRESH) || bIsBlockBreak && (blckTime < DEFAULT_BLK_THRESH);
-				//blockSave += ;
-				if (blockSave) {
-					Log_Info(GetConvertStrWithReplace("Variable_LAi_events_1", "Logs.txt", "#space#", " "));//Log_Info("Идеальный блок.");
-				}
-				else {
-					Log_Info(GetConvertStrWithReplace("Variable_LAi_events_2", "Logs.txt", "#space#", " "));//Log_Info("Ваш блок был пробит.");
-					PlayStereoSound("Fx_Block");
-				}
+		if (sti(enemy.index) == GetMainCharacterIndex()) {// идеальный блок - только у гг
+			blockSave = (blckTime < SLIDING_BLK_THRESH) || bAtkTypeBreak && (blckTime < DEFAULT_BLK_THRESH);
+			//blockSave += ;
+			if (blockSave) {
+				Log_Info(GetConvertStrWithReplace("Variable_LAi_events_1", "Logs.txt", "#space#", " "));//Log_Info("Идеальный блок.");
 			}
 			else {
-				blockSave = false; //всех остальных блок не спас (или ГГ не попал в тайминг идеального)
-				if (sti(attack.index) == GetMainCharacterIndex() && !bIsBlockBreak) {
-					Log_Info(GetConvertStrWithReplace("Variable_LAi_events_3", "Logs.txt", "#space#", " "));//Log_Info("Вы пробили блок.");
-					PlayStereoSound("Fx_Block");
-				}
+				Log_Info(GetConvertStrWithReplace("Variable_LAi_events_2", "Logs.txt", "#space#", " "));//Log_Info("Ваш блок был пробит.");
+				PlayStereoSound("Fx_Block");
+			}
+		}
+		else {
+			blockSave = false; //всех остальных блок не спас
+			if (sti(attack.index) == GetMainCharacterIndex() && !bAtkTypeBreak) {// индикация пробития не от пробивающего
+				Log_Info(GetConvertStrWithReplace("Variable_LAi_events_3", "Logs.txt", "#space#", " "));//Log_Info("Вы пробили блок.");
+				PlayStereoSound("Fx_Block");
 			}
 		}
 	}
+	//пробитие блока конец
 
 	//Реакция груп на атаку
 	LAi_group_Attack(attack, enemy);
 	//Начисление повреждений
-	LAi_ApplyCharacterAttackDamage(attack, enemy, attackType, isBlocked, blockSave);
+	LAi_ApplyCharacterAttackDamage(attack, enemy, fencing_type, attackType, isBlocked, blockSave, aSkill);
 	//Обновим цель сразу
 	LAi_group_UpdateTargets(enemy);
 	string func = enemy.chr_ai.type;
@@ -240,35 +244,17 @@ void LAi_CharacterAttack()
 	call func(enemy, 0.0001);
 }
 
-bool CheckForBlockBreak(ref attack, ref enemy)
+//считает шанс пробития блока. aSkill - навык атакующего
+int LAi_CalcBlockBreakChance(ref attack, string fencing_type, float aSkill)
 {
-	bool blockSave = true;
-	int valueBB = sti(attack.chr_ai.special.valueBB);//получаем значение пробития от оружки
-	if (CheckCharacterPerk(attack, "HardHitter")) valueBB += 5; //тяж рука
-	if (CheckCharacterPerk(attack, "sliding")) valueBB += 20; //неотразимый
-	if (LAi_GetBladeFencingType(attack) == "FencingHeavy") //если тяж
-	{
-		float coeff = makefloat(GetCharacterSkillSimple(attack,"FencingHeavy"))/20; //коэфф от тяжа
-		if (HasSubStr(attack.equip.blade, "topor") && pnrand(attack, (8.0+(coeff*2.0)+valueBB), "blockbreak")) //15+% если топор
-		{
-			blockSave = false;
-		}
-		if (!HasSubStr(attack.equip.blade, "topor") && pnrand(attack, (5.0+(coeff*2.0)+valueBB), "blockbreak")) //10+% прочие
-		{
-			blockSave = false;
-		}
+	float valueBB = stf(attack.chr_ai.special.valueBB); //получаем значение пробития от оружки
+	if (fencing_type == "FencingHeavy") {
+		valueBB += 10.0 + 10.0 * aSkill; //коэфф от тяжа
 	}
-	else //не тяж
-	{
-		if (valueBB != 0)
-		{
-			if (pnrand(attack, valueBB, "blockbreak"))
-			{
-				blockSave = false
-			}
-		}
-	}
-	return !blockSave;
+	valueBB += 5.0 * CheckCharacterPerk(attack, "HardHitter"); //тяж рука
+	valueBB += 20.0 * CheckCharacterPerk(attack, "sliding"); //неотразимый
+	valueBB += 3.0 * HasSubStr(attack.equip.blade, "topor"); //15+% если топор
+	return MakeInt(valueBB);
 }
 
 void LAi_CharacterFire()
@@ -308,6 +294,11 @@ void LAi_CharacterFire()
 	attack.chr_ai.chargeprc = "1";
 	// boal <--
 	attack.chr_ai.charge = charge;
+	if(sti(attack.index) == GetMainCharacterIndex())
+	{
+		string itemID = attack.chr_ai.sgun;
+		attack.chargestage.(itemID) = charge;
+	}
 	//Если промахнулись, то ничего не делаем
 	if(isFindedEnemy == 0)
 	{

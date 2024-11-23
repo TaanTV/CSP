@@ -591,10 +591,10 @@ void QuestComplete(string sQuestName, string qname)
         break;
 
         case "Dead_Munity":
-		if (Pchar.questTemp.MunityOfficerIDX.begin == "1")
+		if (Pchar.questTemp.MunityOfficerID.begin == "1")
 		{
 			Log_SetStringToLog(GetConvertStrWithReplace("Variable_quests_reaction_10", "Logs.txt", "#space#", " "));
-			Pchar.questTemp.MunityOfficerIDX.begin = "0";
+			Pchar.questTemp.MunityOfficerID.begin = "0";
 		}
 		else Log_SetStringToLog(GetConvertStrWithReplace("Variable_quests_reaction_11", "Logs.txt", "#space#", " "));
             InterfaceStates.Buttons.Save.enable = 1;
@@ -985,7 +985,7 @@ void QuestComplete(string sQuestName, string qname)
 			sld = CharacterFromID("Flint");
 			if (!CheckAttribute(sld, "StopSailing"))
 			{
-				string sGroup = "Flint_Group";
+				string sGroup = "Sea_Flint";
 				Group_FindOrCreateGroup(sGroup);
 				Group_SetTaskAttackInMap(sGroup, PLAYER_GROUP);
 				Group_LockTask(sGroup);
@@ -1275,7 +1275,7 @@ void QuestComplete(string sQuestName, string qname)
 			ref store = GetColonyByIndex(FindColony(characters[GetCharacterIndex(pchar.CargoQuest.GiveTraderID)].city));
             RemoveStoreGoods(&stores[sti(store.StoreNum)],iTradeGoods,iQuantityGoods);
 			//задаем квест
-			SetTimerCondition("generate_trade_quest", 0, 0, (sti(pchar.CargoQuest.iDaysExpired) + 1), false);
+			SetTimerCondition("generate_trade_quest", 0, 0, (sti(pchar.CargoQuest.iDaysExpired) + 2), false);
 
 			pchar.quest.generate_trade_quest_progress = "begin";
 			ReOpenQuestHeader("DELIVERY_TRADE_QUEST");
@@ -7662,10 +7662,8 @@ void QuestComplete(string sQuestName, string qname)
 				case 14:fTemp = 11.2; break;
 			}
 			sGlobalTemp = iTemp;
-			//LAi_FadeDelay(fTemp, "loading\inside\censored1.tga");
-			//StartPictureAsVideo( "loading\inside\censored1.tga", fTemp );
 			SetLaunchFrameFormParam("", "", 0, fTemp);
-			SetLaunchFrameFormPic("loading\jonny_load\inside\censored1.tga");
+			SetLaunchFrameFormPic("loading\jonny_load\inside\censored1.dds");
             LaunchFrameForm();
 			DoQuestCheckDelay("PlaySex_2", 1.0);
 		break;
@@ -7956,6 +7954,7 @@ void QuestComplete(string sQuestName, string qname)
             for (i=1; i<=6; i++)
             {
 				sld = characterFromId("MySkel"+i);
+				DeleteAttribute(sld, "location.follower");
 				sld.LifeDay = 0;
 				ChangeCharacterAddress(sld, "none", "");
             }
@@ -12048,6 +12047,7 @@ void QuestComplete(string sQuestName, string qname)
 			
 			SetLocationCapturedState("LaVega_town", true);
 			locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators_quest";
+			locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day_quest";
 			locations[FindLocation("LaVega_town")].models.night.charactersPatch = "LaVega_patch_night_quest";
 			locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1_quest";
 			locations[FindLocation("LaVega_town")].type = "QuestTragic";
@@ -12267,6 +12267,7 @@ void QuestComplete(string sQuestName, string qname)
 			SetLocationCapturedState("LaVega_town", false);
 			SetCaptureTownByNation("LaVega", PIRATE);
 			locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators";
+			locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day";
 			locations[FindLocation("LaVega_town")].models.night.charactersPatch = "LaVega_patch_night";
 			locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1";
 			locations[FindLocation("LaVega_town")].type = "town";
@@ -13529,6 +13530,12 @@ void QuestComplete(string sQuestName, string qname)
 			SetLocationCapturedState("PuertoPrincipe_town", true);
 			bDisableFastReload = true;
 			chrDisableReloadToLocation = true;
+		break;
+		    
+		case "Helen_Bastard_Dead":
+			SetLocationCapturedState("PuertoPrincipe_town", false);
+			bDisableFastReload = false;
+			chrDisableReloadToLocation = false;
 		break;
 		// <--- Помощь Элен
 		

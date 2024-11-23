@@ -24,13 +24,12 @@ void ProcessDialogEvent()
 		case "First time":
 			chrDisableReloadToLocation = false;
 			//Lai_SetPlayerType(pchar);
-
 			dialog.text = GetFullName(PChar) + "! "+"Мы выслеживали тебя долгое время, и вот, наконец, ты у нас в руках.";
 			if (SFheadhunters(NPChar.id)) dialog.text = "Ну что, нахапал"+ GetSexPhrase("","а") + " серебра, и думаешь никто искать не будет?"; // СФ
+			if (HasSubStr(NPChar.id, "BShh")) dialog.text = "Влиятельные люди просили передать тебе привет от семьи Гатри.";
 			Link.l1 = "Кто вы такие и что вам от меня нужно?";
 			Link.l1.go = "meeting";
-
-			PChar.GenQuest.HunterStart = true;
+			if (!HasSubStr(NPChar.id, "BShh")) PChar.GenQuest.HunterStart = true;
 		break;
 
 		case "meeting":

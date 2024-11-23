@@ -189,7 +189,7 @@ void SaveItemsToPChar()
 			{
 				tmp = XI_ConvertString("FromInv");
 			}
-			TakeNItemsWithCabin(pchar, items_names[i], cnt);
+			TakeNItemsWithCabin(pchar, items_names[i], cnt, false);
 		}
 		Log_Info(all_exch_arr[i] + tmp);
 	}

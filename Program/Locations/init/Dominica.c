@@ -10,7 +10,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore27";
 	locations[n].id.label = "Shore27";
-	locations[n].image = "loading\jonny_load\shores\Shore05.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore05.dds";
 	locations[n].worldmap = "Dominica";
 	//Sound
 	locations[n].type = "seashore";
@@ -65,7 +65,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Dominica_Jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle6.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle6.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Dominica";
@@ -122,7 +122,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore26";
 	locations[n].id.label = "Shore26";
-	locations[n].image = "loading\jonny_load\shores\Shore08.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore08.dds";
 	locations[n].worldmap = "Dominica";
 	//Sound
 	locations[n].type = "seashore";
@@ -175,7 +175,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Dominica_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Dominica";
@@ -225,7 +225,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Dominica_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\jonny_load\inside\grotto2.tga";
+    locations[n].image = "loading\jonny_load\inside\grotto2.dds";
 	//Sound
 	locations[n].type = "Cave";
 	locations[n].islandId = "Dominica";
@@ -270,7 +270,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FencingTown_ExitTown";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitW.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitW.dds";
 	//Town sack
 	// locations[n].townsack = "FencingTown";
 	//Sound
@@ -343,7 +343,7 @@ int LocationInitDominica(int n)
 	locations[n].id.label = "";
 	//Info
 	Locations[n].filespath.models = "locations\Fort_inside\Fort_2";
-	Locations[n].image = "loading\jonny_load\outside\Fort_2_(arena).tga";
+	Locations[n].image = "loading\jonny_load\outside\Fort_2_(arena).dds";
 	//Sound
 	locations[n].type = "arena";
 	locations[n].islandId = "Dominica";
@@ -377,7 +377,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     	Locations[n].id = "FencingTown_Fort";
 	locations[n].id.label = "";
-	locations[n].image = "loading\jonny_load\outside\pirateFort.tga";
+	locations[n].image = "loading\jonny_load\outside\pirateFort.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Dominica";
@@ -440,7 +440,7 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FencingTown_Townhall";
 	locations[n].id.label = "house";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse01.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse01.dds";
 	//Town sack
 	// locations[n].townsack = "FencingTown";
 	locations[n].lockWeather = "Inside";

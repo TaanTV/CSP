@@ -280,6 +280,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
                     }
                     else
                     {
+						if (CheckShipTypeInSquadron(SHIP_TRINITY) > 0 || CheckShipTypeInSquadron(SHIP_ZWAAN) > 0)
+						{
+							dialog.text = "Вы что, думали меня обмануть? В вашей эскадре находятся мановары, произведённые на голландских верфях.";
+							link.l1 = "Прошу прощения, минхер. Пока ничего достойного вашего внимания мне захватить не удалось. Но я работаю над этим, ждите, минхер...";
+                            link.l1.go = "exit";
+							break;
+						}
                         if (sti(pchar.questTemp.QtyShips) > tempQty)
                         {
                             if (tempQty > 1)
@@ -1224,7 +1231,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
             link.l1.go = "Step_9_3";
         break;
         case "Step_9_3":
-            dialog.text = "Я тоже так думаю. Захватите как минимум четыре корабля, приведите их на Кюрасао, в порт Виллемстада, и сдайте лично мне. Каждый из сданных кораблей вам будет выплачено 50000 монет. Как вы считает, эта задача вам по силам?";
+            dialog.text = "Я тоже так думаю. Захватите как минимум четыре корабля, приведите их на Кюрасао, в порт Виллемстада, и сдайте лично мне. За каждый захваченный корабль вам будет выплачено 50000 монет. Как вы считаете, эта задача вам по силам?";
             link.l1 = "Полагаю, да.";
             link.l1.go = "Step_9_4";
         break;

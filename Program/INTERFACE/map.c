@@ -17,8 +17,8 @@ void InitInterface(string iniName)
     SetFormatedText("MAP_CAPTION", XI_ConvertString("title_map"));
 	SetFormatedText("INFO_TEXT_QUESTION", XI_ConvertString("MapWhatYouWantToDo"));
 	SetCurrentNode("INFO_TEXT_QUESTION");
-	SetNewPicture("INFO_PICTURE", "loading\SeaEnc_NavalSignal.tga");
-	SetNewPicture("INFO_PICTURE2", "loading\SeaEnc_"+rand(3)+".tga");
+	// SetNewPicture("INFO_PICTURE", "loading\SeaEnc_NavalSignal.tga");
+	SetNewPicture("INFO_PICTURE2", "loading\SeaEnc_"+rand(3)+".dds");
 
     wdmRecalcReloadToSea();//выношу из CalculateInfoData
 	SetFormatedText("INFO_TEXT",totalInfo);
@@ -324,7 +324,7 @@ void wdmRecalcReloadToSea()
 				GameInterface.TABLE_ENC.(sRow1).(sCol).str = shipstypes[iShipType].Class;
 				GameInterface.TABLE_ENC.(sRow1).(sCol).textoffset = "35,-16";
 				if ( (1+(iNumShips+1)/3)%2 ) GameInterface.TABLE_ENC.(sRow1).(sCol).textoffset = "-13,-16";
-				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.texture = "interfaces\\ships\\" + sShip + ".tga.tx";
+				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.texture = "interfaces\\ships\\" + sShip + ".dds";
 				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.width = 47;
 				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.height = 47;
 				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.offset = "-2,0";
@@ -371,7 +371,7 @@ void wdmRecalcReloadToSea()
 				GameInterface.TABLE_ENC.(sRow1).(sCol).str = shipstypes[iShipType].Class;
 				GameInterface.TABLE_ENC.(sRow1).(sCol).textoffset = "35,-16";
 				if (iNumShips%2) GameInterface.TABLE_ENC.(sRow1).(sCol).textoffset = "-13,-16";
-				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.texture = "interfaces\\ships\\" + sShip + ".tga.tx";
+				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.texture = "interfaces\ships\" + sShip + ".dds";
 				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.width = 47;
 				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.height = 47;
 				GameInterface.TABLE_ENC.(sRow1).(sCol).icon1.offset = "-2,0";
@@ -413,11 +413,11 @@ GameInterface.TABLE_ENC.(sRow1).(sCol).icon2.offset = "-1, 15";		//its(-1-24*(iN
 		{
 			if(iRealEncounterType == ENCOUNTER_TYPE_BARREL)
 			{
-				SetNewPicture("INFO_PICTURE2", "loading\BarrelEnc_"+rand(2)+".tga");
+				SetNewPicture("INFO_PICTURE2", "loading\BarrelEnc_"+rand(2)+".dds");
 			}
 			if(iRealEncounterType == ENCOUNTER_TYPE_BOAT)
 			{
-				SetNewPicture("INFO_PICTURE2", "loading\BarrelEnc_"+rand(2)+".tga");
+				SetNewPicture("INFO_PICTURE2", "loading\BoatEnc_"+rand(5)+".dds");
 			}
 			totalInfo = XI_ConvertString("NavalSignal") + XI_ConvertString("SpecialSituation") + totalInfo;
 			SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"B_OK",0, "#"+XI_ConvertString("GetItemToBort"));

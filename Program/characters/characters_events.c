@@ -45,7 +45,12 @@ void chrCharacterEntryToLocator()
 	float x, y, z;
 	ref mc = GetMainCharacter();
 	int result;
-
+	if(loc.type == "boarding_cabine")
+	{	
+		GetCharacterPos(mc, &x, &y, &z);
+		if(!CheckCurLocator("reload", locator, x, y, z)) Log_SetActiveAction("Nothing");
+		else Log_SetActiveAction("Reload");
+	}
 	switch(group)
 	{
 	case "reload":

@@ -131,7 +131,7 @@ void ProcessDialogEvent()
 		
 		case "Duelist_1_17":
 			SetCameraDialogMode(CharacterFromID(PChar.GenerateQuestDuel.Characters.Wife));
-			dialog.text = "Храни вас господь, капитан...";
+			dialog.text = "Храни вас Господь, капитан...";
 			link.l1 = "Нам пора.";
 			link.l1.go = "exit";
 			AddDialogExitQuestFunction("QuestDuelWoman2Agree");

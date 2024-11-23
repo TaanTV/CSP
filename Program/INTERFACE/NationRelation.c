@@ -259,7 +259,7 @@ void FlagsProcess()
 	int i, cn;
 	ref chref;
 
-	if (CheckAttribute(pchar, "DisableChangeFlagMode") || IsCompanion(CharacterFromID("Flint"))) return; // нефиг менять файл за 3 секунды сразу
+	if (CheckAttribute(pchar, "DisableChangeFlagMode") || IsCompanion(CharacterFromID("Flint")) || CheckAttribute(pchar, "BS_permanentblackflag")) return; // нефиг менять файл за 3 секунды сразу
 
 	if (!bBettaTestMode)
 	{

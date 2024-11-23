@@ -24,12 +24,12 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_2":
-            dialog.text = "Понятия не имею. Но её посыльный очень убедительно просил передать капитану "+pchar.name+", что "+ GetSexPhrase("его","её") +" ждут в магазине Шарп-Тауна. И на месте этого капитана, я бы не стал медлить.";
+            dialog.text = "Понятия не имею. Но её посыльный очень убедительно просил передать капитану "+pchar.name+", что "+ GetSexPhrase("его","её") +" ждут в резиденции Гатри, что на Багамах. И на месте этого капитана, я бы не стал медлить.";
             link.l1 = "Хорошо, я понял"+ GetSexPhrase("","а") +".";
 			link.l1.go = "exit";
 		break;
 
-		//На Бермудах, перед магазином сценка. Гатри орёт на кучку пиратских кэпов. (штук 5-6 неписей Кэпов)
+		//Багамы, перед магазином сценка. Гатри орёт на кучку пиратских кэпов. (штук 5-6 неписей Кэпов)
 
 		case "BS_CPNG_3":	//Гатри
             dialog.text = "Мистер Фикс! Табак ценен, когда не пропитан мочой! Если вы или ваш старпом не могут обеспечить надлежащую дисциплину на корабле, то я легко могу найти вам замену!";
@@ -74,7 +74,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_6":	//Фикс
-            dialog.text = "Да я... Да как ты с... Я иду к Джекмену!»";	//уходит в резиденцию
+            dialog.text = "Да я... Да как ты см... Я это так не оставлю!";	//уходит
             link.l1 = "";
 			link.l1.go = "BS_CPNG_7_1";
 		break;
@@ -91,40 +91,33 @@ void ProcessDialogEvent()
             dialog.text = "А, вот и ты. Как раз вовремя. Так, господа, небольшой перерыв. Продолжим позже.";	//остальные уходят
             link.l1 = "";
 			link.l1.go = "BS_CPNG_8";
-			for (i = 1; i < 4; i++)
-			{
-				sld = CharacterFromID("Gatri_temp"+i);
-				sld.LifeDay = 0;
-			}
 		break;
 
 		case "BS_CPNG_8":	//Гатри
 			chrDisableReloadToLocation = false;
-            dialog.text = "Есть дело. Взаимовыгодное, пойдём в таверну.";	//Переход в Таверну. Диалог в комнате наверху.
+            dialog.text = "Есть дело. Взаимовыгодное, давай продолжим у меня в гостиной.";	//Релоад в дом Гатри, первый этаж.
             link.l1 = "Ну пойдём.";
 			link.l1.go = "BS_CPNG_9_1";
 		break;
 
 		case "BS_CPNG_9_1":	//Гатри
 			PChar.quest.Gatri_upstairs.win_condition.l1 = "location";
-			PChar.quest.Gatri_upstairs.win_condition.l1.location = "Pirates_tavern_upstairs";
+			PChar.quest.Gatri_upstairs.win_condition.l1.location = "Nassau_OfisGatri";
 			PChar.quest.Gatri_upstairs.function = "Gatri_upstairs";
 			NextDiag.CurrentNode = "BS_CPNG_9";
 			DialogExit();
-			ChangeCharacterAddressGroup(npchar, "Pirates_tavern_upstairs", "goto", "goto1");
-            DoReloadCharacterToLocation("Pirates_tavern_upstairs","goto", "goto1");
+			ChangeCharacterAddressGroup(npchar, "Nassau_OfisGatri", "quest", "quest5");
+            DoReloadCharacterToLocation("Nassau_OfisGatri","officers","reload1_3");
 		break;
 
 		case "BS_CPNG_9":	//Гатри
-			npchar.LifeDay = 0;
-			LAi_SetActorType(npchar);
             dialog.text = "Слушай внимательно!";
-            link.l1 = "Минутку. А с чего это вдруг мы друзьями стали?";
+            link.l1 = "Минутку. С чего это вдруг мы на 'ты'? И что такое стряcлось, что потребовались именно мои услуги? Я вижу, что дела тут бурлят просто, вон сколько кепов ловит каждое твоё слово.";
 			link.l1.go = "BS_CPNG_10";
 		break;
 
 		case "BS_CPNG_10":
-            dialog.text = "Это Новый Свет, здесь быстро становятся друзьями или врагами. Богатыми или мёртвыми. Успеваешь за мыслью?";
+            dialog.text = "Вам подходит более формальный стиль общения? Ваша светлость оскорблён"+ GetSexPhrase("","а") +" обращением на 'ты'? К дьяволу формальности! Есть дело. Дело срочное и очень прибыльное, а Гатри не привыкли упускать прибыль! Успеваешь за мыслью?";
 			link.l1 = ""+ GetSexPhrase("Весь","Вся") +" во внимании.";
 			link.l1.go = "BS_CPNG_11"
 		break;
@@ -150,12 +143,24 @@ void ProcessDialogEvent()
 
 		case "BS_CPNG_14":
             dialog.text = "Сложно сказать. Он только в пиратские бухты заходит и то ненадолго. Ищи его в море.";
-            link.l1 = "До встречи.";
+            link.l1 = "До встречи.";			
+			link.l1.go = "BS_CPNG_14_exit";			
+		break;
+		
+		case "BS_CPNG_14_exit":
+			DialogExit();			
+			DeleteAttribute(PChar, "currentsoundtrack");
+			DeleteAttribute(npchar, "talker");
+			LAi_LocationFightDisable(&Locations[FindLocation("Nassau_town")], false);
 			AddQuestRecord("BSOnTheHorizon", "2");
 			BSOnTheHorizon_Flint();
-			link.l1.go = "exit";
+			SaveCurrentQuestDateParam("GatriSalutation");
+			npchar.Dialog.FileName = "Quest\BlackSails\NePluyjVKolodec.c";
+			npchar.dialog.currentnode = "BS_NPVK_20_meet";			
+			DoReloadCharacterToLocation("Nassau_town", "reload", "houseS1");
 		break;
 
+		//Запись в сж, та же, что и теперь. Для сибиряка и прочих умственно отсталых, можно продублировать правильный пролог там. но я бы не стал 6.04.2023
 		//После диалога запускаем по глобалке модельку БОЛЬШУЮ пиратскую( или фиолетовый квестовик), который курсирует между ПИРАТСКИМИ портами.
 		//Под пиратским флагом – всё ОК. под любым другим – файт и провал квеста.
 		//Флинт на Тяжёлом военном пинасе «Морж». Высылаем шлюпку. Говорим.
@@ -192,7 +197,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_17_Ploho_end":
-            dialog.text = "Немендленно покиньте мой корабль!";
+            dialog.text = "Немедленно покиньте мой корабль!";
             link.l1 = "Незачем мне грубить, я уже ухожу.";
 			NextDiag.TempNode = "BS_CPNG_17_Ploho_end";
 			link.l1.go = "exit";
@@ -200,9 +205,9 @@ void ProcessDialogEvent()
 
 		case "BS_CPNG_17_Horosho":
 			PChar.quest.MeetFlintCrew.win_condition.l1 = "location";
-			PChar.quest.MeetFlintCrew.win_condition.l1.location = "Pirates_town";
+			PChar.quest.MeetFlintCrew.win_condition.l1.location = "Nassau_town";
 			PChar.quest.MeetFlintCrew.function = "MeetFlintCrew";
-            dialog.text = "Об этом лучше говорить без лишних ушей. Я улажу кое-какие дела и отправлюсь в Шарп-Таун, поговорим там в таверне.";
+            dialog.text = "Об этом лучше говорить без лишних ушей. Я улажу кое-какие дела и отправлюсь на Багамы, поговорим там.";
 			npchar.StopSailing = true;
 			AddQuestRecord("BSOnTheHorizon", "3");
             link.l1 = "Хорошо, до встречи.";
@@ -217,36 +222,28 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 		break;
 
-		//Бермуды. На берегу Флинт, Сильвер, Бонс.
+		//Бвнвмы. На берегу Флинт, Сильвер, Бонс.
 
 		case "BS_CPNG_18":	//Флинт
-			//chrDisableReloadToLocation = false;
             dialog.text = "Знакомьтесь. Первый помощник Билли Бонс, каптенармус Джон Сильвер.";
-			BS_ReplaceTraderWithGatri();
-            link.l1 = "Рад"+ GetSexPhrase("","а") +" встрече. Я "+GetFullName(pchar)+". Идём в таверну?";
+            link.l1 = "Рад"+ GetSexPhrase("","а") +" встрече. Я "+GetFullName(pchar)+". Мисс Гатри уже заждалась нас, думаю, что не следует заставлять её ждать.";
 			link.l1.go = "BS_CPNG_19";
 		break;
 
 		case "BS_CPNG_19":
-
-            dialog.text = "Потом. Сначала в магазин, к нашей общей знакомой. Хочу расставить все точки над 'I'";
+            dialog.text = "Да, не вежливо заставлять даму ждать. Особенно эту даму! Идёмте, хочу расставить все точки над 'I'.";
             link.l1 = "";
-			link.l1.go = "BS_CPNG_19_exit";	//Переход в магаз. Гатри, Флинт, ГГ.
+			link.l1.go = "BS_CPNG_19_exit";	//Переход в дом на первый этаж. Гатри, Флинт, ГГ.
 		break;
 
 		case "BS_CPNG_19_exit":
-			NextDiag.CurrentNode = "BS_CPNG_9";
-			sld = CharacterFromID("gatri_grunt3");
-			sld.LifeDay = 0;
-			sld = CharacterFromID("Pirates_trader");
-			LAi_SetStayTypeNoGroup(sld);
+			sld = CharacterFromID("Gatri_temp");
 			sld.dialog.filename = "Quest\BlackSails\ChernyeParusaNaGorizonte.c";
 			sld.dialog.currentnode = "BS_CPNG_20";
 			sld.talker = 10;
-			sld.LifeDay = 0;
 			DialogExit();
-			ChangeCharacterAddressGroup(npchar, "Pirates_store", "goto", "goto3");
-            DoReloadCharacterToLocation("Pirates_store","reload", "reload1_back");
+			SetFunctionLocationCondition("BS_GatryFlintInHouseDialogue", "Nassau_OfisGatri", false);
+			StartReloadToCobHouse();
 		break;
 
 		case "BS_CPNG_20":	//Гатри
@@ -256,29 +253,29 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_21_1":
-            npchar.name = "Джеймс";
-			npchar.lastname = "Флинт";
 			NextDiag.CurrentNode = "BS_CPNG_21";
 			DialogExit();
-			DoQuestFunctionDelay("GatriStoreSpeech", 0);
+			DoQuestFunctionDelay("GatriSpeech", 0);
 		break;
 
 		case "BS_CPNG_21":	//Флинт
+			npchar.name = GetConvertStrWithReplace("Variable_black_sails_functions_6", "Names.txt", "#space#", " ");
+			npchar.lastname = GetConvertStrWithReplace("Variable_black_sails_functions_7", "Names.txt", "#space#", " ");
             dialog.text = "Я вижу авантюриста, опытного капитана с прекрасным кораблём и вышколенной командой. Я очень редко ошибаюсь, Элеонора, ты же знаешь. Ты ручаешься за "+ GetSexPhrase("него","неё") +"?";
             link.l1 = "";
 			link.l1.go = "BS_CPNG_22_1";
 		break;
 
 		case "BS_CPNG_22_1":
-            npchar.name = "Элеонора";
-			npchar.lastname = "Гатри";
+            npchar.name = GetConvertStrWithReplace("Variable_black_sails_functions_2", "Names.txt", "#space#", " ");
+			npchar.lastname = GetConvertStrWithReplace("Variable_black_sails_functions_3", "Names.txt", "#space#", " ");
 			NextDiag.CurrentNode = "BS_CPNG_22";
 			DialogExit();
-			DoQuestFunctionDelay("GatriStoreSpeech", 0);
+			DoQuestFunctionDelay("GatriSpeech", 0);
 		break;
 
 		case "BS_CPNG_22":	//Гатри
-            dialog.text = "У нас были разногласия, но всё разрешилось. Да, я ручаюсь за этого капитана.";
+            dialog.text = "У нас были разногласия, но всё разрешилось. И мой остров, стал моим благодаря е"+ GetSexPhrase("му","й") +". Да, я ручаюсь за этого капитана.";
             link.l1 = "";
 			link.l1.go = "BS_CPNG_23_1";
 		break;
@@ -286,26 +283,14 @@ void ProcessDialogEvent()
 		case "BS_CPNG_23_1":
 			sld = CharacterFromID("Flint");
 			sld.dialog.currentnode = "BS_CPNG_23";
-			//NPChar.Dialog.Filename = "Common_store.c";
-			//NPChar.Dialog.CurrentNode = "Second time";
 			DialogExit();
 			DoQuestFunctionDelay("FlintSpeech", 0);
 		break;
 
 		case "BS_CPNG_23":	//Флинт
-            dialog.text = "Что же, продолжим в таверне.";
+            dialog.text = "Что же, теперь о деле.";
             link.l1 = "";
-			link.l1.go = "BS_CPNG_23_exit";	//Переход в таверну. Таверна комната.
-		break;
-
-		case "BS_CPNG_23_exit":
-			PChar.quest.Flint_upstairs.win_condition.l1 = "location";
-			PChar.quest.Flint_upstairs.win_condition.l1.location = "Pirates_tavern_upstairs";
-			PChar.quest.Flint_upstairs.function = "Flint_upstairs";
-			NextDiag.CurrentNode = "BS_CPNG_24";
-			DialogExit();
-			ChangeCharacterAddressGroup(npchar, "Pirates_tavern_upstairs", "goto", "goto1");
-            DoReloadCharacterToLocation("Pirates_tavern_upstairs","goto", "goto1");
+			link.l1.go = "BS_CPNG_24";
 		break;
 
 		case "BS_CPNG_24":	//Флинт
@@ -315,7 +300,6 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_25":
-			BS_RestoreGatriTrader("q");
             dialog.text = "'Урка Де Лима' - это очень крепкий орешек, да. И у меня есть информация, где и когда этот галеон будет пополнять запасы воды и провианта для путешествия в Испанию. И это идеальный шанс расколоть этот орех.";
             link.l1 = "Какова цена вопроса?";
 			link.l1.go = "BS_CPNG_26";
@@ -342,31 +326,30 @@ void ProcessDialogEvent()
 
 		case "BS_CPNG_28_exit":
 			PChar.quest.Silver_Downstairs.win_condition.l1 = "location";
-			PChar.quest.Silver_Downstairs.win_condition.l1.location = "Pirates_tavern";
+			PChar.quest.Silver_Downstairs.win_condition.l1.location = "Nassau_tavern";
 			PChar.quest.Silver_Downstairs.function = "Silver_Downstairs";
 			NextDiag.CurrentNode = "BS_CPNG_24";
-			DialogExit();
-            DoReloadCharacterToLocation("Pirates_tavern","sit", "sit_front4");
-			FreeSitLocator("Pirates_tavern", "sit_front4");  // очистим стул
-			FreeSitLocator("Pirates_tavern", "sit_front1");  // очистим стул
-			FreeSitLocator("Pirates_tavern", "sit_base4");  // очистим стул
-			FreeSitLocator("Pirates_tavern", "sit_base1");  // очистим стул
-
-			ChangeCharacterAddressGroup(npchar, "Pirates_tavern", "sit", "sit_base4");
+			DialogExit();           
+			FreeSitLocator("Nassau_tavern", "sit_front2");
+			FreeSitLocator("Nassau_tavern", "sit_base2");
+			FreeSitLocator("Nassau_tavern", "sit_base1");
+			FreeSitLocator("Nassau_tavern", "sit2");
+			pchar.currentsoundtrack = "All_Saints";
+			DoReloadCharacterToLocation("Nassau_tavern","sit", "sit_front2");
+			ChangeCharacterAddressGroup(npchar, "Nassau_tavern", "sit", "sit_base2");
 			LAi_SetSitType(npchar);
 			LAi_SetSitType(pchar);
 			sld = CharacterFromID("BS_Billy");
-			ChangeCharacterAddressGroup(sld, "Pirates_tavern", "sit", "sit_front1");
-			LAi_SetSitType(sld);
+			ChangeCharacterAddressGroup(sld, "Nassau_tavern", "sit", "sit_base1");
+			LAi_SetSitTypeNoGroup(sld);
+			LAi_CharacterDisableDialog(sld);
 			sld = CharacterFromID("BS_Silver");
 			sld.dialog.filename = "Quest\BlackSails\ChernyeParusaNaGorizonte.c";
 			sld.dialog.currentnode = "BS_CPNG_29";
-			ChangeCharacterAddressGroup(sld, "Pirates_tavern", "sit", "sit_base1");
+			ChangeCharacterAddressGroup(sld, "Nassau_tavern", "sit", "sit2");
 			LAi_SetSitType(sld);
-			sld = GetCharacter(NPC_GenerateCharacter("Gatri_temp", "BS_Gatry", "woman", "woman", 1, PIRATE, -1, true));
-			ChangeCharacterAddressGroup(sld, "Pirates_tavern", "tables", "stay1");
-			sld.name = "Элеонора";
-			sld.lastname = "Гатри";
+			sld = CharacterFromID("gatri_temp");
+			ChangeCharacterAddressGroup(sld, "Nassau_tavern", "tables", "stay3");
 		break;
 
 		case "BS_CPNG_29":	//Сильвер
@@ -414,10 +397,10 @@ void ProcessDialogEvent()
 			sld.dialog.filename = "Quest\BlackSails\ChernyeParusaNaGorizonte.c";
 			sld.talker = 10;
 			DialogExit();
-			//DoQuestFunctionDelay("GatriSpeech", 0);
 		break;
 
 		case "BS_CPNG_32_gatri":
+			LAi_SetActorTypeNoGroup(npchar);
             dialog.text = "Чарльз Вейн! Проклятье! Как!!! Рррр..!!";
             link.l1 = "";
 			link.l1.go = "BS_CPNG_32_flint_1";
@@ -433,11 +416,15 @@ void ProcessDialogEvent()
 		case "BS_CPNG_32_flint":
 			SetCompanionIndex(PChar, -1, GetCharacterIndex(npchar.id));//Флинт присоединяется к эскадре
 			Flag_Change(PIRATE);
-			BSRepairShip(npchar);
+			ProcessHullRepair(npchar, 100.0);
+			ProcessSailRepair(npchar, 100.0);
+			DeleteAttribute(npchar, "ship.blots");
+			DeleteAttribute(npchar, "ship.sails");
+			RepairMasts(npchar);
 			SetShipRemovable(npchar, false);
 			SetCharacterRemovable(npchar, false);
 			Fantom_SetBalls(npchar, "war");
-			SetCharacterGoods(npchar,GOOD_FOOD,1000);
+			SetCharacterGoods(npchar, GOOD_FOOD, 2900);
             dialog.text = "Успокойся Элеонора. Мистер Сильвер, где вы виделись с Вейном в последний раз?";
             link.l1 = "";
 			link.l1.go = "BS_CPNG_32_silver_1";
@@ -457,31 +444,28 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_33":
-			npchar.LifeDay = 0;
-			npchar.dialog.currentnode = "BS_CPNG_Final";
-			sld = CharacterFromID("BS_Billy");
-			sld.dialog.currentnode = "BS_CPNG_Final";
-			sld.dialog.filename = "Quest\BlackSails\ChernyeParusaNaGorizonte.c";
-			sld.LifeDay = 0;
-			sld = CharacterFromID("Gatri_temp");
-			sld.LifeDay = 0;
-			sld.dialog.currentnode = "BS_CPNG_Final";
+			LAi_CharacterDisableDialog(npchar);
 			sld = CharacterFromID("Flint");
 			sld.dialog.currentnode = "BS_CPNG_Final";
 
             dialog.text = "";
             link.l1 = "Мне уже нравится начало приключения! В путь!";
 			link.l1.go = "BS_CPNG_33_exit";
-			//DoReloadCharacterToLocation("Pirates_tavern","goto", "goto2");
 		break;
 
-		case "BS_CPNG_33_exit":
-			PChar.quest.BSOnTheHorizon_End.win_condition.l1 = "location";
-			PChar.quest.BSOnTheHorizon_End.win_condition.l1.location = "Bermudes";
-			PChar.quest.BSOnTheHorizon_End.function = "BSOnTheHorizon_End";
+		case "BS_CPNG_33_exit":		
+			SetFunctionExitFromLocationCondition("BS_OnTheHorizonTavernExit", pchar.location, false);
+			DeleteAttribute(PChar, "currentsoundtrack");
 			BSOnTheHorizon_SeaBattle();
+			PChar.quest.BattleSeaDefenceColonyWinner.win_condition.l1 = "Group_Death";
+			PChar.quest.BattleSeaDefenceColonyWinner.win_condition.l1.group = "Sea_BSOnTheHorizon_SeaBattle1";
+			PChar.quest.BattleSeaDefenceColonyWinner.function = "BSOnTheHorizon_End";
+			pchar.quest.BSCourtlyPassions_DontStart.win_condition.c1 = "NPC_Death";
+			pchar.quest.BSCourtlyPassions_DontStart.win_condition.c1.character ="Flint";
+			PChar.quest.BSCourtlyPassions_DontStart.function = "BSCourtlyPassions_DontStart";
 			AddQuestRecord("BSOnTheHorizon", "4");
-			ChangeCharacterAddressGroup(pchar, "Pirates_tavern", "goto", "goto2");
+			InterfaceStates.Buttons.Save.enable = true;
+			ChangeCharacterAddressGroup(pchar, "Nassau_tavern", "tables", "stay4");
 			LAi_SetPlayerType(pchar);
 			DialogExit();
 		break;

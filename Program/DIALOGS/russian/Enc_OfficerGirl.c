@@ -871,8 +871,7 @@ void ProcessDialogEvent()
 			chrDisableReloadToLocation = true;
 			pchar.quest.HelenBastard.win_condition.l1 = "NPC_Death";
 			pchar.quest.HelenBastard.win_condition.l1.character = "HelenBastard";
-			pchar.quest.HelenBastard.win_condition = "OpenTheDoors";
-			SetLocationCapturedState("PuertoPrincipe_town", false);
+			pchar.quest.HelenBastard.win_condition = "Helen_Bastard_Dead";
 			LocatorReloadEnterDisable("PuertoPrincipe_ExitTown", "reload1_back", false);
 		break;
 		case "Helen_nowait":

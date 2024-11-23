@@ -115,11 +115,11 @@ void InitInterface_R(string iniName, ref pTrader)
 
 	switch (refCharacter.sex)
 	{
-		case "man": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.tga");
+		case "man": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.dds");
 		break;
-		case "woman": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.tga");
+		case "woman": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.dds");
 		break;
-		case "skeleton": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.tga");
+		case "skeleton": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.dds");
 		break;
 	}
 
@@ -561,29 +561,6 @@ void FillCharactersScroll()
 	GameInterface.CHARACTERS_SCROLL.BadPic1 = "emptyface";
 
 	int m = 0;
-	attributeName = "pic" + (m + 1);
-	GameInterface.CHARACTERS_SCROLL.(attributeName).character = nMainCharacterIndex;
-	GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = GetFacePicName(pchar);
-	GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","FACE128_" + pchar.FaceID);
-	m++;
-
-	for(i = 0; i < nListSize; i++)
-	{
-		_curCharIdx = GetPassenger(pchar, i);
-
-		bOk = CheckAttribute(&characters[_curCharIdx], "prisoned") && sti(characters[_curCharIdx].prisoned) == true;
-		if(_curCharIdx != -1  && !CheckAttribute(&characters[_curCharIdx], "isquest") && !bOk)
-		{
-			if (IsOfficer(&characters[_curCharIdx]))  // boal
-			{
-				attributeName = "pic" + (m + 1);
-				GameInterface.CHARACTERS_SCROLL.(attributeName).character = _curCharIdx;
-				GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = GetFacePicName(GetCharacter(_curCharIdx));
-				GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","FACE128_"+Characters[_curCharIdx].FaceID);
-				m++;
-			}
-		}
-	}
 	
 	int iTest;
 	iTest = FindColony(refStoreChar.City); // город магазина
@@ -608,6 +585,32 @@ void FillCharactersScroll()
 			GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = "BoxImage";
 			GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","BOX_IMAGE");
 			m++;
+		}
+		GameInterface.CHARACTERS_SCROLL.current = m;
+		nCurScrollNum = m;
+	}
+	
+	attributeName = "pic" + (m + 1);
+	GameInterface.CHARACTERS_SCROLL.(attributeName).character = nMainCharacterIndex;
+	GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = GetFacePicName(pchar);
+	GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","FACE128_" + pchar.FaceID);
+	m++;
+
+	for(i = 0; i < nListSize; i++)
+	{
+		_curCharIdx = GetPassenger(pchar, i);
+
+		bOk = CheckAttribute(&characters[_curCharIdx], "prisoned") && sti(characters[_curCharIdx].prisoned) == true;
+		if(_curCharIdx != -1  && !CheckAttribute(&characters[_curCharIdx], "isquest") && !bOk)
+		{
+			if (IsOfficer(&characters[_curCharIdx]))  // boal
+			{
+				attributeName = "pic" + (m + 1);
+				GameInterface.CHARACTERS_SCROLL.(attributeName).character = _curCharIdx;
+				GameInterface.CHARACTERS_SCROLL.(attributeName).img1 = GetFacePicName(GetCharacter(_curCharIdx));
+				GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup","FACE128_"+Characters[_curCharIdx].FaceID);
+				m++;
+			}
 		}
 	}
 }
@@ -640,11 +643,11 @@ void ProcessFrame()
 		refCharacter = &characters[sti(GameInterface.CHARACTERS_SCROLL.(sAttr).character)];
 		switch (refCharacter.sex)
 		{
-			case "man": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.tga");
+			case "man": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.dds");
 			break;
-			case "woman": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.tga");
+			case "woman": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.dds");
 			break;
-			case "skeleton": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.tga");
+			case "skeleton": SetNewPicture("EQUIP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.dds");
 			break;
 		}
 		if (HasSubStr(GameInterface.CHARACTERS_SCROLL.(sAttr).character,"box"))
@@ -667,7 +670,7 @@ void ProcessFrame()
 void FillCharacterInfo()
 {
 	if (CheckAttribute(refCharacter,"faceid")) SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\portraits\128\face_" + refCharacter.FaceId + ".tga");
-	else SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\BoxImage.tga");
+	else SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\BoxImage.dds");
 	string sAttr = "pic" + (nCurScrollNum + 1);
 	int iCurCharImageIndex = sti(GameInterface.CHARACTERS_SCROLL.(sAttr).character);
 	string sFullName = GetFullName(&characters[iCurCharImageIndex]);

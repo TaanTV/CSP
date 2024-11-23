@@ -1,5 +1,4 @@
 
-
 void ProcessDialogEvent()
 {
 	ref NPChar;
@@ -20,37 +19,38 @@ void ProcessDialogEvent()
 
 		//Скипаем с отравления три дня. ГГ приходит в себя в комнате таверны. Запись в СЖ: «Неожиданно. Но предсказуемо. Флинт поимел нас всех. Кто бы мог подумать. Хорошо, что жив(ва) остался(лась)! Нужно разобраться в происходящем. Дьявол, как же мутит то!
 
-		//Далее, если договорились поймать Флинта для разведки – Вейна нет в Шарп-Тауне. Если не договаривались – он в таверне за столом пьянствует.
+		//Далее, если договорились поймать Флинта для разведки – Вейна нет на Багамах. Если не договаривались – он в таверне за столом пьянствует.
 
-		//Спускаемся в таверну. Вариант без Вейна. Подходит Макс
+		//Спускаемся в таверну. Вариант без Вейна. Подходит Макс// ВАЖНО! этот вариант для финала 3 7.04.2023
 
 		case "BS_F1_1":	//Максин
-			dialog.text = "Очнул"+ GetSexPhrase("ся","ась") +" наконец, ты дольше всех в отключке был"+ GetSexPhrase("","а") +"";
+			dialog.text = "Очнул"+ GetSexPhrase("ся","ась") +" наконец, ты дольше всех в отключке был"+ GetSexPhrase("","а") +".";
 			link.l1 = "Все живы? Что нового?";
 			link.l1.go = "BS_F1_2";
 		break;
 
 		case "BS_F1_2": //Максин
-			dialog.text = "Все живы, он подмешал белладонну в вино. Мастер Алексус отпаивал нас всех, какой то дрянью из древесного угля и Бог знает чего ещё. Заблевали всю резиденцию, но выжили.";
-			link.l1 = "Обязательно куплю ему что-нибудь техническое. Так какие новости? Флинт? Золото?";
+			dialog.text = "Все живы, он подмешал белладонну в вино. Инес отпаивала нас всех, какой то дрянью из древесного угля и Бог знает чего ещё. Заблевали всё вокруг, но выжили.";
+			link.l1 = "Обязательно отблагодарю её как-нибудь. Так какие новости? Флинт? Золото?"; //для въедливых, можно прописать какой то бонусный диалог с Инес. благодарности ГГ, попытка сунуть денег и посыл в пешее эротическое от Инес. это вполне в её характере 7.04.2023
 			link.l1.go = "BS_F1_3";
 		break;
 
 		case "BS_F1_3":	//Максин
-			dialog.text = "Ни Флинта, ни золота. На складе только один сундук с дублонами, там примерно по пятьдесят тысяч на всех. И записка. «Простите, поделите это и забудьте про 'Урку' и Флинта. Так нужно. Всё равно вам не понять. Ф.»";
+			dialog.text = "Ни Флинта, ни золота. На складе только один сундук с дублонами, там примерно по пятьдесят тысяч на всех. И записка. 'Простите, поделите это и забудьте про 'Урку' и Флинта. Так нужно. Всё равно вам не понять. Ф.'";
 			link.l1 = "Чёртов ханжа! А я почти поверил"+ GetSexPhrase("","а") +" в его 'дружбу'. Где остальные?";
-			link.l1.go = "BS_F1_4";
+			link.l1.go = "BS_F1_4";// получаем 50000 7.04.2023
+			AddMoneyToCharacter(PChar, 50000);
 		break;
 
 		case "BS_F1_4":	//Максин
-			dialog.text = "Элеонора в резиденции, с ней Рекхэм и Бонни, все трое злые как черти. Постоянно что–то бьют и орут друг на друга. Вейн как только встал на ноги, поднял паруса и умчался куда-то";
+			dialog.text = "Элеонора у себя, с ней Рекхэм и Бонни, все трое злые как черти. Постоянно что–то бьют и орут друг на друга. Вейн как только встал на ноги, поднял паруса и умчался куда-то";
 			link.l1 = "Думаю, в резиденцию пока лучше не соваться. Пойду, подышу воздухом.";
 			link.l1.go = "exit";
 		break;
 
 		//Запись в СЖ: «Трудно думать, когда тебя постоянно тошнит. Но нужно что-то делать. Попробую подключить разведку. Какой там пароль? На Антигуа! В путь».
 
-		//Вариант с Вейном
+		//Вариант с Вейном финал номер один если убил Бонса 7.04.2023
 
 		//Подходит Макс
 
@@ -62,8 +62,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_6": //Максин
-			dialog.text = "Все живы, он подмешал белладонну в вино. Мастер Алексус отпаивал нас всех, какой то дрянью из древесного угля и Бог знает чего ещё. Заблевали всю резиденцию, но выжили.";
-			link.l1 = "Обязательно куплю ему что-нибудь техническое. Так какие новости? Флинт? Золото?";
+			dialog.text = "Все живы, он подмешал белладонну в вино. Инес отпаивала нас всех, какой-то дрянью из древесного угля и Бог знает чего ещё. Заблевали всё вокруг, но выжили.";
+			link.l1 = "Обязательно отблагодарю её как-нибудь. Так какие новости? Флинт? Золото?"; //для въедливых, можно прописать какой то бонусный диалог с Инес. благодарности ГГ, попытка сунуть денег и посыл в пешее эротическое от Инес. это вполне в её характере 7.04.2023
 			link.l1.go = "BS_F1_7";
 		break;
 
@@ -76,12 +76,12 @@ void ProcessDialogEvent()
 
 		case "BS_F1_8":	//Максин
 			dialog.text = "В резиденции Чарльз и Элеонора выясняют, у кого из них яйца больше. Постоянно орут и бьют что-то, потом затихают. Они или прирежут друг друга или трахнутся. Или и то, и другое.";
-			link.l1 = "Они не были женаты раньше? Хм. Можешь не отвечать. Есть какие то зацепки?";
+			link.l1 = "Они не были женаты раньше? Хм. Можешь не отвечать. Есть какие-то зацепки?";
 			link.l1.go = "BS_F1_9";
 		break;
 
 		case "BS_F1_9":	//Максин
-			dialog.text = "Мне нужно вернуться в Порт Рояль, возможно девочки что-то слышали.";
+			dialog.text = "Мне нужно вернуться в Порт-Рояль, возможно девочки что-то слышали.";
 			link.l1 = "Ну, в таком случае – добро пожаловать на борт! Оставим голубков выяснять отношения. Надеюсь, они всё-таки трахнутся, а не прикончат друг друга.";
 			link.l1.go = "BS_F1_9exit";
 		break;
@@ -91,6 +91,7 @@ void ProcessDialogEvent()
 			PChar.quest.BSHangover_PortRoyal.win_condition.l1 = "location";
 			PChar.quest.BSHangover_PortRoyal.win_condition.l1.location = "PortRoyal_town";
 			PChar.quest.BSHangover_PortRoyal.function = "BSHangover_PortRoyal";
+			LAi_ActorGoToLocation(npchar, "reload", "reload1_back", "none", "", "", "", -1);
 			AddQuestRecord("BSHangover", "2");
 			if (WhisperIsHere())
 			{
@@ -98,6 +99,7 @@ void ProcessDialogEvent()
 				StartInstantDialogNoType(pchar.WhisperPGG, "BS_7_WhisperIsHere", "Quest\WhisperLine\Whisper.c");
 			}
 		break;
+		
 		case "BS_F1_8_MaksRoyal":	//Максин
 			chrDisableReloadToLocation = false;
 			dialog.text = "Благодарю. Мне понадобится какое-то время, чтобы собрать информацию. Можешь отдохнуть в таверне несколько дней.";
@@ -110,9 +112,7 @@ void ProcessDialogEvent()
 			BS_ReplaceHostessWithMaks();
 			LAi_SetActorTypeNoGroup(npchar);
 			LAi_ActorGoToLocation(npchar, "reload", "reload9_back", "none", "", "", "", -1);
-			DeleteAttribute(npchar, "LifeDay");
 			AddQuestRecord("BSHangover", "3");
-			//npchar.location = "none";
 			sld = CharacterFromID("BS_Silver");
 			sld.location = "none";
 			sld = CharacterFromID("BS_Rakham");
@@ -123,22 +123,15 @@ void ProcessDialogEvent()
 			sld.location = "none";
 			sld = CharacterFromID("Flint");
 			sld.location = "none";
-
-			ref jackman = CharacterFromID("Jackman");
-			ChangeCharacterAddressGroup(jackman,"Pirates_townhall", "sit", "sit1");
-
+			
 			sld = CharacterFromID("gatri_temp");
-			LAi_SetStayTypeNoGroup(sld);
+			ChangeCharacterAddressGroup(sld, "Nassau_OfisGatri", "quest", "quest5");
+			CharacterTurnToLoc(sld, "reload", "reload1_back");
+			LAi_SetStayType(sld);
 			sld.dialog.filename = "Quest\BlackSails\BS_Final_1.c";
 			sld.dialog.currentnode = "BS_F1_10";
-			if (jackman.dialog.currentnode == "Jackman_Defeated")
-			{
-				sld.location.locator = "goto4";
-			}
-
-			LocatorReloadEnterDisable("Pirates_town", "reload3_back", false);
-			LocatorReloadEnterDisable("Pirates_townhall", "reload2", false);
-			LocatorReloadEnterDisable("Pirates_portoffice", "reload1", false);
+			BS_GatriHomeGuardsOn();
+			LocatorReloadEnterDisable("Nassau_town", "houseS1", false);
 		break;
 
 		//Запись в СЖ: «Флинт не мог испариться бесследно и в Европу, ему путь заказан. Попробуем узнать что-то с помощью пташек Макс. В Порт Рояль!»
@@ -149,7 +142,7 @@ void ProcessDialogEvent()
 
 		//Запись в СЖ: «Максин пока займётся сбором слухов, а я проведаю Вейна и мисс Гатри»
 
-		//Пиздуем на Бермуды. В резиденции Гатри. Вейна пока нигде нет, после диалога, ставим его в комнату таверны.
+		//Пиздуем на Багамы. В резиденции Гатри. Вейна пока нигде нет, после диалога, ставим его в комнату таверны.
 
 		case "BS_F1_10": //Гатри
 			dialog.text = "";
@@ -161,40 +154,43 @@ void ProcessDialogEvent()
 			dialog.text = "Этот мерзкий, самовлюблённый, неотёсанный кретин! Да как он смел! Видеть его больше не желаю! Не напоминай мне о нём! А лучше проваливай вслед за ним! К чертям собачьим!";
 			link.l1 = "";
 			LAi_SetActorTypeNoGroup(npchar);
-			link.l1.go = "exit";
-
-			sld = CharacterFromID("Pirates_tavernkeeper");
+			link.l1.go = "BS_F1_11_exit";
+			sld = CharacterFromID("Nassau_tavernkeeper");
 			SaveOldDialog(sld);
 			sld.dialog.filename = "Quest\BlackSails\BS_Final_1.c";
 			sld.dialog.currentnode = "BS_F1_12";
-
+		break;
+		
+		case "BS_F1_11_exit": //Гатри
+			DialogExit();
+			LocatorReloadEnterDisable("Nassau_town", "houseS1", true);
+			DoReloadCharacterToLocation("Nassau_Town", "reload", "houseS1");
 		break;
 
 		//Выкидывает нас на порог. Дверь закрыта.
 
 		//Идём в таверну. Ставим Вейна в комнату.
 
-		//Подходим к бармену.
+		//Подходим к Инес.
 
-		case "BS_F1_12": //Б
+		case "BS_F1_12": //И
 			dialog.text = "";
 			link.l1 = "Вейн наверху?";
 			link.l1.go = "BS_F1_13";
 		break;
 
-		case "BS_F1_13": //Б
+		case "BS_F1_13": //И
 			dialog.text = "Третий день как. Выжрал уже с бочонок рому и ещё требует.";
 			link.l1 = "Подожди пока с ромом, потолковать нужно.";
 			link.l1.go = "BS_F1_13exit";
 		break;
 
-		case "BS_F1_13exit": //Б
+		case "BS_F1_13exit": //И
 			DialogExit();
 			RestoreOldDialog(npchar);
-
-			DoReloadCharacterToLocation("Pirates_tavern_upstairs","goto","goto1");
+			DoReloadCharacterToLocation("Nassau_tavern_upstairs", "goto", "goto1");
 			pchar.quest.BSHangover_Vein.win_condition.l1          = "location";
-			pchar.quest.BSHangover_Vein.win_condition.l1.location = "Pirates_tavern_upstairs";
+			pchar.quest.BSHangover_Vein.win_condition.l1.location = "Nassau_tavern_upstairs";
 			pchar.quest.BSHangover_Vein.function             = "BSHangover_Vein";
 		break;
 
@@ -208,27 +204,37 @@ void ProcessDialogEvent()
 
 		case "BS_F1_15": //Вейн
 			dialog.text = "Зацепки? Да, чёрт возьми, я с тобой! И гори эта мисс Надменная Задница синим пламенем!";
-			link.l1 = "Вот и чудно. В суть конфликта вникать не буду. Становись в эскадру, путь в Порт Рояль!";
+			link.l1 = "Вот и чудно. В суть конфликта вникать не буду. Становись в эскадру, путь в Порт-Рояль!";
 			link.l1.go = "BS_F1_15exit";
 			SetCompanionIndex(PChar, -1, GetCharacterIndex(npchar.id));
 			BSRepairShip(npchar);
+			SetCrewQuantityFull(npchar);
+			npchar.ship.Crew.Morale = 60+rand(40);
+			ChangeCrewExp(npchar, "Sailors", 60+rand(40));
+			ChangeCrewExp(npchar, "Cannoners", 60+rand(40));
+			ChangeCrewExp(npchar, "Soldiers", 60+rand(40));
 			AddQuestRecord("BSHangover", "4");
 			npchar.location = "none";
 			pchar.quest.BSHangover_RoyalVein.win_condition.l1          = "location";
 			pchar.quest.BSHangover_RoyalVein.win_condition.l1.location = "PortRoyal_SecBrRoom";
-			pchar.quest.BSHangover_RoyalVein.function             = "BSHangover_RoyalVein";
+			pchar.quest.BSHangover_RoyalVein.function             = "BSHangover_RoyalVein";	
 		break;
 
 		case "BS_F1_15exit": //Вейн
 			DialogExit();
+			DoReloadCharacterToLocation("Nassau_town", "reload", "reload4_back");
 			npchar.dialog.currentnode = "BS_F1_15Vein";
 		break;
 
 		case "BS_F1_15Vein": //Вейн
-			npchar.dialog.currentnode = "BS_F1_15Vein"
 			dialog.text = "Флинт заплатит!";
 			link.l1 = "От нас ему не уйти.";
-			link.l1.go = "BS_F1_15exit";
+			link.l1.go = "BS_F1_15Veinloopexit";
+		break;
+		
+		case "BS_F1_15Veinloopexit": //Вейн
+			DialogExit();
+			npchar.dialog.currentnode = "BS_F1_15Vein"
 		break;
 		//Запись в СЖ: «Гатри и Вейн поссорились. Ничего нового. Главное мы снова в деле. Пора проведать Макс»
 
@@ -257,7 +263,7 @@ void ProcessDialogEvent()
 			AddQuestRecord("BSHangover", "5");
 			dialog.text = "Сильвер?! Он как то хвалился, что его Жалом шлюхи прозвали!";
 			link.l1 = "Нужно поспешить. Не верю я, что Флинт просто так его с корабля списал!";
-			link.l1.go = "BS_F1_15exit";
+			link.l1.go = "BS_F1_18exit";
 
 			pchar.quest.BSHangover_VeinFollows.win_condition.l1          = "location";
 			pchar.quest.BSHangover_VeinFollows.win_condition.l1.location = "Bridgetown_town";
@@ -300,7 +306,13 @@ void ProcessDialogEvent()
 			sld.dialog.filename = "Quest\BlackSails\BS_Final_1.c";
 			sld.dialog.currentnode = "BS_F1_SearchStinger";
 		break;
-
+		
+		case "BS_F1_18exit": //Вейн
+			DialogExit();
+			DoReloadCharacterToLocation("PortRoyal_town", "reload", "reload9_back");
+			npchar.dialog.currentnode = "BS_F1_15Vein";
+		break;
+		
 		case "BS_F1_SearchStinger":
 			dialog.text = "";
 			link.l1 = "Привет. Я кое-кого ищу. К тебе не заходил некий Джон Стингер? Или, быть может, Джон Сильвер? Он ещё носит деревяшку вместо ноги. Могу неплохо заплатить за информацию.";
@@ -366,7 +378,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_21": //Сильвер
 			dialog.text = "О, наша Макс за себя постоять может. Это уже не та, бедная рабыня из Луизианы, которую продали в бордель ещё в детстве.";
-			link.l1 = "И тем не менее, я чувствую, что она в беде. Нужно поспешить в Порт Рояль.";
+			link.l1 = "И тем не менее, я чувствую, что она в беде. Нужно поспешить в Порт-Рояль.";
 			link.l1.go = "BS_F1_22";
 		break;
 
@@ -391,13 +403,13 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_24": //Сильвер
-			dialog.text = "Почти. Флинт примчался на 'Моржа' и сразу скомандовал отплывать. 'Поговорим позже Джон, думаю, ты всё поймёшь', сказал и зыркнул так по флинтовски, из подлобья. Ну, вы знаете. И тут меня проняло аж. Смотрю, а на палубе всё лица незнакомые, когда он успел команду набрать? Нечисто тут что-то, думаю.";
+			dialog.text = "Почти. Флинт примчался на 'Моржа' и сразу скомандовал отплывать. 'Поговорим позже Джон, думаю, ты всё поймёшь', сказал и зыркнул так по-флинтовски, исподлобья. Ну, вы знаете. И тут меня проняло... Смотрю, а на палубе всё лица незнакомые, когда он успел команду набрать? Нечисто тут что-то, думаю.";
 			link.l1 = "Что дальше было? Не томи и без украшательств, пожалуйста!";
 			link.l1.go = "BS_F1_25";
 		break;
 
 		case "BS_F1_25": //Сильвер
-			dialog.text = "Отвалили мы от Бермуд миль на десять, и тут матросы эти новые пистоли достали и всех ветеранов, с которыми золото Урки брали – перестреляли! Палуба вся кровью залита, а они с тесаками выживших добивают. Ну, я и со всех ног в кубрик побежал, схватил пояс с золотишком припрятанным, пустой бочонок из под рома и за борт. Течение меня к Син Мартену вынесло, там нанял рыбаков, что меня переправили подальше. В конце концов, осел тут.";
+			dialog.text = "Отвалили мы от Багам миль на десять, и тут матросы эти новые пистоли достали и всех ветеранов, с которыми золото 'Урки' брали – перестреляли! Палуба вся кровью залита, а они с тесаками выживших добивают. Ну, я и со всех ног в кубрик побежал, схватил пояс с золотишком припрятанным, пустой бочонок из под рома и за борт. Течение меня к Тортуге вынесло, там нанял рыбаков, что меня переправили подальше. В конце концов, осел тут.";
 			link.l1 = "Занятно, Флинт значит всё это заранее спланировал и делиться ни с кем не собирался.";
 			link.l1.go = "BS_F1_25exit";
 		break;
@@ -407,13 +419,13 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_26": //Вейн
-			dialog.text = "Да я ему это золото в глотку запихивать стану, пока снизу не посыпится!";
+			dialog.text = "Да я ему это золото в глотку запихивать стану, пока снизу не посыпется!";
 			link.l1 = "";
 			link.l1.go = "BS_F1_27";
 		break;
 
 		case "BS_F1_27": //Вейн
-			dialog.text = "Да я ему это золото в глотку запихивать стану, пока снизу не посыпится!";
+			dialog.text = "Да я ему это золото в глотку запихивать стану, пока снизу не посыпется!";
 			link.l1 = "";
 			link.l1.go = "BS_F1_27exit";
 		break;
@@ -478,7 +490,7 @@ void ProcessDialogEvent()
 		case "BS_F1_RentRoom_2":
 			dialog.text = "Комната ваша. Вот ключ.";
 			AddMoneyToCharacter(PChar, -100);
-			link.l1 = "Благодарю";
+			link.l1 = "Благодарю.";
 			link.l1.go = "BS_F1_RentRoom_3";
 		break;
 
@@ -496,14 +508,14 @@ void ProcessDialogEvent()
 		//Ставим корабли в бухту. Ножками топаем в город и просто чилим три дня или скипаем. Через три дня, на улице, подходит шлюха
 
 		case "BS_F1_29": //Шлюха
-			dialog.text = "Красавчик Джонни сказал, чтобы вы были готовы. «Морж» встал на рейде. Он выманит охотника в пещеру, тут на острове.";
+			dialog.text = "Красавчик Джонни сказал, чтобы вы были готовы. 'Морж' встал на рейде. Он выманит охотника в пещеру, тут на острове.";
 			link.l1 = "Спасибо, детка.";
 			link.l1.go = "BS_F1_30";
 		break;
 
 		case "BS_F1_30": //Шлюха
 			dialog.text = "А монетку?";
-			link.l1 = "Ах, да. Вот тебе несколько монеток."; //- 32000
+			link.l1 = "Ах, да. Вот тебе несколько монеток."; //- 100
 			link.l1.go = "BS_F1_30exit";
 		break;
 
@@ -514,7 +526,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_31": //Вейн
-			AddMoneyToCharacter(PChar, -500);
+			AddMoneyToCharacter(PChar, -100);
 			dialog.text = "Как то просто всё вышло. Не нравится мне это!";
 			AddQuestRecord("BSHangover", "7");
 			link.l1 = "Мне тоже. Давай разделимся. Бери своих и занимайте позиции вокруг входа в пещеру. Я пойду внутрь. Услышите неладное – будьте настороже, внутрь не суйтесь, сидите в засаде. Посмотрим, чем всё обернётся.";
@@ -556,7 +568,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_33": //Сильвер
 			dialog.text = "Точно, ты заметил"+ GetSexPhrase("","а") +"? Это те рожи, о которых я говорил. Эти точно не местные, я почти всех наёмных рубак тут знаю. А где Вейн?";
-			link.l1 = "Снаружи, в засаде. Не будем терять время, в бухту и попробуем взять на абордаж ‘Моржа’!";
+			link.l1 = "Снаружи, в засаде. Не будем терять время, в бухту и попробуем взять на абордаж 'Моржа'!";
 			link.l1.go = "BS_F1_33_2";
 		break;
 
@@ -575,7 +587,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_34": //Вейн
 			dialog.text = "Эти, (пинает ногой труп), полезли из подлеска, как только ты в пещеру вош"+ GetSexPhrase("ёл","ла") +", пришлось вмешаться.";
-			link.l1 = "Внутри тоже жарко было! Флинта среди трупов нет! Нужно бежать на корабли и попытаться взять ‘Моржа’. За мной!";
+			link.l1 = "Внутри тоже жарко было! Флинта среди трупов нет! Нужно бежать на корабли и попытаться взять 'Моржа'. За мной!";
 			link.l1.go = "BS_F1_34exit";
 			BSHangover_IsEveryoneOkay();
 		break;
@@ -599,7 +611,7 @@ void ProcessDialogEvent()
 
 		//Запись в СЖ: «На наживку клюнула целая стая рыбин! Но главного лосося, среди них не было. «Морж» всё ещё на рейде, нужно взять его на абордаж и быстро, пока сторожевики не решили посмотреть, кто там палит из пушек».
 
-		//Скачем в Риггед Поинт, садимся на корабли берём Моржа на абордаж. В каюте рубимся с Флинтом. Суровый по статам мужик с какой нибудь уникальной саблей. Банки, жратва – всё по полной. Порубили. Заводит диалог
+		//Скачем в Риггед Поинт, садимся на корабли берём Моржа на абордаж. В каюте рубимся с Флинтом. Суровый по статам мужик с какой нибудь уникальной саблей. Банки, жратва – всё по полной. Порубили. Заводит диалог// там драка в каюте подвязана на участие Виспер в ней. если её нет в команде, то спавн подсосов Флинта явно лишний. он и так крут. оставить спавн, если ГГ с Виспер или шарик, ему вроде ржавая помогает в каютных замесах 7.04.2023
 
 		case "BS_F1_35": //Флинт
 			LAi_group_MoveCharacter(npchar, LAI_GROUP_PLAYER);
@@ -609,7 +621,6 @@ void ProcessDialogEvent()
 				LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
 			}
 			PChar.quest.BSHangover_Fail1.over = "yes";
-			PChar.quest.BSHangover_Fail2.over = "yes";
 
 			dialog.text = "Всё должно было пойти совсем не так! Мне жаль. Но выслушай меня!";
 			link.l1 = "Не так?! Мы не должны были выжить? Да я дура"+ GetSexPhrase("к","") +", решил"+ GetSexPhrase("","а") +", что ты мне друг! Чёрт возьми, мы такие дела могли бы вместе проворачивать! Зачем ты так?";
@@ -617,8 +628,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_36": //Флинт
-			dialog.text = "Всё очень непросто, дружище. Не начни вы погоню, не попадись я на уловку Джона... Всё было бы по-другому. Никто не ушёл бы обиженным. Я всё продумал! Думал, что всё. Эти деньги нужны не мне лично, они станут основой нового, свободного государства. Республики! Без королей и их войн, местом, где свободные люди, смогут жить по совести, не завися от прихотей банкиров или аристократов! Это Новый Свет, так пусть он станет началом Нового, лучшего Мира! Ты понимаешь?!";
-			link.l1 = "О чём ты? Какая республика? Шарп уже пытался, Эвери тоже. Чем всё закончилось? Кровью. Кровью тех самых свободных людей, для которых ты новый мир собрался строить! Или твой «мир» особенный? Чем же?";
+			dialog.text = "Всё очень непросто, дружище. Не начни вы погоню, не попадись я на уловку Джона... Всё было бы по-другому. Никто не ушёл бы обиженным. Я всё продумал! Думал, что всё. Эти деньги нужны не мне лично, они станут основой нового, свободного государства. Республики! Без королей и их войн, местом, где свободные люди смогут жить по совести, не завися от прихотей банкиров или аристократов! Это Новый Свет, так пусть он станет началом Нового, лучшего Мира! Ты понимаешь?!";
+			link.l1 = "О чём ты? Какая республика? Шарп уже пытался, Эвери тоже. Чем всё закончилось? Кровью. Кровью тех самых свободных людей, для которых ты новый мир собрался строить! Или твой 'мир' особенный? Чем же?";
 			link.l1.go = "BS_F1_37";
 		break;
 
@@ -642,20 +653,19 @@ void ProcessDialogEvent()
 			{
 				sld = CharacterFromID("FlintOff"+k);
 				ChangeCharacterAddressGroup(sld, "none", "", "");
+				sld.lifeDay = 0;
 			}
-
-
+			
 			DialogExit();
 
-			QuestAboardCabinDialogFree(); // важный метод
+			QuestAboardCabinDialogFree();
 			sld = &Characters[sti(pchar.GenQuest.QuestAboardCabinDialogIdx)];
 			LAi_group_SetCheck(LAI_GROUP_BRDENEMY, "");
-
+			DeleteAttribute(pchar, "FlintBoardingDialog");
 			LAi_KillCharacter(npchar);
 			DeleteCharacter(npchar);
-			SetLaunchFrameFormParam("Ваши люди уводят Флинта. Вы, тем временем, обыскиваете его каюту. В одном из сундуков вы находите пять миллионов песо. Также ваше внимание привлекает книга - Марк Аврелий 'Размышления'. Вы забираете её, вместе с судовым журналом Флинта.", "", 0.1, 15.0);
+			SetLaunchFrameFormParam("Ваши люди уводят Флинта. Вы, тем временем, обыскиваете его каюту. Ваше внимание привлекает книга - Марк Аврелий 'Размышления'. Вы забираете её, вместе с судовым журналом Флинта.", "", 0.1, 15.0);
 			LaunchFrameForm();
-			AddMoneyToCharacter(PChar, 5000000);
 			AddQuestRecord("BSHangover", "9");
 			sld = CharacterFromID("PortRoyal_hostess");
 			SaveOldDialog(sld);
@@ -677,9 +687,9 @@ void ProcessDialogEvent()
 			}
 		break;
 
-		//Отдаёт свою саблю. ВАЖНО! Не делать релоад после драки, нужно дать обыскать каюту. В сундуке – 2.5кк денег, побрякушки. Судовой Журнал Флинта и книга - Марк Аврелий «Размышления». Моржа можно топить или себе забрать – похер. (!) Залочить возможность диалога с Флинтом в трюме, во избежание найма. Оставить фразу «Позже поговорим».
+		//ВАЖНО! Залочить возможность диалога с Флинтом в трюме, во избежание найма. Оставить фразу «Позже поговорим». 7.04.2023
 
-		//Запись в СЖ: «Флинт пойман! Пытался нести какую -  то ахинею про Республику и свободных людей. Путь на Бермуды, там по расспросим подробнее, про Республику, а главное – про сто пятьдесят миллионов причин ввязаться в эту авантюру! Ах, да! И нужно проведать Макс в Порт Рояле. Компаньон как – никак».
+		//Запись в СЖ: «Флинт пойман! Пытался нести какую -  то ахинею про Республику и свободных людей. Путь на Багамы, там расспросим подробнее, про Республику, а главное – про сто пятьдесят миллионов причин ввязаться в эту авантюру! Но сначала нужно проведать Макс в Порт Рояле. Компаньон как – никак». //тоже ВАЖНЫЙ момент, не забирая Максин из ПР можно словить софтлок. заблочить все двери на Багамах пока она не на корабле у нас 7.04.2023
 
 		//Плывём в ПР, забираем Макс из борделя. С ней всё заебись.
 
@@ -692,12 +702,11 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_40": //Максин
-			dialog.text = "Конечно я с вами! Тут вчера крутились, какие то мрачные типы, явно не местные. Не хочу рисковать.";
+			dialog.text = "Конечно я с вами! Тут вчера крутились, какие-то мрачные типы, явно не местные. Не хочу рисковать.";
 			link.l1 = "Собирайся, провожу на борт.";
 			link.l1.go = "BS_F1_40_1";
-			pchar.quest.BSHangover_MaksOnShip.win_condition.l1          = "location";
-			pchar.quest.BSHangover_MaksOnShip.win_condition.l1.location = pchar.location.from_sea;
-			pchar.quest.BSHangover_MaksOnShip.function             = "BSHangover_MaksOnShip";
+			SetFunctionExitFromLocationCondition("BSHangover_MaksOnShip", pchar.location, false);
+			SetFunctionLocationCondition("BSHangover_FlintEscaped", "Nassau_town", false);
 		break;
 
 		case "BS_F1_40_1":
@@ -711,7 +720,7 @@ void ProcessDialogEvent()
 			link.l1.go = "BS_F1_40_1";
 		break;
 
-		//Плывём на Бермуды. Удаляем Флинта из пленников. Сходим на берег, подбегает матрос.
+		//Плывём на Багамы. Удаляем Флинта из пленников. Сходим на берег, подбегает матрос.
 
 		case "BS_F1_41": //Матрос
 			dialog.text = "Капитан! Пленник сбежал! Кандалы вскрыты!";
@@ -721,7 +730,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_41exit":
 			LAi_SetActorType(npchar);
-			LAi_ActorGoToLocation(npchar, "reload", "reload3_back", "none", "", "", "", 10);
+			LAi_ActorGoToLocation(npchar, "reload", "reload1_back", "none", "", "", "", -1);
 			StartInstantDialog("BS_Vein", "BS_F1_42", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
@@ -733,14 +742,14 @@ void ProcessDialogEvent()
 
 		case "BS_F1_42exit":
 			DialogExit();
-			SetLaunchFrameFormParam("Прошло 12 часов поисков.", "", 0.1, 2.0);
+			SetLaunchFrameFormParam("Прошло 12 часов поисков", "", 0.1, 2.0);
 			LaunchFrameForm();
 			StartInstantDialogNoType("BS_Vein", "BS_F1_43", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
 		//Табличка «Прошло 12 часов поисков»
 
-		//Таверна. Подходит Вейн.
+		//Улицы Нассау. Подходит Вейн. 7.04.2023
 
 		case "BS_F1_43": //Вейн
 			dialog.text = "";
@@ -756,7 +765,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_45": //Вейн
 			dialog.text = "Сильвер? Это лис, а не человек. Я ему не доверяю!";
-			link.l1 = "Возможно, но Сильвер никуда не делся и обвинять его рано. В каюте ‘Моржа’ я наш"+ GetSexPhrase("ёл","ла") +" судовой журнал Флинта и книгу Марка Аврелия.";
+			link.l1 = "Возможно, но Сильвер никуда не делся и обвинять его рано. В каюте 'Моржа' я наш"+ GetSexPhrase("ёл","ла") +" судовой журнал Флинта и книгу Марка Аврелия.";
 			link.l1.go = "BS_F1_46";
 		break;
 
@@ -768,25 +777,26 @@ void ProcessDialogEvent()
 
 		case "BS_F1_47": //Вейн
 			dialog.text = "Какого чёрта ты несёшь? Аааа... Я понял. Шифры!";
-			link.l1 = "Точно. Идём к остальным, в резиденцию.";
+			link.l1 = "Точно. Идём к остальным, в дом.";
 			link.l1.go = "BS_F1_47exit";
 		break;
 		case "BS_F1_47exit": //Вейн
 			AddQuestRecord("BSHangover", "10");
-			BSChaseBegun_unlock_townhall();
 			chrDisableReloadToLocation = false;
+			LocatorReloadEnterDisable("Nassau_town", "houseS1", false);
+			BS_GatriHomeGuardsOff();
 			DialogExit();
-			Lai_SetActorTypeNoGroup(sld);
-			LAi_ActorFollow(sld, pchar, "", -1);
+			Lai_SetActorTypeNoGroup(npchar);
+			LAi_ActorFollow(npchar, pchar, "", -1);
 			RemoveCharacterCompanion(PChar, npchar);
 			pchar.quest.BSHangover_TownHall.win_condition.l1          = "location";
-			pchar.quest.BSHangover_TownHall.win_condition.l1.location = "pirates_townhall";
+			pchar.quest.BSHangover_TownHall.win_condition.l1.location = "Nassau_OfisGatri";
 			pchar.quest.BSHangover_TownHall.function             = "BSHangover_TownHall";
 		break;
 
 		//Запись в СЖ: «Флинт, как угорь выскользнул из трюма и растворился неизвестно где. Остался только его судовой журнал и старая, зачитанная книга, за авторством римского императора. Стоит уговорить Сильвера, помочь с расшифровкой. И не давить на него. Нутром чую, без его участия, побег Флинта не обошёлся».
 
-		//Идём в резиденцию. Гатри, Макс, Вейн, ГГ, Бонни, Рекхэм, Сильвер.
+		//Идём в дом Гатри. Гатри, Макс, Вейн, ГГ, Бонни, Рекхэм, Сильвер.
 
 		case "BS_F1_48": //ко всем
 			dialog.text = "";
@@ -802,7 +812,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_49_1": //Гатри
 			Lai_SetActorTypeNoGroup(npchar);
-			StartInstantDialog("BS_Silver", "BS_F1_50", "Quest\BlackSails\BS_Final_1.c");
+			StartInstantDialogNoType("BS_Silver", "BS_F1_50", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
 		case "BS_F1_50": //Сильвер
@@ -812,8 +822,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_50_1":
-			Lai_SetActorTypeNoGroup(npchar);
-			StartInstantDialog("BS_Vein", "BS_F1_51", "Quest\BlackSails\BS_Final_1.c");
+			StartInstantDialogNoType("BS_Vein", "BS_F1_51", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
 		case "BS_F1_51": //Вейн
@@ -823,8 +832,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_51_1":
-			Lai_SetActorTypeNoGroup(npchar);
-			StartInstantDialog("BS_Silver", "BS_F1_52", "Quest\BlackSails\BS_Final_1.c");
+			StartInstantDialogNoType("BS_Silver", "BS_F1_52", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
 		case "BS_F1_52": //Сильвер
@@ -837,10 +845,22 @@ void ProcessDialogEvent()
 
 		case "BS_F1_52exit": //Сильвер
 			DialogExit();
-			Lai_SetActorTypeNoGroup(npchar);
+			LAi_CharacterDisableDialog(npchar);
+			sld = CharacterFromID("BS_Rakham");
+			LAi_CharacterDisableDialog(sld);
+			sld = CharacterFromID("BS_Vein");
+			LAi_CharacterDisableDialog(sld);
+			sld = CharacterFromID("BS_Bony");
+			LAi_CharacterDisableDialog(sld);
+			sld = CharacterFromID("BS_Silver");
+			LAi_CharacterDisableDialog(sld);
+			LAi_SetPlayerType(PChar);
+			ChangeCharacterAddressGroup(PChar, "Nassau_OfisGatri", "goto", "goto5");
 			AddQuestRecord("BSHangover", "11");
+			DeleteAttribute(PChar, "currentsoundtrack");
+			LocatorReloadEnterDisable("Nassau_town", "houseS1", true);
 			pchar.quest.BSHangover_Cutscene.win_condition.l1          = "location";
-			pchar.quest.BSHangover_Cutscene.win_condition.l1.location = "pirates_tavern";
+			pchar.quest.BSHangover_Cutscene.win_condition.l1.location = "Nassau_tavern";
 			pchar.quest.BSHangover_Cutscene.function             = "BSHangover_Cutscene";
 		break;
 
@@ -862,12 +882,11 @@ void ProcessDialogEvent()
 
 		case "BS_F1_54": //Сильвер
 			dialog.text = "Да. Вот ознакомьтесь.";
-			link.l1 = "21°3N, 80°00W. 15 25 N, 61 20 W. 12°07N61°40W. 72° 25'N 19° 00'W. 19°30N 80°30W.";
+			link.l1 = "21°3N, 80°00W. 15 25 N, 61 20 W. 12°07N61°40W. 72° 25'N 19° 00'W. 19°30N 80°30W. 55,755831°, 37,617673° N55.755831°, E37.617673° 55°45.35′N, 37°37.06′E. 15°N, 30°E. 15 10,234, 30 -23,456. 15,23456, -30,67890. и так далее...";
 			link.l1.go = "BS_F1_55_1";
 		break;
 
 		case "BS_F1_55_1":
-			Lai_SetActorTypeNoGroup(npchar);
 			StartInstantDialog("BS_Vein", "BS_F1_55", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
@@ -879,7 +898,7 @@ void ProcessDialogEvent()
 
 		case "BS_F1_56_1":
 			Lai_SetActorTypeNoGroup(npchar);
-			StartInstantDialog("BS_Vein", "BS_F1_56", "Quest\BlackSails\BS_Final_1.c");
+			StartInstantDialogNoType("BS_Silver", "BS_F1_56", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
 		case "BS_F1_56": //Сильвер
@@ -889,44 +908,43 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_F1_57_1":
-			Lai_SetActorTypeNoGroup(npchar);
 			StartInstantDialog("BS_Vein", "BS_F1_57", "Quest\BlackSails\BS_Final_1.c");
 		break;
 
 		case "BS_F1_57": //Вейн
 			dialog.text = "Ты просто так сдаёшься? Я был о тебе лучшего мнения!";
-			link.l1 = "Вот, деньги, что были в каюте Флинта. Уверен"+ GetSexPhrase("","а") +", что это часть золота Урки. По пятьсот тысяч на каждого. Если будут подвижки с координатами, дайте знать. Я умываю руки!";
-			if(sti(pchar.money) < 5000000)	link.l1 = "Вот, деньги, что были в каюте Флинта. Уверен"+ GetSexPhrase("","а") +", что это часть золота Урки. По пятьсот тысяч на каждого. Ох, простите, я уже потратил"+ GetSexPhrase("","а") +" их. Возьмите сколько есть, остальное буду "+ GetSexPhrase("должен","должна") +". Если будут подвижки с координатами, дайте знать. Я умываю руки!";
-			link.l1.go = "BS_F1_57exit";	//минус 2кк.
+			link.l1 = "Вот, деньги, что были в каюте Флинта. Уверен"+ GetSexPhrase("","а") +", что это часть золота Урки. По миллиону на каждого. Не так уж и плохо. Просто подумайте. Искать неведомо где, не зная отправной точки всё это золото - на это уйдут годы или даже десятилетия! Посвятить поискам всю свою жизнь? Тут есть занятия поинтереснее. Если будут подвижки с координатами, дайте знать. Я умываю руки!";
+			if(sti(pchar.money) < 5000000)	link.l1 = "Вот, деньги, что были в каюте Флинта. Уверен"+ GetSexPhrase("","а") +", что это часть золота Урки. По миллиону на каждого. Ох, простите, я уже потратил"+ GetSexPhrase("","а") +" их. Возьмите сколько есть, остальное буду "+ GetSexPhrase("должен","должна") +". Если будут подвижки с координатами, дайте знать. Я умываю руки!";
+			link.l1.go = "BS_F1_57exit";	//минус 4кк.
 		break;
 
 		case "BS_F1_57exit": //Вейн
+			bDisableOfficers = false;
 			Lai_SetActorTypeNoGroup(npchar);
+			LAi_SetPlayerType(PChar);
+			sld = CharacterFromID("BS_Silver");
+			LAi_CharacterDisableDialog(sld);
+			if (sti(pchar.money) >= 4000000)
+			{
+				pchar.makslover = true;
+				SaveCurrentQuestDateParam("MaksLoverDateDay");
+			}
+			BS_ReplaceHostessWithMaks();
 			AddMoneyToCharacter(pchar, -4000000);
 			AddQuestRecord("BSHangover", "13");
+			pchar.currentsoundtrack = "Theme_from_Black_Sails";
 			CloseQuestHeader("BSHangover");
 			pchar.questdata.ChernyeParusa = 1;
 			DialogExit();
-			sld = CharacterFromID("BS_Silver");
-			sld.location = "none";
-			sld = CharacterFromID("BS_Rakham");
-			sld.location = "none";
-			sld = CharacterFromID("BS_Vein");
-			sld.location = "none";
-			sld = CharacterFromID("BS_Bony");
-			sld.location = "none";
-			sld = CharacterFromID("BS_Maks");
-			sld.location = "none";
-			BS_ReplaceHostessWithMaks();
-
 			if (WhisperIsHere())
 			{
 				SaveOldDialog(CharacterFromID(pchar.WhisperPGG));
 				StartInstantDialogNoType(pchar.WhisperPGG, "BS_14_WhisperIsHere_1", "Quest\WhisperLine\Whisper.c");
 			}
+			SetFunctionExitFromLocationCondition("BS_NassauCobHouseEnding_1", "Nassau_OfisGatri", false);
 		break;
 
-		//Запись в СЖ: «Несколько сотен возможных мест. Годы поисков, десятилетия уйдут на это. Тут всё ещё есть чем занять себя, клады, жирные торгаши, дуэли и осады фортов! Займусь развитием своей колонии или стану грозой Мэйна. Но навсегда запомню капитана Джеймса, мать его Флинта и сто пятьдесят миллионов причин его ненавидеть или любить. Авантюра вышла запоминающаяся! Нужно отдать ему должное».
+		//Запись в СЖ: «Несколько сотен возможных мест. Годы поисков, десятилетия уйдут на это. Тут всё ещё есть чем занять себя, клады, жирные торгаши, дуэли и осады фортов! Займусь развитием своей колонии или стану грозой Мейна. Но навсегда запомню капитана Джеймса, мать его Флинта и сто пятьдесят миллионов причин его ненавидеть или любить. Авантюра вышла запоминающаяся! Нужно отдать ему должное».
 
 		//ФиналОчка. Макс теперь мадам в ПР со стандартными диалогами. Гатри – губернатор Бермуд. Про Вейна можно пустить слух по алкашам, что он отплыл на Нассау и ввязался в войну с колониальными властями. Сильвер? – гы гы. Читаем Остров Сокровищ.
 

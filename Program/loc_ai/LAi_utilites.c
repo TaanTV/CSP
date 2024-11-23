@@ -157,7 +157,6 @@ void CreateCitizens(aref loc)
 			chr.CityType = "citizen";
 			chr.CanChangeModel = true;
 			LAi_SetLoginTime(chr, 6.0, 21.99);
-
 			if (sti(chr.nation) == PIRATE && sti(Colonies[iColony].HeroOwn) != true)
 			{
 				LAi_SetWarriorType(chr);
@@ -329,6 +328,7 @@ void CreateCitizens(aref loc)
 				LAi_group_MoveCharacter(chr, slai_group);
 			}
 			SetFoodToCharacter(chr, 3, 20);
+			if (sti(chr.nation) == PIRATE) chr.greeting = "pirat_guard";
 		}
 	}
 	// солдаты <--
@@ -382,6 +382,7 @@ void CreateCitizens(aref loc)
 				LAi_group_MoveCharacter(chr, slai_group);
 				chr.greeting = "soldier_common";
 			}
+			if (sti(chr.nation) == PIRATE) chr.greeting = "pirat_guard";
 			PlaceCharacter(chr, "patrol", "random_free");
 		}
 		//мушкетеры
@@ -437,6 +438,7 @@ void CreateCitizens(aref loc)
 			{
 				LAi_group_MoveCharacter(chr, slai_group);
 			}
+			if (sti(chr.nation) == PIRATE) chr.greeting = "pirat_guard";
 			SetFoodToCharacter(chr, 3, 20);
 		}
 	}
@@ -501,7 +503,8 @@ void CreateCitizens(aref loc)
 	}
 	// грузчики <--
 	//--> возможная генерация квестодателя на розыск капитанов
-	if (CheckAttribute(loc, "questSeekCap") && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
+	bOk = iNation == PIRATE && sti(Colonies[iColony].HeroOwn) != true;
+	if (CheckAttribute(loc, "questSeekCap") && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1 && !bOk)
 	{
 		if (rand(2) == 0)
 		{
@@ -1770,6 +1773,7 @@ void CreateSkladInsideEncounters(aref loc)
 //тюрьма
 void CreateJail(aref loc)
 {
+	if (!CheckAttribute(loc, "parent_colony") || GetCityNation(loc.parent_colony) == PIRATE) return;
 	if (loc.type == "jail")
 	{
 		ref sld;
@@ -1932,6 +1936,7 @@ void CreateFortsNPC(aref loc)
 				chr.dialog.filename = "Common_Fort.c";
 				chr.dialog.currentnode = "First time";
 				SetFoodToCharacter(chr, 3, 20);
+				if (sti(chr.nation) == PIRATE) chr.greeting = "pirat_guard";
 			}
 		}
 		// солдаты <--
@@ -1977,6 +1982,7 @@ void CreateFortsNPC(aref loc)
 				chr.dialog.filename = "Common_Fort.c";
 				chr.dialog.currentnode = "First time";
 				SetFoodToCharacter(chr, 3, 20);
+				if (sti(chr.nation) == PIRATE) chr.greeting = "pirat_guard";
 			}
 		}
 		// патруль <--
@@ -2073,4 +2079,3 @@ void SetNPCModelUniq(ref chr, string sType, int iSex)
 	arrayNPCModel[arrayNPCModelHow] = chr.model;
 	arrayNPCModelHow++;
 }
-

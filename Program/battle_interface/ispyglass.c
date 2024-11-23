@@ -50,8 +50,8 @@ void SetSpyGlassData()
 	if(chrIdx<0) return;
 
 	string sTextureName;
-	if (InterfaceStates.HUDStyle) sTextureName = "battle_interface\ship_icons2.tga";
-	else sTextureName = "battle_interface\ship_icons2_johnny88hud.tga";
+	if (InterfaceStates.HUDStyle) sTextureName = "battle_interface\ship_icons2.dds";
+	else sTextureName = "battle_interface\ship_icons2_johnny88hud.dds";
 	float uvLeft = 0;
 	float uvTop = 0;
 	float uvRight = 0.125;
@@ -182,13 +182,12 @@ void SetSpyGlassData()
 					case GOOD_BOMBS: shipCharge=1; break;
 					}
 				}
-				if(InterfaceStates.AltIntIcons) sTextureName = "battle_interface\List_icon2_Konshud.tga";
-				else sTextureName = "battle_interface\list_icon2.tga";
-				//sTextureName = "battle_interface\list_icon2.tga";
-				uvLeft = 0.375;
-				uvTop = 0.75;
-				uvRight = 0.5;
-				uvBottom = 0.875;
+				if (InterfaceStates.HUDStyle) sTextureName = "battle_interface\list_icon2.dds";
+                else sTextureName = "battle_interface\list_icon2_Konshud.dds";
+				uvLeft = 0.01;
+				uvTop = 0.01;
+				uvRight = 0.25;
+				uvBottom = 0.25;
 				nSailState = -1;
 			}
 			// смотрим на корабль
@@ -439,8 +438,8 @@ void FillISpyGlassParameters()
 	//log_info(pchar.equip.spyglass);
 	int nHCenter = sti(showWindow.right)/2;
 
-	if(InterfaceStates.SpyglassTextures) objISpyGlass.lens.texture = "battle_interface\\spyglassEHO\\" + sTexture + ".tga";
-	else objISpyGlass.lens.texture = "battle_interface\\spyglass\\" + sTexture + ".tga";
+	if(InterfaceStates.SpyglassTextures) objISpyGlass.lens.texture = "battle_interface\spyglassEHO\" + sTexture + ".dds";
+	else objISpyGlass.lens.texture = "battle_interface\spyglass\" + sTexture + ".dds";
 
 	objISpyGlass.lens.pos = (nHCenter-sti(showWindow.bottom))+","+(sti(showWindow.top)-1)+","+(nHCenter+sti(showWindow.bottom))+","+showWindow.bottom;
 
@@ -449,31 +448,31 @@ void FillISpyGlassParameters()
 	//==========================================================
 	if (InterfaceStates.HUDStyle)
 	{
-		objISpyGlass.shipsign.ship.texture = "battle_interface\ship_icons2.tga";
-		objISpyGlass.shipsign.ship.pos = RecalculateHIconScaled(6)+","+(ntop+RecalculateVIconScaled(-4)) + "," + RecalculateHIconScaled(106)+","+(ntop+RecalculateVIconScaled(94));
+		objISpyGlass.shipsign.ship.texture = "battle_interface\ship_icons2.dds";
+		objISpyGlass.shipsign.ship.pos = RecalculateHIconScaled(6)+","+(ntop+RecalculateVIconScaled(-4)) + "," + RecalculateHIconScaled(103)+","+(ntop+RecalculateVIconScaled(94));
 		objISpyGlass.shipsign.ship.uv = "0,0,0.125,0.125";
-		objISpyGlass.shipsign.back.texture = "battle_interface\Ship_Border.tga";
+		objISpyGlass.shipsign.back.texture = "battle_interface\Ship_Border.dds";
 		objISpyGlass.shipsign.back.pos = RecalculateHIconScaled(10)+","+(ntop+RecalculateVIconScaled(0)) + "," + RecalculateHIconScaled(100)+","+(nbottom+RecalculateVIconScaled(-38));
-		objISpyGlass.shipsign.hp.texture = "battle_interface\ShipHP_SP.tga";
-		objISpyGlass.shipsign.hp.pos = RecalculateHIconScaled(-10)+","+(ntop+RecalculateVIconScaled(-8)) + "," + RecalculateHIconScaled(54)+","+(ntop+RecalculateVIconScaled(91));
+		objISpyGlass.shipsign.hp.texture = "battle_interface\ShipHP_SP.dds";
+		objISpyGlass.shipsign.hp.pos = RecalculateHIconScaled(-10)+","+(ntop+RecalculateVIconScaled(0)) + "," + RecalculateHIconScaled(54)+","+(ntop+RecalculateVIconScaled(91));
 		objISpyGlass.shipsign.hp.uv = "0.0,0.109,0.5,0.6875";
-		objISpyGlass.shipsign.sp.texture = "battle_interface\ShipHP_SP.tga";
-		objISpyGlass.shipsign.sp.pos = RecalculateHIconScaled(82)+","+(ntop+RecalculateVIconScaled(-8)) + "," + RecalculateHIconScaled(146)+","+(ntop+RecalculateVIconScaled(91));
+		objISpyGlass.shipsign.sp.texture = "battle_interface\ShipHP_SP.dds";
+		objISpyGlass.shipsign.sp.pos = RecalculateHIconScaled(82)+","+(ntop+RecalculateVIconScaled(0)) + "," + RecalculateHIconScaled(146)+","+(ntop+RecalculateVIconScaled(91));
 		objISpyGlass.shipsign.sp.uv = "0.5,0.109,1.0,0.6875";
 		objISpyGlass.shipsign.class.texture = "";
 		objISpyGlass.shipsign.class.pos = RecalculateHIconScaled(28)+","+(ntop+RecalculateVIconScaled(1)) + "," + RecalculateHIconScaled(90)+","+(ntop+RecalculateVIconScaled(15));
 	}
 	else
 	{
-		objISpyGlass.shipsign.ship.texture = "battle_interface\ship_icons2.tga";
+		objISpyGlass.shipsign.ship.texture = "battle_interface\ship_icons2.dds";
 		objISpyGlass.shipsign.ship.pos = RecalculateHIconScaled(20)+","+(ntop+RecalculateVIconScaled(6)) + "," + RecalculateHIconScaled(106)+","+(ntop+RecalculateVIconScaled(90));
 		objISpyGlass.shipsign.ship.uv = "0,0,0.125,0.125";
-		objISpyGlass.shipsign.back.texture = "battle_interface\shipbackicon.tga";
+		objISpyGlass.shipsign.back.texture = "battle_interface\shipbackicon.dds";
 		objISpyGlass.shipsign.back.pos = RecalculateHIconScaled(0)+","+(ntop+RecalculateVIconScaled(-10)) + "," + RecalculateHIconScaled(128)+","+(nbottom+RecalculateVIconScaled(-10));
-		objISpyGlass.shipsign.hp.texture = "battle_interface\ShipState.tga";
+		objISpyGlass.shipsign.hp.texture = "battle_interface\ShipState.dds";
 		objISpyGlass.shipsign.hp.pos = RecalculateHIconScaled(0)+","+(ntop+RecalculateVIconScaled(4)) + "," + RecalculateHIconScaled(64)+","+(ntop+RecalculateVIconScaled(93));
 		objISpyGlass.shipsign.hp.uv = "0.0,0.109,0.5,0.79";
-		objISpyGlass.shipsign.sp.texture = "battle_interface\ShipState.tga";
+		objISpyGlass.shipsign.sp.texture = "battle_interface\ShipState.dds";
 		objISpyGlass.shipsign.sp.pos = RecalculateHIconScaled(64)+","+(ntop+RecalculateVIconScaled(4)) + "," + RecalculateHIconScaled(128)+","+(ntop+RecalculateVIconScaled(93));
 		objISpyGlass.shipsign.sp.uv = "0.5,0.109,1.0,0.79";
 		objISpyGlass.shipsign.class.texture = "";
@@ -485,44 +484,44 @@ void FillISpyGlassParameters()
 	else objISpyGlass.info.nation.pos = RecalculateHIconScaled(123)+","+(ntop+RecalculateVIconScaled(18)) + "," + RecalculateHIconScaled(267)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.info.nation.uv = "0,0,0.125,1.0";
 	//
-	if(InterfaceStates.AltIntIcons) objISpyGlass.info.cannon.texture = "battle_interface\List_icons_Konshud.tga";
-	else objISpyGlass.info.cannon.texture = "battle_interface\list_icons.tga";
+	if(InterfaceStates.AltIntIcons) objISpyGlass.info.cannon.texture = "battle_interface\List_icons_Konshud.dds";
+	else objISpyGlass.info.cannon.texture = "battle_interface\list_icons.dds";
 	objISpyGlass.info.cannon.pos = RecalculateHIconScaled(212)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(260)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.info.cannon.uv = "0.625,0.375,0.6875,0.5";
 	//
-	if(InterfaceStates.AltIntIcons) objISpyGlass.info.speed.texture = "battle_interface\List_icon2_Konshud.tga";
-	else objISpyGlass.info.speed.texture = "battle_interface\list_icon2.tga";
+	if(InterfaceStates.AltIntIcons) objISpyGlass.info.speed.texture = "battle_interface\List_icon2_Konshud.dds";
+	else objISpyGlass.info.speed.texture = "battle_interface\list_icon2.dds";
 	objISpyGlass.info.speed.pos = RecalculateHIconScaled(284)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(332)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.info.speed.uv = "0.25,0.25,0.375,0.375";
-	if(InterfaceStates.AltIntIcons) objISpyGlass.info.sailto.texture = "battle_interface\List_icons_Konshud.tga";
-	else objISpyGlass.info.sailto.texture = "battle_interface\list_icons.tga";
+	if(InterfaceStates.AltIntIcons) objISpyGlass.info.sailto.texture = "battle_interface\List_icons_Konshud.dds";
+	else objISpyGlass.info.sailto.texture = "battle_interface\list_icons.dds";
 	objISpyGlass.info.sailto.pos = RecalculateHIconScaled(428)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(476)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.info.sailto.uv = "0.75,0.25,0.8125,0.375";
 
 	//
-	if(InterfaceStates.AltIntIcons) objISpyGlass.info.charge.texture = "battle_interface\List_icon2_Konshud.tga";
-	else objISpyGlass.info.charge.texture = "battle_interface\list_icon2.tga";
+	if(InterfaceStates.AltIntIcons) objISpyGlass.info.charge.texture = "battle_interface\List_icon2_Konshud.dds";
+	else objISpyGlass.info.charge.texture = "battle_interface\list_icon2.dds";
 	objISpyGlass.info.charge.pos = RecalculateHIconScaled(356)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(404)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.info.charge.uv = "0.125,0.5,0.25,0.625";
 
-	objISpyGlass.captain.back.texture = "battle_interface\shipbackiconA.tga";
+	objISpyGlass.captain.back.texture = "battle_interface\shipbackiconA.dds";
 	objISpyGlass.captain.back.pos = RecalculateHIconScaled(906)+","+ntop + "," + RecalculateHIconScaled(1034)+","+nbottom;
 	objISpyGlass.captain.face.texture = "battle_interface\portraits\face_0.tga";
 	objISpyGlass.captain.face.pos = RecalculateHIconScaled(924)+","+(ntop+RecalculateVIconScaled(20)) + "," + RecalculateHIconScaled(988)+","+(ntop+RecalculateVIconScaled(84));
 
-	objISpyGlass.captain.fencing.texture = "interfaces\icons_spec.tga";
+	objISpyGlass.captain.fencing.texture = "interfaces\icons_spec.dds";
 	objISpyGlass.captain.fencing.pos = RecalculateHIconScaled(830)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(878)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.captain.fencing.uv = "0.875,0.125,1.0,0.25";   // защита
-	objISpyGlass.captain.cannon.texture = "interfaces\icons_spec.tga";
+	objISpyGlass.captain.cannon.texture = "interfaces\icons_spec.dds";
 	objISpyGlass.captain.cannon.pos = RecalculateHIconScaled(758)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(806)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.captain.cannon.uv = "0.75,0.125,0.875,0.25";  // абордаж
-	objISpyGlass.captain.accuracy.texture = "interfaces\icons_spec.tga";
+	objISpyGlass.captain.accuracy.texture = "interfaces\icons_spec.dds";
 	objISpyGlass.captain.accuracy.pos = RecalculateHIconScaled(686)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(734)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.captain.accuracy.uv = "0.375,0.125,0.5,0.25";  // орудия
-	objISpyGlass.captain.navigation.texture = "interfaces\icons_spec.tga";
+	objISpyGlass.captain.navigation.texture = "interfaces\icons_spec.dds";
 	objISpyGlass.captain.navigation.pos = RecalculateHIconScaled(614)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(662)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.captain.navigation.uv = "0.25,0.125,0.375,0.25"; // меткость
-	objISpyGlass.captain.boarding.texture = "interfaces\icons_spec.tga";
+	objISpyGlass.captain.boarding.texture = "interfaces\icons_spec.dds";
 	objISpyGlass.captain.boarding.pos = RecalculateHIconScaled(542)+","+(ntop+RecalculateVIconScaled(42)) + "," + RecalculateHIconScaled(590)+","+(ntop+RecalculateVIconScaled(90));
 	objISpyGlass.captain.boarding.uv = "0.5,0.125,0.625,0.25";  // навигация
 

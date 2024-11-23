@@ -89,6 +89,22 @@ void SetCamShuttle(ref loc) // boal вынес в метод
 	}
 }
 
+/*!
+ * \brief Установка параметров травы значениями из настроек
+ */
+void UpdateLandGrass()
+{
+	int lindex;
+	ref mainchar;
+	mainchar = GetMainCharacter();
+	lindex = FindLocation(mainchar.location);
+	if(lindex == -1) {return;}
+	float GrassDistanceLand = stf(InterfaceStates.GrassDistanceLand)*500.0;
+	float GrassCountLand = 1.0 - stf(InterfaceStates.GrassCountLand);
+	/* Установка параметров травы: масштаб, максимальная ширина, максимальная высота, минимальная дистанция переключения лодов, максимальная отображаемая дистанция, кол-во травы, 1 - нет, 0 - максимум */
+	SendMessage(&Locations[lindex], "lsffffff", MSG_LOCATION_EX_MSG, "SetGrassParams", 1.0, 1.0, 0.2, 10, GrassDistanceLand, GrassCountLand);
+}
+
 bool LoadLocation(ref loc)
 {
 	NullCharacter.TravelMap.Islands.Caiman.Shore.t0			= "shore16";
@@ -455,6 +471,7 @@ bool LoadLocation(ref loc)
 			}
 		}else{
 			LocLoadGrass(loc, "models.always." + sat);
+			UpdateLandGrass();
 		}
 		ReloadProgressUpdate();
 	}

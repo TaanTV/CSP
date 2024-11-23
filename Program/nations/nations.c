@@ -67,6 +67,7 @@ void NationsInit()
 
 void SetNationRelation2MainCharacter(int iNation, int iRelationType)
 {
+	if (startHeroType == 3 && Colonies[FindColony("LaVega")].nation == SPAIN && CheckAttribute(pchar, "questTemp.AnjelikaTichPrologue") && iNation == 2 && iRelationType == RELATION_ENEMY) return;
      //#20200219-01
     if(iRelationType == RELATION_ENEMY && iNation != PIRATE && iNation == sti(pchar.nation))
         Log_SetStringToLog(xiStr("YouAreEnemy") + NationNameGenitive(sti(pchar.nation)));

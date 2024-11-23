@@ -190,12 +190,12 @@ void CreateItem()
 			for(n = 1; n <= qntCom; n++)
 			{
 
-				TakeNItemsWithCabin(pchar, Items[drIDX].(CI), -1);
+				TakeNItemsWithCabin(pchar, Items[drIDX].(CI), -1, false);
 			}
 		}
 		else
 		{
-			TakeNItemsWithCabin(pchar, Items[drIDX].(CI), -qntCom);
+			TakeNItemsWithCabin(pchar, Items[drIDX].(CI), -qntCom, false);
 		}
 	}
 

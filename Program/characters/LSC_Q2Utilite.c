@@ -654,6 +654,8 @@ void initStartState2Character(ref ch)
 	ch.CanGenerateShipSituation = true;
 	//считаем кол во квестов у губеров
 	MayorQuestCounter();
+	// ==> Закрытие резиденции Гатри в Нассау
+	LocatorReloadEnterDisable("Nassau_town", "houseS1", true);
 }
 
 //==> eddy. квестовая обработка 'ноль часов'.

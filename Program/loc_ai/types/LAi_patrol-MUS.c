@@ -73,24 +73,15 @@ void LAi_type_patrol_CharacterUpdate(aref chr, float dltTime)
 	int trg = -1;
 	if(chr.chr_ai.tmpl == LAI_TMPL_DIALOG) return;
 
-    float fCheck = stf(chr.chr_ai.type.bottle) - dltTime;
-	if(fCheck < 0)
-	{
-		chr.chr_ai.type.bottle = 5.0;
-		if (!LAi_IsBottleWork(chr) && MOD_SKILL_ENEMY_RATE > 2)
-		{
-			string btl = "";
-			float dhlt;
-			if(LAi_GetCharacterRelHP(chr) < 0.75)
-			{
-				dhlt = LAi_GetCharacterMaxHP(chr) - LAi_GetCharacterHP(chr);
-				btl = FindHealthForCharacter(&Characters[sti(chr.index)], dhlt);
-				DoCharacterUsedItem(&Characters[sti(chr.index)], btl);
-				chr.chr_ai.type.bottle = 10.0;
-			}
+	string sItem = "";
+	float fCheck = (MOD_SKILL_ENEMY_RATE - 1) * CheckAttribute(chr, "chr_ai.hp_bottle.0");//слот 0 юзается последним
+	if(fCheck <= 0) {
+		float dhlt = stf(chr.chr_ai.hp_max) - stf(chr.chr_ai.hp);
+		sItem = FindHealthForCharacter(chr, dhlt);
+		if (dhlt > 20.0 && sItem != "") {
+			DoCharacterUsedItem(chr, sItem);
 		}
 	}
-	else chr.chr_ai.type.bottle = fCheck;
 	float radius;
 	if(chr.chr_ai.tmpl != LAI_TMPL_FIGHT && !LAi_grp_alarmactive)
 	{

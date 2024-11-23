@@ -6,7 +6,7 @@ int LocationInitKhaelRoa(int n)
 	Locations[n].id = "KhaelRoa_port";
 	Locations[n].worldmap = "Khael Roa";
 	Locations[n].filespath.models = "locations\Incas Temple\Port";
-	Locations[n].image = "loading\jonny_load\quest\Port.tga";
+	Locations[n].image = "loading\jonny_load\quest\Port.dds";
 	locations[n].id.label = "Shore64";
 	locations[n].islandId = "KhaelRoa";
 	locations[n].onUninhabitedIsland = true;
@@ -57,7 +57,7 @@ int LocationInitKhaelRoa(int n)
 	locations[n].islandId = "KhaelRoa";
 	//Sound
 	locations[n].type = "questisland";
-	Locations[n].image = "loading\jonny_load\quest\Temple.tga";
+	Locations[n].image = "loading\jonny_load\quest\Temple.dds";
 	locations[n].id.label = "Incas Temple";
 	//Models
 	//Always
@@ -99,7 +99,7 @@ int LocationInitKhaelRoa(int n)
 	Locations[n].id = "Labirint_1";
 	Locations[n].filespath.models = "locations\Incas Temple\Labirint\";
 	//Sound
-	Locations[n].image = "loading\jonny_load\quest\Labirint.tga";
+	Locations[n].image = "loading\jonny_load\quest\Labirint.dds";
 	locations[n].id.label = "Labirint";
 	locations[n].type = "Labirint";
 	Locations[n].environment.weather = "true";
@@ -228,7 +228,7 @@ int LocationInitKhaelRoa(int n)
 	locations[n].islandId = "KhaelRoa";
 	locations[n].DisableOfficers = "1";
 	//Sound
-	Locations[n].image = "loading\jonny_load\quest\Labirint_0.tga";
+	Locations[n].image = "loading\jonny_load\quest\Labirint_0.dds";
 	locations[n].type = "Labirint";
 	locations[n].id.label = "Labirint";
 	//Models
@@ -321,7 +321,7 @@ int LocationInitKhaelRoa(int n)
 	Locations[n].id = "Labirint_3";
 	Locations[n].filespath.models = "locations\Incas Temple\Labirint\";
 	//Sound
-	Locations[n].image = "loading\jonny_load\quest\Labirint_0.tga";
+	Locations[n].image = "loading\jonny_load\quest\Labirint_0.dds";
 	locations[n].type = "Labirint";
 	locations[n].id.label = "Labirint";
 	Locations[n].environment.weather = "true";
@@ -420,7 +420,7 @@ int LocationInitKhaelRoa(int n)
 	Locations[n].id = "Treasure_Alcove";
 	Locations[n].filespath.models = "locations\Incas Temple\Alcove\";
 	//Sound
-	Locations[n].image = "loading\jonny_load\quest\Alcove.tga";
+	Locations[n].image = "loading\jonny_load\quest\Alcove.dds";
 	locations[n].type = "Alcove";
 	locations[n].id.label = "Alcove";
 	Locations[n].environment.weather = "true";

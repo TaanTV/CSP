@@ -162,6 +162,9 @@ int func_min(int a, int b)
 //0 < probability < 1
 bool pnrand(ref chr, float probability, string type) 
 {
+	if(!probability) {
+		return false;
+	}
 	if(!CheckAttribute(chr, "prc." + type) || stf(chr.prc.(type).probability) != probability) 
 	{
 		chr.prc.(type) = 0;

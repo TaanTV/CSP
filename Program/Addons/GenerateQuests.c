@@ -8,7 +8,7 @@ void QuestDuelCheckPossibility(ref loc)
 {
 	if(!CheckAttribute(loc, "id") || !CheckAttribute(loc, "type")) { return; }
 	if(loc.type != "town") { return; }
-
+	if (loc.id == "Nassau_town" && CheckAttribute(&Colonies[FindColony("Nassau")], "BSBlackFlag")) return;
 	if(loc.id == "Bridgetown_Plantation" || loc.id == "Pirates_town" || loc.id == "Caiman_town" || loc.id == "LeFransua_town"
 	|| loc.id == "LaVega_ExitTown" || loc.id == "LaVega_town" || loc.id == "PuertoPrincipe_town"
 	|| loc.id == "Caiman_ExitTown") { return; }
@@ -1346,7 +1346,7 @@ void ShipWreckInTown(string qName)
 	RemovePassenger(PChar, chr);
 
 	string sLocator = "reload1_back";
-	if(PChar.location == "Pirates_town" || PChar.location == "PuertoPrincipe_town" || PChar.location == "LaVega_town" || PChar.location == "LeFransua_town" || PChar.location == "FortOrange_port" || PChar.location == "DesMoines_port")
+	if(PChar.location == "Pirates_town" || PChar.location == "PuertoPrincipe_town" || PChar.location == "LaVega_town" || PChar.location == "LeFransua_town" || PChar.location == "FortOrange_port" || PChar.location == "DesMoines_port" || PChar.location == "DesMoines_town")
 	{
 		sLocator = "reload1";
 	}

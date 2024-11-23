@@ -160,7 +160,8 @@ void ProcessDialogEvent()
     		link.l4 = "Rum.";
     		link.l4.go = "ToGiveRum";
     		link.l5 = "Good ship.";
-    		link.l5.go = "ToShip";
+    		if(!CheckAttribute(pchar, "GenQuest.GhostShip.LastBattle"))	link.l5.go = "ToShip";
+			else link.l5.go = "ToShipAlt";
     		link.l6 = "Immortality.";
     		link.l6.go = "ToImmortal";
     		link.l7 = "Become Governor General of Jamaica.";
@@ -430,16 +431,32 @@ void ProcessDialogEvent()
     		link.l1 = HeroStringReactionRepeat("So that it surpasses any existing one in speed, so that the sails do not tear from the wind and knippels, so that the cores fly off the sides without causing harm...", "Yes, ships are my favorite topic...", "I was talking about the Black Pearl, but nevertheless everything is true.", "How is goodbye?! But what about the ships?", npchar, Dialog.CurrentNode);
     		link.l1.go = DialogGoNodeRepeat("Step_41", "Wishes", "Wishes", "", npchar, Dialog.CurrentNode);
 		break;
+		
+		case "ToShipAlt":
+        	dialog.text = NPCStringReactionRepeat("What does good mean?",
+                                    "We've already talked about ships...",
+                                    "You're talking about the Flying Dutchman again?! Enough with the ships!",
+                                    "It seems that you are the stupidest person in the sublunary world. Goodbye.", "quest", 0, npchar, Dialog.CurrentNode);
+    		link.l1 = HeroStringReactionRepeat("So that it surpasses any existing one in speed, so that the sails do not tear from the wind and knippels, so that the cores fly off the sides without causing harm...", "Yes, ships are my favorite topic...", "I was talking about the Black Pearl...", "How is goodbye?! But what about the ships?", npchar, Dialog.CurrentNode);
+    		link.l1.go = DialogGoNodeRepeat("Step_41", "Wishes", "Wishes", "", npchar, Dialog.CurrentNode);
+		break;
 
 		case "Step_41":
         	dialog.text = "I won't do this - it's very expensive.";
     		link.l1 = "And the 'Flying Dutchman'?";
-    		link.l1.go = "Step_42";
+			if(!CheckAttribute(pchar, "GenQuest.GhostShip.LastBattle"))	link.l1.go = "Step_42";
+			else link.l1.go = "Step_42Alt";
 		break;
 
 		case "Step_42":
         	dialog.text = "'Flying Dutchman' is under a serious curse. A bunch of Indian demons are only engaged in tracking the state of this curse and maintaining its functionality\n"+
                           "Or are you going to ask me to join your team to ensure the safety of your vessel and keep it running well?!";
+    		link.l1 = "No, of course, I didn't even think about it, dear Azzi...";
+    		link.l1.go = "Step_43";
+		break;
+
+		case "Step_42Alt":
+        	dialog.text = "You know all about the Flying Dutchman. Are you going to keep messing with my head?";
     		link.l1 = "No, of course, I didn't even think about it, dear Azzi...";
     		link.l1.go = "Step_43";
 		break;

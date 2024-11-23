@@ -250,14 +250,14 @@ void PlayerFastTravel(int startLocIdx, string finishLocName, string locatorname)
 
 	if(checkLocation!=Locations[startLocIdx].id)
 	{
-		/*if(checkLocation == "Duel_field")
+		if(checkLocation == "FleuronTavern")
 		{
-			reloadName = "reload1";
+			reloadName = "reload6";
 		}
 		else
-		{ */
+		{
 		reloadName = GetFastReloadName(Locations[startLocIdx].id,checkLocation);
-		//}
+		}
 		if( locatorname!="" ) {
 			reloadName = locatorname;
 		}

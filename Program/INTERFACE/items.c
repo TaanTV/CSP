@@ -7,6 +7,7 @@ string sMapDescribe;//переменная для текста описания 
 bool bMapCross, isPassenger;
 float fOffsetX, fOffsetY;
 int iCurTab;
+int ItemsV[14] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 void InitInterface(string iniName)
 {
@@ -71,6 +72,7 @@ void InitInterface(string iniName)
 	SetEventHandler("ClickSpyGlass", "ClickSpyGlass", 0);
 	SetEventHandler("ClickGun", "ClickGun", 0);
 	SetEventHandler("ClickSaber", "ClickSaber", 0);
+	SetEventHandler("ClickAmmo", "ClickAmmo", 0);
 	SetEventHandler("CheckButtonChange", "CheckButtonChange", 0);
 	SetEventHandler("SaveSETName", "SaveSETName", 0);
 	SetEventHandler("ShowEditBox", "ShowEditBox", 0);
@@ -78,11 +80,11 @@ void InitInterface(string iniName)
 
 	switch (xi_refCharacter.sex)
 	{
-		case "man": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.tga");
+		case "man": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.dds");
 		break;
-		case "woman": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.tga");
+		case "woman": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.dds");
 		break;
-		case "skeleton": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.tga");
+		case "skeleton": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.dds");
 		break;
 	}
 
@@ -93,6 +95,138 @@ void InitInterface(string iniName)
 	SetNewGroupPicture("Money_PIC", "ICONS_CHAR", "Money");
 	SetNodeUsing("EXCHANGE", false);
 	CheckForSuitCheckbox();
+	CheckForAvailableItems();
+}
+
+void CheckForAvailableItems()
+{
+	int i, n;
+	for (i = 1; i < 16; i++) SetNodeUsing("ITEM_"+i+"_V",false);
+	for (i = 0; i < 14; i++) ItemsV[i] = 0;
+	object allItems;
+	aref rootItems, arItem;
+	ref rItem;
+	string row, sGood, sItem;
+	makearef(rootItems, xi_refCharacter.Items);
+	n = GetAttributesNum(rootItems);
+	for (i = 0; i < n; i++)
+	{
+		arItem = GetAttributeN(rootItems, i);
+		sGood = GetAttributeName(arItem);
+		rItem = ItemsFromID(sGood);
+		if (ItemsV[0] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"blade"))
+			{
+				SetNodeUsing("ITEM_1_V",true);
+				ItemsV[0] = 1;
+			}
+		}
+		if (ItemsV[1] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"gun"))
+			{
+				SetNodeUsing("ITEM_2_V",true);
+				ItemsV[1] = 1;
+			}
+		}
+		if (ItemsV[2] == 0)
+		{
+			if (HasSubStr(rItem.id,"spyglass"))
+			{
+				SetNodeUsing("ITEM_3_V",true);
+				ItemsV[2] = 1;
+			}
+		}
+		if (ItemsV[3] == 0)
+		{
+			if (HasSubStr(rItem.id,"cirass"))
+			{
+				SetNodeUsing("ITEM_4_V",true);
+				ItemsV[3] = 1;
+			}
+		}
+		if (ItemsV[4] == 0)
+		{
+			if (HasSubStr(rItem.id,"mushket"))
+			{
+				SetNodeUsing("ITEM_5_V",true);
+				ItemsV[4] = 1;
+			}
+		}
+		if (ItemsV[5] == 0)
+		{
+			if (HasSubStr(rItem.id,"backpack"))
+			{
+				SetNodeUsing("ITEM_6_V",true);
+				ItemsV[5] = 1;
+			}
+		}
+		if (ItemsV[6] == 0)
+		{
+			if (HasSubStr(rItem.id,"talisman"))
+			{
+				SetNodeUsing("ITEM_7_V",true);
+				ItemsV[6] = 1;
+			}
+		}
+		if (ItemsV[7] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"indian_center"))
+			{
+				SetNodeUsing("ITEM_8_V",true);
+				ItemsV[7] = 1;
+			}
+		}
+		if (ItemsV[8] == 0)
+		{
+			if (CheckAttribute(rItem,"skill"))
+			{
+				SetNodeUsing("ITEM_9_V",true);
+				ItemsV[8] = 1;
+			}
+		}
+		if (ItemsV[9] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"jewelry_indian_left"))
+			{
+				SetNodeUsing("ITEM_10_V",true);
+				ItemsV[9] = 1;
+			}
+		}
+		if (ItemsV[10] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"jewelry_indian_right"))
+			{
+				SetNodeUsing("ITEM_11_V",true);
+				ItemsV[10] = 1;
+			}
+		}
+		if (ItemsV[11] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"idols_left"))
+			{
+				SetNodeUsing("ITEM_12_V",true);
+				ItemsV[11] = 1;
+			}
+		}
+		if (ItemsV[12] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"idols_right"))
+			{
+				SetNodeUsing("ITEM_13_V",true);
+				ItemsV[12] = 1;
+			}
+		}
+		if (ItemsV[13] == 0)
+		{
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,"suit"))
+			{
+				SetNodeUsing("ITEM_15_V",true);
+				ItemsV[13] = 1;
+			}
+		}
+	}
 }
 
 void FillPassengerScroll()
@@ -212,6 +346,7 @@ void OfficerChange()
 			XI_WindowDisable("MAIN_WINDOW", true);
 		}
 	}
+	CheckForAvailableItems();
 }
 
 void SetOfficersSkills()
@@ -444,6 +579,7 @@ void IDoExit(int exitCode)
 	DelEventHandler("ClickSpyGlass", "ClickSpyGlass");
 	DelEventHandler("ClickGun", "ClickGun");
 	DelEventHandler("ClickSaber", "ClickSaber");
+	DelEventHandler("ClickAmmo", "ClickAmmo");
 	DelEventHandler("CheckButtonChange", "CheckButtonChange");
 	DelEventHandler("SaveSETName", "SaveSETName");
 	DelEventHandler("ShowEditBox", "ShowEditBox");
@@ -625,6 +761,7 @@ void ProcessFrame()
 	{
 		nCurScrollNum = sti(GameInterface.CHARACTERS_SCROLL.current);
 		SetButtonsState();
+		CheckForAvailableItems();
 		return;
 	}
 	if (sti(GameInterface.PASSENGERSLIST.current)!= nCurScrollOfficerNum && GetCurrentNode() == "PASSENGERSLIST")
@@ -668,11 +805,11 @@ void SetButtonsState()
 
 		switch (xi_refCharacter.sex)
 		{
-			case "man": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.tga");
+			case "man": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Man.dds");
 			break;
-			case "woman": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.tga");
+			case "woman": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Woman.dds");
 			break;
-			case "skeleton": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.tga");
+			case "skeleton": SetNewPicture("SETUP_BIG_PICTURE", "interfaces\sith\CharEquip_Skeleton.dds");
 			break;
 		}
 		SetVariable();
@@ -720,6 +857,9 @@ bool FilterNonGroups(ref rItem, int mode, string itemtype)
 {
 	switch (mode)
 	{
+		case 7:
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,itemtype)) return true;
+		break;
 		case 9:
 			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,itemtype)) return true;
 		break;
@@ -733,6 +873,12 @@ bool FilterNonGroups(ref rItem, int mode, string itemtype)
 			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,itemtype)) return true;
 		break;
 		case 13:
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,itemtype)) return true;
+		break;
+		case 18:
+			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,itemtype)) return true;
+		break;
+		case 19:
 			if (CheckAttribute(rItem,"groupID") && HasSubStr(rItem.groupID,itemtype)) return true;
 		break;
 	}
@@ -811,7 +957,7 @@ void FillItemsTable(int _mode) // 1 - все 2 - оружие 3 - остальн
 		{
 			if (_mode == 5 && !CheckAttribute(rItem,"block")) continue;
 			if (_mode == 6 && !CheckAttribute(rItem,"chargeQ")) continue;
-			if (_mode == 7 && !CheckAttribute(rItem,"clothes")) continue;
+			if (_mode == 7 && !FilterNonGroups(rItem,_mode,"cirass")) continue;
 			if (_mode == 8 && !HasSubStr(rItem.id,"talisman")) continue;
 			
 			if (_mode == 9 && !FilterNonGroups(rItem,_mode,"jewelry_indian_left")) continue;
@@ -819,6 +965,12 @@ void FillItemsTable(int _mode) // 1 - все 2 - оружие 3 - остальн
 			if (_mode == 11 && !FilterNonGroups(rItem,_mode,"indian_center")) continue;
 			if (_mode == 12 && !FilterNonGroups(rItem,_mode,"idols_left")) continue;
 			if (_mode == 13 && !FilterNonGroups(rItem,_mode,"idols_right")) continue;
+			if (_mode == 14 && !CheckAttribute(rItem,"scope")) continue;
+			if (_mode == 15 && !HasSubStr(rItem.id,"mushket")) continue;
+			if (_mode == 16 && !CheckAttribute(rItem,"BackPackWeight")) continue;
+			if (_mode == 17 && !CheckAttribute(rItem,"skill")) continue;
+			if (_mode == 18 && !FilterNonGroups(rItem,_mode,"ammo")) continue;
+			if (_mode == 19 && !FilterNonGroups(rItem,_mode,"suit")) continue;
 		}
 
 		row = "tr" + n;
@@ -880,23 +1032,11 @@ void FillItemsSelected()
 	string sGood;
 	int iLastGunItem;
 	ref item, rLastGunItem;
-
-	// Скроем по умолчанию
-	SetNodeUsing("ITEM_1", false);
-	SetNodeUsing("ITEM_2", false);
-	SetNodeUsing("ITEM_3", false);
-	SetNodeUsing("ITEM_4", false);
-	SetNodeUsing("ITEM_5", false);
-	SetNodeUsing("ITEM_6", false);
-	SetNodeUsing("ITEM_7", false);
-	SetNodeUsing("ITEM_8", false);
-	SetNodeUsing("ITEM_9", false);
-	SetNodeUsing("ITEM_10", false);
-	SetNodeUsing("ITEM_11", false);
-	SetNodeUsing("ITEM_12", false);
-	SetNodeUsing("ITEM_13", false);
-	SetNodeUsing("ITEM_14", false);
-	SetNodeUsing("ITEM_15", false);
+	
+	for(i = 0; i < 16; i++)
+	{
+		SetNewGroupPicture("ITEM_"+i, "", "");
+	}
 
 	aref arEquip;
 	makearef(arEquip, xi_refCharacter.equip);
@@ -912,13 +1052,11 @@ void FillItemsSelected()
 		{
 			case BLADE_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_1", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_1" , true);
 			break;
 			case GUN_ITEM_TYPE:
 				if (CheckAttribute(xi_refCharacter,"chr_ai.bullet"))
 				{
 					ref itms = ItemsFromID(xi_refCharacter.chr_ai.bullet);
-					SetNodeUsing("ITEM_14" , true);
 					SetNewGroupPicture("ITEM_14", itms.picTexture, "itm" + itms.picIndex);
 				}
 				if(CheckAttribute(xi_refCharacter, "IsMushketer"))
@@ -929,63 +1067,48 @@ void FillItemsSelected()
 					{
 						rLastGunItem = &Items[iLastGunItem];
 						SetNewGroupPicture("ITEM_2", rLastGunItem.picTexture, "itm" + rLastGunItem.picIndex);
-						SetNodeUsing("ITEM_2" , true);
 					}
 
 					rLastGunItem = &Items[GetItemIndex(xi_refCharacter.IsMushketer.MushketID)];
-					SetNodeUsing("ITEM_5", true);
 					SetNewGroupPicture("ITEM_5", rLastGunItem.picTexture, "itm" + rLastGunItem.picIndex);
 				}
 				else
 				{
 					SetNewGroupPicture("ITEM_2", item.picTexture, "itm" + item.picIndex);
-					SetNodeUsing("ITEM_2" , true);
-					SetNodeUsing("ITEM_5" , false); // Мушкет не юзается - уберем картинку
 				}
 			break;
 			case SPYGLASS_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_3", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_3" , true);
 			break;
 			case CIRASS_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_4", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_4" , true);
 			break;
 			case SUIT_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_15", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_15" , true);
 			break;
 			case BACKPACK_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_6", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_6" , true);
 			break;
 			case TALISMAN_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_7", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_7" , true);
 			break;
 			case INDIAN_CENTER_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_8", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_8" , true);
 			break;
 			case BOOK_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_9", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_9" , true);
 			break;
 			case JEWELRY_INDIAN_LEFT_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_10", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_10" , true);
 			break;
 			case JEWELRY_INDIAN_RIGHT_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_11", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_11" , true);
 			break;
 			case IDOLS_LEFT_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_12", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_12" , true);
 			break;
 			case IDOLS_RIGHT_ITEM_TYPE:
 				SetNewGroupPicture("ITEM_13", item.picTexture, "itm" + item.picIndex);
-				SetNodeUsing("ITEM_13" , true);
 			break;
 		}
 	}
@@ -1047,6 +1170,82 @@ float _GetAttackFactor(string sBladeID, ref rBlade, string sType, ref kPerk)
 	return dmg;
 }
 
+string CheckForSpecial(string type)
+{
+	string weaponID = GetCharacterEquipByGroup(xi_refCharacter, BLADE_ITEM_TYPE);
+	string sFencingType = LAi_GetBladeFencingType(xi_refCharacter);
+	string sText = "";
+	int iFencingType = 1 * (sFencingType == "Fencing") + 2 * (sFencingType == "FencingHeavy");
+	float fSkill = 0.01 * GetCharacterSkill(xi_refCharacter, sFencingType);
+	int critvalue = 0;//это... критический эффект.
+	bool bAttackHardHitter = CheckCharacterPerk(xi_refCharacter, "HardHitter");
+	float coeff = 0.0;
+	if (weaponID != "")
+	{
+		aref weapon;
+		Items_FindItem(weaponID, &weapon);
+		bool bSpecial = CheckAttribute(weapon, "special."+type);//чек сразу нужного?
+		switch (type)
+		{
+			case "valueB":
+				critvalue = LAi_CalcBloodingChance(xi_refCharacter, iFencingType, fSkill, 0);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + BLOODING_MIN_TIME + "-" + LAi_CalcBloodingDuration(xi_refCharacter, iFencingType, fSkill, 0) + " " + GetConvertStrWithReplace("Variable_character_all_35", "Interface.txt", "#space#", " ") + ")";
+				}
+			break;
+			case "valueCrB"://crit
+				if (bSpecial) {
+					critvalue = sti(weapon.special.valueCrB);
+				}
+				sText = LAi_CalcCritChance(xi_refCharacter, 0, iFencingType, critvalue)+"% (x"+LAi_CalcCritDamageMult(xi_refCharacter)+")";
+			break;
+			case "valueSS":
+				critvalue = LAi_CalcSwiftChance(xi_refCharacter, iFencingType, fSkill);
+				sText = critvalue + "%";
+				if (critvalue) {
+					coeff = LAi_CalcSwiftDuration(xi_refCharacter, iFencingType, fSkill, 0);
+					sText += " (" + coeff + "-" + (coeff + SWIFT_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
+			break;
+			case "valueBB"://break
+				sText = LAi_CalcBlockBreakChance(xi_refCharacter, sFencingType, fSkill) + "% / " + LAi_CalcCuirassBreakChance(xi_refCharacter, iFencingType, bAttackHardHitter, fSkill) + "%";
+			break;
+			case "valueStS":
+				critvalue = xi_refCharacter.chr_ai.special.(type);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + CalcStunDuration(0) + "-" + (CalcStunDuration(0) + STUN_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
+			break;
+			case "valueT":
+				critvalue = xi_refCharacter.chr_ai.special.(type);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + CalcTraumaDuration(0) + "-" + (CalcTraumaDuration(0) + TRAUMA_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
+			break;
+			case "valueP":
+				critvalue = LAi_CalcPoisonChance(xi_refCharacter);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + LAi_CalcPoisonDuration(0) + "-" + (LAi_CalcPoisonDuration(0) + 2 * POISON_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
+			break;
+		}
+	}
+	else//а нужно ли?
+	{
+		if (type == "valueCrB") {
+			return LAi_CalcCritChance(xi_refCharacter, 0, 0, 0)+"% (x"+LAi_CalcCritDamageMult(xi_refCharacter)+")";
+		}
+		else {
+			return 0+"%";
+		}
+	}
+	return sText;
+}
+
 void ShowInfoWindow()
 {
 	string sCurrentNode = GetCurrentNode();
@@ -1082,29 +1281,120 @@ void ShowInfoWindow()
 				sHeader = GetConvertStrWithReplace("Variable_items_11", "Interface.txt", "#space#", " ")
 				sText1 = "";
 
-				iText2Color = argb(255,120-30*(sti(rBlade.quality)+1),150,17);
-
 				int ControlsLngFile = LanguageOpenFile("ControlsNames.txt");
-				float aSkill = LAi_GetCharacterFightLevel(pchar);
+				string sEquippedWeapon = GetCharacterEquipByGroup(xi_refCharacter, BLADE_ITEM_TYPE);
+				if (sItemID != sEquippedWeapon) {
+					EquipCharacterByItem(xi_refCharacter, sItemID);//прицениваемся к оружию
+				}
+				float aSkill = LAi_GetCharacterFightLevel(xi_refCharacter);
 				float kAttackDmg, kPerk;
-
+				string sFencingType = LAi_GetBladeFencingType(xi_refCharacter);
+				int iFencingType = 1 * (sFencingType == "Fencing") + 2 * (sFencingType == "FencingHeavy");
+				int iCritical;
 				string sAttackTypes[5];
 				sAttackTypes[0] = "fast";
 				sAttackTypes[1] = "force";
-				sAttackTypes[2] = "break";
-				sAttackTypes[3] = "round";
+				sAttackTypes[2] = "round";
+				sAttackTypes[3] = "break";
 				sAttackTypes[4] = "fient"; //feint = fient in lang file
 
+
+				// столбцы корректированных эффектов
+				// TODO: переписать под func, связав значок, название метода, аттрибута, значение и доп параметр. разделить пробитие блока и кирасы в "персонаже"
+				aref arSpecial; makearef(arSpecial, xi_refCharacter.chr_ai.special);
+				aref arProp;
+				string sName, sVal, sVal2, sVal3, sSymb;
+				sText2 = "";
+				for (int j = 0; j < GetAttributesNum(arSpecial); j++)
+				{
+					arProp = GetAttributeN(arSpecial, j);
+					sName = GetAttributeName(arProp);
+					sVal = CheckForSpecial(sName);
+					switch(sName)
+					{
+						case "valueBB":
+							sSymb = "Variable_character_all_47.1";
+							sVal2 = "‡ƒ" + sVal;
+						break; 
+						case "valueCrB":
+							sSymb = "Variable_character_all_47.2";
+							sVal2 = "„" + sVal;
+						break;
+						case "valueSS":
+							sSymb = "Variable_character_all_47";
+							sVal2 = "…" + sVal;
+						break;
+						case "valueStS":
+							sSymb = "Variable_character_all_48";
+							sVal2 = "†" + sVal;
+						break;
+						case "valueT":
+							sSymb = "Variable_character_all_49";
+							sVal2 = "Š" + sVal;
+						break;
+						case "valueB":
+							sSymb = "Variable_character_all_46";
+							sVal2 = "‰" + sVal;
+						break;
+						case "valueP":
+							sSymb = "Variable_character_all_50";
+							sVal2 = "ˆ" + sVal;
+						break;
+					}
+					if (sVal != "" && sVal != "0%") {
+						sText2 += GetConvertStrWithReplace(sSymb, "Interface.txt", "#space#", " ") + " | ";
+						sVal3 += sVal2 + " | ";
+					}
+				}
+				sText2 += "\n" + sVal3;
+				sSymb = "";
+				sText2 += "\n---------------------------------------------------------------------------------\n";
+				sText2 += GetConvertStrWithReplace("Variable_character_all_36", "Interface.txt", "#space#", " ") + " - " + GetConvertStrWithReplace("Variable_ship_37", "Interface.txt", "#space#", " ") + ", ";
+				sText2 += XI_ConvertString("Energy") + ":\n";
 				for (int index = 0; index < 5; index++)
 				{
-					kAttackDmg = _GetAttackFactor(sItemID, rBlade, sAttackTypes[index], &kPerk);
+					kAttackDmg = LAi_CalcDamageForBlade(xi_refCharacter, aSkill, index, rBlade.FencingType, false, false, false);//_GetAttackFactor(sItemID, rBlade, sAttackTypes[index], &kPerk);
 
-					sText2 += LanguageConvertString(ControlsLngFile, "ChrAttack" + sAttackTypes[index]) + " ";
-					sText2 += MakeInt(kAttackDmg);
-
-					sText2 += "\n\n";
+					sText2 += "\n" + LanguageConvertString(ControlsLngFile, "ChrAttack" + sAttackTypes[index]) + ":\n";// + GetConvertStrWithReplace("Variable_ship_37", "Interface.txt", "#space#", " ") + " - ";
+					sText2 += MakeInt(kAttackDmg)+"Â";
+					if (index == 4) { sAttackTypes[index] = "feintc";}
+					// энергия
+					sText2 += "   " + FloatToString(LAi_CalcUseEnergyForBlade(xi_refCharacter, sAttackTypes[index], aSkill), 1)+"Î";
+					// крит
+					sText2 += "\n";
+					sVal3 = "";
+					for (j = 0; j < GetAttributesNum(arSpecial); j++)
+					{
+						arProp = GetAttributeN(arSpecial, j);
+						sName = GetAttributeName(arProp);
+						sVal = CheckForSpecial(sName);
+						sVal2 = "";	
+						switch(sName)
+						{
+							case "valueCrB":
+								sVal2 = LAi_CalcCritChance(xi_refCharacter, index, sFencingType, sti(xi_refCharacter.chr_ai.special.valueCrB)) + "% (x" + LAi_CalcCritDamageMult(xi_refCharacter) + ")";
+								sSymb = "„";
+							break;
+							case "valueB":
+								iCritical = LAi_CalcBloodingChance(xi_refCharacter, iFencingType, aSkill, index);
+								sVal2 = iCritical + "%";
+								if (iCritical) {
+									sVal2 += " (" + BLOODING_MIN_TIME + "-" + LAi_CalcBloodingDuration(xi_refCharacter, iFencingType, aSkill, 0) + " " + GetConvertStrWithReplace("Variable_character_all_35", "Interface.txt", "#space#", " ") + ")";
+								}
+								sSymb = "‰";
+							break;
+						}
+						if (sVal != "" && sVal2 != "" && sVal != "0%" && sVal != sVal2) {
+							sVal3 += " " + sSymb + sVal2 + " ";
+						}
+					}
+					if (sVal3 != "") {
+						sText2 += GetConvertStrWithReplace("Variable_quest_table_spec", "Interface.txt", "#space#", " ") + ": " + sVal3 + "\n";
+					}
 				}
-
+				if (sItemID != sEquippedWeapon) {
+					EquipCharacterByItem(xi_refCharacter, sEquippedWeapon);//возвращаем старое
+				}
 				sGroup = rBlade.picTexture;
 				sGroupPicture = "itm" + rBlade.picIndex;
 
@@ -1118,7 +1408,7 @@ void ShowInfoWindow()
 		sHeader = GetConvertStrWithReplace("Variable_items_12", "Interface.txt", "#space#", " ");
 		sText1  = XI_ConvertString("KitHint");
 	}
-	CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, iText2Color, "", 0, "", 0, "-1", sGroup, sGroupPicture, 64, 64);
+	CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,255,255), "", 0, "", 0, "-1", sGroup, sGroupPicture, 64, 64);
 }
 void HideInfoWindow()
 {
@@ -1309,10 +1599,10 @@ bool ThisItemCanBeEquip(string sItemID)
 
 	if (sGroupID == GUN_ITEM_TYPE)
 	{
-		if (!IsMainCharacter(xi_refCharacter) && !CheckAttribute(xi_refCharacter, "CanTakeMushket") && HasSubStr(sItemID, "mushket"))
+		/*if (!IsMainCharacter(xi_refCharacter) && !CheckAttribute(xi_refCharacter, "CanTakeMushket") && HasSubStr(sItemID, "mushket"))
 		{
 			return false;
-		}
+		}*/
 		if (!CheckAttribute(rItem,"chargeQ") )
 		{
 			return false;
@@ -1343,11 +1633,6 @@ bool ThisItemCanBeEquip(string sItemID)
 		{
 			return false;
 		}*/ //мушкеты в тавернах - Gregg
-
-		if (HasSubStr(sItemID, "mushket") && IsMainCharacter(xi_refCharacter) && !IsPCharHaveMushketerModel())
-		{
-			return false;
-		}
 	}
 	if (IsEquipCharacterByItem(xi_refCharacter, sItemID))
 	{
@@ -1364,45 +1649,40 @@ bool ThisItemCanBeEquip(string sItemID)
 	}
 	else
 	{
-		if (sGroupID == CIRASS_ITEM_TYPE && !IsCharacterPerkOn(xi_refCharacter,"Ciras") && rItem.Clothes == false)
+		if (sGroupID == CIRASS_ITEM_TYPE && rItem.Clothes == false)
 		{
-			return false;
+			int cir = 0;
+			if (IsCharacterPerkOn(xi_refCharacter,"Ciras")) cir = 5;
+			else if (IsCharacterPerkOn(xi_refCharacter,"AdvancedDefense")) cir = 3;
+			else if (IsCharacterPerkOn(xi_refCharacter,"BasicDefense")) cir = 1;
+			if (sti(rItem.model) > cir) return false;
 		}
 
 		if (HasSubStr(sItemID, "chest")) SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Crack"));
 		else SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Equip that"));
 		if (sItemID == "Chest") {SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Equip that")); return false;}
 	}
-	if (IsMainCharacter(xi_refCharacter) || CheckAttribute(xi_refCharacter, "CanTakeMushket"))
+	if (xi_refCharacter.id == "OfMush1" || xi_refCharacter.id == "OfMush2")
 	{
-		if(CheckAttribute(xi_refCharacter, "IsMushketer"))
+		if(HasSubStr(sItemID, "mushket"))
 		{
-			if (xi_refCharacter.id == "OffMushketer" || xi_refCharacter.id == "OfMush1" || xi_refCharacter.id == "OfMush2")
+			if(IsEquipCharacterByItem(xi_refCharacter, sItemID))
 			{
-				if(HasSubStr(sItemID, "mushket") && !HasSubStr(sItemID, "mushket2x2") && sItemID != xi_refCharacter.IsMushketer.MushketID)
-				{
-					SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Equip that"));
-					return true;
-				}
-				if(sGroupID == BLADE_ITEM_TYPE || sGroupID == GUN_ITEM_TYPE)
-				{
-					return false;
-				}
+				SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Remove that"));
+				return false;
 			}
 			else
 			{
-				if(sItemID == xi_refCharacter.IsMushketer.MushketID)
-				{
-					SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Remove that"));
-					return true;
-				}
-				if(sGroupID == BLADE_ITEM_TYPE || sGroupID == GUN_ITEM_TYPE)
-				{
-					return false;
-				}
+				SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Equip that"));
+				return true;
 			}
 		}
+		if(sGroupID == BLADE_ITEM_TYPE || sGroupID == GUN_ITEM_TYPE)
+		{
+			return false;
+		}
 	}
+	if (HasSubStr(sItemID, "mushket") && CheckAttribute(xi_refCharacter, "model") && !IsCharHaveMushketerModel(xi_refCharacter)) return false;
 	if (sGroupID == CIRASS_ITEM_TYPE && xi_refCharacter.model == "Protocusto") return false;
 	return true;
 }
@@ -1442,7 +1722,7 @@ void EquipPress()
 			if(sItemID == "mapQuest")
 			{
 				totalInfo = GenQuest_GetQuestTreasureMapDescription(itmRef);
-				SetNewPicture("MAP_PICTURE", "interfaces\Maps\treasure map.tga");
+				SetNewPicture("MAP_PICTURE", "interfaces\Maps\treasure map.dds");
 				SetFormatedText("MAP_TEXT", totalInfo);
 				SetVAligmentFormatedText("MAP_TEXT");
 				ShowMapWindow();
@@ -1454,7 +1734,7 @@ void EquipPress()
 			if (sItemID == "map_full" || sItemID == "map_part1" || sItemID == "map_part2")
 			{// клады
 				SetSelectable("DISCARD_BTN",true);
-				SetNewPicture("MAP_PICTURE", "interfaces\Maps\map_1.tga");
+				SetNewPicture("MAP_PICTURE", "interfaces\Maps\map_1.dds");
 				if (GetCharacterItem(pchar, "map_part1")>0  && GetCharacterItem(pchar, "map_part2")>0 && GetCharacterItem(pchar, "map_full")<=0)
 				{
 					TakeNItems(xi_refCharacter, "map_part1", -1);
@@ -1517,7 +1797,7 @@ void EquipPress()
 			}
 			else
 			{
-				SetNewPicture("MAP_PICTURE", "interfaces\Maps\" + itmRef.imageTga + ".tga");
+				SetNewPicture("MAP_PICTURE", "interfaces\Maps\" + itmRef.imageTga + ".dds");
 				SetFormatedText("MAP_TEXT", "");
 			}
 			ShowMapWindow();
@@ -1533,6 +1813,7 @@ void EquipPress()
 					AddCharacterHealth(pchar, 10);
 					AddCharacterMaxHealth(pchar, 4);
 					RemoveItems(pchar, "potion7", 1);
+					FillItemsTable(iCurTab);
 				}
 				if (sItemID == "RingCapBook") // СЖ пинаса 'Санта-Люсия' и дневник Колхауна
 				{
@@ -1671,6 +1952,7 @@ void EquipPress()
 					}
 				}
 			}
+			if(itmGroup == GUN_ITEM_TYPE && sti(xi_refCharacter.index) == GetMainCharacterIndex() && CheckAttribute(xi_refCharacter, "chargestage."+sItemID)) DeleteAttribute(xi_refCharacter, "chargestage."+sItemID);
 			FillItemsSelected();
 			SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Equip that"));
 			SetSelectable("EQUIP_BUTTON",ThisItemCanBeEquip(sItemID));
@@ -1937,6 +2219,7 @@ void ExitItemFromCharacterWindow()
 	GameInterface.qty_edit.str = 0;
 
 	SetCurrentNode("TABLE_ITEMS");
+	CheckForAvailableItems();
 }
 
 void ShowItemFromCharacterWindow()
@@ -2324,8 +2607,6 @@ void ShowAmmoEquipInfo()
 	LanguageCloseFile(idLngFile);
 }
 
-void ClickAmmo() {ClickItem("ITEM_14", "ammo", 2);trace("ClickAmmo");}
-
 void ShowSuitEquipInfo()
 {
 	if(!CheckAttribute(xi_refCharacter, "equip.suit")) return;
@@ -2517,25 +2798,34 @@ void Show5EquipInfo()
 
 void ClickSaber()		{FillItemsTable(5); ClickItem("ITEM_1", "blade", 2);}
 void ClickGun()			{FillItemsTable(6); ClickItem("ITEM_2", "gun", 2);}
-void ClickSpyGlass()	{ClickItem("ITEM_3", "spyglass", 2);}
+void ClickSpyGlass()	{FillItemsTable(14) ClickItem("ITEM_3", "spyglass", 2);}
 void ClickCirass()		{FillItemsTable(7); ClickItem("ITEM_4", "cirass", 2);}
-void ClickSuit()		{ClickItem("ITEM_15", "suit", 2);}
-void ClickMushket()		{ClickItem("ITEM_5", "gun", 2);}
-void ClickBackPack()	{ClickItem("ITEM_6", "BackPack", 2);}
+void ClickSuit()		{FillItemsTable(19); ClickItem("ITEM_15", "suit", 2);}
+void ClickMushket()		{FillItemsTable(15); ClickItem("ITEM_5", "gun", 2);}
+void ClickBackPack()	{FillItemsTable(16); ClickItem("ITEM_6", "BackPack", 2);}
 void ClickTalisman()	{FillItemsTable(8); ClickItem("ITEM_7", "talisman", 3);}
-void ClickBook()		{ClickItem("ITEM_9", "book", 3);}
+void ClickBook()		{FillItemsTable(17); ClickItem("ITEM_9", "book", 3);}
 void ClickShow1()		{FillItemsTable(9); ClickItem("ITEM_10", "jewelry_indian_left", 3);}
 void ClickShow2()		{FillItemsTable(10); ClickItem("ITEM_11", "jewelry_indian_right", 3);}
 void ClickShow3()		{FillItemsTable(11); ClickItem("ITEM_8", "indian_center", 3);}
 void ClickShow4()		{FillItemsTable(12); ClickItem("ITEM_12", "idols_left", 3);}
 void ClickShow5()		{FillItemsTable(13); ClickItem("ITEM_13", "idols_right", 3);}
+void ClickAmmo()		{FillItemsTable(18); ClickItem("ITEM_14", "ammo", 3);}
 
 void ClickItem(string sItem, string sEquipType, int _tabNum)
 {
 	string sTemp, row;
 
-	if(!CheckAttribute(xi_refCharacter, "equip." + sEquipType)) return;
-	if(xi_refCharacter.equip.(sEquipType) == "") return;
+	if(!CheckAttribute(xi_refCharacter, "equip." + sEquipType)) 
+	{
+		HideItemInfo();
+		return;
+	}
+	if(xi_refCharacter.equip.(sEquipType) == "") 
+	{
+		HideItemInfo();
+		return;
+	}
 	string sCurItem = GetCharacterEquipByGroup(xi_refCharacter, sEquipType);
 	//SetControlsTabMode(_tabNum);//выбираем вкладку с нужным
 	for (int q=1;q<1000;q++)

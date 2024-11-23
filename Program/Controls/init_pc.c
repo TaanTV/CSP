@@ -184,8 +184,11 @@ void ExternControlsInit(bool bFirst, bool standart)
 	MapControlToGroup("ChrFire","BattleInterfaceControls");
 
 // Ship ========================================================================
+	CI_CreateAndSetControls( "Sailing3Pers", "DropMine", CI_GetKeyCode("KEY_M"), 0, true );
+	MapControlToGroup("DropMine","Sailing1Pers");
 	CI_CreateAndSetControls( "Sailing3Pers", "GoCabin", CI_GetKeyCode("KEY_C"), 0, true );
 	MapControlToGroup("GoCabin","Sailing1Pers");
+	MapControlToGroup("GoCabin","PrimaryLand");
 	CI_CreateAndSetControls( "Sailing3Pers", "Ship_TurnLeft", CI_GetKeyCode("KEY_A"), 0, true );
 	MapControlToGroup("Ship_TurnLeft","Sailing1Pers");
 	CI_CreateAndSetControls( "Sailing3Pers", "Ship_TurnRight", CI_GetKeyCode("KEY_D"), 0, true );

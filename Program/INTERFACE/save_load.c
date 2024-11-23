@@ -717,13 +717,13 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 	bool bClickable = bThisSave;
 	if( picname!="" ) {
 		if( picname == "empty" ) {
-			SendMessage( &GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, nodname, 2, 0,"interfaces\\SaveIcons\\SaveEmpty.tga" );
+			SendMessage( &GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, nodname, 2, 0,"interfaces\SaveIcons\SaveEmpty.dds" );
 		}
 		if( picname == "loading" ) {
-			SendMessage( &GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, nodname, 2, 0,"interfaces\\SaveIcons\\SaveLoading.tga" );
+			SendMessage( &GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, nodname, 2, 0,"interfaces\SaveIcons\SaveLoading.dds" );
 		}
 		if( picname == "corrupted" ) {
-			SendMessage( &GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, nodname, 2, 0,"interfaces\\SaveIcons\\SaveCorrupted.tga" );
+			SendMessage( &GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, nodname, 2, 0,"interfaces\SaveIcons\SaveCorrupted.dds" );
 		}
 	}
 	if( picpointer!=0 ) {
@@ -1176,7 +1176,7 @@ void ShowFaceInfo( string facestr )
 
 void SSI(string shipTexture)
 {
-	if (shipTexture != "1000")	SetNewPicture("SHIP_ICON", "interfaces\ships\" + shipTexture + ".tga.tx");
+	if (shipTexture != "1000")	SetNewPicture("SHIP_ICON", "interfaces\ships\" + shipTexture + ".dds");
 	else SetNewPicture("SHIP_ICON", "");
 }
 

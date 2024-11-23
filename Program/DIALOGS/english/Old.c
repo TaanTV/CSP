@@ -102,7 +102,7 @@ void ProcessDialogEvent()
 			ResetSound();
 			SetLaunchFrameFormParam("", "", 0, 20.0);
 			PlayStereoSound("Kopcapkz\Voices\Bandits\DedVpeshere.wav");
-			SetLaunchFrameFormPic("loading\inside\censored1.tga");
+			SetLaunchFrameFormPic("loading\jonny_load\inside\censored1.dds");
             LaunchFrameForm();
 		break;
 

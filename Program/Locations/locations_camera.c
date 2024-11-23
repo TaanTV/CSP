@@ -2,7 +2,7 @@
 #define LOCCAMERA_TOPOS		2
 #define LOCCAMERA_FREE		3
 //#20190815-01
-#define DEFAULT_CAM_RAD 3.0
+#define DEFAULT_CAM_RAD 2.0
 #define DEFAULT_CAM_RAD_DEN 0.22
 #define DEFAULT_LCAM_PERSP 1.285
 #define DEFAULT_LCAM_PERSP_DEN 1.25
@@ -179,6 +179,13 @@ float CalcLandRadius()
     return (DEFAULT_CAM_RAD + fCamRadAdj);
 }
 
+float GetMultiplyFromScreenRatio()
+{
+    float w = stf(showWindow.width);
+    float h = stf(showWindow.height);
+    return w / h;
+}
+
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //							Warship 20.07.09 НОВОЕ - СНИМАЕМ КИНО
@@ -320,6 +327,13 @@ int locCameraGetFirstEmptyState()
 // В результате получаем последовательные полеты камеры
 void locCameraNextState()
 {
+	if (CheckAttribute(PChar, "funcaftermovie"))
+	{
+		locCameraResetState();
+		string func = PChar.funcaftermovie;
+		call func();
+		return;
+	}
 	ref prevCamera, curCamera, nextCamera;
 	float distance;
 	int time;

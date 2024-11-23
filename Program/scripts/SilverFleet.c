@@ -33,6 +33,8 @@ void SFcondition (ref location)
 		LAi_SetActorType(sld);
 		LAi_ActorDialog(sld, pchar, "", -1, 0);
 	}
+
+	if (location.type != "town" && location.type != "seashore" && location.type != "port") return;
 	
     if (CheckAttribute(PChar, "questTemp.silverfleet") && pchar.questTemp.silverfleet == "ThirdSilverFleet" && sti(Colonies[FindColony(GetCurrentTown())].nation) != ENGLAND && GetQuestPastDayParam("SilverFleetHeadHunters") > (3 + rand(10)))
     {
@@ -540,6 +542,7 @@ void Map_CreateSilverFleetPirates()
 		SetBaseShipData(sld);
 		SetCrewQuantityFull(sld);
 		RealShips[sti(sld.ship.type)].ship.upgrades.sails = 24 + rand(13);
+		sld.Ship.Mode = "pirate";
 		Fantom_SetUpgrade(sld, "hunter");
 		Fantom_SetCannons(sld, "pirate");
 		Fantom_SetBalls(sld, "pirate");
@@ -642,9 +645,7 @@ void SilverFleetMillionEveryMonth()
 		string NPC_Area = "PortRoyal";
 		if(CheckAttribute(Pchar, "Quest.Deposits." + (NPC_Area)) && makeint(Pchar.Quest.Deposits.(NPC_Area)) == true)
 		{
-			int iPastMonths = GetPastTime("Month", makeint(Pchar.Quest.Deposits.(NPC_Area).StartYear),makeint(Pchar.Quest.Deposits.(NPC_Area).StartMonth),makeint(Pchar.Quest.Deposits.(NPC_Area).StartDay), makefloat(Pchar.Quest.Deposits.(NPC_Area).StartTime), getDataYear(),getDataMonth(),GetDataDay(), GetTime());
-			Pchar.Quest.Deposits.(NPC_Area).Result = makeint(Pchar.Quest.Deposits.(NPC_Area).Sum) + ((makeint(Pchar.Quest.Deposits.(NPC_Area).Sum)/100)*makeint(Pchar.Quest.Deposits.(NPC_Area).Interest))*iPastMonths;
-			Pchar.Quest.Deposits.(NPC_Area).Sum = makeint(Pchar.Quest.Deposits.(NPC_Area).Result) + 1000000;				
+			Pchar.Quest.Deposits.(NPC_Area).Sum = makeint(Pchar.Quest.Deposits.(NPC_Area).Sum) + 1000000;
 		}
 		else
 		{

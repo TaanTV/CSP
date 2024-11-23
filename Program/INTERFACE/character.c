@@ -67,7 +67,7 @@ void IDoExit(int exitCode)
 	{
 		xi_refCharacter.skill.FreeSPECIAL = 0; // если не все распределил, сам дурак
 		DeleteAttribute(xi_refCharacter,"bchangepirates");
-		if (startherotype > 9)//Для уникальных стартов даём другое начало
+		if (startherotype > 9 && IsMainCharacter(xi_refCharacter))//Для уникальных стартов даём другое начало
 		{
     		ref sld = characterFromID("Sailor_1");
     		LAi_SetActorTypeNoGroup(pchar);
@@ -185,7 +185,7 @@ void SetVariable()
 {
 	FillSkillTables();
 	SetNewPicture("CHARACTER_BIG_PICTURE", "interfaces\portraits\256\face_" + xi_refCharacter.FaceId + ".tga");
-	SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(xi_refCharacter)+".tga");
+	SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(xi_refCharacter)+".dds");
 	SetFormatedText("HERO_NAME", GetFullName(xi_refCharacter));
 
     // теперь это Лояльность
@@ -242,13 +242,8 @@ void ShowInfoWindow()
 	int iItem;
 
 	string text5, text6;
-	if (IsCharacterPerkOn(xi_refCharacter, "Grunt")) {text5 = GetConvertStrWithReplace("Variable_character_13", "Interface.txt", "#space#", " "); text6 = GetConvertStr("Master", "HeroDescribe.txt");}
-	if (IsCharacterPerkOn(xi_refCharacter, "Trader")) {text5 = GetConvertStrWithReplace("Variable_character_14", "Interface.txt", "#space#", " ");  text6 = GetConvertStr("Merchant", "HeroDescribe.txt");}
-	if (IsCharacterPerkOn(xi_refCharacter, "Fencer")) {text5 = GetConvertStrWithReplace("Variable_character_15", "Interface.txt", "#space#", " ");  text6 = GetConvertStr("Corsair", "HeroDescribe.txt");}
-	if (IsCharacterPerkOn(xi_refCharacter, "Adventurer")) {text5 = GetConvertStrWithReplace("Variable_character_16", "Interface.txt", "#space#", " ");  text6 = GetConvertStr("Adventurer", "HeroDescribe.txt");}
-	if (IsCharacterPerkOn(xi_refCharacter, "Buccaneer")) {text5 = GetConvertStrWithReplace("Variable_character_17", "Interface.txt", "#space#", " ");  text6 = GetConvertStr("Inquisitor", "HeroDescribe.txt");}
-	if (IsCharacterPerkOn(xi_refCharacter, "Agent")) {text5 = GetConvertStrWithReplace("Variable_character_18", "Interface.txt", "#space#", " ");  text6 = GetConvertStr("SecretAgent", "HeroDescribe.txt");}
-	if (IsCharacterPerkOn(xi_refCharacter, "SeaWolf")) {text5 = GetConvertStrWithReplace("Variable_character_19", "Interface.txt", "#space#", " ");  text6 = GetConvertStr("SeaWolf", "HeroDescribe.txt");}
+	text5 = GetConvertStr(GetSpeciality(xi_refCharacter), "RPGDescribe.txt")
+	text6 = GetConvertStr(GetSpeciality(xi_refCharacter)+"_desc", "RPGDescribe.txt")
 
 	//Boyer fix #20170401-01 Can't load texture -1.tx log errors
 	//sPicture = "-1";
@@ -332,7 +327,7 @@ void FillSkillTables()
 
     // boal оптимизация скилов -->
     DelBakSkillAttr(xi_refCharacter);
-    ClearCharacterExpRate(xi_refCharacter);
+    //ClearCharacterExpRate(xi_refCharacter);
     RefreshCharacterSkillExpRate(xi_refCharacter);
 
     SetEnergyToCharacter(xi_refCharacter);
@@ -425,15 +420,11 @@ void FillSkillTables()
 		// рассчет драйна
 		diff = GetSummonSkillFromName(xi_refCharacter, skillName) - skillVal;
 
-		if (skillVal < SKILL_MAX)
+		if (skillVal < SKILL_MAX + 1)
 		{
 			GameInterface.TABLE_SKILL_1.(row).td3.str = makeint(GetSkillValueExp(xi_refCharacter, skillName) * 100.0 / makefloat(skillVal * GetCharacterExpRate(xi_refCharacter, skillName))) + "%";
-			GameInterface.TABLE_SKILL_1.(row).td5.color = COLOR_NORMAL;
-		}
-		else
-		{
-		    GameInterface.TABLE_SKILL_1.(row).td3.str = "";
-			GameInterface.TABLE_SKILL_1.(row).td5.color = COLOR_MONEY;
+			if (skillVal == SKILL_MAX) GameInterface.TABLE_SKILL_1.(row).td5.color = COLOR_MONEY;
+			else GameInterface.TABLE_SKILL_1.(row).td5.color = COLOR_NORMAL;
 		}
 		if (diff == 0)
 		{
@@ -484,15 +475,11 @@ void FillSkillTables()
 		// рассчет драйна
 		diff = GetSummonSkillFromName(xi_refCharacter, skillName) - skillVal;
 
-		if (skillVal < SKILL_MAX)
+		if (skillVal < SKILL_MAX + 1)
 		{
 			GameInterface.TABLE_SKILL_2.(row).td3.str = makeint(GetSkillValueExp(xi_refCharacter, skillName) * 100.0 / makefloat(skillVal * GetCharacterExpRate(xi_refCharacter, skillName))) + "%";
-			GameInterface.TABLE_SKILL_2.(row).td5.color = COLOR_NORMAL;
-		}
-		else
-		{
-		    GameInterface.TABLE_SKILL_2.(row).td3.str = "";
-			GameInterface.TABLE_SKILL_2.(row).td5.color = COLOR_MONEY;
+			if (skillVal == SKILL_MAX) GameInterface.TABLE_SKILL_2.(row).td5.color = COLOR_MONEY;
+			else GameInterface.TABLE_SKILL_2.(row).td5.color = COLOR_NORMAL;
 		}
 		if (diff == 0)
 		{
@@ -588,7 +575,7 @@ void FillSkillTables()
 	GameInterface.TABLE_OTHER.tr5.td2.str = XI_ConvertString("Money");
 	GameInterface.TABLE_OTHER.tr5.td3.str = MakeMoneyShow(sti(xi_refCharacter.Money), MONEY_SIGN,MONEY_DELIVER);
 	GameInterface.TABLE_OTHER.tr5.td3.scale = 0.9;
-	//GameInterface.TABLE_OTHER.tr5.td3.color = SetAlphaIntoColor(COLOR_MONEY, GetAlphaFromSkill(10));
+	GameInterface.TABLE_OTHER.tr5.td3.color = argb(255,255,215,0);
 
     GameInterface.TABLE_OTHER.tr6.UserData.ID = "Reputation";
 	GameInterface.TABLE_OTHER.tr6.td1.icon.group = "ICONS_CHAR";
@@ -798,6 +785,7 @@ string ShowStatValue(string type)
 		break;
 
 		case "shipchargetime":
+			Event("eSwitchPerks", "l", GetMainCharacterIndex());
 			float fMultiC = Cannon_GetRechargeTimeValue(xi_refCharacter);
 			return ""+FloatToString(fMultiC,1) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
 		break;
@@ -808,220 +796,77 @@ string ShowStatValue(string type)
 string CheckForSpecial(string type)
 {
 	string weaponID = GetCharacterEquipByGroup(xi_refCharacter, BLADE_ITEM_TYPE);
-	int critvalue = 0;
-	bool addluck = false;
-	int critdamage = 100;
+	string sFencingType = LAi_GetBladeFencingType(xi_refCharacter);
+	string sText = "";
+	int iFencingType = 1 * (sFencingType == "Fencing") + 2 * (sFencingType == "FencingHeavy");
+	float fSkill = 0.01 * GetCharacterSkill(xi_refCharacter, sFencingType);
+	int critvalue = 0;//это... критический эффект.
+	bool bAttackHardHitter = CheckCharacterPerk(xi_refCharacter, "HardHitter");
 	float coeff = 0.0;
-	int blod = 0;
 	if (weaponID != "")
 	{
 		aref weapon;
 		Items_FindItem(weaponID, &weapon);
-		if (CheckAttribute(weapon,"special"))
-		{
-			switch (type)
-			{
-				case "blooding":
-					if (CheckAttribute(weapon,"special.valueB")) blod += sti(weapon.special.valueB);
-					if (LAi_GetBladeFencingType(xi_refCharacter) == "FencingLight")
-					{
-						return FloatToString(2.5+blod+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"FencingLight"))/20),1)+"%/"+(FloatToString(10.0+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"FencingLight"))/20)*5,1))+GetConvertStrWithReplace("Variable_character_23", "Interface.txt", "#space#", " ");
-					}
-					else return FloatToString(makefloat(blod),1)+"%/"+(FloatToString(10.0+15.0,1))+GetConvertStrWithReplace("Variable_character_24", "Interface.txt", "#space#", " ");
-				break;
-				case "crit":
-					if(IsCharacterPerkOn(xi_refCharacter, "Fencer"))
-					{
-						critvalue += 5;
-						addluck = true;
-					}
-					if(IsCharacterPerkOn(xi_refCharacter, "SwordplayProfessional"))
-					{
-						critvalue += 10;
-						addluck = true;
-					}
-					if(IsCharacterPerkOn(xi_refCharacter, "CriticalHit"))
-					{
-						critvalue += 5;
-						addluck = true;
-					}
-					if (CheckAttribute(weapon,"special.valueCrB")) critvalue += sti(weapon.special.valueCrB);
-					if (addluck) critvalue += GetCharacterSPECIALSimple(xi_refCharacter, SPECIAL_L);
-					critdamage = 100 + (GetCharacterSPECIALSimple(xi_refCharacter, SPECIAL_L)*5);
-					return its(critvalue)+"%/"+its(critdamage)+"%"
-				break;
-				case "swiftstrike":
-					if (LAi_GetBladeFencingType(xi_refCharacter) == "Fencing")
-					{
-						if (CheckAttribute(weapon,"special.valueSS"))
-						{
-							return FloatToString(2.5+sti(weapon.special.valueSS)+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1)+"%/"+(FloatToString(5.0+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1))+GetConvertStrWithReplace("Variable_character_25", "Interface.txt", "#space#", " ");
-						}
-						return FloatToString(2.5+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1)+"%/"+(FloatToString(5.0+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1))+GetConvertStrWithReplace("Variable_character_26", "Interface.txt", "#space#", " ");
-					}
-					else
-					{
-						if (CheckAttribute(weapon,"special.valueSS"))
-						{
-							return FloatToString(sti(weapon.special.valueSS),1)+"%/"+(FloatToString(5.0+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1))+GetConvertStrWithReplace("Variable_character_27", "Interface.txt", "#space#", " ");
-						}
-						else return FloatToString(0.0,1)+"%/"+(FloatToString(0.0,1))+GetConvertStrWithReplace("Variable_character_28", "Interface.txt", "#space#", " ");
-					}
-
-				break;
-				case "breakchance":
-					float BB = 0.0;
-					float CB = 0.0;
-					if (CheckAttribute(weapon,"special.valueBB")) BB = sti(weapon.special.valueBB);
-					if (CheckAttribute(weapon,"special.valueCB")) CB = sti(weapon.special.valueCB);
-					if (CheckCharacterPerk(xi_refCharacter, "HardHitter"))
-					{
-						BB += 5.0;
-						CB += 5.0;
-					}
-					if (CheckCharacterPerk(xi_refCharacter, "sliding")) BB += 20.0;
-					if (LAi_GetBladeFencingType(xi_refCharacter) == "FencingHeavy")
-					{
-						coeff = makefloat(GetCharacterSkillSimple(xi_refCharacter,"FencingHeavy"))/20;
-						if(HasSubStr(xi_refCharacter.equip.blade, "topor")) return FloatToString(8.0+BB+(coeff*2),1)+"%/"+FloatToString(8.0+CB+(coeff*2),1)+"%";
-						return FloatToString(5.0+BB+(coeff*2),1)+"%/"+FloatToString(5.0+CB+(coeff*2),1)+"%";
-					}
-					else return FloatToString(makefloat(BB),1)+"%/"+FloatToString(makefloat(CB),1)+"%";
-				break;
-				case "stun":
-					int stunchance = 0;
-					if (CheckAttribute(weapon,"special.valueStS")) stunchance = sti(weapon.special.valueStS);
-					return stunchance+"%/1-3" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
-				break;
-				case "trauma":
-					int trauma = 0;
-					if (CheckAttribute(weapon,"special.valueT")) trauma = sti(weapon.special.valueT);
-					return trauma+"%/20-60" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
-				break;
-				case "poisonattack":
-					int poisonattackV = 0;
-					if (CheckAttribute(weapon,"special.valueP")) poisonattackV = sti(weapon.special.valueP);
-					if (xi_refCharacter.sex == "skeleton" || xi_refCharacter.sex == "crab" || HasSubStr(xi_refCharacter.model, "Canib_") || HasSubStr(xi_refCharacter.model, "PGG_Chani")) poisonattackV += 15;
-					return poisonattackV+"%/50-110" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
-				break;
-			}
-		}
-		else
-		{
-			switch (type)
-			{
-				case "blooding":
-					if (LAi_GetBladeFencingType(xi_refCharacter) == "FencingLight")
-					{
-						return FloatToString(2.5+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"FencingLight"))/20),1)+"%/"+(FloatToString(10.0+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"FencingLight"))/20)*5,1))+GetConvertStrWithReplace("Variable_character_29", "Interface.txt", "#space#", " ");
-					}
-					else return "0%/0.0" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
-				break;
-				case "crit":
-					if(IsCharacterPerkOn(xi_refCharacter, "Fencer"))
-					{
-						critvalue += 5;
-						addluck = true;
-					}
-					if(IsCharacterPerkOn(xi_refCharacter, "SwordplayProfessional"))
-					{
-						critvalue += 15;
-						addluck = true;
-					}
-					if(!IsCharacterPerkOn(xi_refCharacter, "SwordplayProfessional"))
-					{
-						if(IsCharacterPerkOn(xi_refCharacter, "CriticalHit"))
-						{
-							critvalue += 5;
-							addluck = true;
-						}
-					}
-					if (addluck) critvalue += GetCharacterSPECIALSimple(xi_refCharacter, SPECIAL_L);
-					critdamage = 100 + (GetCharacterSPECIALSimple(xi_refCharacter, SPECIAL_L)*5);
-					return its(critvalue)+"%/"+its(critdamage)+"%"
-				break;
-				case "swiftstrike":
-					if (LAi_GetBladeFencingType(xi_refCharacter) == "Fencing")
-					{
-						return FloatToString(2.5+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1)+"%/"+(FloatToString(5.0+(makefloat(GetCharacterSkillSimple(xi_refCharacter,"Fencing"))/20),1))+GetConvertStrWithReplace("Variable_character_30", "Interface.txt", "#space#", " ");
-					}
-					else return "0%/0.0" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
-				break;
-				case "breakchance":
-					if (LAi_GetBladeFencingType(xi_refCharacter) == "FencingHeavy")
-					{
-						coeff = makefloat(GetCharacterSkillSimple(xi_refCharacter,"FencingHeavy"))/20;
-						float BBB = 0.0;
-						if (CheckCharacterPerk(xi_refCharacter, "HardHitter"))
-						{
-							coeff += 5.0;
-							BBB += 5.0;
-						}
-						if (CheckCharacterPerk(xi_refCharacter, "sliding")) BBB += 20.0;
-						if(HasSubStr(xi_refCharacter.equip.blade, "topor")) return FloatToString(8.0+BBB+(coeff*2),1)+"%/"+FloatToString(8.0+(coeff*2),1)+"%";
-						return FloatToString(5.0+BBB+(coeff*2),1)+"%/"+FloatToString(5.0+(coeff*2),1)+"%";
-					}
-					else return "0%/0%";
-				break;
-				case "stun":
-					return 0+"%";
-				break;
-				case "trauma":
-					return 0+"%";
-				break;
-				case "poisonattack":
-					if (xi_refCharacter.sex == "skeleton" || xi_refCharacter.sex == "crab" || HasSubStr(xi_refCharacter.model, "Canib_") || HasSubStr(xi_refCharacter.model, "PGG_Chani")) return 15+"%/50-110" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " "); else return 0+"%";
-				break;
-			}
-		}
-	}
-	else
-	{
+		bool bSpecial = CheckAttribute(weapon, "special."+type);//чек сразу нужного?
 		switch (type)
 		{
-			case "blooding":
-				return "0%/0.0" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
-			break;
-			case "crit":
-				if(IsCharacterPerkOn(xi_refCharacter, "Fencer"))
-				{
-					critvalue += 5;
-					addluck = true;
+			case "valueB":
+				critvalue = LAi_CalcBloodingChance(xi_refCharacter, iFencingType, fSkill, 0);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + BLOODING_MIN_TIME + "-" + LAi_CalcBloodingDuration(xi_refCharacter, iFencingType, fSkill, 0) + " " + GetConvertStrWithReplace("Variable_character_all_35", "Interface.txt", "#space#", " ") + ")";
 				}
-				if(IsCharacterPerkOn(xi_refCharacter, "SwordplayProfessional"))
-				{
-					critvalue += 15;
-					addluck = true;
+			break;
+			case "valueCrB"://crit
+				if (bSpecial) {
+					critvalue = sti(weapon.special.valueCrB);
 				}
-				if(!IsCharacterPerkOn(xi_refCharacter, "SwordplayProfessional"))
-				{
-					if(IsCharacterPerkOn(xi_refCharacter, "CriticalHit"))
-					{
-						critvalue += 5;
-						addluck = true;
-					}
+				sText = LAi_CalcCritChance(xi_refCharacter, 0, iFencingType, critvalue)+"% (x"+LAi_CalcCritDamageMult(xi_refCharacter)+")";
+			break;
+			case "valueSS":
+				critvalue = LAi_CalcSwiftChance(xi_refCharacter, iFencingType, fSkill);
+				sText = critvalue + "%";
+				if (critvalue) {
+					coeff = LAi_CalcSwiftDuration(xi_refCharacter, iFencingType, fSkill, 0);
+					sText += " (" + coeff + "-" + (coeff + SWIFT_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
 				}
-				if (addluck) critvalue += GetCharacterSPECIALSimple(xi_refCharacter, SPECIAL_L);
-				critdamage = 100 + (GetCharacterSPECIALSimple(xi_refCharacter, SPECIAL_L)*5);
-				return its(critvalue)+"%/"+its(critdamage)+"%"
 			break;
-			case "swiftstrike":
-				return "0%/0.0" + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ");
+			case "valueBB"://break
+				sText = LAi_CalcBlockBreakChance(xi_refCharacter, sFencingType, fSkill) + "% / " + LAi_CalcCuirassBreakChance(xi_refCharacter, iFencingType, bAttackHardHitter, fSkill) + "%";
 			break;
-			case "breakchance":
-				return "0%/0%";
+			case "valueStS":
+				critvalue = xi_refCharacter.chr_ai.special.(type);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + CalcStunDuration(0) + "-" + (CalcStunDuration(0) + STUN_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
 			break;
-			case "stun":
-				return 0+"%";
+			case "valueT":
+				critvalue = xi_refCharacter.chr_ai.special.(type);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + CalcTraumaDuration(0) + "-" + (CalcTraumaDuration(0) + TRAUMA_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
 			break;
-			case "trauma":
-				return 0+"%";
-			break;
-			case "poisonattack":
-				return 0+"%";
+			case "valueP":
+				critvalue = LAi_CalcPoisonChance(xi_refCharacter);
+				sText = critvalue + "%";
+				if (critvalue) {
+					sText += " (" + LAi_CalcPoisonDuration(0) + "-" + (LAi_CalcPoisonDuration(0) + 2 * POISON_TIME_RAND) + GetConvertStrWithReplace("Variable_character_all_28", "Interface.txt", "#space#", " ") + ")";
+				}
 			break;
 		}
 	}
+	else//а нужно ли?
+	{
+		if (type == "valueCrB") {
+			return LAi_CalcCritChance(xi_refCharacter, 0, 0, 0)+"% (x"+LAi_CalcCritDamageMult(xi_refCharacter)+")";
+		}
+		else {
+			return 0+"%";
+		}
+	}
+	return sText;
 }
 
 void CS_TableSelectChange()
@@ -1049,7 +894,7 @@ void CS_TableSelectChange()
         int skillVal;
         skillName = GameInterface.(CurTable).(CurRow).UserData.ID;
         skillVal = GetSkillValue(xi_refCharacter, SKILL_TYPE, skillName);
-		if (skillVal != SKILL_MAX && skillVal != 0)
+		if (skillVal != SKILL_MAX + 1 && skillVal != 0)
 		{
 	       GameInterface.TABLE_OTHER.tr9.td3.str = sti(GetSkillValueExp(xi_refCharacter, skillName))+ "/" + makeint(skillVal * GetCharacterExpRate(xi_refCharacter, skillName));
 		}
@@ -1576,8 +1421,12 @@ void IncreaseSkill(int _add)
 	    if (bChangePIRATES)
 	    { //для начала игры пересчет скилов
 	    	// начальные скилы задать
-		    InitStartParam(xi_refCharacter);
-		    SetEnergyToCharacter(xi_refCharacter);
+			if (IsMainCharacter(xi_refCharacter))
+			{
+				InitStartParam(xi_refCharacter);
+				SetEnergyToCharacter(xi_refCharacter);
+			}
+			else ClearCharacterExpRate(xi_refCharacter);
 	    }
     }
 	SetVariable();
@@ -1623,8 +1472,12 @@ void DecreaseSkill(int _add)
 	    if (bChangePIRATES)
 	    { //для начала игры пересчет скилов
 	    	// начальные скилы задать
-		    InitStartParam(xi_refCharacter);
-		    SetEnergyToCharacter(xi_refCharacter);
+		    if (IsMainCharacter(xi_refCharacter))
+			{
+				InitStartParam(xi_refCharacter);
+				SetEnergyToCharacter(xi_refCharacter);
+			}
+			else ClearCharacterExpRate(xi_refCharacter);
 	    }
     }
     SetVariable();

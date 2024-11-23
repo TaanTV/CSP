@@ -9,7 +9,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].worldmap = "Guadeloupe";
 	locations[n].filespath.models = "locations\Town_Guadeloupe\Town\";
 
-	locations[n].image = "loading\jonny_load\city\Town_Guadeloupe.tga";
+	locations[n].image = "loading\jonny_load\city\Town_Guadeloupe.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -185,7 +185,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern04\";
-	locations[n].image = "loading\jonny_load\inside\Tavern04.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern04.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "BasTer";
@@ -232,7 +232,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_tavern_upstairs";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -274,7 +274,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store02\";
-	locations[n].image = "loading\jonny_load\inside\store02.tga";
+	locations[n].image = "loading\jonny_load\inside\store02.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -320,7 +320,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard02\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard02.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard02.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -366,7 +366,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence04";
-	locations[n].image = "loading\jonny_load\inside\residence04.tga";
+	locations[n].image = "loading\jonny_load\inside\residence04.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -410,7 +410,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\Bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -454,7 +454,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\Church01.tga";
+	locations[n].image = "loading\jonny_load\inside\church01.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -500,7 +500,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -541,7 +541,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_houseF1";
 	locations[n].id.label = "Olone House";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse02.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse02.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -584,7 +584,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_houseSp1";
 	locations[n].id.label = "Ascold House";
-	locations[n].image = "loading\jonny_load\inside\largehouse01.tga";
+	locations[n].image = "loading\jonny_load\inside\largehouse01.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -632,7 +632,7 @@ int LocationInitGuadeloupe(int n)
 	/////////////////////////////////////////
 	locations[n].id = "BasTer_Graveyard";
 	locations[n].id.label = "Graveyard";
-	locations[n].image = "loading\jonny_load\outside\Graveyard.tga";
+	locations[n].image = "loading\jonny_load\outside\Graveyard.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].fastreload = "BasTer";
@@ -709,7 +709,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	locations[n].id = "BasTer_KeepersHouse";
 	locations[n].id.label = "KeepersHouse";
-	locations[n].image = "loading\jonny_load\inside\SmallHouse_inside.tga";
+	locations[n].image = "loading\jonny_load\inside\SmallHouse_inside.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -748,7 +748,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
 	locations[n].id = "BasTer_Chapel";
 	locations[n].id.label = "Chapel";
-	locations[n].image = "loading\jonny_load\inside\church_IM.tga";
+	locations[n].image = "loading\jonny_load\inside\church_IM.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -787,7 +787,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_CryptBig1";
 	locations[n].id.label = "CryptBig2";
-	locations[n].image = "loading\jonny_load\inside\crypt_2_1_inside.tga";
+	locations[n].image = "loading\jonny_load\inside\crypt_2_1_inside.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -835,7 +835,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_ExitTown";
 	locations[n].fastreload = "BasTer";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitW.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitW.dds";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	//Sound
@@ -904,7 +904,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore29";
 	locations[n].id.label = "Shore29";
-	locations[n].image = "loading\jonny_load\shores\Shore08.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore08.dds";
 	locations[n].worldmap = "Shore29";
 	//Sound
 	locations[n].type = "seashore";
@@ -955,7 +955,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle7.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle7.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Guadeloupe";
@@ -1011,7 +1011,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "Mayak4";
 	locations[n].id.label = "Mayak4";
 	locations[n].worldmap = "Mayak4";
-	locations[n].image = "loading\jonny_load\shores\Lighthouse.tga";
+	locations[n].image = "loading\jonny_load\shores\Lighthouse.dds";
 	//Sound
 	locations[n].type = "mayak";
 	locations[n].islandId = "Guadeloupe";
@@ -1096,7 +1096,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle6.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle6.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Guadeloupe";
@@ -1151,7 +1151,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Guadeloupe";
@@ -1201,7 +1201,7 @@ int LocationInitGuadeloupe(int n)
 	// Пещера
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_Cave";
-	locations[n].image = "loading\jonny_load\inside\cavernBig1.tga";
+	locations[n].image = "loading\jonny_load\inside\cavernBig1.dds";
 	locations[n].id.label = "Cave";
 	//Sound
 	locations[n].type = "cave";
@@ -1247,7 +1247,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore28";
 	locations[n].id.label = "Shore28";
-	locations[n].image = "loading\jonny_load\shores\Passage.tga";
+	locations[n].image = "loading\jonny_load\shores\Passage.dds";
 	//Sound
 	locations[n].type = "seashore";
 	locations[n].islandId = "Guadeloupe";
@@ -1287,7 +1287,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore30";
 	locations[n].id.label = "Shore30";
-	locations[n].image = "loading\jonny_load\shores\shore07.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore07.dds";
 	locations[n].worldmap = "Shore30";
 	//Sound
 	locations[n].type = "seashore";
@@ -1341,7 +1341,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_jungle_add";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle5.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle5.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "MariaGalante";
@@ -1396,7 +1396,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_deadlock";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle9.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle9.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "MariaGalante";
@@ -1451,7 +1451,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Guadeloupe_CaveS";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "MariaGalante";
@@ -1501,7 +1501,7 @@ int LocationInitGuadeloupe(int n)
 	// Логово сатанистов
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Cave_Satanists";
-	locations[n].image = "loading\jonny_load\inside\Occultists.tga";
+	locations[n].image = "loading\jonny_load\inside\Occultists.dds";
 	locations[n].id.label = "Cave";
 	//Sound
 	locations[n].type = "DeckWithReefs";
@@ -1536,7 +1536,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore31";
 	locations[n].id.label = "Shore31";
-	locations[n].image = "loading\jonny_load\shores\shore03.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore03.dds";
 	locations[n].worldmap = "Shore31";
 	//Sound
 	locations[n].type = "seashore";

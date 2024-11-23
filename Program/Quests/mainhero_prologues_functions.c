@@ -133,7 +133,7 @@ void Sharp_MeetSiblings(string qName)
 	sld.Ship.Type = GenerateShipExt(SHIP_SLOOP, true, sld);
 	sld.Ship.name = GetConvertStrWithReplace("Variable_mainhero_prologues_functions_5", "Names.txt", "#space#", " ");
 	SetBaseShipData(sld);
-	sld.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS12;
+	sld.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS8;
 	Group_FindOrCreateGroup("SharpSibling");
 	Group_AddCharacter("SharpSibling", sld.id);
 }

@@ -14,7 +14,7 @@ int LocationInitHavana(int n)
  	locations[n].islandId = "Cuba";
 
 	locations[n].filespath.models = "locations\Town_Havana\Town\";
-	locations[n].image = "loading\jonny_load\city\Town_Havana.tga";
+	locations[n].image = "loading\jonny_load\city\Town_Havana.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -233,7 +233,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern07\";
-	locations[n].image = "loading\jonny_load\inside\Tavern07.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern07.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "Havana";
@@ -281,7 +281,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_tavern_upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -322,7 +322,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\store01\";
-	locations[n].image = "loading\jonny_load\inside\Store01.tga";
+	locations[n].image = "loading\jonny_load\inside\store01.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -369,7 +369,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_Bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\Bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -415,7 +415,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard03\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard03.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard03.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -461,7 +461,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\jonny_load\inside\residence01.tga";
+	locations[n].image = "loading\jonny_load\inside\residence01.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -512,7 +512,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_TownhallRoom"; //кабинет со спальней и выходом в город сбоку
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\BigHouseBack.tga";
+	locations[n].image = "loading\jonny_load\inside\BigHouseBack.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -565,7 +565,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\churchInside3.tga";
+	locations[n].image = "loading\jonny_load\inside\churchInside3.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -607,7 +607,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice3.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice3.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -650,7 +650,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_HouseSp2";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "InesHouse";
-	locations[n].image = "loading\jonny_load\inside\FlamHouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -709,7 +709,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_houseS1";
 	locations[n].filespath.models = "locations\inside\CobHouse";
 	locations[n].id.label = "Comendant's House";
-	locations[n].image = "loading\jonny_load\inside\CobHouse.tga";
+	locations[n].image = "loading\jonny_load\inside\cobhouse.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -753,7 +753,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_houseS1Bedroom";
 	locations[n].id.label = "Bedroom";
-	locations[n].image = "loading\jonny_load\inside\Bedroom1.tga";
+	locations[n].image = "loading\jonny_load\inside\Bedroom1.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -794,7 +794,7 @@ int LocationInitHavana(int n)
 
 	locations[n].id = "Havana_Graveyard";
 	locations[n].id.label = "Graveyard";
-	locations[n].image = "loading\jonny_load\outside\Graveyard.tga";
+	locations[n].image = "loading\jonny_load\outside\Graveyard.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].fastreload = "Havana";
@@ -870,7 +870,7 @@ int LocationInitHavana(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_KeepersHouse";
 	locations[n].id.label = "KeepersHouse";
-	locations[n].image = "loading\jonny_load\inside\SmallHouse_inside.tga";
+	locations[n].image = "loading\jonny_load\inside\SmallHouse_inside.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -908,7 +908,7 @@ int LocationInitHavana(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_Chapel";
 	locations[n].id.label = "Chapel";
-	locations[n].image = "loading\jonny_load\inside\church_IM.tga";
+	locations[n].image = "loading\jonny_load\inside\church_IM.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -946,7 +946,7 @@ int LocationInitHavana(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_CryptBig1";
 	locations[n].id.label = "CryptBig2";
-	locations[n].image = "loading\jonny_load\inside\crypt_2_1_inside.tga";
+	locations[n].image = "loading\jonny_load\inside\crypt_2_1_inside.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -994,7 +994,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_ExitTown";
 	locations[n].fastreload = "Havana";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitW.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitW.dds";
 	//Town sack
 	locations[n].townsack = "Havana";
 	//Sound
@@ -1065,7 +1065,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Mayak10";
 	locations[n].id.label = "Mayak10";
 	locations[n].worldmap = "Mayak10";
-	locations[n].image = "loading\jonny_load\shores\Lighthouse.tga";
+	locations[n].image = "loading\jonny_load\shores\Lighthouse.dds";
 	//Sound
 	locations[n].type = "mayak";
  	locations[n].islandId = "Cuba";
@@ -1151,7 +1151,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Cuba_Jungle_10";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle2.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Cuba";
@@ -1207,7 +1207,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Cuba_jungle_11";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle4.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle4.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Cuba";
@@ -1263,7 +1263,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore13";
 	locations[n].id.label = "Shore13";
-	locations[n].image = "loading\jonny_load\shores\Shore12.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore12.dds";
 	locations[n].worldmap = "Shore13";
 	//Sound
 	locations[n].type = "seashore";
@@ -1317,7 +1317,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Cuba_jungle_12";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle5.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle5.dds";
 	//Sound
 	locations[n].type = "jungle";
  	locations[n].islandId = "Cuba";
@@ -1373,7 +1373,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore14";
 	locations[n].id.label = "Shore14";
-	locations[n].image = "loading\jonny_load\shores\shore06.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore06.dds";
 	locations[n].worldmap = "Shore14";
 	//Sound
 	locations[n].type = "seashore";
@@ -1427,7 +1427,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Cuba_jungle_13";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle8.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle8.dds";
  	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Cuba";
@@ -1476,7 +1476,7 @@ int LocationInitHavana(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore15";
 	locations[n].id.label = "Shore15";
-	locations[n].image = "loading\jonny_load\shores\shore02.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore02.dds";
 	locations[n].worldmap = "Shore15";
 	//Sound
 	locations[n].type = "seashore";

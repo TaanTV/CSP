@@ -679,20 +679,21 @@ void FillAboardCabinBox(ref _location, ref _npchar)
 	}
 	if(_npchar.id == "Flint")
 	{
-		_location.box1.items.icollection = 3 + rand(5);
+		_location.box1.items.icollection = 3 + drand(5);
 		_location.box1.items.indian1 = 1;
 		_location.box1.items.indian7 = 1;
-		_location.box1.items.chest = 5 + rand(10);
-		_location.box1.items.jewelry1 = 40+rand(5);
-		_location.box1.items.jewelry2 = 40+rand(5);
-		_location.box1.items.jewelry3 = 40+rand(5);
-		_location.box1.items.jewelry4 = 31+rand(5);
-		_location.box1.items.jewelry6 = rand(50);
-		_location.box1.items.jewelry7 = rand(100);
-		_location.box1.items.jewelry10 = rand(50);
-		_location.box1.items.jewelry14 = rand(50);
-		_location.box1.items.jewelry15 = rand(10);
-		_location.box1.items.jewelry18 = rand(100);
+		_location.box1.items.chest = 5 + drand(10);
+		_location.box1.items.jewelry1 = 40+drand(5);
+		_location.box1.items.jewelry2 = 40+drand(5);
+		_location.box1.items.jewelry3 = 40+drand(5);
+		_location.box1.items.jewelry4 = 31+drand(5);
+		_location.box1.items.jewelry6 = drand(50);
+		_location.box1.items.jewelry7 = drand(100);
+		_location.box1.items.jewelry10 = drand(50);
+		_location.box1.items.jewelry14 = drand(50);
+		_location.box1.items.jewelry15 = drand(10);
+		_location.box1.items.jewelry18 = drand(100);
+		_location.box1.money = 5000000;
 		ok = false;
 	}
 	//Квест "Золото не тонет", английский галеон у Доминики, драгоценности
@@ -2058,7 +2059,7 @@ void SetQuestAboardCabinDialog(ref refChar)
 			refChar.Dialog.FileName = "Quest\ForAll_dialog.c";
 			refChar.Dialog.CurrentNode = "zpqCapitain"; //даем абордажную ноду
 		}
-		if(refChar.CaptanId == "BSBons0" && refChar.model == "BS_Billy")
+		if(refChar.CaptanId == "BSBons1" && refChar.model == "BS_Billy")
 		{
 			LAi_SetCheckMinHP(refChar, 10, true, "QuestAboardCabinDialog");  // сколько НР мин
 			refChar.dialog.filename = "Quest\BlackSails\Neulovimaya_Urka.c";
@@ -2126,13 +2127,21 @@ void SetQuestAboardCabinDialog(ref refChar)
 			if(CheckAttribute(pchar,"FlintBoardingDialog"))
 			{
 				LAi_SetCheckMinHP(refChar, 10, true, "QuestAboardCabinDialog");  // сколько НР мин
-				sld.dialog.filename = "Quest\BlackSails\BS_Final_1.c";
-				sld.dialog.currentnode = "BS_F1_35";
+				refChar.dialog.filename = "Quest\BlackSails\BS_Final_1.c";
+				refChar.dialog.currentnode = "BS_F1_35";
 				BSHangover_FlintFight();
+				refChar.CantLoot = true;
 			}
 			else
 			{
 				DeleteAttribute(refChar,"SaveItemsForDead");
+			}
+			if(CheckAttribute(PChar,"FlintCatocheBoardingDialog"))
+			{
+				LAi_SetCheckMinHP(refChar, 10, true, "QuestAboardCabinDialog");  // сколько НР мин
+				refChar.dialog.filename = "Quest\BlackSails\BS_Final_3.c";
+				refChar.dialog.currentnode = "BS_F3_48";
+				refChar.SaveItemsForDead = true;
 			}
 		}
 

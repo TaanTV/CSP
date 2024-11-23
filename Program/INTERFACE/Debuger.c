@@ -1010,12 +1010,12 @@ void CalculateInfoDataF6()
 	mc = GetMainCharacter();
 	// SetRandSelfSkill(mc, 50, 85);
 	// SetRandShipSkill(mc, 50, 85);
-	// mc.rank = 20;
+	mc.rank = 33;
 
 	SetRandSelfSkill(mc, 100, 100);
 	SetRandShipSkill(mc, 100, 100);
-	mc.rank = 50;
-	LAi_SetHP(mc, 6000.0, 6000.0);
+	// mc.rank = 50;
+	LAi_SetHP(mc, 600.0, 600.0);
 
 	// 7 класс
 	// mc.Ship.Type = GenerateShipExt(SHIP_LEUDO, true, mc);
@@ -1106,7 +1106,7 @@ void CalculateInfoDataF6()
 	// mc.Ship.Type = GenerateShipExt(SHIP_CECILIA, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_ROSSIYA, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_FORTUNA, true, mc);
-	mc.Ship.Type = GenerateShipExt(SHIP_MORDAUNT, true, mc);
+	// mc.Ship.Type = GenerateShipExt(SHIP_MORDAUNT, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_FRIGATE, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_FRIGATE_H, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_CARRACA, true, mc);
@@ -1168,7 +1168,7 @@ void CalculateInfoDataF6()
 	// mc.Ship.Type = GenerateShipExt(SHIP_FRIGATEQUEEN, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_CATHERINE, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_FLYINGDUTCHMAN, true, mc);
-	// mc.Ship.Type = GenerateShipExt(SHIP_SANTISIMA, true, mc);
+	mc.Ship.Type = GenerateShipExt(SHIP_SANTISIMA, true, mc);
 	// mc.Ship.Type = GenerateShipExt(SHIP_SOLEYRU, true, mc);
 
 	SetBaseShipData(mc);
@@ -1182,8 +1182,8 @@ void CalculateInfoDataF6()
 	// mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS16;
 	// mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS20;
 	// mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS24;
-	mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS32;
-	// mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS42;
+	// mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS32;
+	mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS42;
 	// mc.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS48;
 	// mc.Ship.Cannons.Type = CANNON_TYPE_CULVERINE_LBS8;
 	// mc.Ship.Cannons.Type = CANNON_TYPE_CULVERINE_LBS12;
@@ -1223,12 +1223,12 @@ void CalculateInfoDataF6()
 	AddItems(mc, "Map_Best", 1);
 
 	// sEquipItem = GetGeneratedItem("blade27"); 				// Моргана 			(ЛО)
-	// sEquipItem = GetGeneratedItem("blade32"); 				// Фламберж			(ЛО)
+	sEquipItem = GetGeneratedItem("blade32"); 				// Фламберж			(ЛО)
 	// sEquipItem = GetGeneratedItem("katar"); 					// Катар			(СО)
 	// sEquipItem = GetGeneratedItem("toporAZ"); 				// Макуауитль		(ТО)
 	// sEquipItem = GetGeneratedItem("topor_viking"); 			// Топор викинга	(ТО)
 	// sEquipItem = GetGeneratedItem("blade28");				// Танат			(ТО)
-	sEquipItem = GetGeneratedItem("blackbeard_sword");	// Меч Тритона		(СО)
+	// sEquipItem = GetGeneratedItem("blackbeard_sword");		// Меч Тритона		(СО)
 	AddItems(mc, sEquipItem, 1);
 
 	AddItems(mc, "cirass5", 1);

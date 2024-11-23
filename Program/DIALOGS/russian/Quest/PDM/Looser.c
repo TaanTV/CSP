@@ -44,7 +44,7 @@ void ProcessDialogEvent()
 			link.l1 = "Хах, как же ты проиграл все деньги, имея при себе такую вещицу?";
 			link.l1.go = "2.1";
 			
-			GiveItem2Character(PChar, "Joker");
+			GiveItem2Character(PChar, "talisman20");
 			Log_info("Вы получили игральную карту Джокер.");
 			PlaySound("Interface\important_item.wav"); 
 		break;

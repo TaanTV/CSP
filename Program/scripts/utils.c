@@ -1129,7 +1129,8 @@ int FindNonEnemyColonyForAdventure(int iNation, string sBeginColony, bool _check
 	{
 		if (colonies[i].nation != "none")
 		{
-			if (_checkPort && CheckAttribute(&Colonies[i], "HasNoFort")) continue;  // без форта не берем
+			if (_checkPort && CheckAttribute(&Colonies[i], "HasNoFort")) continue;  // без форта не берем // ориентир
+			if (colonies[i].id == "Nassau" && CheckAttribute(&Colonies[i], "BSBlackFlag")) continue;
 
 			if (GetNationRelation(sti(Colonies[i].nation), iNation) != RELATION_ENEMY && Colonies[i].id != sBeginColony && colonies[i].id != "Panama")
 			{
@@ -2023,6 +2024,7 @@ int SetCharToPrisoner(ref refEnemyCharacter)
 		ChangeAttributesFromCharacter(rChTo, refEnemyCharacter, false);   // было четкое копирование, но что-то наследовалось от той жижни и в море вел по АИ убегания
 	    rChTo.index = iNextPrisoner;
 	    rChTo.id = "prisoner_" + iNextPrisoner;
+		
 	    rChTo.Dialog.Filename = "Ransack_captain_dialog.c";
 	    rChTo.Dialog.CurrentNode = "First time";
 	    DeleteAttribute(rChTo, "items");
@@ -2030,7 +2032,8 @@ int SetCharToPrisoner(ref refEnemyCharacter)
 		DeleteAttribute(rChTo, "LifeDay"); // постоянный
 		DeleteAttribute(rChTo, "ship");
 		DeleteAttribute(rChTo, "ShipSails.gerald_name");
-
+		DeleteAttribute(rChTo,"VISUAL_CIRASS");
+		DeleteAttribute(rChTo,"HeroModel");
 		DeleteAttribute(rChTo, "AlwaysEnemy");
 		DeleteAttribute(rChTo, "ShipTaskLock");
 		DeleteAttribute(rChTo, "WatchFort");
@@ -2048,7 +2051,8 @@ int SetCharToPrisoner(ref refEnemyCharacter)
 	    LAi_NoRebirthEnable(rChTo);
 
 	    SetCharacterRemovable(rChTo, true);
-		
+
+		rChTo.model = refEnemyCharacter.model;		
 		FaceMaker(rChTo);
 
 	    AddPassenger(refMyCharacter,rChTo,true);

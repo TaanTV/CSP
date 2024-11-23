@@ -338,7 +338,7 @@ void ProcessExitCancel()
 			if (bSeaActive)
 			{
 				realShip = GetRealShip(GetCharacterShipType(xi_refCharacter));
-				SetNewPicture("DECISION_PICTURE", "interfaces\ships\" + realShip.BaseName + ".tga.tx");
+				SetNewPicture("DECISION_PICTURE", "interfaces\ships\" + realShip.BaseName + ".dds");
 				ShowDecisionWindow();
 			}
 			else
@@ -775,7 +775,8 @@ void OnShipScrollChange()
 	else
 	{  // не наш, значит убит или сдался
 		// Warship 09.07.09 Мэри Селест и (20.08.09) генер "Пираты на необитайке"
-		if(xi_refCharacter.id == "BS_Vein" || xi_refCharacter.id == "MaryCelesteCapitan" || (refCharacter.index != PChar.index) || CheckAttribute(refCharacter,"GenQuest.ShipSituation.Explosion"))
+		bool bok = CheckAttribute(PChar, "BSBonsAccept") && xi_refCharacter.id == "BSBons1";
+		if(xi_refCharacter.id == "BS_Vein" || bok || xi_refCharacter.id == "MaryCelesteCapitan" || (refCharacter.index != PChar.index) || CheckAttribute(refCharacter,"GenQuest.ShipSituation.Explosion"))
 		{
 			SetSelectable("CAPTAN_BUTTON", false);
 			SetSelectable("SWAP_BUTTON", false);
@@ -832,11 +833,11 @@ void ShowShipInfo(ref chr, string sAdd)
 	{
 		ref refBaseShip = GetRealShip(iShip);
 		string sShip = refBaseShip.BaseName;
-		SetNewPicture("SHIP_BIG_PICTURE" + sAdd, "interfaces\ships\" + sShip + ".tga.tx");
+		SetNewPicture("SHIP_BIG_PICTURE" + sAdd, "interfaces\ships\" + sShip + ".dds");
 		if (!CheckAttribute(refBaseShip,"QuestShip")) SetNodeUsing("SHIP_BIG_PICTURE_VIDEO"+sAdd,false);
 		else
 		{
-			SetNewPicture("SHIP_BIG_PICTURE" + sAdd, "interfaces\ships\" + sShip + ".tga.tx");
+			SetNewPicture("SHIP_BIG_PICTURE" + sAdd, "interfaces\ships\" + sShip + ".dds");
 
 			string slastvideo;
 			if (sAdd == "") slastvideo = slastvideo1; else slastvideo = slastvideo2;
@@ -884,7 +885,7 @@ void ShowInfoWindow()
 	string sHeader, sText1, sText2, sText3, sPicture;
 	string sGroup, sGroupPicture;
 	int iItem, iCharacter;
-
+	int nLoc;
 	//Boyer fix #20170401-01 Can't load texture -1.tx log errors
 	//sPicture = "-1";
 	sPicture = "";
@@ -904,6 +905,15 @@ void ShowInfoWindow()
 		    refBaseShip = GetRealShip(iShip);
 			sHeader = XI_ConvertString(refBaseShip.BaseName);
 			sText1 = GetConvertStr(refBaseShip.BaseName, "ShipsDescribe.txt");
+			//--> показ каюты по ПКМ на портрете корабля
+			nLoc = FindLocation(refBaseShip.CabinType);
+			if (nLoc >= 0 && CheckAttribute(&Locations[nLoc],"image")) 
+			{
+				sPicture = Locations[nLoc].image;
+				xx = 512;//размер картинки
+				yy = 288;
+			}
+			//<-- показ каюты
 		break;
 
 		case "SHIP_BIG_PICTURE2":
@@ -911,6 +921,15 @@ void ShowInfoWindow()
 		    refBaseShip = GetRealShip(iShip);
 			sHeader = XI_ConvertString(refBaseShip.BaseName);
 			sText1 = GetConvertStr(refBaseShip.BaseName, "ShipsDescribe.txt");
+			//--> показ каюты по ПКМ на портрете корабля
+			nLoc = FindLocation(refBaseShip.CabinType);
+			if (nLoc >= 0 && CheckAttribute(&Locations[nLoc],"image")) 
+			{
+				sPicture = Locations[nLoc].image;
+				xx = 512;//размер картинки
+				yy = 288;
+			}
+			//<-- показ каюты
 		break;
 
 		case "MAIN_CHARACTER_PICTURE":
@@ -1273,7 +1292,7 @@ void FillGoodsTable()
 		GameInterface.TABLE_LIST.(row).td3.icon.height = 20;
 		GameInterface.TABLE_LIST.(row).td3.textoffset = "27,0";
 		GameInterface.TABLE_LIST.(row).td3.str = XI_ConvertString(sGood);
-		GameInterface.TABLE_LIST.(row).td3.scale = 0.85;
+		GameInterface.TABLE_LIST.(row).td3.scale = 0.75;
 		n++;
 	}
 	Table_UpdateWindow("TABLE_LIST");
@@ -2528,6 +2547,7 @@ void SetShipToDrift()
 		xi_refCharacter = sld;
 		SeaAI_SetCaptainFree(xi_refCharacter, refEnemyCharacter);
 		refEnemyCharacter.location = "none";
+		if(CheckAttribute(PChar, "GenQuest.PGG_Quest.Island") && CheckAttribute(AISea,"Island") && AISea.Island == PChar.GenQuest.PGG_Quest.Island)	Group_AddCharacter("PGGQuest", xi_refCharacter.id);
 	}
 
 	if (bSeaActive)
@@ -2590,7 +2610,7 @@ void SetShipInfoPic(ref chr, string sAdd)
 	{
 		ref refBaseShip = GetRealShip(iShip);
 		string sShip = refBaseShip.BaseName;
-		SetNewPicture("MAIN_SHIP_PICTURE" + sAdd, "interfaces\ships\" + sShip + ".tga");
+		SetNewPicture("MAIN_SHIP_PICTURE" + sAdd, "interfaces\ships\" + sShip + ".dds");
 	}
 }
 

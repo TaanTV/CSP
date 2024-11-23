@@ -8,7 +8,7 @@ int money_won;	// Общий выигрыш в рамках одной сесс�
 string money_s;
 string cards_pack = "CARDS";    // файл колоды для монеток
 string dice_pack = "DICE";    // файл колоды
-string desk = "card_dice.tga"; // файл сукна
+string desk = "card_dice.dds"; // файл сукна
 //Fix per Dmitry
 bool bDice1Open = true;
 bool bDice2Open = true;
@@ -64,14 +64,14 @@ void InitInterface(string iniName)
 	{
 		money_s = "silver";
 		iExpRate = 1;
-		desk = "interfaces\cardAndDice\card_desk.tga";
+		desk = "interfaces\cardAndDice\card_desk.dds";
         dice_pack = "DICE";
 	}
 	if (iRate >= 100)
 	{    
 		money_s = "silver";
 		iExpRate = 2;
-		desk = "interfaces\cardAndDice\card_desk.tga";
+		desk = "interfaces\cardAndDice\card_desk.dds";
         dice_pack = "DICE";
 		cards_pack = "CARDS2";
 	}
@@ -79,7 +79,7 @@ void InitInterface(string iniName)
 	{
 		money_s = "silver";
 		iExpRate = 3;
-		desk = "interfaces\cardAndDice\card_desk_01.tga";
+		desk = "interfaces\cardAndDice\card_desk_01.dds";
         dice_pack = "DICE1";
 		cards_pack = "CARDS2";
 	}
@@ -87,7 +87,7 @@ void InitInterface(string iniName)
 	{
 		money_s = "silver";
 		iExpRate = 4;
-		desk = "interfaces\cardAndDice\card_desk_01.tga";
+		desk = "interfaces\cardAndDice\card_desk_01.dds";
         dice_pack = "DICE1";
 		cards_pack = "CARDS1";
 	}
@@ -95,7 +95,7 @@ void InitInterface(string iniName)
 	{    
 		money_s = "gold";
 		iExpRate = 5;
-		desk = "interfaces\cardAndDice\card_desk_02.tga";
+		desk = "interfaces\cardAndDice\card_desk_02.dds";
         dice_pack = "DICE2";
 		cards_pack = "CARDS1";
 	}
@@ -103,7 +103,7 @@ void InitInterface(string iniName)
 	{    
 		money_s = "silver";
 		iExpRate = 6;
-		desk = "interfaces\cardAndDice\card_desk_02.tga";
+		desk = "interfaces\cardAndDice\card_desk_02.dds";
         dice_pack = "DICE2";
 		cards_pack = "CARDS";
 	}
@@ -111,7 +111,7 @@ void InitInterface(string iniName)
 	{    
 		money_s = "silver";
 		iExpRate = 8;
-		desk = "interfaces\cardAndDice\card_desk_03.tga";
+		desk = "interfaces\cardAndDice\card_desk_03.dds";
         dice_pack = "DICE3";
 		cards_pack = "CARDS";
 	}
@@ -119,7 +119,7 @@ void InitInterface(string iniName)
 	{    
 		money_s = "gold";
 		iExpRate = 10;
-		desk = "interfaces\cardAndDice\card_desk_03.tga";
+		desk = "interfaces\cardAndDice\card_desk_03.dds";
         dice_pack = "DICE3";
 	}
 	/* Обновляем ситец на столе */
@@ -341,7 +341,7 @@ void MoveImg()
 
             if (move_i == 20) // все - собрать кубики в линеку
 			{
-            	PostEvent("My_eventMoveImg", 2000);
+            	PostEvent("My_eventMoveImg", 1000);
             }
 			else
 			{
@@ -468,7 +468,7 @@ void StartGame()
 	{
         PlaySound("interface\dice_mix.wav");
 		SetFormatedText("INFO_TEXT",GetConvertStrWithReplace("Variable_boal_dice_8", "Interface.txt", "#space#", " ")+NPCharSexPhrase(npchar, GetConvertStrWithReplace("Variable_boal_dice_9", "Interface.txt", "#space#", " "), GetConvertStrWithReplace("Variable_boal_dice_10", "Interface.txt", "#space#", " "))+".");
-		PostEvent("My_eventMoveImg", 300);
+		PostEvent("My_eventMoveImg", 150);
     }
 	else
 	{
@@ -759,7 +759,7 @@ bool CheckGame()
 			SetFormatedText("INFO_TEXT",GetConvertStrWithReplace("Variable_boal_dice_21", "Interface.txt", "#space#", " "));
 			move_i = 0;
 	        PlaySound("interface\dice_mix.wav");
-	        PostEvent("My_eventMoveImg", 300);
+	        PostEvent("My_eventMoveImg", 150);
         }
         else
         {
@@ -767,7 +767,7 @@ bool CheckGame()
 			{
 				// решаем ходить ли вообще
 	            SetFormatedText("INFO_TEXT",GetConvertStrWithReplace("Variable_boal_dice_22", "Interface.txt", "#space#", " "));
-	            PostEvent("My_eCompTurn", 800);
+	            PostEvent("My_eCompTurn", 400);
             }
         }
 	}
@@ -779,11 +779,11 @@ bool CheckGame()
 		bLockClick = true;
 		if (EndTurnGame())
 		{
-			PostEvent("My_eNewNextGame", 2000);
+			PostEvent("My_eNewNextGame", 1000);
 		}
 		else
 		{
-			PostEvent("My_eContinueGame", 3500);
+			PostEvent("My_eContinueGame", 1500);
 		}
 	}
 	BetaInfo();
@@ -1291,7 +1291,7 @@ void CompTurn()
     		ClickCompDice(1);
     		move_i = 0;
             PlaySound("interface\dice_mix.wav");
-            PostEvent("My_eventMoveImg", 300);
+            PostEvent("My_eventMoveImg", 150);
             return;
     	}
 
@@ -1334,7 +1334,7 @@ void CompTurn()
     		{
                 move_i = 0;
     	        PlaySound("interface\dice_mix.wav");
-    	        PostEvent("My_eventMoveImg", 300);
+    	        PostEvent("My_eventMoveImg", 150);
     	        return;
     		}
         }
@@ -1372,7 +1372,7 @@ void CompTurn()
         		move_i = 0;
         		bSetRandDice = false;
                 PlaySound("interface\dice_mix.wav");
-                PostEvent("My_eventMoveImg", 300);
+                PostEvent("My_eventMoveImg", 150);
                 return;
             }
         }
@@ -1380,7 +1380,7 @@ void CompTurn()
     }
 	// решаем не перебрасывать
 	SetFormatedText("INFO_TEXT",GetConvertStrWithReplace("Variable_boal_dice_53", "Interface.txt", "#space#", " "));
-	PostEvent("My_eCheckGame", 800);
+	PostEvent("My_eCheckGame", 400);
 }
 
 bool ClickCompDice(int d)

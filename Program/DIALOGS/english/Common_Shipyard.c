@@ -874,7 +874,7 @@ void ProcessDialogEvent()
 			Link.l1 = "Thank you.";
 			Link.l1.go = "exit";
 
-			SetShipSailsFromFile(PChar, "ships/parus_common_torn.tga"); // Паруса ЛГ
+			SetShipSailsFromFile(PChar, "ships/parus_common_torn.dds"); // Паруса ЛГ
 
 			WaitDate("", 0, 0, 0, 0, 10);
 		break;
@@ -1372,7 +1372,7 @@ bool CheckForFlyingDuchmanSails(ref _char)
 
 	realShip = GetRealShip(shipType);
 
-	if(CheckAttribute(realShip, "EmblemedSails.normalTex") && realShip.EmblemedSails.normalTex == "ships/parus_common_torn.tga")
+	if(CheckAttribute(realShip, "EmblemedSails.normalTex") && realShip.EmblemedSails.normalTex == "ships/parus_common_torn.dds")
 	{
 		return true;
 	}
@@ -1425,17 +1425,17 @@ string GiveOrderMatherial(ref NPChar)
 		if (amount > 0) sLeft += NewStr() + XI_ConvertString(sGood1) + " - " + amount + "pcs., ";
 
 		sItem2 = g_ShipBermudeTuningItems[k];
-		amount = GetCharacterItem(pchar, sItem2) - sti(NPChar.questtemp.(sItem2));
+		amount = GetCharacterItemWithCabin(pchar, sItem2, true) - sti(NPChar.questtemp.(sItem2));
 		if (amount < 0) amount = amount + sti(NPChar.questtemp.(sItem2)); else amount = sti(NPChar.questtemp.(sItem2));
-		TakeNItems(pchar, sItem2, -amount);
+		TakeNItemsWithCabin(pchar, sItem2, -amount, false);
 		NPChar.questtemp.(sItem2) = sti(NPChar.questtemp.(sItem2)) - amount;
 		amount = sti(NPChar.questtemp.(sItem2));
 		if (amount > 0) sLeft += NewStr() + LanguageConvertString(idLngFile, Items[FindItem(sItem2)].name) + " - " + amount + "pcs., ";
 	}
 		sItem2 = "chest";
-		amount = GetCharacterItem(pchar, sItem2) - sti(NPChar.questtemp.(sItem2));
+		amount = GetCharacterItemWithCabin(pchar, sItem2, true) - sti(NPChar.questtemp.(sItem2));
 		if (amount < 0) amount = amount + sti(NPChar.questtemp.(sItem2)); else amount = sti(NPChar.questtemp.(sItem2));
-		TakeNItems(pchar, sItem2, -amount);
+		TakeNItemsWithCabin(pchar, sItem2, -amount, false);
 		NPChar.questtemp.(sItem2) = sti(NPChar.questtemp.(sItem2)) - amount;
 		amount = sti(NPChar.questtemp.(sItem2));
 		if (amount > 0) sLeft += NewStr() + "Chests of coins-" + amount + "pcs.";

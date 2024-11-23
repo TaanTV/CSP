@@ -118,7 +118,7 @@ void ProcessDialogEvent()
             }
 
 			//aw013 --> Найм на постоянку
-			bool bOk = !CheckAttribute(PChar, "questTemp.MunityOfficerIDX") ||  sti(PChar.questTemp.MunityOfficerIDX) != GetCharacterIndex(NPChar.id);
+			bool bOk = !CheckAttribute(PChar, "questTemp.MunityOfficerID") || PChar.questTemp.MunityOfficerID != NPChar.id;
 			if (!bHalfImmortalPGG)
 			{
 				if (!CheckAttribute(NPChar, "OfficerWantToGo.DontGo"))
@@ -720,6 +720,8 @@ void ProcessDialogEvent()
 			Diag.CurrentNode = Diag.TempNode;
 			NPChar.quest.meeting = true;
 			DialogExit();
+			npchar.SystemInfo.ChangePIRATES = true; //пояснение касательно респека. нужно ставить в функцию ниже реф на офицера
+			LaunchCharacter(npchar); //в некоторых случаях он не совпадает с персонажем, с которым идёт диалог, так что нужно внимание
 		break;
 
 		case "exit_fire":
@@ -879,7 +881,7 @@ void ProcessDialogEvent()
 		break;
 
 	case "WantToGo_Stay_2":
-		dialog.text = LinkRandPhrase("Ну, это меняет дело. "+sti(NPChar.rank)*500+" золотых на руки и я остаюсь.", "Ну, пожалуй за "+sti(NPChar.rank)*500+" золотых я бы остался.", "Хм, раз пошёл такой разговор, то за "+sti(NPChar.rank)*500+" золотых можно и послужить ещё.");
+		dialog.text = LinkRandPhrase("Ну, это меняет дело. "+sti(NPChar.rank)*500+" золотых на руки и я остаюсь.", "Ну, пожалуй за "+sti(NPChar.rank)*500+" золотых я бы остал" + NPCharSexPhrase(NPChar,"ся","ась") + ".", "Хм, раз пошёл такой разговор, то за "+sti(NPChar.rank)*500+" золотых можно и послужить ещё.");
 		if (sti(Pchar.money) >= sti(NPChar.rank)*500)
 		{
 			Link.l1 = RandPhraseSimple("Вот и договорились.", "Хорошо. Хотя мог"+ NPCharSexPhrase(NPChar,"","ла") +" бы быть поскромнее...", "Экие у тебя аппетиты! Ну, раз обещал"+ GetSexPhrase("","а") +" - держи.");
@@ -1026,11 +1028,11 @@ void ProcessDialogEvent()
 		break;
 		///////////////////////////////////////////////////////////////////////////////////
 		case "WantToGo_Munity":	//zagolski. отыгрыш бегство офицера
-			Diag.TempNode = "Hired";
-			if (sti(Pchar.questTemp.MunityOfficerIDX) != GetCharacterIndex(Npchar.id))
+			Diag.TempNode = "Hired";		
+			if (!CheckAttribute(PChar, "questTemp.MunityOfficerID") || PChar.questTemp.MunityOfficerID != NPChar.id)
 			{
-				Pchar.questTemp.MunityOfficerIDX = GetCharacterIndex(Npchar.id);
-				Pchar.questTemp.MunityOfficerIDX.begin = "1";
+				Pchar.questTemp.MunityOfficerID = Npchar.id;
+				Pchar.questTemp.MunityOfficerID.begin = "1";
 				SetFunctionTimerCondition("mOfficer_fc", 0, 0, 1, false);
 			}
 			Diag.CurrentNode = Diag.TempNode;
@@ -2443,7 +2445,7 @@ void ProcessDialogEvent()
 
 		case "ColonyBuilding_AutoStore_1":
 			PChar.ColonyBuilding.AutoPurchaseFirst.Disable = true;
-			dialog.Text = "При действующем магазине вы можете обеспечить автоматическую закупку товаров первой необходимости, чтобы живущие в колонии горожане и охраняющий колонию гарнизон могли своевременно получать медикаменты и провиант \n Обратитесь к нашему торговцу, если вас это заинтересовало.";
+			dialog.Text = "При действующем магазине вы можете обеспечить автоматическую закупку товаров первой необходимости, чтобы живущие в колонии горожане и охраняющий колонию гарнизон могли своевременно получать медикаменты и провиант \nОбратитесь к нашему торговцу, если вас это заинтересовало.";
 			Link.l1 = "Интересно. Давай поговорим о другом.";
 			Link.l1.go = "ColonyBuilding_Hovernor_3";
 		break;

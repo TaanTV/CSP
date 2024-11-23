@@ -811,6 +811,7 @@ void ATpr_SvobodaIgry(string qName)
 	SetLocationCapturedState("LaVega_town", false);
 	SetCaptureTownByNation("LaVega", PIRATE);
 	locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators";
+	locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day";
 	locations[FindLocation("LaVega_town")].models.night.charactersPatch = "LaVega_patch_night";
 	locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1";
 	locations[FindLocation("LaVega_town")].type = "town";

@@ -141,7 +141,7 @@ void OfficersReactionResult()
 
 	if (LAi_IsCapturedLocation) return;
 	if (chrDisableReloadToLocation) return; // идёт некий другой квест с запретом выхода
-	if (CheckAttribute(Pchar,"questTemp.MunityOfficerIDX") && Pchar.questTemp.MunityOfficerIDX.begin == "1") return;
+	if (CheckAttribute(Pchar,"questTemp.MunityOfficerID") && Pchar.questTemp.MunityOfficerID.begin == "1") return;
 
 	for (i = 0; i<GetPassengersQuantity(pchar); i++)
 	{   // любой пассажир у кого есть пристрастие может свалить если наши дела ему не по душе

@@ -163,6 +163,7 @@ Fast_Port {Fast Travel: Port (modifier)}
 ZoomIn			{Zoom in}
 ZoomOut			{Zoom out}
 GoCabin			{Go to cabin}
+DropMine		{Deploy mine}
 
 setEquipment1   {Set first kit}
 setEquipment2   {Set second kit}

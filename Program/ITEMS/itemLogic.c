@@ -641,6 +641,7 @@ void OpenBoxProcedure()
 	}
 	else
 	{
+		chr.boxx = atrName;
 		LaunchItemsBox(&ar);
 	}
 }

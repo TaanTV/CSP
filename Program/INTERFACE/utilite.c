@@ -511,40 +511,20 @@ void FillFaceList(string strAccess, ref chref, int fillCode)
 
 void FillShipList(string strAccess, ref chref)
 {
-	/*
-	aref ar;
-	makearef(ar, GameInterface.(strAccess));
-
-	int n, cn, q;
-	int iShipType;
 	string sShip;
+	int n, cn;
+	int iShipType;
 
 	for(n=0; n<COMPANION_MAX; n++)
 	{
-		cn = GetCompanionIndex(chref, n);
+		cn = GetCompanionIndex(Pchar, n);
 		if(cn != -1)
 		{
-			iShipType = GetCharacterShipType(/*&*//*characters[cn]);
+			iShipType = GetCharacterShipType(characters[cn]);
 			iShipType = sti(RealShips[iShipType].basetype);
-			sShip = ShipsTypes[iShipType].name;
+			if (CheckAttribute(ShipsTypes[n], "name")) sShip = ShipsTypes[iShipType].name;	else sShip = "";
 			AddFaceGroup(strAccess,"SHIPS_"+sShip);
 		}
-	}
-	*/
-
-	aref ar;
-	makearef(ar, GameInterface.(strAccess));
-
-	int n;
-	string sShip;
-
-	for(n= 0; n< SHIP_TYPES_QUANTITY; n++)
-	{
-		if(CheckAttribute(ShipsTypes[n], "name"))
-			sShip = ShipsTypes[n].name;
-		else
-			sShip = "";
-		AddFaceGroup(strAccess,"SHIPS_"+sShip);
 	}
 }
 
@@ -688,22 +668,6 @@ void CloseTooltip()
 		InterfaceStates.tooltip.savestate = -1;
 	}
 }
-
-/* string GetMoralePicture(float fMoraleValue)
-{
-	if( fMoraleValue >= 75.0 ) {return "interfaces\flags\flag_1_64.tga.tx";}
-	if( fMoraleValue >= 50.0 ) {return "interfaces\flags\flag_2_64.tga.tx";}
-	if( fMoraleValue >= 25.0 ) {return "interfaces\flags\flag_3_64.tga.tx";}
-	return "interfaces\flags\flag_4_64.tga.tx";
-}
-
-string GetExperiencePicture(float fExpValue)
-{
-	if( fExpValue >= 75.0 ) {return "interfaces\stars\Yellow_star1.tga.tx";}
-	if( fExpValue >= 50.0 ) {return "interfaces\stars\Yellow_star2.tga.tx";}
-	if( fExpValue >= 25.0 ) {return "interfaces\stars\Yellow_star3.tga.tx";}
-	return "interfaces\stars\Yellow_star4.tga.tx";
-} */
 
 string GetMoraleGroupPicture(float fMoraleValue)
 {

@@ -142,9 +142,8 @@ void CreateSeaActionsEnvironment()
     //#20180714-01
     float fHtRatio = stf(Render.screen_y) / screenscaling;
 	ILogAndActions.type = "sea";
-	if(InterfaceStates.AltIntIcons) ILogAndActions.ActiveActions.TextureName = "battle_interface\List_icons_Konshud.tga";
-	else ILogAndActions.ActiveActions.TextureName = "battle_interface\list_icons.tga";
-	//ILogAndActions.ActiveActions.TextureName = "battle_interface\list_icons.tga";
+	if(InterfaceStates.AltIntIcons) ILogAndActions.ActiveActions.TextureName = "battle_interface\List_icons_Konshud.dds";
+	else ILogAndActions.ActiveActions.TextureName = "battle_interface\list_icons.dds";
 	ILogAndActions.ActiveActions.horzQ = 16;
 	ILogAndActions.ActiveActions.vertQ = 8;
 	ILogAndActions.ActiveActions.width = RecalculateHIcon(makeint(48 * fHtRatio));
@@ -183,8 +182,8 @@ void CreateLandActionsEnvironment()
     float fHtRatio = stf(Render.screen_y) / screenscaling;
 	ILogAndActions.type = "land";
 
-	if(InterfaceStates.AltIntIcons) ILogAndActions.ActiveActions.TextureName = "battle_interface\LandCommands_Konshud.tga";
-	else  ILogAndActions.ActiveActions.TextureName = "battle_interface\LandCommands.tga";
+	if(InterfaceStates.AltIntIcons) ILogAndActions.ActiveActions.TextureName = "battle_interface\LandCommands_Konshud.dds";
+	else  ILogAndActions.ActiveActions.TextureName = "battle_interface\LandCommands.dds";
 	ILogAndActions.ActiveActions.horzQ = 16;
 	ILogAndActions.ActiveActions.vertQ = 4;
 	ILogAndActions.ActiveActions.width = RecalculateHIcon(makeint(48 * fHtRatio));
@@ -234,8 +233,8 @@ void CreateWorldMapActionsEnvironment()
     float fHtRatio = stf(Render.screen_y) / screenscaling;
 	ILogAndActions.type = "map";
 
-	if(InterfaceStates.AltIntIcons) ILogAndActions.ActiveActions.TextureName = "battle_interface\WorldMapCommands_Konshud.tga";
-	else ILogAndActions.ActiveActions.TextureName = "battle_interface\WorldMapCommands.tga";
+	if(InterfaceStates.AltIntIcons) ILogAndActions.ActiveActions.TextureName = "battle_interface\WorldMapCommands_Konshud.dds";
+	else ILogAndActions.ActiveActions.TextureName = "battle_interface\WorldMapCommands.dds";
 	ILogAndActions.ActiveActions.horzQ = 8;
 	ILogAndActions.ActiveActions.vertQ = 2;
 	ILogAndActions.ActiveActions.width = RecalculateHIcon(makeint(48 * fHtRatio));

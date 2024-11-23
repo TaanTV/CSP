@@ -659,23 +659,23 @@ Variable_character_all_26
 Variable_character_all_27
 {#space#ед.}
 Variable_character_all_28
-{#space#сек.}
+{с.}
 Variable_character_all_29
-{#space#сек.}
+{с.}
 Variable_character_all_30
-{#space#сек.}
+{с.}
 Variable_character_all_31
-{#space#сек.}
+{с.}
 Variable_character_all_32
-{#space#сек.}
+{с.}
 Variable_character_all_33
-{#space#сек.}
+{с.}
 Variable_character_all_34
-{#space#сек.}
+{с.}
 Variable_character_all_35
-{#space#сек.}
+{с.}
 Variable_character_all_36
-{#space#сек.}
+{ТИПЫ УДАРОВ}
 Variable_character_all_37
 {порог опыта}
 Variable_character_all_37.1
@@ -2543,6 +2543,8 @@ Variable_itemstrade_48
 {, Идолов#space#}
 Variable_itemstrade_49
 {, Хлама#space#}
+Variable_itemstrade_50
+{взял из сундуков в каюте#space#}
 Variable_LeaveBattle_1
 {Наш корабль#space#}
 Variable_LeaveBattle_2
@@ -2724,13 +2726,13 @@ Variable_NationLegend_4
 Variable_NationRelation_1
 {Флаг на корабле}
 Variable_option_screen_1
-{Иконки наций}
+{Флаг нации на глобальной карте}
 Variable_option_screen_2
-{Визуал кирас}
+{Отображение надетых кирас на персонажах}
 Variable_option_screen_3
-{Шрифт журнала}
+{Выбор шрифта для судового журнала}
 Variable_option_screen_4
-{Партиклы бомб}
+{Партиклы снарядов от выстрела пушек}
 Variable_option_screen_5
 {Звуки выстрелов}
 Variable_Plantation_1
@@ -4092,7 +4094,7 @@ Variable_utilite_28
 Variable_dmg_x
 {Урон: x}
 Variable_overload_crew
-{Размер команды может быть больше максимума, но вызывает перегрузку жилых помещений на корабле, что вызывает ежедневную потерю морали команды. Всреднем, до 25% от оптимальной команды может быть нанято сврех неё.}
+{Численность команды может превышать оптимальную в среднем на 25%, однако это вызывает перегруз жилых помещений корабля, что приводит к ежедневному падению морали команды.}
 Variable_check_cannons
 {Двойной клик или Enter по этому полю позволяет посмотреть снаряжение пушек по бортам.}
 Variable_quick_sell

@@ -584,7 +584,7 @@ void InitShips()
 	refShip.Flags.Mast3.Flag1 = FLAG_ENSIGN;
 	refShip.Flags.Mast4.Flag1 = FLAG_ENSIGN;
 
-	refship.WaterLine							= -0.35;
+	refship.WaterLine							= 0.0;
 	refship.SpeedDependWeight			= 0.1;
 	refship.SubSeaDependWeight			= 0.6;
 	refship.TurnDependWeight			= 0.1;
@@ -656,7 +656,7 @@ void InitShips()
 	refship.Rocking.y = 0.45;
 	refship.Rocking.az = 0.02;
 
-	refship.WaterLine							= 0.0;
+	refship.WaterLine							= 0.5;
 	refship.SpeedDependWeight			= 0.15;
 	refship.SubSeaDependWeight			= 0.4;
 	refship.TurnDependWeight			= 0.15;
@@ -691,7 +691,7 @@ void InitShips()
 	refship.nation.pirate	= true;
 	refship.nation.spain	= true;
 
-	refShip.hullNums = 5; // LEO
+	refShip.hullNums = 4; // LEO
 
 	///////////////////////////////////////////////////////////////////////////
 	/// Speedy			Ср. Шлюп
@@ -883,7 +883,7 @@ void InitShips()
 	refship.Rocking.y = 0.45;
 	refship.Rocking.az = 0.02;
 
-	refship.WaterLine							= -0.4;
+	refship.WaterLine							= 0.5;
 	refship.SpeedDependWeight			= 0.15;
 	refship.SubSeaDependWeight			= 0.6;
 	refship.TurnDependWeight			= 0.15;
@@ -918,7 +918,7 @@ void InitShips()
 	refship.nation.pirate	= true;
 	refship.nation.spain	= true;
 
-	refShip.hullNums = 6; // LEO
+	refShip.hullNums = 5; // LEO
 
 	///////////////////////////////////////////////////////////////////////////
 	//// Sloop			Шлюп
@@ -1333,7 +1333,7 @@ void InitShips()
 	refship.Rocking.y = 0.4;
 	refship.Rocking.az = 0.025;
 
-	refship.WaterLine							= -0.3;
+	refship.WaterLine							= 0.5;
 	refship.SpeedDependWeight			= 0.2;
 	refship.SubSeaDependWeight			= 0.8;
 	refship.TurnDependWeight			= 0.2;
@@ -1407,7 +1407,7 @@ void InitShips()
 	refship.Rocking.y = 0.4;
 	refship.Rocking.az = 0.025;
 
-	refship.WaterLine							= 0.0;
+	refship.WaterLine							= 1.0;
 	refship.SpeedDependWeight			= 0.1;
 	refship.SubSeaDependWeight			= 0.0;
 	refship.TurnDependWeight			= 0.2;
@@ -1627,7 +1627,7 @@ void InitShips()
 	refship.Rocking.y = 0.4;
 	refship.Rocking.az = 0.025;
 
-	refship.WaterLine	= 0;
+	refship.WaterLine	= -0.5;
 	refship.SpeedDependWeight		= 0.15;
 	refship.SubSeaDependWeight		= 0.6;
 	refship.TurnDependWeight		= 0.15;
@@ -1922,7 +1922,7 @@ void InitShips()
     refship.Rocking.y = 0.4;
 	refship.Rocking.az = 0.025;
 
-	refShip.WaterLine = -0.2;
+	refShip.WaterLine = 0.0;
 	refShip.SpeedDependWeight		= 0.2;
 	refShip.SubSeaDependWeight		= 0.2;
 	refship.TurnDependWeight		= 0.2;
@@ -1962,6 +1962,8 @@ void InitShips()
 	refship.nation.holland	= true;
 	refship.nation.pirate	= true;
 	refship.nation.spain	= true;
+
+	refShip.hullNums = 5;
 
 	///////////////////////////////////////////////////////////////////////////
 	///	Polacre			 Полакр
@@ -2388,7 +2390,7 @@ void InitShips()
 	refship.Rocking.y = 0.5;
 	refship.Rocking.az = 0.04;
 
-	refship.WaterLine							= -0.5;
+	refship.WaterLine							= 0.5;
 	refship.SpeedDependWeight			= 0.2;
 	refship.SubSeaDependWeight			= 0.6;
 	refship.TurnDependWeight			= 0.2;
@@ -2602,10 +2604,10 @@ void InitShips()
 	refShip.Capacity        			= 3000;
 	refShip.MaxCannonDiff				= 2;
 	refShip.CannonsQuantity				= 18;
-	refShip.rcannon 							= 9;
-	refShip.lcannon 							= 9;
-	refShip.fcannon 							= 0;
-	refShip.bcannon 							= 0;
+	refShip.rcannon 							= 7;
+	refShip.lcannon 							= 7;
+	refShip.fcannon 							= 2;
+	refShip.bcannon 							= 2;
 	refShip.MaxCrew         				= 240;
 	refShip.MinCrew         				= 48;
 	refShip.SpeedRate				= 14.5;
@@ -2624,7 +2626,7 @@ void InitShips()
 	refship.Rocking.y = 0.5;
 	refship.Rocking.az = 0.035;
 
-	refship.WaterLine							= -0.5;
+	refship.WaterLine							= 1.0;
 	refship.SpeedDependWeight			= 0.15;
 	refship.SubSeaDependWeight			= 0.8;
 	refship.TurnDependWeight			= 0.2;
@@ -2664,6 +2666,8 @@ void InitShips()
 	refship.nation.holland	= true;
 	refship.nation.pirate	= false;
 	refship.nation.spain	= true;
+
+	refShip.hullNums = 4;
 
 	///////////////////////////////////////////////////////////////////////////
 	/// Ontario			Английский Бриг
@@ -3160,7 +3164,7 @@ void InitShips()
 	refship.Rocking.y = 0.5;
 	refship.Rocking.az = 0.04;
 
-	refship.WaterLine							= -0.25;
+	refship.WaterLine							= 0.5;
 	refship.SpeedDependWeight			= 0.1;
 	refship.SubSeaDependWeight			= 0.7;
 	refship.TurnDependWeight			= 0.2;
@@ -4614,8 +4618,8 @@ void InitShips()
 	refShip.CannonsQuantity						= 32;
 	refShip.rcannon 							= 13;
 	refShip.lcannon 							= 13;
-	refShip.fcannon 							= 2;
-	refShip.bcannon 							= 4;
+	refShip.fcannon 							= 4;
+	refShip.bcannon 							= 2;
 	refShip.MaxCrew         				= 250;
 	refShip.MinCrew         				= 40;
 	refShip.SpeedRate				= 15.1;
@@ -4634,7 +4638,7 @@ void InitShips()
 	refship.Rocking.y = 0.8;
 	refship.Rocking.az = 0.025;
 
-	refship.WaterLine = 0.1;
+	refship.WaterLine = -1.0;
 	refship.SpeedDependWeight = 0.2;
 	refship.SubSeaDependWeight = 0.6;
 	refship.TurnDependWeight = 0.2;
@@ -4673,6 +4677,8 @@ void InitShips()
 	refship.nation.holland	= false;
 	refship.nation.pirate	= false;
 	refship.nation.spain	= true;
+
+	refShip.hullNums = 7;
 
 	 ///////////////////////////////////////////////////////////////////////////
     /// RaaFrigate				Голландский Корвет
@@ -8329,7 +8335,7 @@ void InitShips()
 	refship.DeckType           			= "Lineship";
 
 	refShip.Height.Bombs.Y				= 4.0;		refShip.Height.Bombs.DY		= 3.0;
-	refShip.Height.Grapes.Y				= 5.0;		refShip.Height.Grapes.DY	= 1.5;
+	refShip.Height.Grapes.Y				= 4.5;		refShip.Height.Grapes.DY	= 1.5;
 	refShip.Height.Knippels.Y			= 28.0;		refShip.Height.Knippels.DY	= 31.0;
 	refShip.Height.Balls.Y				= 4.0;		refShip.Height.Balls.DY		= 3.0;
 
@@ -8411,7 +8417,7 @@ void InitShips()
 	refship.DeckType           			= "Lineship";
 
 	refShip.Height.Bombs.Y				= 4.0;		refShip.Height.Bombs.DY		= 3.0;
-	refShip.Height.Grapes.Y				= 5.0;		refShip.Height.Grapes.DY	= 1.5;
+	refShip.Height.Grapes.Y				= 4.5;		refShip.Height.Grapes.DY	= 1.5;
 	refShip.Height.Knippels.Y			= 27.0;		refShip.Height.Knippels.DY	= 27.0;
 	refShip.Height.Balls.Y				= 4.0;		refShip.Height.Balls.DY		= 3.0;
 
@@ -8493,7 +8499,7 @@ void InitShips()
 	refship.DeckType           			= "Lineship";
 
 	refShip.Height.Bombs.Y				= 4.0;		refShip.Height.Bombs.DY		= 3.0;
-	refShip.Height.Grapes.Y				= 5.0;		refShip.Height.Grapes.DY	= 1.5;
+	refShip.Height.Grapes.Y				= 4.5;		refShip.Height.Grapes.DY	= 1.5;
 	refShip.Height.Knippels.Y			= 27.0;		refShip.Height.Knippels.DY	= 27.0;
 	refShip.Height.Balls.Y				= 4.0;		refShip.Height.Balls.DY		= 3.0;
 
@@ -8581,7 +8587,7 @@ void InitShips()
 	refShip.Flags.Mast4.Flag1 = FLAG_ENSIGN;
 
 	refShip.Height.Bombs.Y				= 4.0;		refShip.Height.Bombs.DY		= 3.0;
-	refShip.Height.Grapes.Y				= 5.0;		refShip.Height.Grapes.DY	= 1.5;
+	refShip.Height.Grapes.Y				= 4.5;		refShip.Height.Grapes.DY	= 1.5;
 	refShip.Height.Knippels.Y			= 27.0;		refShip.Height.Knippels.DY	= 27.0;
 	refShip.Height.Balls.Y				= 4.0;		refShip.Height.Balls.DY		= 3.0;
 
@@ -8987,7 +8993,7 @@ void InitShips()
 	refship.DeckType           			= "Lineship";
 
 	refShip.Height.Bombs.Y				= 3.5;		refShip.Height.Bombs.DY		= 4.0;
-	refShip.Height.Grapes.Y				= 4.0;		refShip.Height.Grapes.DY	= 3.5;
+	refShip.Height.Grapes.Y				= 4.0;		refShip.Height.Grapes.DY	= 3.0;
 	refShip.Height.Knippels.Y			= 26.0;		refShip.Height.Knippels.DY	= 27.0;
 	refShip.Height.Balls.Y				= 3.5;		refShip.Height.Balls.DY		= 4.0;
 	
@@ -9071,7 +9077,7 @@ void InitShips()
 	refship.DeckType           			= "Lineship";
 
 	refShip.Height.Bombs.Y				= 3.5;		refShip.Height.Bombs.DY		= 3.0;
-	refShip.Height.Grapes.Y				= 4.0;		refShip.Height.Grapes.DY	= 2.5;
+	refShip.Height.Grapes.Y				= 4.0;		refShip.Height.Grapes.DY	= 2.0;
 	refShip.Height.Knippels.Y			= 28.0;		refShip.Height.Knippels.DY	= 24.0;
 	refShip.Height.Balls.Y				= 3.5;		refShip.Height.Balls.DY		= 3.0;
 	
@@ -9321,7 +9327,7 @@ void InitShips()
 	refship.InertiaAccelerationZ	= 1.5;	refship.InertiaBrakingZ		= 1.5;
 
 	refShip.Height.Bombs.Y				= 4.0;		refShip.Height.Bombs.DY		= 3.3;
-	refShip.Height.Grapes.Y				= 4.5;		refShip.Height.Grapes.DY	= 3.0;
+	refShip.Height.Grapes.Y				= 4.5;		refShip.Height.Grapes.DY	= 2.0;
 	refShip.Height.Knippels.Y			= 27.8;		refShip.Height.Knippels.DY	= 25.6;
 	refShip.Height.Balls.Y				= 4.0;		refShip.Height.Balls.DY		= 3.3;
 
@@ -9393,10 +9399,10 @@ void InitShips()
 	refship.CabinType          			= "Cabin_Huge"; // boal 28.03.05
 	refship.DeckType           			= "Lineship";
 
-	refShip.Height.Bombs.Y				= 5.6;		refShip.Height.Bombs.DY		= 3.3;
-	refShip.Height.Grapes.Y				= 6.2;		refShip.Height.Grapes.DY	= 3.2;
+	refShip.Height.Bombs.Y				= 4.6;		refShip.Height.Bombs.DY		= 3.3;
+	refShip.Height.Grapes.Y				= 5.2;		refShip.Height.Grapes.DY	= 2.2;
 	refShip.Height.Knippels.Y			= 33.8;		refShip.Height.Knippels.DY	= 30.6;
-	refShip.Height.Balls.Y				= 5.6;		refShip.Height.Balls.DY		= 3.3;
+	refShip.Height.Balls.Y				= 4.6;		refShip.Height.Balls.DY		= 3.3;
 
 	refShip.Flags.Mast0.Flag1 = FLAG_ENSIGN;
 	refShip.Flags.Mast1.Flag1 = FLAG_SPECIAL;
@@ -9564,10 +9570,10 @@ void InitShips()
 	refship.InertiaAccelerationY	= 25;	refship.InertiaBrakingY		= 2;
 	refship.InertiaAccelerationZ	= 2.0;	refship.InertiaBrakingZ		= 2.0;
 
-	refShip.Height.Bombs.Y				= 5.6;		refShip.Height.Bombs.DY		= 4.0;
-	refShip.Height.Grapes.Y				= 5.7;		refShip.Height.Grapes.DY	= 3.8;
+	refShip.Height.Bombs.Y				= 4.6;		refShip.Height.Bombs.DY		= 4.0;
+	refShip.Height.Grapes.Y				= 5.2;		refShip.Height.Grapes.DY	= 1.8;
 	refShip.Height.Knippels.Y			= 34.7;		refShip.Height.Knippels.DY	= 28.0;
-	refShip.Height.Balls.Y				= 5.6;		refShip.Height.Balls.DY		= 4.0;
+	refShip.Height.Balls.Y				= 4.6;		refShip.Height.Balls.DY		= 4.0;
 
 	refShip.GeraldSails.rey_b2		= 1;
 	refShip.GeraldSails.rey_b3		= 1;
@@ -9648,10 +9654,10 @@ void InitShips()
 	refship.InertiaAccelerationY	= 23;	refship.InertiaBrakingY		= 2;
 	refship.InertiaAccelerationZ	= 2.0;	refship.InertiaBrakingZ		= 2.0;
 
-	refShip.Height.Bombs.Y				= 6.6;		refShip.Height.Bombs.DY		= 4.9;
-	refShip.Height.Grapes.Y				= 7.5;		refShip.Height.Grapes.DY	= 4.0;
+	refShip.Height.Bombs.Y				= 5.6;		refShip.Height.Bombs.DY		= 4.9;
+	refShip.Height.Grapes.Y				= 6.5;		refShip.Height.Grapes.DY	= 4.0;
 	refShip.Height.Knippels.Y			= 34.8;		refShip.Height.Knippels.DY	= 33.0;
-	refShip.Height.Balls.Y				= 6.6;		refShip.Height.Balls.DY		= 4.9;
+	refShip.Height.Balls.Y				= 5.6;		refShip.Height.Balls.DY		= 4.9;
 
 	refShip.GeraldSails.rey_b2		= 1;
 	refShip.GeraldSails.rey_b3		= 1;
@@ -9730,10 +9736,10 @@ void InitShips()
 	refship.InertiaAccelerationY	= 25;	refship.InertiaBrakingY		= 2;
 	refship.InertiaAccelerationZ	= 2.0;	refship.InertiaBrakingZ		= 2.0;
 
-	refShip.Height.Bombs.Y				= 6.0;		refShip.Height.Bombs.DY		= 4.0;
-	refShip.Height.Grapes.Y				= 6.7;		refShip.Height.Grapes.DY	= 2.8;
+	refShip.Height.Bombs.Y				= 5.0;		refShip.Height.Bombs.DY		= 4.0;
+	refShip.Height.Grapes.Y				= 5.7;		refShip.Height.Grapes.DY	= 2.8;
 	refShip.Height.Knippels.Y			= 36.0;		refShip.Height.Knippels.DY	= 33.5;
-	refShip.Height.Balls.Y				= 6.0;		refShip.Height.Balls.DY		= 4.0;
+	refShip.Height.Balls.Y				= 5.0;		refShip.Height.Balls.DY		= 4.0;
 
 	refShip.GeraldSails.rey_b2		= 1;
 	refShip.GeraldSails.rey_b3		= 1;
@@ -9803,19 +9809,14 @@ void InitShips()
 	refship.CabinType          			= "Cabin_Huge"; // boal 28.03.05
 	refship.DeckType           			= "Lineship";
 
-	refShip.Height.Bombs.Y				= 5.7;		refShip.Height.Bombs.DY		= 4.0;
-	refShip.Height.Grapes.Y				= 6.0;		refShip.Height.Grapes.DY	= 3.0;
-	refShip.Height.Knippels.Y			= 34.0;		refShip.Height.Knippels.DY	= 35.0;
-	refShip.Height.Balls.Y				= 5.7;		refShip.Height.Balls.DY		= 4.0;
-
 	refship.InertiaAccelerationX	= 2.0;	refship.InertiaBrakingX		= 2.0;
 	refship.InertiaAccelerationY	= 23;	refship.InertiaBrakingY		= 2;
 	refship.InertiaAccelerationZ	= 2.0;	refship.InertiaBrakingZ		= 2.0;
 
-	refShip.Height.Bombs.Y				= 6.0;		refShip.Height.Bombs.DY		= 3.9;
+	refShip.Height.Bombs.Y				= 5.0;		refShip.Height.Bombs.DY		= 3.9;
 	refShip.Height.Grapes.Y				= 6.5;		refShip.Height.Grapes.DY	= 3.0;
 	refShip.Height.Knippels.Y			= 35.8;		refShip.Height.Knippels.DY	= 34.6;
-	refShip.Height.Balls.Y				= 6.0;		refShip.Height.Balls.DY		= 3.9;
+	refShip.Height.Balls.Y				= 5.0;		refShip.Height.Balls.DY		= 3.9;
 
 	refShip.GeraldSails.rey_b2		= 1;
 	refShip.GeraldSails.rey_b3		= 1;
@@ -10098,7 +10099,7 @@ void InitShips()
 	refship.Rocking.y	= 0.5;
 	refship.Rocking.az	= 0.04;
 
-	refship.WaterLine	= -0.80;
+	refship.WaterLine	= 0.0;
 	refship.SpeedDependWeight		= 0.15;
 	refship.SubSeaDependWeight		= 0.6;
 	refship.TurnDependWeight		= 0.15;
@@ -10127,6 +10128,8 @@ void InitShips()
 	refship.Track2.LifeTime = 7.5;
 	refship.Track2.Width	= "4.0, 6.0";
 	refship.Track2.Speed	= "0.15, 0.25";
+
+	refShip.hullNums = 4;
 
 	//////////////////////////////////////////////////////////////////////////
 	// XebekVML			Щебека
@@ -10298,7 +10301,7 @@ void InitShips()
 	refShip.HP              				= 5500;
 	refShip.SP              				= 100;
 	refShip.MastMultiplier					= 1.3;
-	refship.EmblemedSails.normalTex 	= "ships\parus_common_torn1.tga";
+	refship.EmblemedSails.normalTex 	= "ships\parus_common_torn1.dds";
 	refship.Type.Merchant				= false;
 	refship.Type.War					= true;
 	refship.QuestShip					= true;
@@ -10445,7 +10448,7 @@ void InitShips()
 	refShip.HP              				= 6000;
 	refShip.SP              				= 100;
 	refShip.MastMultiplier					= 1.3;
-	refship.EmblemedSails.normalTex 	= "ships\parus_mefisto.tga";
+	refship.EmblemedSails.normalTex 	= "ships\parus_mefisto.dds";
 	refship.Type.Merchant					= true;
 	refship.Type.War						= true;
 	refship.QuestShip					    = true;
@@ -10518,7 +10521,7 @@ void InitShips()
 	refShip.HP              				= 9000;
 	refShip.SP              				= 100;
 	refShip.MastMultiplier					= 1.3;
-	refship.EmblemedSails.normalTex 	= "ships\sail_Arabella.tga";
+	refship.EmblemedSails.normalTex 	= "ships\sail_Arabella.dds";
 	refship.Type.Merchant				= false;
 	refship.Type.War					= true;
 	refship.QuestShip					= true;
@@ -10596,7 +10599,7 @@ void InitShips()
 	refShip.HP              				= 8000;
 	refShip.SP              				= 100;
 	refShip.MastMultiplier					= 1.3;
-	refship.EmblemedSails.normalTex 	= "ships\parus_common_torn2.tga";
+	refship.EmblemedSails.normalTex 	= "ships\parus_common_torn2.dds";
 	refship.Type.Merchant				= false;
 	refship.Type.War					= true;
 	refship.QuestShip					= true;
@@ -10747,7 +10750,7 @@ void InitShips()
 	refShip.HP              				= 10000;
 	refShip.SP              				= 100;
 	refShip.MastMultiplier					= 1.3;
-	refship.EmblemedSails.normalTex 	= "ships\parus_FDM.tga";
+	refship.EmblemedSails.normalTex 	= "ships\parus_FDM.dds";
 	refship.Type.Merchant				= false;
 	refship.Type.War					= true;
 	refship.QuestShip					= true;
@@ -10928,10 +10931,10 @@ void InitShips()
 	refship.InertiaAccelerationY	= 15;	refship.InertiaBrakingY		= 4;
 	refship.InertiaAccelerationZ	= 2.0;	refship.InertiaBrakingZ		= 2.0;
 
-	refShip.Height.Bombs.Y				= 6.6;		refShip.Height.Bombs.DY		= 5.0;
-	refShip.Height.Grapes.Y				= 6.7;		refShip.Height.Grapes.DY	= 3.8;
+	refShip.Height.Bombs.Y				= 4.6;		refShip.Height.Bombs.DY		= 5.0;
+	refShip.Height.Grapes.Y				= 6.0;		refShip.Height.Grapes.DY	= 3.8;
 	refShip.Height.Knippels.Y			= 35.0;		refShip.Height.Knippels.DY	= 36.0;
-	refShip.Height.Balls.Y				= 6.6;		refShip.Height.Balls.DY		= 5.0;
+	refShip.Height.Balls.Y				= 4.6;		refShip.Height.Balls.DY		= 5.0;
 
 	refShip.GeraldSails.rey_b2		= 1;
 	refShip.GeraldSails.rey_b3		= 1;
@@ -10978,7 +10981,7 @@ void InitShips()
 	refShip.HP              				= 22000;
 	refShip.SP              				= 100;
 	refShip.MastMultiplier					= 1.3;
-	refship.EmblemedSails.normalTex 	= "ships\parus_SoleyRu.tga";
+	refship.EmblemedSails.normalTex 	= "ships\parus_SoleyRu.dds";
 
 	refship.CanEncounter = false;
 

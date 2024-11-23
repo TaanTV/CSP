@@ -65,61 +65,41 @@ void LAi_type_follower_Init(aref chr)
 void LAi_type_officer_CharacterUpdate(aref chr, float dltTime)
 {
 	if(chr.chr_ai.tmpl == LAI_TMPL_DIALOG) return;
-	string btl = "";
 	//При отравлении детравимся
-	float fCheck = stf(chr.chr_ai.type.bottle) - dltTime;
-	if(CheckAttribute(chr, "chr_ai.poison"))
-	{
-		chr.chr_ai.type.bottle = 6.0;
-		if(LAi_GetCharacterRelHP(chr) < 0.8)
-		{
-			bool antidotUse = false;
-			if(LAi_GetCharacterRelHP(chr) < 0.6)
-			{
-				if(GetCharacterItem(&Characters[sti(chr.index)], "potion4") > 0)
-				{
-					antidotUse = true;
-					DoCharacterUsedItem(&Characters[sti(chr.index)], "potion4");
-				}
-			}
-			if(!antidotUse)
-			{
-				if(GetCharacterItem(&Characters[sti(chr.index)], "potion3") > 0)
-				{
-					DoCharacterUsedItem(&Characters[sti(chr.index)], "potion3");
-				}
-			}
+	float fCheck = CheckAttribute(chr, "chr_ai.hp_bottle.0");//слот 0 юзается последним
+	if(CheckAttribute(chr, "chr_ai.poison")) {
+		if(GetCharacterItem(chr, "potion3") > 0) {
+			DoCharacterUsedItem(chr, "potion3");
+		}
+		else {
+			DoCharacterUsedItem(chr, "potion4");//в нем уже лежит чек на наличие
 		}
 	}
 	// Lugger: Еда -->
-	string food = "";
+	string sItem = "";
 	float dfood;
 	float fCharEnergy = LAi_GetCharacterEnergy(chr);
 	float fCharMaxEnergy = LAi_GetCharacterMaxEnergy(chr);
-	if(LAi_grp_alarmactive && (fCharEnergy < 0.5*fCharMaxEnergy)){
+	//активен ли реген еды
+	if(LAi_grp_alarmactive && (fCharEnergy < 0.5*fCharMaxEnergy) && !CheckAttribute(chr, "chr_ai.FoodEnergy.0")){
 		dfood = fCharMaxEnergy - fCharEnergy;
-		food = FindFoodForCharacter(chr, dfood);
-		DoCharacterUsedFood(&Characters[sti(chr.index)], food);
+		sItem = FindFoodForCharacter(chr, dfood);
+		if (sItem != "") {
+			DoCharacterUsedFood(&Characters[sti(chr.index)], sItem);
+		}
 	}
 	// <-- Lugger: Еда
 	//Дистанция до главного персонажа
 	float dist = 0.0;
 	float dhlt;
 	if(!GetCharacterDistByChr3D(chr, pchar, &dist)) dist = -1.0;
-	if(fCheck < 0)
-	{
-		chr.chr_ai.type.bottle = 6.0;
-		if(!LAi_IsBottleWork(chr))
-		{
-			if(LAi_GetCharacterRelHP(chr) < 0.7)
-			{
-				dhlt = LAi_GetCharacterMaxHP(chr) - LAi_GetCharacterHP(chr);
-				btl = FindHealthForCharacter(&Characters[sti(chr.index)], dhlt);
-				DoCharacterUsedItem(&Characters[sti(chr.index)], btl);
-			}
+	if(fCheck <= 0) {
+		dhlt = stf(chr.chr_ai.hp_max) - stf(chr.chr_ai.hp);
+		sItem = FindHealthForCharacter(chr, dhlt);
+		if (dhlt > 20.0 && sItem != "") {
+			DoCharacterUsedItem(chr, sItem);//чек уже есть
 		}
 	}
-	else chr.chr_ai.type.bottle = fCheck;
 	//Log_Info("LAi_type_officer_CharacterUpdate "+chr.chr_ai.tmpl);
 	if (chr.chr_ai.tmpl == LAI_TMPL_STAY) return; // приказ ему стоять. Врага не ищем 18.06.05
 	if (chr.chr_ai.tmpl == LAI_TMPL_WALK) return; // приказ вольно.

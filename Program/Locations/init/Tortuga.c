@@ -8,7 +8,7 @@ int LocationInitTortuga(int n)
 	locations[n].id.label = "Street";
 	locations[n].worldmap = "Tortuga";
 	locations[n].filespath.models = "locations\Town_Tortuga\Town\";
-	locations[n].image = "loading\jonny_load\city\Tortuga_town.tga";
+	locations[n].image = "loading\jonny_load\city\Tortuga_town.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -229,7 +229,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern07\";
-	locations[n].image = "loading\jonny_load\inside\Tavern07.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern07.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "Tortuga";
@@ -277,7 +277,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_tavern_upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -318,7 +318,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store01\";
-	locations[n].image = "loading\jonny_load\inside\store01.tga";
+	locations[n].image = "loading\jonny_load\inside\store01.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -365,7 +365,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_Bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -411,7 +411,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_Brothel";
 	locations[n].id.label = "Brothel";
 	locations[n].filespath.models = "locations\inside\Brothel\";
-	locations[n].image = "loading\jonny_load\inside\brothel.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -464,7 +464,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_Brothel_room";
 	locations[n].id.label = "Brothel Room";
 	locations[n].filespath.models = "locations\inside\Brothel_room\";
-	locations[n].image = "loading\jonny_load\inside\brothel_room.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel_room.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -501,7 +501,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_SecBrRoom"; // вторая комната борделя
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\BigHouse03.tga";
+	locations[n].image = "loading\jonny_load\inside\BigHouse03.dds";
  	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -551,7 +551,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard02\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard02.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard02.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -597,7 +597,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\jonny_load\inside\residence01.tga";
+	locations[n].image = "loading\jonny_load\inside\residence01.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -651,7 +651,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_townhallRoom"; // c переходом в спальню
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\BigHouse02.tga";
+	locations[n].image = "loading\jonny_load\inside\BigHouse02.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -699,7 +699,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\churchInside2.tga";
+	locations[n].image = "loading\jonny_load\inside\churchInside2.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -750,7 +750,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -792,7 +792,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_HouseHut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\TwoFloorHouse.tga";
+	locations[n].image = "loading\jonny_load\inside\TwoFloorHouse.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -837,7 +837,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_houseS2";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "DEstre House";
-	locations[n].image = "loading\jonny_load\inside\FlamHouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -888,7 +888,7 @@ int LocationInitTortuga(int n)
 	// Пещера Тортуги с выходом в бухту
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_Cave";
-	locations[n].image = "loading\jonny_load\inside\DungeonVault1.tga";
+	locations[n].image = "loading\jonny_load\inside\DungeonVault1.dds";
 	locations[n].id.label = "dungeon";
 	//Sound
 	locations[n].townsack = "Tortuga";
@@ -935,7 +935,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_ExitTown";
 	locations[n].fastreload = "Tortuga";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitW.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitW.dds";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	//Sound
@@ -1005,7 +1005,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Mayak6";
 	locations[n].id.label = "Mayak6";
 	locations[n].worldmap = "Mayak6";
-	locations[n].image = "loading\jonny_load\shores\lighthouse.tga";
+	locations[n].image = "loading\jonny_load\shores\Lighthouse.dds";
 	//Sound
 	locations[n].type = "mayak";
  	locations[n].islandId = "Tortuga";
@@ -1090,7 +1090,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle10.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle10.dds";
 	//Sound
 	locations[n].type = "jungle";
  	locations[n].islandId = "Tortuga";
@@ -1138,7 +1138,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle2.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle2.dds";
 	//Sound
 	locations[n].type = "jungle";
  	locations[n].islandId = "Tortuga";
@@ -1193,7 +1193,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\caveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
  	locations[n].islandId = "Tortuga";
@@ -1244,7 +1244,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\jonny_load\inside\Grotto2.tga";
+    locations[n].image = "loading\jonny_load\inside\grotto2.dds";
 	//Sound
 	locations[n].type = "cave";
  	locations[n].islandId = "Tortuga";
@@ -1288,7 +1288,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Shore58";
 	locations[n].id.label = "Shore58";
 	locations[n].worldmap = "Shore58";
-	locations[n].image = "loading\jonny_load\shores\Shore01_Shore04.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore01_Shore04.dds";
 	//Sound
 	locations[n].type = "seashore";
  	locations[n].islandId = "Tortuga";

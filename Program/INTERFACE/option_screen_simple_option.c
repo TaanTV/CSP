@@ -1,4 +1,4 @@
-#define SIMPLE_OPTIONS_COUNT 18
+#define SIMPLE_OPTIONS_COUNT 19
 
 string SimpleOptionsList[SIMPLE_OPTIONS_COUNT] = {
 	"RegionsWorldmap",
@@ -18,7 +18,8 @@ string SimpleOptionsList[SIMPLE_OPTIONS_COUNT] = {
 	"EnabledFXMarks",
 	"EnabledCMControls",
 	"EnabledOldStore",
-	"EnabledAltSoundsGun"};
+	"EnabledAltSoundsGun",
+	"ShowExpLogs"};
 
 void FillSimpleOptionsTable()//заполняем таблицу
 {
@@ -33,22 +34,22 @@ void setDefaultSimpleOption(string param, int idx)
 	makearef(row, GameInterface.TABLE_SIMPLE_OPTIONS.(srow));
 	row.currentNode = param;//записываем имя опции - для показа подсказки по ПКМ
 
-	row.td2.str = XI_ConvertString(param);
+	row.td1.str = XI_ConvertString(param);
 	//row.td2.str = GetOptionName(param);
-	row.td1.icon.align = "center";
-	row.td1.icon.valign = "center";
-	row.td1.icon.width = 16;	//умещалось 17 чекбоксов по 14, увеличил размер для теста скролла
-	row.td1.icon.height = 16;
-	row.td1.icon.group = "CHECKBUTTON_ICON";
+	row.td2.icon.align = "center";
+	row.td2.icon.valign = "center";
+	row.td2.icon.width = 16;	//умещалось 17 чекбоксов по 14, увеличил размер для теста скролла
+	row.td2.icon.height = 16;
+	row.td2.icon.group = "CHECKBUTTON_ICON";
 	if (sti(InterfaceStates.(param))) 
 	{
-		row.td1.icon.image = "check_yes";
-		row.td2.color = argb(255,220,220,220);//цвет шрифта
+		row.td2.icon.image = "check_yes";
+		row.td1.color = argb(255,255,255,255);//цвет шрифта
 	}
 	else 
 	{
-		row.td1.icon.image = "check_no";
-		row.td2.color = argb(255,180,180,180);//цвет шрифта
+		row.td2.icon.image = "check_no";
+		row.td1.color = argb(255,180,180,180);//цвет шрифта
 	}
 }
 
@@ -66,15 +67,15 @@ void clickSimpleOption()
 	aref row;
 	makearef(row, GameInterface.TABLE_SIMPLE_OPTIONS.(srow));
 
-	if (row.td1.icon.image == "check_yes") 
+	if (row.td2.icon.image == "check_yes") 
 	{
-		row.td1.icon.image = "check_no";
-		row.td2.color = argb(255,180,180,180);//цвет шрифта
+		row.td2.icon.image = "check_no";
+		row.td1.color = argb(255,180,180,180);//цвет шрифта
 	} 
 	else
 	{
-		row.td1.icon.image = "check_yes";
-		row.td2.color = argb(255,220,220,220);//цвет шрифта
+		row.td2.icon.image = "check_yes";
+		row.td1.color = argb(255,255,255,255);//цвет шрифта
 	}
 	Table_UpdateWindow("TABLE_SIMPLE_OPTIONS");
 

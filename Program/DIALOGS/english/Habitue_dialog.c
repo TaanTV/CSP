@@ -38,6 +38,10 @@ void ProcessDialogEvent()
         {
             Dialog.CurrentNode = "Beta_test";
         }
+		if (CheckAttribute(PChar, "BSLookingForAgentDialugue") && pchar.location == "SentJons_tavern" && npchar.id != "BSAgent")
+		{
+			Dialog.CurrentNode = "BSAgentDialugueFirst";
+		}
 	}
 
 	switch (Dialog.CurrentNode)
@@ -81,6 +85,18 @@ void ProcessDialogEvent()
 			link.l1.go = "First time";
 			npchar.quest.last_theme = 1;
 		    npchar.quest.last_theme_game = 1;
+		break;
+		
+		case "BSAgentDialugueFirst":
+			dialog.text = RandPhraseSimple(RandPhraseSimple("Don't block my light, you can't see the flies in my mug!", "What do you want?"), RandPhraseSimple("I won't let you have a hangover, I won't get sober!", "Do you have anything to drink?"));
+			link.l1 = "The fishing was good.";
+			link.l1.go = "BSAgentDialugueSecond";
+		break;
+		
+		case "BSAgentDialugueSecond":	
+			dialog.text = RandPhraseSimple(RandPhraseSimple("Go sleep it off!", "You've got to snack!"), RandPhraseSimple("What? What are you talking about?", "I don't know what you're talking about!"));
+			link.l1 = "...";
+			link.l1.go = "exit";
 		break;
 
 		case "First time":

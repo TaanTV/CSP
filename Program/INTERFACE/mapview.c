@@ -312,7 +312,7 @@ void SetNewMapPicture()
 		{
 			if (itmRef.id != "Map_Best")
 			{
-				SetNewPicture("MAP", "interfaces\Maps\" + itmRef.imageTga + ".tga");
+				SetNewPicture("MAP", "interfaces\Maps\" + itmRef.imageTga + ".dds");
 				SetNodeUsing("OPEN_MAP_BEST", false);
 			}
 			else
@@ -359,8 +359,25 @@ void SelectRColony()
 
 	int  iGoodIndex = sti(GameInterface.TABLE_MAPS.(CurRow).index);
 	ref  itmRef = &Items[iGoodIndex];
+
+	bool IsEnemyTown = false;
+	int Nation = PIRATE;
+	if (CheckAttribute(loadedLocation, "fastreload")) Nation = sti(Colonies[FindColony(loadedLocation.fastreload)].nation);
+	bool Enemy = GetNationRelation2MainCharacter(Nation) == RELATION_ENEMY || GetRelation2BaseNation(Nation) == RELATION_ENEMY;
+	if (Enemy && Nation != PIRATE && !CheckNationLicence(Nation))
+	{
+		if (loadedLocation.type == "town" || loadedLocation.type == "residence" || loadedLocation.type == "tavern" || loadedLocation.type == "house" || loadedLocation.type == "shop" || loadedLocation.type == "shipyard" || loadedLocation.type == "church") IsEnemyTown = true;
+	}
 	
-	if (!chrDisableReloadToLocation && !LAi_group_IsActivePlayerAlarm()) DoTeleport(fMouseX,fMouseY,itmRef.id);
+	if (!chrDisableReloadToLocation && !LAi_group_IsActivePlayerAlarm() && !CheckAttribute(PChar, "MapBestTeleportDisable") && !IsEnemyTown)
+	{
+		DoTeleport(fMouseX,fMouseY,itmRef.id);
+	}
+	else
+	{
+		Log_SetStringToLog(XI_ConvertString("The teleporter is currently unavailable"));
+		PlaySound("interface\knock.wav");
+	}
 }
 
 void DoTeleport(float x, float y, string mapid)

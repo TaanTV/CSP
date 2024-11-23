@@ -2109,8 +2109,8 @@ A handmade silver bracelet with turquoise captures the loyalty of the officer.
 ~
 It can be used by the main character.
 }
-itmname_Joker {Talisman 'Joker'}
-itmdescr_Joker
+itmname_talisman20 {Talisman 'Joker'}
+itmdescr_talisman20
 {
 The joker is the right card, which is always at hand, increases the probability of winning card games.
 ~
@@ -2123,7 +2123,7 @@ itmname_talisman18 {Jaguar Hide}
 itmdescr_talisman18
 {
 A magnificent gift - a beautiful jaguar hide, cast by the spell of Yum Simil himself.
-Increases firearm damage by 25% and makes the wearer more resilient, adds health points.
+Increases the damage dealt by firearms by 25% and the probability of misses by the enemy.
 }
 itmname_talisman19  {Jaguar Pendant}
 itmdescr_talisman19

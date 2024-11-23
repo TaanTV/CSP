@@ -52,7 +52,7 @@ OpasnyGruz_Spec					{}
 
 Ascold							{Аскольд}
 Ascold_Lvl						{1}
-Ascold_Desc						{Берётся у продавца в магазине в любом городе.}
+Ascold_Desc						{Берётся у продавца в магазине в случайном городе.}
 Ascold_Spec						{}
 
 Rabotorgovets					{Работорговец}
@@ -117,7 +117,7 @@ SinyaPtitsa_Spec				{}
 
 KotVMeshke						{Кот в мешке}
 KotVMeshke_Lvl					{5}
-KotVMeshke_Desc					{Берётся у рыбака рядом с берегом в Санто-Доминго.}
+KotVMeshke_Desc					{Берётся у рыбака в порту Санто-Доминго.}
 KotVMeshke_Spec					{}
 
 Kuali							{Макуауитль Куали}
@@ -157,7 +157,7 @@ Satanisty_Spec					{}
 
 ZacharovanyGorod				{Зачарованный город}
 ZacharovanyGorod_Lvl			{10}
-ZacharovanyGorod_Desc			{Берётся у любого мирного жителя в Каракасе с 9-20 часов.}
+ZacharovanyGorod_Desc			{Берётся у любого мирного жителя в Каракасе с 12-20 часов.}
 ZacharovanyGorod_Spec			{}
 
 OhotaNaVedmu					{Охота на ведьму}

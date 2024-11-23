@@ -958,7 +958,7 @@ void selectAchievements() // Отображаем окно достижений
 	SetNodeUsing("BAR_str5",true);
 	SetNodeUsing("BAR_str6",true);
 	SetNodeUsing("BAR_str7",true);
-	SetNodeUsing("BAR_str8",true);
+	// SetNodeUsing("BAR_str8",true);
 
 	SetNodeUsing("SHIP_INFO_FADER",false);
 	SetNodeUsing("SHIP_INFO_DUST",false);
@@ -1087,33 +1087,26 @@ void ShowPGGInfo()
 		SetFormatedText("CLASS_ARMOR", refBaseShip.HullArmor);
 		if (!CheckAttribute(refBaseShip,"Tuning.HullArmor")) SetNewGroupPicture("CLASS_ARMOR_ICON", "ICONS_SPEC", "Normal");
 		else SetNewGroupPicture("CLASS_ARMOR_ICON", "ICONS_SPEC", "Upgraded");
-		//if (!CheckAttribute(refBaseShip,"QuestShip"))
-		//{
-			SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",false);
-			SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + shipTexture + ".tga.tx");
-		/*}
-		else
-		{
-			SetNewPicture("SHIP_BIG_PICTURE", "");
-			SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",true);
-			SetNewVideoPicture("SHIP_BIG_PICTURE_VIDEO","SHIP_"+shipTexture);
-		}*/
+
+		SetNodeUsing("SHIP_BIG_PICTURE_VIDEO",false);
+		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + shipTexture + ".dds");
+
 		opened = true;
-		SetNewPicture("SHIP_FRAME_PICTURE", "interfaces\Frame1.tga");
+		SetNewPicture("SHIP_FRAME_PICTURE", "interfaces\Frame1.dds");
 		string texturedata;
-		SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(chrefspp)+".tga");
+		SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(chrefspp)+".dds");
 		string portpic;
 		switch (GameInterface.(CurTable).(CurRow).td6.icon.image)
 		{
-			case "France": portpic = "loading\enc_fra.tga";
+			case "France": portpic = "loading\enc_fra.dds";
 			break;
-			case "England": portpic = "loading\enc_eng.tga";
+			case "England": portpic = "loading\enc_eng.dds";
 			break;
-			case "Spain": portpic = "loading\enc_spa.tga";
+			case "Spain": portpic = "loading\enc_spa.dds";
 			break;
-			case "Holland": portpic = "loading\enc_hol.tga";
+			case "Holland": portpic = "loading\enc_hol.dds";
 			break;
-			case "Pirate": portpic = "loading\enc_pir.tga";
+			case "Pirate": portpic = "loading\enc_pir.dds";
 			break;
 		}
 		SetNewPicture("NATION_PORT_PICTURE", portpic);
@@ -1126,7 +1119,7 @@ void ShowPGGInfo()
 		else offtype = "\nСпециальность: "+XI_ConvertString(chrefspp.quest.officertype);
 		SetFormatedText("OFFICER_NAME", GetFullName(chrefspp)+offtype);
 		SetNewPicture("CHARACTER_BIG_PICTURE", "interfaces\portraits\256\face_" + chrefspp.faceId + ".tga");
-		SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame2.tga");
+		SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame2.dds");
 
 		if (CheckAttribute(RealShips[sti(chrefspp.Ship.Type)],"Tuning.HullSpecial")) SetNewGroupPicture("EXTRAHULLON", "SHIP_UPGRADES", "EXTRAHULLON");
 		else SetNewGroupPicture("EXTRAHULLON", "SHIP_UPGRADES", "EXTRAHULLOFF");
@@ -1179,7 +1172,7 @@ void ShowPGGInfo()
 	{
 		ref chrefspp1 = CharacterFromID(GameInterface.(CurTable).(CurRow).index);
 		SetFormatedText("OFFICERS_WINDOW_CAPTION", GetConvertStrWithReplace("Variable_QuestBook_14", "Interface.txt", "#space#", " "));
-		SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(chrefspp1)+".tga");
+		SetNewPicture("CHARACTER_PROFESSION", "INTERFACES\Sith\Char_"+GetSpeciality(chrefspp1)+".dds");
 		SetSPECIALMiniTable("TABLE_SMALLSKILL", chrefspp1);
 		SetOTHERMiniTable("TABLE_SMALLOTHER", chrefspp1);
 		string offtype1;
@@ -1187,7 +1180,7 @@ void ShowPGGInfo()
 		else offtype1 = "\nСпециальность: "+XI_ConvertString(chrefspp1.quest.officertype);
 		SetFormatedText("OFFICER_NAME", GetFullName(chrefspp1)+offtype1);
 		SetNewPicture("CHARACTER_BIG_PICTURE", "interfaces\portraits\256\face_" + chrefspp1.faceId + ".tga");
-		SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame2.tga");
+		SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame2.dds");
 		if (bHalfImmortalPGG)
 		{
 			if (CheckAttribute(chrefspp1, "ImmortalOfficer"))
@@ -1271,18 +1264,18 @@ void FillQuests() // Заполним таблицу достижений инф
 		attrname = GetAttributeName(arcur);
 		if (FState_COMPLETE == 1 && sti(pchar.questdata.(attrname))==1) continue;
 		GameInterface.QUESTS_TABLE_LIST.(row).index = attrname;//нужно для сортировки без ошибок в логе
-		GameInterface.QUESTS_TABLE_LIST.(row).td1.scale = 1.1;
+		GameInterface.QUESTS_TABLE_LIST.(row).td1.scale = 0.8;
 		GameInterface.QUESTS_TABLE_LIST.(row).td2.scale = 0.9;
-		GameInterface.QUESTS_TABLE_LIST.(row).td3.scale = 0.95;
-		GameInterface.QUESTS_TABLE_LIST.(row).td4.scale = 0.95;
-		GameInterface.QUESTS_TABLE_LIST.(row).td5.scale = 0.1;
+		GameInterface.QUESTS_TABLE_LIST.(row).td3.scale = 0.7;
+		GameInterface.QUESTS_TABLE_LIST.(row).td4.scale = 0.7;
+		// GameInterface.QUESTS_TABLE_LIST.(row).td5.scale = 0.1;
 		GameInterface.QUESTS_TABLE_LIST.(row).td1.str = GetConvertStr(attrname, "Quests.txt");
 		GameInterface.QUESTS_TABLE_LIST.(row).td2.str = GetConvertStr(attrname+"_Lvl", "Quests.txt");
 		GameInterface.QUESTS_TABLE_LIST.(row).td3.str = GetConvertStr(attrname+"_Desc", "Quests.txt");
 		GameInterface.QUESTS_TABLE_LIST.(row).td4.str = GetConvertStr(attrname+"_Spec", "Quests.txt");
-		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.width = 25;
-		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.height = 25;
-		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.offset = "25, 25";
+		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.width = 24;
+		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.height = 24;
+		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.offset = "16, 8";
 		GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.group = "ICONS";
 		if (sti(pchar.questdata.(attrname))==1) GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.image = "complete";
 		else GameInterface.QUESTS_TABLE_LIST.(row).td5.icon.image = "noncomplete";
@@ -1669,7 +1662,7 @@ void HideAchievements() // Скрываем окно достижений
 	SetNodeUsing("BAR_str5",false);
 	SetNodeUsing("BAR_str6",false);
 	SetNodeUsing("BAR_str7",false);
-	SetNodeUsing("BAR_str8",false);
+	// SetNodeUsing("BAR_str8",false);
 
 	SetNodeUsing("POINTS_EXCHANGE",false);
 }
@@ -1707,6 +1700,11 @@ void ShowInfoWindow()
 
 	switch (sCurrentNode)
 	{
+		case "BLADE_TABLE_LIST":
+			sHeader = XI_ConvertString("BladeEffectsLegend");
+			sText1  = XI_ConvertString("BladeEffectsLegend_desc");
+			CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,192,192), sText3, argb(255,192,255,192), "", argb(255,255,255,255), sPicture, sGroup, sGroupPicture, 64, 64);
+		break;
 		case "TABLE_GOODS":
 			sGroup = "GOODS";
 			sGroupPicture = GameInterface.(CurTable).(CurRow).UserData.ID;
@@ -1718,12 +1716,12 @@ void ShowInfoWindow()
 		case "SHIP_TABLE_LIST_LEFT":
 			makeref(refBaseShip,ShipsTypes[Last_Left_Ship]);
 			sShip = refBaseShip.Name;
-			sPicture = "interfaces\ships\" + sShip + ".tga.tx";
+			sPicture = "interfaces\ships\" + sShip + ".dds";
 			SetNewPicture("SHIP_PICTURE_R", sPicture);
 
 			makeref(refBaseShip,ShipsTypes[Last_Right_Ship]);
 			sShip = refBaseShip.Name;
-			sPicture = "interfaces\ships\" + sShip + ".tga.tx";
+			sPicture = "interfaces\ships\" + sShip + ".dds";
 			SetNewPicture("SHIP_PICTURE_L", sPicture);
 
 /*			//видео для уников
@@ -1743,12 +1741,12 @@ void ShowInfoWindow()
 		case "SHIP_TABLE_LIST_RIGHT":
 			makeref(refBaseShip,ShipsTypes[Last_Right_Ship]);
 			sShip = refBaseShip.Name;
-			sPicture = "interfaces\ships\" + sShip + ".tga.tx";
+			sPicture = "interfaces\ships\" + sShip + ".dds";
 			SetNewPicture("SHIP_PICTURE_L", sPicture);
 
 			makeref(refBaseShip,ShipsTypes[Last_Left_Ship]);
 			sShip = refBaseShip.Name;
-			sPicture = "interfaces\ships\" + sShip + ".tga.tx";
+			sPicture = "interfaces\ships\" + sShip + ".dds";
 			SetNewPicture("SHIP_PICTURE_R", sPicture);
 		break;
 	}
@@ -2255,7 +2253,7 @@ void FillShipPlaceTable(string _tabName)
 					GameInterface.(_tabName).(row).index = chrefsp.id;
 					GameInterface.(_tabName).(row).td1.str = cn;
 					GameInterface.(_tabName).(row).td1.scale = 0.8;
-					GameInterface.(_tabName).(row).td2.icon.texture = "interfaces\ships\" + shipTexture + ".tga.tx";
+					GameInterface.(_tabName).(row).td2.icon.texture = "interfaces\ships\" + shipTexture + ".dds";
 					GameInterface.(_tabName).(row).td2.icon.uv = "0,0,1,1";
 					GameInterface.(_tabName).(row).td2.icon.offset = "-2, 0";
 					GameInterface.(_tabName).(row).td2.icon.width  = 40;
@@ -2578,7 +2576,7 @@ void FillShipInfoEncy(string _tabName)
 	string sAttr;
 	int	iNum, iShip;
 	ref	refBaseShip;
-	string sShip;
+	string sShip, sTemp;
 	int k = 0;
 	ref chrefsp;
 	makeref(chrefsp, Characters[GenerateCharacter(4,WITHOUT_SHIP,"pirate",MAN,1,WARRIOR)]);
@@ -2602,7 +2600,7 @@ void FillShipInfoEncy(string _tabName)
 
 	//GameInterface.(_tabName).(sRow).index = chrefsp.id;
 	GameInterface.(_tabName).(sRow).index = i;
-	GameInterface.(_tabName).(sRow).td1.icon.texture = "interfaces\ships\" + sShip + ".tga.tx";
+	GameInterface.(_tabName).(sRow).td1.icon.texture = "interfaces\ships\" + sShip + ".dds";
 	GameInterface.(_tabName).(sRow).td1.icon.uv = "0,0,1,1";
 	GameInterface.(_tabName).(sRow).td1.icon.offset = "-2, 0";
 	GameInterface.(_tabName).(sRow).td1.icon.width  = 59;
@@ -2611,13 +2609,23 @@ void FillShipInfoEncy(string _tabName)
 	GameInterface.(_tabName).(sRow).td1.textoffset = "48,-20";
 
 	GameInterface.(_tabName).(sRow).td2.str = XI_Convertstring(sShip);
-	GameInterface.(_tabName).(sRow).td2.scale = 0.8;
+	//GameInterface.(_tabName).(sRow).td2.scale = 1.0;
+	GameInterface.(_tabName).(sRow).td2.textoffset = "0,6";//сдвинул текст чуть ниже, для более красивого расположения плашки, по умолчанию пустая строка IG Baron. 
+	GameInterface.(_tabName).(sRow).td2.icon.width = 51;
+	GameInterface.(_tabName).(sRow).td2.icon.height = 26;
+	GameInterface.(_tabName).(sRow).td2.icon.offset = "0, -4";
+	if (LanguageGetLanguage() != "russian") sTemp = "english "; else sTemp = "";
+	GameInterface.(_tabName).(sRow).td2.icon.group = "ICONS_SPEC";
+	GameInterface.(_tabName).(sRow).td2.icon.image = sTemp + "universal ship icon"; 
+	if ( sti(shipstypes[i].Type.Merchant) && !sti(shipstypes[i].Type.War)) 
+		GameInterface.(_tabName).(sRow).td2.icon.image = sTemp + "trader ship icon";
+	if ( !sti(shipstypes[i].Type.Merchant) && sti(shipstypes[i].Type.War)) 
+		GameInterface.(_tabName).(sRow).td2.icon.image = sTemp + "battle ship icon";//плашка для боевого типа корабля (есть ещё для быстрого fast ship icon)
+
 	GameInterface.(_tabName).(sRow).td3.str = shipstypes[i].rcannon + "\n" + shipstypes[i].fcannon + "<::::::::::>" + shipstypes[i].bcannon + "\n" + shipstypes[i].lcannon;//сместить отдельные строчки?
 	if (refBaseShip.Type.War == true) spectypes = GetCOnvertStr("Variable_specType_War", "Interface.txt");
 	if (refBaseShip.Type.Merchant == true) spectypes = GetCOnvertStr("Variable_specType_Trade", "Interface.txt");
 	if (refBaseShip.Type.Merchant == true && refBaseShip.Type.War == true) spectypes = GetCOnvertStr("Variable_specType_Universal", "Interface.txt");
-	GameInterface.(_tabName).(sRow).td4.str = spectypes;
-	GameInterface.(_tabName).(sRow).td4.scale = 0.8;
 
 	k++;
 	//if(!CheckAttribute(refBaseShip,"QuestShip") && bFillEncyShips) pchar.questTemp.shipsearchcount = k;
@@ -2780,11 +2788,11 @@ void SetShipOTHERTableInfo(string _tabName)
 		makeref(refBaseShipL,ShipsTypes[Last_Left_Ship]);
 		bool bQuest = false;
 		if (checkattribute(refBaseShipL, "QuestShip")) bQuest = true; //не показываем флаги наций квестовым
-		if (!bQuest && refBaseShipL.nation.england == true) SetNewPicture("S_NATION_E_L", "loading\Enc_Eng.tga"); else SetNewPicture("S_NATION_E_L", "");
-		if (!bQuest && refBaseShipL.nation.france == true) SetNewPicture("S_NATION_F_L", "loading\Enc_Fra.tga"); else SetNewPicture("S_NATION_F_L", "");
-		if (!bQuest && refBaseShipL.nation.holland == true) SetNewPicture("S_NATION_H_L", "loading\Enc_Hol.tga"); else SetNewPicture("S_NATION_H_L", "");
-		if (!bQuest && refBaseShipL.nation.spain == true) SetNewPicture("S_NATION_S_L", "loading\Enc_Spa.tga"); else SetNewPicture("S_NATION_S_L", "");
-		if (!bQuest && refBaseShipL.nation.pirate == true) SetNewPicture("S_NATION_P_L", "loading\Enc_Pir.tga"); else SetNewPicture("S_NATION_P_L", "");
+		if (!bQuest && refBaseShipL.nation.england == true) SetNewPicture("S_NATION_E_L", "loading\Enc_Eng.dds"); else SetNewPicture("S_NATION_E_L", "");
+		if (!bQuest && refBaseShipL.nation.france == true) SetNewPicture("S_NATION_F_L", "loading\Enc_Fra.dds"); else SetNewPicture("S_NATION_F_L", "");
+		if (!bQuest && refBaseShipL.nation.holland == true) SetNewPicture("S_NATION_H_L", "loading\Enc_Hol.dds"); else SetNewPicture("S_NATION_H_L", "");
+		if (!bQuest && refBaseShipL.nation.spain == true) SetNewPicture("S_NATION_S_L", "loading\Enc_Spa.dds"); else SetNewPicture("S_NATION_S_L", "");
+		if (!bQuest && refBaseShipL.nation.pirate == true) SetNewPicture("S_NATION_P_L", "loading\Enc_Pir.dds"); else SetNewPicture("S_NATION_P_L", "");
 
 		if (bBettaTestMode) {if (_tabName == "SHIP_TABLE_OTHER_LEFT") SetFormatedText("SHIP_INFO_TEXT_LEFT", GetConvertStrWithReplace("Variable_QuestBook_131", "Interface.txt", "#space#", " ")+refBaseShipL.name+"\n"+GetConvertStr(sShip, "ShipsDescribe.txt"));}
 		else {if (_tabName == "SHIP_TABLE_OTHER_LEFT") SetFormatedText("SHIP_INFO_TEXT_LEFT", GetConvertStr(sShip, "ShipsDescribe.txt"));}
@@ -2794,11 +2802,11 @@ void SetShipOTHERTableInfo(string _tabName)
 		makeref(refBaseShipR,ShipsTypes[Last_Right_Ship]);
 		bQuest = false;
 		if (checkattribute(refBaseShipR, "QuestShip")) bQuest = true; //не показываем флаги наций квестовым
-		if (!bQuest && refBaseShipR.nation.england == true) SetNewPicture("S_NATION_E_R", "loading\Enc_Eng.tga"); else SetNewPicture("S_NATION_E_R", "");
-		if (!bQuest && refBaseShipR.nation.france == true) SetNewPicture("S_NATION_F_R", "loading\Enc_Fra.tga"); else SetNewPicture("S_NATION_F_R", "");
-		if (!bQuest && refBaseShipR.nation.holland == true) SetNewPicture("S_NATION_H_R", "loading\Enc_Hol.tga"); else SetNewPicture("S_NATION_H_R", "");
-		if (!bQuest && refBaseShipR.nation.spain == true) SetNewPicture("S_NATION_S_R", "loading\Enc_Spa.tga"); else SetNewPicture("S_NATION_S_R", "");
-		if (!bQuest && refBaseShipR.nation.pirate == true) SetNewPicture("S_NATION_P_R", "loading\Enc_Pir.tga"); else SetNewPicture("S_NATION_P_R", "");
+		if (!bQuest && refBaseShipR.nation.england == true) SetNewPicture("S_NATION_E_R", "loading\Enc_Eng.dds"); else SetNewPicture("S_NATION_E_R", "");
+		if (!bQuest && refBaseShipR.nation.france == true) SetNewPicture("S_NATION_F_R", "loading\Enc_Fra.dds"); else SetNewPicture("S_NATION_F_R", "");
+		if (!bQuest && refBaseShipR.nation.holland == true) SetNewPicture("S_NATION_H_R", "loading\Enc_Hol.dds"); else SetNewPicture("S_NATION_H_R", "");
+		if (!bQuest && refBaseShipR.nation.spain == true) SetNewPicture("S_NATION_S_R", "loading\Enc_Spa.dds"); else SetNewPicture("S_NATION_S_R", "");
+		if (!bQuest && refBaseShipR.nation.pirate == true) SetNewPicture("S_NATION_P_R", "loading\Enc_Pir.dds"); else SetNewPicture("S_NATION_P_R", "");
 
 		if (bBettaTestMode) {if (_tabName == "SHIP_TABLE_OTHER_RIGHT") SetFormatedText("SHIP_INFO_TEXT_RIGHT", GetConvertStrWithReplace("Variable_QuestBook_132", "Interface.txt", "#space#", " ")+refBaseShipR.name+"\n"+GetConvertStr(sShip, "ShipsDescribe.txt"));}
 		else {if (_tabName == "SHIP_TABLE_OTHER_RIGHT") SetFormatedText("SHIP_INFO_TEXT_RIGHT", GetConvertStr(sShip, "ShipsDescribe.txt"));}
@@ -2993,39 +3001,7 @@ string GetPerkInfo(ref itm)
 string GetSpecialStrings(ref itm)
 {
 	if (!CheckAttribute(itm,"special")) return "-------";
-	string info = "";
-	if (CheckAttribute(itm,"special.valueBB"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.4", "Interface.txt", "#space#", " ")+sti(itm.special.valueBB)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueCrB"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.5", "Interface.txt", "#space#", " ")+sti(itm.special.valueCrB)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueCB"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.6", "Interface.txt", "#space#", " ")+sti(itm.special.valueCB)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueSS"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.7", "Interface.txt", "#space#", " ")+sti(itm.special.valueSS)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueStS"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.8", "Interface.txt", "#space#", " ")+sti(itm.special.valueStS)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueT"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.9", "Interface.txt", "#space#", " ")+sti(itm.special.valueT)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueB"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.10", "Interface.txt", "#space#", " ")+sti(itm.special.valueB)+"%\n";
-	}
-	if (CheckAttribute(itm,"special.valueP"))
-	{
-		info += GetConvertStrWithReplace("Variable_QuestBook_149.11", "Interface.txt", "#space#", " ")+sti(itm.special.valueP)+"%\n";
-	}
+	string info = GetOtherBladeInfo(itm);
 	return info;
 }
 
@@ -3107,7 +3083,7 @@ void HideInfoWindowEncy()
 	SetNodeUsing("BAR_str5",false);
 	SetNodeUsing("BAR_str6",false);
 	SetNodeUsing("BAR_str7",false);
-	SetNodeUsing("BAR_str8",false);
+	// SetNodeUsing("BAR_str8",false);
 
 	SetNodeUsing("POINTS_EXCHANGE",false);
 }
@@ -3307,17 +3283,28 @@ void fill_bars()
 void Paint_ShipOTHER_Diff()
 {
 	float fAverage, fLeft, fRight;
-
-	string row;
+	int k1, k2;
+	string row, sTemp1, sTemp2;
 	for (int i=1; i<=10; i++)
 	{
 		if (i == 2) continue; //паруса по 100 у всех пока что
 		row = "tr" + i;
 		if ( checkattribute(GameInterface, "SHIP_TABLE_OTHER_RIGHT."+row+".td2.str") && checkattribute(GameInterface, "SHIP_TABLE_OTHER_LEFT."+row+".td3.str") )
 		{
-			fAverage = ( stf(GameInterface.SHIP_TABLE_OTHER_LEFT.(row).td3.str) + stf(GameInterface.SHIP_TABLE_OTHER_RIGHT.(row).td2.str) )/2.0;//среднее значение параметра
+			sTemp1 = GameInterface.SHIP_TABLE_OTHER_LEFT.(row).td3.str; 
+			sTemp2 = GameInterface.SHIP_TABLE_OTHER_RIGHT.(row).td2.str;
+
+			if (i == 8) 
+			{
+					k1 = findsubstr(sTemp1, "/" , 0);
+					sTemp1 = strcut(sTemp1, k1+1, strlen(sTemp1)-1);
+					k2 = findsubstr(sTemp2, "/" , 0);
+					sTemp2 = strcut(sTemp2, k2+1, strlen(sTemp2)-1);
+			}
+
+			fAverage = ( stf(sTemp1) + stf(sTemp2) )/2.0;//среднее значение параметра
 			if (fAverage < 0.0001) continue;//от деления на ноль
-			fRight = stf(GameInterface.SHIP_TABLE_OTHER_RIGHT.(row).td2.str)/fAverage - 1;
+			fRight = stf(sTemp2)/fAverage - 1;
 			fLeft = -fRight;
 			if (fRight == 0)
 			{

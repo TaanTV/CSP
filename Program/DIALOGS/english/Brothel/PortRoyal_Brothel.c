@@ -16,7 +16,26 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1.go = "SharpPearl_1";
 				SaveCurrentNpcQuestDateParam(npchar, "quest.SharpTime");
 			}
+			if (CheckAttribute(PChar, "makslover") && GetQuestPastDayParam("MaksLoverDateDay") > 7)
+			{
+				link.l1 = "Max, maybe...";
+				link.l1.go = "MaksLover";
+			}
 		break;
+		
+		case "MaksLover":
+			dialog.text = "Come on!";
+			link.l1 = "...";
+			link.l1.go = "SexWithMaks";
+		break;
+		
+		case "SexWithMaks":
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit();
+			BS_IntimWithMaksAsLover();
+			SaveCurrentQuestDateParam("MaksLoverDateDay");
+		break;
+		
 		// капитан Шарп, грабёж жемчужных промыслов
 		case "SharpPearl_1":
 			if (drand(1) || bBettaTestMode)
@@ -93,4 +112,3 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }
-

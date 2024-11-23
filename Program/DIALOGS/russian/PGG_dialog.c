@@ -1047,7 +1047,7 @@ void ProcessDialogEvent()
 		Dialog.Text = PCharRepPhrase(
 			RandPhraseSimple(
 				"Через " + FindRussianDaysString(sti(PChar.GenQuest.PGG_Quest.Days)) + " караван уйдёт и нам их уже не догнать.",
-				"У нас есть ровно " + FindRussianDaysString(sti(PChar.GenQuest.PGG_Quest.Days)) + " дней, чтобы успеть их вырезать и забрать добычу!"
+				"У нас есть ровно " + FindRussianDaysString(sti(PChar.GenQuest.PGG_Quest.Days)) + ", чтобы успеть их вырезать и забрать добычу!"
 			),
 			RandPhraseSimple(
 				"В нашем распоряжении " + FindRussianDaysString(sti(PChar.GenQuest.PGG_Quest.Days)) + " на всю операцию.",
@@ -1307,7 +1307,7 @@ void ProcessDialogEvent()
 		SaveCurrentQuestDateParam("QuestTalk");
 
 		//не взяли груз...
-		PChar.GenQuest.PGG_Quest.FailedPaySum = sti(PChar.GenQuest.PGG_Quest.Days)*10000;
+		PChar.GenQuest.PGG_Quest.FailedPaySum = sti(PChar.GenQuest.PGG_Quest.Days)*100000;
 		Dialog.Text = PCharRepPhrase(
 			RandPhraseSimple(
 				"Кровожадн"+ GetSexPhrase("ый ублюдок","ая дрянь") +"! Всё ушло на дно к морскому дьяволу! " + FindRussianMoneyString(sti(PChar.GenQuest.PGG_Quest.FailedPaySum)) + " пиастров на бочку, и я видеть тебя больше не желаю!",
@@ -1469,6 +1469,7 @@ void ProcessDialogEvent()
 		{
 			AddMoneyToCharacter(PChar, -(sti(PChar.GenQuest.PGG_Quest.FailedPaySum)));
 			AddQuestRecord(PGGQuestID, "q1_FailPay");
+			AddQuestUserData(PGGQuestID, "sPsName", GetFullName(NPchar));
 			AddQuestUserData(PGGQuestID, "sSex", GetSexPhrase("","а"));
 			AddQuestUserData(PGGQuestID, "sSex1", GetSexPhrase("ен","на"));
 		}

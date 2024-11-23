@@ -6,7 +6,7 @@ int  money_i, moneyOp_i;
 int money_won;	// Общий выигрыш в рамках одной сессии. Равен деньгам игрока на старте игры минус текущие деньги игрока, которые обновляются в процессе игры
 string money_s = "silver";
 string cards_pack = "CARDS";    // файл колоды
-string sukno = "card_sukno_03.tga"; // файл сукна
+string sukno = "card_sukno_03.dds"; // файл сукна
 
 ref npchar;
 
@@ -52,62 +52,62 @@ void InitInterface(string iniName)
     if (iRate <= 99)            //WW  прокачка фортуны  от суммы ставки
     {   money_s = "silver";
         iExpRate = 1;
-        sukno = "interfaces\cardAndDice\card_sukno_03.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_03.dds";
         cards_pack = "CARDS2";
     }
     if (iRate >= 100)
     {   
         money_s = "silver";
         iExpRate = 2;
-        sukno = "interfaces\cardAndDice\card_sukno_03.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_03.dds";
         cards_pack = "CARDS2";
     }
     if (iRate >= 250)
     {   
         money_s = "silver";
         iExpRate = 3;
-        sukno = "interfaces\cardAndDice\card_sukno_02.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_02.dds";
         cards_pack = "CARDS1";
     }
     if (iRate >= 500)
     {   
         money_s = "silver";
         iExpRate = 4;
-        sukno = "interfaces\cardAndDice\card_sukno_02.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_02.dds";
         cards_pack = "CARDS1";
     }
     if (iRate >= 600)
     {    
         money_s = "gold";
         iExpRate = 5;
-        sukno = "interfaces\cardAndDice\card_sukno_02.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_02.dds";
         cards_pack = "CARDS1";
     }
     if (iRate >= 700)
     {    
         money_s = "silver";
-        sukno = "interfaces\cardAndDice\card_sukno_01.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_01.dds";
         cards_pack = "CARDS";
         iExpRate = 6;
     }
     if (iRate >= 800)
     {    
         money_s = "silver";
-        sukno = "interfaces\cardAndDice\card_sukno_01.tga";
+        sukno = "interfaces\cardAndDice\card_sukno_01.dds";
         cards_pack = "CARDS";
         iExpRate = 8;
     }
     if (iRate >= 1000)
     {    
         money_s = "gold";
-        sukno = "interfaces\cardAndDice\card_sukno.tga";
+        sukno = "interfaces\cardAndDice\card_sukno.dds";
         cards_pack = "CARDS3";
         iExpRate = 10;
     }
     if (iRate >= 5000)
     {    
         money_s = "gold";
-        sukno = "interfaces\cardAndDice\card_sukno.tga";
+        sukno = "interfaces\cardAndDice\card_sukno.dds";
         cards_pack = "CARDS3";
         iExpRate = 25;
     }
@@ -334,7 +334,7 @@ void ProcessCommandExecute()
                     {
                         SetFormatedText("INFO_TEXT", GetConvertStrWithReplace("Variable_boal_cards_5", "Interface.txt", "#space#", " "));
                         bStartGame = 100;
-                        PostEvent("My_eOpenCards", 2000);
+                        PostEvent("My_eOpenCards", 1000);
                     }
                     else
                     { // комп должен себе набрать
@@ -342,7 +342,7 @@ void ProcessCommandExecute()
 
                         move_i = 0;
                         PlaySound("interface\took_item.wav");
-                        PostEvent("My_eventMoveImg", 500);
+                        PostEvent("My_eventMoveImg", 250);
 
                         PutNextCoinOp();
                         moneyOp_i++;
@@ -390,7 +390,7 @@ void MoveImg()
         {
             dir_i = -dir_i; // смена хода
             bStartGame++;
-            if (bStartGame == 1)  PostEvent("My_eStartGame", 500);
+            if (bStartGame == 1)  PostEvent("My_eStartGame", 250);
         }
         // начало игры, по карте каждому <--
         SetNextTip();
@@ -557,7 +557,7 @@ int CountCardsN()
 }
 void BetaInfo()
 {
-	if (isEquippedArtefactUse(pchar, "Joker", 0.0, 2.0) && rand(100) < 5 + (GetCharacterSkill(pchar, SKILL_FORTUNE) / 20) + (GetCharacterSkill(pchar, SKILL_SNEAK) / 20) + (sti(Pchar.SPECIAL.Luck))) 		// Удача - 10%, Везение - 5%, Скрытность - 5%
+	if (isEquippedArtefactUse(pchar, "talisman20", 0.0, 2.0) && rand(100) < 5 + (GetCharacterSkill(pchar, SKILL_FORTUNE) / 20) + (GetCharacterSkill(pchar, SKILL_SNEAK) / 20) + (sti(Pchar.SPECIAL.Luck))) 		// Удача - 10%, Везение - 5%, Скрытность - 5%
 	{
         SetFormatedText("CARD_PEEK", GetConvertStrWithReplace("Variable_boal_cards_17", "Interface.txt", "#space#", " ") + NextCardPack());
 	}
@@ -579,7 +579,7 @@ void BetaInfo()
 	{
         SetFormatedText("WIN_LOSE", GetConvertStrWithReplace("Variable_boal_cards_1", "Interface.txt", "#space#", " ") +iHeroWin + GetConvertStrWithReplace("Variable_boal_cards_2", "Interface.txt", "#space#", " ") +iHeroLose);
         ShowCashWinning();
-        if (isEquippedArtefactUse(pchar, "Joker", 0.0, 2.0))
+        if (isEquippedArtefactUse(pchar, "talisman20", 0.0, 2.0))
         {
             SetFormatedText("CARD_SUM", GetConvertStrWithReplace("Variable_boal_cards_2.2", "Interface.txt", "#space#", " ") + CountCardsP());
         }
@@ -659,7 +659,7 @@ void ShowMoney()
 	}
     SetFormatedText("WIN_LOSE", GetConvertStrWithReplace("Variable_boal_cards_1", "Interface.txt", "#space#", " ") +iHeroWin + GetConvertStrWithReplace("Variable_boal_cards_2", "Interface.txt", "#space#", " ") +iHeroLose);
     ShowCashWinning();
-    if (isEquippedArtefactUse(pchar, "Joker", 0.0, 2.0))
+    if (isEquippedArtefactUse(pchar, "talisman20", 0.0, 2.0))
     {
         SetFormatedText("CARD_SUM", GetConvertStrWithReplace("Variable_boal_cards_2.2", "Interface.txt", "#space#", " ") + CountCardsP());
     }
@@ -722,14 +722,14 @@ bool CheckGame()
 			zhuhlo1 = 33
 		}
 		if (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) < zhuhlo)
-		//if (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) + makeint(isEquippedArtefactUse(pchar, "Joker", 0.0, 2.0)) < zhuhlo)
+		//if (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) + makeint(isEquippedArtefactUse(pchar, "talisman20", 0.0, 2.0)) < zhuhlo)
         {
             if (ok1 && (CountCardsN() + NextCardPack()) <= 21)
             {
                 ok1 = false;
             }
 			if (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) < zhuhlo1 && CountCardsN() < 17 &&  (CountCardsN() + NextCardPack()) > 21)
-			//if (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) - makeint(isEquippedArtefactUse(pchar, "Joker", 0.0, 2.0)) < zhuhlo1 && CountCardsN() < 17 &&  (CountCardsN() + NextCardPack()) > 21)          
+			//if (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) - makeint(isEquippedArtefactUse(pchar, "talisman20", 0.0, 2.0)) < zhuhlo1 && CountCardsN() < 17 &&  (CountCardsN() + NextCardPack()) > 21)          
             {
                 ok1 = true;
             }
@@ -742,7 +742,7 @@ bool CheckGame()
             {
                 SetFormatedText("INFO_TEXT", GetConvertStrWithReplace("Variable_boal_cards_33", "Interface.txt", "#space#", " "));
                 bStartGame = 100;
-                PostEvent("My_eOpenCards", 2000);
+                PostEvent("My_eOpenCards", 1000);
                 ret = true;
             }
             if (dir_i == -1 && dir_i_start == -1) // комп начинает
@@ -758,7 +758,7 @@ bool CheckGame()
             {
                 move_i = 0;
                 PlaySound("interface\took_item.wav");
-                PostEvent("My_eventMoveImg", 500);
+                PostEvent("My_eventMoveImg", 250);
 
                 PutNextCoinOp();
                 moneyOp_i++;
@@ -781,7 +781,7 @@ void NewGameBegin()
     RedrawDeck(); // новая игра
     bStartGame = 0;
     SetFormatedText("INFO_TEXT",GetConvertStrWithReplace("Variable_boal_cards_35", "Interface.txt", "#space#", " ")+NewStr()+GetConvertStrWithReplace("Variable_boal_cards_36", "Interface.txt", "#space#", " "));
-    PostEvent("My_eStartGame", 1000);
+    PostEvent("My_eStartGame", 500);
 }
 
 void EndGameCount(int who)

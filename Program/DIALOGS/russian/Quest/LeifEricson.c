@@ -284,6 +284,7 @@ void ProcessDialogEvent()
             Pchar.Ship.Crew.Quantity = 1000;
             Pchar.GenQuest.HunterScore2Pause = 1; //НЗГ не начисляются
 			Pchar.GenQuest.ReputationNotChange = 1; //репутацию не менять
+			Pchar.NationAgressivePatentDisable = true; // патент не отбирать
             ChangeCharacterAddress(characterFromID("Ascold"), "None", "");
             //<== потом вернуть
             Pchar.quest.Ascold_MummyFightTown.win_condition.l1 = "location";
@@ -333,6 +334,7 @@ void ProcessDialogEvent()
 			DeleteAttribute(pchar, "questTemp.Ascold.heromodel");
 			DeleteAttribute(PChar, "GenQuest.HunterScore2Pause"); //вертаем начисление нзг
 			DeleteAttribute(PChar, "GenQuest.ReputationNotChange"); //вертаем смену репы
+			DeleteAttribute(PChar, "NationAgressivePatentDisable"); //вертаем отдачу патента
             chrDisableReloadToLocation = true; // закрыть выход из локации.
             pchar.questTemp.Ascold = "Ascold_BackMyBody";
             NextDiag.TempNode = "First time";

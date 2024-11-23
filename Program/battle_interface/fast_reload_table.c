@@ -1303,6 +1303,10 @@ void initFastReloadTable()
 	curTable.l7.pic = FRP_FERNANDO;
 	curTable.l7.tex = FRT_FERNANDO;
 	curTable.l7.location = "FernandaDiffIndoor";
+	//prison
+	curTable.l10.pic = FRP_PRISON;
+	curTable.l10.tex = FRT_PRISON;
+	curTable.l10.location = "TartarusPrison";
 
 	makearef(curTable,objFastReloadTable.table.Caiman);
 	// store

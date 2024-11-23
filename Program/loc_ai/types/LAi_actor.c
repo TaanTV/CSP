@@ -299,8 +299,8 @@ bool LAi_type_actor_Error(aref chr, bool lockTest)
 			return true;
 		}
 	}
-	if (chr == NullCharacter) {
-		Trace("Actor error: character is NullCharacter");
+	if (chr.id == NullCharacter.id) {
+		Trace("Actor error: character is NullCharacter or id=none");
 		return true;
 	}
 	return false;

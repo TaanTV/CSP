@@ -15,7 +15,7 @@ int LocationInitNevis(int n)
 
 	locations[n].filespath.models = "locations\Town_Nevis\Town\";
 
-	locations[n].image = "loading\jonny_load\city\Town_Nevis.tga";
+	locations[n].image = "loading\jonny_load\city\Town_Nevis.dds";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
 	locations[n].carrier = true;
@@ -200,7 +200,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\tavern04\";
-	locations[n].image = "loading\jonny_load\inside\Tavern04.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern04.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "Charles";
@@ -247,7 +247,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_tavern_upstairs";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -289,7 +289,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_store";
 	locations[n].id.label = "Store";
 	locations[n].filespath.models = "locations\inside\Store02\";
-	locations[n].image = "loading\jonny_load\inside\Store02.tga";
+	locations[n].image = "loading\jonny_load\inside\store02.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -336,7 +336,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\Bank02\";
-	locations[n].image = "loading\jonny_load\inside\bank02.tga";
+	locations[n].image = "loading\jonny_load\inside\bank02.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -381,7 +381,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard01\";
-	locations[n].image = "loading\jonny_load\inside\Shipyard01.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard01.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -427,7 +427,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence04";
-	locations[n].image = "loading\jonny_load\inside\residence04.tga";
+	locations[n].image = "loading\jonny_load\inside\residence04.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -469,7 +469,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_Brothel";
 	locations[n].id.label = "Brothel";
 	locations[n].filespath.models = "locations\inside\Brothel\";
-	locations[n].image = "loading\jonny_load\inside\brothel.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -522,7 +522,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_Brothel_room";
 	locations[n].id.label = "Brothel Room";
 	locations[n].filespath.models = "locations\inside\Brothel_room\";
-	locations[n].image = "loading\jonny_load\inside\brothel_room.tga";
+	locations[n].image = "loading\jonny_load\inside\brothel_room.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -559,7 +559,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_SecBrRoom"; // вторая комната борделя
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\BigHouse03.tga";
+	locations[n].image = "loading\jonny_load\inside\BigHouse03.dds";
  	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -603,7 +603,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_church";
 	locations[n].id.label = "Church";
 	locations[n].filespath.models = "locations\inside\Church01";
-	locations[n].image = "loading\jonny_load\inside\Church01.tga";
+	locations[n].image = "loading\jonny_load\inside\church01.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -642,7 +642,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice4.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice4.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -685,7 +685,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Charles_PirateHouse";
 	locations[n].id.label = "IslaMona Townhall";
 	locations[n].filespath.models = "locations\inside\Residence05";
-	locations[n].image = "loading\jonny_load\inside\residence05.tga";
+	locations[n].image = "loading\jonny_load\inside\residence05.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";
@@ -730,7 +730,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_ExitTown";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\Jungle5.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle5.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	//Sound
@@ -788,7 +788,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Charles_Jungle_05";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle3.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle3.dds";
  	//Sound
 	locations[n].type = "jungle";
 	locations[n].fastreload = "Charles";
@@ -845,7 +845,7 @@ int LocationInitNevis(int n)
 	locations[n].id = "Mayak5";
 	locations[n].id.label = "Mayak5";
 	locations[n].worldmap = "Mayak5";
-	locations[n].image = "loading\jonny_load\shores\Lighthouse.tga";
+	locations[n].image = "loading\jonny_load\shores\Lighthouse.dds";
 	//Sound
 	locations[n].type = "mayak";
 	locations[n].islandId = "Nevis";
@@ -930,7 +930,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_Jungle_02";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle2.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Nevis";
@@ -985,7 +985,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore43";
 	locations[n].id.label = "Shore43";
-	locations[n].image = "loading\jonny_load\shores\Shore05.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore05.dds";
 	locations[n].worldmap = "Shore43";
 	//Sound
 	locations[n].type = "seashore";
@@ -1038,7 +1038,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_Jungle_03";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle6.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle6.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Nevis";
@@ -1093,7 +1093,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\caveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Nevis";
@@ -1144,7 +1144,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Charles_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\jonny_load\inside\grotto2.tga";
+    locations[n].image = "loading\jonny_load\inside\grotto2.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "Nevis";
@@ -1187,7 +1187,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Charles_jungle_04";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle8.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle8.dds";
  	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Nevis";
@@ -1235,7 +1235,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore42";
 	locations[n].id.label = "Shore42";
-	locations[n].image = "loading\jonny_load\shores\shore08.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore08.dds";
 	locations[n].worldmap = "Shore42";
 	//Sound
 	locations[n].type = "seashore";
@@ -1285,7 +1285,7 @@ int LocationInitNevis(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "HouseDozor";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse07.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse07.dds";
 	//Town sack
 	locations[n].townsack = "Charles";
 	locations[n].lockWeather = "Inside";

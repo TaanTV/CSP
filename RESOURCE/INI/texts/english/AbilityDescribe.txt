@@ -1,12 +1,12 @@
 newline{}
 BasicDefense {Basic defense skill}
-perkBasicDefense			{Damage to the character is reduced by 10%.}
-AdvancedDefense {Advanced defense skill}
-perkAdvancedDefense			{Damage to the character is reduced by 20%.\n(cannot be combined with the Basic Defense Skill)}
+perkBasicDefense			{Damage to the character is reduced by 10%.\n(allows you to wear low quality cuirasses)}
+AdvancedDefense {Medium Defense Skill}
+perkAdvancedDefense			{Damage to the character is reduced by 20%.\n(cannot be combined with the Basic Defense Skill)\n(allows you to wear medium quality cuirasses)}
+Ciras {Advanced defense skill}
+perkCiras {This skill allows you to wear any cuirass.}
 CriticalHit {Critical hit}
 perkCriticalHit {Character gets the opportunity to deal a critical damage to the enemy. (Chance +5%)\n(Combined with a Professional Swordsman and a hidden Swordsman perk)}
-Ciras {Cuirass}
-perkCiras {This skill allows you to wear cuirasses.}
 SwordplayProfessional {Professional swordsman}
 perkSwordplayProfessional	{Chance of a critical hit is +10%. Damage to the character is reduced by 30%.\n(Combined with a Critical Hit and a hidden Swordsman's perk, not combined with damage-reducing perks)}
 AgileMan {Dodger}
@@ -55,8 +55,8 @@ ShipEscape {Lifeboat rescue}
 perkShipEscape {Rescue by dinghy from the sinking ship of the hero to one of the ships of his squadron. This ability allows you to exchange or move to another ship of the squadron through the "hold" menu during a battle with the ship's hull < 15%. If the companion has the ability, then he will escape from a sinking ship or a fire ship, returning as a passenger to the hero's ship by lowering the boat.}
 FastReload {Fast recharge}
 perkFastReload {Cannon reload rate increases by 10%.}
-ImmediateReload {Pre-recharge}
-perkImmediateReload			{When this option is selected, the next recharge will occur 30% faster. After use, the opportunity is blocked for 5 minutes.}
+ImmediateReload {Accelerated reloading}
+perkImmediateReload			{When this ability is activated, recharging is accelerated 30% faster. Once used, the ability is blocked for 5 minutes.}
 HullDamageUp				{Increased damage to hull}
 perkHullDamageUp			{Damage to the hull of an enemy ship increases by 15%.}
 SailsDamageUp				{Increased damage to sails}

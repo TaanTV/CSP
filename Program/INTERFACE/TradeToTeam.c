@@ -82,7 +82,7 @@ void InitInterface_R(string iniName, ref pHero)
 	SetFormatedText("STORECAPTION1", XI_ConvertString("titleExchangeItems"));
     SendMessage(&GameInterface,"lslls",MSG_INTERFACE_MSG_TO_NODE, "CB_TRADER", 1, 1, XI_ConvertString("FIST_CB_Hero"));
     SendMessage(&GameInterface,"lslls",MSG_INTERFACE_MSG_TO_NODE, "CB_BACKPACK", 1, 1, XI_ConvertString("FIST_CB_Officer"));
-	SetNewPicture("OTHER_PICTURE", "interfaces\\portraits\\256\\face_" + its(refHeroChar.FaceId) + ".tga.tx");
+	SetNewPicture("OTHER_PICTURE", "interfaces\portraits\256\face_" + its(refHeroChar.FaceId) + ".tga");
 }
 
 void ProcessBreakExit()
@@ -632,7 +632,7 @@ void ProcessFrame()
 }
 void FillCharacterInfo()
 {
-    SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\\portraits\\256\\face_" + refCharacter.FaceId + ".tga.tx");
+    SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\portraits\256\face_" + refCharacter.FaceId + ".tga");
 	GameInterface.strings.CharName = GetFullName(refCharacter);
 	GameInterface.strings.CharPos = XI_ConvertString(aListPos[sti(GameInterface.CHARACTERS_SCROLL.current)]);
 }

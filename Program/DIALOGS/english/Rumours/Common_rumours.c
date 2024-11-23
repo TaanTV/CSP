@@ -152,13 +152,17 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	case "rumours_habitue":
 		//Black Sails
-		if (CheckAttribute(pchar, "BSUrka_Negril") && rand(100) > 60)
+		if (CheckAttribute(pchar, "BSUrka_Negril") && rand(10) > 5)
 		{
-			DeleteAttribute(pchar, "BSUrka_Negril");
-			dialog.text = "Well, your health! Wow, the rum is good. You should know what was going on here in the bay a couple of days ago! A pirate brig, all shot through, with sails like a ghost ship, gave battle to two Spanish frigates. And then, out of nowhere, three pirates on corvettes from behind the cape! Spaniards amicably laid down on the left tack and, well, hit the battery. One corvette was shot from bow to stern, there was a scream! I've already heard it in the fort! So, the shot immediately fell on board, and began to sink, and the other two, themselves onboard, almost at point-blank range smashed the frigate. And the brig, which was running away from the Spaniards, suddenly became bolder, dropped anchor on the port side and made a sharp turn around the chain, such that it already lost the mast. And let's shoot at the pirate from the side. In general, they sank the second corvette together with the Spaniard who survived. Ahem, my throat is dry.";
-            link.l1 = "Here, have another drink. So what happened next? You're telling me an interesting story! I can see this fight in reality!";
-			link.l1.go = "BS_NU_11";
-			break;
+			if (npchar.location == "PortRoyal_tavern" || npchar.location == "FortOrange_tavern")
+			{
+				PChar.quest.BSUrka_Negril.over = "yes";
+				DeleteAttribute(pchar, "BSUrka_Negril");
+				dialog.text = "Well, your health! Wow, the rum is good. You should know what was going on here in the bay a couple of days ago! A pirate brig, all dented from nukes, with sails like a ghost ship, gave battle to two Spanish frigates. And then, out of nowhere, three pirates on corvettes came from behind the cape! It's not clear who was chasing whom. The Spaniards laid down on their left tack and started firing battery fire. One corvette was shot through from bow to stern, it was a scream! You could hear it in the fort! So, the one that was shot at once fell on board and began to sink, and the other two, with their own broadsides, almost at point-blank range blew the frigate apart. And the brig, which was fleeing from the Spaniards, suddenly became bolder, threw anchor on the port side and made a sharp turn around the chain, so that the mast was even lost. And began to shoot at the pirate from the side. In general, they sank the second corvette together with the Spanish survivor. Heh, my throat's dry.";
+				link.l1 = "Here, have another drink. So what happened next? You're telling me an interesting story! I can see this fight in reality!";
+				link.l1.go = "BS_NU_11";
+				break;
+			}
 		}
 		link.l1 = RandPhraseSimple(RandSwear() + "We need to drink another cup for this...",
                                  "Good. Let's have another one.");
@@ -483,7 +487,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag);
 			BSBons_SeaBattle(true);
 			AddQuestRecord("BSUrka", "3");
 			PChar.quest.BSUrka_Pirates_town.win_condition.l1 = "location";
-			PChar.quest.BSUrka_Pirates_town.win_condition.l1.location = "Pirates_town";
+			PChar.quest.BSUrka_Pirates_town.win_condition.l1.location = "Nassau_town";
 			PChar.quest.BSUrka_Pirates_town.function = "BSUrka_Pirates_town";
 		break;
 

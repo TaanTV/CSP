@@ -104,7 +104,7 @@ void SeaAI_SailToCreateFader()
 	SendMessage(&SailToFader, "lfl", FADER_OUT, 0.5, false);
 	SendMessage(&SailToFader, "l", FADER_STARTFRAME);
 
-	pchar.loadscreen = "loading\jonny_load\sea\sea_"+rand(3)+".tga";
+	pchar.loadscreen = "loading\jonny_load\sea\sea_"+rand(3)+".dds";
 	SendMessage(&SailToFader, "ls", FADER_PICTURE0, pchar.loadscreen);
 }
 

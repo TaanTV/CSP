@@ -7,7 +7,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     Locations[n].id = "DesMoines_town";
 	locations[n].id.label = "Street";
-	Locations[n].image = "loading\jonny_load\city\Town_DesMoines.tga";
+	Locations[n].image = "loading\jonny_load\city\Town_DesMoines.dds";
 	locations[n].townsack = "DesMoines";
 	//Town sack
 	locations[n].citizens = true;
@@ -168,7 +168,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_port";
 	locations[n].id.label = "Port";
-	locations[n].image = "loading\jonny_load\city\Port_DesMoines.tga";
+	locations[n].image = "loading\jonny_load\city\Port_DesMoines.dds";
 	locations[n].worldmap = "DesMoines";
 	locations[n].townsack = "DesMoines";
 	//Town sack
@@ -226,7 +226,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_Townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse02.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse02.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -269,7 +269,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_TH";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\largehouse01.tga";
+	locations[n].image = "loading\jonny_load\inside\largehouse01.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -318,7 +318,7 @@ int LocationInitDesMoines(int n)
 	locations[n].id = "DesMoines_Hut1";
 	
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Smallhome_k2.tga";
+	locations[n].image = "loading\jonny_load\inside\Smallhome_k2.dds";
 	locations[n].MustSetReloadBack = true;
  	//Town sack
 	locations[n].townsack = "DesMoines";
@@ -358,7 +358,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_Hut3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut3_Kns.tga";
+	locations[n].image = "loading\jonny_load\inside\Hut3_KNS.dds";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "DesMoines";
@@ -397,7 +397,7 @@ int LocationInitDesMoines(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_Crypt";
 	locations[n].id.label = "Crypt";
-	locations[n].image = "loading\jonny_load\inside\crypt_inside.tga";
+	locations[n].image = "loading\jonny_load\inside\crypt_inside.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -434,7 +434,7 @@ int LocationInitDesMoines(int n)
  	locations[n].id = "DesMoines_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern09\";
-	locations[n].image = "loading\jonny_load\inside\Tavern09.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern09.dds";
 	locations[n].habitues = 1;
 	//Town sack
 	locations[n].townsack = "DesMoines";
@@ -480,7 +480,7 @@ int LocationInitDesMoines(int n)
 	locations[n].id = "DesMoines_tavern_upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -520,7 +520,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_store";
 	locations[n].id.label = "Store";
-	locations[n].image = "loading\jonny_load\inside\StoreSmall.tga";
+	locations[n].image = "loading\jonny_load\inside\StoreSmall.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -566,7 +566,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_bank";
 	locations[n].id.label = "Usurer House";
-	locations[n].image = "loading\jonny_load\inside\bank03.tga";
+	locations[n].image = "loading\jonny_load\inside\bank03.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -609,7 +609,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\church_IM.tga";
+	locations[n].image = "loading\jonny_load\inside\church_IM.dds";
 	//Town sack
 	locations[n].townsack = "DesMoines";
 	locations[n].lockWeather = "Inside";
@@ -647,7 +647,7 @@ int LocationInitDesMoines(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "DesMoines_packhouse";
 	locations[n].id.label = "packhouse";
-	locations[n].image = "loading\jonny_load\inside\sklad02.tga";
+	locations[n].image = "loading\jonny_load\inside\Sklad02.dds";
 	locations[n].MustSetReloadBack = true;
 	locations[n].packhouse = true;
 	//Town sack
@@ -685,7 +685,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	Locations[n].id = "DesMoines_ExitTown";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\jungle\TownExitDes.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitDes.dds";
 	//Sound
 	locations[n].type = "jungle";
 	Locations[n].townsack = "DesMoines";
@@ -745,7 +745,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "OutRHouse";
 	locations[n].id.label = "jungle";
-	locations[n].image = "loading\jonny_load\outside\House_in_jungle.tga";
+	locations[n].image = "loading\jonny_load\outside\House_in_jungle.dds";
 	//Sound
 	locations[n].islandId = "Mein";
 	locations[n].type = "jungle";
@@ -798,7 +798,7 @@ int LocationInitDesMoines(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "SmallHouse_Jungle";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\SmallHouse_inside.tga";
+	locations[n].image = "loading\jonny_load\inside\SmallHouse_inside.dds";
 	locations[n].islandId = "Mein";
 	//Town sack
 	locations[n].lockWeather = "Inside";

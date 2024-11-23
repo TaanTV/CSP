@@ -77,7 +77,7 @@ string LAi_GetBoardingImage(ref echr, bool isMCAttack)
 			}
 		}
 	}
-	return "loading\jonny_load\abordage\abord_0"+rand(2)+".tga";
+	return "loading\jonny_load\abordage\abord_"+rand(2)+".dds";
 }
 
 //Начать абордаж с главным персонажем
@@ -837,9 +837,8 @@ void LAi_EnableReload()
 	}
 	PostEvent("csmEvent_RefreshReload", 100);
     //#20171218-01 Re-enable fast action for cabin enter during boarding
-    BattleInterface.LAi_ActivateReload = true;
+	if (loadedLocation.type != "boarding_cabine") BattleInterface.LAi_ActivateReload = true;
 	SetEventHandler("Control Activation","LAi_ActivateReload",1);
-	Log_SetActiveAction("Reload");
 	//Уберём саблю
 	ref mchr = GetMainCharacter();
 	SendMessage(&mchr, "lsl", MSG_CHARACTER_EX_MSG, "ChangeFightMode", 0);
@@ -932,12 +931,20 @@ void LAi_EnableReload()
 //Активация перегрузки на следующую палубу
 void LAi_ActivateReload()
 {
-	string controlName = GetEventData();
+	if(loadedLocation.type == "boarding_cabine")
+	{		
+		float locx, locy, locz;
+		GetCharacterPos(pchar, &locx, &locy, &locz);
+		string tmp_loc = LAi_FindNearestFreeLocator("reload", locx, locy, locz);
+		if(tmp_loc != "" && !CheckCurLocator("reload", tmp_loc, locx, locy, locz)) return;
+	}
+	string controlName = "";
+	controlName = GetEventData();
 	if(controlName != "ChrAction") return;
 	if (CheckAttribute(pchar, "GenQuest.CannotReloadBoarding")) return; // Jason
 	DelEventHandler("Control Activation", "LAi_ActivateReload");
 	//#20171218-01 Re-enable fast action for cabin enter during boarding
-    DeleteAttribute(&BattleInterface, "LAi_ActivateReload");
+	DeleteAttribute(&BattleInterface, "LAi_ActivateReload");
 	Log_SetActiveAction("Nothing");
 	LAi_ReloadBoarding();
 }
@@ -1517,6 +1524,7 @@ void csmRefreshReload()
 
 	if (loadedLocation.type == "boarding_cabine" && csmCA(pchar, "CSM.LootCollector.Enable"))
 		csmDA(pchar, "CSM.LootCollector.CanBeRun");
+	if (loadedLocation.type == "boarding_cabine") return;
 
 	if (g_ActiveActionName == "" || g_ActiveActionName == "Nothing")
 		Log_SetActiveAction("Reload");

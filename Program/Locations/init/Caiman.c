@@ -11,7 +11,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore17";
 	locations[n].id.label = "Shore17";
-	locations[n].image = "loading\jonny_load\shores\Shore01_Shore04.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore01_Shore04.dds";
 	locations[n].worldmap = "Caiman";
 	//Sound
 	locations[n].type = "seashore";
@@ -67,7 +67,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Jungle_01";
 	locations[n].id.label = "Jungle";
-	locations[n].image = "loading\jonny_load\jungle\Jungle6.tga";
+	locations[n].image = "loading\jonny_load\jungle\Jungle6.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Caiman";
@@ -125,7 +125,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore16";
 	locations[n].id.label = "Shore16";
-	locations[n].image = "loading\jonny_load\shores\Shore07.tga";
+	locations[n].image = "loading\jonny_load\shores\Shore07.dds";
 	locations[n].worldmap = "Caiman";
 	//Sound
 	locations[n].type = "seashore";
@@ -181,7 +181,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt2.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Caiman";
@@ -234,7 +234,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\jonny_load\inside\grotto1.tga";
+    locations[n].image = "loading\jonny_load\inside\grotto1.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "Caiman";
@@ -278,7 +278,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_ExitTown";
 	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\jonny_load\outside\TownExitCaiman.tga";
+	locations[n].image = "loading\jonny_load\outside\TownExitCaiman.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	//Sound
@@ -340,7 +340,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_town";
 	locations[n].id.label = "Street";
-	locations[n].image = "loading\jonny_load\city\Caiman_Town.tga";
+	locations[n].image = "loading\jonny_load\city\Caiman_Town.dds";
 	locations[n].worldmap = "Caiman_town";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
@@ -468,7 +468,7 @@ int LocationInitCaiman(int n)
  	locations[n].id = "Caiman_tavern";
 	locations[n].id.label = "Tavern";
 	locations[n].filespath.models = "locations\inside\Tavern04\";
-	locations[n].image = "loading\jonny_load\inside\Tavern04.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern04.dds";
 	locations[n].habitues = 0;
 	//Town sack
 	locations[n].townsack = "Caiman";
@@ -515,7 +515,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "Caiman_tavern_upstairs";
 	locations[n].filespath.models = "locations\inside\Tavern_room";
 	locations[n].id.label = "Tavern upstairs";
-	locations[n].image = "loading\jonny_load\inside\Tavern_room.tga";
+	locations[n].image = "loading\jonny_load\inside\Tavern_room.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -555,7 +555,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_store";
 	locations[n].id.label = "Store";
-	locations[n].image = "loading\jonny_load\inside\StoreSmall.tga";
+	locations[n].image = "loading\jonny_load\inside\StoreSmall.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -600,7 +600,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_StoreHouse";
 	locations[n].id.label = "packhouse";
-	locations[n].image = "loading\jonny_load\inside\Sklad.tga";
+	locations[n].image = "loading\jonny_load\inside\Sklad.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -640,7 +640,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\jonny_load\inside\Residencepkm.tga";
+	locations[n].image = "loading\jonny_load\inside\Residencepkm.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -682,7 +682,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "Caiman_bank";
 	locations[n].id.label = "Usurer House";
 	locations[n].filespath.models = "locations\inside\Bank01\";
-	locations[n].image = "loading\jonny_load\inside\bank01.tga";
+	locations[n].image = "loading\jonny_load\inside\bank01.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -728,7 +728,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "Caiman_Shipyard";
 	locations[n].id.label = "Shipyard";
 	locations[n].filespath.models = "locations\inside\Shipyard03\";
-	locations[n].image = "loading\jonny_load\inside\shipyard03.tga";
+	locations[n].image = "loading\jonny_load\inside\shipyard03.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -774,7 +774,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_church";
 	locations[n].id.label = "Church";
-	locations[n].image = "loading\jonny_load\inside\churchInside3.tga";
+	locations[n].image = "loading\jonny_load\inside\churchInside3.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -816,7 +816,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_PortOffice";
 	locations[n].id.label = "PortOffice";
-	locations[n].image = "loading\jonny_load\inside\portoffice.tga";
+	locations[n].image = "loading\jonny_load\inside\PortOffice.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";
@@ -858,7 +858,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Plantation";
 	locations[n].id.label = "Plantation";
-	locations[n].image = "loading\jonny_load\quest\BarbadosPlantation_(Caiman).tga";
+	locations[n].image = "loading\jonny_load\quest\BarbadosPlantation_(Caiman).dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -958,7 +958,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "CaimanPlantationOffice";
 	locations[n].filespath.models = "locations\inside\StoneHouse";
 	locations[n].id.label = "Caiman Plantation Office";
-	locations[n].image = "loading\jonny_load\inside\stonehouse.tga";
+	locations[n].image = "loading\jonny_load\inside\stonehouse.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -998,7 +998,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "Caiman_Plantation_S1";
 	locations[n].filespath.models = "locations\inside\Hut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\hut.tga";
+	locations[n].image = "loading\jonny_load\inside\hut.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -1035,7 +1035,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "Caiman_Plantation_S2";
 	locations[n].filespath.models = "locations\inside\Hut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\Hut.tga";
+	locations[n].image = "loading\jonny_load\inside\hut.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -1071,7 +1071,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Plantation_F1";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse05.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse05.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -1111,7 +1111,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Plantation_F2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse09.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse09.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -1154,7 +1154,7 @@ int LocationInitCaiman(int n)
 	locations[n].id = "Caiman_Mines_Comendant_House";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "Cayman Mines Office";
-	locations[n].image = "loading\jonny_load\inside\flamhouse.tga";
+	locations[n].image = "loading\jonny_load\inside\flamhouse.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].islandId = "Caiman";
@@ -1198,7 +1198,7 @@ int LocationInitCaiman(int n)
 	Locations[n].id = "Caiman_Mines";
     	locations[n].id.label = "Caiman Mines";
 	locations[n].filespath.models = "locations\Outside\mine\";
-	locations[n].image = "loading\jonny_load\outside\mine.tga";
+	locations[n].image = "loading\jonny_load\outside\mine.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].townsack = "Caiman";
@@ -1251,7 +1251,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     	locations[n].id = "Caiman_ExitMines";
 	locations[n].id.label = "Caiman Mines Exit";
-	locations[n].image = "loading\jonny_load\jungle\TownExitY.tga";
+	locations[n].image = "loading\jonny_load\jungle\TownExitY.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].DisableEncounters = true;
@@ -1315,7 +1315,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Mines_CaveEntrance";
 	locations[n].id.label = "Cave entrance";
-	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.tga";
+	locations[n].image = "loading\jonny_load\jungle\CaveEnt1.dds";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Caiman";
@@ -1364,7 +1364,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Caiman_Mines_Grot";
 	locations[n].id.label = "Grot";
-    	locations[n].image = "loading\jonny_load\inside\grotto2.tga";
+    	locations[n].image = "loading\jonny_load\inside\grotto2.dds";
 	//Sound
 	locations[n].type = "cave";
 	locations[n].islandId = "Caiman";
@@ -1407,7 +1407,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	Locations[n].id = "LandGuardingPort";
 	locations[n].id.label = "Land Guarding Port";
-	Locations[n].image = "loading\jonny_load\outside\LandGuardingPort.tga";
+	Locations[n].image = "loading\jonny_load\outside\LandGuardingPort.dds";
 
 	//Town sack
 	locations[n].type = "seashore";
@@ -1476,7 +1476,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	Locations[n].id = "LandGuardingFort";
 	locations[n].id.label = "Land Guarding Fort";
-	Locations[n].image = "loading\jonny_load\outside\landguardingfort.tga";
+	Locations[n].image = "loading\jonny_load\outside\landguardingfort.dds";
 
 	//Town sack
 	locations[n].type = "fort";
@@ -1519,7 +1519,7 @@ int LocationInitCaiman(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LandGuardingHeadHouse";
 	locations[n].id.label = "Land Guarding Head House";
-	locations[n].image = "loading\jonny_load\inside\mediumhouse02.tga";
+	locations[n].image = "loading\jonny_load\inside\mediumhouse02.dds";
 	//Town sack
 	locations[n].townsack = "Caiman";
 	locations[n].lockWeather = "Inside";

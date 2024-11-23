@@ -56,7 +56,7 @@ void InitInterface_RR(string iniName, ref shipyarder, ref who)
 
 	EnumerateIcons("resource\textures\interfaces\sails", "00*", "SCROLL_COLORS", 0);
 	if (bNewSails && shipyarder.name == GetConvertStrWithReplace("Variable_SailsGerald_1", "Interface.txt", "#space#", " ")) EnumerateIcons("resource\textures\ships", "parus_sail_*", "SCROLL_SAILS", 0);
-	else EnumerateIcons("resource\textures\ships\PlayerSails", "*.tga.tx", "SCROLL_SAILS", 0);
+	else EnumerateIcons("resource\textures\ships\PlayerSails", "*.dds", "SCROLL_SAILS", 0);
 	if(CheckSailsGerald(chref) && CanSetSailsGerald(chref)) EnumerateIcons("resource\textures\ships\gerald", "*.tga.tx", "SCROLL_GERALD", 0);
 	if(!CheckAttribute(&GameInterface,"SCROLL_COLORS.current"))
 	{
@@ -88,7 +88,7 @@ void InitInterface_RR(string iniName, ref shipyarder, ref who)
 		SetNodeUsing("GERALD_CHECKBOX",false);
 		XI_WindowShow("GERALDBUTTONS", false);
 		XI_WindowDisable("GERALDBUTTONS", true);
-		SetNewPicture("GERALD_NO_PIC", "interfaces\DeleteGerald.tga");
+		SetNewPicture("GERALD_NO_PIC", "interfaces\DeleteGerald.dds");
 		SetFormatedText("GERALD_NO", GetConvertStrWithReplace("Variable_SailsGerald_2", "Interface.txt", "#space#", " "));
 	}
 	else {if (defgerald != "") CheckButton_SetState("GERALD_CHECKBOX", 1, true);}
@@ -306,7 +306,6 @@ void CheckChangeSailStatus()
 	SetFormatedText("SAILS_CAPTION", GetConvertStrWithReplace("Variable_SailsGerald_4", "Interface.txt", "#space#", " "));
 	SetFormatedText("GERALD_CAPTION", GetConvertStrWithReplace("Variable_SailsGerald_5", "Interface.txt", "#space#", " "));
 	SetFormatedText("SAILS_COLOR_TEXT", ""+XI_ConvertString(SailsColors[curcolor].name));
-	// SetNewPicture("COLOR_PIC1", "resource\textures\ships\PlayerSails\parus_pat.tga");
 	bool bNewValue = true;
 	bool CanRemove = true;
 	
@@ -413,9 +412,9 @@ string GetChosenType(string total)
 	{
 		int nSail = sti(GameInterface.SCROLL_SAILS.current);
 		string sattr2 = "pic"+(nSail+1);
-		for (i = 1; i <= sti(GameInterface.SCROLL_SAILS.ListSize); i++)
+		for (i = 1; i <= 91; i++)
 		{
-			if (GameInterface.SCROLL_SAILS.(sattr2).FileName == "parus_"+sailsUpgrades[i-1]+".tga.tx") {
+			if (GameInterface.SCROLL_SAILS.(sattr2).FileName == "parus_"+sailsUpgrades[i-1]+".dds") {
 				return its(i);
 			}
 		}
@@ -449,9 +448,10 @@ void SetNewSailsGerald()
 
 	if(SendMessage(&GameInterface,"lsll",MSG_INTERFACE_MSG_TO_NODE, "SETSAIL_CHECKBOX", 3, 1))
 	{
+		setcolor = true;
 		for (i = 1; i <= sti(GameInterface.SCROLL_SAILS.ListSize); i++)
 		{
-			if (GameInterface.SCROLL_SAILS.(sattr2).FileName == "parus_"+sailsUpgrades[i-1]+".tga.tx") {
+			if (GameInterface.SCROLL_SAILS.(sattr2).FileName == "parus_"+sailsUpgrades[i-1]+".dds") {
 				shref.ship.upgrades.sails = i;
 				break;
 			}
@@ -466,7 +466,6 @@ void SetNewSailsGerald()
 
 	AddMoneyToCharacter(Pchar, -price);
 	WaitDate("",0,0,0, 1, 30);
-	setcolor = true;
 	ProcessCancelExit();
 }
 
@@ -488,7 +487,7 @@ int GetChosenTypeIndex(string total)
 		for (i = 1; i <= sti(GameInterface.SCROLL_SAILS.ListSize); i++)
 		{
 			varname = "pic"+i;
-			if (GameInterface.SCROLL_SAILS.(varname).FileName == "parus_"+sUpgrade+".tga.tx") 
+			if (GameInterface.SCROLL_SAILS.(varname).FileName == "parus_"+sUpgrade+".dds")
 			{
 				sailfound = true;
 				return i;

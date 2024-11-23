@@ -462,6 +462,7 @@ void CreateLostShipsCity(aref loc)
 
 void CreatPlantation(aref loc)
 {
+	if (CheckAttribute(PChar, "BS_PlantationBattle")) return;
 	if (loc.id == "Plantation_Sp1")
 	{
 		bool ok = false;

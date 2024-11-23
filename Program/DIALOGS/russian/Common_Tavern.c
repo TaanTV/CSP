@@ -107,7 +107,7 @@ void ProcessDialogEvent()
 			}
 			if (pchar.questTemp.MC == "toCaracasWervolf" && npchar.city == "Caracas")
 			{
-				dialog.text = "Капитан, вы общали пойти к оборотню...";
+				dialog.text = "Капитан, вы обещали пойти к оборотню...";
 				link.l1 = "Я помню.";
 				link.l1.go = "exit";
 				break;
@@ -234,6 +234,7 @@ void ProcessDialogEvent()
 				if(GetQuestPastDayParam("BSPrologueEnded") > 7 && sti(pchar.rank) >= 30 && sti(npchar.nation) == PIRATE && npchar.id != "Pirates_tavernkeeper" && !CheckAttribute(pchar,"BSOnTheHorizon"))
 				{
 					pchar.BSOnTheHorizon = true;
+					BSBons_SeaBattle(false);
 					dialog.text = "Эй, а не тебя ли разыскивает наша надежда и опора, светлоликая мисс Гатри?";
 					link.l1 = "О Боже! Что на этот раз?";
 					link.l1.go = "BS_CPNG_2";
@@ -269,14 +270,15 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_CPNG_2":
-            dialog.text = "Понятия не имею. Но её посыльный очень убедительно просил передать капитану "+pchar.name+", что "+ GetSexPhrase("его","её") +" ждут в магазине Шарп-Тауна. И на месте этого капитана, я бы не стал медлить.";
+            dialog.text = "Понятия не имею. Но её посыльный очень убедительно просил передать капитану "+pchar.name+", что "+ GetSexPhrase("его","её") +" ждут в резиденции Гатри, что на Багамах. И на месте этого капитана, я бы не стал медлить.";
             link.l1 = "Хорошо, я понял"+ GetSexPhrase("","а") +".";
 			link.l1.go = "exit";
 			SetQuestHeader("BSOnTheHorizon");
 			AddQuestRecord("BSOnTheHorizon", "1");
-
+			LocatorReloadEnterDisable("Nassau_town", "gate1", true);
+			LocatorReloadEnterDisable("Nassau_ExitTown", "reload2_back", true);
 			PChar.quest.BSOnTheHorizon_start.win_condition.l1 = "location";
-			PChar.quest.BSOnTheHorizon_start.win_condition.l1.location = "Pirates_town";
+			PChar.quest.BSOnTheHorizon_start.win_condition.l1.location = "Nassau_town";
 			PChar.quest.BSOnTheHorizon_start.function = "BSOnTheHorizon_start";
 		break;
 
@@ -1283,7 +1285,14 @@ void ProcessDialogEvent()
 			DialogExit();
 		break;
 
-		case "room":
+		case "room":		
+			if (CheckAttribute(PChar, "questTemp.BSPrologue.WaitingForNassauSiege") && pchar.location == "Pirates_Tavern")
+			{
+				dialog.text = "Простите, капитан, но все места сейчас заняты.";
+				link.l1 = "Жаль...";
+				link.l1.go = "exit";
+				break;
+			}
 			//Квест Виспер
 			if (CheckAttribute(pchar, "Whisper.EsFriendTown") && pchar.location == pchar.Whisper.EsFriendTown+"_tavern")
 			{

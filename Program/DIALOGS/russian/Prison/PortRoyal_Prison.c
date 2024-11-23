@@ -17,6 +17,23 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
     			link.l2 = "Офицер, я знаю, что у вас содержатся три испанца, вроде бы Морган их захватил.";
     			link.l2.go = "Step_S1_1";
             }
+			if(CheckAttribute(PChar, "ToHelpMaksInPortRoyal"))
+            {
+    			link.l3 = "Я хотел" +GetSexPhrase("","а")+" поинтересоваться судьбой одной особы. Максин.";
+    			link.l3.go = "BS_F3_HelpMaks";
+            }
+		break;
+		
+		case "BS_F3_HelpMaks":	//Комендант.
+			DeleteAttribute(PChar, "ToHelpMaksInPortRoyal");
+			BS_ReplaceHostessWithMaks();
+			sld = CharacterFromID("PortRoyal_Hostess");
+			SaveOldDialog(sld);
+			sld.dialog.filename = "Quest\BlackSails\BS_Final_3.c";
+			sld.dialog.currentnode = "BS_F3_62";
+			dialog.text = "Ааа, мадам! Всё с ней в порядке. Подержали в клетке пару дней, потом пришёл посыльный от самого губернатора с помилованием. И отпустили с Богом!" ;
+			link.l1 = "Благодарю вас.";
+			link.l1.go = "exit";
 		break;
 
         case "Step_E6_1":
@@ -57,4 +74,3 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }
-

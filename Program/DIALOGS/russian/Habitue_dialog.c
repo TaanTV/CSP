@@ -38,6 +38,10 @@ void ProcessDialogEvent()
         {
             Dialog.CurrentNode = "Beta_test";
         }
+		if (CheckAttribute(PChar, "BSLookingForAgentDialugue") && pchar.location == "SentJons_tavern" && npchar.id != "BSAgent")
+		{
+			Dialog.CurrentNode = "BSAgentDialugueFirst";
+		}
 	}
 
 	switch (Dialog.CurrentNode)
@@ -81,6 +85,18 @@ void ProcessDialogEvent()
 			link.l1.go = "First time";
 			npchar.quest.last_theme = 1;
 		    npchar.quest.last_theme_game = 1;
+		break;
+		
+		case "BSAgentDialugueFirst":
+			dialog.text = RandPhraseSimple(RandPhraseSimple("Не загораживай мне свет, мух в кружке не видно!", "Чего тебе?"), RandPhraseSimple("Похмелья не допущу - трезветь не буду!", "У тебя есть что выпить?"));
+			link.l1 = "Рыбалка удалась.";
+			link.l1.go = "BSAgentDialugueSecond";
+		break;
+		
+		case "BSAgentDialugueSecond":	
+			dialog.text = RandPhraseSimple(RandPhraseSimple("Пойди проспись!", "Закусывать надо!"), RandPhraseSimple("Что? О чем вы?", "Не понимаю о чём вы!"));
+			link.l1 = "...";
+			link.l1.go = "exit";
 		break;
 
 		case "First time":
@@ -992,7 +1008,7 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				dialog.text = "А ну-ка, парни! выметем эту чешую из нашего города!";
+				dialog.text = "А ну-ка, парни! Выметем эту чешую из нашего города!";
 				link.l1 = RandPhraseSimple(RandSwear() + "Ну, молитесь, недоноски!","Ах, ты ещё и не один!!! Ну - будет тебе в аду компания!");
 				link.l1.go = "fight_right_now_1";
 			}
@@ -1009,7 +1025,7 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				dialog.text = "А ну-ка, парни! выметем эту чешую из нашего города!";
+				dialog.text = "А ну-ка, парни! Выметем эту чешую из нашего города!";
 				link.l1 = RandPhraseSimple(RandSwear() + "Ну, молитесь, недоноски!","Ах, ты ещё и не один!!! Ну - будет тебе в аду компания!");
 				link.l1.go = "fight_right_now_1";
 			}

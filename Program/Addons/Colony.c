@@ -380,7 +380,7 @@ void ColonyCheckFoodNeed()
 {
 	int iPopulation = sti(PChar.ColonyBuilding.Population);
 	int iFood = sti(PChar.ColonyBuilding.Food);
-	int iPopulationDiff = iPopulation / COLONY_FOOD_POPULATION_DELIT;
+	int iPopulationDiff = makeint(iPopulation / COLONY_FOOD_POPULATION_DELIT);
 
 	if (iPopulation <= 0) return;
 
@@ -391,7 +391,7 @@ void ColonyCheckFoodNeed()
 	}
 
 	int iFoodNeed = iPopulationDiff * 7;
-	float fCoff = iPopulationDiff / iPopulation;
+	float fCoff = makefloat(iPopulationDiff) / makefloat(iPopulation);
 
 	if (fCoff <= 0) return;
 
@@ -411,8 +411,8 @@ void ColonyCheckFoodNeed()
 			}
 
 			iDead = iFoodNeed - iFood;
-			iDead /= 7;
-			iDead /= fCoff;
+			iDead = makeint(iDead/7);
+			iDead = makeint(iDead/fCoff);
 
 			ChangeColonyMorale(-20, false);
 
@@ -436,7 +436,7 @@ void ColonyCheckFoodNeed()
 		return;
 	}
 
-	int iSoldiersDiff = iSoldiers / COLONY_FOOD_SOLDIERS_DELIT;
+	int iSoldiersDiff = makeint(iSoldiers / COLONY_FOOD_SOLDIERS_DELIT);
 	iFood = sti(PChar.ColonyBuilding.Food);
 
 	if(iSoldiersDiff < 1)
@@ -445,7 +445,7 @@ void ColonyCheckFoodNeed()
 	}
 
 	iFoodNeed = iSoldiersDiff * 7;
-	fCoff = iSoldiersDiff / iSoldiers;
+	fCoff = makefloat(iSoldiersDiff) / makefloat(iSoldiers);
 
 	if(iSoldiers > 0)
 	{
@@ -462,8 +462,8 @@ void ColonyCheckFoodNeed()
 			}
 
 			iDead = iFoodNeed - iFood;
-			iDead /= 7;
-			iDead /= fCoff;
+			iDead = makeint(iDead/7);
+			iDead = makeint(iDead/fCoff);
 
 			if(iDead > iSoldiers)
 			{
@@ -3613,7 +3613,7 @@ void CreateModificyColonyCaiman()
 	//rResidence.fastreload = "Caiman";
 	//rResidence.townsack = "Caiman";
 
-	rResidence.image = "loading\jonny_load\inside\residence03.tga";
+	rResidence.image = "loading\jonny_load\inside\residence03.dds";
 	rResidence.filespath.models = "locations\inside\" + sTownhall;
 	rResidence.models.always.locators = sTownhall + "_locators";
 	rResidence.models.always.l1 = sTownhall;
@@ -3926,7 +3926,7 @@ void CreateTownCaiman()
 
 	rTown.id.label = "Street";
 	rTown.worldmap = "Caiman";
-	rTown.image = "loading\jonny_load\city\Caiman_Town.tga";
+	rTown.image = "loading\jonny_load\city\Caiman_Town.dds";
 	rTown.citizens = true;
 	rTown.soldiers = true;
 	rTown.carrier = true;

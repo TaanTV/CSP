@@ -3,6 +3,7 @@
 #include "scripts\Pusher.c"
 #include "scripts\Utils2.c"
 string checkskillfortrauma = "LeadershipFencingLightFencingHeavyPistolFortuneSneak"
+int exp_skill_counter = 8;
 
 // порог ранга
 int GetCharacterRankRate(ref _refCharacter)
@@ -179,16 +180,8 @@ void RemoveBonusEnergyFromCharacter(ref _refCharacter, int howMuch)
 void SetEnergyToCharacter(ref _refCharacter)
 {
 	_refCharacter.chr_ai.energyMax = GetCharacterMaxEnergyValue(_refCharacter);
-	if (!CheckAttribute(_refCharacter, "chr_ai.energy"))
-	{
+	if (!CheckAttribute(_refCharacter, "chr_ai.energy") || sti(_refCharacter.chr_ai.energy) > sti(_refCharacter.chr_ai.energyMax)) {
 		_refCharacter.chr_ai.energy    = _refCharacter.chr_ai.energyMax;
-	}
-	else
-	{
-	    if (sti(_refCharacter.chr_ai.energy) > sti(_refCharacter.chr_ai.energyMax))
-	    {
-	        _refCharacter.chr_ai.energy    = _refCharacter.chr_ai.energyMax;
-	    }
 	}
 }
 
@@ -676,6 +669,7 @@ void AddCharacterSkillDontClearExp(ref _chref, string _skill, int _addValue)
 
 void ApplayNewSkill(ref _chref, string _skill, int _addValue)
 {
+	// TODO: переместить в другое место
 	if (_chref.id == pchar.id)
 	{
 		float P = makefloat(GetCharacterSPECIALSimple(_chref, SPECIAL_P)*10.0);
@@ -716,35 +710,32 @@ void ApplayNewSkill(ref _chref, string _skill, int _addValue)
 
     // трем кэш
     CheckAttribute(_chref, "BakSkill." + _skill);
-	if (CheckCharacterPerk(_chref, "HPPlus"))
-	{
-		if (LAi_IsDead(_chref)) return;
-		if (!CheckAttribute(_chref, "PerkValue.HPPlus"))
-		{
+
+	if (CheckCharacterPerk(_chref, "HPPlus")) {
+		if (LAi_IsDead(_chref)) { 
+			return;
+		}
+		if (!CheckAttribute(_chref, "PerkValue.HPPlus")) {
 			_chref.PerkValue.HPPlus = 0;
 			float npchp = LAi_GetCharacterMaxHP(_chref) + GetCharacterAddHPValue(_chref);
-			LAi_SetHP(_chref,npchp+80,npchp+80);
+			LAi_SetHP(_chref, npchp+80, npchp+80);
 		}
 	}
-	if (CheckCharacterPerk(_chref, "HPPlusFixed"))
-	{
-		if (!CheckAttribute(_chref, "PerkValue.HPPlusFixed"))
-		{
+	if (CheckCharacterPerk(_chref, "HPPlusFixed")) {
+		if (!CheckAttribute(_chref, "PerkValue.HPPlusFixed")) {
 			_chref.PerkValue.HPPlusFixed = 0;
 			float nphp = LAi_GetCharacterMaxHP(_chref) + GetCharacterAddHPValue(_chref);
-			LAi_SetHP(_chref,nphp+60,nphp+60);
+			LAi_SetHP(_chref, nphp+60, nphp+60);
 		}
 	}
-	//if (CheckCharacterPerk(_chref, "Buldozer"))
-	//{
-	//	SM_PusherSwitch();
-	//}
-	if (CheckCharacterPerk(_chref, "AboardCollector"))
-	{
+
+	// TODO: переместить в другое место
+	if (CheckCharacterPerk(_chref, "AboardCollector")) {
 		pchar.CSM.LootCollector.Enable = true;
 	}
-	if (CheckCharacterPerk(_chref, "AgileMan"))
-	{
+
+	// TODO: переместить в другое место
+	if (CheckCharacterPerk(_chref, "AgileMan")) {
 		if (_chref.model.animation == "man") _chref.model.animation = "man_fast";
 		// if (_chref.model.animation == "man_A") _chref.model.animation = "man_A_fast";
 		if (_chref.model.animation == "Jessika") _chref.model.animation = "Jessika_fast";
@@ -756,99 +747,77 @@ void ApplayNewSkill(ref _chref, string _skill, int _addValue)
 		if (_chref.model.animation == "Chani") _chref.model.animation = "Chani_fast";
 		if (_chref.model.animation == "skeleton") _chref.model.animation = "skeleton_fast";
 	}
+
 	// boal 05.05.04 разделение по группам -->
-	if (isSelfTypeSkill(_skill))
-    {
-       if(CheckAttribute(_chref,"perks.FreePoints_self_exp"))
-       {
-           _chref.perks.FreePoints_self_exp = sti(_chref.perks.FreePoints_self_exp) + _addValue;
-       }
-       else
-       {	_chref.perks.FreePoints_self_exp = _addValue;
-       }
-       if (sti(_chref.perks.FreePoints_self_exp) >= GetFreePoints_SelfRate(_chref))
-       {
-           _chref.perks.FreePoints_self_exp = 0;
-           if(CheckAttribute(_chref,"perks.FreePoints_self"))
-           {
-               _chref.perks.FreePoints_self = sti(_chref.perks.FreePoints_self) + 1;
-           }
-           else
-           {	_chref.perks.FreePoints_self = 1;
-           }
-           if (sti(_chref.index) == GetMainCharacterIndex())
-           {
-               Log_SetStringToLog(XI_ConvertString("Personal abilities") + " + 1");
-           }
-       }
+	int iFreePoints_exp = 0;
+	if (isSelfTypeSkill(_skill)) {
+		if(CheckAttribute(_chref,"perks.FreePoints_self_exp")) {
+			iFreePoints_exp = sti(_chref.perks.FreePoints_self_exp);
+		}
+		iFreePoints_exp += _addValue;
+		if (iFreePoints_exp >= GetFreePoints_SelfRate(_chref)) {
+			iFreePoints_exp -= GetFreePoints_SelfRate(_chref);
+			if(CheckAttribute(_chref,"perks.FreePoints_self")) {
+				_chref.perks.FreePoints_self = sti(_chref.perks.FreePoints_self) + 1;
+			}
+			else {	
+				_chref.perks.FreePoints_self = 1;
+			}
+			if (sti(_chref.index) == GetMainCharacterIndex()) {
+				Log_SetStringToLog(XI_ConvertString("Personal abilities") + " + 1");
+			}
+		}
+		_chref.perks.FreePoints_self_exp = iFreePoints_exp;
     }
-    else
-    {
-       if(CheckAttribute(_chref,"perks.FreePoints_ship_exp"))
-       {
-           _chref.perks.FreePoints_ship_exp = sti(_chref.perks.FreePoints_ship_exp) + _addValue;
-       }
-       else
-       {	_chref.perks.FreePoints_ship_exp = _addValue;
-       }
-       if (sti(_chref.perks.FreePoints_ship_exp) >= GetFreePoints_ShipRate(_chref))
-       {
-           _chref.perks.FreePoints_ship_exp = 0;
-           if(CheckAttribute(_chref,"perks.FreePoints_ship"))
-           {
-               _chref.perks.FreePoints_ship = sti(_chref.perks.FreePoints_ship) + 1;
-           }
-           else
-           {	_chref.perks.FreePoints_ship = 1;
-           }
-           if (sti(_chref.index) == GetMainCharacterIndex())
-           {
-               Log_SetStringToLog(XI_ConvertString("Ship abilities") + " + 1");
-           }
-       }
+    else {
+		if(CheckAttribute(_chref,"perks.FreePoints_ship_exp")) {
+			iFreePoints_exp = sti(_chref.perks.FreePoints_ship_exp);
+		}
+		iFreePoints_exp += _addValue;
+		if (iFreePoints_exp >= GetFreePoints_ShipRate(_chref)) {
+			iFreePoints_exp -= GetFreePoints_ShipRate(_chref);
+			if(CheckAttribute(_chref,"perks.FreePoints_ship")) {
+				_chref.perks.FreePoints_ship = sti(_chref.perks.FreePoints_ship) + 1;
+			}
+			else {
+				_chref.perks.FreePoints_ship = 1;
+			}
+			if (sti(_chref.index) == GetMainCharacterIndex()) {
+				Log_SetStringToLog(XI_ConvertString("Ship abilities") + " + 1");
+			}
+		}
+		_chref.perks.FreePoints_ship_exp = iFreePoints_exp;
     }
     // boal 05.05.04 разделение по группам <--
 
-    if(!CheckAttribute(_chref, "rank_exp"))
-    {
+    if(!CheckAttribute(_chref, "rank_exp")) {
       _chref.rank_exp = 0;
     }
     _chref.rank_exp = sti(_chref.rank_exp) + _addValue;
 
+	// левелап
     if (sti(_chref.rank_exp) >= GetCharacterRankRate(_chref)) // use classic mode - 2 skill = 1 rank
     {
         _chref.rank_exp = 0;
         _chref.rank = sti(_chref.rank) + 1;
         float mhp = LAi_GetCharacterMaxHP(_chref) + GetCharacterAddHPValue(_chref);
-        LAi_SetHP(_chref,mhp,mhp);
+        LAi_SetHP(_chref, mhp, mhp);
 
-        if (CheckCharacterPerk(_chref, "EnergyPlus"))
-		{
-			SetEnergyToCharacter(_chref);
-		}
-		if (CheckCharacterPerk(_chref, "EnergyPlusFixed"))
-		{
-			SetEnergyToCharacter(_chref);
-		}
-		if (CheckCharacterPerk(_chref, "Grunt"))
-		{
-			SetEnergyToCharacter(_chref);
-		}
-		if (CheckAttribute(_chref, "bonusEnergy"))
+        if (CheckCharacterPerk(_chref, "EnergyPlus") 
+			|| CheckCharacterPerk(_chref, "EnergyPlusFixed") 
+			|| CheckCharacterPerk(_chref, "Grunt") 
+			|| CheckAttribute(_chref, "bonusEnergy")) 
 		{
 			SetEnergyToCharacter(_chref);
 		}
         // сообщение в лог
-        if(IsOfficer(_chref) || IsCompanion(_chref))
-        {
+        if(IsOfficer(_chref) || IsCompanion(_chref)) {
             AddMsgToCharacter(_chref,MSGICON_LEVELUP);
-            if(_chref.id == "Blaze")
-            {
-            Log_Info(GetConvertStrWithReplace("Variable_RPGUtilite_1", "Logs.txt", "#space#", " "));
-            PlayStereoSound("interface\new_level.wav");
+            if(_chref.id == "Blaze") {
+           		Log_Info(GetConvertStrWithReplace("Variable_RPGUtilite_1", "Logs.txt", "#space#", " "));
+            	PlayStereoSound("interface\new_level.wav");
             }
-            else
-            {
+            else {
                 Log_Info("" + GetFullName(_chref) + GetConvertStrWithReplace("Variable_RPGUtilite_2", "Logs.txt", "#space#", " "));
             }
         }
@@ -1065,77 +1034,37 @@ int SetCharacterSkillByItem(ref _refCharacter, string _skillName, string _itemSk
 
 int SetCharacterSkillByItemEquipped(ref _refCharacter, string _skillName, string _itemSkillName, string _item, int _addValue)//метод под экипируемые индианы/идолы/тотемы - Gregg
 {
-	int iRetValue = 0;
-
-	if (IsEquipCharacterByItem(_refCharacter, _item))
-	{
-		if(_skillName == _itemSkillName && GetCharacterItem(_refCharacter, _item) > 0)
-		{
-			iRetValue = _addValue;
-		}
-	}
-
-	return iRetValue;
+	return IsEquipCharacterByItem(_refCharacter, _item) * _addValue;
 }
 
 int SetCharacterSkillBySculArtefact(ref _refCharacter, string _skillName)
 {
-    if (_skillName == SKILL_CANNONS || _skillName == SKILL_DEFENCE || _skillName == SKILL_GRAPPLING || _skillName == SKILL_SAILING)
-	{
-       if (GetCharacterItem(_refCharacter, "sculMa1")>0 && GetCharacterItem(_refCharacter, "sculMa2")>0 && GetCharacterItem(_refCharacter, "sculMa3")>0)
-       {
-           switch (_skillName)
-           {
-               case  SKILL_CANNONS:
-                   return 20;
-               break;
+	bool bSkillSailing, bSkillCannons, bSkillGrappling, bSkillDefense, bSculMa1, bSculMa2, bSculMa3;
+	bSkillSailing = (_skillName == SKILL_SAILING);
+	bSkillCannons = (_skillName == SKILL_CANNONS);
+	bSkillGrappling = (_skillName == SKILL_GRAPPLING);
+	bSkillDefense = (_skillName == SKILL_DEFENCE);
+	if (!bSkillSailing && !bSkillCannons && !bSkillGrappling && !bSkillDefense) {
+		return 0;
+	}
+	bSculMa1 = (GetCharacterItem(_refCharacter, "sculMa1") > 0);
+	bSculMa2 = (GetCharacterItem(_refCharacter, "sculMa2") > 0);
+	bSculMa3 = (GetCharacterItem(_refCharacter, "sculMa3") > 0);
 
-               case  SKILL_DEFENCE:
-                   return 20;
-               break;
-
-               case  SKILL_GRAPPLING:
-                   return 20;
-               break;
-
-               case  SKILL_SAILING:
-                   return 20;
-               break;
-           }
-       }
-       else
-       {
-		if (GetCharacterItem(_refCharacter, "sculMa1")>0)
-		{
-			           switch (_skillName)
-           				{
-               					case  SKILL_GRAPPLING:
-                   				return 10;
-               					break;
-           				}
+	if (bSculMa1 && bSculMa2 && bSculMa3) {// основной чек
+		return 20;
+	}
+	else {
+		if (bSkillGrappling && bSculMa1) {
+			return 10;
 		}
-
-		if (GetCharacterItem(_refCharacter, "sculMa2")>0)
-		{
-			           switch (_skillName)
-           				{
-               					case  SKILL_CANNONS:
-                   				return 10;
-               					break;
-           				}
+		if (bSkillCannons && bSculMa2) {
+			return 10;
 		}
-
-		if (GetCharacterItem(_refCharacter, "sculMa3")>0)
-		{
-			           switch (_skillName)
-           				{
-               					case  SKILL_DEFENCE:
-                   				return 10;
-               					break;
-           				}
-           }
-       }
-    }
+		if (bSkillDefense && bSculMa3) {
+			return 10;
+		}
+	}
     return 0;
 }
 
@@ -1283,167 +1212,258 @@ float GetCharacterSkillNoBonusToOld(ref _refCharacter, string skillName)
 
 int GetCharacterSkillSimple(ref _refCharacter, string skillName)
 {
-	if( !CheckAttribute(_refCharacter,"Skill."+skillName) ) return 1;
-	int skillN = sti(_refCharacter.Skill.(skillName));
-	if (CheckAttribute(_refCharacter,"HPminusDaysNeedtoRestore")) skillN -= 50; //штраф от контузии - Gregg
+	if( !CheckAttribute(_refCharacter,"Skill."+skillName) ) {
+		return 1;
+	}
 
+	int skillN = sti(_refCharacter.Skill.(skillName));
+
+	if (CheckAttribute(_refCharacter,"HPminusDaysNeedtoRestore")) {
+		skillN -= 50; //штраф от контузии - Gregg
+	}
 	bool   bHero = (sti(_refCharacter.index) == GetMainCharacterIndex());
 
-	if (bHero)
-	{
-		if (CheckAttribute(pchar,"drugstaken") && pchar.drugstaken >= 3) skillN -= 50; //штраф от перекура
-		if (skillName == "Leadership")
-		{
-			if (CheckAttribute(pchar,"LeadershipLose"))	skillN -= 200;
+	if (bHero) {
+		if (CheckAttribute(pchar,"drugstaken") && pchar.drugstaken >= 3) {
+			skillN -= 50; //штраф от перекура
 		}
-	}
-
-    // boal учет вещей -->
-    if (bHero || CheckAttribute(_refCharacter, "Payment")) //IsCompanion(_refCharacter) || IsOfficer(_refCharacter))
-    {
-        // Health
-        if (bHero && MOD_SKILL_ENEMY_RATE > 1) // не халява
-        {
-            if (isSelfTypeSkill(skillName))
-            {
-                skillN = skillN + 5*(GetHealthNum(_refCharacter) - 6); // max -5
-            }
-        }
-		///////////// Оружие -->
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "topor_emperor", 20);			// {Императорский топор}
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "topor_emperor", -30);				// {Императорский топор}
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SAILING, "blackbeard_sword", 10);			// {Меч Тритона}
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_GRAPPLING, "blackbeard_sword", 20);		// {Меч Тритона}
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FENCING, "blade013", +10);				// {Сабля Ирис}
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "blade013", -30);				// {Сабля Ирис}
-		
-		///////////// Оружие <--
-
-		///////////// Иконки слева (Камни/бижутерия)  -->
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "jewelry4", 10);			// {Изумруд}							(+10 авторитет)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "jewelry8", 10);				// {Бронзовое кольцо} 					(+10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian5", 10);				// {Двойная маска}						(+10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_F_HEAVY, "indian12", 10);				// {Кубок-тотем Тепейоллотля}			(+10 тяжёлое оружие)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "Dozor_HorseShoe", 15);		// {Счастливая подкова}					(+15 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "jewelry15", 10);				// {Изумрудные подвески} 				(+10 скрытность)
-
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "indian7", 10);				// {Идол Великой Матери} 				(+10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian17", 10);				// {Тельная ладанка}					(+10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_REPAIR, STATUE1, 30);					// {Статуэтка Шочипилли}				(+30 ремонт)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_COMMERCE, "indian3", 10);				// {Нефритовая маска}					(+10 торговля)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "jewelry9", 10);				// {Бронзовый крестик} 					(+10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FENCING, "indian6", 10);				// {Амулет Шиукоатля}					(+10 среднее оружие)
-		///////////// Иконки слева (Камни/бижутерия) <--
-
-		///////////// Иконки по центру (Комплексные бафы от идолов)  -->
-		skillN = skillN + SetCharacterSkillByHaosArtefact(_refCharacter, skillName);
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "DeSouzaCross", 30);			// {Крест Антонио де Соуза} 			(+30 к везению, +20 к авторитету, +10 к торговле)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "DeSouzaCross", 20);		// {Крест Антонио де Соуза} 			(+30 к везению, +20 к авторитету, +10 к торговле)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_COMMERCE, "DeSouzaCross", 10);		// {Крест Антонио де Соуза} 			(+30 к везению, +20 к авторитету, +10 к торговле)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "DHGlove", -15);				// {Темпоральный деформатор} 			(-15 к скрытности, +15 к авторитету при ношении)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "DHGlove", 15);			// {Темпоральный деформатор} 			(-15 к скрытности, +15 к авторитету при ношении)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "indian1", 10);			// {Оберег Тлальчитонатиу}				(+10 авторитет и скрытность, -20 пистолеты)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian1", 10);				// {Оберег Тлальчитонатиу}				(+10 авторитет и скрытность, -20 пистолеты)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_PISTOL, "indian1", -20);				// {Оберег Тлальчитонатиу}				(+10 авторитет и скрытность, -20 пистолеты)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_PISTOL, "indian10", 20);				// {Оберег Эхекатля}					(+20 пистолеты, +10 меткость, -20 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian10", -20);				// {Оберег Эхекатля}					(+20 пистолеты, +10 меткость, -20 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_ACCURACY, "indian10", 10);			// {Оберег Эхекатля}					(+20 пистолеты, +10 меткость, -20 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "indian14", -20);			// {Чаша Ололиуки}						(+20 торговля, -20 авторитет)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_COMMERCE, "indian14", 20);			// {Чаша Ололиуки}						(+20 торговля, -20 авторитет)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "indian15", 10);			// {Базальтовая голова}					(+10 авторитет и защита, -10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_DEFENCE, "indian15", 10);				// {Базальтовая голова}					(+10 авторитет и защита, -10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "indian15", -10);			// {Базальтовая голова}					(+10 авторитет и защита, -10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SAILING, "indian18", 10);				// {Идол Атлауа}						(+10 навигация, -10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian18", -10);				// {Идол Атлауа}						(+10 навигация, -10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_ACCURACY, "indian19", 20);			// {Статуэтка Тлалока}					(+20 меткость, +10 орудия, -20 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_CANNONS, "indian19", 10);				// {Статуэтка Тлалока}					(+20 меткость, +10 орудия, -20 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian19", -20);				// {Статуэтка Тлалока}					(+20 меткость, +10 орудия, -20 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "indian20", 20);			// {Церемониальный нож}					(+20 авторитет и -10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "indian20", -10);			// {Церемониальный нож}					(+20 авторитет и -10 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "indian21", 20);			// {Церемониальный сосуд}				(+20 авторитет, -10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "indian21", -10);				// {Церемониальный сосуд}				(+20 авторитет, -10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_F_LIGHT, "indian22", 10);				// {Голова воина племени майя}			(+20 защита, +10 легкое оружие, -10 авторитет и везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_DEFENCE, "indian22", 20);				// {Голова воина племени майя}			(+20 защита, +10 легкое оружие, -10 авторитет и везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "indian22", -10);			// {Голова воина племени майя}			(+20 защита, +10 легкое оружие, -10 авторитет и везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "indian22", -10);			// {Голова воина племени майя}			(+20 защита, +10 легкое оружие, -10 авторитет и везение)
-		///////////// Иконки по центру (Комплексные бафы от идолов) <--
-
-    	///////////// Иконки справа (Тотемы ацтеков/бижутерия) -->
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "Totem_1", 5);				// {Тотем Шочикецаль} 					(+5 везение)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "Totem_2", 5);					// {Тотем Миктлантекутли} 				(+5 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_PISTOL, "Totem_5", 5);				// {Тотем Тескатлипока}					(+5 пистолеты)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "Totem_6", 5);			// {Тотем Чалчиуитликуэ}				(+5 авторитет)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FENCING, "Totem_7", 5);				// {Тотем Уицилопочтли}					(+5 среднее оружие)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_F_LIGHT, "Totem_8", 5);				// {Тотем Тлалока}						(+5 легкое оружие)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_F_HEAVY, "Totem_9", 5); 				// {Тотем Майяуэль}						(+5 тяжёлое оружие)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "Dozor_Mirror", 15);			// {Карманное зеркало}					(+15 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SAILING, "hatWhisper", 5);			// {Шляпа капитана "Чёрной Вдовы"}		(+5 навигация)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_LEADERSHIP, "hatWhisper", 5);			// {Шляпа капитана "Чёрной Вдовы"}		(+5 авторитет)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_GRAPPLING, "hatWhisper", 5);			// {Шляпа капитана "Чёрной Вдовы"}		(+5 абордаж)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "hatWhisper", -5);				// {Шляпа капитана "Чёрной Вдовы"}		(-5 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SAILING, "Dozor_Storm", 5);			// {Санта-Мария}						(+5 навигация)
-
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_DEFENCE, "Totem_3", 5);				// {Тотем Кецалькоатля} 				(+5 защита)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_ACCURACY, "Totem_4", 5);				// {Тотем Мишкоатля}					(+5 меткость)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_COMMERCE, "Totem_10", 5); 			// {Тотем Тонакатекутли}				(+5 торговля)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_CANNONS, "Totem_11", 5); 				// {Тотем Камаштли}						(+5 орудия)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SAILING, "Totem_12", 5);				// {Тотем Синтеотля}					(+5 навигация)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_REPAIR, "Totem_15", 5);				// {Тотем Шипе-Тотеку}					(+5 починка)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "glasses", 15);				// {Очки}								(+15 скрытность)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_PISTOL, "glasses", -5);				// {Очки}								(-5 пистолеты)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_ACCURACY, "glasses", -5);				// {Очки}								(-5 меткость)
-    	skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_CANNONS, "glasses", -5);				// {Очки}								(-5 орудия)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_COMMERCE, "PDM_PJ_BsRL", 5);			// {Бутылка с розовой ленточкой}		(+5 везение, +5 торговля, -5 скрытность)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_FORTUNE, "PDM_PJ_BsRL", 5);			// {Бутылка с розовой ленточкой}		(+5 везение, +5 торговля, -5 скрытность)
-		skillN = skillN + SetCharacterSkillByItemEquipped(_refCharacter, skillName, SKILL_SNEAK, "PDM_PJ_BsRL", -5);			// {Бутылка с розовой ленточкой}		(+5 везение, +5 торговля, -5 скрытность)
-		///////////// Иконки справа (Тотемы ацтеков/бижутерия) <--
-
-		///////////// Дают бафы/дебафы из инвентаря -->
-        skillN = skillN + SetCharacterSkillBySculArtefact(_refCharacter, skillName);
-		skillN = skillN + MaxSailing(_refCharacter, skillName);
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FORTUNE, "Cursed_idol", -40);					// {Идол Хурукацелитипочтли}			(-40 везение)
-    	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FORTUNE, "Coins", -50);						// {Проклятые жемчужины}				(-50 везение)
-    	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FORTUNE, "Mineral8", -10);					// {Башмак}								(-10 везение)
-    	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_LEADERSHIP, "mineral4", -10);					// {Баклан}								(-10 авторитет и  -10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_SNEAK, "mineral4", -10);						// {Баклан}								(-10 авторитет и  -10 скрытность)
-    	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_LEADERSHIP, "indian2", -10);					// {Пугающая фигурка} 					(-10 авторитет)
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FORTUNE, "SkullAztec", -20);					// {Нефритовый череп}					(-20 везение, +10 лидерство)
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_LEADERSHIP, "SkullAztec", 10);				// {Нефритовый череп}					(-20 везение, +10 лидерство)
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_PISTOL, "KnifeAztec", -30);					// {Обсидиановый церемониальный нож} 	(-30 пистолеты, -20 во все остальные типы оружия)
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_F_LIGHT, "KnifeAztec", -20);					// {Обсидиановый церемониальный нож} 	(-30 пистолеты, -20 во все остальные типы оружия)
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FENCING, "KnifeAztec", -20);					// {Обсидиановый церемониальный нож} 	(-30 пистолеты, -20 во все остальные типы оружия)
-		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_F_HEAVY, "KnifeAztec", -20);					// {Обсидиановый церемониальный нож} 	(-30 пистолеты, -20 во все остальные типы оружия)
-		///////////// Дают бафы/дебафы из инвентаря <--
-
-		// Warship 25.10.08 Новый учет одежды
-		skillN += SetCharacterSkillBySuit(_refCharacter, skillName);
-
-		//Gregg Бусты от предметов Дозора
-
-		//navy --> действие алкоголя
-		if (CheckAttribute(_refCharacter, "chr_ai.drunk.skill." + skillName))
-		{
-			skillN += sti(_refCharacter.chr_ai.drunk.skill.(skillName));
-		}
-		//Талисман Ягуар
-		if(!IsDay())
-		{
-			if(IsCharacterEquippedArtefact(_refCharacter, "talisman15") && skillName == SKILL_ACCURACY) 
-			{
-				skillN = skillN * 2; // x2 по ночам
+		if (skillName == "Leadership") {
+			if (CheckAttribute(pchar,"LeadershipLose"))	{
+				skillN -= 200;
 			}
 		}
-    	// boal учет перегруза 19.01.2004 -->
-    	if ( GetItemsWeight(_refCharacter) > GetMaxItemsWeight(_refCharacter))
-    	{
-   	        skillN -= 20;
-    	}
-    	// boal учет перегруза 19.01.2004 <--
+		// Health
+		if (MOD_SKILL_ENEMY_RATE > 1 && isSelfTypeSkill(skillName)) {// не халява
+			skillN = skillN + 5*(GetHealthNum(_refCharacter) - 6); // max -5
+		}
 	}
-	// boal <--
-	if (skillN <= 1) skillN = 1;
-	if( skillN > SKILL_MAX ) skillN = SKILL_MAX;
+    // boal учет вещей -->
+    if (!bHero && !CheckAttribute(_refCharacter, "Payment")) //IsCompanion(_refCharacter) || IsOfficer(_refCharacter))
+	{
+		if (skillN <= 1) {
+			skillN = 1;
+		}
+		if (skillN > SKILL_MAX) {
+			skillN = SKILL_MAX;
+		}
+		return skillN;
+	}
+//else
+	switch (skillName)
+	{
+		case SKILL_LEADERSHIP:
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "topor_emperor"); // {Императорский топор}
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "jewelry4"); // {изумруд}
+			// (+10 авторитет)
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "DeSouzaCross"); // {Крест Антонио де Соуза} (+30 к везению, +20 к авторитету, +10 к торговле)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "DHGlove"); // {Темпоральный деформатор} (-15 к скрытности, +15 к авторитету при ношении)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian1"); // {Оберег Тлальчитонатиу} (+10 авторитет и скрытность, -20 пистолеты)
+			skillN -= 20 * IsEquipCharacterByItem(_refCharacter, "indian14"); // {Чаша Ололиуки} (+20 торговля, -20 авторитет)		
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian15"); // {Базальтовая голова} (+10 авторитет и защита, -10 везение)		
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "indian20"); // {Церемониальный нож} (+20 авторитет и -10 везение)		
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "indian21"); // {Церемониальный сосуд}
+			//(+20 авторитет, -10 скрытность)		
+			skillN -= 10 * IsEquipCharacterByItem(_refCharacter, "indian22");
+			// {Голова воина племени майя} (+20 защита, +10 легкое оружие, -10 авторитет и везение)		
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_6"); // {Тотем Чалчиуитликуэ}
+			//(+5 авторитет)		
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "hatWhisper"); // {Шляпа капитана "Чёрной Вдовы"}
+			//(+5 авторитет)		
+			
+			skillN -= 20 * IsEquipCharacterByItem(_refCharacter, "PKM_SvtvA_amulet") * (1 - (GetCharacterItem(_refCharacter, "PKM_SvtvA_pismo3") > 0)); // артефакт хаоса: -20 Авторитет, +15 СО, +15 ТО
+			// артефакт хаоса + письмо: +15 СО, +15 ТО, +15 Орудия, +15 Точность
 
+			//работают из кармана
+			skillN -= 10 * (GetCharacterItem(_refCharacter, "mineral4") > 0); // {Баклан}
+			//(-10 авторитет и  -10 скрытность)	
+			skillN -= 10 * (GetCharacterItem(_refCharacter, "indian2") > 0); // {Пугающая фигурка}
+			//(-10 авторитет)
+			skillN += 10 * (GetCharacterItem(_refCharacter, "SkullAztec") > 0); // {Нефритовый череп}
+			//(-20 везение, +10 лидерство)
+		break;
+		case SKILL_F_LIGHT:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian22"); // {Голова воина племени майя}
+			//(+20 защита, +10 легкое оружие, -10 авторитет и везение)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_8"); // {Тотем Тлалока}
+			//(+5 легкое оружие)
+
+			//работают из кармана
+			skillN -= 20 * (GetCharacterItem(_refCharacter, "KnifeAztec") > 0);
+			// {Обсидиановый церемониальный нож} (-30 пистолеты, -20 во все остальные типы оружия)
+		break;
+		case SKILL_FENCING:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "blade013"); // {Сабля Ирис}
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian6"); // {Амулет Шиукоатля} (+10 среднее оружие)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_7"); // {Тотем Уицилопочтли} (+5 среднее оружие)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "PKM_SvtvA_amulet"); //артефакт хаоса (-20 Авторитет, +15 Среднее оружие, +15 Тяжелое оружие)
+
+			//работают из кармана
+			skillN -= 20 * (GetCharacterItem(_refCharacter, "KnifeAztec") > 0); // {Обсидиановый церемониальный нож} (-30 пистолеты, -20 во все остальные типы оружия)
+		break;
+		case SKILL_F_HEAVY:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian12"); // {Кубок-тотем Тепейоллотля}
+			//(+10 тяжёлое оружие)		    	
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_9"); // {Тотем Майяуэль}
+			//(+5 тяжёлое оружие)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "PKM_SvtvA_amulet"); //артефакт хаоса
+			//(-20 Авторитет, +15 Среднее оружие, +15 Тяжелое оружие)
+
+			//работают из кармана
+			skillN -= 30 * (GetCharacterItem(_refCharacter, "KnifeAztec") > 0); // {Обсидиановый церемониальный нож} (-30 пистолеты, -20 во все остальные типы оружия)
+		break;
+		case SKILL_PISTOL:
+			skillN -= 20 * IsEquipCharacterByItem(_refCharacter, "indian1"); // {Оберег Тлальчитонатиу}
+			//(+10 авторитет и скрытность, -20 пистолеты)
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "indian10"); // {Оберег Эхекатля}
+			//(+20 пистолеты, +10 меткость, -20 скрытность)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_5"); // {Тотем Тескатлипока}
+			//(+5 пистолеты)
+			skillN -= 5 * IsEquipCharacterByItem(_refCharacter, "glasses"); // {Очки}
+			//(-5 пистолеты)
+
+			//работают из кармана
+			skillN -= 30 * (GetCharacterItem(_refCharacter, "KnifeAztec") > 0); // {Обсидиановый церемониальный нож}
+			//(-30 пистолеты, -20 во все остальные типы оружия)
+		break;
+		case SKILL_FORTUNE:
+			skillN -= 30 * IsEquipCharacterByItem(_refCharacter, "blade013"); // {Сабля Ирис}
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "jewelry8"); // {Бронзовое кольцо} (+10 везение)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "Dozor_HorseShoe"); // {Счастливая подкова} (+15 везение)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian7"); // {Идол Великой Матери} (+10 везение)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "jewelry9"); // {Бронзовый крестик} (+10 везение)
+			skillN += 30 * IsEquipCharacterByItem(_refCharacter, "DeSouzaCross"); // {Крест Антонио де Соуза} (+30 к везению, +20 к авторитету, +10 к торговле)
+			skillN -= 10 * IsEquipCharacterByItem(_refCharacter, "indian15"); // {Базальтовая голова} (+10 авторитет и защита, -10 везение)
+			skillN -= 10 * IsEquipCharacterByItem(_refCharacter, "indian20"); // {Церемониальный нож} (+20 авторитет и -10 везение)
+			skillN -= 10 * IsEquipCharacterByItem(_refCharacter, "indian22"); // {Голова воина племени майя} (+20 защита, +10 легкое оружие, -10 авторитет и везение)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_1"); // {Тотем Шочикецаль} (+5 везение)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "PDM_PJ_BsRL"); // {Бутылка с розовой ленточкой} (+5 везение, +5 торговля, -5 скрытность)
+
+			//работают из кармана
+			skillN -= 40 * (GetCharacterItem(_refCharacter, "Cursed_idol") > 0); // {Идол Хурукацелитипочтли} (-40 везение)
+			skillN -= 50 * (GetCharacterItem(_refCharacter, "Coins") > 0);// {Проклятые жемчужины} (-50 везение)
+			skillN -= 10 * (GetCharacterItem(_refCharacter, "Mineral8") > 0); // {Башмак} (-10 везение)
+			skillN -= 20 * (GetCharacterItem(_refCharacter, "SkullAztec") > 0); // {Нефритовый череп} (-20 везение, +10 лидерство)
+		break;
+		case SKILL_SNEAK:
+			skillN -= 30 * IsEquipCharacterByItem(_refCharacter, "topor_emperor"); // {Императорский топор}
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian5"); // {Двойная маска}
+			//(+10 скрытность)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "jewelry15"); // {Изумрудные подвески}
+			//(+10 скрытность)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian17"); // {Тельная ладанка}
+			//(+10 скрытность)		
+			skillN -= 15 * IsEquipCharacterByItem(_refCharacter, "DHGlove"); // {Темпоральный деформатор}
+			//(-15 к скрытности, +15 к авторитету при ношении)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian1"); // {Оберег Тлальчитонатиу}
+			//(+10 авторитет и скрытность, -20 пистолеты)
+			skillN -= 20 * IsEquipCharacterByItem(_refCharacter, "indian10"); // {Оберег Эхекатля}
+			//(+20 пистолеты, +10 меткость, -20 скрытность)		
+			skillN -= 10 * IsEquipCharacterByItem(_refCharacter, "indian18"); // {Идол Атлауа}
+			//(+10 навигация, -10 скрытность)
+			skillN -= 20 * IsEquipCharacterByItem(_refCharacter, "indian19"); // {Статуэтка Тлалока}
+			//(+20 меткость, +10 орудия, -20 скрытность)
+			skillN -= 10 * IsEquipCharacterByItem(_refCharacter, "indian21"); // {Церемониальный сосуд}
+			//(+20 авторитет, -10 скрытность)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_2"); // {Тотем Миктлантекутли}
+			//(+5 скрытность)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "Dozor_Mirror"); // {Карманное зеркало}
+			//(+15 скрытность)		
+			skillN -= 5 * IsEquipCharacterByItem(_refCharacter, "hatWhisper"); // {Шляпа капитана "Чёрной Вдовы"}
+			//(-5 скрытность)		
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "glasses"); // {Очки}
+			//(+15 скрытность)
+			skillN -= 5 * IsEquipCharacterByItem(_refCharacter, "PDM_PJ_BsRL"); // {Бутылка с розовой ленточкой}
+			//(+5 везение, +5 торговля, -5 скрытность)
+			
+			//работают из кармана
+			skillN -= 10 * (GetCharacterItem(_refCharacter, "mineral4") > 0); // {Баклан}
+			//(-10 авторитет и  -10 скрытность)
+		break;
+		case SKILL_SAILING:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "blackbeard_sword"); // {Меч Тритона}
+			// +10 Навигация, +20 Абордаж
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian18"); // {Идол Атлауа}
+			//(+10 навигация, -10 скрытность)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "hatWhisper"); // {Шляпа капитана "Чёрной Вдовы"}
+			//(+5 навигация)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Dozor_Storm"); // {Санта-Мария}
+			//(+5 навигация)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_12"); // {Тотем Синтеотля}
+			//(+5 навигация)
+			if (CheckAttribute(pchar, "MaxSailing")) {
+				skillN = SKILL_MAX;
+			}
+		break;
+		case SKILL_ACCURACY:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian10"); // {Оберег Эхекатля} (+20 пистолеты, +10 меткость, -20 скрытность)
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "indian19"); // {Статуэтка Тлалока} (+20 меткость, +10 орудия, -20 скрытность)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_4"); // {Тотем Мишкоатля} (+5 меткость)				    	
+			skillN -= 5 * IsEquipCharacterByItem(_refCharacter, "glasses"); // {Очки} (-5 меткость)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "PKM_SvtvA_amulet") * (GetCharacterItem(_refCharacter, "PKM_SvtvA_pismo3") > 0);// артефакт хаоса + письмо: -20 Авторитет, +30 СО, +30 ТО, +15 Орудия, +15 Точность
+			//Талисман Ягуар
+			if(!IsDay() && IsCharacterEquippedArtefact(_refCharacter, "talisman15")) {
+					skillN = skillN * 2; // x2 по ночам
+			}
+		break;
+		case SKILL_CANNONS:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian19"); // {Статуэтка Тлалока} (+20 меткость, +10 орудия, -20 скрытность)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_11"); // {Тотем Камаштли} (+5 орудия)
+			skillN -= 5 * IsEquipCharacterByItem(_refCharacter, "glasses"); // {Очки} (-5 орудия)
+			skillN += 15 * IsEquipCharacterByItem(_refCharacter, "PKM_SvtvA_amulet") * (GetCharacterItem(_refCharacter, "PKM_SvtvA_pismo3") > 0);// артефакт хаоса + письмо: -20 Авторитет, +30 СО, +30 ТО, +15 Орудия, +15 Точность
+		break;
+		case SKILL_GRAPPLING:
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "blackbeard_sword"); // {Меч Тритона}
+			// +10 Навигация, +20 Абордаж
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "hatWhisper"); // {Шляпа капитана "Чёрной Вдовы"}
+			//(+5 абордаж)
+		break;
+		case SKILL_DEFENCE:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian15"); // {Базальтовая голова}
+			//(+10 авторитет и защита, -10 везение)
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "indian22"); // {Голова воина племени майя}
+			//(+20 защита, +10 легкое оружие, -10 авторитет и везение)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_3"); // {Тотем Кецалькоатля}
+			//(+5 защита)
+		break;
+		case SKILL_REPAIR:
+			skillN += 30 * IsEquipCharacterByItem(_refCharacter, STATUE1); // {Статуэтка Шочипилли}
+			//(+30 ремонт)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_15"); // {Тотем Шипе-Тотеку}
+			//(+5 починка)
+		break;
+		case SKILL_COMMERCE:
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "indian3"); // {Нефритовая маска}
+			//(+10 торговля)
+			skillN += 10 * IsEquipCharacterByItem(_refCharacter, "DeSouzaCross"); // {Крест Антонио де Соуза} 
+			//(+30 к везению, +20 к авторитету, +10 к торговле)
+			skillN += 20 * IsEquipCharacterByItem(_refCharacter, "indian14"); // {Чаша Ололиуки}
+			//(+20 торговля, -20 авторитет)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "Totem_10"); // {Тотем Тонакатекутли}
+			//(+5 торговля)
+			skillN += 5 * IsEquipCharacterByItem(_refCharacter, "PDM_PJ_BsRL"); // {Бутылка с розовой ленточкой}
+			//(+5 везение, +5 торговля, -5 скрытность)
+		break;
+	}
+	//skillN = skillN + SetCharacterSkillByHaosArtefact(_refCharacter, skillName);
+
+	skillN += SetCharacterSkillBySculArtefact(_refCharacter, skillName);
+	skillN += SetCharacterSkillBySuit(_refCharacter, skillName);
+
+	//navy --> действие алкоголя
+	if (CheckAttribute(_refCharacter, "chr_ai.drunk.skill." + skillName)) {
+		skillN += sti(_refCharacter.chr_ai.drunk.skill.(skillName));
+	}
+	// boal учет перегруза 19.01.2004 -->
+	// эта штука нагружает в 10+ раз больше чем весь метод выше //if ( GetItemsWeight(_refCharacter) > GetMaxItemsWeight(_refCharacter)) { skillN -= 20; }
+	// boal учет перегруза 19.01.2004 <--	
+
+	// boal <--
+	if (skillN <= 1) {
+		skillN = 1;
+	}
+	if (skillN > SKILL_MAX) {
+		skillN = SKILL_MAX;
+	}		
 	return skillN;
 }
 // boal 20.03.2004 -->
@@ -1655,125 +1675,215 @@ string TransformSkillToIcon(string _skill) //преобразует латинс
 		break;
 		case "Defence": return "Ë";
 		break;
-		case "Repair": return "Ì";
-		break;
 		case "Commerce": return "Í";
+		break;
+		case "Repair": return "Ì";
 		break;
 	}
 	return "";
 }
 
+// две команды в одной. первая начисляет опыт, вторая дает опыт от ГГ напарникам/пассажирам
 void AddCharacterExpToSkill(ref _chref, string _skill, float _addValue)
 // _chref - character _skill - name ex -"Fencing"  _skill_exp = "Fencing_exp"   _addValue = 100
 {
-    string  _skill_exp = _skill + "_exp";
-    if (!CheckAttribute(_chref, "skill." + _skill_exp))
-    {
-        _chref.skill.(_skill_exp) = 0;
-    }
-    if (bExpLogShow && _addValue > 0)
-    {
-        if (IsOfficer(_chref))
-        {
-            if(LanguageGetLanguage() == "russian")
-            {
-                Log_Info(_chref.id + " получил " + FloatToString(_addValue, 2) + " опыта в " + _skill);
-            }
-            else
-            {
-                if (IsOfficer(_chref))  Log_Info(_chref.id + " take " + FloatToString(_addValue, 2) + " exp to " + _skill);
-            }
-        }
-    }
-    // boal 300804 падение экспы -->
-    if (_addValue < 0)
-    {
-        if(CheckAttribute(_chref, "skill." + _skill_exp))
-        {
-            _chref.skill.(_skill_exp) = sti(_chref.skill.(_skill_exp)) + _addValue;
-            if (sti(_chref.skill.(_skill_exp)) < 0)
-            {
-                _chref.skill.(_skill_exp) = 0;
-            }
-        }
-        return;
-    }
-    // boal 300804 падение экспы <--
-    if (CheckAttribute(_chref, "skill." + _skill) && sti(_chref.skill.(_skill)) < SKILL_MAX)// && sti(_chref.skill.(_skill)) > 0)
-    { // if skill = 0 then it is great loser
-        _chref.skill.(_skill_exp) = stf(_chref.skill.(_skill_exp)) + _addValue;
+	if (_addValue <= 0.0) {// TODO: заменить на отнимание навыка
+		return;
+	}
+	if (!CheckAttribute(_chref, "skill." + _skill)) {
+		return;
+	}
 
-        while ( makeint(sti(_chref.skill.(_skill)) * GetCharacterExpRate(_chref, _skill)) <= stf(_chref.skill.(_skill_exp))
-                && sti(_chref.skill.(_skill)) < SKILL_MAX )
-        {
-            _chref.skill.(_skill_exp) = stf(_chref.skill.(_skill_exp)) - makeint(sti(_chref.skill.(_skill)) * GetCharacterExpRate(_chref, _skill));
-            /*if (sti(_chref.index) == GetMainCharacterIndex())
-            {
-               Log_SetStringToLog(XI_ConvertString(_skill)+" UP");
-            } */
-            AddCharacterSkillDontClearExp(_chref, _skill, 1);
-            // оптимизация скилов
-            DeleteAttribute(_chref, "BakSkill." + _skill);
-            DeleteAttribute(_chref, "BakSkillCount." + _skill);
-        }
+	if (sti(InterfaceStates.ShowExpLogs)==1 && _addValue > 0)
+	{
+		if (IsMainCharacter(_chref))
+		{
+			if (bSeaActive && !bAbordageStarted)
+			{
+				/* Вариант со строгими позициями навыков
+				string EXP = "EXP";
+				switch (_skill)
+				{
+					case "Leadership": EXP = "EXP1";
+					break;
+					case "Fortune": EXP = "EXP2";
+					break;
+					case "Sneak": EXP = "EXP3";
+					break;
+					case "Sailing": EXP = "EXP4";
+					break;
+					case "Accuracy": EXP = "EXP5";
+					break;
+					case "Cannons": EXP = "EXP6";
+					break;
+					case "Grappling": EXP = "EXP7";
+					break;
+					case "Defence": EXP = "EXP8";
+					break;
+					case "Repair": EXP = "EXP9";
+					break;
+					case "Commerce": EXP = "EXP10";
+					break;
+				}
+				BattleInterface.textinfo.(EXP).val = stf(BattleInterface.textinfo.(EXP).val)+_addValue;
+				BattleInterface.textinfo.(EXP).text = "+"+FloatToString(stf(BattleInterface.textinfo.(EXP).val),2) + " " + TransformSkillToIcon(_skill) + " exp";
+				*/
+				string EXP = "EXP"; //вариант с динамической подгонкой позиций навыков
+				for (int z = 1; z < 11; z++)
+				{
+					EXP = "EXP"+z;
+					if (BattleInterface.textinfo.(EXP).type == "") BattleInterface.textinfo.(EXP).type = _skill;
+					else if (BattleInterface.textinfo.(EXP).type != _skill) continue;
+					BattleInterface.textinfo.(EXP).val = stf(BattleInterface.textinfo.(EXP).val)+_addValue;
+					BattleInterface.textinfo.(EXP).text = "+"+FloatToString(stf(BattleInterface.textinfo.(EXP).val),2) + " " + TransformSkillToIcon(_skill) + " exp";
+					pchar.BIEXP.(EXP) = BattleInterface.textinfo.(EXP).text; //кэш опыта батла
+					break;
+				}
+			}
+			else
+			{
+				string EXPL;
+				objLandInterface.textinfo.EXP8.text = objLandInterface.textinfo.EXP7.text;
+				objLandInterface.textinfo.EXP7.text = objLandInterface.textinfo.EXP6.text;
+				objLandInterface.textinfo.EXP6.text = objLandInterface.textinfo.EXP5.text;
+				objLandInterface.textinfo.EXP5.text = objLandInterface.textinfo.EXP4.text;
+				objLandInterface.textinfo.EXP4.text = objLandInterface.textinfo.EXP3.text;
+				objLandInterface.textinfo.EXP3.text = objLandInterface.textinfo.EXP2.text;
+				objLandInterface.textinfo.EXP2.text = objLandInterface.textinfo.EXP1.text;
+				objLandInterface.textinfo.EXP1.text = "+" + FloatToString(_addValue, 2) + " " + TransformSkillToIcon(_skill) + " exp";
+				for (int x = 1; x < 9; x++)
+				{
+					EXPL = "EXP"+x;
+					pchar.LIEXP.(EXPL) = objLandInterface.textinfo.(EXPL).text; //кэш опыта лэнда
+				}
+			}
+		}
+	}
+
+	string  _skill_exp = _skill + "_exp";
+	if (!CheckAttribute(_chref, "skill." + _skill_exp)) {
+		_chref.skill.(_skill_exp) = 0;
+	}
+
+	int iChRefSkill = sti(_chref.skill.(_skill)); //колво единиц навыка
+
+	if (iChRefSkill < SKILL_MAX) { // skill <= 0 это вылет
+		int iChRefSkillOld = iChRefSkill;
+		float fChRefSkillExp = stf(_chref.skill.(_skill_exp)); //прокачка единицы навыка
+		float fCharExpRate = GetCharacterExpRate(_chref, _skill);//не обновляется   
+
+		fChRefSkillExp = fChRefSkillExp + _addValue;
+
+		while (iChRefSkill < SKILL_MAX && fChRefSkillExp >= (iChRefSkill * fCharExpRate)) {
+			fChRefSkillExp -= (iChRefSkill * fCharExpRate);
+
+			iChRefSkill++;
+
+			// оптимизация скилов
+			DeleteAttribute(_chref, "BakSkill." + _skill);
+			DeleteAttribute(_chref, "BakSkillCount." + _skill);
+		}
+		if (iChRefSkill - iChRefSkillOld) {
+			_chref.skill.(_skill) = iChRefSkill;
+			ApplayNewSkill(_chref, _skill, (iChRefSkill - iChRefSkillOld));
+			if (sti(InterfaceStates.ShowExpLogs)==1)
+			{
+				if (IsMainCharacter(_chref))
+				{
+					objLandInterface.textinfo.EXP8.text = objLandInterface.textinfo.EXP7.text;
+					objLandInterface.textinfo.EXP7.text = objLandInterface.textinfo.EXP6.text;
+					objLandInterface.textinfo.EXP6.text = objLandInterface.textinfo.EXP5.text;
+					objLandInterface.textinfo.EXP5.text = objLandInterface.textinfo.EXP4.text;
+					objLandInterface.textinfo.EXP4.text = objLandInterface.textinfo.EXP3.text;
+					objLandInterface.textinfo.EXP3.text = objLandInterface.textinfo.EXP2.text;
+					objLandInterface.textinfo.EXP2.text = objLandInterface.textinfo.EXP1.text;
+					objLandInterface.textinfo.EXP1.text = TransformSkillToIcon(_skill) + "Ö " + _chref.skill.(_skill);
+				}
+			}
+		}
+		_chref.skill.(_skill_exp) = fChRefSkillExp;
     }
-    /// officers
-    if (_addValue > 0 && sti(_chref.index) == GetMainCharacterIndex()) // только для ГГ
-    {
-		int cn, i, iPas;
-		iPas = GetPassengersQuantity(_chref); // оптимиация
-		if (CheckCharacterPerk(_chref, "SharedExperience"))
+	else 
+	{
+		_chref.skill.(_skill_exp) = stf(_chref.skill.(_skill_exp)) + _addValue;
+		if (makeint(_chref.skill.(_skill_exp)) >= GetCharacterExpRate(_chref, _skill)*100)
 		{
-			for(i=0; i<iPas; i++)
-			{
-				cn = GetPassenger(_chref,i);
-				if(cn!=-1)
-				{
-				   if (isOfficerInShip(GetCharacter(cn), true))
-				   {
-				       AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue / 1.0);
-				   }
-				   else
-				   {
-				       AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue / 4.0);
-				   }
-				}
+			_chref.skill.(_skill_exp) = 0;
+			AddExcessivePoints(_chref,_skill,1);
+		}
+	}
+
+	/// officers
+	if (sti(_chref.index) != GetMainCharacterIndex()) {// только для ГГ 
+		return;
+	}
+	int cn, i, iPas;
+	_addValue *= (0.25 + 0.75 * CheckCharacterPerk(_chref, "SharedExperience"));
+	float fExpMult = 0;
+	
+	iPas = GetPassengersQuantity(_chref); // оптимиация
+	for(i=0; i<iPas; i++) {
+		cn = GetPassenger(_chref, i);
+		if(cn == -1) { 
+			continue; 
+		}
+		ref rPasChar = GetCharacter(cn);
+		if (CheckAttribute(rPasChar, "prisoned")) {
+			continue;
+		}
+		fExpMult = 0.25 + 0.75 * isOfficerInShip(rPasChar, true);
+
+		AddCharacterExpToSkill(rPasChar, _skill, fExpMult * _addValue);
+	}
+	for(i=1; i<COMPANION_MAX; i++) {
+		cn = GetCompanionIndex(_chref, i);
+		if(cn == -1) { 
+			continue; 
+		}
+		AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue);
+	}
+}
+
+void AddExcessivePoints(ref _chref, string _skill, int _addValue)
+{
+	int iFreePoints_exp = 0;
+	if (isSelfTypeSkill(_skill)) {
+		if(CheckAttribute(_chref,"perks.FreePoints_self_exp")) {
+			iFreePoints_exp = sti(_chref.perks.FreePoints_self_exp);
+		}
+		iFreePoints_exp += _addValue;
+		if (iFreePoints_exp >= GetFreePoints_SelfRate(_chref)) {
+			iFreePoints_exp -= GetFreePoints_SelfRate(_chref);
+			if(CheckAttribute(_chref,"perks.FreePoints_self")) {
+				_chref.perks.FreePoints_self = sti(_chref.perks.FreePoints_self) + 1;
 			}
-	        for(i=1; i<COMPANION_MAX; i++)
-			{
-				cn = GetCompanionIndex(_chref,i);
-				if(cn!=-1)
-				{
-					AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue / 1.0);
-				}
+			else {	
+				_chref.perks.FreePoints_self = 1;
+			}
+			if (sti(_chref.index) == GetMainCharacterIndex()) {
+				Log_SetStringToLog(XI_ConvertString("Personal abilities") + " + 1");
 			}
 		}
-		else
-		{
-		    for(i=0; i<iPas; i++)
-			{
-				cn = GetPassenger(_chref,i);
-				if(cn!=-1)
-				{
-				   if (isOfficerInShip(GetCharacter(cn), true))
-				   {
-				       AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue / 4.0);
-				   }
-				   else
-				   {
-				       AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue / 20.0);
-				   }
-				}
+		_chref.perks.FreePoints_self_exp = iFreePoints_exp;
+    }
+    else {
+		if(CheckAttribute(_chref,"perks.FreePoints_ship_exp")) {
+			iFreePoints_exp = sti(_chref.perks.FreePoints_ship_exp);
+		}
+		iFreePoints_exp += _addValue;
+		if (iFreePoints_exp >= GetFreePoints_ShipRate(_chref)) {
+			iFreePoints_exp -= GetFreePoints_ShipRate(_chref);
+			if(CheckAttribute(_chref,"perks.FreePoints_ship")) {
+				_chref.perks.FreePoints_ship = sti(_chref.perks.FreePoints_ship) + 1;
 			}
-	        for(i=1; i<COMPANION_MAX; i++)
-			{
-				cn = GetCompanionIndex(_chref,i);
-				if(cn!=-1)
-				{
-					AddCharacterExpToSkill(GetCharacter(cn), _skill, _addValue / 6.0);
-				}
+			else {
+				_chref.perks.FreePoints_ship = 1;
+			}
+			if (sti(_chref.index) == GetMainCharacterIndex()) {
+				Log_SetStringToLog(XI_ConvertString("Ship abilities") + " + 1");
 			}
 		}
+		_chref.perks.FreePoints_ship_exp = iFreePoints_exp;
     }
 }
 
@@ -1812,7 +1922,7 @@ float GetItemsWeight(ref _chref)
     string  itemID;
     ref     itm;
 
-    if (bCabinStarted || bAbordageStarted || !bSeaActive || !CheckAttribute(_chref, "ItemsWeight") || CheckForExchangeAllowed(_chref))
+    if (bCabinStarted || bAbordageStarted || !bSeaActive || !CheckAttribute(_chref, "ItemsWeight") || CheckForExchangeAllowed(_chref))//TODO: перебрать условия
     {
 		aref arInventory, arItem;
 		makearef(arInventory, _chref.Items);
@@ -1823,14 +1933,7 @@ float GetItemsWeight(ref _chref)
 			arItem = GetAttributeN(arInventory, i);
 			itemID = GetAttributeName(arItem);
 			itm = ItemsFromID(itemID);
-
-			if (CheckAttribute(itm, "ID"))
-			{
-				if (itemID != "MapsAtlas")      // ugeen - атлас карт не учитываем !!
-				{
-					Amount += sti(_chref.items.(itemID)) * GetItemWeight(itemID);
-				}
-			}
+			Amount += sti(_chref.items.(itemID)) * stf(itm.weight);
         }
         _chref.ItemsWeight = Amount; // оптимицация тормозов в бою на море
     }
@@ -1891,7 +1994,7 @@ int GetMaxItemsWeight(ref _chref)
     }
     else
     {
-        return 10000; // сундук или труп не имееют скила и ограничения
+        return 999999; // сундук или труп не имееют скила и ограничения
     }
 }
 // boal 19.01.2004 <--

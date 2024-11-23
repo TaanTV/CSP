@@ -81,21 +81,27 @@ void ProcessDialogEvent()
 		break;
 		
 		case "10":
-			dialog.text = "Ах вот в чём дело! Однако, мне повезло. Если вам не жалко 1000 монет для старого пьяницы, я тут же отдам его вам.";
+			dialog.text = "Слушаю вас внимательно";
+			link.l1 = "Мне нужна вторая половина карты капитана Деви Форсера. Скажи, она у тебя?";
+			link.l1.go = "11";
+		break;
+		
+		case "11":
+			dialog.text = "Ах вот в чём дело! Однако, мне повезло. Если вам не жалко 1000 монет для старого пьяницы, я тут же отдам её вам.";
 			if(sti(PChar.money) >= 1000)
 			{
 				AddMoneyToCharacter(PChar, -1000);
 				link.l1 = "Вот деньги, Диего. Давай сюда часть карты!";
-				link.l1.go = "11";			
+				link.l1.go = "12";			
 			}
 			else
 			{
 				link.l1 = "Давай сюда часть карты! Иначе, сейчас отправишься обратно.";
-				link.l1.go = "11";			
+				link.l1.go = "12";			
 			}
 		break;
 
-		case "11":
+		case "12":
 			TakeNItems(PChar, "MysteriousIsland_MapChapter", -1);
 			TakeNItems(PChar, "MysteriousIsland_Map", 1);
 			dialog.text = "Возьмите, сеньор"+GetSexPhrase("","ита")+". Я догадываюсь о том, что вы задумали, и искренне советую отказаться от этой затеи.";

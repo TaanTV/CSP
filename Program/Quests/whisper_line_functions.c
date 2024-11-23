@@ -2670,6 +2670,7 @@ void QuestWhisper_Incq_5(string q)
 
 bool WhisperIsHere()
 {
+	return false; // отсечка на участие офицера Виспер в диалогах
 	if (CheckAttribute(pchar, "WhisperId"))
 	{
 		sld = CharacterFromID(pchar.WhisperId);
@@ -2690,6 +2691,7 @@ bool WhisperIsHere()
 
 bool WhisperIsOfficer()
 {
+	return false; // отсечка участия офицера Виспер в ЧП
 	if (CheckAttribute(pchar, "WhisperId"))
 	{
 		sld = CharacterFromID(pchar.WhisperId);

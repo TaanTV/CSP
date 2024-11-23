@@ -36,7 +36,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Barbados_jungle";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 3500;
 		//Islands[n].ImmersionDepth = 250;
@@ -223,7 +223,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "PuertoRico_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 20;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -303,7 +303,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Cuba1_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 10;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -398,7 +398,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Cuba2_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 10;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -494,7 +494,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Curacao_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -746,7 +746,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Trinidad_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -998,7 +998,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Guadeloupe_jungle";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1366,7 +1366,7 @@ void InitIslands()
 		Islands[n].locators = "Bermudes_locators";// прописываем пути к новой модели
 		Islands[n].visible = true;
 		Islands[n].jungle.patch = "Bermudes_jungle";// сажаем джунгли
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 12.5;
 		Islands[n].colonyquantity = 0;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
@@ -1431,7 +1431,7 @@ void InitIslands()
 		Islands[n].colonyquantity = 0;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Dominica_jungle";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites3";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1556,7 +1556,7 @@ void InitIslands()
 		Islands[n].colonyquantity = 0;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Caiman_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1597,7 +1597,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "PortoBello_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 12.5;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1683,7 +1683,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Cartahena_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 10.0;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1761,7 +1761,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Maracaibo_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 10.0;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1910,7 +1910,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "Cumana_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 10.0;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -1998,7 +1998,7 @@ void InitIslands()
 		Islands[n].visible = true;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
 		Islands[n].jungle.patch = "SantaCatalina_jungles";
-		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.texture = "junglesprites2";
 		Islands[n].jungle.scale = 16.0;
 		//Islands[n].ImmersionDistance = 4000;
 		//Islands[n].ImmersionDepth = 250;
@@ -2238,9 +2238,9 @@ void InitIslands()
 		Islands[n].hidden = true;
 		Islands[n].colonyquantity = 1;
 		Islands[n].LoadGroup.g1 = "IslandShips1";
-		// Islands[n].jungle.patch = "Bahames_jungle";
-		// Islands[n].jungle.texture = "junglesprites";
-		// Islands[n].jungle.scale = 12.5;
+		Islands[n].jungle.patch = "Bahames_jungle";
+		Islands[n].jungle.texture = "junglesprites3";
+		Islands[n].jungle.scale = 12.5;
 		Islands[n].TexturePath = "Bahames";
 
 		Islands[n].reload.l1.label = "Nassau Port";

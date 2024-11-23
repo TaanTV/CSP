@@ -231,7 +231,7 @@ void ProcessDuelDialog(ref NPChar, aref Link, aref NextDiag)
 		if (CheckAttribute(pchar, "questTemp.Duel.End")) LAi_SetWarriorType(NPChar);
 		Dialog.Text = NPCharRepPhrase(NPChar, RandSwear() +
 				RandPhraseSimple("Тогда проваливай отсюда!", "Скройся тогда. А то я могу передумать."),
-				RandPhraseSimple("В таком случае, не смею вас больше задерживать!", "Тогда вам лучше уйти, пока я не передумал"+ NPCharSexPhrase(NPChar,"","а") +"."));
+				RandPhraseSimple("В таком случае не смею вас больше задерживать!", "Тогда вам лучше уйти, пока я не передумал"+ NPCharSexPhrase(NPChar,"","а") +"."));
 		link.l1 = "Уже ухожу...";
 		link.l1.go = "peace";
 		break;
@@ -289,7 +289,7 @@ void ProcessDuelDialog(ref NPChar, aref Link, aref NextDiag)
 
 	case "TreasureHunterPGG":
 		NextDiag.CurrentNode = "Second time";
-		//dialog.text = "Постой-ка, "+ GetSexPhrase("приятель","подруга") +"... Сдаётся, у тебя есть кое-что интересное. Нужно делиться с близкими найдеными сокровищами.";
+		//dialog.text = "Постой-ка, "+ GetSexPhrase("приятель","подруга") +"... Сдаётся, у тебя есть кое-что интересное. Нужно делиться с близкими найденными сокровищами.";
 		dialog.text = RandPhraseSimple("Я так и подозревал" + npcharSexPhrase(npchar,"","а") + ", что этот жулик продал больше одной карты. Не зря я его убил" + npcharSexPhrase(npchar,"","а")+".","Постой-ка, "+ GetSexPhrase("приятель","подруга") +". Эта карта - моя. Не знаю, как именно она у тебя оказалась, но у меня её стащил по пьяни один жулик. Так что эти сокровища тебе не принадлежат. ");
 	    //if (PGG_ChangeRelation2MainCharacter(npchar, 0) < 41)
 		if (sti(npchar.reputation) < 40)
@@ -337,7 +337,7 @@ void ProcessDuelDialog(ref NPChar, aref Link, aref NextDiag)
 	case "NoMoney_1":
 			dialog.text = "Ну уж нет! Никуда ты с моим кладом не уйдёшь!";
 			ChangeCharacterReputation(pchar, -15);
-			Link.l1 = "В таком случае, пришло время отделиться твоей голове от тела.";
+			Link.l1 = "В таком случае пришло время отделиться твоей голове от тела.";
 			Link.l1.go = "battleTreasure";
 	break;
 	case "Cost_Head2":

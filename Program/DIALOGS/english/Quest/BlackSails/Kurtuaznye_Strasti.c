@@ -22,12 +22,12 @@ void ProcessDialogEvent()
 
 		case "BS_KS_1":	//Флинт
 			dialog.text = "Unexpected, but predictable.";
-			link.l1 = "What? Oh, you mean the British? Yes, they don't usually hunt in these waters.";
+			link.l1 = "What? Oh, you mean the English? They're not going to take back the colony, are they?";
 			link.l1.go = "BS_KS_2";
 		break;
 
 		case "BS_KS_2":
-            dialog.text = "I have thoughts about where this patrol is from, but I need to check my assumptions. Mr. Silver, you're going with captain " + GetFullName(pchar)+" to Fort de France. The task is to get the second part of the code. At any cost. Is the order clear?";
+            dialog.text = "I have an idea where this patrol is coming from, but the assumptions need to be checked. I don't think it's an attempt to retake the island, they'd do things very differently there. Line formation, parliamentarians, siege. I know all too well how His Majesty Charles II's fleet fights. No. This is something else. Mr. Silver, you're going with Captain "+GetFullName(pchar)+" to Fort de France. The mission is to retrieve the second part of the code. At any cost. Do you understand?";
             link.l1 = "";
 			link.l1.go = "BS_KS_3_1";
 		break;
@@ -97,13 +97,15 @@ void ProcessDialogEvent()
 			SetQuestHeader("BSCourtlyPassions");
 			AddQuestRecord("BSCourtlyPassions", "1");
 
-            dialog.text = "As soon as you figure out the code, I'll be waiting for you in Bermudes. Good luck.";
+            dialog.text = "As soon as you figure out the code, I'll be waiting for you at Ms. Guthrie's house. Good luck.";
             link.l1 = "To hell with it, Captain! Silver, follow me!";
 			sld = CharacterFromID("BS_Silver");
 			LAi_SetActorTypeNoGroup(sld);
 			LAi_ActorFollowEverywhere(sld, "", -1);
 			chrDisableReloadToLocation = false;
 			DeleteAttribute(pchar, "BSCPFlint_talk");
+			pchar.quest.BSCourtlyPassions_begin.over = "yes";
+			DeleteAttribute(pchar, "LockMapReload");
 			DeleteAttribute(npchar, "curtown");
 			pchar.BSCPSailor_talk = true;
 			pchar.BSCPSilver_talk = true;
@@ -169,6 +171,7 @@ void ProcessDialogEvent()
 			LocatorReloadEnterDisable(pchar.location.from_sea, "boat", true);
 			chrDisableReloadToLocation = false;
 			LAi_SetActorTypeNoGroup(npchar);
+			PChar.MapBestTeleportDisable = true;
 			LAi_ActorRunToLocation(npchar, "reload", "sea", Get_My_Cabin(), "", "", "", 10);
 			sld = CharacterFromID("Flint");
 			DeleteAttribute(sld, "curtown");
@@ -185,18 +188,13 @@ void ProcessDialogEvent()
 
 		//Переместить корабль в Ле Марен
 
-		//Запись в СЖ: 'Жаркая схватка у Мартиники была. Какого дьявола тут забыли английские патрули? Ну да ладно, этим вопросом займётся Флинт, моя задача – добыть часть кода у Чарльза Вейна'
+		//Запись в СЖ: Жаркая схватка у Нассау была. Какого дьявола тут забыли английские патрули? Ну да ладно, этим вопросом займётся Флинт, моя задача – добыть часть кода у Чарльза Вейна. Отправляюсь на Мартинику, нужно пристать в одной из бухт, мало ли чем там дело обернётся.
 
 		//Залочить выход в море. Топаем в Форт де Франс ножками.
 
 		//На следующей локе, Сильвер заводит диалог.
 
 		case "BS_KS_8":	//Сильвер
-            for (i = 1; i < 7; i++)
-			{
-				sld = CharacterFromID("BSOnTheHorizon_enemyfleet"+i);
-				sld.LifeDay = 0;
-			}
 			dialog.text = "You have a beautiful ship, and the crew are like eagles!";
             link.l1 = "Thank you. So what's the story with the two-half code? Just briefly, please. I'm not in the mood for stories.";
 			link.l1.go = "BS_KS_9";
@@ -341,7 +339,8 @@ void ProcessDialogEvent()
             AddMoneyToCharacter(pchar, -10000);
 
 			sld = GetCharacter(NPC_GenerateCharacter("BS_Maks", "BS_Maks", "woman", "woman", 1, PIRATE, -1, false));
-			sld.name 	= "Max";
+			LAi_SetImmortal(sld, true);
+			sld.name = GetConvertStrWithReplace("Variable_black_sails_functions_18", "Names.txt", "#space#", " ");
 			sld.lastname 	= "";
 			ChangeCharacterAddressGroup(sld, "FortFrance_Brothel_room", "goto", "goto3");
 			LAi_SetStayTypeNoGroup(sld);
@@ -421,11 +420,9 @@ void ProcessDialogEvent()
             dialog.text = "Why did you stand up like sheep? Kill them all!";
 			LAi_SetActorTypeNoGroup(npchar);
 			LAi_ActorRunToLocation(npchar, "reload", "reload1", Get_My_Cabin(), "", "", "", 10);
-			//chrDisableReloadToLocation = false;
             link.l1 = "Where are you going? Stop!";
 			link.l1.go = "BS_KS_28_exit";
 			chrDisableReloadToLocation = false;
-			//BSCourtlyPassions_spawn_podsos();
 
 			PChar.quest.BSCourtlyPassions_fleeng.win_condition.l1 = "location";
 			PChar.quest.BSCourtlyPassions_fleeng.win_condition.l1.location = "FortFrance_town";
@@ -440,9 +437,10 @@ void ProcessDialogEvent()
 			LAi_SetActorTypeNoGroup(npchar);
 			LAi_ActorRunToLocation(npchar, "reload", "reload1", Get_My_Cabin(), "", "", "", 10);
 			AddDialogExitQuest("MainHeroFightModeOn");
+			Log_info("'А ну стой! Всё равно догоню же!'");
 		break;
 
-		//Файт. Как только минусуем его подсосов – Вейн удирает.  Было бы круто, чтоб прям удирал в каждой локе. Улицы – за воротами – и т.д. прям до Ле Марен. В бухте пачка пиратов с его корабля, опять файт мясной. Вейн – удирает после их гибели в море. Выходим в море. 'Рейнджер' - корабль Вейна линейный бриг. Морской файт – абордаж. После первой стадии в каюте – диалог.
+		//Файт. Вейн удирает. Вывести лог "А ну стой! Всё равно догоню же!" - типо намёк, что файтится не обязательно со всеми. Там ещё вроде как должен музон играть боевой во время погони. 6.04.2023  
 
 		case "BS_KS_29":
             dialog.text = "Well, it looks like Charles Wayne's luck has run out. But I won't give up just like that!";
@@ -459,8 +457,6 @@ void ProcessDialogEvent()
             dialog.text = "Ha ha ha. You're kidding me!";
             link.l1 = "The cipher page. I have someone who can crack this cipher. And you have the reputation of being the most desperate and lucky pirate in these waters. Shall we join forces? There's enough Urca gold for everyone.";
 			link.l1.go = "BS_KS_31";
-			//link.l2 = "You can't be fixed, Wayne, I have no choice but to take your head off.";
-			//link.l2.go = "BITVA";
 		break;
 
 		case "BS_KS_31":
@@ -470,39 +466,38 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_KS_32":
-			AddQuestRecord("BSCourtlyPassions", "7");
-			sld = CharacterFromID("BS_Vein");
-			LAi_SetImmortal(sld, true);
-            dialog.text = "Okay, I agree. Why not? Everything's been going to hell lately, but I'll hand the page over to Flint personally. I really want to look into his fishy eyes at the same time.";
-            link.l1 = "That's wonderful. See you in Bermudes. I still have unfinished business.";
+			AddQuestRecord("BSCourtlyPassions", "7");		
+            dialog.text = "Okay, I'm in. Why not? Everything's gone to hell lately, but I'm gonna hand the page to Flint personally. I really want to look into his fish eyes when I do.";
+            link.l1 = "All right. I'll see you in the Bahamas. I still have unfinished business.";
 			link.l1.go = "BS_KS_32exit";
 		break;
 
 		case "BS_KS_32exit":
             QuestAboardCabinDialogSurrender();
-			//SetEnemyToKilled();
+			SetFunctionExitFromLocationCondition("BS_Vein_Immortal", pchar.location, false);
+			PChar.quest.BSCourtlyPassions_fail_to_board.over = "yes";
             DialogExit();
 		break;
 
-		//Возвращаемся к воротам, там Макс и Сильвер.
+		//Топаем в Ле Марен. Уникумы тут используют фичу с телепортом по карте и ломают квест. Либо пусть ломают, либо  как то отключить возможность ТП на время 6.04.2023
 
 		case "BS_KS_33":	//Сильвер
+			Group_DeleteGroup("BSCourtlyPassions_SeaBattle");
             dialog.text = "Captain?";
-            link.l1 = "The job is done, let's go.";
+            link.l1 = "It's done, let's go.";
 			link.l1.go = "BS_KS_34";
 		break;
 
 		case "BS_KS_34":	//Сильвер
-			npchar.LifeDay = 0;
-            dialog.text = "I didn't doubt you for a second!";
-            link.l1 = "Yeah, come on, just don't suck up.";
+            dialog.text = "I never doubted you for a second!";
+            link.l1 = "Yeah, come on, don't suck up.";
 			link.l1.go = "BS_KS_35exit";
 		break;
 
 
 		case "BS_KS_35exit":
 			LAi_SetActorTypeNoGroup(npchar);
-			LAi_ActorGoToLocation(npchar, "reload", "sea", Get_My_Cabin(), "", "", "", 10);
+			LAi_ActorGoToLocation(npchar, "reload", "sea", "none", "", "", "", 10);
 			sld = CharacterFromID("BS_Maks");
 			LAi_SetStayTypeNoGroup(sld);
 			sld.dialog.filename = "Quest\BlackSails\Kurtuaznye_Strasti.c";
@@ -518,9 +513,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "BS_KS_36_1":
-			npchar.LifeDay = 0;
-            dialog.text = "Will you take me to Port Royal now?";
-            link.l1 = "I promised you. Please get on board!";
+            dialog.text = "Now will you take me to Port Royal?";
+            link.l1 = "I promised you. All aboard!";
 			link.l1.go = "BS_KS_36_exit";
 			PChar.quest.BSCourtlyPassions_finalRoyal.win_condition.l1 = "location";
 			PChar.quest.BSCourtlyPassions_finalRoyal.win_condition.l1.location = "PortRoyal_town";
@@ -530,36 +524,36 @@ void ProcessDialogEvent()
 		case "BS_KS_36_exit":
 			DialogExit();
 			LAi_SetActorTypeNoGroup(npchar);
-			LAi_ActorGoToLocation(npchar, "reload", "sea", Get_My_Cabin(), "", "", "", 10);
+			LAi_ActorGoToLocation(npchar, "reload", "sea", "none", "", "", "", 10);
 		break;
 
 		case "BS_KS_36":
-			chrDisableReloadToLocation = false;
-            dialog.text = "Thank you, Captain! No one has ever taken care of me like this.";
-            link.l1 = "Everything happens for the first time.";
+            dialog.text = "Thank you, Captain! No one has ever taken such good care of me.";
+            link.l1 = "There's a first time for everything.";
 			link.l1.go = "BS_KS_37";
 		break;
 
 		case "BS_KS_37":
-			npchar.LifeDay = 0;
             dialog.text = "I hope we'll meet again?";
-            link.l1 = "Who knows? Perhaps. Take care of yourself.";
+            link.l1 = "Who knows? Maybe. Take care of yourself.";
 			link.l1.go = "BS_KS_37exit";
 		break;
 
 		case "BS_KS_37exit":
 			DialogExit();
-			LAi_ActorGoToLocation(npchar, "reload", "reload9_back", Get_My_Cabin(), "", "", "", 10);
+			pchar.quest.BSCourtlyPassions_DontStart.over = "yes";
+			chrDisableReloadToLocation = false;
+			pchar.ContraInterruptWaiting = true;
+			LAi_ActorGoToLocation(npchar, "reload", "reload9_back", "none", "", "", "", -1);
+			SetFunctionLocationCondition("BS_BahamasArrival", "Bahames", false);
+			AddQuestRecord("BSCourtlyPassions", "8");
 			CloseQuestHeader("BSCourtlyPassions");
-			SetQuestHeader("BSChaseBegun");
-			AddQuestRecord("BSChaseBegun", "1");
-
 			BSChaseBegun();
 		break;
 
-		//Отвозим шлюху в ПР, она уходит с корабля. Отправляемся на Бермуды.
+		//Отвозим шлюху в ПР, она уходит с корабля. Отправляемся на Багамы.
 
-		//Запись в СЖ 'Дело сделано, теперь можно отправиться на Бермуды.'
+		//Запись в СЖ «Дело сделано, теперь можно отправиться на Багамы.»
 
 	}
 }

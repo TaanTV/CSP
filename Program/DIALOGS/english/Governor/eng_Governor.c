@@ -13,7 +13,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
     			link.l1 = "I heard that two frigates came to the Port Royal shipyard to replenish their weapons and food.";
 				link.l1.go = "BlackYosh_1";
 			}
-			if (CheckAttribute(PChar, "questTemp.silverfleet") && pchar.questTemp.silverfleet != "over")
+			if (CheckAttribute(PChar, "questTemp.silverfleet") && pchar.questTemp.silverfleet != "over" && NPChar.name == GetConvertStr("Variable_StoryCharacters_0.1", "Names.txt"))
 			{
 				if (!CheckAttribute(NPChar, "SilverFleetCancelThinking") || GetNpcQuestPastDayParam(NPChar, "SilverFleetCancelThinking") > 0)
 				{

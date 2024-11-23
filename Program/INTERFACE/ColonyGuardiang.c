@@ -76,7 +76,7 @@ void ShowInfoWindow()
 				SetOTHERMiniTable("TABLE_SMALLOTHER", chr);
 				SetFormatedText("OFFICER_NAME", GetFullName(chr));
 				SetNewPicture("CHARACTER_BIG_PICTURE", "interfaces\portraits\256\face_" + chr.faceId + ".tga");
-				SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame3.tga");
+				SetNewPicture("CHARACTER_FRAME_PICTURE", "interfaces\Frame3.dds");
 
 				XI_WindowShow("RPG_WINDOW", true);
 				XI_WindowDisable("RPG_WINDOW", false);
@@ -642,6 +642,7 @@ void InstallShip(int iGuardian, int iCharacter)
 	chr.ShipEnemyDisable = true;
 	chr.CaimanGuardian = true;
 	chr.DontCheckFlag = true;
+	chr.DontRefresh = true;
 
 	//14.05.2021 evil_bars: удаляем аттрибут, т.к. он проверяется в Addons/ColonyGuarding.c/CheckDeadColonyGuard() и удаляет корабли
 	if(CheckAttribute(chr,"ship.shipsink")) { DeleteAttribute(chr,"ship.shipsink"); }

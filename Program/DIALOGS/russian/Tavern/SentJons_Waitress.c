@@ -9,10 +9,22 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			link.l1 = HeroStringReactionRepeat(RandPhraseSimple("Я передумал"+ GetSexPhrase("","а") +"...", "Сейчас мне не о чем говорить."), "Да нет, что ты, красавица...",
                       "Никак нет, дорогуша, склероз...", "Да нет, какие вопросы...", npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
+			if (CheckAttribute(PChar, "BSSentJonsWaitress"))
+			{			
+				link.l1 = "Дорогуша, ты не видела тут моего друга? Он большой любитель рыбалки, мы тут выпивали не так давно?";
+				link.l1.go = "BS_F3_24";
+			}
 		break;
-
-
+		
+		case "BS_F3_24":
+			DeleteAttribute(PChar, "BSSentJonsWaitress");
+			AddMoneyToCharacter(pchar, -500);
+			SetFunctionLocationCondition("BS_BonsDominicaMeeting", "Dominica", false);
+			AddQuestRecord("BSHangover", "62");
+			dialog.text = "Охотитесь за крупной рыбой? Он просил передать, что другой рыбак, будет ждать вас в водах Доминики у пляжа Касл Брус.";
+			link.l1 = "Спасибо. Вот тебе на эмм..., на что-нибудь красивое!"; //Отдаём 500 рублей
+			link.l1.go = "exit";
+		break;
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }
-

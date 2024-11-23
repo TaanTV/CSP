@@ -546,7 +546,7 @@ void Sea_MapLoad()
 	CreateEntity(&SeaFader, "fader");
 	SendMessage(&SeaFader, "lfl", FADER_OUT, 0.7, true);
 	SendMessage(&SeaFader, "l", FADER_STARTFRAME);
-	pchar.loadscreen = "loading\jonny_load\sea\sea_"+rand(3)+".tga";
+	pchar.loadscreen = "loading\jonny_load\sea\sea_"+rand(3)+".dds";
 	SendMessage(&SeaFader, "ls", FADER_PICTURE0, pchar.loadscreen);
 
 	bSkipSeaLogin = true;
@@ -572,7 +572,7 @@ void Land_MapLoad()
 	CreateEntity(&SeaFader, "fader");
 	SendMessage(&SeaFader, "lfl", FADER_OUT, 0.7, true);
 	SendMessage(&SeaFader, "l", FADER_STARTFRAME);
-	pchar.loadscreen = "loading\jonny_load\sea\sea_"+rand(3)+".tga";
+	pchar.loadscreen = "loading\jonny_load\sea\sea_"+rand(3)+".dds";
 	SendMessage(&SeaFader, "ls", FADER_PICTURE0, pchar.loadscreen);
 
 	bSkipSeaLogin = true;
@@ -901,8 +901,8 @@ void SeaLogin(ref Login)
 			Trace("SEA: Login quest encounter " + rEncounter.qID);
 			Group_SetAddressNone(rEncounter.qID);
 			Group_SetXZ_AY(rEncounter.qID, x, z, ay);
+			if (rEncounter.qID == "Sea_BSBons" && CheckAttribute(pchar, "BonsFlintRunning")) { continue; }
 			Sea_LoginGroup(rEncounter.qID);
-
 			continue;
 		}
 
@@ -1483,6 +1483,41 @@ float SetMaxSeaHeight(int islandIdx)
     //Log_TestInfo("Sea.MaxSeaHeight Max 200");
 	return 200.0;
 }
+
+/*!
+ * \brief Установка параметров травы в море значениями из настроек
+ */
+void UpdateSeaGrass()
+{
+	if (!CheckAttribute(&AISea,"Island"))
+	{
+		return;
+	}
+	string sIslandID = AISea.Island;
+	if (sIslandID == "") { return; }
+	if(sIslandID == "StLucia" && PChar.MysteriousIsland.StLuciaHide == true)
+	{
+		sIslandID = "";
+	}
+	int iIslandIndex = FindIsland(sIslandID);
+	if (iIslandIndex != -1 && Islands[iIslandIndex].visible == true)
+	{
+		/* Установка параметров травы: масштаб, максимальная ширина, максимальная высота, минимальная дистанция переключения лодов, максимальная отображаемая дистанция, кол-во травы, 1 - нет, 0 - максимум */
+		if( CheckAttribute(&Islands[iIslandIndex],"jungle") )
+		{
+			float fJungleScale = 10.0;
+			if( CheckAttribute(&Islands[iIslandIndex],"jungle.scale") )
+			{
+				fJungleScale = stf(Islands[iIslandIndex].jungle.scale);
+			}
+			float GrassDistanceSea = stf(InterfaceStates.GrassDistanceSea)*4000.0;
+			float GrassCountSea = 1.0 - stf(InterfaceStates.GrassCountSea);
+			DeleteGrass();
+			CreateGrass("resource\models\islands\"+ Islands[iIslandIndex].id +"\"+ Islands[iIslandIndex].jungle.patch + ".grs", "Grass\"+Islands[iIslandIndex].jungle.texture+".tga.tx", fJungleScale, 32.0, 200.0, GrassDistanceSea/10, GrassDistanceSea, GrassCountSea);
+		}
+	}
+}
+
 // boal <--
 void Sea_LoadIsland(string sIslandID)
 {
@@ -1514,7 +1549,9 @@ void Sea_LoadIsland(string sIslandID)
 			{
 				fJungleScale = stf(Islands[iIslandIndex].jungle.scale);
 			}
-			CreateGrass("resource\models\islands\"+ Islands[iIslandIndex].id +"\"+ Islands[iIslandIndex].jungle.patch + ".grs", "Grass\"+Islands[iIslandIndex].jungle.texture+".tga.tx", fJungleScale, 20.0, 200.0, 100.0, 1000.0, 0.6);
+			float GrassDistanceSea = stf(InterfaceStates.GrassDistanceSea)*4000.0;
+			float GrassCount = 1.0 - stf(InterfaceStates.GrassCountSea);
+			CreateGrass("resource\models\islands\"+ Islands[iIslandIndex].id +"\"+ Islands[iIslandIndex].jungle.patch + ".grs", "Grass\"+Islands[iIslandIndex].jungle.texture+".tga.tx", fJungleScale, 32.0, 200.0, GrassDistanceSea/10, GrassDistanceSea, GrassCount);
 		}
 		SendMessage(&SeaLighter, "ss", "ModelsPath", Islands[iIslandIndex].filespath.models);
 		//SendMessage(&SeaLighter, "ss", "LightPath", GetLightingPath());

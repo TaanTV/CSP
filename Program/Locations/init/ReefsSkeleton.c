@@ -7,7 +7,7 @@ int LocationInitReefs(int n)
 
 	locations[n].id = "MountainPath";
 	locations[n].id.label = "MountainPath";
-	locations[n].image = "loading\jonny_load\shores\MountainPathDMChest.tga";
+	locations[n].image = "loading\jonny_load\shores\MountainPathDMChest.dds";
 	locations[n].worldmap = "MountainPath";
 	locations[n].parent_colony = "MountainPath";
 	//Sound
@@ -71,7 +71,7 @@ int LocationInitReefs(int n)
 	locations[n].id = "DeckWithReefs";
 	locations[n].id.label = "DeckWithReefs";
 	locations[n].filespath.models = "locations\Outside\Shores\GuardGrot";
-	locations[n].image = "loading\jonny_load\shores\GuardGrot.tga";
+	locations[n].image = "loading\jonny_load\shores\GuardGrot.dds";
 	//Sound
 	locations[n].type = "DeckWithReefs";
  	locations[n].islandId = "Reefs";
@@ -147,7 +147,7 @@ int LocationInitReefs(int n)
 
 	locations[n].id = "WreckedShip";
 	locations[n].id.label = "WreckedShip";
-	locations[n].image = "loading\jonny_load\shores\WreckedShisReefs.tga";
+	locations[n].image = "loading\jonny_load\shores\WreckedShisReefs.dds";
 	locations[n].worldmap = "MountainPath";
 	locations[n].parent_colony = "WreckedShip";
 	//Sound
@@ -190,7 +190,7 @@ int LocationInitReefs(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Reefs_Chapter";
 	locations[n].id.label = "";
-	locations[n].image = "loading\jonny_load\inside\Maltains.tga";
+	locations[n].image = "loading\jonny_load\inside\Maltains.dds";
 	//Town sack
 	locations[n].type = "Reefs_Chapter";
 	locations[n].islandId = "Reefs";
