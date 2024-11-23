@@ -1,0 +1,6 @@
+Unknown {Unknown}
+Potion {Potion used}
+NoTime	{There is no time}
+Days {days -#space#}
+Hours {#space#hours#space#}
+Min {#space#min}

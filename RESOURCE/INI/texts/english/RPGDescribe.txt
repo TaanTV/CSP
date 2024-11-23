@@ -1,0 +1,434 @@
+Strength
+{Power. It is needed in order to hit hard, throw far and drag away a lot. It affects the weight carried, the number of life points and the rate of energy recovery. The defining characteristic for skills that require great physical effort, especially heavy and medium weapon, gun skills.}
+StrengthSh
+{Power. It affects the weight carried, the number of life points and the rate of energy recovery, as well as heavy and medium weapon, gun skills.}
+Perception
+{Impression. The ability to see and hear. Without a good eye, cannon balls are unlikely to fly towards the enemy. Accuracy and stealth have a particularly strong effect on skills. It also affects: the firing range of cannons, the accuracy of firing pistols and the range of visibility on the global map.}
+PerceptionSh
+{Impression. It affects the skills of accuracy, stealth, as well as the firing range of cannons, the accuracy of firing pistols and the range of visibility on the global map.}
+Agility
+{Reaction. Coordination of movements and dexterity of hands. An awkward person's saber will get stuck in the scabbard, and the grappling hook will catch on the trousers of its owner. It is necessary for such skills as light and medium weapon, pistols, boarding. Affects: the amount of maximum energy.}
+AgilitySh
+{Reaction. It is necessary for such skills as light and medium weapon, pistols, boarding, and also affects the amount of maximum energy.}
+Charisma
+{Authority. The result of a combination of a manly wounded physiognomy and a well-hung tongue. The leader does not need to resort to force to take possession of the goods of a successful merchant - he will give it himself. The best people will follow him, and the most beautiful women will be waiting in every port. Leadership is a necessary attribute for skills such as authority and commerce. Affects: the number of officers joining.}
+CharismaSh
+{Authority. A necessary attribute for skills such as authority and commerce also affects the number of officers joining.}
+Intellect
+{Talent. Knowledge, wisdom and the ability to make decisions quickly. For a smart character, it will not be difficult to quickly reload weapon and reset prices in the store. Handling navigation devices also requires intelligence. It affects: commerce, cannons, navigation and, most importantly, the rate of growth of the hero's rank and gaining new abilities.}
+IntellectSh
+{Talent. It affects: commerce, cannons, navigation and, most importantly, the rate of growth of the hero's rank and gaining new abilities.}
+Endurance
+{Endurance. It is extremely necessary for people of the heavy pirate profession to survive. Their potential customers need it no less. Repair and protection are most dependent on this characteristic, as well as the increase in life points and weight carried.}
+EnduranceSh
+{Endurance. Repair and protection are most dependent on this characteristic, as well as the increase in life points and weight carried.}
+Luck
+{Success. What can you say about luck? We are gentlemen if we have luck, and without luck there are no gentlemen. It helps where everything else is useless. Enemy's bullet will fly by, guard will pass by and doesn't notice you. Affects: pistols, fortune, stealth. It also has an impact on many generated events.}
+LuckSh
+{Success. It helps where everything else is useless. Affects: pistols, fortune, stealth. It also has an impact on many generated events.}
+FencingLight
+{The ability to handle light weapon - mainly rapiers and small-sized killing tools. It depends on the reaction and impression. (R*0.9+I*0.1)}
+Fencing
+{The ability to handle sabers is a weapon that requires not only strength, but also a certain skill. It depends on the power and reaction. (P*0.6+R*0.4)}
+FencingHeavy
+{Wielding heavy broadswords, axes, and swords requires remarkable physical strength. It depends on power and endurance. (P*0.9+E*0.1)}
+Pistol
+{The ability to use high-tech devices capable of sending small lead balls over a long distance. It requires dexterity and a certain amount of fortune - Who knows where this bullet will fly... It depends on the reaction and success. (R*0.5+S*0.5)}
+Fortune
+{Fortune. AKA Luck. It is needed everywhere. Depends on success.(S)}
+Leadership
+{Authority. When people see that you will not be lost in any scrape, they begin to believe in you, and now the taverns are full of those who want to join you on campaigns, and the enemy ships surrender as soon as they see your flag. And if the authority is high, you can be sure that your people will board the sea devil himself. It depends on authority and talent. (A*0.9+T*0.1) \n\n Important! If the maximum number of officers equal to Leadership*2+(white Authority/20) is exceeded, the main character receives a penalty in the value of authority equal to -200.}
+Commerce
+{Trade. The ability to sell more expensively what I bought cheaper yesterday. Knowledge of profitable trade routes, business acumen and friendly relations with store owners - all this fills your pockets with a pleasant weight and allows you not to think about such small things as the salary of the team or the lack of canvas in the hold. It takes a talent and a certain charm of a authority. (T*0.8+A*0.2)}
+Accuracy
+{Accuracy. One of the most necessary qualities for navigating the seas. A real captain will not waste gunpowder and cannonballs to scare away all the fish in the area, every volley is right on target! And when the salty wind hits the powder smoke over the bridge, the horizon should be clear of enemy tubs! You can't do without impression and a certain amount of success here. (I*0.8+S*0.2)}
+Cannons
+{Cannons. Quickly equip the gun, quickly roll up, and while the echoes of the shot have not yet subsided among the bulkheads - clean again, hammer, aim, do not forget to douse the gun with water in time so that it does not overheat... Amid the roar and flames of a deadly battle - nothing superfluous - charge, roll up, volley! It requires talent and power. (T*0.6+P*0.4)}
+Sailing
+{Navigation. The ability to bring a ship to port through a storm and fog. The ability to use navigation devices and control squadrons. The largest and most formidable ship will fly like a bird, easily obeying the firm hand of an experienced skipper. It depends on impression and talent. (I*0.2+T*0.8)
+The lack of navigation leads to disadvantages in all the skills and characteristics of the hero.
+***
+Class 1 requires 100
+Class 2 requires 85
+Class 3 requires 70
+Class 4 requires 50
+Class 5 requires 30
+Class 6 requires 1
+Class 7 requires 0
+***
+The difference between the current and required navigation value will be the minus value of the ship class.}
+SailingHard10
+{Navigation. The ability to bring a ship to port through a storm and fog. The ability to use navigation devices and control squadrons. The largest and most formidable ship will fly like a bird, easily obeying the firm hand of an experienced skipper. It depends on impression and talent. (I*0.2+T*0.8)
+The lack of navigation leads to disadvantages in all the skills and characteristics of the hero.
+***
+Class 1 requires 100
+Class 2 requires 85
+Class 3 requires 70
+Class 4 requires 50
+Class 5 requires 30
+Class 6 requires 10
+Class 7 requires 0
+***
+The difference between the current and required navigation value will be the minus value of the ship class.}
+Repair
+{Repair. When the enemy brings down a hail of cannonballs on your ship, smashing the sides into splinters and turning the sails into a sieve, when the hull cracks under the hits of a squall, and the wind tears the rigging like threads, mending becomes the most important of the ship's skills. Endurance is the main thing here, but you can't do without impression either. (E*0.8+I*0.2)}
+Grappling
+{Boarding. Accurately bring the ship to the enemy's side, throw the hook-cats the first time and fall like an avalanche on a trembling enemy, sweep across the decks like a hurricane and take the enemy ship as a well-deserved prize - all this requires considerable skill and experience, but rich booty will easily pay off all efforts. Reaction and talent are needed. (R*0.7+T*0.3)}
+Defence
+{Protection. Day after day, the crew grows together with their ship, and now each sailor is already worth a dozen rookies from the tavern. To protect your people during the battle, not to let them die stupidly and senselessly is the task of a good captain. Endurance and authority of the leader are equally important in mobilizing the crew to protect the ship. (E*0.5+A*0.5)}
+Sneak
+{Stealth. To pass unnoticed by enemy guards, hide in the endless ocean desert from pursuers, or like a bolt from the blue to fall on a careless enemy - a good captain must possess this skill. This is impossible without high success and impression. (S*0.5+I*0.5)}
+Loyality
+{An officer's loyalty is determined by your deeds. Officers with a good reputation will not be able to work for a scoundrel for a long time, and scammers will not tolerate an honest life for a long time.}
+Rank
+{Rank is an indicator of the level of character development in the game. The rank changes stepwise with the acquisition of experience. Along with the hero's Rank, the hero's Life also increases by an amount depending on Endurance.
+As the Rank increases, the hero will more often come across stronger opponents and new items.}
+Life
+{Life is an indicator of a character's resistance to physical damage. The more the character's life, the more stab, cut, chopped and gunshot wounds need to be applied to kill him.
+Each addition of rank increases the life value by a value depending on the Endurance characteristic.}
+Health
+{Health is an indicator of the overall physical condition of the hero. The worse the health, the worse the hero's performance in the game becomes. Health deteriorates if the hero is injured a lot, and recovers if the hero does not participate in hand-to-hand combat for a long time.}
+Energy
+{Energy is an indicator and stamina reserve of a character in hand-to-hand combat. All attacking actions in hand-to-hand combat require the expenditure of the character's energy. In other words, during the fight, the character gets tired and needs a break to replenish his strength.
+The maximum energy value depends on the current value of the character's reaction.}
+Money
+{Money is money. Doubloons, piastres, louis d'or, thalers, guineas... What difference does it make if all this variety is gold!}
+Reputation
+{Reputation is an indicator of how other characters treat a character. Reputation can be high (positive), neutral and low (negative). It is earned by the actions of the character and affects how the character is perceived by other actors in the game.
+The hero's fame melts over time, his actions are erased from people's memory. The bad is forgotten worse, the good is faster. If you don't do anything, then the hero's reputation will eventually roll back to "an ordinary sailor".}
+weight
+{The carried weight is the maximum possible total weight of the load that the character can carry without losing his motor functions and while maintaining the skill level.
+It depends on power and endurance.}
+Title
+{The rank is an indicator of how much benefit a character has brought to the power in whose service he is.}
+NextExp
+{The experience threshold shows how many points have been accumulated in the currently selected skill, rank, and ability and how many are left until the next point is received.
+Skills grow from actions. For each, for example, well-aimed pistol shot, experience points are awarded in the pistols skill. The obtained skill points, in turn, fall into the experience of rank and personal/ship abilities (depending on the type of skill).
+Passing the experience threshold of rank and abilities gives a new rank, which means that the hero's life and ability points increase, which the player can distribute at his discretion.}
+HealthChar
+{Shows the current life regeneration rate.}
+EnergyChar
+{Shows the current energy regeneration rate.}
+PoisonChar
+{Shows information about your poisoning.}
+ReloadGun
+{Shows information about the recharge time.
+Perks + type of the character are taken into account.}
+AccuracyGun
+{Shows the current firing accuracy of an equipped firearm.}
+GunDamage
+{Shows the current probable damage from firing an equipped firearm.}
+Blood
+{Shows information about your chance to severely puncture the victim's soft tissues and cause bleeding with a light weapon.
+The second value shows the current maximum possible exposure time.}
+StanS
+{Shows the possible chance of dealing sharp hits with a medium weapon, causing the enemy to become disoriented.
+The second value shows the current maximum possible exposure time.}
+BlockKirass
+{Shows the current chance of piercing the block/cuirass with a heavy weapon.}
+CriticalChance
+{Shows the possible chance of critical hits.}
+StanH
+{Shows the possible chance of dealing stunning hits with different weapon.
+Forcing the enemy to be completely inactive for 1 to 3 seconds.}
+Travma
+{Shows the possible chance of severe injury from hits with HEAVY weapon ONLY.
+Forcing the enemy to reduce all skills by -40% for 20 to 60 seconds.}
+Poison
+{A chance to poison an opponents, causing them to lose health.}
+SpeedBonus
+{Total ship speed bonus from perks, character, captain and crew skills.
+The 'over-bonus' starts after 100%. I.e. after 100%, this is the bonus itself from various factors.
+In this case, the ship can sail faster than it is prescribed in the TTX.}
+ManevrBonus
+{The total maneuverability bonus of the ship depends on the perks, character, skills of the captain and the team.
+The 'over-bonus' starts after 100%. I.e. after 100%, this is the bonus itself from various factors.
+In this case, the ship can maneuver faster than it is prescribed in the TTX.}
+ChargeTime
+{Shows the current reload rate of the installed cannons.
+It depends on the perks, character, skills of the captain and the team.}
+CannonsRangeBalls
+{Shows the current range of projectiles fired from mounted cannons.
+It depends on the perks, the caliber of the cannons, the specific projectile and the perception.}
+TABLE_PERKS
+{Hero's Abilities}
+TABLE_PERKS_desc
+{The distribution of abilities is possible if there are points in personal or ship skills.
+Double-click on the selected ability to view the description and spend a free point on it.
+Some abilities will not be able to be selected for the hero, as they depend on others. In the beginning, you need to select a younger ability, then an older one will become available.}
+Ship_abilities
+{Abilities that affect the efficiency of ship management.
+The number shows the unallocated number of abilities.}
+Personal_abilities
+{Abilities that expand the character's capabilities.
+The number shows the unallocated number of abilities.}
+All_Info_Char
+{Additional information about chances, weapon properties, ship, and other effects.}
+PERK_TABLE_NEED
+{Required abilities}
+PERK_TABLE_NEED_desc
+{To select this ability, the hero must have all the abilities from this list active.}
+Drunk_hint
+{Alcohol - affects your skills. A drunk person does not feel tired, but fine work is not for him either.}
+Prisoner
+{Prisoner}
+Prisoner_desc
+{The prisoner can be interrogated in the hold of the ship, as well as his identity can be found out.
+The largest amount of ransom is given by the governor of the same nation as the prisoner, but they also have a price spread across different cities.}
+LevelComplexity
+{Difficulty}
+LevelComplexity_desc
+{The difficulty of the game consists of three gradations:                      
+"Sailor" - for beginners                          
+"Captain" - for a regular game                   
+Admiral is for those who want to test themselves
+It affects the speed of the hero's development, the strength of opponents, income and much more.}
+EXP_SLIDE
+{The speed of gaining experience}
+EXP_SLIDE_desc
+{The setting allows you to set the speed of gaining experience by the main character and his officers. The higher the speed, the faster the skill points will be obtained, which means new levels and abilities.}
+RechargePistolOnLine
+{Reloading pistols}
+RechargePistolOnLine_desc
+{In this mode, pistols are reloaded during combat, otherwise only when the saber is sheathed.
+The mode applies to all residents of the game.}
+HardcoreGame
+{HardcoreGame}
+HardcoreGame_desc
+{Not enough adrenaline from the game? Do you want to feel like a real corsair, realize the reality of your actions? In this mode, the recording of the game is possible only in the holy land - in churches. You will have to do everything at once without the hope of repeatedly overloading the saved game.}
+Partition_hint
+{Settlements with the team are made no later than the 1st day of each month and include the following payments:
+***
+Monthly maintenance is the total cost of salaries for officers and sailors, payments for injuries and injuries, and maintaining the ship's economy in proper order.
+The share of loot is the division of captured valuables and the payment of shares to team members.
+Captured ships and goods are subject to division. According to the customs of the Brethren, the shares of the dead officers and sailors go to their comrades and relatives.
+***
+Distribution of shares among team members:
+- sailor - 1 share
+- officer - 10 shares
+- companion - 30 shares
+- Captain - 200-650 shares
+The share of the captain (player) depends on the difficulty level of the game (Sailor - 650, Admiral - 200).
+In addition, the captain, as the owner of the ships of his squadron, receives an additional 20-120 shares for each ship (depending on the class of the vessel). At the same time, the captain assumes all expenses related to the maintenance and possible death of ships.}
+Resort_hint
+{Sorts the ships of the squadron by speed from the fastest to the slowest.
+The order starts from the main character's ship.
+***
+This is done so that fast ships do not ram ahead of sailing ships, breaking bowsprit.}
+CrewWeight_hint
+{By default, the weight of the sailors is not taken into account when calculating the deadweight of the ship.
+If this setting is active, the weight of each sailor (1ts) will be taken into account when calculating the deadweight of the ship.}
+The delay in the payment of shares for the current month does not cause murmurs and discontent in the team until the end of the month. At the same time, early payment increases the morale of the team.
+The delay in the payment of shares and maintenance for the past month leads to a significant decrease in the morale of the team and the loyalty of officers and companions.}
+NewSails_hint
+{By default, no one can use various sails with coats of arms, including torn and black ones.
+If this setting is active, pirate ships will use various sails with coats of arms, including torn and black ones.}
+NoBonusSkillOff_hint
+{By default, bonus skill points from officers to MC are unlimited
+If this setting is active, the bonus skill points from officers to MC will be limited to +25.}
+QuestMark
+{QuestMark}
+QuestMark_desc
+{Marks quest characters for the issue/delivery of quests.}
+Nation_hint
+{The hero's nation is the nation chosen at the beginning of the game, or the nation of the currently issued patent (the hero is in service). It is visible on the "Character" form. On the form of the "Nation", the current flag on the hero's ship is visible, which can only be changed at sea in order to hide its true essence. But the enemy of the power can be recognized both by ships at sea and by guards in the port. The hero's stealth affects the success of the deception. If the hero has a bounty on his head from his main nation, then he is considered an enemy even to her.
+The recognition of the enemy takes into account the relations of the countries themselves and the bounties on their behalf.
+Fast travel in enemy cities to the hero does not work.}
+England_descr
+{England. If anyone is destined to displace Spain in the New World, it is the British. While France in the Old World is actively weakening the Escorial with another war of the Spanish succession, England is systematically seizing one Spanish colony after another. The greatest naval power in history.}
+France_descr
+{France. With the accession to the French throne, Louis XIV is actively increasing his military presence in the New World. A great colonial power that does not consider anyone's interests except its own.}
+Holland_descr
+{Holland. The newly formed Republic of the United Provinces, a young nation aspiring to commercial power. Actively cooperates with France, but at the same time is friends with Spain. Otherwise, it is a neutral power.}
+Spain_descr
+{Spain. A great colonial power that owns most of the New World. It is under constant pressure from two other great powers - England and France, actively seeking to snatch their piece of the New World.}
+Pirate_descr
+{Pirates. People who do not recognize their nationality and live only according to the laws of the Brethren. Depending on their own short-term interests, they may side with one of the powers, but they all have one thing in common - hatred of the Spanish crown.
+However, any patrol in the colonies will react to the pirate flag like a bull to a red rag. The share of an outcast or a very secretive businessman is the lot of a pirate.}
+Hunter_hint
+{The attitude of the state, its citizens and soldiers towards you. Good deeds for the benefit of the country enhance the reputation of the nation, while bad ones can lead to a reward for the hero's head. And this is an eternal pursuit on land and sea, as there will always be bounty hunters.
+The reward for the head can not only be obtained, but also reduced by one's own deeds or direct bribery, thus returning the friendly disposition of the state.}
+OFF_SLIDE
+{Number of boarding officers}
+OFF_SLIDE_desc
+{The setting allows you to set the maximum number of boarding officers for the main character.
+Count of the fighters starts after the carpenter. Attention! For FullHD monitors and below 10, the boarding ship, as well as the 10 squadron ship, ARE NOT SHOWN on the HUD.}
+DEAD_SLIDE
+{The time of the disappearance of the corpses
+The corpses of some quest characters do not disappear.}
+DEAD_SLIDE_desc
+{This setting allows you to edit the time when the corpses of the characters disappear.
+(Within 100 to 500 seconds.)}
+DAMAGE_SLIDE
+{Damage received by MC}
+DAMAGE_SLIDE_desc
+{This setting allows you to edit incoming damage to the main character.
+The coefficient is affected by the set difficulty level.
+For example, on a sailor, the normal coefficient is considered to be a value of x0.5.
+On the captain - x0.9. On the admiral - x1.4.
+(The range of values depends on the difficulty level set and can vary from x0.23 to x3.9)}
+DEFENDERS_SLIDE
+{Number of colony guard ships}
+DEFENDERS_SLIDE_desc
+{This setting allows you to edit the number of ships guarding the colonies.}
+HARD_ANIMATIONS_hint
+{Enables/disables hardcore animations ONLY FOR ADMIRAL DIFFICULTY!
+All key characters (bosses) will have dodger animations.
+There will be a little more difficulty with these animations.
+Turn it on only if fencing seems too easy and boring to you.}
+HARD_BOSS_hint
+{Enables/disables the complication of bosses, namely the forced reloading of guns!
+In the early ranks of the MC, this can make it very difficult to pass key characters such as: Austenians, Trust, Gods and the like.}
+CHECK_ENC_SEARCH_SHIP_hint
+{If this setting is active, ships will only be added to the encyclopedia if you receive them by boarding.
+For exploring and adding all the ships, you can get an achievement.}
+CHECK_ALTERNATIVE_BALANCE_hint
+{If this setting is active, the ability to slow down time will be disabled.
+Fighting on land will work from profile hits.
+Top-end perks like "Master Boarding", "Professional Cannoneer", etc. will only work from designated officers}
+CHECK_AB_TIMESLOW_hint
+{If this setting is active, the ability to slow down time will be disabled.}
+CHECK_AB_OFFTOPPERK_hint
+{Top shipboard perks like "Master Boarding", "Professional Cannoneer", etc. will only work from designated officers. 
+The main character will not be able to upgrade them.
+Also, the Terror of the Seas can now be pumped only from the navigator and will work only from it.}
+CHECK_AB_PROHITS_hint
+{Fighting on land will work from profile hits:
+For light weapon - force and feint.
+For medium weapon, fast and round hits.
+For heavy weapon, it is a punch.  
+When using a non-core weapon type, the hit will deal 30% less damage.}
+LowerShip_hint
+{If this setting is active, the threshold for leveling ship perks will be lowered by 10, giving more perks when leveling ship skills than without this setting.}
+LowerSelf_hint
+{If this setting is active, the threshold for leveling personal perks will be lowered by 10, giving more perks when leveling personal skills than without this setting.}
+DifficultyWeight_hint
+{If this setting is active, the difficulty of the game does not affect the maximum weight of the characters.}
+ShootOnlyEnemy_hint
+{If the option is enabled, then the shooting will be conducted through, bypassing the allies, both the main character and the enemies.
+If this option is disabled, characters will avoid shooting if their trajectory is blocked.}
+HalfImmortalPGG_hint
+{If this setting is active, then at the conclusion of a 10-year contract with a hired officer or PMC, in addition to maximum loyalty, he will receive semi-immortality. Such an officer will not die in battle, but will only lose consciousness and receive a temporary injury. Being a companion and having lost his ship, he will survive and come aboard to you even without the ability to "Rescue on a boat".
+***
+important: The number of such contracts is limited by the Leadership of the main character.
+More precisely, the maximum number of contracts = Leadership * 2.
+(That is, with the Leadership of 3, 6 contracts can be concluded)
+So it makes sense to invest points in this characteristic at the start.
+If you dismiss such an officer, the place for the contract will be freed up.
+***
+important: All quest officers will become mortal by default, and you also need to sign a contract with them.}
+HalfImmortalPGG_NoC_hint
+{Upon reaching 0 health units, this character will not die, but will be injured for a period equal to 10% of maximum health. The period can be reduced if there are doctor's perks.}
+EncountersRate_desc
+{The frequency of events in the game after the pause of the world. It affects how often nations will seize colonies from each other.
+It also affects the number of events on the global map (storms, barrels, shipwrecks, etc.).}
+EncountersRateCount_desc
+{Affects the number of ships on the global map.}
+StealthSystem_desc
+{ORIGINAL MECHANICS
+Vanilla system from the Corsairs game: LSC without any additional features.
+***
+PAID ENTRANCES TO THE PORT
+If this setting is active, then you need to pay a certain amount of money to enter any port. At the same time, a trading license will be issued for a period of 2 days. In particular, it will be issued in hostile ports, provided that the deception has not been recognized.
+***
+BRIBES TO GUARDS
+If this setting is active, then if the stealth check fails, you will have the opportunity to buy off the guards. Also, it will be possible to buy a trade license from the head of the port authority for a short period of time in order to avoid inspections by guards in the future.}
+PortPerm_hint
+{If this setting is active, you will need to pay a certain amount of money to enter the port. At the same time, a trading license will be issued for a period of 2 days. In particular, it will be issued in hostile ports, provided that the deception has not been recognized.}
+Bribe_hint
+{If this setting is active, if the stealth check fails, you will have the opportunity to buy off the guards. Also, it will be possible to buy a trade license from the head of the port authority for a short period of time in order to avoid inspections by guards in the future.}
+ArcadeSailMode_desc
+{The speed and dynamics of fighting at sea. Quick maneuver, speed and reloading of cannons, or leisurely thinking about your tactical move.}
+WorldAlivePause
+{Quests for nations}
+WorldAlivePause_desc
+{This mode gives you the opportunity to go through one of the scenario quest lines for the power, but stops the "living world" of the game before it ends - the relocation of governors-general, the seizure of cities by countries, the opportunity to leave the city to the hero.
+The living world will work only after the completion of the scenario story.}
+WorldPause
+{Quests of Nations}
+WorldPause_hint
+{If the check mark is enabled, then you will be able to complete quests of the pirate and national lines.
+Attention!!!
+Disabling the check mark will turn off all quest lines, and nations will begin to change the status of friendship-enmity and will take over each other's cities. The main character will be able to capture cities for personal use.}
+
+QuestsRank
+{Quests without rank requirements}
+
+QuestsRank_hint
+{If the check box is disabled, the quest can be taken only when the required rank is reached.
+***
+If the check box is enabled, any quests can be taken from rank 1, except quests:
+"Shard of the Past", "Ghost Ship", "Salazar", "Blackbeard", "Black Sails". }
+
+shipChoose_hint
+{Clicking on a companion ship triggers the exchange of goods and crew with it. It works on land or at sea, but not in combat. In battle, you need to come close to the ship and then the exchange will be available.}
+GoodsCargo_hint
+{Goods in the hold of the ship.
+Double-clicking on the goods opens a dialog with a description of the goods and the option to "throw the goods away".}
+
+Trader_desc
+{
+Those who dare to engage in trade in the waters of the Caribbean archipelago, teeming with privateers, pirates and just robbers of various stripes, will not only have to track prices on the islands in order to maximize profits, but also learn to hold the blade firmly in order to keep this profit.
+(it has more favorable purchase and sale prices, increased freight delivery time, copes better with rats on the ship, can receive additional trade information (with discounts), as well, also has +35 max load)
+}
+Grunt_desc
+{
+Basic fencing training is not just about "admiring the sword" and dodging the lightning attacks of the enemy. It's a martial art. The art of quickly solving any issues "in one motion", while not remaining damaged.
+(has a 10% chance of dodging attacks, +5% chance of a critical hit - combined with other perks)
+}
+Adventurer_desc
+{
+Adventures are the real life of a free adventurer. And if you can get good dividends in the pursuit of them, then why not take full advantage of it?
+(has a second chance at an excuse when detected by an enemy, increases the chance of meeting a treasure dealer in a tavern, has altered interactions with alcoholics, and also has a chance of not being killed by the last hit, the chance is 10% * luck)
+}
+Buccaneer_desc
+{
+Buccaneers were forest hunters from French settlers who settled in the early 17th century on islands in the Caribbean belonging to Spain. Buccaneers' favorite weapon - musket: a large, almost two-meter, heavy pistol. It was used for hunting wild boars, as well as when it was necessary to hit the helmsman on an enemy vessel from a distance of 250 m. The Buccaneers were excellent marksmen. They fired their muskets as they swam up to the ship, thereby making boarding easier for themselves.
+(Stuns the enemy with a shot, causing them to lose 35% of energy, has a 10% chance of a critical hit with 130% damage, and also has a 25% acceleration in reloading guns)
+}
+Fencer_desc
+{
+Long work in the forge hardens a man into steel, which he himself forges.
+It is no wonder to understand that after long work, hands turn into strong weapon, which can greatly harm or injure any offenders.
+(has 30 more energy, total damage from bladed weapon increased by 15%)
+}
+Agent_desc
+{
+An undercover agent is not a job, it's a vocation. Serving the interests of the state or a private individual requires extraordinary abilities and skills.
+The agent has no disadvantages or special advantages in his skills. It develops in a very balanced way.
+(has a second chance at an excuse when detected by the enemy, altered interactions with alcoholics, all perks of flags and rags from the start, a double-enhanced feint with a 33% chance of criticism, as well as reduced prices for almost everything from a diplomat)
+}
+SeaWolf_desc
+{
+Sea wolves, unlike most ordinary people, are especially good at what is most important in the Caribbean - in the maritime business. Their ship is always flying through the waves, their cannons do not know misfires and misses, and the crewg is always ready for any challenges.
+(it has an increased team training speed, a 5% bonus to the ship's performance and a reduced chance of cannons exploding in battle and from wear)
+}
+
+Trader
+{
+Merchant
+}
+Grunt
+{
+Slasher
+}
+Adventurer
+{
+Adventurer
+}
+Buccaneer
+{
+Buccaneer
+}
+Fencer
+{
+Swordsman
+}
+Agent
+{
+Secret Agent
+}
+SeaWolf
+{
+Sea Wolf
+}

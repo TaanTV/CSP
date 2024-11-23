@@ -1,0 +1,132 @@
+newline{}
+BasicDefense {Basic defense skill}
+perkBasicDefense			{Damage to the character is reduced by 10%.}
+AdvancedDefense {Advanced defense skill}
+perkAdvancedDefense			{Damage to the character is reduced by 20%.\n(cannot be combined with the Basic Defense Skill)}
+CriticalHit {Critical hit}
+perkCriticalHit {Character gets the opportunity to deal a critical damage to the enemy. (Chance +5%)\n(Combined with a Professional Swordsman and a hidden Swordsman perk)}
+Ciras {Cuirass}
+perkCiras {This skill allows you to wear cuirasses.}
+SwordplayProfessional {Professional swordsman}
+perkSwordplayProfessional	{Chance of a critical hit is +10%. Damage to the character is reduced by 30%.\n(Combined with a Critical Hit and a hidden Swordsman's perk, not combined with damage-reducing perks)}
+AgileMan {Dodger}
+perkAgileMan {Years of training in fencing and shooting have yielded results. Now you are much faster with scabbards and pistols, you swim faster.\n(25% chance of dodging a shot. You also recover faster by missing a hit)}
+Buldozer {Bully}
+perkBuldozer {This ability allows you to better push through crowds with weapon in your hands. (the default hotkey is "Y")}
+Rush {Rush}
+perkRush {Increases the player's attack power by 2 times for a period of 10 seconds, and the wounds received cause 50% less damage, while energy is restored to maximum once. The next use is only in a minute.}
+Tireless {Tirelessness}
+perkTireless {During a fight, you get a second wind, and it's easier for you to resist fatigue. (Energy recovery rate +15%)}
+HardHitter {Heavy hand}
+perkHardHitter {Your hits stun the opponent, taking 10% of the energy for each hit. Also, your attacks now have an additional 5% chance to pierce the opponent's block or cuirass.}
+BladeDancer {Blade dancer}
+perkBladeDancer				{You've finally realized how to properly apply a round hit.	(30% damage bonus for round impact).}
+Sliding {Irresistible hit}
+perkSliding {Your hits have an additional 20% chance of piercing the opponent's block.\n(works regardless of the chance of piercing given by the weapon)}
+Gunman {Shooter}
+perkGunman {Character handles pistols better: reloading is 10% faster, combat accuracy is 10% higher. It becomes possible to use muskets and double-barrel pistols.\n(Combined with a hidden Buccaneer perk)}
+GunProfessional {Musketeer}
+perkGunProfessional			{Character acquires professional skills: personal weapon reloading is 25% faster than the initial one, and combat accuracy is 25% higher. It is possible to use four-barrel pistols.\n(not summed up with the Shooter, but summed up with the hidden Buccaneer perk)}
+IronWill {Iron will}
+perkIronWill {Ship reduces the likelihood of mutiny from unpaid wages and starvation.}
+SharedExperience {Sharing of experience}
+perkSharedExperience {Character can exchange items with officers during boarding. Now officers and companions will swing along with the hero, getting all his experience, and passengers will receive 25% of the hero's experience.}
+Craft {Inventor}
+perkCraft {Allows you to create powerful ammo and advanced items.}
+HPPlus {Growing life}
+perkHPPlus {This ability increases the maximum life of the hero by 80 points.}
+HPPlusFixed {Growing life}
+perkHPPlusFixed {This ability increases the maximum life of the hero by 60 points. The ability also allows you to restore health faster if no serious wounds are applied during the day. Reduces the fall if there were wounds. It works while swimming, but not so much.}
+EnergyPlus {Growing energy}
+perkEnergyPlus {This ability increases the hero's maximum energy by 60 points. It also allows you to lift an additional 30 pounds.}
+EnergyPlusFixed {Growing energy}
+perkEnergyPlusFixed {This ability increases the hero's maximum energy by 45 points. It also allows you to lift an additional 30 pounds.}
+ByWorker {Part-time worker}
+perkByWorker {This character has the ability to hold two officer positions at once.}
+ByWorker2 {Part-time station wagon}
+perkByWorker2 {This character has the ability to hold three officer positions at once.}
+Trustworthy					{Trustworthy}
+perkTrustworthy {Negative reputation of the hero ceases to influence the hiring decision of most employers, since the charm of the hero misleads them.}
+UnlimitedContra {Avid smuggler}
+perkUnlimitedContra {Your skills of covert trading of prohibited goods have reached unprecedented heights. Smugglers are ready to make deals under any conditions. (to get the skill, you need to make deals for a certain amount and have authority + trade values of at least 50}
+AboardCollector {Looting}
+perkAboardCollector			{Your boarding skills have impressed the team. Now, at the end of the battle, they will collect and offer you some of the loot themselves. Reactivation of chest by pressing the "tilda" button. (Board more than twenty ships and kill more than two hundred people in boarding battles).}
+ShipEscape {Lifeboat rescue}
+perkShipEscape {Rescue by dinghy from the sinking ship of the hero to one of the ships of his squadron. This ability allows you to exchange or move to another ship of the squadron through the "hold" menu during a battle with the ship's hull < 15%. If the companion has the ability, then he will escape from a sinking ship or a fire ship, returning as a passenger to the hero's ship by lowering the boat.}
+FastReload {Fast recharge}
+perkFastReload {Cannon reload rate increases by 10%.}
+ImmediateReload {Pre-recharge}
+perkImmediateReload			{When this option is selected, the next recharge will occur 30% faster. After use, the opportunity is blocked for 5 minutes.}
+HullDamageUp				{Increased damage to hull}
+perkHullDamageUp			{Damage to the hull of an enemy ship increases by 15%.}
+SailsDamageUp				{Increased damage to sails}
+perkSailsDamageUp			{Damage to the enemy ship's sails increases by 15%.}
+CrewDamageUp				{Increased damage to crew}
+perkCrewDamageUp			{Damage to the enemy ship's crew increases by 15%.}
+CriticalShoot {Critical shot}
+perkCriticalShoot			{Character gets an possibility to make a critical shot on opponent. (5% probability)}
+LongRangeShoot				{Increased firing range}
+perkLongRangeShoot {Maximum range of cannons is increased by 15%.}
+CannonProfessional			{Professional cannoneer}
+perkCannonProfessional {Damage to any part of the ship increases by 30%. The probability of a critical hit is 15%.\n(cannot be combined with damage increase or Critical Shot perks)}
+LongRangeGrappling {Boarding from a long range}
+perkLongRangeGrappling {Range from which an enemy vessel can be boarded increases by 15%.}
+MusketsShoot {Musket salvo}
+perkMusketsShoot {A musket salvo is fired immediately before boarding, which causes up to 25% damage to the enemy team, but no more than the number of shooters.}
+GrapplingProfessional {Master boarding}
+perkGrapplingProfessional {Range from which an enemy vessel can be boarded increases by 25%. Boarding is possible at any angle of approach and speed of the vessel.\n(cannot be combined with Boarding from a long range)}
+BasicBattleState {Basic ship protection}
+perkBasicBattleState {Total damage to the ship is reduced by 15%.}
+AdvancedBattleState			{Advanced ship protection}
+perkAdvancedBattleState {Total damage to the ship is reduced by 25%.\n(not combined with the Main protection of the ship)}
+ShipDefenseProfessional {Ship protection professional}
+perkShipDefenseProfessional {Total damage to the ship is reduced by 35%. The probability of receiving a critical hit is reduced by 70%.\n(cannot be combined with the required perks)}
+LightRepair {Light repair}
+perkLightRepair {Slow repair of ship damage without using resources. No more than 20% of the strength can be repaired. In addition, the study of this ability slows down the sinking of the ship by half, when, with a hull strength of less than 20%, the ship begins to receive small but permanent damage. (running for 40 seconds, cooldown for 200 seconds)}
+InstantRepair {Instant repair}
+perkInstantRepair {Instant repair of the ship in battle. It is necessary to have planks for the hull and canvas for the sails. It is impossible to restore fallen masts and replenish the team. \n(The duration is 30 seconds. Maximum recovery is up to 65%. Cooldown - 300 seconds. The rate of reloading cannons is also reduced by 50% - there is no one to reload, everyone is repairing the ship). The "Carpenter" and "Shipbuilder" perks with their own characteristics are also taken into account}
+ShipSpeedUp					{Increased speed}
+perkShipSpeedUp				{Increase the maximum speed of the ship by 15%.}
+ShipTurnRateUp				{Increased maneuverability}
+perkShipTurnRateUp			{Increased maneuverability of the ship by 15%.}
+StormProfessional {Sailing in storms}
+perkStormProfessional {Reducing storm damage by 30%.}
+Turn180 {Maneuverable turn}
+perkTurn180 {Ship turn - turn speed is 4 times faster by one minute. Repeat no earlier than 3 minutes later.}
+SailingProfessional {Experienced navigator}
+perkSailingProfessional {Increase the speed and maneuverability of the ship by 20%. In 75% of cases, you can skip a meeting with ordinary ships on the world map.\n(cannot be combined with an increase in Speed and Maneuverability)}
+SeaDogProfessional {Terror of the Seas}
+perkSeaDogProfessional {Seeing the pennant of the Terror of the Seas, even notorious adventurers and robbers do not risk trying their luck. Excludes an attack by enemy squadrons at sea. It does not work on small class ships.}
+FlagPir {Pirate flag}
+perkFlagPir {Possibility to change your flag to Jolly Roger.}
+FlagEng {English flag}
+perkFlagEng {Possibility to change your flag to the England flag. The probability that the deception will be revealed depends on stealth, the class and number of ships in the squadron, the number of enemy ships and the reward for the head. To receive it, it is required to kill or capture the captain of a ship belonging to England in a naval battle.}
+FlagFra {French flag}
+perkFlagFra {Possibility to change your flag to the France flag. The probability that the deception will be revealed depends on stealth, the class and number of ships in the squadron, the number of enemy ships and the reward for the head. To obtain it, it is required to kill or capture the captain of a ship belonging to France in a naval battle.}
+FlagSpa {Spanish flag}
+perkFlagSpa {Possibility to change your flag to the Spain flag. The probability that the deception will be revealed depends on stealth, the class and number of ships in the squadron, the number of enemy ships and the reward for the head. To obtain it, it is required to kill or capture the captain of a ship belonging to Spain in a naval battle.}
+FlagHol {Dutch flag}
+perkFlagHol {Possibility to change your flag to the Dutch flag. The probability that the deception will be revealed depends on stealth, the class and number of ships in the squadron, the number of enemy ships and the reward for the head. To obtain it, it is required to kill or capture the captain of a Dutch ship in a naval battle.}
+Brander {Brander}
+perkBrander {Ability to send an allied ship to explode next to an enemy ship, causing huge damage to it.}
+Troopers					{Landing of allied ships}
+perkTroopers {Ability to combine the teams of your subordinate ships before storming the fort and attacking the fort in total.}
+BasicCommerce {Basic trading}
+perkBasicCommerce {10% discount on goods in stores.}
+AdvancedCommerce			{Advanced trading}
+perkAdvancedCommerce {20% discount on goods in stores. The purchase price is +5%.\n(cannot be combined with Basic trading)}
+Carpenter {Carpenter}
+perkCarpenter				{Increases the maximum possible repair effect by 10%.}
+Builder {Shipbuilder}
+perkBuilder {Reduces the consumption of planks and canvas during repairs by 10%.}
+WindCatcher					{Increases dynamic}
+perkWindCatcher {You feel the smallest change in the wind flow and know how to use it. (+10% to your ship's speed gain dynamics)}
+SailsMan {Fast sails}
+perkSailsMan {Thanks to the use of the latest carrot and stick techniques, you have achieved that all operations with sails are performed 10% faster.}
+Doctor1 {Doctor}
+perkDoctor1 {Reduces crew losses during naval combat from wounds and grapeshot by 10%.\n Reduces officer's concussion time by 20%.}
+Doctor2 {Life saviour}
+perkDoctor2 {Reduces crew losses during naval combat from wounds and grapeshot by 20%.\n(cannot be combined with the Doctor)Reduces officer's concussion time by 40%.}
+EmergentSurgeon {Emergency surgeon}
+perkEmergentSurgeon			{Reduces crew losses during boarding operations if there is enough medicine.\n Reduces officer's concussion time by 60%.}
+InstantBoarding {Cheat boarding}

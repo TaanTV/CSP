@@ -1,0 +1,221 @@
+
+
+KoltsoLodet						{Кольцо Жозефины Лодет}
+KoltsoLodet_Lvl					{1}
+KoltsoLodet_Desc				{Берётся у старушки, гуляющей по улицам Бас-Тера.}
+KoltsoLodet_Spec				{}
+
+ProklyatayaJara					{Проклятая жара}
+ProklyatayaJara_Lvl				{1}
+ProklyatayaJara_Desc			{Берётся у солдата, стоящего на посту в Форт де Франс.}
+ProklyatayaJara_Spec			{}
+
+NaitiTorgovtsa					{Найти пропавшего торговца}
+NaitiTorgovtsa_Lvl				{1}
+NaitiTorgovtsa_Desc				{Берётся у женщины на улицах Виллемстада.}
+NaitiTorgovtsa_Spec				{}
+
+DengiRost						{Деньги в рост}
+DengiRost_Lvl					{1}
+DengiRost_Desc					{Берётся у ростовщика в банке Виллемстада.}
+DengiRost_Spec					{}
+
+SpastiMuja						{Вызволение из плена мужа горожанки}
+SpastiMuja_Lvl					{1}
+SpastiMuja_Desc					{Берётся у женщины на улицах Порт-о-Принс.}
+SpastiMuja_Spec					{}
+
+Aptekar							{Аптекарь}
+Aptekar_Lvl						{1}
+Aptekar_Desc					{Берётся в аптеке на Мариго.}
+Aptekar_Spec					{}
+
+NaitiMushket					{Найти двуствольный мушкет}
+NaitiMushket_Lvl				{1}
+NaitiMushket_Desc				{Берётся у отставного мушкетёра, который живёт в доме с лестницей на втором этаже в Порт-оф-Спейне.}
+NaitiMushket_Spec				{}
+
+ClanLambrini					{Клан Ламбрини}
+ClanLambrini_Lvl				{1}
+ClanLambrini_Desc				{Берётся у контрабандиста, сидящего в таверне Порт оф Спейна.}
+ClanLambrini_Spec				{Требуется репутация не ниже "Человек чести".}
+
+Rimalie							{Рималье}
+Rimalie_Lvl						{1}
+Rimalie_Desc					{Берётся у отшельника на необитаемом острове Тобаго.}
+Rimalie_Spec					{}
+
+OpasnyGruz						{Опасный груз}
+OpasnyGruz_Lvl					{1}
+OpasnyGruz_Desc					{Берётся у коменданта форта в Кумане.}
+OpasnyGruz_Spec					{}
+
+Ascold							{Аскольд}
+Ascold_Lvl						{1}
+Ascold_Desc						{Берётся у продавца в магазине в любом городе.}
+Ascold_Spec						{}
+
+Rabotorgovets					{Работорговец}
+Rabotorgovets_Lvl				{1}
+Rabotorgovets_Desc				{Берётся у случайного ростовщика на Карибах.}
+Rabotorgovets_Spec				{}
+
+ShamankaChani					{Шаманка Чани}
+ShamankaChani_Lvl				{1}
+ShamankaChani_Desc				{Берётся у шаманки в деревне индейцев, что на западном Мэйне.}
+ShamankaChani_Spec				{}
+
+PomoshElen						{Помощь Элен}
+PomoshElen_Lvl					{1}
+PomoshElen_Desc					{Берётся у красавицы на улице в Пуэрто-Принсипе.}
+PomoshElen_Spec					{Требуется репутация не ниже "Честный капитан".}
+
+TravlyaKrys						{Травля крыс}
+TravlyaKrys_Lvl					{1}
+TravlyaKrys_Desc				{Берётся у главы любого пиратского поселения.}
+TravlyaKrys_Spec				{}
+
+Looser							{Проигравшийся игрок}
+Looser_Lvl						{1}
+Looser_Desc						{Берётся в таверне у азартного игрока.}
+Looser_Spec						{Выдаётся случайным образом с вероятностью 8%.}
+
+StroitelstvoKolonii				{Строительство колонии}
+StroitelstvoKolonii_Lvl			{1}
+StroitelstvoKolonii_Desc		{Берётся у немецкого деда, гуляющего по улицам в Чарлстауне. Выполнив его просьбу, он поселится в одном из домов Порт-Рояла.}
+StroitelstvoKolonii_Spec		{}
+
+ProklyatyIdol					{Проклятый идол}
+ProklyatyIdol_Lvl				{3}
+ProklyatyIdol_Desc				{Берётся у пирата, сидящего в таверне Ла Веги.}
+ProklyatyIdol_Spec				{}
+
+NeputyovyKaznachey				{Непутёвый казначей}
+NeputyovyKaznachey_Lvl			{3}
+NeputyovyKaznachey_Desc			{Берётся у мужчины в очках, гуляющего по улицам Виллемстада.}
+NeputyovyKaznachey_Spec			{}
+
+Dozor							{Дозор}
+Dozor_Lvl						{3}
+Dozor_Desc						{Берётся у мужчины на улице в Шарп-Тауне.}
+Dozor_Spec						{Требуется заплатить 20000 пиастров.}
+
+Ostin							{Дело жизни и смерти}
+Ostin_Lvl						{3}
+Ostin_Desc						{Берётся у бандитов на улице в определённых городах: Сент-Джонс, Санта-Каталина, Картахена, Панама, Форт де Франс, Мариго.}
+Ostin_Spec						{}
+
+SpasenieNaRifah					{Чудесное спасение на рифах}
+SpasenieNaRifah_Lvl				{5}
+SpasenieNaRifah_Desc			{Берётся у торговца в очках, гуляющего по улицам Порт-Рояля.}
+SpasenieNaRifah_Spec			{}
+
+SinyaPtitsa						{Синяя птица}
+SinyaPtitsa_Lvl					{5}
+SinyaPtitsa_Desc				{Берётся у владельца магазина любого поселения, кроме пиратского.}
+SinyaPtitsa_Spec				{}
+
+KotVMeshke						{Кот в мешке}
+KotVMeshke_Lvl					{5}
+KotVMeshke_Desc					{Берётся у рыбака рядом с берегом в Санто-Доминго.}
+KotVMeshke_Spec					{}
+
+Kuali							{Макуауитль Куали}
+Kuali_Lvl						{5}
+Kuali_Desc						{Берётся у аборигена в деревне индейцев, что на западном Мэйне.}
+Kuali_Spec						{}
+
+FleitOrion						{Сопровождение флейта Орион}
+FleitOrion_Lvl					{5}
+FleitOrion_Desc					{Берётся у бармена в таверне Форт де Франс.}
+FleitOrion_Spec					{}
+
+OskolokProshlogo				{Осколок прошлого}
+OskolokProshlogo_Lvl			{10}
+OskolokProshlogo_Desc			{Берётся у любого пиратского губернатора.}
+OskolokProshlogo_Spec			{}
+
+Nasledstvo						{Нежданное наследство}
+Nasledstvo_Lvl					{10}
+Nasledstvo_Desc					{Берётся у женщины на улице в Бас-Тере.}
+Nasledstvo_Spec					{Требуется заплатить 7000 пиастров.}
+
+Kondotier						{Кондотьер}
+Kondotier_Lvl					{10}
+Kondotier_Desc					{Берётся у контрабандиста в любом поселение, кроме пиратского.}
+Kondotier_Spec					{}
+
+KorablPrizrak					{Корабль-призрак}
+KorablPrizrak_Lvl				{10}
+KorablPrizrak_Desc				{Взяв слух у пьяницы, можно узнать информацию о корабле-призраке.}
+KorablPrizrak_Spec				{}
+
+Satanisty						{Странные вещи творятся на архипелаге}
+Satanisty_Lvl					{10}
+Satanisty_Desc					{Берётся у женщин в беседке на территории резиденции губернатора в Мариго.}
+Satanisty_Spec					{}
+
+ZacharovanyGorod				{Зачарованный город}
+ZacharovanyGorod_Lvl			{10}
+ZacharovanyGorod_Desc			{Берётся у любого мирного жителя в Каракасе с 9-20 часов.}
+ZacharovanyGorod_Spec			{}
+
+OhotaNaVedmu					{Охота на ведьму}
+OhotaNaVedmu_Lvl				{15}
+OhotaNaVedmu_Desc				{Берётся у дворянина, гуляющего по улицам Белиза.}
+OhotaNaVedmu_Spec				{}
+
+ZagadochnyOstrov				{Загадочный остров}
+ZagadochnyOstrov_Lvl			{15}
+ZagadochnyOstrov_Desc			{Берётся у бродяги в таверне Бриджтауна.}
+ZagadochnyOstrov_Spec			{}
+
+UbitVsehNishih					{Убить всех нищих}
+UbitVsehNishih_Lvl				{15}
+UbitVsehNishih_Desc				{Берётся у мужчины, гуляющего по улицам Порт-Рояля.}
+UbitVsehNishih_Spec				{}
+
+GPK								{В Городе Потерянных Кораблей}
+GPK_Lvl							{15}
+GPK_Desc						{Нужно доплыть на глобальной карте в верхний левый угол карты.}
+GPK_Spec						{Требуется пройденный квест "Убить всех нищих".}
+
+ChernayaBoroda					{Чёрная Борода}
+ChernayaBoroda_Lvl				{20}
+ChernayaBoroda_Desc				{Взяв слух у пьяницы, можно узнать информацию о Чёрной Бороде.}
+ChernayaBoroda_Spec				{}
+
+Salazar							{Салазар}
+Salazar_Lvl						{20}
+Salazar_Desc					{Взяв слух у пьяницы, можно узнать информацию о Салазаре.}
+Salazar_Spec					{}
+
+IstoriyaIzabely					{История прекрасной Изабеллы}
+IstoriyaIzabely_Lvl				{20}
+IstoriyaIzabely_Desc			{Берётся у пирата, гуляющего по улицам Шарп-Тауна.}
+IstoriyaIzabely_Spec			{Главный герой должен быть мужчиной.}
+
+ChernyeParusa					{Чёрные паруса}
+ChernyeParusa_Lvl				{25}
+ChernyeParusa_Desc				{Берётся у Гатри в магазине Шарп-Тауна.}
+ChernyeParusa_Spec				{Требуется пройденный квест "Синяя Птица".}
+
+Teno							{Теночтитлан}
+Teno_Lvl						{?}
+Teno_Desc						{Берётся у матроса на берегу Москитов на Мэйне.}
+Teno_Spec						{}
+
+IstoriaDavneyDrujby				{История давней дружбы}
+IstoriaDavneyDrujby_Lvl			{?}
+IstoriaDavneyDrujby_Desc		{Берётся у пирата, гуляющего по улицам Ла Веги.}
+IstoriaDavneyDrujby_Spec		{Требуется патент любой нации.}
+
+NovayaRodina					{В поисках новой родины}
+NovayaRodina_Lvl				{?}
+NovayaRodina_Desc				{Берётся у старого пирата, сидящего в таверне Пуэрто-Принсипе.}
+NovayaRodina_Spec				{Требуется испанский патент.}
+
+SilverFleet						{Серебряный флот}
+SilverFleet_Lvl					{?}
+SilverFleet_Desc				{После получения приглашения от английского офицера в Порт-Рояле, квест даёт генерал-губернатор Томас Мэдифорд.}
+SilverFleet_Spec				{Требуется открыть достижение "Морской волк" и хорошая репутация.}

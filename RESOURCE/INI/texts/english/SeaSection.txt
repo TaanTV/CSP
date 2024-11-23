@@ -1,0 +1,62 @@
+Ship_critical {Critical shot!}
+Ship_sunk {%1 "%2" sunk. +%3 experience.}
+Ship_sunk_other {%1 "%2" sunk.}
+Ship_got_good {%1c. of %2 boarded}
+Ship_cant_got_good {No room for %1}
+Fort_destroy {%1 is destroyed. +%2 experience.}
+Fort_cannon {Fort's cannon has been destroyed!}
+seg_Balls {Balls}
+seg_Grapes {Grapeshot}
+seg_Knippels {Knippels}
+seg_Bombs {Bombs}
+seg_Sailcloth {Canvas}
+seg_Planks {Planks}
+seg_Slaves {Slaves}
+seg_Wheat {Wheat}
+seg_Ebony {Ebony}
+seg_Chocolate {Cocoa}
+seg_Sugar {Sugar}
+seg_Wine		{Wine}
+seg_Linen {Canvas}
+seg_Rum {Rum}
+seg_Tobacco {Tobacco}
+seg_Coffee {Coffee}
+seg_Mahogany	{Mahogany}
+seg_Cinnamon	{Cinnamon}
+seg_Copra {Copra}
+seg_Paprika {Pepper}
+seg_Fruits {Fruits}
+seg_Ale {Ale}
+seg_Silk {Silk}
+seg_Clothes {Clothes}
+seg_Cotton {Cotton}
+seg_Sandal {Sandal}
+seg_Leather {Skin}
+seg_Oil {Oil}
+seg_Food		{Food}
+seg_Weapon {Weapon}
+seg_Gold {Gold}
+seg_Silver {Silver}
+seg_Powder {Gunpowder}
+seg_Brick {Bricks}
+seg_Medicament {Medicines}
+seg_Cannon_8 {Cannons 8lbs.}
+seg_Cannon_10 {Cannons 10lbs.}
+seg_Cannon_12 {Cannons 12lbs.}
+seg_Cannon_16 {Cannons 16lbs.}
+seg_Cannon_20 {Cannons 20lbs.}
+seg_Cannon_24 {Cannons 24lbs.}
+seg_Cannon_28 {Cannons 28lbs.}
+seg_Cannon_32 {Cannons 32lbs.}
+seg_Cannon_36 {Cannons 36lbs.}
+seg_Cannon_42 {Cannons 42lbs.}
+seg_Culverine_8 {Culverin 8lbs.}
+seg_Culverine_10 {Culverin 10lbs.}
+seg_Culverine_12 {Culverin 12lbs.}
+seg_Culverine_16 {Culverin 16lbs.}
+seg_Culverine_20 {Culverin 20lbs.}
+seg_Culverine_24 {Culverin 24lbs.}
+seg_Culverine_28 {Culverin 28lbs.}
+seg_Culverine_32 {Culverin 32lbs.}
+seg_Culverine_36 {Culverin 36lbs.}
+sea_exp_add {+%1 experience}

@@ -1,0 +1,13 @@
+Delete profile confirm		{Do you really want to delete this profile and all its entries?}
+Delete savefile confirm		{Do you really want to delete this entry?}
+Overwrite savefile confirm	{Do you really want to overwrite this save?}
+Low storage and unable save create {Not enough disk space to save the game.}
+Load game confirm					{Do you really want to load this save?}
+Unable to Load save game {This entry cannot be loaded.}
+Salary info {Your team requires payment for a month.
+Will you give it to them?}
+Officer info {Your officers require payment for the month:}
+All info {Total amount:#space#}
+New game confirm{Do you really want to start a new game?}
+Insert Disk Ok	{Please insert the first disc of the game "Pirates Of The Caribbean"}
+save game limit	{You've exceeded the limit of the maximum number of saved games. Delete the old saves.}

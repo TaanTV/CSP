@@ -1,0 +1,172 @@
+newLine{}
+// Settings Menu
+HelpChooser {Selecting a help section}
+MainInterface			{Management in interfaces}
+DialogControls {Dialog}
+WorldMapControls {World Map}
+BattleInterfaceControls {Management in interfaces}
+Sailing1Pers {Sea from the 1st person}
+Sailing3Pers {Sea from the 3rd person}
+FightModeControls {Battle Mode}
+PrimaryLand {Management on earth}
+ChrCamTurnV			{Vertical movement of the camera behind the character}
+ChrCamTurnH {Horizontal movement of the camera behind the character}
+ChrCamCameraSwitch {Changing the camera mode 'behind the character' \ 'view from the eyes'}
+ChrCamNormalize {Centering the camera}
+ChrTurnH 	{Character rotation}
+ChrTurnV {Character Movement}
+ChrTurnHL	{Turn the character to the left}
+ChrTurnHR	{Turn the character to the right}
+ChrForward {Go forward}
+ChrForward1 {Go forward}
+ChrForward2 {Go forward (alternative)}
+ChrBackward {Go backward}
+ChrBackward1{Go backward}
+ChrRun {Go on a run}
+ChrRunStick	{Go on a run}
+ChrStrafeLeft {Strafe to the left}
+ChrStrafeRight {Strafe to the right}
+ChrBlock {Block}
+ChrRecoil {Recoil}
+ChrParry {Parry}
+ChrAttackForce		{Forse}
+ChrAttackFast		{Fast}
+ChrAttackRound {Round hit}
+ChrAttackBreak		{Punch}
+ChrAttackFient {Feint}
+ChrAttackBreakBase {Punch/Feint}
+ChrAttackRoundBase {Round}
+ChrAttackChoseBase {Impact Switch}
+ChrBlockBase {Block}
+ChrAttackBase		{Force/Parrying}
+ChrAltAttackBase {Fast/Round hit}
+ChrAltAttackBaseA	{Round hit}
+SoloParry {Parry (dodge)}
+SoloFient {Feint (counterattack)}
+ChrFire {Shoot}
+MushketHotkey		{Switch (musket)/(saber+pistol)}
+BOAL_UsePotion {Drink a healing potion}
+BOAL_ActivateRush {Activate "Rush"}
+PusherHotkey		{Activate "Bully"}
+ChrFightMode {Enabling/Disabling combat mode}
+csmRunLootCollector {Open the chest (perk Looting, Boarding and Siege)}
+DlgAction			{Choosing an answer in the dialog}
+DlgAction1			{Choosing an answer in the dialog}
+DlgUp {Go to the previous answer option in the dialog}
+DlgDown {Go to the next answer option in the dialog}
+DlgScrollUp			{Scroll down the dialog lines}
+DlgScrollDown {Scroll up the dialog lines}
+Say					{Calling the autobuy interface by the treasurer}
+MapView {Open Map Atlas}
+Map_Best {Open a great map}
+OfficersCharge	{Command the officers to "Attack"}
+OfficersHold {Command officers to "Stand down"}
+OfficersFollow	{Command the officers to "Follow"}
+OfficersFree {Command officers to "At ease"}
+ChrJump			{Jump}
+BOAL_DeadSearch {Body search}
+hk_Cure			{Drink a healing potion}
+UseAntidote {Drink the antidote}
+UseFood {Use Food}
+hk_Rush {Activate "Rush"}
+ChrAction		{Perform an action}
+ShipCamera_Turn_V	{Vertical movement of the camera behind the ship}
+ShipCamera_Turn_H {Horizontal movement of the camera behind the ship}
+ShipCamera_Forward {Zoom in camera on ship}
+ShipCamera_Backward {Zoom out camera from ship}
+Sea_CameraSwitch	{Switching the camera "behind the ship"/"on deck"}
+Spyglass {Turn on/off the spyglass}
+TelescopeIn {Turn on/zoom in the spyglass}
+TelescopeOut		{Turn off/remove the spyglass}
+DeckCamera_Turn_V	{Vertical rotation of the camera on ship deck}
+DeckCamera_Turn_H {Horizontal rotation of the camera on ship deck}
+DeckCamera_Forward {Move forward on ship deck}
+DeckCamera_Backward {Move backward on ship deck}
+DeckCamera_Left {Left strafe on ship deck}
+DeckCamera_Right	{Starboard strafe on ship deck}
+Ship_TurnLeft	{Turning the ship to the left}
+Ship_TurnRight	{Turning the ship to the right}
+Ship_SailUp {Set sail}
+Ship_SailDown {Lower the sails}
+hk_charge1 {Charge with balls}
+hk_charge2 {Charge with grapeshot}
+hk_charge3 {Charge with knippels}
+hk_charge4 {Charge with bombs}
+Ship_Fire	{Fire a cannon salvo}
+CIC_LoadBalls {Squadron: "Charge the balls"}
+CIC_LoadGrapes {Squadron: "Load grapeshot"}
+CIC_LoadChain {Squadron: "Load knipels"}
+CIC_LoadBombs {Squadron: "Load bombs"}
+CIC_LoadAtWill {Squadron: "Charging at discretion"}
+CIC_SailAway {Squadron: "Sail away"}
+CIC_LowerSails {Squadron: "Lower the sails"}
+CIC_ProtFlagship {Squadron: "Defend the flagship"}
+BOAL_ActivateImmediateReload {Preload Skill}
+hk_ImmediateReload {Activate "Preload"}
+BOAL_ActivateLightRepair {Easy Repair Skill}
+hk_LightRepair {Activate "Light Repair"}
+BOAL_ActivateInstantRepair {Quick Repair Skill}
+hk_InstantRepair {Activate "Quick Repair"}
+BOAL_ActivateTurn180 {Skill "Maneuverable ship turn"}
+hk_Turn180 {Activate "Maneuverable Ship Turn"}
+BOAL_ActivateSandbankManeuver {Skill "Maneuvers in shallow water"}
+hk_SandbankManeuver {Activate "Maneuvers in shallow water"}
+MiniMapZoomIn {Zoom in on the minimap}
+MiniMapZoomOut {Zoom out the minimap}
+BI_MapEnter			{Access to the map}
+WMapTurnH			{Rotating the camera around the ship (in map mode)}
+WMapTurnV			{Camera height (in map mode)}
+WMapCameraRotate {Enabling camera slide/rotation mode}
+WMapForward			{Camera zoom}
+WMapBackward {Removing the camera}
+WMapCameraSwitch	{Switching the overview mode}
+WMapShipSailUp {Sail ahead}
+WMapShipSailDown {Swim back}
+WMapShipTurnLeft	{Turn left}
+WMapShipTurnRight	{Turn right}
+WMapCancel			{Exiting the map into the sea}
+Interface			{Calling the game interface}
+InterfaceDisabler {Disable interfaces}
+MainMenu			{Calling the main menu}
+MainMenuDouble		{Calling the main menu}
+BICommandsActivate	{Open the command menu}
+LICommandsActivate	{Open the command menu}
+BICommandsConfirm	{Select a team}
+BICommandsCancel	{Cancel the command}
+BICommandsLeft {Moving the command menu to the left}
+BICommandsRight {Moving the command menu to the right}
+Help				{Calling the help for the game}
+HelpChooser_Cancel	{Exit Help}
+HelpChooser_Action	{Show help for the current item}
+HelpChooser_Next	{Go to the next help item}
+HelpChooser_Prev	{Go to the previous help item}
+HelpChooser_Left	{To the left (in help mode)}
+HelpChooser_Right	{To the right (in help mode)}
+HelpChooser_Up {Up (in help mode)}
+HelpChooser_Down	{Down (in help mode)}
+CreateNotice {Make a note in the ship's log}
+BIFastCommand		{Run a "quick" command}
+Ship_GetCoordinates	{Show coordinates}
+AltModificator {Click the button to enable the general modifier}
+AltModificatorOff	{Release the button to disable the general modifier}
+Fast_store {Fast Travel: Store}
+Fast_Shipyard {Fast Travel: Shipyard (modifier)}
+Fast_tavern {Fast Travel: Tavern (modifier)}
+Fast_townhall {Fast Travel: Residence (modifier)}
+Fast_bank {Fast Travel: Usurer (modifier)}
+Fast_church {Fast Travel: Church (modifier)}
+Fast_Brothel {Fast Travel: Brothel (modifier)}
+Fast_PortOffice {Fast Travel: Port Authority (modifier)}
+Fast_prison {Fast Travel: Prison (modifier)}
+Fast_Port {Fast Travel: Port (modifier)}
+
+ZoomIn			{Zoom in}
+ZoomOut			{Zoom out}
+GoCabin			{Go to cabin}
+
+setEquipment1   {Set first kit}
+setEquipment2   {Set second kit}
+setEquipment3   {Set third kit}
+setEquipment4   {Set fourth kit}
+setEquipment5   {Set fifth kit}
+setEquipment6   {Set sixth kit}

@@ -1,0 +1,190 @@
+ShamanChani  {Shaman Chani}
+Rimalie  {Rimalie}
+CSP_KvM {Cat in a Bag}
+KSM_DVR {Money in growth}
+KPS_MysteriousIsland {Mysterious Island}
+AT_PZD {Dressmaker of a noble lady}
+Kuali {Macuahuitl for Kuali}
+PomoshElen {Help to Helen}
+PKM_Animists {Strange things are happening in the archipelago}
+AT_Mechty_Sbivautsya {Dreams come true}
+KSM_Spasenie_na_rifah {Miraculous rescue on the reefs}
+WhisperTitanic {Titanic}
+PGGWhisper {Encroach on the sacred}
+TheLastMass {Last Mass}
+BSHangover {Severe Hangover}
+BSUrka {Elusive 'Urca'}
+PDM_Aptekar {Apothecary}
+PDM_Proklyataya_Jara {Goddamn heat}
+BSChaseBegun {Chase has begun}
+BSCourtlyPassions {Courtly Passions}
+BSOnTheHorizon {Black sails on the horizon}
+BSPrologue {Don't spit in the well}
+PDM_Clan_Lambrini {Lambrini Clan}
+Unexpected Inheritance {Unexpected inheritance}
+DHRaceAgainstTime {Race against Time}
+DarkHumanIncquisitorJournal {Inquisitor's Diary}
+DarkHumanQuestline {Back to the Future}
+PDM_Neputyovy_kaznachey {Wayward Treasurer}
+PDM_Poteryanoe_Koltso {Josephine Lodet's Ring}
+pirateVikingQuest {Shard of the past}
+PDM_Ohota_na_vedmu {Witch Hunt}
+PDM_Novaya_Rodina {In search of a new homeland}
+Findship {Ship search}
+PDM_Cursed_Idol {Cursed idol}
+WhisperContraband {Bill's Unfinished Business}
+WhisperChardQuest {Cards, money, two blades}
+WhisperChinamanRelic {Chinese Relic}
+WhisperQuestline {In the New World}
+Silence_Price {Story of a long-standing friendship}
+VolversonRum {Rum for Wolverstone}
+CursedSkeleton {Cursed Captain}
+ShipOrder {Custom Ship}
+BurntShipQuest {Burnt ship}
+GiveShipLetters {Found documents}
+ReasonToFast {Reason for haste}
+PiratesOnUninhabited {Pirates on a desert island}
+ShipWrecked {Shipwrecked}
+JungleGirl {Girl in the jungle}
+ShipEpidemy {Epidemic on the ship}
+Andre_Abel_Quest {Accompaniment of the 'Orion' fluyt}
+ChurchGenQuest1 {Return the priest's manuscripts}
+ChurchGenQuest2 {Church robbery}
+CaptainComission1 {Captain's last words}
+CaptainComission2 {Captain's last words}
+Convict {Convicts}
+HoldQuest {Captive captain}
+zpq {Dangerous cargo}
+pSQ {Rat baiting}
+LSC_Ring {Mystery of 'Santa Lucia'}
+RingCapBook {Entries in the logbook of the pinnace Santa Lucia}
+Albreht_Zalpfer {Albrecht Zalpfer}
+CompanionTravel {Free-floating companion}
+Xebeca_BlueBird {Destroy Xebec 'Blue Bird'}
+SharpPearl {Find the Pearl fishermen's fishery}
+SharpPearl_SeekSpy {Find Sharp's spy}
+Pir_Line_0_Waiting {Captain Goodley in Puerto Principe}
+Pir_Line_1_JohnBolton {Service to Morgan}
+Pir_Line_2_BlackLabel {Black Label}
+Pir_Line_3_KillLoy {Find and kill Edward Low}
+Pir_Line_4_Pearl {Morgan's tip on the pearl fishers' tartans}
+Pir_Line_5_Hunter {Bounty Hunter's job}
+Pir_Line_6_Jackman {Go to Jackman}
+Pir_Line_7_Soukins {Find Steve Linnaeus}
+Pir_Line_8_Panama {A trip to Panama}
+ShipyardsMap {Industrial Espionage}
+SeekMayorsRing {Looking for an engagement ring in a brothel}
+SeekUsurersJewel {Helping a usurer find a stone}
+Church_DestroyGhost {Church's task to clean from evil spirits}
+Church_NightGuard {Night duty at the church}
+PortmansBook_Delivery {Task of the portmaster to catch up with the captain}
+Portmans_SeekShip {Task of the portmaster to return the stolen ship}
+SCQ_manSlave {Revenge of an ex-slave}
+SCQ_womanHasband {Find a townswoman's husband}
+SCQ_manRapeWife {Recapture a townsman's wife from a pirate}
+SCQ_manFriend {Find a fellow townsman}
+SCQ_womanRevenge {Revenge of a rejected townswoman}
+SCQ_womanPirates {Rescue of a townswoman's husband from captivity}
+ISS_PoorsMurder {Kill all beggars}
+ISS_MainLine {In the City of Abandoned Ships}
+ISS_takeCandles {Candles for arrival}
+ISS_takeStoreMoney {Get into the living quarters of the store on the Esmeralda}
+ISS_ElisHusband {Alice Taylor's Wayward Husband}
+LSC_findDekster {Missing Pirate Leighton Dexter}
+TakeVineToPrisoner {Assignment of Dominique Legro}
+SeekDoubleMushket {Find a double-barrel musket}
+CapBloodLine_q1 {Pharmacist}
+CapBloodLine_q2 {Wacker's suggestion}
+WeaponsForEscape {Weapon for escape}
+HugtorpTrouble {Hagthorpe's Problem}
+DiekeQuest {Junior Officer Nicholas Dyke}
+OglQuest {One-eyed Cannoneer}
+FishermanQuest {Fishing place}
+UsurerQuest {Unnamed debtor}
+PirateQuest {Fallen Pirate}
+EscapeFormBarbados {Escape from Barbados}
+Tenochtitlan {Tenochitlan}
+MagicCity {Enchanted City}
+Slavetrader {Slave Trader}
+PrisonGun {Cannons for the fort}
+Headhunt {Condottiere}
+GhostShipQuest {Ghost Ship}
+Gen_CityCapture {History of colonies capture}
+Gen_Contraband {Contraband sales}
+Gen_ContrabandTravel {Sailing with smugglers}
+Gen_StrangeInfo {Strange rumors}
+Gen_PGGQuest1 {Pirate's offer}
+Gen_PGGQuest1woman {Pirate's offer}
+Rumour_GoldFleet {Spanish Golden Fleet}
+MerchantOnMap {Easy Loot}
+ShipTuning {Ship Improvement}
+Gen_LoanFindCitizen {Helping a usurer find a debtor}
+Gen_LoanTakeChest {Help a usurer deliver gold}
+convoy_quest {Merchant support}
+Gen_convoy_passenger {Deliver a passenger}
+MayorsQuestsList {Governor's Assignments}
+GivePrisonFree {Prison Cases}
+Eng_Line_1_Albermal {Escort of the Duke of Albermal}
+Eng_Line_2_Talking {Convince famous pirates to attack Curacao}
+Eng_Line_3_Morgan {Henry Morgan's proposal}
+Eng_Line_4_Intelligence_Curacao {Exploration in Curacao}
+Eng_Line_5_AttackFortOrange {Attack on the Dutch settlement of Fort Orange}
+Eng_Line_6_MorrisWillams {Captain of the privateer frigate Morris Williams}
+Eng_Line_7_SevenTresures {Find treasures of famous corsairs}
+Eng_Line_8_ToMansfield {To Edward Mansfield for gold}
+Eng_Line_9_AttackSantiago {Attack on Santiago}
+Eng_Line_10_SpanishAttack {Attack of the Spanish squadron on Port Royal}
+Eng_Line_11_OccupyMein {Capture of Caracas and Cumana}
+Eng_Line_12_ColonelLinch {Clarify the situation in St. John's}
+Hol_Line_1_Chumakeiro {Deliver the head of the Jansenists of Chumakeiro to Willemstad}
+Hol_Line_2_TakeFoodCuracao {Purchase a batch of goods at Fort Orange and deliver everything to Willemstad}
+Hol_Line_3_WormEnglishPlans {Get information about the British plans in connection with the trade war}
+Hol_Line_4_DefenceOrange {Defend Fort Orange from the impending British attack}
+Hol_Line_5_ThreeFleutes {Escort three fluyts to the La Vega Buccaneer settlement and back}
+Hol_Line_6_RevengeMansfield {Retribution for Mansfield's death}
+Hol_Line_7_DelivLettTortuga {Deliver a dispatch to the Governor of Tortuga Bertrand d'Augeron}
+Hol_Line_8_SeekBible {Business trip at the disposal of Aaron Mendes Chumakeiro}
+Hol_Line_9_TakeThreeShips {Capture four first-class battleships}
+Hol_Line_10_SpaAttackCuracao {Repel the attack of the Spanish squadron on Curacao}
+Hol_Line_11_SpaAttackSentMartin {Repel the Spanish attack on San Martin}
+Hol_Line_12_OccupyMaracaibo {Capture of Maracaibo}
+Spa_Line_1_SaveCitizens {Release three Spanish citizens}
+Spa_Line_2_Inquisition {Work for the Holy Inquisition}
+Spa_Line_3_RockBrasilian {Capture Rock the Brazilian}
+Spa_Line_4_MirderDetection {Investigation of the murder of Havana Commandant Jose Ramirez de Leyva}
+Spa_Line_5_LaVegaAttack {Business trip to Santiago}
+Spa_Line_6_TakeMessangeer {Interception of the Dutch Governor-General's messenger}
+Spa_Line_7_SavePardal {Help Manoel Rivero Pardal}
+Spa_Line_8_SaveCumana {Defending Cumana from an attack by a combined Franco-English pirate squadron}
+Spa_Line_9_FourGolgGaleons {Assignment of the Governor of Porto Bello to escort ships}
+Spa_Line_10_Maracaibo {Protection of Maracaibo from possible invasion}
+Spa_Line_11_DestrHolland {Ruin of the Dutch colonies}
+Spa_Line_12_OccupyPortPax {Capture of Port-au-Prince}
+Fra_Line_1_LegranDis {Take Pierre Legrand to the Bay of Le Maren, on the island of Martinique}
+Fra_Line_2_DelivLetter {Letter delivery for'Augeron to Curacao Island}
+Fra_Line_3_TakeAnna {Find a way to bring donna Anna to Tortuga}
+Fra_Line_4_SoleiRoyal {Escort of the battleship Soleil Royal to Guadeloupe}
+Fra_Line_5_KillAnnaHanters {Revenge on Donna Anna by compatriots}
+Fra_Line_6_Olone {Deliver a letter to filibuster Francois Olone}
+Fra_Line_7_RockBras {Get Rock the Brazilian out of prison}
+Fra_Line_8_ThreeCorsairs {Go to the Marquis of Bonrepo's disposal}
+Fra_Line_9_GuardPortPax {Repelling the Spanish attack on Port-au-Prince}
+Fra_Line_10_OccupySantoDomingo {Capture of Santo Domingo}
+Fra_Line_11_OccupySantaCatalina {Capture of Santa Catalina}
+Fra_Line_12_EndOfWar {Meeting with Marquis Bonrepo}
+Ascold {Search for Mummy Powder}
+ContractWithHell {Text of the contract with the Ada Department of Human Accounting}
+Azzy_HellSign {Current distribution of messages to subscribers of the Ada Office}
+BerglarsGang {Austin's Gang}
+QuestionsMessages {Location of donated items}
+DELIVERY_TRADE_QUEST {Cargo delivery for stores}
+MyNotices {My notes}
+MY_COLONY {Colony weekdays}
+ColonyBuilding {Colony construction}
+Dozor {The Watch}
+ShipWreck {Shipwreck}
+QuestDuel {Duelist}
+KIP_Looser {Losing player}
+Romantic_Line {Story of the beautiful Isabella}
+HeadHunter {Bounty Hunters}
+SilverFleet {Silver Fleet}

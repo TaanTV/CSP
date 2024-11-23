@@ -1,0 +1,4139 @@
+Variable_repair
+{% в день, расход#space#}
+Variable_quest_table_quest
+{Квест}
+Variable_quest_table_desc
+{Описание}
+Variable_quest_table_rank
+{Ранг}
+Variable_quest_table_spec
+{Особенности}
+Variable_quest_table_complete
+{Выполнен}
+Variable_badwind_short
+{Бейд}
+Variable_ship_spec
+{Вид}
+Variable_specType_Trade
+{Т}
+Variable_specType_War
+{В}
+Variable_specType_Universal
+{У}
+Variable_specType_Trade_S
+{Торг}
+Variable_specType_War_S
+{Воен}
+Variable_specType_Universal_S
+{Унив}
+Variable_AcademyLand_1
+{Тип тренировки}
+Variable_AcademyLand_2
+{Захват форта с суши}
+Variable_AcademyLand_3
+{Стенка на стенку}
+Variable_AcademyLand_4
+{Один на один}
+Variable_AcademyLand_5
+{Кол-во союзников:#space#}
+Variable_AcademyLand_6
+{Кол-во противников:#space#}
+Variable_AcademyLand_7
+{Нападающая сторона}
+Variable_AcademyLand_8
+{На разбитом здании}
+Variable_AcademyLand_9
+{Защищающая сторона}
+Variable_AcademyLand_10
+{Около разбитого здания}
+Variable_AcademyLand_11
+{Экипировка}
+Variable_AcademyLand_12
+{Параметры соперника}
+Variable_AcademyLand_13
+{Ранг:#space#}
+Variable_AcademyLand_14
+{Примерное кол-во жизни:#space#}
+Variable_AcademyLand_15
+{Примерное кол-во энергии:#space#}
+Variable_AcademyLand_16
+{Цена:#space#}
+Variable_AcademyLand_17
+{Слабый соперник}
+Variable_AcademyLand_18
+{Равный соперник}
+Variable_AcademyLand_19
+{Сильный соперник}
+Variable_AcademyLand_20
+{Запретить эликсиры}
+Variable_AcademyLand_21
+{Разрешить эликсиры}
+Variable_AcademyLand_22
+{Запретить еду}
+Variable_AcademyLand_23
+{Разрешить еду}
+Variable_Arena_1
+{Тип состязаний}
+Variable_Arena_2
+{Ваше золото:#space#}
+Variable_Arena_3
+{Ваша ставка:#space#}
+Variable_Arena_4
+{Сделать ставку:#space#}
+Variable_Arena_5
+{Ставка}
+Variable_Arena_6
+{Взнос за участие:#space#}
+Variable_Arena_7
+{Ваше золото:#space#}
+Variable_Arena_8
+{Предполагаемый выигрыш:#space#}
+Variable_Arena_9
+{#space#пиастров}
+Variable_Arena_10
+{Финал}
+Variable_Arena_11
+{Турниров пока не проводится.}
+Variable_Arena_12
+{Призовой фонд:#space#}
+Variable_Arena_13
+{Взнос за участие:#space#}
+Variable_Arena_14
+{Ваши деньги:#space#}
+Variable_Arena_15
+{Ваше золото:#space#}
+Variable_Arena_16
+{Ваша ставка:#space#}
+Variable_Arena_17
+{Сделать ставку:#space#}
+Variable_Arena_18
+{Экипировка}
+Variable_Arena_19
+{Турнир}
+Variable_Arena_20
+{Финал}
+Variable_Arena_21
+{Участие в дуэли}
+Variable_Arena_22
+{Участие в этапах}
+Variable_Arena_23
+{Участие в турнире}
+Variable_Arena_24
+{Участие в ставках}
+Variable_Arena_25
+{Первый поединок}
+Variable_Arena_26
+{Второй поединок}
+Variable_Arena_27
+{Третий поединок}
+Variable_Arena_28
+{#space#пиастров}
+Variable_Arena_29
+{Выбранное для турнира оружие:#space#}
+Variable_AttackMessage_1
+{Срочное сообщение}
+Variable_AttackMessage_2
+{Кайман}
+Variable_AttackMessage_3
+{Капитан#space#}
+Variable_AttackMessage_4
+{, тревожные вести пришли из колонии ''}
+Variable_AttackMessage_5
+{В вашей колонии готовится мятеж. По сведениям, присланным из колонии, гарнизон сможет продержаться#space#}
+Variable_AttackMessage_6
+{На вашу колонию ожидается нападение с суши. По сведениям, присланным из колонии, гарнизон сможет продержаться#space#}
+Variable_AttackMessage_7
+{На колонию ожидается нападение эскадрой под флагом#space#}
+Variable_AttackMessage_8
+{. По полученным сведениям охрана сможет продержаться#space#}
+Variable_AttackMessage_9
+{На ваших рудниках готовится мятеж. По присланным сведениям, гарнизон сможет продержаться#space#}
+Variable_AttackMessage_10
+{На ваши рудники ожидается нападение. По присланным сведениям, гарнизон сможет продержаться#space#}
+Variable_AttackMessage_11
+{На вашей плантации готовится мятеж. По присланным сведениям, гарнизон сможет продержаться#space#}
+Variable_AttackMessage_12
+{Мятеж в вашей колонии удалось подавить.}
+Variable_AttackMessage_13
+{Мятежникам удалось сломить сопротивление гарнизона колонии.}
+Variable_AttackMessage_14
+{Из колонии пришли хорошие новости! Нападение, организованное врагом, было отбито!}
+Variable_AttackMessage_15
+{Из колонии пришли плохие новости... Колония не смогла защитить себя и была разграблена.}
+Variable_AttackMessage_16
+{Отличные новости прислали из колонии! Общими усилиями охраны колонии удалось дать отпор проклятым#space#}
+Variable_AttackMessage_17
+{Плохие новости пришли из колонии. Нападению, совершённому#space#}
+Variable_AttackMessage_18
+{, не удалось противостоять. Колония была разграблена.}
+Variable_AttackMessage_19
+{Мятеж на ваших рудниках удалось подавить.}
+Variable_AttackMessage_20
+{Рабы сломили сопротивление гарнизона рудников и обратились в бегство, попутно прихватив провиант, медикаменты и добытую руду.}
+Variable_AttackMessage_21
+{Из колонии пришли хорошие новости! Нападение, организованное врагом на рудники, было отбито!}
+Variable_AttackMessage_22
+{Из колонии пришли плохие новости... Гарнизон, защищающий рудники, не смог противопоставить достойное сопротивление. Рудники были разграблены.}
+Variable_AttackMessage_23
+{Мятеж на вашей плантации удалось подавить.}
+Variable_AttackMessage_24
+{Рабы сломили сопротивление гарнизона и обратились в бегство, попутно прихватив провиант, медикаменты и добытые продукты.}
+Variable_AttackMessage_25
+{В вашей колонии вспыхнул мятеж. Из-за отсутствия необходимого гарнизона мятежники праздновали победу.}
+Variable_AttackMessage_26
+{На вашу колонию было совершено нападение с суши. Из-за отсутствия необходимого гарнизона нападавшие легко взяли колонию боем и разграбили её.}
+Variable_AttackMessage_27
+{На колонию напала эскадра под флагом#space#}
+Variable_AttackMessage_28
+{. Из-за отсутствия достойной охраны береговой линии и гарнизона эскадра разграбила колонию.}
+Variable_AttackMessage_29
+{На ваших рудниках вспыхнул мятеж. Из-за отсутствия необходимого гарнизона мятежники праздновали победу и пустились в бегство.}
+Variable_AttackMessage_30
+{На ваши рудники было совершено нападение. Из-за отсутствия необходимого гарнизона нападавшие легко взяли рудники боем и разграбили их.}
+Variable_AttackMessage_31
+{На вашей плантации вспыхнул мятеж. Из-за отсутствия необходимого гарнизона мятежники праздновали победу и пустились в бегство.}
+Variable_boal_cards_1
+{Побед:#space#}
+Variable_boal_cards_2
+{#space#Поражений:#space#}
+Variable_boal_cards_2.1
+{Выиграно:#space#}
+Variable_boal_cards_2.1.1
+{Проиграно:#space#}
+Variable_boal_cards_2.2
+{Сумма карт:#space#}
+Variable_boal_cards_3
+{Что, денежки кончились? Бедненький :)}
+Variable_boal_cards_4
+{Я на мели!!! Вот не пруха!}
+Variable_boal_cards_5
+{Открываемся!!!}
+Variable_boal_cards_6
+{Так, теперь мне карту.}
+Variable_boal_cards_7
+{Теперь тебе карту.}
+Variable_boal_cards_8
+{Делай ставку!}
+Variable_boal_cards_9
+{Твой ход!}
+Variable_boal_cards_10
+{Давай, не тяни кота за хвост...}
+Variable_boal_cards_11
+{Бери карту себе! Не задерживай!}
+Variable_boal_cards_12
+{Теперь мне карту.}
+Variable_boal_cards_13
+{Кладу монету!}
+Variable_boal_cards_14
+{Мой ход!}
+Variable_boal_cards_15
+{Посмотрим, что там за карта...}
+Variable_boal_cards_16
+{Ну-ка, опять шиперки...}
+Variable_boal_cards_17
+{ПОДСМАТРИВАЕМ КАРТУ:#space#}
+Variable_boal_cards_26
+{Ха! Да у тебя ПЕРЕБОР! Я выиграл}
+Variable_boal_cards_27
+{а}
+Variable_boal_cards_28
+{У меня ПЕРЕБОР! Ты выиграл}
+Variable_boal_cards_29
+{а}
+Variable_boal_cards_30
+{Повторим?}
+Variable_boal_cards_31
+{Ещё разок?}
+Variable_boal_cards_32
+{Всё, с меня хватит!}
+Variable_boal_cards_33
+{Мне хватит. Открываемся!}
+Variable_boal_cards_34
+{Теперь ты себе! Мне хватит.}
+Variable_boal_cards_35
+{Сдаем карты.#space#}
+Variable_boal_cards_36
+{Делаем ставки.}
+Variable_boal_cards_37
+{#space#Ты выиграл}
+Variable_boal_cards_38
+{а}
+Variable_boal_cards_39
+{. У тебя#space#}
+Variable_boal_cards_40
+{, у меня#space#}
+Variable_boal_cards_41
+{Удача на моей стороне. У меня#space#}
+Variable_boal_cards_42
+{, у тебя#space#}
+Variable_boal_cards_43
+{. Я победил}
+Variable_boal_cards_44
+{а}
+Variable_boal_cards_45
+{Повторим?}
+Variable_boal_cards_46
+{Ещё разок?}
+Variable_boal_cards_47
+{Всё, с меня хватит!}
+Variable_boal_cards_48
+{Продолжим?}
+Variable_boal_cards_49
+{Ладно, ты выиграла. Меч твой.}
+Variable_boal_cards_50
+{Ха-ха-ха! Ты, бы играть сначала научилась, девочка. Гони сюда мои денежки.}
+Variable_boal_cards_51
+{Всё, хватит игр на сегодня.}
+Variable_boal_cards_52
+{Продолжим?}
+Variable_boal_cards_53
+{Ладно, ты выиграл}
+Variable_boal_cards_54
+{а}
+Variable_boal_cards_55
+{#space#3 раза. Впечатляющее везение!}
+Variable_boal_cards_56
+{Ха-ха-ха! Тебе явно стоит ещё подучиться.}
+Variable_boal_cards_57
+{Всё, хватит игр на сегодня.}
+Variable_boal_dice_1
+{Побед:#space#}
+Variable_boal_dice_2
+{#space#Поражений:#space#}
+Variable_boal_dice_3
+{Выиграно:#space#}
+Variable_boal_dice_4
+{Проиграно:#space#}
+Variable_boal_dice_5
+{#space#Игр:#space#}
+Variable_boal_dice_8
+{Я перв}
+Variable_boal_dice_9
+{ый}
+Variable_boal_dice_10
+{ая}
+Variable_boal_dice_11
+{Ты перв}
+Variable_boal_dice_12
+{ый}
+Variable_boal_dice_13
+{ая}
+Variable_boal_dice_14
+{. Ходи, не задерживай.}
+Variable_boal_dice_15
+{Начинаем игру.#space#}
+Variable_boal_dice_16
+{Делаем ставки.}
+Variable_boal_dice_17
+{Продолжаем игру.#space#}
+Variable_boal_dice_18
+{Делаем ставки.}
+Variable_boal_dice_19
+{Теперь твой ход. Ходи, не задерживай.}
+Variable_boal_dice_20
+{Делай свой выбор. Решай, что перебросить.}
+Variable_boal_dice_21
+{Так, теперь мой ход.}
+Variable_boal_dice_22
+{Так, подожди... я решаю, что перебросить.}
+Variable_boal_dice_23
+{У меня#space#}
+Variable_boal_dice_24
+{. У тебя#space#}
+Variable_boal_dice_25
+{Ха! Да у нас ничья!! Продолжим.}
+Variable_boal_dice_26
+{Я выиграл}
+Variable_boal_dice_27
+{а}
+Variable_boal_dice_28
+{Ты выиграл}
+Variable_boal_dice_29
+{а}
+Variable_boal_dice_30
+{Ты на мели, я выиграл}
+Variable_boal_dice_31
+{а}
+Variable_boal_dice_32
+{Всё, с меня хватит!}
+Variable_boal_dice_33
+{Я на мели, ты выиграл}
+Variable_boal_dice_34
+{а}
+Variable_boal_dice_35
+{Всё, с меня хватит!}
+Variable_boal_dice_36
+{Продолжим.}
+Variable_boal_dice_37
+{Так и быть, я пойду с тобой.}
+Variable_boal_dice_38
+{Не везёт тебе. Значит не судьба нам вместе ходить.}
+Variable_boal_dice_39
+{Всё, я наигрался.}
+Variable_boal_dice_40
+{Ещё разок?}
+Variable_boal_dice_41
+{Всё, с меня хватит!}
+Variable_boal_dice_42
+{ничего нет}
+Variable_boal_dice_43
+{покер}
+Variable_boal_dice_44
+{стрит}
+Variable_boal_dice_45
+{каре}
+Variable_boal_dice_46
+{фул}
+Variable_boal_dice_47
+{триада}
+Variable_boal_dice_48
+{две пары}
+Variable_boal_dice_49
+{пара}
+Variable_boal_dice_50
+{Я переброшу один кубик...}
+Variable_boal_dice_51
+{Я переброшу эти...}
+Variable_boal_dice_52
+{Я переброшу эти...}
+Variable_boal_dice_53
+{Не буду перебрасывать.}
+Variable_Cannons_1
+{Вес}
+Variable_Cannons_2
+{Вес шт.}
+Variable_Cannons_3
+{Дист.}
+Variable_Cannons_4
+{Урон}
+Variable_Cannons_5
+{Время}
+Variable_Cannons_6
+{Корабль: '}
+Variable_Cannons_7
+{Интерфейс торговли}
+Variable_Cannons_8
+{Ввод положительного количества с клавиатуры устанавливает покупку товара, а отрицательного (с минусом) продажу.}
+Variable_Cannons_9
+{Цвета: красный - контрабанда, синий - импорт, зелёный - экспорт}
+Variable_Cannons_10
+{Пушки#space#}
+Variable_Cannons_11
+{Кулев.#space#}
+Variable_Cannons_12
+{Спец#space#}
+Variable_Cannons_13
+{фт}
+Variable_Cannons_14
+{, пачка#space#}
+Variable_Cannons_15
+{Продать}
+Variable_Cannons_16
+{Золото#space#}
+Variable_Cannons_17
+{, вес#space#}
+Variable_Cannons_18
+{#space#ц}
+Variable_Cannons_19
+{Купить}
+Variable_Cannons_20
+{Золото#space#}
+Variable_Cannons_21
+{, вес#space#}
+Variable_Cannons_22
+{#space#ц}
+Variable_character_1
+{Скорость}
+Variable_character_2
+{от навыка и умений}
+Variable_character_3
+{от матросов}
+Variable_character_4
+{от парусов}
+Variable_character_5
+{от корпуса}
+Variable_character_6
+{от груза}
+Variable_character_7
+{от обрастания дна}
+Variable_character_8
+{от атласа карт}
+Variable_character_9
+{Ядра}
+Variable_character_10
+{Картечь}
+Variable_character_11
+{Книппели}
+Variable_character_12
+{Бомбы}
+Variable_character_13
+{Рубака}
+Variable_character_14
+{Торговец}
+Variable_character_15
+{Фехтовальщик}
+Variable_character_16
+{Авантюрист}
+Variable_character_17
+{Буканьер}
+Variable_character_18
+{Тайный Агент}
+Variable_character_19
+{Морской Волк}
+Variable_character_20
+{нет звания}
+Variable_character_21
+{#space#ед.}
+Variable_character_22
+{#space#сек.}
+Variable_character_23
+{#space#сек.}
+Variable_character_24
+{#space#сек.}
+Variable_character_25
+{#space#сек.}
+Variable_character_26
+{#space#сек.}
+Variable_character_27
+{#space#сек.}
+Variable_character_28
+{#space#сек.}
+Variable_character_29
+{#space#сек.}
+Variable_character_30
+{#space#сек.}
+Variable_character_31
+{Способности}
+Variable_character_32
+{Способности}
+Variable_character_33
+{Характеристики}
+Variable_character_34
+{Доп. свойства ХО}
+Variable_character_35
+{Характеристики КУ}
+Variable_character_36
+{Реген. жизни}
+Variable_character_37
+{#space#в сек.}
+Variable_character_38
+{Реген. энергии}
+Variable_character_39
+{#space#в сек.}
+Variable_character_40
+{Отравление}
+Variable_character_41
+{#space#сек.}
+Variable_character_42
+{Время перезарядки}
+Variable_character_43
+{Точность выстрела}
+Variable_character_44
+{Мощность выстрела}
+Variable_character_45
+{Кровотечение}
+Variable_character_46
+{Резкий удар}
+Variable_character_47
+{Оглушение}
+Variable_character_48
+{Травмирование}
+Variable_character_49
+{Ядовитый клинок}
+Variable_character_50
+{Время зарядки}
+Variable_character_51
+{Кул(}
+Variable_character_52
+{фт}
+Variable_character_53
+{Пуш(}
+Variable_character_54
+{фт}
+Variable_character_55
+{Дальность стрельбы:#space#}
+Variable_character_56
+{#space#ед.}
+Variable_character_57
+{#space#ед.}
+Variable_character_58
+{#space#ед.}
+Variable_character_59
+{#space#ед.}
+Variable_character_60
+{0 ед.}
+Variable_character_61
+{Маневренность}
+Variable_character_62
+{Маневренность:}
+Variable_character_63
+{, у которого она есть.}
+Variable_character_64
+{Создать своего героя}
+Variable_character_64.1
+{Для изменения параметров героя укажите характеристику и стрелками перераспределите очки. Умения автоматически пересчитаются от выбранных PIRATES. Закройте форму крестиком или Esc, когда распределение будет завершено.}
+Variable_character_all_1
+{Скорость:}
+Variable_character_all_2
+{от навыка и умений}
+Variable_character_all_3
+{от матросов}
+Variable_character_all_4
+{от парусов}
+Variable_character_all_5
+{от корпуса}
+Variable_character_all_6
+{от груза}
+Variable_character_all_7
+{от обрастания дна}
+Variable_character_all_8
+{от атласа карт}
+Variable_character_all_9
+{Ядра}
+Variable_character_all_10
+{Картечь}
+Variable_character_all_11
+{Книппели}
+Variable_character_all_12
+{Бомбы}
+Variable_character_all_13
+{Офицеров:#space#}
+Variable_character_all_14
+{Контрактов:#space#}
+Variable_character_all_15
+{Рубака}
+Variable_character_all_16
+{Торговец}
+Variable_character_all_17
+{Фехтовальщик}
+Variable_character_all_18
+{Авантюрист}
+Variable_character_all_19
+{Буканьер}
+Variable_character_all_20
+{Тайный Агент}
+Variable_character_all_21
+{Морской Волк}
+Variable_character_all_22
+{Оплата#space#}
+Variable_character_all_23
+{#space#в месяц}
+Variable_character_all_24
+{Клик по списку - назначение или съем офицера.}
+Variable_character_all_24.1
+{Также, помимо требований навигации, присутствует и требование по уровню персонажа относительно класса корабля:}
+Variable_character_all_24.2
+{7 и 6 класс = 1 уровень}
+Variable_character_all_24.3
+{5 класс = 6 уровень}
+Variable_character_all_24.4
+{4 класс = 12 уровень}
+Variable_character_all_24.5
+{3 класс = 20 уровень}
+Variable_character_all_24.6
+{2 класс = 26 уровень}
+Variable_character_all_24.7
+{1 класс = 33 уровень}
+Variable_character_all_24.8
+{За каждый недостающий уровень требуются дополнительные 2 очка навигации.}
+Variable_character_all_24.9
+{На показатель данного умения действует штраф от травмы в -20 единиц.}
+Variable_character_all_24.10
+{На показатель данного умения действует штраф от тяжёлой травмы в -30 единиц.}
+Variable_character_all_24.11
+{На показатель данного умения действует штраф от ранения в -50 единиц.}
+Variable_character_all_24.12
+{На показатель данного умения действует штраф от перегрузки.}
+Variable_character_all_24.13
+{На показатель данного умения действует штраф от недостатка навигации.}
+Variable_character_all_24.14
+{Ниже показано количество уже нанятых и доступных к найму на текущий момент офицеров.}
+Variable_character_all_24.15
+{Рассчитывается как удвоенный показатель Лидерства + (чистый Авторитет/20).}
+Variable_character_all_25.1
+{Всего доступно к найму:#space#}
+Variable_character_all_25
+{Нанято:#space#}
+Variable_character_all_26
+{нет звания}
+Variable_character_all_27
+{#space#ед.}
+Variable_character_all_28
+{#space#сек.}
+Variable_character_all_29
+{#space#сек.}
+Variable_character_all_30
+{#space#сек.}
+Variable_character_all_31
+{#space#сек.}
+Variable_character_all_32
+{#space#сек.}
+Variable_character_all_33
+{#space#сек.}
+Variable_character_all_34
+{#space#сек.}
+Variable_character_all_35
+{#space#сек.}
+Variable_character_all_36
+{#space#сек.}
+Variable_character_all_37
+{порог опыта}
+Variable_character_all_37.1
+{Характеристики}
+Variable_character_all_37.2
+{Доп. свойства ХО}
+Variable_character_all_37.3
+{Характеристики КУ}
+Variable_character_all_38
+{Реген. жизни}
+Variable_character_all_39
+{Реген. энергии}
+Variable_character_all_40
+{#space#в сек.}
+Variable_character_all_41
+{Отравление}
+Variable_character_all_42
+{#space#сек.}
+Variable_character_all_43
+{Время перезарядки}
+Variable_character_all_44
+{Точность выстрела}
+Variable_character_all_45
+{Мощность выстрела}
+Variable_character_all_46
+{Кровотечение}
+Variable_character_all_47
+{Резкий удар}
+Variable_character_all_47.1
+{Пробитие Б/К}
+Variable_character_all_47.2
+{Шанс/Урон крита}
+Variable_character_all_48
+{Оглушение}
+Variable_character_all_49
+{Травмирование}
+Variable_character_all_50
+{Ядовитый клинок}
+Variable_character_all_51
+{Время зарядки}
+Variable_character_all_52
+{Кул(}
+Variable_character_all_53
+{фт}
+Variable_character_all_54
+{Пуш(}
+Variable_character_all_55
+{фт}
+Variable_character_all_56
+{Дальность стрельбы:#space#}
+Variable_character_all_57
+{#space#ед.}
+Variable_character_all_58
+{#space#ед.}
+Variable_character_all_59
+{#space#ед.}
+Variable_character_all_60
+{#space#ед.}
+Variable_character_all_61
+{0 ед.}
+Variable_character_all_62
+{Маневренность}
+Variable_character_all_63
+{Маневренность:}
+Variable_character_all_64
+{было}
+Variable_character_all_65
+{, у которого она есть.}
+Variable_character_all_65.1
+{Способность будет работать и в том случае, если назначен офицер#space#}
+Variable_character_all_66
+{Вымпел Грозы Морей теперь можно поднять в меню наций.}
+
+Variable_character_all_h_1
+{Ранен#space#}
+Variable_character_all_h_2
+{#space#ч}
+Variable_character_all_h_3
+{Ранен#space#}
+Variable_character_all_h_4
+{д}
+Variable_character_all_h_5
+{Ранен#space#}
+Variable_character_all_h_6
+{д}
+Variable_character_all_h_7
+{Ранен#space#}
+Variable_character_all_h_8
+{д}
+Variable_character_all_h_9
+{Ранен#space#}
+Variable_character_all_h_10
+{д}
+Variable_Colony_1
+{Обычные постройки}
+Variable_Colony_2
+{Магазин}
+Variable_Colony_3
+{Открывается}
+Variable_Colony_4
+{Не открыт}
+Variable_Colony_5
+{Открыт}
+Variable_Colony_6
+{Статус:#space#}
+Variable_Colony_7
+{Цена:#space#}
+Variable_Colony_8
+{Цена:#space#}
+Variable_Colony_9
+{Верфь}
+Variable_Colony_10
+{Не открыта}
+Variable_Colony_11
+{Открыта}
+Variable_Colony_12
+{Статус:#space#}
+Variable_Colony_13
+{Цена:#space#}
+Variable_Colony_14
+{Таверна}
+Variable_Colony_15
+{Не открыта}
+Variable_Colony_16
+{Открыта}
+Variable_Colony_17
+{Статус:#space#}
+Variable_Colony_18
+{Цена:#space#}
+Variable_Colony_19
+{Другие постройки}
+Variable_Colony_20
+{Экспедиция}
+Variable_Colony_21
+{Не проведена}
+Variable_Colony_22
+{Проведена}
+Variable_Colony_23
+{Статус:#space#}
+Variable_Colony_24
+{Цена:#space#}
+Variable_Colony_25
+{Цена:#space#}
+Variable_Colony_26
+{Склад}
+Variable_Colony_27
+{Не построен}
+Variable_Colony_28
+{Увеличен}
+Variable_Colony_29
+{Построен}
+Variable_Colony_30
+{Статус:#space#}
+Variable_Colony_31
+{Цена:#space#}
+Variable_Colony_32
+{Цена:#space#}
+Variable_Colony_33
+{Цена:#space#}
+Variable_Colony_34
+{Цена:#space#}
+Variable_Colony_35
+{Плантация}
+Variable_Colony_36
+{Не построена}
+Variable_Colony_37
+{Увеличена}
+Variable_Colony_38
+{Построена}
+Variable_Colony_39
+{Статус:#space#}
+Variable_Colony_40
+{Цена:#space#}
+Variable_Colony_41
+{Цена:#space#}
+Variable_Colony_42
+{Цена:#space#}
+Variable_Colony_43
+{Цена:#space#}
+Variable_Colony_44
+{Продвинутые постройки}
+Variable_Colony_45
+{Дом ростовщика}
+Variable_Colony_46
+{Не открыт}
+Variable_Colony_47
+{Открыт}
+Variable_Colony_48
+{Статус:#space#}
+Variable_Colony_49
+{Цена:#space#}
+Variable_Colony_50
+{Цена:#space#}
+Variable_Colony_51
+{Церковь}
+Variable_Colony_52
+{Не открыта}
+Variable_Colony_53
+{Открыта}
+Variable_Colony_54
+{Статус:#space#}
+Variable_Colony_55
+{Цена:#space#}
+Variable_Colony_56
+{Цена:#space#}
+Variable_Colony_57
+{Порт. управление}
+Variable_Colony_58
+{Не открыто}
+Variable_Colony_59
+{Открыто}
+Variable_Colony_60
+{Статус:#space#}
+Variable_Colony_61
+{Цена:#space#}
+Variable_Colony_62
+{Цена:#space#}
+Variable_Colony_63
+{Рудники}
+Variable_Colony_64
+{Золотой}
+Variable_Colony_65
+{Не построен}
+Variable_Colony_66
+{Увеличен}
+Variable_Colony_67
+{Построен}
+Variable_Colony_68
+{Статус:#space#}
+Variable_Colony_69
+{Цена:#space#}
+Variable_Colony_70
+{Цена:#space#}
+Variable_Colony_71
+{Цена:#space#}
+Variable_Colony_72
+{Цена:#space#}
+Variable_Colony_73
+{Серебряный}
+Variable_Colony_74
+{Не построен}
+Variable_Colony_75
+{Увеличен}
+Variable_Colony_76
+{Построен}
+Variable_Colony_77
+{Статус:#space#}
+Variable_Colony_78
+{Цена:#space#}
+Variable_Colony_79
+{Цена:#space#}
+Variable_Colony_80
+{Цена:#space#}
+Variable_Colony_81
+{Цена:#space#}
+Variable_Colony_82
+{Железный}
+Variable_Colony_83
+{Не построен}
+Variable_Colony_84
+{Увеличен}
+Variable_Colony_85
+{Построен}
+Variable_Colony_86
+{Статус:#space#}
+Variable_Colony_87
+{Цена:#space#}
+Variable_Colony_88
+{Цена:#space#}
+Variable_Colony_89
+{Цена:#space#}
+Variable_Colony_90
+{Цена:#space#}
+Variable_Colony_91
+{Восхищенная}
+Variable_Colony_92
+{Отличная}
+Variable_Colony_93
+{Дружелюбная}
+Variable_Colony_94
+{Симпатизирующая}
+Variable_Colony_95
+{Нормальная}
+Variable_Colony_96
+{Нормальная}
+Variable_Colony_97
+{Нормальная}
+Variable_Colony_98
+{Плохая}
+Variable_Colony_99
+{Недружелюбная}
+Variable_Colony_100
+{Ужасная}
+Variable_Colony_101
+{не построена}
+Variable_Colony_102
+{Поселение}
+Variable_Colony_103
+{Город}
+Variable_Colony_104
+{Охраняемый город}
+Variable_Colony_105
+{Население}
+Variable_Colony_106
+{Статус колонии:#space#}
+Variable_Colony_106.1
+{Численность (тек. / макс.):#space#}
+Variable_Colony_107
+{Оптимальная численность:#space#}
+Variable_Colony_108
+{Мораль населения:#space#}
+Variable_Colony_109
+{Цена повышения морали:#space#}
+Variable_Colony_110
+{Ваше золото:#space#}
+Variable_Colony_111
+{Низкий}
+Variable_Colony_112
+{Средний}
+Variable_Colony_113
+{Высокий}
+Variable_Colony_114
+{Налог}
+Variable_Colony_115
+{Текущий налог:#space#}
+Variable_Colony_116
+{Низкий}
+Variable_Colony_117
+{Средний}
+Variable_Colony_118
+{Высокий}
+Variable_Colony_119
+{Казна}
+Variable_Colony_120
+{Золота в казне:#space#}
+Variable_Colony_121
+{Обычные постройки}
+Variable_Colony_122
+{Магазин}
+Variable_Colony_123
+{Не открыт}
+Variable_Colony_124
+{Открыт}
+Variable_Colony_125
+{Статус:#space#}
+Variable_Colony_126
+{Цена:#space#}
+Variable_Colony_127
+{Цена:#space#}
+Variable_Colony_128
+{Верфь}
+Variable_Colony_129
+{Не открыта}
+Variable_Colony_130
+{Открыта}
+Variable_Colony_131
+{Статус:#space#}
+Variable_Colony_132
+{Цена:#space#}
+Variable_Colony_133
+{Цена:#space#}
+Variable_Colony_134
+{Таверна}
+Variable_Colony_135
+{Не открыта}
+Variable_Colony_136
+{Открыта}
+Variable_Colony_137
+{Статус:#space#}
+Variable_Colony_138
+{Цена:#space#}
+Variable_Colony_139
+{Цена:#space#}
+Variable_Colony_140
+{Продвинутые постройки}
+Variable_Colony_141
+{Дом ростовщика}
+Variable_Colony_142
+{Не открыт}
+Variable_Colony_143
+{Открыт}
+Variable_Colony_144
+{Статус:#space#}
+Variable_Colony_145
+{Цена:#space#}
+Variable_Colony_146
+{Цена:#space#}
+Variable_Colony_147
+{Церковь}
+Variable_Colony_148
+{Не открыта}
+Variable_Colony_149
+{Открыта}
+Variable_Colony_150
+{Статус:#space#}
+Variable_Colony_151
+{Цена:#space#}
+Variable_Colony_152
+{Цена:#space#}
+Variable_Colony_153
+{Порт. управление}
+Variable_Colony_154
+{Не открыто}
+Variable_Colony_155
+{Открыто}
+Variable_Colony_156
+{Статус:#space#}
+Variable_Colony_157
+{Цена:#space#}
+Variable_Colony_158
+{Цена:#space#}
+Variable_Colony_159
+{Не проведена}
+Variable_Colony_160
+{Проведена}
+Variable_Colony_161
+{Статус:#space#}
+Variable_Colony_162
+{Цена:#space#}
+Variable_Colony_163
+{Цена:#space#}
+Variable_Colony_164
+{Не построен}
+Variable_Colony_165
+{Увеличен}
+Variable_Colony_166
+{Построен}
+Variable_Colony_167
+{Статус:#space#}
+Variable_Colony_168
+{Цена:#space#}
+Variable_Colony_169
+{Цена:#space#}
+Variable_Colony_170
+{Цена:#space#}
+Variable_Colony_171
+{Цена:#space#}
+Variable_Colony_172
+{Не построена}
+Variable_Colony_173
+{Построена}
+Variable_Colony_174
+{Статус:#space#}
+Variable_Colony_175
+{Цена:#space#}
+Variable_Colony_176
+{Цена:#space#}
+Variable_Colony_177
+{Цена:#space#}
+Variable_Colony_178
+{Цена:#space#}
+Variable_Colony_179
+{Не построен}
+Variable_Colony_180
+{Увеличен}
+Variable_Colony_181
+{Построен}
+Variable_Colony_182
+{Статус:#space#}
+Variable_Colony_183
+{Цена:#space#}
+Variable_Colony_184
+{Цена:#space#}
+Variable_Colony_185
+{Цена:#space#}
+Variable_Colony_186
+{Цена:#space#}
+Variable_Colony_187
+{Не построен}
+Variable_Colony_188
+{Увеличен}
+Variable_Colony_189
+{Построен}
+Variable_Colony_190
+{Статус:#space#}
+Variable_Colony_191
+{Цена:#space#}
+Variable_Colony_192
+{Цена:#space#}
+Variable_Colony_193
+{Цена:#space#}
+Variable_Colony_194
+{Цена:#space#}
+Variable_Colony_195
+{Не построен}
+Variable_Colony_196
+{Увеличен}
+Variable_Colony_197
+{Построен}
+Variable_Colony_198
+{Статус:#space#}
+Variable_Colony_199
+{Цена:#space#}
+Variable_Colony_200
+{Цена:#space#}
+Variable_Colony_201
+{Цена:#space#}
+Variable_Colony_202
+{Цена:#space#}
+Variable_Colony_203
+{Пополнение казны}
+Variable_Colony_204
+{Ваше золото:#space#}
+Variable_Colony_205
+{Золота в казне:#space#}
+Variable_Colony_206
+{Информация о постройке зданий}
+Variable_Colony_207
+{Выбор отображаемых иконок}
+Variable_Colony_208
+{Вариант#space#}
+Variable_ColonyBuilding_1
+{Имеется:#space#}
+Variable_ColonyBuilding_2
+{Товар:#space#}
+Variable_ColonyBuilding_3
+{Требуется:#space#}
+Variable_ColonyBuilding_4
+{Кирпичи}
+Variable_ColonyBuilding_5
+{Кирпичи}
+Variable_ColonyBuilding_6
+{Доски}
+Variable_ColonyBuilding_7
+{Доски}
+Variable_ColonyBuilding_8
+{Красное дерево}
+Variable_ColonyBuilding_9
+{Красное дерево}
+Variable_ColonyBuilding_10
+{Чёрное дерево}
+Variable_ColonyBuilding_11
+{Чёрное дерево}
+Variable_ColonyBuilding_12
+{Рабы}
+Variable_ColonyBuilding_13
+{Рабы}
+Variable_ColonyBuilding_14
+{Провиант}
+Variable_ColonyBuilding_15
+{Провиант}
+Variable_ColonyBuilding_16
+{Название колонии}
+Variable_ColonyBuilding_17
+{Введите название колонии:#space#}
+Variable_ColonyBuilding_18
+{Текущее название:#space#}
+Variable_ColonyBuilding_19
+{Внешность солдат}
+Variable_ColonyBuilding_20
+{Выберите нацию:#space#}
+Variable_ColonyBuilding_21
+{Офицеры}
+Variable_ColonyBuilding_22
+{Пираты}
+Variable_ColonyBuilding_23
+{По нации}
+Variable_ColonyBuilding_24
+{Офицеры}
+Variable_ColonyBuilding_25
+{Город}
+Variable_ColonyBuilding_26
+{Главные здания}
+Variable_ColonyBuilding_27
+{Цена:#space#}
+Variable_ColonyBuilding_28
+{Магазин}
+Variable_ColonyBuilding_29
+{Цена:#space#}
+Variable_ColonyBuilding_30
+{Верфь}
+Variable_ColonyBuilding_31
+{Цена:#space#}
+Variable_ColonyBuilding_32
+{Таверна}
+Variable_ColonyBuilding_33
+{Цена:#space#}
+Variable_ColonyBuilding_34
+{Дом ростовщика}
+Variable_ColonyBuilding_35
+{Цена:#space#}
+Variable_ColonyBuilding_36
+{Резиденция}
+Variable_ColonyBuilding_37
+{Цена:#space#}
+Variable_ColonyBuilding_38
+{Услуги архитектора: 50000}
+Variable_ColonyBuilding_39
+{Итоговая цена:#space#}
+Variable_ColonyBuilding_40
+{Ваше золото:#space#}
+Variable_ColonyCapture_1
+{Вес}
+Variable_ColonyCapture_2
+{Пачка}
+Variable_ColonyCapture_3
+{Вес пачки}
+Variable_ColonyCapture_4
+{Корабль: '}
+Variable_ColonyCapture_5
+{: Грабёж}
+Variable_ColonyCapture_6
+{Интерфейс грабежа города}
+Variable_ColonyCapture_7
+{Ввод положительного количества с клавиатуры устанавливает взятие товара, а отрицательного (с минусом) обратное перемещение.}
+Variable_ColonyCapture_8
+{Цвета типа товара:}
+Variable_ColonyCapture_9
+{- зелёный : колониальные товары}
+Variable_ColonyCapture_10
+{- синий : импортные товары}
+Variable_ColonyCapture_11
+{- красный : контрабандные товары}
+Variable_ColonyCapture_12
+{- коричневый : товары агрессивного спроса}
+Variable_ColonyCapture_13
+{Город}
+Variable_ColonyCapture_14
+{, пачка#space#}
+Variable_ColonyCapture_15
+{Оставить}
+Variable_ColonyCapture_16
+{Вес#space#}
+Variable_ColonyCapture_17
+{#space#ц}
+Variable_ColonyCapture_18
+{Взять}
+Variable_ColonyCapture_19
+{Вес#space#}
+Variable_ColonyCapture_20
+{#space#ц}
+Variable_ColonyGuardiang_1
+{Нет корабля}
+Variable_ColonyGuardiang_2
+{Нет корабля}
+Variable_ColonyGuardiang_3
+{Нет корабля}
+Variable_ColonyGuardiang_4
+{Нет корабля}
+Variable_ColonyGuardiang_5
+{Корабль не назначен.}
+Variable_ColonyGuardiang_6
+{Корпус}
+Variable_ColonyGuardiang_7
+{Паруса}
+Variable_ColonyGuardiang_8
+{Скорость}
+Variable_ColonyGuardiang_9
+{Маневр.}
+Variable_ColonyGuardiang_10
+{Команда}
+Variable_ColonyGuardiang_11
+{Корабль не назначен.}
+Variable_ColonyGuardiang_12
+{Корпус}
+Variable_ColonyGuardiang_13
+{Паруса}
+Variable_ColonyGuardiang_14
+{Скорость}
+Variable_ColonyGuardiang_15
+{Маневр.}
+Variable_ColonyGuardiang_16
+{Команда}
+Variable_ColonyGuardiang_17
+{Корабль не назначен.}
+Variable_ColonyGuardiang_18
+{Корпус}
+Variable_ColonyGuardiang_19
+{Паруса}
+Variable_ColonyGuardiang_20
+{Скорость}
+Variable_ColonyGuardiang_21
+{Маневр.}
+Variable_ColonyGuardiang_22
+{Команда}
+Variable_ColonyGuardiang_23
+{Корабль не назначен.}
+Variable_ColonyGuardiang_24
+{Корпус}
+Variable_ColonyGuardiang_25
+{Паруса}
+Variable_ColonyGuardiang_26
+{Скорость}
+Variable_ColonyGuardiang_27
+{Маневр.}
+Variable_ColonyGuardiang_28
+{Команда}
+Variable_ColonyGuardiang_29
+{Выбор корабля}
+Variable_ColonyGuardiang_30
+{#space#фунтовые}
+Variable_ColonyGuardiang_31
+{Нет орудий}
+Variable_ColonyGuardiang_32
+{Корпус}
+Variable_ColonyGuardiang_33
+{Паруса}
+Variable_ColonyGuardiang_34
+{Скорость}
+Variable_ColonyGuardiang_35
+{Маневренность}
+Variable_ColonyGuardiang_36
+{Команда}
+Variable_ColonyGuardiang_37
+{Количество орудий}
+Variable_ColonyGuardiang_38
+{Пушки}
+Variable_ColonyGuardiang_39
+{Пушки}
+Variable_ColonyGuardiang_40
+{Пушки}
+Variable_ColonyGuardiang_41
+{Пушки}
+Variable_ColonyGuardiang_42
+{Пушки}
+Variable_ColonyGuardiang_43
+{Пушки}
+Variable_ColonyGuardiang_44
+{Пушки}
+Variable_ColonyGuardiang_45
+{Пушки}
+Variable_ColonyGuardiang_46
+{Пушки}
+Variable_ColonyGuardiang_47
+{Пушки}
+Variable_ColonyGuardiang_48
+{Пушки}
+Variable_ColonyGuardiang_49
+{Кулеврины}
+Variable_ColonyGuardiang_50
+{Кулеврины}
+Variable_ColonyGuardiang_51
+{Кулеврины}
+Variable_ColonyGuardiang_52
+{Кулеврины}
+Variable_ColonyGuardiang_53
+{Кулеврины}
+Variable_ColonyGuardiang_54
+{Кулеврины}
+Variable_ColonyGuardiang_55
+{Кулеврины}
+Variable_ColonyGuardiang_56
+{Кулеврины}
+Variable_ColonyGuardiang_57
+{Кулеврины}
+Variable_ColonyGuardiang_58
+{Нет орудий}
+Variable_ColonyGuardiang_59
+{Поменять флагман}
+Variable_ColonyInfo_1
+{Город#space#}
+Variable_ColonyInfo_2
+{#space#захвачен войсками#space#}
+Variable_ColonyInfo_3
+{Десант#space#}
+Variable_ColonyInfo_4
+{#space#осадил город#space#}
+Variable_ColonyInfo_5
+{. У вас есть#space#}
+Variable_ColonyInfo_6
+{#space#для снятия осады.}
+Variable_ColonyInfo_7
+{Эскадра#space#}
+Variable_ColonyInfo_8
+{#space#осадила город#space#}
+Variable_ColonyInfo_9
+{. У вас есть#space#}
+Variable_ColonyInfo_10
+{#space#для снятия осады.}
+Variable_ColonyInfo_11
+{Над городом#space#}
+Variable_ColonyInfo_12
+{#space#поднят новый флаг.}
+Variable_ColonyLandGuard_1
+{Гарнизон}
+Variable_ColonyLandGuard_2
+{Количество на корабле:#space#}
+Variable_ColonyLandGuard_3
+{Провиант}
+Variable_ColonyLandGuard_4
+{Количество на корабле:#space#}
+Variable_ColonyLandGuard_5
+{Провианта в колонии на#space#}
+Variable_ColonyLandGuard_6
+{#space#нед.}
+Variable_ColonyLandGuard_7
+{Медикаменты}
+Variable_ColonyLandGuard_8
+{Количество на корабле:#space#}
+Variable_contraband_1
+{Вес}
+Variable_contraband_2
+{Пачка}
+Variable_contraband_3
+{Вес пачки}
+Variable_contraband_4
+{, пачка#space#}
+Variable_contraband_5
+{, золото контрабандистов:#space#}
+Variable_contraband_6
+{Интерфейс торговли}
+Variable_contraband_7
+{Ввод положительного количества с клавиатуры устанавливает покупку товара, а отрицательного (с минусом) продажу.}
+Variable_contraband_8
+{Продать}
+Variable_contraband_9
+{Деньги#space#}
+Variable_contraband_10
+{, вес#space#}
+Variable_contraband_11
+{#space#ц}
+Variable_contraband_12
+{Купить}
+Variable_contraband_13
+{Деньги#space#}
+Variable_contraband_14
+{, вес#space#}
+Variable_contraband_15
+{#space#ц}
+Variable_craft_all_1
+{Компоненты}
+Variable_craft_all_2
+{Кол-во}
+Variable_craft_all_3
+{Доступные рецепты}
+Variable_craft_all_4
+{Кол-во}
+Variable_craft_all_5
+{Создан предмет '}
+Variable_craft_all_6
+{' в кол-ве#space#}
+Variable_craft_all_7
+{#space#ед.}
+Variable_craft_all_8
+{Создан предмет '}
+Variable_craft_all_9
+{' в кол-ве#space#}
+Variable_craft_all_10
+{#space#ед.}
+Variable_craft_all_11
+{Отсутствует}
+Variable_craft_all_12
+{В наличии}
+Variable_CreateCharacter_1
+{начало боя}
+Variable_CreateCharacter_2
+{быстрая атака}
+Variable_CreateCharacter_3
+{мощная атака}
+Variable_CreateCharacter_4
+{прыжок}
+Variable_CreateCharacter_5
+{конец боя}
+Variable_CreateCharacter_6
+{пола}
+Variable_CreateCharacter_7
+{Выбран персонаж#space#}
+Variable_CreateNotice_1
+{хуй}
+Variable_CreateNotice_2
+{пизда}
+Variable_CreateNotice_3
+{хуйпизда}
+Variable_CreateNotice_4
+{пидар}
+Variable_CreateNotice_5
+{пидр}
+Variable_CreateNotice_6
+{пидарас}
+Variable_CreateNotice_7
+{пидораз}
+Variable_CreateNotice_8
+{пидорас}
+Variable_CreateNotice_9
+{хуеплет}
+Variable_CreateNotice_10
+{хуеплёт}
+Variable_CreateNotice_11
+{ебалай}
+Variable_CreateNotice_12
+{сука}
+Variable_CreateNotice_13
+{падла}
+Variable_CreateNotice_14
+{чмо}
+Variable_CreateNotice_15
+{лох}
+Variable_CreateNotice_16
+{ебарь}
+Variable_CreateNotice_17
+{ёбарь}
+Variable_CreateNotice_18
+{сукаблянах}
+Variable_CreateNotice_19
+{ипаныйрот}
+Variable_CreateNotice_20
+{жопа}
+Variable_CreateNotice_21
+{песда}
+Variable_CreateNotice_22
+{сцука}
+Variable_CreateNotice_23
+{сцуко}
+Variable_CreateNotice_24
+{ебать}
+Variable_CreateNotice_25
+{ебатьврот}
+Variable_CreateNotice_26
+{нахуй}
+Variable_CreateNotice_27
+{нах}
+Variable_CreateNotice_28
+{на хуй}
+Variable_CreateNotice_29
+{куй}
+Variable_CreateNotice_30
+{накуй}
+Variable_CreateNotice_31
+{на куй}
+Variable_CreateNotice_32
+{ниибаццо}
+Variable_CreateNotice_33
+{нивьипенный}
+Variable_CreateNotice_34
+{ебаный}
+Variable_CreateNotice_35
+{охуел}
+Variable_CreateNotice_36
+{охуела}
+Variable_CreateNotice_37
+{охуели}
+Variable_CreateNotice_38
+{пиздец}
+Variable_CreateNotice_39
+{соси}
+Variable_CreateNotice_40
+{сосать}
+Variable_CreateNotice_41
+{мат запрещён}
+Variable_CreateNotice_42
+{Содержимое:#space#}
+Variable_CreateNotice_43
+{пусто}
+Variable_CreateNotice_44
+{Строка}
+Variable_CreateNotice_45
+{Столбец}
+Variable_CreateNotice_46
+{пусто}
+Variable_CreateNotice_47
+{пусто}
+Variable_Debuger_1
+{Информация отладчика}
+Variable_Debuger_2
+{Это отладчик. Позволяет выполнять заданные скриптологом функции. Кнопки:#space#}
+Variable_Debuger_3
+{Команда отработала успешно!}
+Variable_Debuger_4
+{Команда отработала успешно!}
+Variable_Debuger_5
+{Команда отработала успешно!}
+Variable_Debuger_6
+{Команда отработала успешно!}
+Variable_Debuger_7
+{Золото + 500000}
+Variable_Debuger_7.1
+{ID текущей локации + коорд#space#}
+Variable_Debuger_7.2
+{Опыт команды +10}
+Variable_Debuger_7.3
+{Дать 1000 скилов для навыков}
+Variable_Debuger_8
+{Команда отработала успешно!}
+Variable_Debuger_9
+{Миллион, СЛ с 48-ым калибром, 20-ый ранг}
+Variable_Debuger_10
+{Команда отработала успешно!}
+Variable_Debuger_11
+{Сбросить все личные скиллы до 1}
+Variable_Debuger_12
+{Команда отработала успешно!}
+Variable_Debuger_13
+{телепорт по тавернам}
+Variable_Debuger_14
+{Команда отработала успешно!}
+Variable_Debuger_15
+{Выдача материалов для постройки колонии}
+Variable_Debuger_15.1
+{Бессметрие вкл/выкл}
+Variable_Debuger_16
+{Команда отработала успешно!}
+Variable_Debuger_17
+{Команда отработала успешно!}
+Variable_Debuger_18
+{Репутация в плюс}
+Variable_Debuger_19
+{Команда отработала успешно!}
+Variable_Debuger_20
+{Репутация в минус}
+Variable_Debuger_21
+{Команда отработала успешно!}
+Variable_Debuger_22
+{Команда отработала успешно!}
+Variable_Debuger_23
+{Вызвать смену отношений наций}
+Variable_Debuger_23.1
+{+5 дней}
+Variable_Debuger_23.2
+{Список квестов в pchar}
+Variable_Debuger_24
+{Команда отработала успешно!}
+Variable_Debuger_25
+{Команда отработала успешно!}
+Variable_Debuger_26
+{Команда отработала успешно!}
+Variable_Debuger_27
+{Нанять 10 офицеров}
+Variable_Debuger_27.1
+{Офицеру-шкиперу +1 ранг (35 очков скилов)}
+Variable_Debuger_28
+{Команда отработала успешно!}
+Variable_Debuger_29
+{Нет офицера}
+Variable_Debuger_30
+{Команда отработала успешно!}
+Variable_Debuger_31
+{Обновление света на маяках}
+Variable_Debuger_31.1
+{Медленный подъём камеры на 35 по Y относительно ГГ}
+Variable_Debuger_32
+{Команда отработала успешно!}
+Variable_Debuger_33
+{Повернуть камеру в точку (-5, 2, -5) относительно ГГ}
+Variable_Debuger_34
+{Команда отработала успешно!}
+Variable_Debuger_35
+{Аскольд инфо}
+Variable_Debuger_36
+{Рендомный хозяин магаза:#space#}
+Variable_Debuger_37
+{Рендомный мерчант(колония):#space#}
+Variable_Debuger_38
+{Рендомный верфист:#space#}
+Variable_Debuger_39
+{Скрижали локация:#space#}
+Variable_Debuger_40
+{Скрижали локатор:#space#}
+Variable_Debuger_41
+{Где будут слухи по флейту торговца:#space#}
+Variable_Debuger_42
+{Слухи по флейтам торговцев ещё не активированы.}
+Variable_Debuger_43
+{Команда отработала успешно!}
+Variable_Debuger_44
+{Дамп аттрибутов камеры}
+Variable_Debuger_45
+{Команда отработала успешно!}
+Variable_Debuger_46
+{Лицензия}
+Variable_Debuger_47
+{Команда отработала успешно!}
+Variable_Debuger_48
+{Перегруз локации - для КОЛОВ}
+Variable_Debuger_49
+{Команда отработала успешно!}
+Variable_Debuger_50
+{Дамп атрибутов ГГ}
+Variable_Debuger_50.1
+{НЗГ у всех наций +50}
+Variable_Debuger_51
+{Дамп аттрибутов ГГ}
+Variable_Debuger_52
+{Команда отработала успешно!}
+Variable_Debuger_53
+{Команда отработала успешно!#space#}
+Variable_Debuger_54
+{Пустить ЛГ на карте}
+Variable_Debuger_55
+{Команда отработала успешно!}
+Variable_Debuger_56
+{НЗГ у всех наций -50}
+Variable_Debuger_56.1
+{+20 дней}
+Variable_Debuger_56.2
+{Арабелла, 32 калибр, полная прокачка ГГ, 10к очков достижений, все перки, предметы + уникальный подсумок}
+Variable_Debuger_57
+{Команда отработала успешно!}
+Variable_Debuger_58
+{Команда отработала успешно!}
+Variable_Debuger_59
+{Команда отработала успешно!}
+Variable_Debuger_60
+{Простой корабль, неполная прокачка ГГ}
+Variable_Debuger_60.1
+{Личное умение +1}
+Variable_Debuger_60.2
+{Корабельное умение +1}
+Variable_Debuger_60.3
+{Симуляция уровень +1}
+Variable_Debuger_61
+{Команда отработала успешно!}
+Variable_Debuger_62
+{Команда отработала успешно!}
+Variable_Debuger_63
+{Команда отработала успешно!}
+Variable_Debuger_64
+{Команда отработала успешно!}
+Variable_Debuger_65
+{Создать тушку для битья}
+Variable_Debuger_66
+{Команда отработала успешно!}
+Variable_Debuger_67
+{Отстроить колонию уровень 1}
+Variable_Debuger_67.1
+{Отстроить колонию уровень 2 + здания}
+Variable_Debuger_68
+{Время строительства колонии на острове Кайман должно подойти к концу. Стоит навестить место работы.}
+Variable_Debuger_69
+{Команда отработала успешно!}
+Variable_Debuger_70
+{Время расширения колонии ''}
+Variable_Debuger_71
+{'' должно подойти к концу.}
+Variable_Debuger_72
+{Команда отработала успешно!}
+Variable_Debuger_73
+{Построить полностю развитую колонию}
+Variable_Debuger_74
+{Время расширения колонии ''}
+Variable_Debuger_75
+{'' должно подойти к концу.}
+Variable_Debuger_76
+{Команда отработала успешно!}
+Variable_Debuger_77
+{Выдать сверхбыстрый корабль}
+Variable_Debuger_78
+{Команда отработала успешно!}
+Variable_Debuger_79
+{Дамп всех осад}
+Variable_Debuger_80
+{Команда отработала успешно!}
+Variable_Debuger_81
+{Проверка ликвидности товара}
+Variable_Debuger_82
+{Команда отработала успешно!}
+Variable_Debuger_83
+{Заспавнить золотой Флот}
+Variable_Debuger_84
+{Команда отработала успешно!}
+Variable_Debuger_85
+{Позиция корабля}
+Variable_Debuger_86
+{Команда отработала успешно!}
+Variable_Debuger_87
+{обновление массива: островов, локаций, колоний, кораблей, вещей}
+Variable_Debuger_88
+{Команда отработала успешно!}
+Variable_Debuger_89
+{Позиция игрока на суше}
+Variable_Debuger_90
+{Команда отработала успешно!}
+Variable_Debuger_91
+{Выдать 20 сундуков и 20 отмычек}
+Variable_Debuger_92
+{Команда отработала успешно!}
+Variable_Debuger_93
+{Разлочить все переходы в локе и снять блокировки}
+Variable_Debuger_94
+{Команда отработала успешно!}
+Variable_Debuger_95
+{Построить Капитул и перенести игрока туда}
+Variable_Debuger_95.1
+{Тестовая функция для стрингового массива под LinkRandArrayPhrase}
+Variable_Debuger_96
+{Команда отработала успешно!}
+Variable_Debuger_97
+{Выпала стринга от значения массива под индеком 0}
+Variable_Debuger_98
+{Выпала стринга от значения массива под индеком 1}
+Variable_Debuger_99
+{Выпала стринга от значения массива под индеком 2}
+Variable_Debuger_100
+{Выпала стринга от значения массива под индеком 3}
+Variable_Debuger_101
+{Выпала стринга от значения массива под индеком 4}
+Variable_Debuger_102
+{Команда отработала успешно!}
+Variable_Debuger_103
+{Посчитать персов в локации}
+Variable_Debuger_104
+{Команда отработала успешно!}
+Variable_Debuger_105
+{Нет назначений}
+Variable_Debuger_105.1
+{Включить/выключить туман войны на глобальной карте}
+Variable_Debuger_106
+{Команда отработала успешно!}
+Variable_Debuger_107
+{Команда отработала успешно!}
+Variable_Debuger_108
+{Тест кораблей}
+Variable_Debuger_109
+{Тестовый корабль}
+Variable_Debuger_110
+{Тестовый корабль}
+Variable_Debuger_111
+{Тестовый корабль}
+Variable_Debuger_112
+{Тестовый корабль}
+Variable_Debuger_113
+{Тестовый корабль}
+Variable_Debuger_114
+{Тестовый корабль}
+Variable_Debuger_115
+{Тестовый корабль}
+Variable_Debuger_116
+{Тестовый корабль}
+Variable_Debuger_117
+{Тестовый корабль}
+Variable_Debuger_118
+{Тестовый корабль}
+Variable_Debuger_119
+{Тестовый корабль}
+Variable_Debuger_120
+{Тестовый корабль}
+Variable_Debuger_121
+{Тестовый корабль}
+Variable_Debuger_122
+{Тестовый корабль}
+Variable_Debuger_123
+{Тестовый корабль}
+Variable_Debuger_124
+{Тестовый корабль}
+Variable_Debuger_125
+{Тестовый корабль}
+Variable_Debuger_126
+{Тестовый корабль}
+Variable_Debuger_127
+{Тестовый корабль}
+Variable_Debuger_128
+{Тестовый корабль}
+Variable_Debuger_129
+{Команда отработала успешно!}
+Variable_Debuger_130
+{Получить все карты}
+Variable_Debuger_131
+{Команда отработала успешно!}
+Variable_Debuger_132
+{Получить все предметы в игре (кроме квестовых) и бесконечный переносимый вес}
+Variable_Debuger_133
+{Команда отработала успешно!}
+Variable_Debuger_134
+{Просканировать отношения между нациями и наций к ГГ, после чего сбросить на дефолт}
+Variable_Debuger_135
+{Команда отработала успешно!}
+Variable_Debuger_136
+{Нет назначений}
+Variable_Debuger_137
+{Команда отработала успешно!}
+Variable_Debuger_138
+{Нет назначений}
+Variable_Debuger_139
+{Команда отработала успешно!}
+Variable_Debuger_140
+{Нет назначений}
+Variable_Debuger_141
+{Команда отработала успешно!}
+Variable_Debuger_142
+{Нет назначений}
+Variable_Debuger_143
+{Команда отработала успешно!}
+Variable_Debuger_144
+{Нет назначений}
+Variable_Debuger_145
+{Команда отработала успешно!}
+Variable_Debuger_146
+{Нет назначений}
+Variable_Debuger_147
+{Команда отработала успешно!}
+Variable_Debuger_148
+{Нет назначений}
+Variable_Debuger_149
+{Команда отработала успешно!}
+Variable_Debuger_150
+{Нет назначений}
+Variable_Debuger_151
+{Команда отработала успешно!}
+Variable_Debuger_152
+{Нет назначений}
+Variable_Debuger_153
+{Команда отработала успешно!}
+Variable_Debuger_154
+{Нет назначений}
+Variable_Debuger_155
+{Команда отработала успешно!}
+Variable_Debuger_156
+{Нет назначений}
+Variable_Debuger_157
+{Команда отработала успешно!}
+Variable_Debuger_158
+{Нет назначений}
+Variable_Debuger_159
+{Команда отработала успешно!}
+Variable_Debuger_160
+{Нет назначений}
+Variable_Debuger_161
+{Команда отработала успешно!}
+Variable_Debuger_162
+{Нет назначений}
+Variable_Debuger_163
+{Команда отработала успешно!}
+Variable_Debuger_164
+{Нет назначений}
+Variable_Debuger_165
+{Команда отработала успешно!}
+Variable_Debuger_166
+{Нет назначений}
+Variable_Debuger_167
+{Команда отработала успешно!}
+Variable_Debuger_168
+{Нет назначений}
+Variable_Debuger_169
+{Команда отработала успешно!}
+Variable_Debuger_170
+{Нет назначений}
+Variable_Debuger_171
+{Команда отработала успешно!}
+Variable_Debuger_172
+{Нет назначений}
+Variable_Debuger_173
+{Команда отработала успешно!}
+Variable_Debuger_174
+{Нет назначений}
+Variable_Debuger_175
+{Команда отработала успешно!}
+Variable_Debuger_176
+{Нет назначений}
+Variable_Debuger_177
+{Команда отработала успешно!}
+Variable_Debuger_178
+{Нет назначений}
+Variable_Debuger_179
+{Команда отработала успешно!}
+Variable_Debuger_180
+{Нет назначений}
+Variable_Debuger_181
+{Команда отработала успешно!}
+Variable_Debuger_182
+{Нет назначений}
+Variable_Debuger_183
+{Команда отработала успешно!}
+Variable_Debuger_184
+{Нет назначений}
+Variable_Debuger_185
+{Команда отработала успешно!}
+Variable_Debuger_186
+{Нет назначений}
+Variable_Debuger_187
+{Команда отработала успешно!}
+Variable_Debuger_188
+{Нет назначений}
+Variable_Debuger_189
+{Команда отработала успешно!}
+Variable_Debuger_190
+{Нет назначений}
+Variable_Debuger_191
+{Команда отработала успешно!}
+Variable_Debuger_192
+{Нет назначений}
+Variable_Debuger_193
+{Команда отработала успешно!}
+Variable_Debuger_194
+{Нет назначений}
+Variable_Debuger_195
+{Команда отработала успешно!}
+Variable_Debuger_196
+{Нет назначений}
+Variable_Debuger_197
+{Команда отработала успешно!}
+Variable_Debuger_198
+{тушка для битья}
+Variable_Debuger_199
+{Манекен}
+Variable_Debuger_200
+{Костлявый}
+Variable_Debuger_201
+{Товар}
+Variable_Debuger_202
+{Товар#space#}
+Variable_Debuger_203
+{#space#получен в количестве#space#}
+Variable_Debuger_204
+{Нет локации}
+Variable_Debuger_205
+{Бриджтаун 							:#space#}
+Variable_Debuger_206
+{Сент-Джонс 							:#space#}
+Variable_Debuger_207
+{Виллемстад 							:#space#}
+Variable_Debuger_208
+{Мариго 								:#space#}
+Variable_Debuger_209
+{Бас-Тер 								:#space#}
+Variable_Debuger_210
+{Форт-де-Франс 						:#space#}
+Variable_Debuger_211
+{Ле-Франсуа 							:#space#}
+Variable_Debuger_212
+{Шарп-Таун							:#space#}
+Variable_Debuger_213
+{Маракайбо 							:#space#}
+Variable_Debuger_214
+{Дес Мойнес							:#space#}
+Variable_Debuger_215
+{Белиз 								:#space#}
+Variable_Debuger_216
+{Порт-Ройал 							:#space#}
+Variable_Debuger_217
+{Форт Оранж							:#space#}
+Variable_Debuger_218
+{Сан-Хуан 							:#space#}
+Variable_Debuger_219
+{Сантьяго 							:#space#}
+Variable_Debuger_220
+{Пуэрто-Принсипе 						:#space#}
+Variable_Debuger_221
+{Гавана 								:#space#}
+Variable_Debuger_222
+{Тортуга 								:#space#}
+Variable_Debuger_223
+{Порт-оф-Спейн 						:#space#}
+Variable_Debuger_224
+{Чарльзтаун 							:#space#}
+Variable_Debuger_225
+{Санто-Доминго 						:#space#}
+Variable_Debuger_226
+{Ла Вега 								:#space#}
+Variable_Debuger_227
+{Порт-о-Принс 						:#space#}
+Variable_Debuger_228
+{Теркс 								:#space#}
+Variable_Debuger_229
+{Кайман 								:#space#}
+Variable_Debuger_230
+{Панама 								:#space#}
+Variable_Debuger_231
+{Порто-Белло 							:#space#}
+Variable_Debuger_232
+{Картахена 							:#space#}
+Variable_Debuger_233
+{Каракас 								:#space#}
+Variable_Debuger_234
+{Кумана 								:#space#}
+Variable_Debuger_235
+{Санта-Каталина 						:#space#}
+Variable_Debuger_236
+{ГПК									:#space#}
+Variable_Debuger_237
+{Теночтитлан 							:#space#}
+Variable_game_menu_1
+{Стартовые условия}
+Variable_game_menu_2
+{Анимация персонажа:#space#}
+Variable_game_menu_2.1
+{Дозарядка:}
+Variable_game_menu_2.2
+{Режим хардкора:}
+Variable_game_menu_2.2.1
+{Раздел добычи:}
+Variable_game_menu_2.3
+{Вес матросов:}
+Variable_game_menu_2.4
+{Уникальные паруса у пиратов:}
+Variable_game_menu_2.5
+{Хардкорные анимации:}
+Variable_game_menu_2.6
+{Усложнённые боссы:}
+Variable_game_menu_2.7
+{Альтернативный баланс:}
+Variable_game_menu_2.8
+{Сложность:}
+Variable_game_menu_2.9
+{Нация:}
+Variable_game_menu_2.10
+{Скорость набора опыта:}
+Variable_game_menu_2.11
+{Количество аборджаников:}
+Variable_game_menu_2.12
+{Квесты без требований к рангу:}
+Variable_game_menu_2.13
+{Количество кораблей охраны:}
+Variable_game_menu_2.14
+{Частота событий:}
+Variable_game_menu_2.15
+{Режим плавания:}
+Variable_game_menu_2.16
+{Платные заходы в порт:}
+Variable_game_menu_2.17
+{Взятки стражникам:}
+Variable_game_menu_2.18
+{Снижение порога личных перков:}
+Variable_game_menu_2.19
+{Снижение порога корабельных перков:}
+Variable_game_menu_2.20
+{Ограничение бонусов от офицеров:}
+Variable_game_menu_2.21
+{Контракт на полубессмертие:}
+Variable_game_menu_2.22
+{Исследование кораблей:}
+Variable_game_menu_2.23
+{Требование ранга к навигации:}
+Variable_game_menu_2.24
+{Отключение влияния сложности на вес:}
+Variable_game_menu_2.25
+{Урон получаемый игроком: x}
+Variable_game_menu_2.26
+{Квесты наций:}
+Variable_game_menu_3
+{Англия}
+Variable_game_menu_4
+{Франция}
+Variable_game_menu_5
+{Голландия}
+Variable_game_menu_6
+{Испания}
+Variable_game_menu_7
+{Пират}
+Variable_game_menu_8
+{Рубака}
+Variable_game_menu_9
+{Торговец}
+Variable_game_menu_10
+{Фехтовальщик}
+Variable_game_menu_11
+{Авантюрист}
+Variable_game_menu_12
+{Буканьер}
+Variable_game_menu_13
+{Тайный Агент}
+Variable_game_menu_14
+{Морской Волк}
+Variable_game_menu_15
+{Характер:#space#}
+Variable_game_menu_16
+{Количество энкаунтеров:#space#}
+Variable_game_menu_17
+{Стрельба только в противников:#space#}
+Variable_GoodsTransfer_1
+{Вес выбранного комплекта:#space#}
+Variable_GoodsTransfer_2
+{#space#ц.}
+Variable_GoodsTransfer_3
+{Вес выбранного комплекта:#space#}
+Variable_GoodsTransfer_4
+{Товар}
+Variable_GoodsTransfer_5
+{Кол-во}
+Variable_GoodsTransfer_5.1
+{В раз-#enter#работке}
+Variable_GoodsTransfer_5.2
+{Вес/#enter#Пачка}
+Variable_GoodsTransfer_5.3
+{Цена#enter#ед. веса#enter#(базовая)}
+Variable_GoodsTransfer_6
+{Вес выбранного комплекта:#space#}
+Variable_GoodsTransfer_7
+{#space#ц.}
+Variable_GoodsTransfer_8
+{Предмет}
+Variable_GoodsTransfer_9
+{Кол-во}
+Variable_GoodsTransfer_10
+{Вес}
+Variable_GoodsTransfer_11
+{Вес выбранного комплекта:#space#}
+Variable_GoodsTransfer_12
+{Комплект#space#}
+Variable_hirecrew_1
+{, класс#space#}
+Variable_hirecrew_2
+{, команда: мин.#space#}
+Variable_hirecrew_3
+{, макс.#space#}
+Variable_hirecrew_4
+{Содержание корабля:#space#}
+Variable_hirecrew_5
+{Стоимость найма одного матроса#space#}
+Variable_hirecrew_6
+{Уволить}
+Variable_hirecrew_7
+{Нанять}
+Variable_hirecrew_8
+{Стоимость найма#space#}
+Variable_interface_1
+{Сохранение в данной игре возможно только в церквях.}
+Variable_interface_2
+{#space#д.#space#}
+Variable_interface_3
+{#space#ч.#space#}
+Variable_interface_4
+{#space#мин.#space#}
+Variable_interface_utils_1
+{прочность мачты#space#}
+Variable_interface_utils_2
+{Все мачты целые.}
+Variable_interface_utils_3
+{Все мачты целые.}
+Variable_interface_utils_4
+{Провианта на корабле на#space#}
+Variable_interface_utils_5
+{Рома на корабле на#space#}
+Variable_interface_utils_6
+{Провианта#space#}
+Variable_interface_utils_6.1
+{на корабле / в эскадре}
+Variable_interface_utils_6.2
+{#space#на#space#}
+Variable_items_1
+{было}
+Variable_items_2
+{Наименование предметов}
+Variable_items_3
+{Вес шт.}
+Variable_items_4
+{Кол-во}
+Variable_items_5
+{Вес}
+Variable_items_6
+{#space#(К}
+Variable_items_7
+{Предметы}
+Variable_items_8
+{Здесь Вы можете получить информацию об имеющихся предметах, изучить инвентарь или изменить экипировку главного героя.#space#}
+Variable_items_9
+{Так же можно посмотреть состояние инвентаря офицеров, компаньонов и пассажиров. Выбор оружия они делают сами при экипировке их новым снаряжением.#space#}
+Variable_items_10
+{Обмен предметами со своими офицерами осуществляется на суше через команду 'Обмен'.}
+Variable_items_11
+{Урон клинка}
+Variable_items_12
+{Выбор комплекта снаряжения}
+Variable_items_13
+{ся}
+Variable_items_14
+{ась}
+Variable_items_15
+{Использовано зелье 'Слезы Иш-Чель'}
+Variable_items_16
+{Прошло 20 минут, вы прочитали журнал капитана}
+Variable_items_17
+{Для взлома нужна отмычка.}
+Variable_items_18
+{Выбран боеприпас -#space#}
+Variable_items_19
+{Ваше максимальное здоровье увеличено на#space#}
+Variable_items_20
+{#space#увеличивает максимальное здоровье на#space#}
+Variable_items_21
+{Ваша максимальная энергия увеличилась на#space#}
+Variable_items_22
+{#space#увеличивает максимальную энергию на#space#}
+Variable_items_23
+{Ваш урон в ближнем бою навсегда увеличен на десять процентов!}
+Variable_items_24
+{#space#навсегда увеличивает урон в ближнем бою на десять процентов!}
+Variable_items_25
+{Кажется, последняя затяжка была лишней}
+Variable_items_26
+{старая рваная}
+Variable_items_27
+{выглядит новой}
+Variable_items_28
+{Передать предмет:#space#}
+Variable_items_29
+{Выкинуть предмет:#space#}
+Variable_items_30
+{Комплект#space#}
+Variable_items_31
+{Комплект#space#}
+Variable_items_32
+{Комплект#space#}
+Variable_itemsbox_1
+{Денег -#space#}
+Variable_itemsbox_2
+{Предметы на трупе}
+Variable_itemsbox_3
+{Кол-во}
+Variable_itemsbox_4
+{Наименование предметов}
+Variable_itemsbox_5
+{Кол-во}
+Variable_itemsbox_6
+{Предметы в сундуке}
+Variable_itemsbox_7
+{Предметы в бочонке}
+Variable_itemsbox_8
+{Предметы у офицера}
+Variable_itemsbox_9
+{Вот вся добыча на данный момент, кэп!}
+Variable_itemsbox_10
+{Новая система лута при абордаже}
+Variable_itemsbox_11
+{В капитанских каютах процесс обыска остался прежним.}
+Variable_itemsbox_12
+{Можно переназначить в настройках игры.}
+Variable_itemsbox_13
+{Нажмите правую кнопку мыши, чтобы убрать это сообщение}
+Variable_itemsbox_14
+{Все предметы}
+Variable_itemsbox_15
+{Предметы героя}
+Variable_itemsbox_16
+{Оружие и зелья}
+Variable_itemsbox_17
+{Должен удалиться}
+Variable_itemsbox_17.1
+{Клавиша запуска сундука с добычей: тильда, она же русская 'Ё'}
+Variable_itemsbox_18
+{Можно изменить на другую в настройках игры}
+Variable_itemsbox_19
+{Сундук каюты под номером#space#}
+Variable_itemsbox_20
+{Сундук каюты под номером#space#}
+Variable_itemsbox_21
+{в сундуке}
+Variable_itemsbox_22
+{у героя}
+Variable_itemsbox_23
+{у героя}
+Variable_itemsbox_24
+{в сундуке}
+Variable_itemsbox_25
+{оружие и зелья}
+Variable_itemsbox_26
+{#space#(К}
+Variable_itemsbox_27
+{#space#(К}
+Variable_itemsbox_28
+{Количество предметов у трупа:#space#}
+Variable_itemsbox_29
+{Ввод положительного количества с клавиатуры устанавливает забирание предмета, а отрицательного (с минусом) отдачу.}
+Variable_itemsbox_30
+{В списке на обмен отсутствуют экипированные персонажем предметы.}
+Variable_itemsbox_31
+{1-ый Сундук каюты}
+Variable_itemsbox_32
+{2-ой Сундук каюты}
+Variable_itemsbox_33
+{3-ий Сундук каюты}
+Variable_itemsbox_34
+{4-ый Сундук каюты}
+Variable_itemsbox_35
+{взять все}
+Variable_itemsbox_36
+{взять все предметы одного типа}
+Variable_itemsbox_37
+{отдать все предметы одного типа}
+Variable_itemsbox_38
+{Отдать}
+Variable_itemsbox_39
+{Забрать}
+Variable_itemsbox_40
+{Абордажник#space#}
+Variable_itemsbox_41
+{#space#реанимирован.}
+Variable_itemsbox_3.1
+{Общий}
+Variable_itemsbox_3.2
+{Вес}
+Variable_itemstrade_1
+{Кол-во}
+Variable_itemstrade_2
+{Вес}
+Variable_itemstrade_3
+{Наименование предметов}
+Variable_itemstrade_4
+{Предметов торговца}
+Variable_itemstrade_5
+{Вес}
+Variable_itemstrade_6
+{#space#(К}
+Variable_itemstrade_7
+{Предметы героя: показывает только те предметы, что есть у вас.}
+Variable_itemstrade_8
+{Предметы торговца: показывает только те предметы, что есть у торговца.}
+Variable_itemstrade_9
+{Все предметы: стандарт, показывает как ваши предметы, так и предметы торговца.}
+Variable_itemstrade_10
+{Ввод положительного количества с клавиатуры устанавливает покупку предмета, а отрицательного (с минусом) продажу.}
+Variable_itemstrade_11
+{В списке на продажу отсутствуют экипированные персонажем предметы.}
+Variable_itemstrade_12
+{Торговец}
+Variable_itemstrade_13
+{Продать}
+Variable_itemstrade_14
+{Золото#space#}
+Variable_itemstrade_15
+{, вес#space#}
+Variable_itemstrade_16
+{Купить}
+Variable_itemstrade_17
+{Золото#space#}
+Variable_itemstrade_18
+{, вес#space#}
+Variable_itemstrade_19
+{Нет казначея. Закупки некому проводить!}
+Variable_itemstrade_20
+{передавать}
+Variable_itemstrade_21
+{Нет казначея. Закупки некому проводить!}
+Variable_itemstrade_22
+{а}
+Variable_itemstrade_23
+{#space#перегружен}
+Variable_itemstrade_24
+{. Пополнить снаряжение не удалось.}
+Variable_itemstrade_25
+{отладка -#space#}
+Variable_itemstrade_26
+{#space#куплено:#space#}
+Variable_itemstrade_27
+{#space#шт.#space#}
+Variable_itemstrade_28
+{#space#зол.}
+Variable_itemstrade_29
+{#space#пополнил}
+Variable_itemstrade_30
+{#space#комплект расходников.}
+Variable_itemstrade_31
+{#space#не получил}
+Variable_itemstrade_32
+{#space#новых расходников. Кончились деньги.}
+Variable_itemstrade_33
+{#space#не получил}
+Variable_itemstrade_34
+{#space#новых расходников из-за перегруза.}
+Variable_itemstrade_35
+{#space#не получил}
+Variable_itemstrade_36
+{#space#новых расходников. Не было в наличии у торговца.}
+Variable_itemstrade_37
+{#space#уже имел}
+Variable_itemstrade_38
+{#space#полный комплект расходников.}
+Variable_itemstrade_39
+{а}
+Variable_itemstrade_40
+{#space#продал}
+Variable_itemstrade_41
+{#space#излишки расходников.}
+Variable_itemstrade_42
+{Продано: Клинков#space#}
+Variable_itemstrade_43
+{, Пистолетов#space#}
+Variable_itemstrade_44
+{, Идолов#space#}
+Variable_itemstrade_45
+{, Хлама#space#}
+Variable_itemstrade_46
+{Продано: Клинков#space#}
+Variable_itemstrade_47
+{, Пистолетов#space#}
+Variable_itemstrade_48
+{, Идолов#space#}
+Variable_itemstrade_49
+{, Хлама#space#}
+Variable_LeaveBattle_1
+{Наш корабль#space#}
+Variable_LeaveBattle_2
+{#space#находится в контакте с противником.}
+Variable_LeaveBattle_3
+{Наши корабли#space#}
+Variable_LeaveBattle_4
+{#space#находятся в контакте с противником.}
+Variable_lockpicking_guide_1
+{Взлом замков позволяет открыть определенные ящики, чтобы получить их содержимое. Процесс включает в себя выбор правильного положения для отмычки, вставленной в цилиндр. Клавиша Ctrl используется для вращения цилиндра. Вертикальное перемещение мыши регулирует угол вставленной отмычки. Нажмите 'Esc' для выхода.}
+Variable_lockpicking_guide_2
+{Перемещая мышь вверх и вниз, отрегулируйте положение отмычки. После выбора угла нажмите и удерживайте клавишу Ctrl, чтобы начать вращение цилиндра. Чтобы открыть замок, цилиндр должен быть повернут на 90 градусов.}
+Variable_lockpicking_guide_3
+{Если цилиндр неожиданно останавливается во время вращения, это означает, что положение отмычки неверное. В этом случае отпустите ключ 'Ctrl' и подождите, пока цилиндр вернется в исходное положение, чтобы освободить отмычку. Помните, чем ближе вы расположите отмычку к правильному углу, тем больше цилиндр будет проворачиваться.}
+Variable_lockpicking_1
+{Вскрытие замков}
+Variable_lockpicking_2
+{#space#в количестве#space#}
+Variable_lockpicking_3
+{#space#в количестве#space#}
+Variable_lockpicking_4
+{Содержимое сундука}
+Variable_lockpicking_5
+{Вы открыли сундук и нашли следующие предметы:}
+Variable_lockpicking_6
+{Вскрытие замков}
+Variable_lockpicking_7
+{А-а-ать, Чёрт! Отмычка сломалась!}
+Variable_lockpicking_8
+{А-а-ать, Чёрт! Отмычка сломалась во время взлома!}
+Variable_map_1
+{Начинаем перебирать энкаунтеров}
+Variable_map_2
+{БАГА -1.}
+Variable_MapBest_1
+{Локации колонии}
+Variable_MapBest_2
+{ИД локации}
+Variable_MapBest_3
+{Лейбл}
+Variable_MapBest_4
+{Комната наверху таверны}
+Variable_MapBest_5
+{Локации колонии}
+Variable_MapBest_6
+{ИД локации}
+Variable_MapBest_7
+{Лейбл}
+Variable_MapBest_8
+{Комната наверху таверны}
+Variable_MapBest_9
+{Арена}
+Variable_MapBest_10
+{Поселение фехтовальщиков}
+Variable_MapBest_11
+{Актуальность данных о товарах}
+Variable_mapview_1
+{Прошло часов в пути:#space#}
+Variable_Mekakhrom_1
+{Загадка:#space#}
+Variable_Mekakhrom_2
+{Место назначения:}
+Variable_Mekakhrom_3
+{Ответьте правильно для получения ключевой фразы.}
+Variable_Mekakhrom_4
+{Ключевая фраза:#space#}
+Variable_Mekakhrom_5
+{Ответ неверный.}
+Variable_Mekakhrom_6
+{Загадка:#space#}
+Variable_Mekakhrom_7
+{Остров:}
+Variable_Mekakhrom_8
+{Место назначения:}
+Variable_Mekakhrom_9
+{Ответьте правильно для получения ключевой фразы.}
+Variable_Mekakhrom_10
+{Ключевая фраза:#space#}
+Variable_Mekakhrom_11
+{Ответ неверный.}
+Variable_Mekakhrom_12
+{Загадка:#space#}
+Variable_Mekakhrom_13
+{Остров:}
+Variable_Mekakhrom_14
+{Здание:}
+Variable_Mekakhrom_15
+{Ответьте правильно для получения ключевой фразы.}
+Variable_Mekakhrom_16
+{Ключевая фраза:#space#}
+Variable_Mekakhrom_17
+{Ответ неверный.}
+Variable_Mekakhrom_18
+{Загадка:#space#}
+Variable_Mekakhrom_19
+{Пункт назначения:}
+Variable_Mekakhrom_20
+{Пункт назначения:}
+Variable_Mekakhrom_21
+{Место:}
+Variable_Mekakhrom_22
+{Сегодня на площади из здания верфи был слышен крик:}
+Variable_Mekakhrom_23
+{''Наконец-то я достроил этот корабль! Достроил!''}
+Variable_Mekakhrom_24
+{Ключевая фраза:#space#}
+Variable_Mekakhrom_25
+{Ответ неверный.}
+Variable_Mekakhrom_26
+{Загадка:#space#}
+Variable_Mekakhrom_27
+{Остров:}
+Variable_Mekakhrom_28
+{Место:}
+Variable_Mekakhrom_29
+{Ответьте правильно для получения ключевой фразы.}
+Variable_Mekakhrom_30
+{Ключевая фраза:#space#}
+Variable_Mekakhrom_31
+{Ответ неверный.}
+Variable_Mekakhrom_32
+{Загадка:#space#}
+Variable_Mines_1
+{Данный рудник не построен.}
+Variable_Mines_2
+{Данный рудник не построен.}
+Variable_Mines_3
+{Добыто}
+Variable_Mines_4
+{Данный рудник не построен.}
+Variable_Mines_5
+{Охранники}
+Variable_Mines_6
+{Рабы}
+Variable_Mines_7
+{Провиант}
+Variable_Mines_8
+{Лекарства}
+Variable_Mines_9
+{Количество охранников:#space#}
+Variable_Mines_10
+{Максимальное количество охранников:#space#}
+Variable_Mines_11
+{Моряков на корабле:#space#}
+Variable_Mines_12
+{Количество рабов:#space#}
+Variable_Mines_13
+{Максимальное количество рабов:#space#}
+Variable_Mines_14
+{Количество рабов в трюме:#space#}
+Variable_Mines_15
+{Провианта на рудниках на#space#}
+Variable_Mines_16
+{#space#нед.}
+Variable_Mines_17
+{Количество провианта в трюме:#space#}
+Variable_Mines_18
+{Лекарств на рудниках на#space#}
+Variable_Mines_19
+{#space#нед.}
+Variable_Mines_20
+{Количество лекарств в трюме:#space#}
+Variable_Mines_21
+{Не построено ни одного рудника.}
+Variable_Mines_22
+{Не построено ни одного рудника.}
+Variable_Mines_23
+{Не построено ни одного рудника.}
+Variable_Mines_24
+{Не построено ни одного рудника.}
+Variable_NationLegend_1
+{#space#и#space#}
+Variable_NationLegend_2
+{#space#стали союзниками.}
+Variable_NationLegend_3
+{#space#перешли в состояние войны.}
+Variable_NationLegend_4
+{#space#перешли к нейтральным отношениям.}
+Variable_NationRelation_1
+{Флаг на корабле}
+Variable_option_screen_1
+{Иконки наций}
+Variable_option_screen_2
+{Визуал кирас}
+Variable_option_screen_3
+{Шрифт журнала}
+Variable_option_screen_4
+{Партиклы бомб}
+Variable_option_screen_5
+{Звуки выстрелов}
+Variable_Plantation_1
+{Хорошая}
+Variable_Plantation_2
+{Нормальная}
+Variable_Plantation_3
+{Медленная}
+Variable_Plantation_4
+{Маленькая}
+Variable_Plantation_5
+{Сахар}
+Variable_Plantation_6
+{Большая}
+Variable_Plantation_7
+{Сахар и Кофе}
+Variable_Plantation_8
+{Информация о плантации}
+Variable_Plantation_9
+{Рабы}
+Variable_Plantation_10
+{Добыча сахара}
+Variable_Plantation_11
+{Добыча кофе}
+Variable_Plantation_12
+{Надсмотрщики}
+Variable_Plantation_13
+{Провиант}
+Variable_Plantation_14
+{Лекарства}
+Variable_Plantation_15
+{Инструменты}
+Variable_Plantation_16
+{Ваше золото:#space#}
+Variable_Plantation_17
+{Размер плантации:#space#}
+Variable_Plantation_18
+{Добывает:#space#}
+Variable_Plantation_19
+{Скорость добычи:#space#}
+Variable_Plantation_20
+{Состояние рабов:#space#}
+Variable_Plantation_21
+{Мораль рабов:#space#}
+Variable_Plantation_22
+{Поднять мораль:#space#}
+Variable_Plantation_23
+{Количество:#space#}
+Variable_Plantation_24
+{Макс. количество:#space#}
+Variable_Plantation_25
+{Команды на корабле:#space#}
+Variable_Plantation_26
+{Количество:#space#}
+Variable_Plantation_27
+{Макс. количество:#space#}
+Variable_Plantation_28
+{На корабле:#space#}
+Variable_Plantation_29
+{Количество:#space#}
+Variable_Plantation_30
+{Макс. количество:#space#}
+Variable_Plantation_31
+{Рабов в трюме:#space#}
+Variable_Plantation_32
+{Провианта на плантации на#space#}
+Variable_Plantation_33
+{#space#нед.}
+Variable_Plantation_34
+{Количество:#space#}
+Variable_Plantation_35
+{Провианта в трюме:#space#}
+Variable_Plantation_36
+{Лекарств на плантации на#space#}
+Variable_Plantation_37
+{#space#нед.}
+Variable_Plantation_38
+{Количество:#space#}
+Variable_Plantation_39
+{Лекарств в трюме:#space#}
+Variable_Plantation_40
+{Плохие}
+Variable_Plantation_41
+{Обычные}
+Variable_Plantation_42
+{Хорошие}
+Variable_Plantation_43
+{Плохие}
+Variable_Plantation_44
+{Обычные}
+Variable_Plantation_45
+{Хорошие}
+Variable_Plantation_46
+{Текущие инструменты:#space#}
+Variable_Plantation_47
+{Цена:#space#}
+Variable_Plantation_48
+{Плохие}
+Variable_Plantation_49
+{Обычные}
+Variable_Plantation_50
+{Хорошие}
+Variable_pointsshop_1
+{Наименование предметов}
+Variable_pointsshop_2
+{Цена}
+Variable_pointsshop_3
+{Вес шт.}
+Variable_pointsshop_4
+{Очков достижений:#space#}
+Variable_pointsshop_5
+{Обмен очков достижений}
+Variable_pointsshop_6
+{Потрачено#space#}
+Variable_pointsshop_7
+{#space#очков достижений}
+Variable_pointsshop_8
+{Очков достижений:#space#}
+Variable_pointsshop_9
+{Очков достижений:#space#}
+Variable_pointsshop_10
+{Генерирующийся предмет в ачившопе:#space#}
+Variable_pointsshop_11
+{, работать не будет.}
+Variable_pointsshop_12
+{Обменять}
+Variable_pointsshop_13
+{Очков за единицу:#space#}
+Variable_pointsshop_14
+{Сумма:#space#}
+Variable_pointsshop_15
+{, вес:#space#}
+Variable_pointsshop_16
+{Очков достижений:#space#}
+Variable_PsHero_1
+{#space#(Записано#space#}
+Variable_PsHero_2
+{#space#дней назад)}
+Variable_PsHero_3
+{(бетарежим)}
+Variable_PsHero_4
+{Фото}
+Variable_PsHero_5
+{Имя}
+Variable_PsHero_6
+{Ранг}
+Variable_PsHero_7
+{Нация}
+Variable_PsHero_8
+{Корабль}
+Variable_PsHero_9
+{Местоположение}
+Variable_PsHero_10
+{Репутация}
+Variable_PsHero_11
+{Отношение}
+Variable_PsHero_12
+{Пиастры}
+Variable_PsHero_13
+{Нет корабля}
+Variable_PsHero_14
+{Охотится на вас}
+Variable_PsHero_15
+{Плывёт в#space#}
+Variable_PsHero_16
+{Сопровождает торговца в#space#}
+Variable_PsHero_17
+{Неизвестно}
+Variable_QuestBook_1
+{Исследован корабль:#space#}
+Variable_QuestBook_2
+{. Исследовано -#space#}
+Variable_QuestBook_3
+{#space#кораблей!}
+Variable_QuestBook_4
+{Система достижений с возможностью получения различных наград}
+Variable_QuestBook_5
+{Очков достижений:#space#}
+Variable_QuestBook_6
+{Офицер на обучении}
+Variable_QuestBook_7
+{Капитан}
+Variable_QuestBook_8
+{Характеристики}
+Variable_QuestBook_9
+{Информация по стоянке}
+Variable_QuestBook_10
+{#space#п.}
+Variable_QuestBook_11
+{Заключен контракт}
+Variable_QuestBook_12
+{#space#Полубессмертие}
+Variable_QuestBook_13
+{Офицер на обучении}
+Variable_QuestBook_14
+{Офицер на обучении}
+Variable_QuestBook_15
+{Заключен контракт}
+Variable_QuestBook_16
+{#space#Полубессмертие}
+Variable_QuestBook_17
+{Уровень}
+Variable_QuestBook_18
+{Достижение}
+Variable_QuestBook_19
+{Описание}
+Variable_QuestBook_20
+{Прогресс}
+Variable_QuestBook_21
+{Очки}
+Variable_QuestBook_22
+{1 ур.}
+Variable_QuestBook_23
+{#space#ур.}
+Variable_QuestBook_24
+{Ранг персонажа:}
+Variable_QuestBook_25
+{Деньги персонажа:}
+Variable_QuestBook_26
+{Сумма вкладов:}
+Variable_QuestBook_27
+{Найдено кладов:}
+Variable_QuestBook_28
+{Вызвано кровотечений:}
+Variable_QuestBook_29
+{Нанесено травм:}
+Variable_QuestBook_30
+{Нанесено резких ударов:}
+Variable_QuestBook_31
+{Вызвано оглушений:}
+Variable_QuestBook_32
+{Вскрыто сундуков:}
+Variable_QuestBook_33
+{Портовые сборы оплачены:}
+Variable_QuestBook_34
+{Выдано взяток:}
+Variable_QuestBook_35
+{Убийств совершено:}
+Variable_QuestBook_36
+{Кораблей потоплено:}
+Variable_QuestBook_37
+{Убито нежити:}
+Variable_QuestBook_38
+{Нанесено отравляющих ударов:}
+Variable_QuestBook_39
+{Нанесено критических ударов:}
+Variable_QuestBook_40
+{Создано предметов:}
+Variable_QuestBook_41
+{Книг прочитано:}
+Variable_QuestBook_42
+{Офицеров нанято:}
+Variable_QuestBook_43
+{Кораблей в эскадре:}
+Variable_QuestBook_44
+{Выпито лечебных зелий:}
+Variable_QuestBook_45
+{Скушано еды:}
+Variable_QuestBook_46
+{Выполнено генераторных квестов:}
+Variable_QuestBook_47
+{Отстройка колонии:}
+Variable_QuestBook_48
+{Выиграно турниров:}
+Variable_QuestBook_49
+{Выиграно дуэлей:}
+Variable_QuestBook_50
+{Заказано кораблей:}
+Variable_QuestBook_51
+{Исследовано кораблей:}
+Variable_QuestBook_52
+{Золотых флотов потоплено:}
+Variable_QuestBook_53
+{Городов разграблено:}
+Variable_QuestBook_54
+{Собрано карт:}
+Variable_QuestBook_55
+{Корабли}
+Variable_QuestBook_56
+{Потоплено орудиями}
+Variable_QuestBook_57
+{Потоплено абордажем}
+Variable_QuestBook_58
+{Захвачено абордажем}
+Variable_QuestBook_59
+{Класс#space#}
+Variable_QuestBook_60
+{Убито}
+Variable_QuestBook_61
+{Саблями}
+Variable_QuestBook_62
+{Пистолетами}
+Variable_QuestBook_63
+{Солдаты}
+Variable_QuestBook_64
+{Горожане}
+Variable_QuestBook_65
+{Нечисть}
+Variable_QuestBook_66
+{Остальные}
+Variable_QuestBook_67
+{Итого}
+Variable_QuestBook_68
+{События}
+Variable_QuestBook_69
+{Значение}
+Variable_QuestBook_70
+{Кораблей продано}
+Variable_QuestBook_71
+{Кораблей куплено}
+Variable_QuestBook_72
+{Бунтов на корабле}
+Variable_QuestBook_73
+{Восстания рабов}
+Variable_QuestBook_74
+{Кораблей отпущено}
+Variable_QuestBook_75
+{Товара испорчено крысами}
+Variable_QuestBook_76
+{Здоровья потрачено}
+Variable_QuestBook_77
+{Матросов погибло}
+Variable_QuestBook_78
+{Кладов найдено}
+Variable_QuestBook_79
+{События}
+Variable_QuestBook_80
+{Англия}
+Variable_QuestBook_81
+{Итого}
+Variable_QuestBook_82
+{Фортов разгромлено}
+Variable_QuestBook_83
+{Городов захвачено}
+Variable_QuestBook_84
+{Городов разграблено}
+Variable_QuestBook_85
+{Кораблей захвачено}
+Variable_QuestBook_86
+{Кораблей потоплено}
+Variable_QuestBook_87
+{Расходы}
+Variable_QuestBook_88
+{Выплаты команде}
+Variable_QuestBook_89
+{Кредит в городе}
+Variable_QuestBook_90
+{Сумма}
+Variable_QuestBook_91
+{Дата}
+Variable_QuestBook_92
+{Срок (мес.)}
+Variable_QuestBook_93
+{Вклад в городе}
+Variable_QuestBook_94
+{Сумма}
+Variable_QuestBook_95
+{Дата}
+Variable_QuestBook_96
+{Итог}
+Variable_QuestBook_97
+{Фото}
+Variable_QuestBook_98
+{Класс}
+Variable_QuestBook_99
+{Корабль}
+Variable_QuestBook_100
+{Капитан}
+Variable_QuestBook_101
+{Город}
+Variable_QuestBook_102
+{Локация}
+Variable_QuestBook_103
+{Дата стоянки}
+Variable_QuestBook_104
+{Цена в месяц}
+Variable_QuestBook_105
+{Офицер на обучении}
+Variable_QuestBook_106
+{Риф Скелета, Бухта проклятых}
+Variable_QuestBook_107
+{Капитул}
+Variable_QuestBook_108
+{Бессрочно}
+Variable_QuestBook_109
+{Нация}
+Variable_QuestBook_110
+{Тип хранилища}
+Variable_QuestBook_111
+{Местонахождение}
+Variable_QuestBook_112
+{Загруженность}
+Variable_QuestBook_113
+{Аренда}
+Variable_QuestBook_114
+{Склад торговца}
+Variable_QuestBook_115
+{ПУ,#space#}
+Variable_QuestBook_116
+{Ячейка ростовщика}
+Variable_QuestBook_117
+{Пачка}
+Variable_QuestBook_118
+{Вес}
+Variable_QuestBook_119
+{Название предмета}
+Variable_QuestBook_120
+{Вес шт.}
+Variable_QuestBook_121
+{Кол-во}
+Variable_QuestBook_122
+{Общий вес}
+Variable_QuestBook_123
+{Фото}
+Variable_QuestBook_124
+{Тип Корабля}
+Variable_QuestBook_125
+{Класс}
+Variable_QuestBook_130
+{Нет пушек}
+Variable_QuestBook_131
+{ИД корабля:#space#}
+Variable_QuestBook_132
+{ИД корабля:#space#}
+Variable_QuestBook_133
+{Наименование предметов}
+Variable_QuestBook_133.1
+{Урон мин/макс}
+Variable_QuestBook_134
+{Класс оружия}
+Variable_QuestBook_135
+{Вес}
+Variable_QuestBook_136
+{Доп. свойства}
+Variable_QuestBook_137
+{Наименование предметов}
+Variable_QuestBook_138
+{Патроны, требования}
+Variable_QuestBook_139
+{Точность}
+Variable_QuestBook_140
+{Перезарядка}
+Variable_QuestBook_141
+{Наименование предметов}
+Variable_QuestBook_142
+{Антидот}
+Variable_QuestBook_143
+{Вес}
+Variable_QuestBook_144
+{Наименование предметов}
+Variable_QuestBook_145
+{Описание}
+Variable_QuestBook_146
+{безоружный}
+Variable_QuestBook_147
+{качества}
+Variable_QuestBook_148
+{приклад#space#}
+Variable_QuestBook_149
+{Да}
+Variable_QuestBook_149.1
+{Необходим навык 'Стрелок'.}
+Variable_QuestBook_149.2
+{Необходим навык 'Мушкетёр'..}
+Variable_QuestBook_149.3
+{Не требует навыков.}
+Variable_QuestBook_149.4
+{Шанс пробития блока +}
+Variable_QuestBook_149.5
+{Шанс критического удара +}
+Variable_QuestBook_149.6
+{Шанс пробития кирасы +}
+Variable_QuestBook_149.7
+{Шанс резкого удара +}
+Variable_QuestBook_149.8
+{Шанс оглушения +}
+Variable_QuestBook_149.9
+{Шанс травмирования +}
+Variable_QuestBook_149.10
+{Шанс кровотоечения +}
+Variable_QuestBook_149.11
+{Шанс отравления +}
+Variable_QuestBook_150
+{Энциклопедия всех кораблей с полной информацией и возможностью сравнения}
+Variable_QuestBook_151
+{Энциклопедия всего холодного оружия с фильтрами и с максимальной информацией}
+Variable_QuestBook_152
+{Энциклопедия всего огнестрельного оружия в игре со всей доступной информацией}
+Variable_QuestBook_153
+{Энциклопедия еды и зелий}
+Variable_QuestBook_154
+{Энциклопедия бонусных вещей с выводом баффов и дебаффов}
+Variable_QuestBook_155
+{Энциклопедия квестов игры}
+Variable_QuicklyTrade_1
+{Доски}
+Variable_QuicklyTrade_2
+{Парусина}
+Variable_SailsGerald_1
+{Мастер}
+Variable_SailsGerald_2
+{На данный корабль невозможно установить герб}
+Variable_SailsGerald_3
+{Цвет парусов}
+Variable_SailsGerald_4
+{Материал парусов}
+Variable_SailsGerald_5
+{Выбрать символику на парус}
+Variable_SailsGerald_6
+{Текущий}
+Variable_SailsGerald_7
+{Текущий}
+Variable_SailsGerald_8
+{#space#(текущий)}
+Variable_SailsGerald_9
+{Цена:#space#}
+Variable_save_load_1
+{Введите имя сохраняемой игры:}
+Variable_save_load_2
+{Англия}
+Variable_save_load_3
+{Франция}
+Variable_save_load_4
+{Голландия}
+Variable_save_load_5
+{Испания}
+Variable_save_load_6
+{Береговое Братство}
+Variable_save_load_7
+{Нет}
+Variable_save_load_8
+{Неизвестно}
+Variable_save_load_9
+{Неизвестна}
+Variable_save_load_10
+{Место:#space#}
+Variable_save_load_11
+{Нация}
+Variable_save_load_12
+{Нация:#space#}
+Variable_save_load_13
+{Сложность:#space#}
+Variable_save_load_14
+{Денег:#space#}
+Variable_save_load_15
+{Ранг:#space#}
+Variable_selectCharacter_1
+{Внимание!}
+Variable_selectCharacter_2
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_3
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_4
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_5
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_6
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_7
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_8
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_9
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_10
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_11
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_12
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_13
+{Число неверных нажатий:#space#}
+Variable_selectCharacter_14
+{Случайные нация и характер}
+Variable_ship_1
+{Товары в трюме}
+Variable_ship_2
+{Кол-во}
+Variable_ship_3
+{Вес}
+Variable_ship_4
+{Пачка}
+Variable_ship_5
+{Вес пачки}
+Variable_ship_6
+{Дедвейт эскадры: Своб:#space#}
+Variable_ship_6.1
+{ц. | Занято:#space#}
+Variable_ship_6.2
+{ц. | Макс:#space#}
+Variable_ship_7
+{ц.}
+Variable_ship_8
+{Класс#space#}
+Variable_ship_9
+{Содержание корабля:#space#}
+Variable_ship_10
+{Загрязнение дна:#space#}
+Variable_ship_11
+{Штраф к скорости:#space#}
+Variable_ship_12
+{к маневренности:#space#}
+Variable_ship_13
+{Тип:#space#}
+Variable_ship_14
+{Калибр:#space#}
+Variable_ship_15
+{Дальность:#space#}
+Variable_ship_16
+{Перезарядка:#space#}
+Variable_ship_17
+{#space#сек.}
+Variable_ship_18
+{Вес:#space#}
+Variable_ship_19
+{#space#ц.}
+Variable_ship_20
+{Максимальное количество экипажа с учетом перегруза:#space#}
+Variable_ship_21
+{Ремонт#space#}
+Variable_ship_22
+{#space#шт. досок}
+Variable_ship_23
+{Ремонт#space#}
+Variable_ship_24
+{#space#шт. парусины}
+Variable_ship_25
+{Занято:#space#}
+Variable_ship_26
+{, пачка#space#}
+Variable_ship_27
+{Выкинуть?}
+Variable_ship_28
+{Вес в трюме}
+Variable_ship_28
+{Количество в трюме}
+Variable_ship_29
+{Перейти в режим обмена между кораблями?}
+Variable_ship_30
+{Во время боя обмен с кораблями возможен только борт к борту.}
+Variable_ship_31
+{Использование способности 'спасение на шлюпке' позволяет обмениваться с кораблями в бою. Продолжить?}
+Variable_ship_32
+{Обмен с кораблём этого компаньона невозможен.}
+Variable_ship_33
+{Обмен невозможен. У героя нет корабля.}
+Variable_ship_34
+{Орудий в трюме}
+Variable_ship_35
+{Кол-во}
+Variable_ship_36
+{Дистан.}
+Variable_ship_37
+{Урон}
+Variable_ship_38
+{Время}
+Variable_ship_39
+{Текущая дата:#space#}
+Variable_ship_40
+{Дата предыдущего платежа:#space#}
+Variable_ship_41
+{Доли в текущем месяце:}
+Variable_ship_42
+{Доля капитана:#space#}
+Variable_ship_43
+{Доля офицеров:#space#}
+Variable_ship_44
+{Доля матросов:#space#}
+Variable_ship_45
+{Долг текущего месяца:#space#}
+Variable_ship_46
+{Долг за прошлый месяц:#space#}
+Variable_ship_47
+{ОШИБКА: не найден атрибут сортировки по '}
+Variable_ship_48
+{' у корабля '}
+Variable_shipyard_sell
+{Товары с корабля будут проданы в магазин.#enter#Контрабанда перегружается на флагман, излишек груза выбрасывается.#enter#Пушки автоматически снимаются и продаются на верфь.#enter#При продаже флагмана контрабанда выбрасывается, а команда увольняется в таверну.}
+Variable_shipyard_1
+{При выборе варианта ''Распределить до максимальной команды по кораблям'' в случае продажи корабля оставшаяся на нём команда распределяется по всем остальным кораблям поочерёдно, начиная с флагмана. При этом команда заполняется до перегруза. Навыки и мораль команды при этом перерассчитываются.}
+Variable_shipyard_2
+{При выборе варианта ''Распределить до оптимальной команды по кораблям'' в случае продажи корабля оставшаяся на нём команда распределяется по всем остальным кораблям поочерёдно, начиная с флагмана. При этом команда заполняется до оптимальной, без перегруза.  Навыки и мораль команды при этом перерассчитываются.}
+Variable_shipyard_3
+{При выборе варианта ''Уволить в таверну'' в случае продажи корабля оставшаяся на нём команда отправляется в таверну, сливаясь по умениям с уже наличествующими там претендентами в команду.}
+Variable_shipyard_4
+{Увольнение команды}
+Variable_shipyard_5
+{Класс#space#}
+Variable_shipyard_6
+{Тип:#space#}
+Variable_shipyard_7
+{Калибр:#space#}
+Variable_shipyard_8
+{Дальность:#space#}
+Variable_shipyard_9
+{Перезарядка:#space#}
+Variable_shipyard_10
+{#space#сек.}
+Variable_shipyard_11
+{Вес:#space#}
+Variable_shipyard_12
+{#space#ц.}
+Variable_shipyard_13
+{Максимальное количество экипажа с учетом перегруза:#space#}
+Variable_shipyard_14
+{Занято:#space#}
+Variable_shipyard_15
+{Демонтаж займёт часов: не менее#space#}
+Variable_shipyard_16
+{, апгрейд займёт часов: не менее#space#}
+Variable_shipyard_17
+{Улучшить}
+Variable_shipyard_18
+{Демонтаж}
+Variable_shipyard_19
+{Максимум апгрейдов}
+Variable_shipyard_20
+{Максимум апгрейдов, часов для снятия: не менее#space#}
+Variable_shipyard_21
+{Демонтаж}
+Variable_shipyard_22
+{Апгрейд невозможен для данного корабля}
+Variable_shipyard_23
+{Апгрейд невозможен для данного корабля}
+Variable_shipyard_24
+{Апгрейд невозможен для данного корабля}
+Variable_shipyard_25
+{Класс}
+Variable_shipyard_27
+{Корабль}
+Variable_shipyard_28
+{Цена}
+Variable_shipyard_29
+{Орудия}
+Variable_shipyard_30
+{Дедвейт}
+Variable_shipyard_34
+{Купить корабль за#space#}
+Variable_shipyard_35
+{Купить корабль за#space#}
+Variable_shipyard_35.1
+{Избыток команды будет уволен в таверну.}
+Variable_shipyard_36
+{Продать корабль за#space#}
+Variable_shipyard_37
+{Как поступить с оставшейся на корабле командой?}
+Variable_shipyard_38
+{Покраска}
+Variable_shipyard_39
+{У вас недостаточно средств.}
+Variable_shipyard_40
+{Я использую свой опыт и наилучшие суждения, чтобы наложить новую покраску на ваш корабль. Это обойдётся вам в#space#}
+Variable_shipyard_41
+{#space#пиастров. Согласны?}
+Variable_shipyard_42
+{К сожалению, не могу предоставить вам данную услугу сейчас. Приношу свои искренние извинения.}
+Variable_shipyard_43
+{За продажу товаров с корабля:}
+Variable_shipyard_44
+{Деньги за свой корабль забрал компаньон.}
+Variable_shipyard_45
+{Часть команды с проданного корабля перешла на ваш корабль.}
+Variable_shipyard_46
+{Команда с проданного корабля перешла на ваш корабль.}
+Variable_shipyard_47
+{Часть команды с проданного корабля перешла на корабль компаньона#space#}
+Variable_shipyard_48
+{Команда с проданного корабля перешла на корабль компаньона#space#}
+Variable_shipyard_49
+{Оставшаяся команда с проданного корабля отправилась в увольнение.}
+Variable_shipyard_50
+{Часть команды с проданного корабля перешла на ваш корабль.}
+Variable_shipyard_51
+{Команда с проданного корабля перешла на ваш корабль.}
+Variable_shipyard_52
+{Часть команды с проданного корабля перешла на корабль компаньона#space#}
+Variable_shipyard_53
+{Команда с проданного корабля перешла на корабль компаньона#space#}
+Variable_shipyard_54
+{Оставшаяся команда с проданного корабля отправилась в увольнение.}
+Variable_shipyard_55
+{часов:#space#}
+Variable_shipyard_55.1
+{#space#| минут:#space#}
+Variable_shipyard_56
+{Уже улучшено}
+Variable_shipyard_57
+{Можно улучшить}
+Variable_shipyard_58
+{Апгрейд невозможен для данного корабля}
+Variable_shipyard_59
+{Апгрейд невозможен}
+Variable_shipyard_60
+{Уже улучшено}
+Variable_shipyard_61
+{Можно улучшить}
+Variable_shipyard_62
+{Уже улучшено}
+Variable_shipyard_63
+{Можно улучшить}
+Variable_shipyard_64
+{Апгрейд невозможен для данного корабля}
+Variable_shipyard_65
+{Апгрейд невозможен}
+Variable_shipyard_66
+{Уже улучшено}
+Variable_shipyard_67
+{Можно улучшить}
+Variable_shipyard_68
+{Уже улучшено}
+Variable_shipyard_69
+{Можно улучшить}
+Variable_shipyard_70
+{Апгрейд невозможен для данного корабля}
+Variable_shipyard_71
+{Апгрейд невозможен}
+Variable_shipyard_72
+{Уже улучшено}
+Variable_shipyard_73
+{Можно улучшить}
+Variable_shipyard_74
+{Максимальное количество апгрейдов}
+Variable_shipyard_75
+{Уникальные улучшения корабля}
+Variable_shipyard_76
+{Улучшений:#space#}
+Variable_shipyard_77
+{Окраска корпуса (}
+Variable_shipyard_78
+{Цена:#space#}
+Variable_shipyard_79
+{Цена:#space#}
+Variable_shipyard_80
+{Эта каюта не подходит по размеру к кораблю.}
+Variable_shipyard_81
+{Это Ваша каюта.}
+Variable_sAdd_1
+{#enter#корпус:}
+Variable_sAdd_2
+{#enter#мачты:}
+Variable_sAdd_3
+{#enter#скорость:}
+Variable_sAdd_4
+{#enter#манёвренность:}
+Variable_sAdd_5
+{#enter#бейдевинд:}
+Variable_sAdd_6
+{#enter#дедвейт:}
+Variable_sAdd_7
+{#enter#команда:}
+Variable_sAdd_8
+{#enter#калибр:}
+Variable_cannons_price
+{Цена орудий:#space#}
+Variable_shipyard1_1
+{Заказать}
+Variable_shipyard1_2
+{Время постройки:#space#}
+Variable_shipyard1_3
+{#space#д.}
+Variable_shipyard1_4
+{Тип:#space#}
+Variable_shipyard1_5
+{Калибр:#space#}
+Variable_shipyard1_6
+{Дальность:#space#}
+Variable_shipyard1_7
+{Перезарядка:#space#}
+Variable_shipyard1_8
+{#space#сек.}
+Variable_shipyard1_9
+{Вес:#space#}
+Variable_shipyard1_10
+{#space#ц.}
+Variable_shipyard1_11
+{Максимальное количество экипажа с учетом перегруза:#space#}
+Variable_shipyard1_12
+{Занято:#space#}
+Variable_shipyard1_13
+{Класс}
+Variable_shipyard1_14
+{Корабль}
+Variable_shipyard1_15
+{Орудия}
+Variable_shipyard1_16
+{Дедвейт}
+Variable_shipyard1_17
+{Скорость}
+Variable_shipyard1_18
+{Команда}
+Variable_shipyard1_19
+{#space#(нужен англ. патент)}
+Variable_shipyard1_20
+{#space#(нужен исп. патент)}
+Variable_shipyard1_21
+{#space#(нужен фран. патент)}
+Variable_shipyard1_22
+{#space#(нужен гол. патент)}
+Variable_shipyard1_23
+{Заказать}
+Variable_shipyard1_24
+{Заказать}
+Variable_shipyard1_25
+{нет патента}
+Variable_shipyard1_26
+{Заказать корабль за#space#}
+Variable_shipyard1_27
+{Кроме того, для особых усовершенствований корабля мне нужно будет доставить следующие материалы:#space#}
+Variable_shipyard1_28
+{шт.,#space#}
+Variable_shipyard1_29
+{шт.,#space#}
+Variable_shipyard1_30
+{сундуков с монетами -#space#}
+Variable_shipyard1_31
+{#space#шт.}
+Variable_shipyard1_32
+{Цена корабля:#space#}
+Variable_shipyard1_33
+{Материал}
+Variable_shipyard1_34
+{Кол-во}
+Variable_shipyard1_35
+{Аванс за апгрейды:#space#}
+Variable_shipyard1_36
+{Общая стоимость:#space#}
+Variable_shipyard1_37
+{
+Мастерство корабела:#enter##enter#Ограничение улучшений:#enter##enter#Доступно улучшений:#enter##enter#Доступно апгрейдов:
+}
+Variable_shipyard2_1
+{Заказать}
+Variable_shipyard2_2
+{Время постройки:#space#}
+Variable_shipyard2_3
+{#space#д.}
+Variable_shipyard2_4
+{Тип:#space#}
+Variable_shipyard2_5
+{Калибр:#space#}
+Variable_shipyard2_6
+{Дальность:#space#}
+Variable_shipyard2_7
+{Перезарядка:#space#}
+Variable_shipyard2_8
+{#space#сек.}
+Variable_shipyard2_9
+{Вес:#space#}
+Variable_shipyard2_10
+{#space#ц.}
+Variable_shipyard2_11
+{Максимальное количество экипажа с учетом перегруза:#space#}
+Variable_shipyard2_12
+{Занято:#space#}
+Variable_shipyard2_13
+{Корабль}
+Variable_shipyard2_14
+{Класс}
+Variable_shipyard2_15
+{Орудия}
+Variable_shipyard2_16
+{Дедвейт}
+Variable_shipyard2_17
+{Скорость}
+Variable_shipyard2_18
+{Команда}
+Variable_shipyard2_19
+{Заказать корабль за#space#}
+Variable_shipyard2_20
+{Кроме того, для особых усовершенствований корабля мне нужно будет доставить следующие материалы:#space#}
+Variable_shipyard2_21
+{шт.,#space#}
+Variable_shipyard2_22
+{шт.,#space#}
+Variable_shipyard2_23
+{сундуков с монетами -#space#}
+Variable_shipyard2_24
+{#space#шт.}
+Variable_shipyard2_25
+{Цена корабля:#space#}
+Variable_shipyard2_26
+{Материал}
+Variable_shipyard2_27
+{Кол-во}
+Variable_shipyard2_28
+{Аванс за апгрейды:#space#}
+Variable_shipyard2_29
+{Общая стоимость:#space#}
+Variable_shipyard2_30
+{
+Мастерство Корабела:#enter##enter#Пределы улучшений:#enter##enter##enter##enter#Доступно улучшений:
+}
+Variable_Speak_1
+{#space#пиастров.}
+Variable_Speak_2
+{#space#пиастров}
+Variable_storage_1
+{Вес}
+Variable_storage_2
+{Пачка}
+Variable_storage_3
+{Вес}
+Variable_storage_4
+{Интерфейс перегрузки на склад или со склада на корабль}
+Variable_storage_5
+{Ввод положительного количества с клавиатуры устанавливает перегрузку товара со склада, а отрицательного (с минусом) на склад.}
+Variable_storage_6
+{Общая загруженность склада :#space#}
+Variable_storage_7
+{#space#ц.}
+Variable_storage_8
+{, пачка#space#}
+Variable_storage_9
+{Выгрузить на склад}
+Variable_storage_10
+{Загрузить в трюм}
+Variable_store_1
+{Вес}
+Variable_store_2
+{Пачка}
+Variable_store_3
+{Вес пачки}
+Variable_store_4
+{Общий вес}
+Variable_store_5
+{Фильтры}
+Variable_store_6
+{Товары корабля: показывает только те товары, что есть на вашем корабле.}
+Variable_store_7
+{Все товары: стандарт, показывает товары как на корабле, так и магазине.}
+Variable_store_8
+{Товары магазина: показывает только те товары, что есть в магазине.}
+Variable_store_9
+{Интерфейс торговли}
+Variable_store_10
+{Ввод положительного количества с клавиатуры устанавливает покупку товара, а отрицательного (с минусом) продажу.}
+Variable_store_11
+{Цвета типа товара:}
+Variable_store_12
+{- зелёный : колониальные товары}
+Variable_store_13
+{- синий : импортные товары}
+Variable_store_14
+{- красный : контрабандные товары}
+Variable_store_15
+{- коричневый : товары агрессивного спроса}
+Variable_store_16
+{Еда:#space#}
+Variable_store_17
+{д}
+Variable_store_18
+{Ром:#space#}
+Variable_store_19
+{д}
+Variable_store_20
+{, пачка#space#}
+Variable_store_21
+{Деньги#space#}
+Variable_store_22
+{, вес#space#}
+Variable_store_23
+{#space#ц}
+Variable_store_24
+{#space#ц}
+Variable_store_25
+{#space#ц}
+Variable_store_26
+{Нет казначея. Закупки некому проводить!}
+Variable_store_27
+{Нет казначея. Закупки некому проводить!}
+Variable_store_good_old_1
+{Вес}
+Variable_store_good_old_2
+{Пачка}
+Variable_store_good_old_3
+{Вес пачки}
+Variable_store_good_old_4
+{Общий вес}
+Variable_store_good_old_5
+{Корабль: '}
+Variable_store_good_old_6
+{Фильтры}
+Variable_store_good_old_7
+{Товары корабля: показывает только те товары, что есть на вашем корабле.}
+Variable_store_good_old_8
+{Все товары: стандарт, показывает товары как на корабле, так и магазине.}
+Variable_store_good_old_9
+{Товары магазина: показывает только те товары, что есть в магазине.}
+Variable_store_good_old_10
+{Интерфейс торговли}
+Variable_store_good_old_11
+{Ввод положительного количества с клавиатуры устанавливает покупку товара, а отрицательного (с минусом) продажу.}
+Variable_store_good_old_12
+{Цвета типа товара:}
+Variable_store_good_old_13
+{- зелёный : колониальные товары}
+Variable_store_good_old_14
+{- синий : импортные товары}
+Variable_store_good_old_15
+{- красный : контрабандные товары}
+Variable_store_good_old_16
+{- коричневый : товары агрессивного спроса}
+Variable_store_good_old_17
+{Еда:#space#}
+Variable_store_good_old_17.1
+{Провизия:}
+Variable_store_good_old_18
+{д}
+Variable_store_good_old_19
+{Ром:#space#}
+Variable_store_good_old_20
+{д}
+Variable_store_good_old_21
+{, пачка#space#}
+Variable_store_good_old_22
+{Продать}
+Variable_store_good_old_23
+{Золото#space#}
+Variable_store_good_old_24
+{, вес#space#}
+Variable_store_good_old_25
+{#space#ц}
+Variable_store_good_old_26
+{Купить}
+Variable_store_good_old_27
+{Золото#space#}
+Variable_store_good_old_28
+{, вес#space#}
+Variable_store_good_old_29
+{#space#ц}
+Variable_store_good_old_30
+{Нет казначея. Закупки некому проводить!}
+Variable_store_good_old_31
+{Нет казначея. Закупки некому проводить!}
+Variable_TavernWait_1
+{#space#и#space#}
+Variable_TavernWait_2
+{Часы}
+Variable_TavernWait_3
+{Минуты}
+Variable_TavernWait_4
+{Отдых}
+Variable_TavernWait_5
+{Часы}
+Variable_TavernWait_6
+{Дни}
+Variable_TavernWait_7
+{#space#и#space#}
+Variable_TavernWait_8
+{Дней:#space#}
+Variable_TavernWait_9
+{#space#и#space#}
+Variable_TavernWait_10
+{Дней:#space#}
+Variable_TavernWait_11
+{#space#и#space#}
+Variable_TavernWait_12
+{Дней:#space#}
+Variable_TavernWait_13
+{#space#часов}
+Variable_TavernWait_14
+{#space#час}
+Variable_TavernWait_15
+{#space#часа}
+Variable_TavernWait_16
+{#space#часа}
+Variable_TavernWait_17
+{#space#минут}
+Variable_TavernWait_18
+{#space#минута}
+Variable_TavernWait_19
+{#space#минуты}
+Variable_TavernWait_20
+{#space#минуты}
+Variable_TavernWait_21
+{#space#минуты}
+Variable_TavernWait_22
+{#space#минуты}
+Variable_TavernWait_23
+{#space#минуты}
+Variable_TradeBook_1
+{Нация}
+Variable_TradeBook_2
+{Город}
+Variable_TradeBook_3
+{Локация}
+Variable_TradeBook_4
+{Актуальность}
+Variable_TradeBook_5
+{Тип}
+Variable_TradeBook_6
+{Пачка}
+Variable_TradeBook_7
+{Вес пачки}
+Variable_TradeBook_8
+{Общий вес}
+Variable_TradeBook_9
+{Цвета указателя типа товара :}
+Variable_TradeBook_10
+{- зелёный : колониальные товары}
+Variable_TradeBook_11
+{- синий : импортные товары}
+Variable_TradeBook_12
+{- красный : контрабандные товары}
+Variable_TradeBook_13
+{- коричневый : товары агрессивного спроса}
+Variable_transfer_main_1
+{Кол-во}
+Variable_transfer_main_2
+{Вес}
+Variable_transfer_main_3
+{Товары}
+Variable_transfer_main_4
+{Кол-во}
+Variable_transfer_main_5
+{Вес}
+Variable_transfer_main_5.1
+{Пачка/Вес}
+Variable_transfer_main_6
+{#space#Пора сообщить ему о пяти сдавшихся посудинах.}
+Variable_transfer_main_7
+{#space#Осталась одна посудина.}
+Variable_transfer_main_8
+{#space#Осталось#space#}
+Variable_transfer_main_9
+{#space#посудины.}
+Variable_transfer_main_10
+{Победа! Корабль '}
+Variable_transfer_main_11
+{' сдался без боя. Чёрная Борода будет доволен.}
+Variable_transfer_main_11.1
+{Количество товара для перемещения (клик для ввода, ENTER для подтверждения)}
+Variable_transfer_main_12
+{Пираты на необитайке}
+Variable_transfer_main_13
+{Взрыв на вражеском корабле}
+Variable_transfer_main_14
+{Пираты на необитайке}
+Variable_transfer_main_15
+{Содержание корабля:#space#}
+Variable_transfer_main_16
+{Тип:#space#}
+Variable_transfer_main_17
+{Калибр:#space#}
+Variable_transfer_main_18
+{Дальность:#space#}
+Variable_transfer_main_19
+{Перезарядка:#space#}
+Variable_transfer_main_20
+{#space#сек.}
+Variable_transfer_main_21
+{Вес:#space#}
+Variable_transfer_main_22
+{#space#ц.}
+Variable_transfer_main_23
+{Максимальное количество экипажа с учетом перегруза:#space#}
+Variable_transfer_main_24
+{Занято:#space#}
+Variable_transfer_main_25
+{Тип:#space#}
+Variable_transfer_main_26
+{Калибр:#space#}
+Variable_transfer_main_27
+{Дальность:#space#}
+Variable_transfer_main_28
+{Перезарядка:#space#}
+Variable_transfer_main_29
+{#space#сек.}
+Variable_transfer_main_30
+{Вес:#space#}
+Variable_transfer_main_31
+{#space#ц.}
+Variable_transfer_main_32
+{Максимальное количество экипажа с учетом перегруза:#space#}
+Variable_transfer_main_33
+{Занято:#space#}
+Variable_transfer_main_34
+{, пачка#space#}
+Variable_transfer_main_35
+{Выкинуть?}
+Variable_transfer_main_36
+{Вес в трюме}
+Variable_transfer_main_37
+{Сместить капитана?}
+Variable_transfer_main_38
+{В данный момент этот капитан не может быть смещен.}
+Variable_transfer_main_39
+{Этот капитан в данный момент не может быть снят.}
+Variable_transfer_main_40
+{В эскадре героя может быть только восемь кораблей.}
+Variable_transfer_main_41.0
+{Команда#enter#мин:}
+Variable_transfer_main_41
+{, опт.#space#}
+Variable_transfer_main_42
+{, макс.#space#}
+Variable_transfer_main_43
+{Желающих перейти к нам в команду}
+Variable_transfer_main_43.1
+{Провианта на корабле:#enter#на}
+Variable_transfer_main_43.2
+{Рома на корабле:#enter#на}
+Variable_utilite_1
+{Защита#space#}
+Variable_utilite_2
+{#space#проц.}
+Variable_utilite_3
+{При стрельбе используется#space#}
+Variable_utilite_4
+{урон мин#space#}
+Variable_utilite_5
+{#space#макс#space#}
+Variable_utilite_6
+{Оружие:#space#}
+Variable_utilite_7
+{Время перезарядки#space#}
+Variable_utilite_8
+{#space#сек., точность#space#}
+Variable_utilite_9
+{При стрельбе используются:#enter#}
+Variable_utilite_10
+{урон мин#space#}
+Variable_utilite_11
+{#space#макс#space#}
+Variable_utilite_12
+{Оружие:#space#}
+Variable_utilite_13
+{Время перезарядки#space#}
+Variable_utilite_14
+{#space#сек., точность#space#}
+Variable_utilite_15
+{При стрельбе используются:#enter#}
+Variable_utilite_16
+{Для использования требуется навык 'Стрелок'.}
+Variable_utilite_17
+{Для использования требуется навык 'Мушкетер'.}
+Variable_utilite_18
+{Не требует специальных навыков.}
+Variable_utilite_19
+{Прочитано примерно#space#}
+Variable_utilite_20
+{мин#space#}
+Variable_utilite_21
+{макс#space#}
+Variable_utilite_22
+{мин#space#}
+Variable_utilite_23
+{мин#space#}
+Variable_utilite_24
+{мин#space#}
+Variable_utilite_25
+{мин#space#}
+Variable_utilite_26
+{Цена#space#}
+Variable_utilite_27
+{/ Вес}
+Variable_utilite_28
+{урон мин/макс#space#}
+Variable_dmg_x
+{Урон: x}
+Variable_overload_crew
+{Размер команды может быть больше максимума, но вызывает перегрузку жилых помещений на корабле, что вызывает ежедневную потерю морали команды. Всреднем, до 25% от оптимальной команды может быть нанято сврех неё.}
+Variable_check_cannons
+{Двойной клик или Enter по этому полю позволяет посмотреть снаряжение пушек по бортам.}
+Variable_quick_sell
+{Быстрая продажа всего: вверх/вниз стрелками по списку, Shift + вправо, Enter}
+Variable_guide_trade
+{
+Двойной щелчок мыши или Enter на строках таблицы открывает форму покупки/продажи товаров.
+Shift + влево/вправо на строках таблицы автоматически открывает форму с заданным количеством покупки/продажи до максимума.
+Ввод положительной суммы с клавиатуры устанавливает кол-во покупки товаров, а отрицательной суммы - продажу.
+Стрелки влево/вправо изменяют количество пачек, а Shift + влево/вправо - максимальное количество. Нажатие Enter на форме эквивалентно ОК, а Esc - Отмена.
+Находясь в режиме формы и перемещаясь по списку в таблице стрелками вверх/вниз, вы можете просмотреть описание товаров под курсором таблицы.
+}
+Variable_fast_transshipment
+{Быстро перегрузить все товары: вверх/вниз стрелками по списку, Shift + вправо, Enter}
+Variable_fast_take
+{Быстро взять всё: вверх/вниз стрелками по списку, Shift + вправо, Enter}
+Variable_fast_give_away
+{Быстро выгрузить всё: вверх/вниз стрелками по списку, Shift + вправо, Enter}
+Variable_game_version
+{Игра начата на версии:#enter#}
+Variable_cheats
+{#enter#Использовавшиеся читы:}
+Variable_no_cheats
+{#enter#Читов не использовалось!}
+Variable_pirate_ship_man
+{пиратский#space#}
+Variable_pirate_ship_woman
+{пиратскую#space#}
+Variable_which_on
+{, что на#space#}
+Variable_days_with_space
+{#space#дней}
+Variable_days_with_space_voc
+{#space#дня}
+Variable_couple_hours
+{несколько часов}
+Variable_check_relations_1
+{Отношения между ГГ и#space#}
+Variable_check_relations_2
+{#space#равны#space#}
+Variable_check_relations_3
+{Отношения между базовой нацией ГГ и#space#}
+Variable_check_relations_4
+{Отношения между#space#}

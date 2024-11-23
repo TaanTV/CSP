@@ -1,0 +1,6 @@
+animation = amazon.an
+
+[idle]
+loop = true 
+start_time = 1
+end_time = 720

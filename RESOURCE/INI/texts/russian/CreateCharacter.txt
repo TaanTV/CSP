@@ -1,0 +1,22 @@
+Animation
+{Анимации}
+SelectedCostume
+{Выбранный костюм}
+Default
+{обычный}
+CirassO
+{кираса 1}
+CirassTw
+{кираса 2}
+CirassTh
+{кираса 3}
+CirassFo
+{кираса 4}
+CirassFi
+{кираса 5}
+SuitO
+{обноски}
+SuitTw
+{негоциант}
+SuitTh
+{дворянин}

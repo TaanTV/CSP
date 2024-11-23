@@ -1,0 +1,118 @@
+Variable_Siege_1
+{It is rumored that local fishermen have seen a powerful#space#}
+Variable_Siege_2
+{#space#squadron is in the waters of our colony.}
+Variable_Siege_3
+{They say that#space#}
+Variable_Siege_4
+{#space#squadron that ravaged our city is still in the waters of our colony. Oh, if only there was a brave captain who would risk attacking them...}
+Variable_Siege_5
+{Didn't you hear that? In our harbor#space#}
+Variable_Siege_6
+{#space#ships are fighting with the fort. The fort can fall at any moment and then the worst will begin.}
+Variable_Siege_7
+{Today is a glorious day for#space#}
+Variable_Siege_8
+{#space#- we managed to capture such an important colony as#space#}
+Variable_Siege_9
+{! The whole#space#}
+Variable_Siege_10
+{the garrison was killed, and the fort was occupied by our troops and has already been fortified again!}
+Variable_Siege_11
+{They say that#space#}
+Variable_Siege_12
+{#space#squadron, after a long siege, captured#space#}
+Variable_Siege_13
+{#space#colony#space#}
+Variable_Siege_14
+{. Now#space#}
+Variable_Siege_15
+{#space#colony!}
+Variable_Siege_16
+{It is rumored that#space#}
+Variable_Siege_17
+{#space#our colony was viciously attacked#space#}
+Variable_Siege_18
+{#space#and captured the city!}
+Variable_Siege_19
+{Have you heard the news? Our valiant fleet has recaptured the#space#}
+Variable_Siege_20
+{#space#rich colony#space#}
+Variable_Siege_21
+{Sad news for#space#}
+Variable_Siege_22
+{#space#- we failed to defend our colony! The fort was destroyed#space#}
+Variable_Siege_23
+{#space#ships, and the city was robbed. After that, the enemy left the waters of the colony.}
+Variable_Siege_24
+{They say that#space#}
+Variable_Siege_25
+{#space#squadron, after a long siege, captured#space#}
+Variable_Siege_26
+{#space#colony#space#}
+Variable_Siege_27
+{. After the city was looted -#space#}
+Variable_Siege_28
+{#space#squadron has left the waters of the colony.}
+Variable_Siege_29
+{It is rumored that#space#}
+Variable_Siege_30
+{#space#suddenly attacked our colony#space#}
+Variable_Siege_31
+{#space#and looted the city before reinforcements arrived! Then#space#}
+Variable_Siege_32
+{#space#shamefully retreated with the loot.}
+Variable_Siege_33
+{Have you heard the news? Recently, our squadron, after a short siege of#space#}
+Variable_Siege_34
+{#space#colony#space#}
+Variable_Siege_35
+{#space#broke the resistance of the garrison and robbed a rich city! Later, however, the colony had to be abandoned. But the prey...}
+Variable_Siege_36
+{Today we celebrate the victory over#space#}
+Variable_Siege_37
+{#space#invaders - we managed to defend our colony! The enemy squadron has been sunk, and the city is no longer in danger.}
+Variable_Siege_38
+{They say that#space#}
+Variable_Siege_39
+{#space#squadron was defeated during the siege of#space#}
+Variable_Siege_40
+{#space#colony#space#}
+Variable_Siege_41
+{. The defenders turned out to be stronger.}
+Variable_Siege_42
+{It is rumored that#space#}
+Variable_Siege_43
+{#space#our colony was suddenly attacked by#space#}
+Variable_Siege_44
+{but reinforcements arrived in the city in time! All#space#}
+Variable_Siege_45
+{#space#ships were sunk.}
+Variable_Siege_46
+{There are rumors that recently our squadron, after a long siege of#space#}
+Variable_Siege_47
+{#space#colony#space#}
+Variable_Siege_48
+{, was sunk by the fort! Maybe we'll have better luck next time.}
+Variable_Siege_49
+{They say that#space#}
+Variable_Siege_50
+{#space#attacked#space#}
+Variable_Siege_51
+{#space#colony#space#}
+Variable_Siege_52
+{. The defenders of the colony are fighting desperately, but if during#space#}
+Variable_Siege_53
+{#space#no help arrives, then the garrison may surrender.}
+Variable_Siege_54
+{There are rumors that our indestructible fleet has attacked#space#}
+Variable_Siege_55
+{#space#colony#space#}
+Variable_Siege_56
+{. The enemy is desperately defending itself, but most likely the outcome of the battle will be decided in the coming#space#}
+Variable_Siege_57
+{It is rumored that#space#}
+Variable_Siege_58
+{#space#attacked our cololny#space#}
+Variable_Siege_59
+{. The defenders of the colony are bravely fighting the enemy, but they have provisions and medicines left only for#space#}

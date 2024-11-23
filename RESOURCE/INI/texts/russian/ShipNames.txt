@@ -1,0 +1,68 @@
+Variable_Quests_1
+{Дозорный}
+Variable_Quests_2
+{Чёрная Жемчужина}
+Variable_LSC_Q2Utilite_1
+{Мэри Селест}
+Variable_Quests_1
+{Дозорный}
+Variable_Quests_2
+{Красный дьявол}
+Variable_black_sails_functions_1
+{Морж}
+Variable_quests_reaction_1
+{Фаворит}
+Variable_quests_reaction_2
+{Санта Агуэда}
+Variable_quests_reaction_3
+{Ла Рошель}
+Variable_quests_reaction_4
+{Коминте}
+Variable_quests_reaction_5
+{Отчаянный}
+Variable_quests_reaction_6
+{Стремительный}
+Variable_quests_reaction_7
+{Дездечадо}
+Variable_quests_reaction_8
+{Восторженный}
+Variable_quests_reaction_9
+{Мефисто}
+Variable_quests_reaction_10
+{Везучий Тюльпан}
+Variable_reaction_functions_1
+{Синяя Птица}
+Variable_reaction_functions_2
+{Леон}
+Variable_reaction_functions_3
+{Неуловимый}
+Variable_reaction_functions_4
+{Нормандия}
+Variable_reaction_functions_5
+{Бахус}
+Variable_reaction_functions_6
+{Септима}
+Variable_reaction_functions_7
+{Мертвая голова}
+Variable_reaction_functions_8
+{Аделаида}
+Variable_reaction_functions_9
+{Аделаида}
+Variable_reaction_functions_10
+{Любовник удачи}
+Variable_whisper_line_functions_1
+{Единорог}
+Variable_whisper_line_functions_2
+{Откровение}
+Variable_whisper_line_functions_3
+{Деяние святых апостолов}
+Variable_whisper_line_functions_4
+{Евангелие}
+Variable_whisper_line_functions_5
+{Палач Иеремии}
+Variable_whisper_line_functions_6
+{Притчи}
+Variable_whisper_line_functions_7
+{Псалмы}
+Variable_whisper_line_functions_8
+{Бытие}

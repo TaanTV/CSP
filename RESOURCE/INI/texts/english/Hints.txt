@@ -1,0 +1,87 @@
+Hints_0		{To improve the survival of the ship's crew need drugs. Save no. Have at least 3 drugs per seaman}
+Hints_1		{Personal ability "Professional swordsman" gives a significant increase to the set of experience}
+Hints_2		{Penalties from deadweight for ship speed start at 70% load, and for maneuverability at 50%}
+Hints_3		{The "Weapon" product on the ship is required for boarding (1 unit per seaman), which is lost when the seamen die. Lack of weapons before the battle will significantly increase team losses}
+Hints_4		{The list of available actions triggered by the "Thoughts Out Loud" command may vary depending on the player's current location. For example, in the cabin, in the port and at the city walls}
+Hints_5		{Suits and cuirasses can be worn simultaneously, choosing what to display in priority}
+Hints_6		{Double-click on a weapon or ship in the Encyclopedia opens a window to view their 3D models in the game}
+Hints_7		{To select a specific type of ammunition for your current small arms, it is necessary to "take" in the item menu}
+Hints_8		{Equipment slots in the menu of items clickable if there is at least one item installed in the selected slot}
+Hints_9		{Many sections of the in-game interface are clickable (right mouse button), which allows you to see more information}
+Hints_10	{To change time on land, at sea or on a global map, the keys "+" and "-"}
+Hints_11	{The Treasurer allows one key in the Trade menu to perform all the necessary sales operations, but this requires setting up the purchase through a dialogue with the Treasurer or by hot key}
+Hints_12	{Signing a contract with an officer - an opportunity through dialogue with him to fix the maximum loyalty, as well as to give him half immortality. "Contract officer" instead of death loses consciousness and is injured}
+Hints_13	{When creating items in the cabin resources from chests are taken into account}
+Hints_14	{The game folder has optional mods}
+Hints_15	{The "*" on the character's portrait signales for unlimited points of abilities, both personal and ship}
+Hints_16	{Character characteristic "Power" (P) affects the speed of energy recovery}
+Hints_17	{PMCs are as brave corsairs as you are. You can interact with them in different ways. You can disable each of them by selecting a character at the beginning of the game}
+Hints_18	{When repairing a ship and guns are repaired if they require repair. Also, with guns in the hold and slots in the ship's battery, automatic installation of missing guns will be carried out}
+Hints_19	{Defeating the Flying Dutchman gives a hidden bonus to the GG's current performance. This bonus is personal and goes from ship to ship under MC control}
+Hints_20	{You can build your own colony! But first you have to complete a small quest of the architect walking the streets of Charlestown}
+Hints_21	{An apothecary can cure a wounded officer completely}
+Hints_22	{Skeleton reef - a very dangerous place at night. Without proper preparation or boarding team is better not to poke}
+Hints_23	{There are also a lot of interesting things in the control settings!}
+Hints_24	{The settings from the main menu of the game are not reset when creating a new profile. The selected settings are transferred to each new profile created}
+Hints_25	{In order to get the flag of the nation in the ship's ability, it is necessary to capture the ship of the respective nation}
+Hints_26	{To open fast transitions in the cities of a hostile nation, it is necessary to develop a personal stealth skill of up to 50 points (excluding gain from items), as well as to have a trade license}
+Hints_27	{After sailing from the City of Abandoned Ships you can return to it in 10 days}
+Hints_28	{The found chest can be hacked by lock picks. Lock picks can be found from spies or (sometimes) buy from a smuggler in a tavern}
+Hints_29	{A character with the character "Adventurer" with a certain probability survives a fatal hit, receiving a second chance and half of health}
+Hints_30	{Maps from the atlas allow you to use the rapid movement on the respective island together with the ship. To do this, you need to use the atlas through the menu items or by the hot key and click on the card}
+Hints_31	{The ability to capture colonies (player or different nations) opens after the completion of one of the national questo rulers}
+Hints_32	{Backward/left/right bounces help to avoid not only the opponent's hits, but also the shots}
+Hints_33	{If a player does not participate in the tournament round, the round can be skipped with the keys "+" or "-"}
+Hints_34	{You can re-dive into the bottom of the LSC by commanding "Thoughts aloud" while in the cabin of Mechanic on San Gabriel. Dive is possible once every two days. Vedeker must be rescued from the LSC}
+Hints_35	{You can leave captured ships drifting. This may be useful for further action with them through an exchange interface that can be invoked while aboard}
+Hints_36	{With very few sailors left on the ship, grapeshot is useless}
+Hints_37	{Character characteristic "Impression" also affects the range of visibility of events (storms, squadrons, battles, barrels, etc.) on the Global Map}
+Hints_38	{Each nation has its own unique ship variations}
+Hints_39	{The national line of pirate quests is combined with any national line. Before taking Panama, there is an opportunity to start and completely pass the new national ruler, and then - continue the pirate}
+Hints_40	{To receive the flag of the nation in the ship's abilities of the Main Hero - it is necessary to capture the ship of the respective nation}
+Hints_41	{When you open a loan shark's cell, you can move items from the ship's chests directly into it. Chests are available at the bottom of the exchange list after all characters}
+Hints_42	{The shouts of sailors on the ship during the battle are tied to the option "Citizens talk sound"}
+Hints_43	{The PMC information from the tavern can be called by pressing the "F10" key}
+Hints_44	{To improve the survival of the ship's crew need drugs. Save no. Have at least 3 drugs per seaman}
+Hints_45	{Personal ability "Professional swordsman" gives a significant increase to the set of experience}
+Hints_46	{Penalties from deadweight for ship speed start at 70% load, and for maneuverability at 50%}
+Hints_47	{The "Weapon" product on the ship is required for boarding (1 unit per seaman), which is lost when the seamen die. Lack of weapons before the battle will significantly increase team losses}
+Hints_48	{The list of available actions triggered by the "Thoughts Out Loud" command may vary depending on the player's current location. For example, in the cabin, in the port and at the city walls}
+Hints_49	{Suits and cuirasses can be worn simultaneously, choosing what to display in priority}
+Hints_50	{Double-click on a weapon or ship in the Encyclopedia opens a window to view their 3D models in the game}
+Hints_51	{To select a specific type of ammunition for your current small arms, it is necessary to "take" in the item menu}
+Hints_52	{Equipment slots in the menu of items clickable if there is at least one item installed in the selected slot}
+Hints_53	{Many sections of the in-game interface are clickable (right mouse button), which allows you to see more information}
+Hints_54	{To change time on land, at sea or on a global map, the keys "+" and "-"}
+Hints_55	{The Treasurer allows one key in the Trade menu to perform all the necessary sales operations, but this requires setting up the purchase through a dialogue with the Treasurer or by hot key}
+Hints_56	{Signing a contract with an officer - an opportunity through dialogue with him to fix the maximum loyalty, as well as to give him half immortality. "Contract officer" instead of death loses consciousness and is injured}
+Hints_57	{When creating items in the cabin resources from chests are taken into account}
+Hints_58	{The game folder has optional mods}
+Hints_59	{The "*" on the character's portrait signales for unlimited points of abilities, both personal and ship}
+Hints_60	{Character characteristic "Power" (P) affects the speed of energy recovery}
+Hints_61	{PMCs are as brave corsairs as you are. You can interact with them in different ways. You can disable each of them by selecting a character at the beginning of the game}
+Hints_62	{When repairing a ship and guns are repaired if they require repair. Also, with guns in the hold and slots in the ship's battery, automatic installation of missing guns will be carried out}
+Hints_63	{Defeating the Flying Dutchman gives a hidden bonus to the GG's current performance. This bonus is personal and goes from ship to ship under MC control}
+Hints_64	{You can build your own colony! But first you have to complete a small quest of the architect walking the streets of Charlestown}
+Hints_65	{An apothecary can cure a wounded officer completely}
+Hints_66	{Skeleton reef - a very dangerous place at night. Without proper preparation or boarding team is better not to poke}
+Hints_67	{There are also a lot of interesting things in the control settings!}
+Hints_68	{The settings from the main menu of the game are not reset when creating a new profile. The selected settings are transferred to each new profile created}
+Hints_69	{In order to get the flag of the nation in the ship's ability, it is necessary to capture the ship of the respective nation}
+Hints_70	{To open fast transitions in the cities of a hostile nation, it is necessary to develop a personal stealth skill of up to 50 points (excluding gain from items), as well as to have a trade license}
+Hints_71	{After sailing from the City of Abandoned Ships you can return to it in 10 days}
+Hints_72	{The found chest can be hacked by lock picks. Lock picks can be found from spies or (sometimes) buy from a smuggler in a tavern}
+Hints_73	{A character with the character "Adventurer" with a certain probability survives a fatal hit, receiving a second chance and half of health}
+Hints_74	{Maps from the atlas allow you to use the rapid movement on the respective island together with the ship. To do this, you need to use the atlas through the menu items or by the hot key and click on the card}
+Hints_75	{The ability to capture colonies (player or different nations) opens after the completion of one of the national questo rulers}
+Hints_76	{Backward/left/right bounces help to avoid not only the opponent's hits, but also the shots}
+Hints_77	{If a player does not participate in the tournament round, the round can be skipped with the keys "+" or "-"}
+Hints_78	{You can re-dive into the bottom of the LSC by commanding "Thoughts aloud" while in the cabin of Mechanic on San Gabriel. Dive is possible once every two days. Vedeker must be rescued from the LSC}
+Hints_79	{You can leave captured ships drifting. This may be useful for further action with them through an exchange interface that can be invoked while aboard}
+Hints_80	{With very few sailors left on the ship, grapeshot is useless}
+Hints_81	{Character characteristic "Impression" also affects the range of visibility of events (storms, squadrons, battles, barrels, etc.) on the Global Map}
+Hints_82	{Each nation has its own unique ship variations}
+Hints_83	{The national line of pirate quests is combined with any national line. Before taking Panama, there is an opportunity to start and completely pass the new national ruler, and then - continue the pirate}
+Hints_84	{To receive the flag of the nation in the ship's abilities of the Main Hero - it is necessary to capture the ship of the respective nation}
+Hints_85	{When you open a loan shark's cell, you can move items from the ship's chests directly into it. Chests are available at the bottom of the exchange list after all characters}
+Hints_86    {In ground management controls settings you can set up keys for quick equip kits}

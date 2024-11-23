@@ -1,0 +1,56 @@
+Variable_utils_1
+{There is a PMC simulation and generation of guardian ships, please wait.}
+Variable_black_sails_functions_1
+{A few days later...}
+Variable_black_sails_functions_2
+{A few days later...}
+Variable_black_sails_functions_3
+{A few days later...}
+Variable_black_sails_functions_4
+{Battle is over. Your companions are gradually coming to their senses.}
+Variable_black_sails_functions_5
+{It's been three hours.}
+Variable_quests_reaction_1
+{It's been about an hour...}
+Variable_quests_reaction_2
+{One day has passed...}
+Variable_quests_reaction_3
+{Forty minutes have passed during the service.}
+Variable_quests_reaction_4
+{Passed out...}
+Variable_quests_reaction_5
+{You found the right box}
+Variable_quests_reaction_6
+{Captain Santa Lucia's gold has been found!}
+Variable_quests_reaction_7
+{A month of severe suffering has passed, and you have been cured of the poison.}
+Variable_quests_reaction_8
+{You gave the musket to Humphrey...}
+Variable_quests_reaction_9
+{After a few hours of active libations...}
+Variable_quests_reaction_10
+{It’s been hours...}
+Variable_quests_reaction_11
+{One hour has passed...}
+Variable_quests_reaction_12
+{One day has passed...}
+Variable_quests_reaction_13
+{It’s been a few days...}
+Variable_reaction_functions_1
+{The morning has come...}
+Variable_reaction_functions_2
+{Governor Steed has not forgiven Peter Blood}
+Variable_reaction_functions_3
+{The next day...}
+Variable_reaction_functions_4
+{The next morning...}
+Variable_reaction_functions_5
+{It's been eight hours...}
+Variable_reaction_functions_6
+{It's been an hour...}
+Variable_reaction_functions_7
+{You've reached the wrecked ship}
+Variable_Treasure_1
+{It's been#space#}
+Variable_Treasure_2
+{#space#days.}

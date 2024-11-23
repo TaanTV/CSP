@@ -1,0 +1,9 @@
+land_commands {Action commands on the ground.}
+Dialog_window {Dialog window.}
+sea_minimap {Navigation mini map.}
+ship_commands {Commands to control your ship and the ships of your companions.}
+sea_aim {Sight of firing from the ship's cannons.}
+WorldMap_Date_Clock	{Date and time of day indicator in the map.}
+WorldMap_Compas {Compass in the map.}
+fast_commands {Current command is in quick access.}
+alarm_indicator {Alarm indicator.}

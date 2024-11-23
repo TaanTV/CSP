@@ -1,0 +1,100 @@
+Variable_BattleInterface_1
+{Exit to the map is closed.}
+Variable_BattleInterface_2
+{Send a boat}
+Variable_BattleInterface_3
+{Cabin}
+Variable_BattleInterface_4
+{Release the mine}
+Variable_BattleInterface_5
+{#space#port}
+Variable_BattleInterfaceUpdates_1
+{ERROR: MC without a ship}
+Variable_ispyglass_1
+{Mary Celeste}
+Variable_ispyglass_2
+{Cannons 8lbs}
+Variable_ispyglass_3
+{Cannons 10lbs}
+Variable_ispyglass_4
+{Cannons 12lbs}
+Variable_ispyglass_5
+{Cannons 16lbs}
+Variable_ispyglass_6
+{Cannons 20lbs}
+Variable_ispyglass_7
+{Cannons 24lbs}
+Variable_ispyglass_8
+{Cannons 28lbs}
+Variable_ispyglass_9
+{Cannons 32lbs}
+Variable_ispyglass_10
+{Cannons 36lbs}
+Variable_ispyglass_11
+{Cannons 42lbs}
+Variable_ispyglass_12
+{Cannons 48lbs}
+Variable_ispyglass_13
+{Culverins 8lbs}
+Variable_ispyglass_14
+{Culverins 10lbs}
+Variable_ispyglass_15
+{Culverins 12lbs}
+Variable_ispyglass_16
+{Culverins 16lbs}
+Variable_ispyglass_17
+{Culverins 20lbs}
+Variable_ispyglass_18
+{Culverins 24lbs}
+Variable_ispyglass_19
+{Culverins 28lbs}
+Variable_ispyglass_20
+{Culverins 32lbs}
+Variable_ispyglass_21
+{Culverins 36lbs}
+Variable_ispyglass_22
+{No armor}
+Variable_ispyglass_23
+{Nation:#space#}
+Variable_ispyglass_24
+{Gender:#space#}
+Variable_ispyglass_25
+{Group:#space#}
+Variable_ispyglass_26
+{Template:#space#}
+Variable_ispyglass_27
+{State:#space#}
+Variable_LandInterface_1
+{Body search}
+Variable_LandInterface_2
+{Thoughts out loud}
+Variable_LandInterface_3
+{Crafting}
+Variable_LandInterface_4
+{Cayman}
+Variable_LandInterface_5
+{Cayman}
+Variable_LandInterface_6
+{For a fast travel, use the buttons:}
+Variable_LandInterface_7
+{1-Port, 2-Store, 3-Shipyard, 4-Tavern}
+Variable_LandInterface_8
+{5-Residence, 6-Usurer, 7-Church}
+Variable_LandInterface_9
+{8-Brothel, 9-Port Authority, 0-Prison}
+Variable_LandInterface_10
+{There is a corpse to search}
+Variable_LandInterface_11
+{Graveyard}
+Variable_LandInterface_12
+{Plantation Manager's House}
+Variable_LandInterface_13
+{Head's of the security base house}
+Variable_LandInterface_14
+{Office of DWIC}
+Variable_LandInterface_15
+{Plantation Manager's House}
+Variable_LandInterface_16
+{Inquisition}
+Variable_LandInterface_17
+{Fernando Diffindur}

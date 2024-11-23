@@ -1,0 +1,135 @@
+newline{}
+Balls {Balls}
+Balls_descr {Balls are the cheapest, simplest and most reliable type of ammunition, suitable for almost all purposes, both defensive and attacking fire. However, it is most advisable to use the balls to fire at the hull of the ship and to disable fortifications. Damage: hull - #f.2DamageHull#, sails - #f.2DamageRig#, crew - #f.2DamageCrew#}
+Grapes {Grapeshot}
+Grapes_descr {Grapeshot - small metal balls that fall into the muzzle of a gun and, when hit, cause numerous bruises and can even kill a person. But due to the low weight, the accuracy and range of the shot is low. Therefore, the most rational method of using grapeshot is during the approach to the ship, in order to board it. Deals damage to: hull - #f.2DamageHull#, sails - #f.2DamageRig#, crew - #f.2DamageCrew#}
+Knippels {Knippels}
+Knippels_descr	{Knippels are two iron balls connected by a chain or pole, designed to destroy the enemy's sailing armament. In flight, the knippels rotate, which is why they tightly twist onto the masts, knocking down the wood layer by layer, and break off the rigging with the sails. Damage: hull - #f.2DamageHull#, sails - #f.2DamageRig#, crew - #f.2DamageCrew#}
+Bombs {Bombs}
+Bombs_descr {A bomb is the most expensive and most destructive projectile, which is a cast-iron ball with gunpowder inside, into which a wick is stuck. After firing, the bomb explodes, hitting the team with shrapnel, setting fire to the rigging and breaking the hull with a shock wave. Damage: hull - #f.2DamageHull#, sails - #f.2DamageRig#, crew - #f.2DamageCrew#}
+Powder			{Gunpowder}
+Powder_descr {Invented by the Chinese, gunpowder is needed to fire naval cannons. Carefully monitor the availability in the hold and regularly replenish its stock, because without it the cannons will be silent like fish and will not make a single volley.}
+Food			{Food}
+Food_descr {These bags and barrels contain everything necessary to feed the crew and transported slaves during the voyage: fish, meat, crackers, fresh water. The lack of food on board leads to starvation, death of the crew and a sharp drop in morale. Consumption: 1ts per 10 sailors or 20 slaves per day.}
+Weapon			{Weapon}
+Weapon_descr	{From daggers to ten-kilogram axes, from pistols to muskets, weapon are the most valuable ammunition for the ship's crew. The lack of weapon from part of the team at the time of boarding leads to an increase in your losses. At the same time, the death of the sailors themselves leads to a decrease in weapon stocks. That's our way of life, my friend!}
+Medicament {Medicines}
+Medicament_descr{Jars, flasks, powders, bandages, lotions are a necessary kit for the treatment of almost any disease. Without them, a sailor can die even from an abrasion. Having a ship on board will help save the wounded in battle and the sick during the voyage.}
+Sailcloth		{Canvas}
+Sailcloth_descr {Made from flax native to the islands of the archipelago, this thick, dense fabric is suitable for sewing anything from shirts and camisoles to sails. It is used to repair sails.}
+Planks {Planks}
+Planks_descr {Up to the 18th and 19th century, almost every ship's hull consisted entirely of wood, so planks sawn from dry logs do not lie idle for a long time. The planks are needed to repair the hull.}
+Chocolate {Cocoa}
+Chocolate_descr {Humble cocoa palm is one of the most significant discoveries in the Caribbean archipelago. Chocolate, so appreciated by noble ladies for its original sweet taste, began to be made from its fruits. You can make a considerable profit by clogging the hold with several hundredweight of this goods.}
+Coffee {Coffee}
+Coffee_descr {Due to its exotic taste, pleasant aroma and invigorating effect, coffee quickly gained popularity. Despite all the difficulties of its manufacture, coffee production is growing every year, responding to the demands of continental Europe.}
+Tobacco {Tobacco}
+Tobacco_descr	{Ground fragrant tobacco leaves collected from the plains of Main, in a compartment with a pipe carved from wood, fill sailors with unimaginable pleasure, so smoking is firmly entrenched in the Caribbean archipelago. You don't even have to explain how valuable tobacco is nowadays.}
+Sugar {Sugar}
+Sugar_descr		{After the appearance of cane plantations in the New World, a new variety of sugar was discovered. Caribbean sugar may not be as good as beet sugar, but it is much cheaper, and low shipping requirements have allowed it to be the most exported commodity to Europe.}
+Wheat {Wheat}
+Wheat_descr {In the fertile lands of the New World, wheat yields three crops a year. Flour from wheat grown here is suitable for baking the most rich and airy buns and pies. Recently, the wheat trade has turned out to be quite profitable for merchants.}
+Wine			{Wine}
+Wine_descr {Colonists' attempts to grow grapes in the fertile lands of the New World were crowned with success. Now exported wine is valued on an equal basis with French and Portuguese. Although it lacks the subtle, delicate taste found in European wines, it has a strong pleasant aroma and strength.}
+Rum {Rum}
+Rum_descr {Strong, fragrant and intoxicating rum not only amuses and warms, but also raises morale! Rum, unlike wine and ale, does not spoil, and is an excellent preventive remedy for scurvy and other ailments. No sailor can last long without it, so a lack of rum on a long voyage can lead to mutiny.}
+Ale {Ale}
+Ale_descr {A weak alcoholic drink brewed from malt and hops. Although ale does not taste like many other alcohol, but because of its price, it has earned the title of one of the most popular drinks in the Caribbean archipelago.}
+Cotton {Cotton}
+Cotton_descr {Cotton is the most popular raw material for fabric production. Growing cotton is one of the hardest jobs, so slaves are constantly required on his plantation. The exact scale of slavery is unknown, but it is safe to say that cotton is its foundation!}
+Linen			{Canvas}
+Linen_descr {A smooth linen or cotton fabric, each thread of the base of which is intertwined, forming crackling patterns. Household items and interior items are usually sewn from it: towels, carpets, blankets, etc. The canvas perfectly leaves the shelves of many stores.}
+Leather			{Leather}
+Leather_descr {Genuine leather from cured animal skins is used to make a wide variety of goods - belts, shoes, etc. It is also worth noting that you can often find smuggled crocodile and even human skin between the layers!}
+Silk {Silk}
+Silk_descr {A thin, lightweight and very expensive fabric, the secret of which has been kept in China for 2000 years! You can thread it even through the thinnest holes, this fabric is so unique. However, the Europeans figured out the secret and launched production in a New World. It happened not so long ago, so silk is still being bought at astronomical prices!}
+Clothes			{Clothes}
+Clothes_descr {Coarse canvas clothing. It is unsightly, but still widespread among the population of distant colonies due to its strength, which is simply necessary in such a climate and saves from ferocious insects.}
+Ebony {Ebony}
+Ebony_descr {Expensive and heavy ebony is highly appreciated for its hardness, fire resistance and exotic color. It was often used to make furniture for rich and noble gentlemen, as well as to carve sculptures and decorations. Thanks to all this, the trade in ebony is a very profitable business, although it is quite difficult to find a ship that can carry such a heavy cargo.}
+Mahogany		{Mahogany}
+Mahogany_descr {Very expensive and durable wood used to make expensive furniture. Mahogany is highly appreciated for its uniqueness and beauty. It does not rot, does not warp and is difficult to set on fire. Although rare, it was sometimes used for the manufacture of ship hulls.}
+Sandal			{Sandal}
+Sandal_descr	{One of the valuable tree species cut down from the forests of the New World. Although it is found more often than the same red or black wood, however, this did not prevent the colonists from destroying entire peoples, just for the sake of possessing it.}
+Cinnamon {Cinnamon}
+Cinnamon_descr	{Dried bark of laurel trees, used as a spice. It got its value because of its narrow habitat. Unfortunately, you won't earn much on it.}
+Copra			{Copra}
+Copra_descr {Crushed and dried coconut fruit seeds. Copra is used to make coconut oil, and cake is used for livestock feed. It is not particularly valuable, but no pasture can do without it.}
+Paprika {Paprika}
+Paprika_descr {Sweet pepper packed in grids is an ingredient in many salads. It gives the dishes a piquant taste and smells nice when fried. Strong Caribbean pepper is widely appreciated in European countries.}
+Fruits {Fruits}
+Fruits_descr {Upon arrival in the New World, Europeans discovered a great variety of plants whose fruits are suitable for food or used as a delicacy - mangoes, lemons, avocados, etc. They were immediately sent to the shelves in Europe, including because of the special vitamin composition that many citizens had not previously received.}
+Oil {Oil}
+Oil_descr {Oil is used to prepare many different dishes, giving them a pleasant taste and aroma. However, tropical oil, Shea butter, and other varieties promoted in Europe are in fact often ordinary olive oil, known since the time of ancient Greece. Now you will not find this kind of deception, but the price has not returned to the previous one.}
+Brick {Bricks}
+Brick_descr {Large building blocks made of clay and stones. They are used for the construction of forts and city buildings. They can be considered one of the most common cargoes in the Caribbean, but you will not be able to make money on this business.}
+Slaves {Slaves}
+Slaves_descr {A live goods that is in great demand in the New World. Usually, Negroes brought from Africa or captured sailors of enemy ships become slaves. Slave labor is the basis of the labor force of the European settlements of the New World. Although the sale of slaves is illegal according to the laws, you can make great money in slave markets.}
+Gold {Gold}
+Gold_descr {Crude gold ore mined in the mines of the New World, from which gold bars are then smelted for minting coins and making various goods. Capturing a ship with such a cargo on board is the dream of any captain.}
+Silver			{Silver}
+Silver_descr {Crude silver ore mined in the mines of the New World, from which silver ingots are then smelted for minting coins and making various goods. The bulk of the silver is mined in a place known as the "Silver Mountain", located near Potosi.}
+Iron {Iron}
+Iron_descr {Crude iron ore is mined in special mines and in the few mines of the New World. It is used for smelting weapon and household items. If you organize your own production, you can become rich!}
+Tools {Tools}
+Tools_descr {Hoes, shovels, picks, and other tools that significantly improve the quality of work on plantations. Frankly speaking, the demand is quite low, but the mines of the New World are constantly in need of them.}
+Cannon_8 {8-pounder cannons}
+Cannon_8_descr {The smallest, but lightest weapon. Only small cannonballs, bombs, grapeshot, or knippels are placed in such a cannon, and with the help of a handful of black smoky powder, you can send this good towards the enemy. Such cannons are often mounted on most small vessels.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_10 {10 pound cannons}
+Cannon_10_descr {Small but light cannon. Only small cannonballs, bombs, grapeshot, or knippels can be placed in such a cannon, and with the help of a handful of black smoky powder, you can send this good towards the enemy. Such cannons are often mounted on most small vessels.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_12 {12-pounder cannons}
+Cannon_12_descr {A relatively small caliber, providing ships with good combat characteristics. A ball, bomb, grapeshot, or knippel is placed in such a cannon, and with the help of black smoky powder, shells can be delivered to the enemy. It is widely used on small vessels.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_16 {16-pounder cannons}
+Cannon_16_descr {Medium-caliber cannons that pose a threat to the enemy. They are widely used on small and medium-sized merchant ships due to their sufficient range and power with relatively low weight.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_20 {20 pound cannons}
+Cannon_20_descr {Medium-caliber cannons that pose a threat to the enemy. They are widely used on medium-sized merchant ships due to their sufficient range and power with relatively low weight.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_24 {24 pound cannons}
+Cannon_24_descr	{A transitional caliber, which is the golden mean between slaughter and complexity of care. It is found en masse on frigates, corvettes and military modifications of brigs.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_28 {28-pounder cannons}
+Cannon_28_descr	{A serious weapon for serious battles. A single broadside shot can turn luggers and most sloops to splinters. The high accuracy and firing range attracts captains to install them on their ships, so 28-pounders are the main caliber of most pre-line ships.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_32 {32-pounder cannons}
+Cannon_32_descr {A huge weapon for causing great damage. It is used to sink military vessels and bomb fortifications. It is very difficult to maintain.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_36 {36-pound cannons}
+Cannon_36_descr	{The most powerful weapon, weighing almost two tons. It can be loaded with a ball with a diameter of two human heads, which penetrates through the hull and flies a few more meters. It is used to sink battleships of 1-2 ranks and destroy forts.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_42 {42-pound cannons}
+Cannon_42_descr	{Even the bottom with a copper lining penetrates through, and the sailors are left without ear membranes at the end of the voyage. Comments are unnecessary.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Cannon_48 {48-pound cannons}
+Cannon_48_descr {Fiend of Hell. Not every crane can even lift this unit. It is used for the most part as a museum exhibit or on heavily reinforced fortifications.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_8 {8 pound culverins}
+Culverine_8_descr{The smallest, but lightest weapon with a long barrel. Only small cannonballs, bombs, grapeshot, or knippels can be placed in such a cannon, and with the help of a handful of black smoky powder, you can send this good towards the enemy. Such cannons are often installed on most small and merchant ships.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_10 {10 pound culverins}
+Culverine_10_descr{A small but light gun with a long barrel. Only small cannonballs, bombs, grapeshot, or knippels are placed in such a cannon, and with the help of a handful of black smoky powder, you can send this good towards the enemy. Such cannons are installed on most small vessels.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_12 {12 pound culverins}
+Culverine_12_descr{A relatively small caliber that provides ships with good combat characteristics. A ball, bomb, grapeshot, or knippel is placed in such a gun, and with the help of black smoky powder, shells can be delivered to the enemy.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_16 {16 pound culverins}
+Culverine_16_descr {Medium-caliber cannons that pose a threat to the enemy. They are widely used on small and medium-sized merchant ships due to their good range and power with relatively low weight.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_20 {20 pound culverins}
+Culverine_20_descr	{A transitional gauge, which is the golden mean between price and quality. They allow you to keep the enemy at a distance. It is found en masse on corvettes and military modifications of brigs.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_24 {24 pound culverins}
+Culverine_24_descr	{A transitional gauge, which is the golden mean between price and quality. They allow you to keep the enemy at a distance. It is found en masse on frigates and corvettes.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_28 {28 pound culverins}
+Culverine_28_descr	{A serious weapon for serious battles. A single broadside shot can turn luggers and most sloops to splinters. The length of the barrel makes it difficult to reload, but it gives an advantage in the range of damage - some sailors do not even see getting into the water at maximum range. Therefore, 28-pounders are the main caliber of most pre-line ships.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_32 {32 pound culverins}
+Culverine_32_descr {A gun that fits a man without a head, and an unexpected shot can stun a passing sailor nearby, is designed to destroy most ships in its path. A dozen jung can't even move one cannon. The one who fired first is right.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}
+Culverine_36 {36 pound culverins}
+Culverine_36_descr {The largest culverin from which you can fire effectively per kilometer. You can charge a ball with a diameter of two human heads into it. The culverin allows you to compete in firing range even with a fort standing on a hill.
+Range - #dFireRange#, damage - x#f.1DamageMultiply#, recharge - #dReloadTime# sec.}

@@ -1,0 +1,4125 @@
+Variable_repair
+{% per day, consumption:#space#}
+Variable_quest_table_quest
+{Quest}
+Variable_quest_table_desc
+{Description}
+Variable_quest_table_rank
+{Rank}
+Variable_quest_table_spec
+{Special conditions}
+Variable_quest_table_complete
+{Complete}
+Variable_badwind_short
+{BadW}
+Variable_ship_spec
+{Spc}
+Variable_specType_Trade
+{M}
+Variable_specType_War
+{W}
+Variable_specType_Universal
+{U}
+Variable_specType_Trade_S
+{Merc}
+Variable_specType_War_S
+{War}
+Variable_specType_Universal_S
+{Univ}
+Variable_AcademyLand_1
+{Type of training}
+Variable_AcademyLand_2
+{Capture of the fort from the land}
+Variable_AcademyLand_3
+{Wall to wall}
+Variable_AcademyLand_4
+{One on one}
+Variable_AcademyLand_5
+{Number of allies:#space#}
+Variable_AcademyLand_6
+{Number of opponents:#space#}
+Variable_AcademyLand_7
+{Attacking side}
+Variable_AcademyLand_8
+{On a broken building}
+Variable_AcademyLand_9
+{protecting side}
+Variable_AcademyLand_10
+{Near the broken building}
+Variable_AcademyLand_11
+{Equipment}
+Variable_AcademyLand_12
+{Opponent's parameters}
+Variable_AcademyLand_13
+{Rank:#space#}
+Variable_AcademyLand_14
+{Approximate number of lives:#space#}
+Variable_AcademyLand_15
+{Approximate amount of energy:#space#}
+Variable_AcademyLand_16
+{Price:#space#}
+Variable_AcademyLand_17
+{Weak opponent}
+Variable_AcademyLand_18
+{An equal opponent}
+Variable_AcademyLand_19
+{A strong opponent}
+Variable_AcademyLand_20
+{Ban elixirs}
+Variable_AcademyLand_21
+{Allow elixirs}
+Variable_AcademyLand_22
+{Ban food}
+Variable_AcademyLand_23
+{Allow food}
+Variable_Arena_1
+{Type of competition}
+Variable_Arena_2
+{Your gold:#space#}
+Variable_Arena_2.1
+{Min. / max. bet:}
+Variable_Arena_3
+{Your bet is:#space#}
+Variable_Arena_4
+{Place a bet:#space#}
+Variable_Arena_5
+{bet}
+Variable_Arena_6
+{Participation fee:#space#}
+Variable_Arena_7
+{Your gold:#space#}
+Variable_Arena_8
+{Estimated winnings:#space#}
+Variable_Arena_9
+{piastres}
+Variable_Arena_10
+{Final}
+Variable_Arena_11
+{There are no tournaments yet.}
+Variable_Arena_12
+{Prize fund:#space#}
+Variable_Arena_13
+{Participation fee:#space#}
+Variable_Arena_14
+{Your money:#space#}
+Variable_Arena_15
+{Your gold:#space#}
+Variable_Arena_16
+{Your bet is:#space#}
+Variable_Arena_17
+{Place a bet:#space#}
+Variable_Arena_18
+{Equipment}
+Variable_Arena_19
+{Tournament}
+Variable_Arena_20
+{Final}
+Variable_Arena_21
+{Duel}
+Variable_Arena_22
+{Monster stages}
+Variable_Arena_23
+{Tournament}
+Variable_Arena_24
+{Betting}
+Variable_Arena_25
+{First duel}
+Variable_Arena_26
+{Second duel}
+Variable_Arena_27
+{Third duel}
+Variable_Arena_28
+{piastres}
+Variable_Arena_29
+{Weapon selected for the tournament:#space#}
+Variable_AttackMessage_1
+{Urgent message}
+Variable_AttackMessage_2
+{Cayman}
+Variable_AttackMessage_3
+{Captain}
+Variable_AttackMessage_4
+{disturbing news came from the colony#space#}
+Variable_AttackMessage_5
+{A mutiny is being prepared in your colony. According to the information sent from the colony, the garrison will be able to hold out.}
+Variable_AttackMessage_6
+{Your colony is expected to be attacked from land. According to the information sent from the colony, the garrison will be able to hold out.}
+Variable_AttackMessage_7
+{The colony is expected to be attacked by a squadron under the flag of#space#}
+Variable_AttackMessage_8
+{#space#. According to the information received, the guards will be able to hold out#space#}
+Variable_AttackMessage_9
+{A mutiny is being prepared in your mines. According to the information sent, the garrison will be able to hold out.}
+Variable_AttackMessage_10
+{An attack is expected on your mines. According to the information sent, the garrison will be able to hold out.}
+Variable_AttackMessage_11
+{A mutiny is being prepared on your plantation. According to the information sent, the garrison will be able to hold out.#space#}
+Variable_AttackMessage_12
+{The rebellion in your colony has been suppressed.}
+Variable_AttackMessage_13
+{The rebels managed to break the resistance of the colony's garrison.}
+Variable_AttackMessage_14
+{Good news has come from the colony! The attack organized by the enemy has been repulsed!}
+Variable_AttackMessage_15
+{Bad news has come from the colony... The colony was unable to defend itself and was looted.}
+Variable_AttackMessage_16
+{Great news has been sent from the colony! With the joint efforts of the colony's guards, they managed to fight back against the damned#space#}
+Variable_AttackMessage_17
+{The bad news came from the colony. The attack committed#space#}
+Variable_AttackMessage_18
+{, failed to resist. The colony was looted.}
+Variable_AttackMessage_19
+{The rebellion at your mines has been suppressed.}
+Variable_AttackMessage_20
+{The slaves broke the resistance of the garrison of the mines and fled, simultaneously taking food, medicines and mined ore.}
+Variable_AttackMessage_21
+{Good news has come from the colony! The attack organized by the enemy on the mines has been repulsed!}
+Variable_AttackMessage_22
+{Bad news has come from the colony... The garrison defending the mines could not put up a decent resistance. The mines were looted.}
+Variable_AttackMessage_23
+{The rebellion on your plantation has been suppressed.}
+Variable_AttackMessage_24
+{The slaves broke the resistance of the garrison and fled, simultaneously taking food, medicines and mined goods.}
+Variable_AttackMessage_25
+{A rebellion has broken out in your colony. Due to the lack of the necessary garrison, the rebels celebrated the victory.}
+Variable_AttackMessage_26
+{Your colony has been attacked from land. Due to the lack of the necessary garrison, the attackers easily took the colony by battle and robbed it.}
+Variable_AttackMessage_27
+{The colony was attacked by a squadron under the flag of#space#}
+Variable_AttackMessage_28
+{#space#. Due to the lack of decent protection of the coastline and the garrison, the squadron robbered the colony.}
+Variable_AttackMessage_29
+{A mutiny has broken out in your mines. Due to the lack of the necessary garrison, the rebels celebrated the victory and fled.}
+Variable_AttackMessage_30
+{Your mines have been attacked. Due to the lack of the necessary garrison, the attackers easily took the mines by battle and looted them.}
+Variable_AttackMessage_31
+{A mutiny broke out on your plantation. Due to the lack of the necessary garrison, the rebels celebrated the victory and fled.}
+Variable_boal_cards_1
+{Wins:#space#}
+Variable_boal_cards_2
+{#space#Defeats:#space#}
+Variable_boal_cards_2.1
+{Earned:#space#}
+Variable_boal_cards_2.1.1
+{Lost:#space#}
+Variable_boal_cards_2.2
+{Card's summ:#space#}
+Variable_boal_cards_3
+{Did you run out of money? Poor guy :}
+Variable_boal_cards_4
+{I'm broke!!! That's not a problem!}
+Variable_boal_cards_5
+{Opening up!!!}
+Variable_boal_cards_6
+{Okay, now I need a card.}
+Variable_boal_cards_7
+{Now you have the card.}
+Variable_boal_cards_8
+{Make a bet!}
+Variable_boal_cards_9
+{Your move!}
+Variable_boal_cards_10
+{Come on, don't pull the cat's tail...}
+Variable_boal_cards_11
+{Take the card for yourself! Don't delay!}
+Variable_boal_cards_12
+{Now I need a card.}
+Variable_boal_cards_13
+{I'm putting down a coin!}
+Variable_boal_cards_14
+{My move!}
+Variable_boal_cards_15
+{Let's see what kind of card is there...}
+Variable_boal_cards_16
+{Let's see what kind of card is there...}
+Variable_boal_cards_17
+{PEEPING AT THE CARD:#space#}
+Variable_boal_cards_26
+{Ha! You've got TOO MUCH! I won}
+Variable_boal_cards_27
+{}
+Variable_boal_cards_28
+{I HAVE TOO MUCH! You've won.}
+Variable_boal_cards_29
+{}
+Variable_boal_cards_30
+{Shall we play again?}
+Variable_boal_cards_31
+{One more time?}
+Variable_boal_cards_32
+{That's it, I've had enough!}
+Variable_boal_cards_33
+{That's enough for me. Opening up!}
+Variable_boal_cards_34
+{Now you're on your own! That's enough for me.}
+Variable_boal_cards_35
+{Deal cards.#space#}
+Variable_boal_cards_36
+{Make bets.}
+Variable_boal_cards_37
+{You won}
+Variable_boal_cards_38
+{}
+Variable_boal_cards_39
+{. You have#space#}
+Variable_boal_cards_40
+{, I have#space#}
+Variable_boal_cards_41
+{Luck is on my side. I have#space#}
+Variable_boal_cards_42
+{, you have#space#}
+Variable_boal_cards_43
+{. I won}
+Variable_boal_cards_44
+{}
+Variable_boal_cards_45
+{Shall we play again?}
+Variable_boal_cards_46
+{One more time?}
+Variable_boal_cards_47
+{That's it, I've had enough!}
+Variable_boal_cards_48
+{Shall we continue?}
+Variable_boal_cards_49
+{Okay, you've won. The sword is yours.}
+Variable_boal_cards_50
+{Ha ha ha! You should have learned to play first, girl. Give me my money here.}
+Variable_boal_cards_51
+{That's it, enough games for today.}
+Variable_boal_cards_52
+{Shall we continue?}
+Variable_boal_cards_53
+{Okay, you've won.}
+Variable_boal_cards_54
+{}
+Variable_boal_cards_55
+{#space#3 times. Impressive luck!}
+Variable_boal_cards_56
+{Ha ha ha! You obviously need to learn more.}
+Variable_boal_cards_57
+{That's it, enough games for today.}
+Variable_boal_dice_1
+{Wins:#space#}
+Variable_boal_dice_2
+{#space#Defeats:#space#}
+Variable_boal_dice_3
+{Earned:#space#}
+Variable_boal_dice_4
+{Lost:#space#}
+Variable_boal_dice_5
+{#space#Games:#space#}
+Variable_boal_dice_8
+{I'm the first}
+Variable_boal_dice_9
+{}
+Variable_boal_dice_10
+{}
+Variable_boal_dice_11
+{You're the first}
+Variable_boal_dice_12
+{}
+Variable_boal_dice_13
+{}
+Variable_boal_dice_14
+{. Go, don't delay.}
+Variable_boal_dice_15
+{Let's start the game.#space#}
+Variable_boal_dice_16
+{Make bets.}
+Variable_boal_dice_17
+{We continue the game.#space#}
+Variable_boal_dice_18
+{Make bets.}
+Variable_boal_dice_19
+{Now it's your turn. Go, don't delay.}
+Variable_boal_dice_20
+{Make your choice. Decide what to transfer.}
+Variable_boal_dice_21
+{Okay, now it's my turn.}
+Variable_boal_dice_22
+{So, wait... I'm deciding what to transfer.}
+Variable_boal_dice_23
+{I have#space#}
+Variable_boal_dice_24
+{. You have#space#}
+Variable_boal_dice_25
+{Ha! Yes, we have a draw!! Let's continue.}
+Variable_boal_dice_26
+{I won}
+Variable_boal_dice_27
+{}
+Variable_boal_dice_28
+{You won}
+Variable_boal_dice_29
+{}
+Variable_boal_dice_30
+{You're broke, I won}
+Variable_boal_dice_31
+{}
+Variable_boal_dice_32
+{That's it, I've had enough!}
+Variable_boal_dice_33
+{I'm broke, you've won}
+Variable_boal_dice_34
+{}
+Variable_boal_dice_35
+{That's it, I've had enough!}
+Variable_boal_dice_36
+{Let's continue.}
+Variable_boal_dice_37
+{So be it, I'll go with you.}
+Variable_boal_dice_38
+{You're not lucky. So it's not our destiny to walk together.}
+Variable_boal_dice_39
+{That's it, I've played enough.}
+Variable_boal_dice_40
+{One more time?}
+Variable_boal_dice_41
+{That's it, I've had enough!}
+Variable_boal_dice_42
+{there is nothing}
+Variable_boal_dice_43
+{poker}
+Variable_boal_dice_44
+{street}
+Variable_boal_dice_45
+{four}
+Variable_boal_dice_46
+{full}
+Variable_boal_dice_47
+{triad}
+Variable_boal_dice_48
+{two pair}
+Variable_boal_dice_49
+{couple}
+Variable_boal_dice_50
+{I'll roll one die...}
+Variable_boal_dice_51
+{I'll transfer these...}
+Variable_boal_dice_52
+{I'll transfer these...}
+Variable_boal_dice_53
+{I won't throw it over.}
+Variable_Cannons_1
+{Wt.}
+Variable_Cannons_2
+{Wt. pc.}
+Variable_Cannons_3
+{Dist.}
+Variable_Cannons_4
+{Dmg}
+Variable_Cannons_5
+{Reload}
+Variable_Cannons_6
+{Ship: '}
+Variable_Cannons_7
+{Trading Interface}
+Variable_Cannons_9
+{Colors: red - smuggling, blue - import, green - export}
+Variable_Cannons_10
+{Can.#space#}
+Variable_Cannons_11
+{Cul.#space#}
+Variable_Cannons_12
+{Special#space#}
+Variable_Cannons_13
+{#space#lbs}
+Variable_Cannons_14
+{, pack#space#}
+Variable_Cannons_15
+{Sell}
+Variable_Cannons_16
+{Gold#space#}
+Variable_Cannons_17
+{, weight#space#}
+Variable_Cannons_18
+{c.}
+Variable_Cannons_19
+{Buy}
+Variable_Cannons_20
+{Gold#space#}
+Variable_Cannons_21
+{, weight#space#}
+Variable_Cannons_22
+{c.}
+Variable_character_1
+{Speed}
+Variable_character_2
+{from skill and abilities}
+Variable_character_3
+{from the sailors}
+Variable_character_4
+{from the sails}
+Variable_character_5
+{from the hull}
+Variable_character_6
+{from the cargo}
+Variable_character_7
+{from bottom's fouling}
+Variable_character_8
+{from the atlas of maps}
+Variable_character_9
+{Balls}
+Variable_character_10
+{Grapeshot}
+Variable_character_11
+{Knippels}
+Variable_character_12
+{Bombs}
+Variable_character_13
+{Slasher}
+Variable_character_14
+{Merchant}
+Variable_character_15
+{Swordsman}
+Variable_character_16
+{Adventurer}
+Variable_character_17
+{Buccaneer}
+Variable_character_18
+{Secret Agent}
+Variable_character_19
+{Sea Wolf}
+Variable_character_20
+{no rank}
+Variable_character_21
+{#space#units}
+Variable_character_22
+{#space#sec.}
+Variable_character_23
+{#space#sec.}
+Variable_character_24
+{#space#sec.}
+Variable_character_25
+{#space#sec.}
+Variable_character_26
+{#space#sec.}
+Variable_character_27
+{#space#sec.}
+Variable_character_28
+{#space#sec.}
+Variable_character_29
+{#space#sec.}
+Variable_character_30
+{#space#sec.}
+Variable_character_31
+{Personal Abilities}
+Variable_character_32
+{Ship Abilities}
+Variable_character_33
+{Characteristics}
+Variable_character_34
+{Add. properties of MW}
+Variable_character_35
+{SS Characteristics}
+Variable_character_36
+{Life regen#space#}
+Variable_character_37
+{#space#per sec.}
+Variable_character_38
+{Energy regen#space#}
+Variable_character_39
+{#space#per sec.}
+Variable_character_40
+{Poisoning}
+Variable_character_41
+{#space#sec.}
+Variable_character_42
+{Recharge time}
+Variable_character_43
+{Shot accuracy}
+Variable_character_44
+{Shot power}
+Variable_character_45
+{Bleeding}
+Variable_character_46
+{Sharp hit}
+Variable_character_47
+{Stunning}
+Variable_character_48
+{Injury}
+Variable_character_49
+{Poison blade}
+Variable_character_50
+{Reload time}
+Variable_character_51
+{Cul(}
+Variable_character_52
+{lbs}
+Variable_character_53
+{Can(}
+Variable_character_54
+{lbs}
+Variable_character_55
+{Firing range:#space#}
+Variable_character_56
+{#space#m.}
+Variable_character_57
+{#space#m.}
+Variable_character_58
+{#space#m.}
+Variable_character_59
+{#space#m.}
+Variable_character_60
+{0 m.}
+Variable_character_61
+{Maneuverability}
+Variable_character_62
+{Maneuverability:}
+Variable_character_63
+{who has it.}
+Variable_character_64
+{Create your own hero}
+Variable_character_64.1
+{To change the parameters of the hero, specify the characteristic and use the arrows to redistribute the points. Skills are automatically recalculated from the selected PIRATES. Close the form with a cross or Esc when the distribution is complete.}
+Variable_character_all_1
+{Speed:}
+Variable_character_all_2
+{from skill and abilities}
+Variable_character_all_3
+{from the sailors}
+Variable_character_all_4
+{from the sails}
+Variable_character_all_5
+{from the building}
+Variable_character_all_6
+{from the cargo}
+Variable_character_all_7
+{from bottom's fouling}
+Variable_character_all_8
+{from the atlas of maps}
+Variable_character_all_9
+{Balls}
+Variable_character_all_10
+{Grapeshot}
+Variable_character_all_11
+{Knippels}
+Variable_character_all_12
+{Bombs}
+Variable_character_all_13
+{Officers:#space#}
+Variable_character_all_14
+{Contracts:#space#}
+Variable_character_all_15
+{Slasher}
+Variable_character_all_16
+{Merchant}
+Variable_character_all_17
+{Swordsman}
+Variable_character_all_18
+{Adventurer}
+Variable_character_all_19
+{Buccaneer}
+Variable_character_all_20
+{Secret Agent}
+Variable_character_all_21
+{Sea Wolf}
+Variable_character_all_22
+{Payment#space#}
+Variable_character_all_23
+{#space#per month}
+Variable_character_all_24
+{Click on the list - set or remove an officer.}
+Variable_character_all_24.1
+{Also, in addition to the navigation requirements, there is a character level requirement regarding the ship class:}
+Variable_character_all_24.2
+{7th and 6th class = 1st level}
+Variable_character_all_24.3
+{5th class = 6th level}
+Variable_character_all_24.4
+{4th class = 12th level}
+Variable_character_all_24.5
+{3rd class = 20th level}
+Variable_character_all_24.6
+{2nd class = 26th level}
+Variable_character_all_24.7
+{1st class = 33rd level}
+Variable_character_all_24.8
+{An additional 2 navigation points are required for each missing level.}
+Variable_character_all_24.9
+{An injury penalty of -20 units applies to the indicator of this skill.}
+Variable_character_all_24.10
+{The indicator of this skill is subject to a severe injury penalty of -30 units.}
+Variable_character_all_24.11
+{A wound penalty of -50 points is applied to the indicator of this skill.}
+Variable_character_all_24.12
+{An overload penalty applies to the indicator of this skill.}
+Variable_character_all_24.13
+{The indicator of this skill is penalized for lack of navigation.}
+Variable_character_all_24.14
+{The number of officers already hired and currently available for hire is shown below.}
+Variable_character_all_24.15
+{Calculated as double the Authority score + (white Leadership/20).}
+Variable_character_all_25.1
+{Total available for hire:#space#}
+Variable_character_all_25
+{Hired:#space#}
+Variable_character_all_26
+{no rank}
+Variable_character_all_27
+{#space#units}
+Variable_character_all_28
+{#space#sec.}
+Variable_character_all_29
+{sec.}
+Variable_character_all_30
+{sec.}
+Variable_character_all_31
+{sec.}
+Variable_character_all_32
+{sec.}
+Variable_character_all_33
+{sec.}
+Variable_character_all_34
+{sec.}
+Variable_character_all_35
+{sec.}
+Variable_character_all_36
+{sec.}
+Variable_character_all_37
+{threshold of experience}
+Variable_character_all_37.1
+{Characteristics}
+Variable_character_all_37.2
+{Add. properties of MW}
+Variable_character_all_37.3
+{SS Characteristics}
+Variable_character_all_38
+{Life regen.}
+Variable_character_all_39
+{Energy regen.}
+Variable_character_all_40
+{#space#per sec.}
+Variable_character_all_41
+{Poisoning}
+Variable_character_all_42
+{sec.}
+Variable_character_all_43
+{Recharge time}
+Variable_character_all_44
+{Shot accuracy}
+Variable_character_all_45
+{Shot power}
+Variable_character_all_46
+{Bleeding}
+Variable_character_all_47
+{Sharp hit}
+Variable_character_all_47.1
+{Piercing of B/C}
+Variable_character_all_47.2
+{Crit chance/damage}
+Variable_character_all_48
+{Stunning}
+Variable_character_all_49
+{Injury}
+Variable_character_all_50
+{Poison blade}
+Variable_character_all_51
+{Reload time}
+Variable_character_all_52
+{Cul(}
+Variable_character_all_53
+{lbs}
+Variable_character_all_54
+{Can(}
+Variable_character_all_55
+{lbs}
+Variable_character_all_56
+{Firing range#space#}
+Variable_character_all_57
+{#space#m.}
+Variable_character_all_58
+{#space#m.}
+Variable_character_all_59
+{#space#m.}
+Variable_character_all_60
+{#space#m.}
+Variable_character_all_61
+{0 m.}
+Variable_character_all_62
+{Maneuverability}
+Variable_character_all_63
+{Maneuverability:}
+Variable_character_all_64
+{it was}
+Variable_character_all_65
+{#space#is assigned, who has it.}
+Variable_character_all_65.1
+{The ability will work even if an officer#space#}
+Variable_character_all_66
+{The pennant of the Terror of the Seas can now be raised in the nations menu.}
+Variable_character_all_h_1
+{Wounded#space#}
+Variable_character_all_h_2
+{h}
+Variable_character_all_h_3
+{Wounded#space#}
+Variable_character_all_h_4
+{d}
+Variable_character_all_h_5
+{Wounded#space#}
+Variable_character_all_h_6
+{d}
+Variable_character_all_h_7
+{Wounded#space#}
+Variable_character_all_h_8
+{d}
+Variable_character_all_h_9
+{Wounded#space#}
+Variable_character_all_h_10
+{d}
+Variable_Colony_1
+{Ordinary buildings}
+Variable_Colony_2
+{Store}
+Variable_Colony_3
+{It opens}
+Variable_Colony_4
+{Not open}
+Variable_Colony_5
+{Open}
+Variable_Colony_6
+{Status:#space#}
+Variable_Colony_7
+{Price:#space#}
+Variable_Colony_8
+{Price:#space#}
+Variable_Colony_9
+{Shipyard}
+Variable_Colony_10
+{Not open}
+Variable_Colony_11
+{Open}
+Variable_Colony_12
+{Status:#space#}
+Variable_Colony_13
+{Price:#space#}
+Variable_Colony_14
+{Tavern}
+Variable_Colony_15
+{Not open}
+Variable_Colony_16
+{Open}
+Variable_Colony_17
+{Status:#space#}
+Variable_Colony_18
+{Price:#space#}
+Variable_Colony_19
+{Other buildings}
+Variable_Colony_20
+{Expedition}
+Variable_Colony_21
+{Not carried out}
+Variable_Colony_22
+{Carried out}
+Variable_Colony_23
+{Status:#space#}
+Variable_Colony_24
+{Price:#space#}
+Variable_Colony_25
+{Price:#space#}
+Variable_Colony_26
+{Warehouse}
+Variable_Colony_27
+{Not built}
+Variable_Colony_28
+{Enlarged}
+Variable_Colony_29
+{Built}
+Variable_Colony_30
+{Status:#space#}
+Variable_Colony_31
+{Price:#space#}
+Variable_Colony_32
+{Price:#space#}
+Variable_Colony_33
+{Price:#space#}
+Variable_Colony_34
+{Price:#space#}
+Variable_Colony_35
+{Plantation}
+Variable_Colony_36
+{Not built}
+Variable_Colony_37
+{Increased}
+Variable_Colony_38
+{Built}
+Variable_Colony_39
+{Status:#space#}
+Variable_Colony_40
+{Price:#space#}
+Variable_Colony_41
+{Price:#space#}
+Variable_Colony_42
+{Price:#space#}
+Variable_Colony_43
+{Price:#space#}
+Variable_Colony_44
+{Advanced buildings}
+Variable_Colony_45
+{Usurer's House}
+Variable_Colony_46
+{Not open}
+Variable_Colony_47
+{Open}
+Variable_Colony_48
+{Status:#space#}
+Variable_Colony_49
+{Price:#space#}
+Variable_Colony_50
+{Price:#space#}
+Variable_Colony_51
+{Church}
+Variable_Colony_52
+{Not open}
+Variable_Colony_53
+{Open}
+Variable_Colony_54
+{Status:#space#}
+Variable_Colony_55
+{Price:#space#}
+Variable_Colony_56
+{Price:#space#}
+Variable_Colony_57
+{Port authority}
+Variable_Colony_58
+{Not open}
+Variable_Colony_59
+{It's open}
+Variable_Colony_60
+{Status:#space#}
+Variable_Colony_61
+{Price:#space#}
+Variable_Colony_62
+{Price:#space#}
+Variable_Colony_63
+{Mines}
+Variable_Colony_64
+{Golden}
+Variable_Colony_65
+{Not built}
+Variable_Colony_66
+{Enlarged}
+Variable_Colony_67
+{Built}
+Variable_Colony_68
+{Status:#space#}
+Variable_Colony_69
+{Price:#space#}
+Variable_Colony_70
+{Price:#space#}
+Variable_Colony_71
+{Price:#space#}
+Variable_Colony_72
+{Price:#space#}
+Variable_Colony_73
+{Silver}
+Variable_Colony_74
+{Not built}
+Variable_Colony_75
+{Enlarged}
+Variable_Colony_76
+{Built}
+Variable_Colony_77
+{Status:#space#}
+Variable_Colony_78
+{Price:#space#}
+Variable_Colony_79
+{Price:#space#}
+Variable_Colony_80
+{Price:#space#}
+Variable_Colony_81
+{Price:#space#}
+Variable_Colony_82
+{Iron}
+Variable_Colony_83
+{Not built}
+Variable_Colony_84
+{Enlarged}
+Variable_Colony_85
+{Built}
+Variable_Colony_86
+{Status:#space#}
+Variable_Colony_87
+{Price:#space#}
+Variable_Colony_88
+{Price:#space#}
+Variable_Colony_89
+{Price:#space#}
+Variable_Colony_90
+{Price:#space#}
+Variable_Colony_91
+{Delighted}
+Variable_Colony_92
+{Excellent}
+Variable_Colony_93
+{Friendly}
+Variable_Colony_94
+{Sympathetic}
+Variable_Colony_95
+{Normal}
+Variable_Colony_96
+{Normal}
+Variable_Colony_97
+{Normal}
+Variable_Colony_98
+{Bad}
+Variable_Colony_99
+{Unfriendly}
+Variable_Colony_100
+{Terrible}
+Variable_Colony_101
+{not built}
+Variable_Colony_102
+{Settlement}
+Variable_Colony_103
+{City}
+Variable_Colony_104
+{Protected city}
+Variable_Colony_105
+{Population}
+Variable_Colony_106
+{Colony status:#space#}
+Variable_Colony_106.1
+{Population (cur. / max.):#space#}
+Variable_Colony_107
+{Optimal number:#space#}
+Variable_Colony_108
+{Morale of the population:#space#}
+Variable_Colony_109
+{Price of a morale boost:}
+Variable_Colony_110
+{Your gold:#space#}
+Variable_Colony_111
+{Low}
+Variable_Colony_112
+{Average}
+Variable_Colony_113
+{High}
+Variable_Colony_114
+{Tax}
+Variable_Colony_115
+{Current tax:#space#}
+Variable_Colony_116
+{Low}
+Variable_Colony_117
+{Average}
+Variable_Colony_118
+{High}
+Variable_Colony_119
+{Treasury}
+Variable_Colony_120
+{Gold in the treasury:#space#}
+Variable_Colony_121
+{Ordinary buildings}
+Variable_Colony_122
+{Store}
+Variable_Colony_123
+{Not open}
+Variable_Colony_124
+{Open}
+Variable_Colony_125
+{Status:#space#}
+Variable_Colony_126
+{Price:#space#}
+Variable_Colony_127
+{Price:#space#}
+Variable_Colony_128
+{Shipyard}
+Variable_Colony_129
+{Not open}
+Variable_Colony_130
+{Open}
+Variable_Colony_131
+{Status:#space#}
+Variable_Colony_132
+{Price:#space#}
+Variable_Colony_133
+{Price:#space#}
+Variable_Colony_134
+{Tavern}
+Variable_Colony_135
+{Not open}
+Variable_Colony_136
+{Open}
+Variable_Colony_137
+{Status:#space#}
+Variable_Colony_138
+{Price:#space#}
+Variable_Colony_139
+{Price:#space#}
+Variable_Colony_140
+{Advanced buildings}
+Variable_Colony_141
+{Usurer's House}
+Variable_Colony_142
+{Not open}
+Variable_Colony_143
+{Open}
+Variable_Colony_144
+{Status:#space#}
+Variable_Colony_145
+{Price:#space#}
+Variable_Colony_146
+{Price:#space#}
+Variable_Colony_147
+{Church}
+Variable_Colony_148
+{Not open}
+Variable_Colony_149
+{Open}
+Variable_Colony_150
+{Status:#space#}
+Variable_Colony_151
+{Price:#space#}
+Variable_Colony_152
+{Price:#space#}
+Variable_Colony_153
+{Port authority}
+Variable_Colony_154
+{Not open}
+Variable_Colony_155
+{It's open}
+Variable_Colony_156
+{Status:#space#}
+Variable_Colony_157
+{Price:#space#}
+Variable_Colony_158
+{Price:#space#}
+Variable_Colony_159
+{Not carried out}
+Variable_Colony_160
+{Carried out}
+Variable_Colony_161
+{Status:#space#}
+Variable_Colony_162
+{Price:#space#}
+Variable_Colony_163
+{Price:#space#}
+Variable_Colony_164
+{Not built}
+Variable_Colony_165
+{Enlarged}
+Variable_Colony_166
+{Built}
+Variable_Colony_167
+{Status:#space#}
+Variable_Colony_168
+{Price:#space#}
+Variable_Colony_169
+{Price:#space#}
+Variable_Colony_170
+{Price:#space#}
+Variable_Colony_171
+{Price:#space#}
+Variable_Colony_172
+{Not built}
+Variable_Colony_173
+{Built}
+Variable_Colony_174
+{Status:#space#}
+Variable_Colony_175
+{Price:#space#}
+Variable_Colony_176
+{Price:#space#}
+Variable_Colony_177
+{Price:#space#}
+Variable_Colony_178
+{Price:#space#}
+Variable_Colony_179
+{Not built}
+Variable_Colony_180
+{Enlarged}
+Variable_Colony_181
+{Built}
+Variable_Colony_182
+{Status:#space#}
+Variable_Colony_183
+{Price:#space#}
+Variable_Colony_184
+{Price:#space#}
+Variable_Colony_185
+{Price:#space#}
+Variable_Colony_186
+{Price:#space#}
+Variable_Colony_187
+{Not built}
+Variable_Colony_188
+{Enlarged}
+Variable_Colony_189
+{Built}
+Variable_Colony_190
+{Status:#space#}
+Variable_Colony_191
+{Price:#space#}
+Variable_Colony_192
+{Price:#space#}
+Variable_Colony_193
+{Price:#space#}
+Variable_Colony_194
+{Price:#space#}
+Variable_Colony_195
+{Not built}
+Variable_Colony_196
+{Enlarged}
+Variable_Colony_197
+{Built}
+Variable_Colony_198
+{Status:#space#}
+Variable_Colony_199
+{Price:#space#}
+Variable_Colony_200
+{Price:#space#}
+Variable_Colony_201
+{Price:#space#}
+Variable_Colony_202
+{Price:#space#}
+Variable_Colony_203
+{Replenishment of the treasury}
+Variable_Colony_204
+{Your gold:#space#}
+Variable_Colony_205
+{Gold in the treasury:#space#}
+Variable_Colony_206
+{Information about the construction of buildings}
+Variable_Colony_207
+{Selection of displayed icons}
+Variable_Colony_208
+{Option#space#}
+Variable_ColonyBuilding_1
+{Available:#space#}
+Variable_ColonyBuilding_2
+{Goods:#space#}
+Variable_ColonyBuilding_3
+{Required:#space#}
+Variable_ColonyBuilding_4
+{Bricks}
+Variable_ColonyBuilding_5
+{Bricks}
+Variable_ColonyBuilding_6
+{Planks}
+Variable_ColonyBuilding_7
+{Planks}
+Variable_ColonyBuilding_8
+{Mahogany tree}
+Variable_ColonyBuilding_9
+{Mahogany tree}
+Variable_ColonyBuilding_10
+{Ebony}
+Variable_ColonyBuilding_11
+{Ebony}
+Variable_ColonyBuilding_12
+{Slaves}
+Variable_ColonyBuilding_13
+{Slaves}
+Variable_ColonyBuilding_14
+{Food}
+Variable_ColonyBuilding_15
+{Food}
+Variable_ColonyBuilding_16
+{Name of the colony}
+Variable_ColonyBuilding_17
+{Enter the name of the colony:#space#}
+Variable_ColonyBuilding_18
+{Current name:#space#}
+Variable_ColonyBuilding_19
+{Appearance of soldiers}
+Variable_ColonyBuilding_20
+{Choose a nation:#space#}
+Variable_ColonyBuilding_21
+{Officers}
+Variable_ColonyBuilding_22
+{Pirates}
+Variable_ColonyBuilding_23
+{By nation}
+Variable_ColonyBuilding_24
+{Officers}
+Variable_ColonyBuilding_25
+{ity}
+Variable_ColonyBuilding_26
+{Main buildings}
+Variable_ColonyBuilding_27
+{Price:#space#}
+Variable_ColonyBuilding_28
+{Store}
+Variable_ColonyBuilding_29
+{Price:#space#}
+Variable_ColonyBuilding_30
+{Shipyard}
+Variable_ColonyBuilding_31
+{Price:#space#}
+Variable_ColonyBuilding_32
+{Tavern}
+Variable_ColonyBuilding_33
+{Price:#space#}
+Variable_ColonyBuilding_34
+{Usurer's House}
+Variable_ColonyBuilding_35
+{Price:#space#}
+Variable_ColonyBuilding_36
+{Residence}
+Variable_ColonyBuilding_37
+{Price:#space#}
+Variable_ColonyBuilding_38
+{Architect's services: 50,000}
+Variable_ColonyBuilding_39
+{Final price:#space#}
+Variable_ColonyBuilding_40
+{Your gold:#space#}
+Variable_ColonyCapture_1
+{Weight}
+Variable_ColonyCapture_2
+{Pack}
+Variable_ColonyCapture_3
+{Pack weight}
+Variable_ColonyCapture_4
+{Ship: '}
+Variable_ColonyCapture_5
+{: Robbery}
+Variable_ColonyCapture_6
+{City Robbery Interface}
+Variable_ColonyCapture_8
+{Colors of the goods type:}
+Variable_ColonyCapture_9
+{- green : colonial goods}
+Variable_ColonyCapture_10
+{- blue : imported goods}
+Variable_ColonyCapture_11
+{- red : contraband goods}
+Variable_ColonyCapture_12
+{- brown : goods of aggressive demand}
+Variable_ColonyCapture_13
+{City}
+Variable_ColonyCapture_14
+{, pack#space#}
+Variable_ColonyCapture_15
+{Leave}
+Variable_ColonyCapture_16
+{Weight#space#}
+Variable_ColonyCapture_17
+{c.}
+Variable_ColonyCapture_18
+{Take it}
+Variable_ColonyCapture_19
+{Weight#space#}
+Variable_ColonyCapture_20
+{c.}
+Variable_ColonyGuardiang_1
+{There is no ship}
+Variable_ColonyGuardiang_2
+{There is no ship}
+Variable_ColonyGuardiang_3
+{There is no ship}
+Variable_ColonyGuardiang_4
+{There is no ship}
+Variable_ColonyGuardiang_5
+{Ship is not assigned.}
+Variable_ColonyGuardiang_6
+{Building}
+Variable_ColonyGuardiang_7
+{Sails}
+Variable_ColonyGuardiang_8
+{Speed}
+Variable_ColonyGuardiang_9
+{Maneuver.}
+Variable_ColonyGuardiang_10
+{Team}
+Variable_ColonyGuardiang_11
+{Ship is not assigned.}
+Variable_ColonyGuardiang_12
+{Building}
+Variable_ColonyGuardiang_13
+{Sails}
+Variable_ColonyGuardiang_14
+{Speed}
+Variable_ColonyGuardiang_15
+{Maneuver.}
+Variable_ColonyGuardiang_16
+{Team}
+Variable_ColonyGuardiang_17
+{Ship is not assigned.}
+Variable_ColonyGuardiang_18
+{Building}
+Variable_ColonyGuardiang_19
+{Sails}
+Variable_ColonyGuardiang_20
+{Speed}
+Variable_ColonyGuardiang_21
+{Maneuver.}
+Variable_ColonyGuardiang_22
+{Team}
+Variable_ColonyGuardiang_23
+{Ship is not assigned.}
+Variable_ColonyGuardiang_24
+{Building}
+Variable_ColonyGuardiang_25
+{Sails}
+Variable_ColonyGuardiang_26
+{Speed}
+Variable_ColonyGuardiang_27
+{Maneuver.}
+Variable_ColonyGuardiang_28
+{Team}
+Variable_ColonyGuardiang_29
+{Choosing a ship}
+Variable_ColonyGuardiang_30
+{pound}
+Variable_ColonyGuardiang_31
+{There are no cannons}
+Variable_ColonyGuardiang_32
+{Building}
+Variable_ColonyGuardiang_33
+{Sails}
+Variable_ColonyGuardiang_34
+{Speed}
+Variable_ColonyGuardiang_35
+{Maneuverability}
+Variable_ColonyGuardiang_36
+{Team}
+Variable_ColonyGuardiang_37
+{Number of cannons}
+Variable_ColonyGuardiang_38
+{Cannons}
+Variable_ColonyGuardiang_39
+{Cannons}
+Variable_ColonyGuardiang_40
+{Cannons}
+Variable_ColonyGuardiang_41
+{Cannons}
+Variable_ColonyGuardiang_42
+{Cannons}
+Variable_ColonyGuardiang_43
+{Cannons}
+Variable_ColonyGuardiang_44
+{Cannons}
+Variable_ColonyGuardiang_45
+{Cannons}
+Variable_ColonyGuardiang_46
+{Cannons}
+Variable_ColonyGuardiang_47
+{Cannons}
+Variable_ColonyGuardiang_48
+{Cannons}
+Variable_ColonyGuardiang_49
+{Culverins}
+Variable_ColonyGuardiang_50
+{Culverins}
+Variable_ColonyGuardiang_51
+{Culverins}
+Variable_ColonyGuardiang_52
+{Culverins}
+Variable_ColonyGuardiang_53
+{Culverins}
+Variable_ColonyGuardiang_54
+{Culverins}
+Variable_ColonyGuardiang_55
+{Culverins}
+Variable_ColonyGuardiang_56
+{Culverins}
+Variable_ColonyGuardiang_57
+{Culverins}
+Variable_ColonyGuardiang_58
+{There are no cannons}
+Variable_ColonyGuardiang_59
+{Change the flagship}
+Variable_ColonyInfo_1
+{City#space#}
+Variable_ColonyInfo_2
+{#space#captured by the troops#space#}
+Variable_ColonyInfo_3
+{Squadron of#space#}
+Variable_ColonyInfo_4
+{#space#besieged the city#space#}
+Variable_ColonyInfo_5
+{. You have#space#}
+Variable_ColonyInfo_6
+{#space#to lift the siege.}
+Variable_ColonyInfo_7
+{Squadron of#space#}
+Variable_ColonyInfo_8
+{#space#besieged the city#space#}
+Variable_ColonyInfo_9
+{. You have#space#}
+Variable_ColonyInfo_10
+{#space#to lift the siege.}
+Variable_ColonyInfo_11
+{Above the city#space#}
+Variable_ColonyInfo_12
+{#space#a new flag has been raised.}
+Variable_ColonyLandGuard_1
+{Garrison}
+Variable_ColonyLandGuard_2
+{Quantity on the ship:#space#}
+Variable_ColonyLandGuard_3
+{Food}
+Variable_ColonyLandGuard_4
+{Quantity on the ship:#space#}
+Variable_ColonyLandGuard_5
+{Food in the colony for#space#}
+Variable_ColonyLandGuard_6
+{#space#week.}
+Variable_ColonyLandGuard_7
+{Medicines}
+Variable_ColonyLandGuard_8
+{Quantity on the ship:#space#}
+Variable_contraband_1
+{Weight}
+Variable_contraband_2
+{Pack}
+Variable_contraband_3
+{Pack weight}
+Variable_contraband_4
+{, pack#space#}
+Variable_contraband_5
+{, gold smugglers:#space#}
+Variable_contraband_6
+{Trading Interface}
+Variable_contraband_8
+{Sell}
+Variable_contraband_9
+{Money#space#}
+Variable_contraband_10
+{, weight#space#}
+Variable_contraband_11
+{c.}
+Variable_contraband_12
+{Buy}
+Variable_contraband_13
+{Money#space#}
+Variable_contraband_14
+{, weight#space#}
+Variable_contraband_15
+{c.}
+Variable_craft_all_1
+{Components}
+Variable_craft_all_2
+{Quantity}
+Variable_craft_all_3
+{Available recipes}
+Variable_craft_all_4
+{Quantity}
+Variable_craft_all_5
+{An item has been created '}
+Variable_craft_all_6
+{' in the count#space#}
+Variable_craft_all_7
+{#space#pcs.}
+Variable_craft_all_8
+{An item has been created '}
+Variable_craft_all_9
+{' in the count#space#}
+Variable_craft_all_10
+{#space#pcs.}
+Variable_craft_all_11
+{Missing}
+Variable_craft_all_12
+{In stock}
+Variable_CreateCharacter_1
+{the beginning of the battle}
+Variable_CreateCharacter_2
+{quick attack}
+Variable_CreateCharacter_3
+{powerful attack}
+Variable_CreateCharacter_4
+{jump}
+Variable_CreateCharacter_5
+{the end of the fight}
+Variable_CreateCharacter_6
+{the floor}
+Variable_CreateCharacter_7
+{A character has been selected#space#}
+Variable_CreateNotice_1
+{fuck}
+Variable_CreateNotice_2
+{pussy}
+Variable_CreateNotice_3
+{huypizda}
+Variable_CreateNotice_4
+{faggot}
+Variable_CreateNotice_5
+{pidr}
+Variable_CreateNotice_6
+{motherfucker}
+Variable_CreateNotice_7
+{faggot}
+Variable_CreateNotice_8
+{faggot}
+Variable_CreateNotice_9
+{hueplet}
+Variable_CreateNotice_10
+{hueplet}
+Variable_CreateNotice_11
+{fuck you}
+Variable_CreateNotice_12
+{bitch}
+Variable_CreateNotice_13
+{bastard}
+Variable_CreateNotice_14
+{schmuck}
+Variable_CreateNotice_15
+{sucker}
+Variable_CreateNotice_16
+{fucker}
+Variable_CreateNotice_17
+{fucker}
+Variable_CreateNotice_18
+{sukablyany}
+Variable_CreateNotice_19
+{ipanyrot}
+Variable_CreateNotice_20
+{ass}
+Variable_CreateNotice_21
+{pesda}
+Variable_CreateNotice_22
+{bitch}
+Variable_CreateNotice_23
+{bitch}
+Variable_CreateNotice_24
+{fuck}
+Variable_CreateNotice_25
+{fuck you}
+Variable_CreateNotice_26
+{fuck you}
+Variable_CreateNotice_27
+{nah}
+Variable_CreateNotice_28
+{fuck you}
+Variable_CreateNotice_29
+{kui}
+Variable_CreateNotice_30
+{fuck you}
+Variable_CreateNotice_31
+{on the kui}
+Variable_CreateNotice_32
+{niibazzo}
+Variable_CreateNotice_33
+{nivipenny}
+Variable_CreateNotice_34
+{fucking}
+Variable_CreateNotice_35
+{fucked up}
+Variable_CreateNotice_36
+{fucked up}
+Variable_CreateNotice_37
+{fuck you}
+Variable_CreateNotice_38
+{fucked up}
+Variable_CreateNotice_39
+{suck it}
+Variable_CreateNotice_40
+{suck}
+Variable_CreateNotice_41
+{mate is forbidden}
+Variable_CreateNotice_42
+{Content:#space#}
+Variable_CreateNotice_43
+{empty}
+Variable_CreateNotice_44
+{String}
+Variable_CreateNotice_45
+{Column}
+Variable_CreateNotice_46
+{empty}
+Variable_CreateNotice_47
+{empty}
+Variable_Debuger_1
+{Debugger Information}
+Variable_Debuger_2
+{This is a debugger. Allows you to perform the functions specified by the scriptologist. Buttons:#space#}
+Variable_Debuger_3
+{The command has worked successfully!}
+Variable_Debuger_4
+{The command has worked successfully!}
+Variable_Debuger_5
+{The command has worked successfully!}
+Variable_Debuger_6
+{The command has worked successfully!}
+Variable_Debuger_7
+{Gold + 500000}
+Variable_Debuger_7.1
+{ID of current location + coords#space#}
+Variable_Debuger_7.2
+{Team exp +10}
+Variable_Debuger_7.3
+{Give 1000 skills for skills}
+Variable_Debuger_8
+{The command has worked successfully!}
+Variable_Debuger_9
+{Million, SL with 48 caliber, 20th rank}
+Variable_Debuger_10
+{The command has worked successfully!}
+Variable_Debuger_11
+{Reset all personal skills to 1}
+Variable_Debuger_12
+{The command has worked successfully!}
+Variable_Debuger_13
+{Teleport to taverns}
+Variable_Debuger_14
+{The command has worked successfully!}
+Variable_Debuger_15
+{Provisions of materials for the construction of a colony}
+Variable_Debuger_15.1
+{Immortality on/off}
+Variable_Debuger_16
+{The command has worked successfully!}
+Variable_Debuger_17
+{The command has worked successfully!}
+Variable_Debuger_18
+{Add reputation }
+Variable_Debuger_19
+{The command has worked successfully!}
+Variable_Debuger_20
+{Take reputation}
+Variable_Debuger_21
+{The command has worked successfully!}
+Variable_Debuger_22
+{The command has worked successfully!}
+Variable_Debuger_23
+{Cause a change in the relations of nations}
+Variable_Debuger_23.1
+{+5 days}
+Variable_Debuger_23.2
+{Quest's list inside pchar attribute}
+Variable_Debuger_24
+{The command has worked successfully!}
+Variable_Debuger_25
+{The command has worked successfully!}
+Variable_Debuger_26
+{The command has worked successfully!}
+Variable_Debuger_27
+{Hire 10 officers}
+Variable_Debuger_27.1
+{+1 Rank for officer navigator (35 skill points)}
+Variable_Debuger_28
+{The command has worked successfully!}
+Variable_Debuger_29
+{There is no officer}
+Variable_Debuger_30
+{The command has worked successfully!}
+Variable_Debuger_31
+{Updating the light on lighthouses}
+Variable_Debuger_31.1
+{Slow rise of the camera 35 to Y relative to MC}
+Variable_Debuger_32
+{The command has worked successfully!}
+Variable_Debuger_34
+{The command has worked successfully!}
+Variable_Debuger_35
+{Askold Info}
+Variable_Debuger_36
+{The random owner of the store:#space#}
+Variable_Debuger_37
+{A random merchant (colony):#space#}
+Variable_Debuger_38
+{The random shipbuilder:#space#}
+Variable_Debuger_39
+{Tablets location:#space#}
+Variable_Debuger_40
+{The tablets of the locator:#space#}
+Variable_Debuger_41
+{Where will there be rumors about the merchant's fluyt:}
+Variable_Debuger_42
+{The rumors about the merchants' fluyts have not been activated yet.}
+Variable_Debuger_43
+{The command has worked successfully!}
+Variable_Debuger_44
+{Dump of camera attributes}
+Variable_Debuger_45
+{The command has worked successfully!}
+Variable_Debuger_46
+{License}
+Variable_Debuger_47
+{The command has worked successfully!}
+Variable_Debuger_48
+{Location overload is for STAKES}
+Variable_Debuger_49
+{The command has worked successfully!}
+Variable_Debuger_50
+{Dump of MC attributes}
+Variable_Debuger_50.1
+{BOH +50 in all nations}
+Variable_Debuger_51
+{Dump attributes of MC}
+Variable_Debuger_52
+{The command has worked successfully!}
+Variable_Debuger_53
+{The command has worked successfully!#space#}
+Variable_Debuger_54
+{Put FD on the map}
+Variable_Debuger_55
+{The command has worked successfully!}
+Variable_Debuger_56
+{BOH in all nations -50}
+Variable_Debuger_56.1
+{+20 days}
+Variable_Debuger_56.2
+{Arabella, 32 caliber, full skills for MC, 10k achievement points, all perks and items + unique pouch}
+Variable_Debuger_57
+{The command has worked successfully!}
+Variable_Debuger_58
+{The command has worked successfully!}
+Variable_Debuger_59
+{The command has worked successfully!}
+Variable_Debuger_60
+{A simple ship, incomplete MC skills}
+Variable_Debuger_60.1
+{Personal skill point +1}
+Variable_Debuger_60.2
+{Ship skill point +1}
+Variable_Debuger_60.3
+{PMC simulation lvl +1}
+Variable_Debuger_61
+{The command has worked successfully!}
+Variable_Debuger_62
+{The command has worked successfully!}
+Variable_Debuger_63
+{The command has worked successfully!}
+Variable_Debuger_64
+{The command has worked successfully!}
+Variable_Debuger_65
+{Create a dummy}
+Variable_Debuger_66
+{The command has worked successfully!}
+Variable_Debuger_67
+{Build colony level 1}
+Variable_Debuger_67.1
+{Build colony level 2 + buildings in it}
+Variable_Debuger_68
+{The time for the construction of a colony on Cayman Island should come to an end. It's worth visiting the place of work.}
+Variable_Debuger_69
+{The command has worked successfully!}
+Variable_Debuger_70
+{The time of colony expansion#space#}
+Variable_Debuger_71
+{it should be coming to an end.}
+Variable_Debuger_72
+{The command has worked successfully!}
+Variable_Debuger_73
+{To build a fully developed colony}
+Variable_Debuger_74
+{The time of colony expansion#space#}
+Variable_Debuger_75
+{it should be coming to an end.}
+Variable_Debuger_76
+{The command has worked successfully!}
+Variable_Debuger_77
+{Get a superfast ship}
+Variable_Debuger_78
+{The command has worked successfully!}
+Variable_Debuger_79
+{Dump of all sieges}
+Variable_Debuger_80
+{The command has worked successfully!}
+Variable_Debuger_81
+{Checking the liquidity of the goods}
+Variable_Debuger_82
+{The command has worked successfully!}
+Variable_Debuger_83
+{Start the Golden Fleet}
+Variable_Debuger_84
+{The command has worked successfully!}
+Variable_Debuger_85
+{The position of the ship}
+Variable_Debuger_86
+{The command has worked successfully!}
+Variable_Debuger_87
+{Updating the initial array: islands, locations, colonies, ships, items}
+Variable_Debuger_88
+{The command has worked successfully!}
+Variable_Debuger_89
+{The player's position on land}
+Variable_Debuger_90
+{The command has worked successfully!}
+Variable_Debuger_91
+{Give out 20 chests and 20 lockpicks}
+Variable_Debuger_92
+{The command has worked successfully!}
+Variable_Debuger_93
+{Unlock all transitions in the lock and remove the locks}
+Variable_Debuger_94
+{The command has worked successfully!}
+Variable_Debuger_95
+{Build a Chapter House and move the player there}
+Variable_Debuger_95.1
+{Test function for string massive in LinkRandArrayPhrase}
+Variable_Debuger_96
+{The command has worked successfully!}
+Variable_Debuger_97
+{The string dropped from the value of the array under the index 0}
+Variable_Debuger_98
+{The string dropped from the value of the array under the index 1}
+Variable_Debuger_99
+{The string dropped from the value of the array under the index 2}
+Variable_Debuger_100
+{The string dropped from the value of the array under the index 3}
+Variable_Debuger_101
+{The string dropped from the value of the array under the index 4}
+Variable_Debuger_102
+{The command has worked successfully!}
+Variable_Debuger_103
+{Count characters in the location}
+Variable_Debuger_104
+{The command has worked successfully!}
+Variable_Debuger_105
+{No appointments}
+Variable_Debuger_105.1
+{On/off fog of war on global map}
+Variable_Debuger_106
+{The command has worked successfully!}
+Variable_Debuger_107
+{The command has worked successfully!}
+Variable_Debuger_108
+{Ship Test}
+Variable_Debuger_109
+{Test ship}
+Variable_Debuger_110
+{Test ship}
+Variable_Debuger_111
+{Test ship}
+Variable_Debuger_112
+{Test ship}
+Variable_Debuger_113
+{Test ship}
+Variable_Debuger_114
+{Test ship}
+Variable_Debuger_115
+{Test ship}
+Variable_Debuger_116
+{Test ship}
+Variable_Debuger_117
+{Test ship}
+Variable_Debuger_118
+{Test ship}
+Variable_Debuger_119
+{Test ship}
+Variable_Debuger_120
+{Test ship}
+Variable_Debuger_121
+{Test ship}
+Variable_Debuger_122
+{Test ship}
+Variable_Debuger_123
+{Test ship}
+Variable_Debuger_124
+{Test ship}
+Variable_Debuger_125
+{Test ship}
+Variable_Debuger_126
+{Test ship}
+Variable_Debuger_127
+{Test ship}
+Variable_Debuger_128
+{Test ship}
+Variable_Debuger_129
+{The command has worked successfully!}
+Variable_Debuger_130
+{Get all maps}
+Variable_Debuger_131
+{The command has worked successfully!}
+Variable_Debuger_132
+{Get all the items in the game (except quest items) and endless portable weight}
+Variable_Debuger_133
+{The command has worked successfully!}
+Variable_Debuger_134
+{Check nations relations and nations relation to MC, then reset to default}
+Variable_Debuger_135
+{The command has worked successfully!}
+Variable_Debuger_136
+{No appointments}
+Variable_Debuger_137
+{The command has worked successfully!}
+Variable_Debuger_138
+{No appointments}
+Variable_Debuger_139
+{The command has worked successfully!}
+Variable_Debuger_140
+{No appointments}
+Variable_Debuger_141
+{The command has worked successfully!}
+Variable_Debuger_142
+{No appointments}
+Variable_Debuger_143
+{The command has worked successfully!}
+Variable_Debuger_144
+{No appointments}
+Variable_Debuger_145
+{The command has worked successfully!}
+Variable_Debuger_146
+{No appointments}
+Variable_Debuger_147
+{The command has worked successfully!}
+Variable_Debuger_148
+{No appointments}
+Variable_Debuger_149
+{The command has worked successfully!}
+Variable_Debuger_150
+{No appointments}
+Variable_Debuger_151
+{The command has worked successfully!}
+Variable_Debuger_152
+{No appointments}
+Variable_Debuger_153
+{The command has worked successfully!}
+Variable_Debuger_154
+{No appointments}
+Variable_Debuger_155
+{The command has worked successfully!}
+Variable_Debuger_156
+{No appointments}
+Variable_Debuger_157
+{The command has worked successfully!}
+Variable_Debuger_158
+{No appointments}
+Variable_Debuger_159
+{The command has worked successfully!}
+Variable_Debuger_160
+{No appointments}
+Variable_Debuger_161
+{The command has worked successfully!}
+Variable_Debuger_162
+{No appointments}
+Variable_Debuger_163
+{The command has worked successfully!}
+Variable_Debuger_164
+{No appointments}
+Variable_Debuger_165
+{The command has worked successfully!}
+Variable_Debuger_166
+{No appointments}
+Variable_Debuger_167
+{The command has worked successfully!}
+Variable_Debuger_168
+{No appointments}
+Variable_Debuger_169
+{The command has worked successfully!}
+Variable_Debuger_170
+{No appointments}
+Variable_Debuger_171
+{The command has worked successfully!}
+Variable_Debuger_172
+{No appointments}
+Variable_Debuger_173
+{The command has worked successfully!}
+Variable_Debuger_174
+{No appointments}
+Variable_Debuger_175
+{The command has worked successfully!}
+Variable_Debuger_176
+{No appointments}
+Variable_Debuger_177
+{The command has worked successfully!}
+Variable_Debuger_178
+{No appointments}
+Variable_Debuger_179
+{The command has worked successfully!}
+Variable_Debuger_180
+{No appointments}
+Variable_Debuger_181
+{The command has worked successfully!}
+Variable_Debuger_182
+{No appointments}
+Variable_Debuger_183
+{The command has worked successfully!}
+Variable_Debuger_184
+{No appointments}
+Variable_Debuger_185
+{The command has worked successfully!}
+Variable_Debuger_186
+{No appointments}
+Variable_Debuger_187
+{The command has worked successfully!}
+Variable_Debuger_188
+{No appointments}
+Variable_Debuger_189
+{The command has worked successfully!}
+Variable_Debuger_190
+{No appointments}
+Variable_Debuger_191
+{The command has worked successfully!}
+Variable_Debuger_192
+{No appointments}
+Variable_Debuger_193
+{The command has worked successfully!}
+Variable_Debuger_194
+{No appointments}
+Variable_Debuger_195
+{The command has worked successfully!}
+Variable_Debuger_196
+{No appointments}
+Variable_Debuger_197
+{The command has worked successfully!}
+Variable_Debuger_199
+{Mannequin}
+Variable_Debuger_200
+{Bony}
+Variable_Debuger_201
+{Goods}
+Variable_Debuger_202
+{Goods#space#}
+Variable_Debuger_203
+{#space#received in quantity#space#}
+Variable_Debuger_204
+{There is no location}
+Variable_Debuger_205
+{Bridgetown :#space#}
+Variable_Debuger_206
+{St. John's :}
+Variable_Debuger_207
+{Willemstadt :#space#}
+Variable_Debuger_208
+{Marigo :}
+Variable_Debuger_209
+{Basse-Terre :#space#}
+Variable_Debuger_210
+{Fort de France :#space#}
+Variable_Debuger_211
+{Le Francois :#space#}
+Variable_Debuger_212
+{Pirate Settlement :#space#}
+Variable_Debuger_213
+{Maracaibo :#space#}
+Variable_Debuger_214
+{Des Moines :#space#}
+Variable_Debuger_215
+{Belize :#space#}
+Variable_Debuger_216
+{Port Royal :#space#}
+Variable_Debuger_217
+{Fort Orange :}
+Variable_Debuger_218
+{San Juan :#space#}
+Variable_Debuger_219
+{Santiago :#space#}
+Variable_Debuger_220
+{Puerto Principe :#space#}
+Variable_Debuger_221
+{Havana :#space#}
+Variable_Debuger_222
+{Tortuga :#space#}
+Variable_Debuger_223
+{Port of Spain :#space#}
+Variable_Debuger_224
+{Charlestown :}
+Variable_Debuger_225
+{Santo Domingo :#space#}
+Variable_Debuger_226
+{La Vega :#space#}
+Variable_Debuger_227
+{Port-au-Prince :#space#}
+Variable_Debuger_228
+{Turks :#space#}
+Variable_Debuger_229
+{Cayman :#space#}
+Variable_Debuger_230
+{Panama :#space#}
+Variable_Debuger_231
+{Porto Bello :#space#}
+Variable_Debuger_232
+{Cartagena :#space#}
+Variable_Debuger_233
+{Caracas :#space#}
+Variable_Debuger_234
+{Cumana :#space#}
+Variable_Debuger_235
+{Santa Catalina :}
+Variable_Debuger_236
+{LSC :#space#}
+Variable_Debuger_237
+{Tenochtitlan :#space#}
+Variable_game_menu_1
+{Starting conditions}
+Variable_game_menu_2
+{Character animation:#space#}
+Variable_game_menu_2.1
+{Always recharge pistols:}
+Variable_game_menu_2.2
+{Hardcore mode:}
+Variable_game_menu_2.2.1
+{Loot partition:}
+Variable_game_menu_2.3
+{Sailor's weight:}
+Variable_game_menu_2.4
+{Unique sails for pirates:}
+Variable_game_menu_2.5
+{Hardcore animations:}
+Variable_game_menu_2.6
+{Complicated bosses:}
+Variable_game_menu_2.7
+{Alternative balance:}
+Variable_game_menu_2.8
+{Difficulty:}
+Variable_game_menu_2.9
+{Nation:}
+Variable_game_menu_2.10
+{Experience gain rate:}
+Variable_game_menu_2.11
+{Number of fighters:}
+Variable_game_menu_2.12
+{Quests without rank requirements:}
+Variable_game_menu_2.13
+{Number of guarding ships:}
+Variable_game_menu_2.14
+{Event frequency:}
+Variable_game_menu_2.15
+{Sailing mode:}
+Variable_game_menu_2.16
+{Paid visits to ports:}
+Variable_game_menu_2.17
+{Bribes to guards:}
+Variable_game_menu_2.18
+{Reduction of personal perks threshold:}
+Variable_game_menu_2.19
+{Reduction of ship perks threshold:}
+Variable_game_menu_2.20
+{Limitation of officer skill bonus:}
+Variable_game_menu_2.21
+{Contract for semi-immortality:}
+Variable_game_menu_2.22
+{Ship exploration:}
+Variable_game_menu_2.23
+{Navigation rank requirement:}
+Variable_game_menu_2.24
+{Difficulty influence on max load:}
+Variable_game_menu_2.25
+{Player character damage received: x}
+Variable_game_menu_2.26
+{Nation quests:}
+Variable_game_menu_3
+{England}
+Variable_game_menu_4
+{France}
+Variable_game_menu_5
+{Holland}
+Variable_game_menu_6
+{Spain}
+Variable_game_menu_7
+{Pirate}
+Variable_game_menu_8
+{Slasher}
+Variable_game_menu_9
+{Merchant}
+Variable_game_menu_10
+{Swordsman}
+Variable_game_menu_11
+{Adventurer}
+Variable_game_menu_12
+{Buccaneer}
+Variable_game_menu_13
+{Secret Agent}
+Variable_game_menu_14
+{Sea Wolf}
+Variable_game_menu_15
+{Character:}
+Variable_game_menu_16
+{Number of encounters:#space#}
+Variable_game_menu_17
+{Shooting only at opponents:#space#}
+Variable_GoodsTransfer_1
+{Weight of the selected kit:#space#}
+Variable_GoodsTransfer_2
+{c.}
+Variable_GoodsTransfer_3
+{Weight of the selected kit:#space#}
+Variable_GoodsTransfer_4
+{Goods}
+Variable_GoodsTransfer_5
+{Qty}
+Variable_GoodsTransfer_5.1
+{In pro=#enter#gress}
+Variable_GoodsTransfer_5.2
+{Wt/#enter#Pack}
+Variable_GoodsTransfer_5.3
+{Price#enter#pc. of wt.#enter#(base)}
+Variable_GoodsTransfer_6
+{Weight of the selected kit:#space#}
+Variable_GoodsTransfer_7
+{c.}
+Variable_GoodsTransfer_8
+{Item}
+Variable_GoodsTransfer_9
+{Qty}
+Variable_GoodsTransfer_10
+{Wt}
+Variable_GoodsTransfer_11
+{Weight of the selected kit:#space#}
+Variable_GoodsTransfer_12
+{Kit#space#}
+Variable_hirecrew_1
+{, class#space#}
+Variable_hirecrew_2
+{, command: min.#space#}
+Variable_hirecrew_3
+{, max.#space#}
+Variable_hirecrew_4
+{Maintenance of the ship:#space#}
+Variable_hirecrew_5
+{The cost of hiring one sailor#space#}
+Variable_hirecrew_6
+{Fire}
+Variable_hirecrew_7
+{Hire}
+Variable_hirecrew_8
+{The cost of hiring#space#}
+Variable_interface_1
+{This game can only be saved in churches.}
+Variable_interface_2
+{#space#d.#space#}
+Variable_interface_3
+{#space#h.#space#}
+Variable_interface_4
+{#space#m.#space#}
+Variable_interface_utils_1
+{the strength of the mast#space#}
+Variable_interface_utils_2
+{All the masts are intact.}
+Variable_interface_utils_3
+{All masts are intact.}
+Variable_interface_utils_4
+{Food on the ship for#space#}
+Variable_interface_utils_5
+{Rum on the ship for#space#}
+Variable_interface_utils_6
+{Food#space#}
+Variable_interface_utils_6.1
+{on ship / in squadron}
+Variable_interface_utils_6.2
+{#space#for}
+Variable_items_1
+{it was}
+Variable_items_2
+{Name of the items}
+Variable_items_3
+{Wt. pc.}
+Variable_items_4
+{Quantity}
+Variable_items_5
+{Weight}
+Variable_items_6
+{#space#(K}
+Variable_items_7
+{Items}
+Variable_items_8
+{Here you can get information about the available items, explore the inventory or change the equipment of the main character.#space#}
+Variable_items_9
+{You can also view the status of the inventory of officers, companions and passengers. They make the choice of weapon themselves when equipping them with new equipment.}
+Variable_items_10
+{The exchange of items with their officers is carried out on land through the 'Exchange' command.}
+Variable_items_11
+{Blade Damage}
+Variable_items_12
+{Choosing a set of equipment}
+Variable_items_13
+{}
+Variable_items_14
+{}
+Variable_items_15
+{The potion 'Tears of Ish-Chel' was used}
+Variable_items_16
+{It's been 20 minutes, you've read the captain's log.}
+Variable_items_17
+{You need a master key to crack.}
+Variable_items_18
+{Ammunition is selected -#space#}
+Variable_items_19
+{Your maximum health has been increased by#space#}
+Variable_items_20
+{#space#increases maximum health by#space#}
+Variable_items_21
+{Your maximum energy has increased by#space#}
+Variable_items_22
+{#space#increases the maximum energy by#space#}
+Variable_items_23
+{Your melee damage has been permanently increased by ten percent!}
+Variable_items_24
+{permanently increases melee damage by ten percent!}
+Variable_items_25
+{It seems that the last puff was unnecessary}
+Variable_items_26
+{the old ragged one}
+Variable_items_27
+{it looks new}
+Variable_items_28
+{Transfer the item:#space#}
+Variable_items_29
+{Throw away the item:#space#}
+Variable_items_30
+{Kit#space#}
+Variable_items_31
+{Kit#space#}
+Variable_items_32
+{Kit#space#}
+Variable_itemsbox_1
+{Money -#space#}
+Variable_itemsbox_2
+{Items on a corpse}
+Variable_itemsbox_3
+{Quantity}
+Variable_itemsbox_4
+{Name of the items}
+Variable_itemsbox_5
+{Quantity}
+Variable_itemsbox_6
+{Items in the chest}
+Variable_itemsbox_7
+{Items in a barrel}
+Variable_itemsbox_8
+{Officer's items}
+Variable_itemsbox_9
+{That's all the loot for now, Cap!}
+Variable_itemsbox_10
+{A new loot system for boarding}
+Variable_itemsbox_10.1
+{No more hand-looting!}
+Variable_itemsbox_10.2
+{All loot will be collected here.}
+Variable_itemsbox_10.3
+{Access to loot chest is available at any moment.}
+Variable_itemsbox_10.4
+{Hotkey is tilda (`)}
+Variable_itemsbox_11
+{In the captain's cabins, the search process remains the same.}
+Variable_itemsbox_12
+{It can be reassigned in the game settings.}
+Variable_itemsbox_13
+{Right-click to remove this message}
+Variable_itemsbox_14
+{All items}
+Variable_itemsbox_15
+{Hero's Items}
+Variable_itemsbox_16
+{Weapon and Potions}
+Variable_itemsbox_17
+{Must leave}
+Variable_itemsbox_17.1
+{The key to launch the loot chest is tilda(`)}
+Variable_itemsbox_18
+{Can be changed to another one in the game settings}
+Variable_itemsbox_19
+{Cabin trunk number#space#}
+Variable_itemsbox_20
+{Cabin trunk number#space#}
+Variable_itemsbox_21
+{in the chest}
+Variable_itemsbox_22
+{the hero}
+Variable_itemsbox_23
+{the hero}
+Variable_itemsbox_24
+{in the chest}
+Variable_itemsbox_25
+{weapon and potions}
+Variable_itemsbox_26
+{#space#(K}
+Variable_itemsbox_27
+{#space#(K}
+Variable_itemsbox_28
+{The number of items in the corpse:#space#}
+Variable_itemsbox_30
+{There are no character-equipped items on the exchange list.}
+Variable_itemsbox_31
+{1st Cabin Chest}
+Variable_itemsbox_32
+{2nd Cabin Chest}
+Variable_itemsbox_33
+{3rd Cabin Chest}
+Variable_itemsbox_34
+{4th Cabin Chest}
+Variable_itemsbox_35
+{take everything}
+Variable_itemsbox_36
+{take all items of the same type}
+Variable_itemsbox_37
+{give away all items of the same type}
+Variable_itemsbox_38
+{Give it away}
+Variable_itemsbox_39
+{Pick up}
+Variable_itemsbox_40
+{Fighter#space#}
+Variable_itemsbox_41
+{#space#ressurected.}
+Variable_itemsbox_3.1
+{Total}
+Variable_itemsbox_3.2
+{Weight}
+Variable_itemstrade_1
+{Quantity}
+Variable_itemstrade_2
+{Weight}
+Variable_itemstrade_3
+{Name of the items}
+Variable_itemstrade_4
+{Merchant's Items}
+Variable_itemstrade_5
+{Weight}
+Variable_itemstrade_6
+{#space#(K}
+Variable_itemstrade_7
+{Hero's Items: Shows only those items that you have.}
+Variable_itemstrade_8
+{Merchant's Items: Shows only those items that the merchant has.}
+Variable_itemstrade_9
+{All items: Standard, shows both your items and the merchant's items.}
+Variable_itemstrade_11
+{There are no character-equipped items on the list for sale.}
+Variable_itemstrade_12
+{Merchant}
+Variable_itemstrade_13
+{Sell}
+Variable_itemstrade_14
+{Gold:#space#}
+Variable_itemstrade_15
+{, weight:#space#}
+Variable_itemstrade_16
+{Buy}
+Variable_itemstrade_17
+{Gold:#space#}
+Variable_itemstrade_18
+{, weight:#space#}
+Variable_itemstrade_19
+{There is no treasurer. There is no one to make purchases!}
+Variable_itemstrade_20
+{transmit}
+Variable_itemstrade_21
+{There is no treasurer. There is no one to make purchases!}
+Variable_itemstrade_22
+{}
+Variable_itemstrade_23
+{overloaded}
+Variable_itemstrade_24
+{. It was not possible to replenish the equipment.}
+Variable_itemstrade_25
+{debugging -#space#}
+Variable_itemstrade_26
+{#space#purchased:#space#}
+Variable_itemstrade_27
+{#space#pcs .#space#}
+Variable_itemstrade_28
+{angry.}
+Variable_itemstrade_29
+{filled up}
+Variable_itemstrade_30
+{a set of consumables.}
+Variable_itemstrade_31
+{I didn't get#space#}
+Variable_itemstrade_32
+{#space#new consumables. I ran out of money.}
+Variable_itemstrade_33
+{I didn't get#space#}
+Variable_itemstrade_34
+{#space#new consumables due to overload.}
+Variable_itemstrade_35
+{I didn't get#space#}
+Variable_itemstrade_36
+{#space#new consumables. It was not available from the merchant.}
+Variable_itemstrade_37
+{already had}
+Variable_itemstrade_38
+{a complete set of consumables.}
+Variable_itemstrade_39
+{}
+Variable_itemstrade_40
+{sold}
+Variable_itemstrade_41
+{surplus consumables.}
+Variable_itemstrade_42
+{Sold: Blades#space#}
+Variable_itemstrade_43
+{, Pistols#space#}
+Variable_itemstrade_44
+{, Idols#space#}
+Variable_itemstrade_45
+{, Junk#space#}
+Variable_itemstrade_46
+{Sold: Blades#space#}
+Variable_itemstrade_47
+{, Pistols#space#}
+Variable_itemstrade_48
+{, Idols#space#}
+Variable_itemstrade_49
+{, Junk#space#}
+Variable_LeaveBattle_1
+{Our ship#space#}
+Variable_LeaveBattle_2
+{#space#is in contact with the enemy.}
+Variable_LeaveBattle_3
+{Our ships#space#}
+Variable_LeaveBattle_4
+{#space#are in contact with the enemy.}
+Variable_lockpicking_guide_1
+{Hacking locks allows you to open certain locked chests to obtain their contents. The process involves choosing the correct position for the lockpick inserted into the cylinder. The 'Ctrl' key is used to rotate the cylinder. Vertical mouse movement adjusts the angle of the inserted lockpick. Press 'Esc' to exit.}
+Variable_lockpicking_guide_2
+{By moving the mouse up and down, adjust the position of the lockpick. Once the angle is chosen, press and hold the 'Ctrl' key to start rotating the cylinder. To unlock the lock, the cylinder must be rotated 90 degrees.}
+Variable_lockpicking_guide_3
+{If the cylinder unexpectedly stops during rotation, it means the lockpick position is incorrect. In this case, release the 'Ctrl' key and wait for the cylinder to return to its initial position to release the lockpick. Remember, the closer you position the lockpick to the correct angle, the greater the rotation of the cylinder will be.}
+Variable_lockpicking_1
+{Opening locks}
+Variable_lockpicking_2
+{#space#in quantity#space#}
+Variable_lockpicking_3
+{#space#in quantity#space#}
+Variable_lockpicking_4
+{Loot from chest}
+Variable_lockpicking_5
+{You opened the chest and found the following items:}
+Variable_lockpicking_6
+{Opening locks}
+Variable_lockpicking_7
+{Ah, Damn It! The master key is broken!}
+Variable_lockpicking_8
+{Ah, Damn It! The master key broke during the cracking!}
+Variable_map_1
+{We're starting to sort out the encounters}
+Variable_map_2
+{BUG -1.}
+Variable_MapBest_1
+{Colony locations}
+Variable_MapBest_2
+{Location ID}
+Variable_MapBest_3
+{Label}
+Variable_MapBest_4
+{Room at the top of the tavern}
+Variable_MapBest_5
+{Colony locations}
+Variable_MapBest_6
+{Location ID}
+Variable_MapBest_7
+{Label}
+Variable_MapBest_8
+{Room at the top of the tavern}
+Variable_MapBest_9
+{Arena}
+Variable_MapBest_10
+{Fencing Town}
+Variable_MapBest_11
+{Relevance of goods data}
+Variable_mapview_1
+{It's been hours on the road:#space#}
+Variable_Mekakhrom_1
+{Riddle:#space#}
+Variable_Mekakhrom_2
+{Destination:}
+Variable_Mekakhrom_3
+{Answer correctly to get the keyword.}
+Variable_Mekakhrom_4
+{Keyword:#space#}
+Variable_Mekakhrom_5
+{Answer is incorrect.}
+Variable_Mekakhrom_6
+{Riddle:#space#}
+Variable_Mekakhrom_7
+{Island:}
+Variable_Mekakhrom_8
+{Destination:}
+Variable_Mekakhrom_9
+{Answer correctly to get the keyword.}
+Variable_Mekakhrom_10
+{Keyword:#space#}
+Variable_Mekakhrom_11
+{The answer is incorrect.}
+Variable_Mekakhrom_12
+{The riddle:#space#}
+Variable_Mekakhrom_13
+{Island:}
+Variable_Mekakhrom_14
+{Building:}
+Variable_Mekakhrom_15
+{Answer correctly to get the keyword.}
+Variable_Mekakhrom_16
+{Keyword:#space#}
+Variable_Mekakhrom_17
+{The answer is incorrect.}
+Variable_Mekakhrom_18
+{The riddle:}
+Variable_Mekakhrom_19
+{Destination:}
+Variable_Mekakhrom_20
+{Destination:}
+Variable_Mekakhrom_21
+{Location:}
+Variable_Mekakhrom_22
+{Today, a shout was heard from the shipyard building on the square:}
+Variable_Mekakhrom_23
+{I've finally completed this ship!}
+Variable_Mekakhrom_24
+{Keyword:#space#}
+Variable_Mekakhrom_25
+{The answer is incorrect.}
+Variable_Mekakhrom_26
+{The riddle:#space#}
+Variable_Mekakhrom_27
+{Island:}
+Variable_Mekakhrom_28
+{Location:}
+Variable_Mekakhrom_29
+{Answer correctly to get the keyword.}
+Variable_Mekakhrom_30
+{Keyword:#space#}
+Variable_Mekakhrom_31
+{The answer is incorrect.}
+Variable_Mekakhrom_32
+{The riddle:#space#}
+Variable_Mines_1
+{This mine has not been built.}
+Variable_Mines_2
+{This mine has not been built.}
+Variable_Mines_3
+{Extracted}
+Variable_Mines_4
+{This mine has not been built.}
+Variable_Mines_5
+{Guards}
+Variable_Mines_6
+{Slaves}
+Variable_Mines_7
+{Food}
+Variable_Mines_8
+{Medicines}
+Variable_Mines_9
+{Number of guards:#space#}
+Variable_Mines_10
+{Maximum number of guards:#space#}
+Variable_Mines_11
+{Sailors on the ship:#space#}
+Variable_Mines_12
+{Number of slaves:#space#}
+Variable_Mines_13
+{Maximum number of slaves:#space#}
+Variable_Mines_14
+{Number of slaves in the hold:#space#}
+Variable_Mines_15
+{Food at the mines for#space#}
+Variable_Mines_16
+{#space#week.}
+Variable_Mines_17
+{Amount of food in the hold:#space#}
+Variable_Mines_18
+{Medicines at the mines for#space#}
+Variable_Mines_19
+{#space#week.}
+Variable_Mines_20
+{The number of medicines in the hold:#space#}
+Variable_Mines_21
+{Not a single mine has been built.}
+Variable_Mines_22
+{Not a single mine has been built.}
+Variable_Mines_23
+{Not a single mine has been built.}
+Variable_Mines_24
+{Not a single mine has been built.}
+Variable_NationLegend_1
+{#space#and#space#}
+Variable_NationLegend_2
+{#space#became allies.}
+Variable_NationLegend_3
+{#space#went into a state of war.}
+Variable_NationLegend_4
+{#space#have moved to a neutral relationship.}
+Variable_NationRelation_1
+{Flag on the ship}
+Variable_option_screen_1
+{Icons of Nations}
+Variable_option_screen_2
+{Visual cuirass}
+Variable_option_screen_3
+{Logbook font}
+Variable_option_screen_4
+{Bomb parts}
+Variable_option_screen_5
+{Sound of gunshots}
+Variable_Plantation_1
+{Good}
+Variable_Plantation_2
+{Normal}
+Variable_Plantation_3
+{Slow}
+Variable_Plantation_4
+{Small}
+Variable_Plantation_5
+{Sugar}
+Variable_Plantation_6
+{Big}
+Variable_Plantation_7
+{Sugar and Coffee}
+Variable_Plantation_8
+{Information about the plantation}
+Variable_Plantation_9
+{Slaves}
+Variable_Plantation_10
+{Sugar extraction}
+Variable_Plantation_11
+{Coffee extraction}
+Variable_Plantation_12
+{Overseers}
+Variable_Plantation_13
+{Food}
+Variable_Plantation_14
+{Medicines}
+Variable_Plantation_15
+{Tools}
+Variable_Plantation_16
+{Your gold:#space#}
+Variable_Plantation_17
+{Plantation size:#space#}
+Variable_Plantation_18
+{Produces:#space#}
+Variable_Plantation_19
+{Mining speed:#space#}
+Variable_Plantation_20
+{The condition of the slaves:#space#}
+Variable_Plantation_21
+{The morality of slaves:}
+Variable_Plantation_22
+{Raise morale:}
+Variable_Plantation_23
+{Quantity:#space#}
+Variable_Plantation_24
+{Max. quantity:#space#}
+Variable_Plantation_25
+{The commands on the ship are:#space#}
+Variable_Plantation_26
+{Quantity:#space#}
+Variable_Plantation_27
+{Max. quantity:#space#}
+Variable_Plantation_28
+{On the ship:#space#}
+Variable_Plantation_29
+{Quantity:#space#}
+Variable_Plantation_30
+{Max. quantity:#space#}
+Variable_Plantation_31
+{Slaves in the hold:}
+Variable_Plantation_32
+{Food on the plantation on#space#}
+Variable_Plantation_33
+{#space#week.}
+Variable_Plantation_34
+{Quantity:#space#}
+Variable_Plantation_35
+{Food in the hold:#space#}
+Variable_Plantation_36
+{Medicines on the plantation on#space#}
+Variable_Plantation_37
+{#space#week.}
+Variable_Plantation_38
+{Quantity:#space#}
+Variable_Plantation_39
+{Medicines in the hold:#space#}
+Variable_Plantation_40
+{Bad}
+Variable_Plantation_41
+{Ordinary}
+Variable_Plantation_42
+{Good ones}
+Variable_Plantation_43
+{Bad}
+Variable_Plantation_44
+{Ordinary}
+Variable_Plantation_45
+{Good ones}
+Variable_Plantation_46
+{Current tools:#space#}
+Variable_Plantation_47
+{Price:#space#}
+Variable_Plantation_48
+{Bad}
+Variable_Plantation_49
+{Ordinary}
+Variable_Plantation_50
+{Good ones}
+Variable_pointsshop_1
+{Name of the items}
+Variable_pointsshop_2
+{Price}
+Variable_pointsshop_3
+{Weight pc.}
+Variable_pointsshop_4
+{Achievement Points:#space#}
+Variable_pointsshop_5
+{Exchange of achievement points}
+Variable_pointsshop_6
+{Spent#space#}
+Variable_pointsshop_7
+{#space#achievement points}
+Variable_pointsshop_8
+{Achievement Points:#space#}
+Variable_pointsshop_9
+{Achievement Points:#space#}
+Variable_pointsshop_10
+{The generated item in the photoshop:#space#}
+Variable_pointsshop_11
+{it won't work.}
+Variable_pointsshop_12
+{Exchange}
+Variable_pointsshop_13
+{Points per unit:#space#}
+Variable_pointsshop_14
+{Amount:#space#}
+Variable_pointsshop_15
+{, weight:#space#}
+Variable_pointsshop_16
+{Achievement Points:#space#}
+Variable_PsHero_1
+{#space#Recorded#space#}
+Variable_PsHero_2
+{days ago}
+Variable_PsHero_3
+{(betarezhim)}
+Variable_PsHero_4
+{Photo}
+Variable_PsHero_5
+{Name}
+Variable_PsHero_6
+{Rank}
+Variable_PsHero_7
+{Nation}
+Variable_PsHero_8
+{Ship}
+Variable_PsHero_9
+{Location}
+Variable_PsHero_10
+{Reputation}
+Variable_PsHero_11
+{Attitude}
+Variable_PsHero_12
+{Piastres}
+Variable_PsHero_13
+{There is no ship}
+Variable_PsHero_14
+{Hunting you}
+Variable_PsHero_15
+{Floating in#space#}
+Variable_PsHero_16
+{Accompanies the merchant to#space#}
+Variable_PsHero_17
+{Unknown}
+Variable_QuestBook_1
+{Ship has been explored:#space#}
+Variable_QuestBook_2
+{. Learned -#space#}
+Variable_QuestBook_3
+{#space#ships!}
+Variable_QuestBook_4
+{Achievement system with the possibility of receiving various awards}
+Variable_QuestBook_5
+{Achievement Points:#space#}
+Variable_QuestBook_6
+{Officer in training}
+Variable_QuestBook_7
+{Captain}
+Variable_QuestBook_8
+{Characteristics}
+Variable_QuestBook_9
+{Parking information}
+Variable_QuestBook_10
+{p.}
+Variable_QuestBook_11
+{A contract has been concluded}
+Variable_QuestBook_12
+{Semi-immortality}
+Variable_QuestBook_13
+{Officer in training}
+Variable_QuestBook_14
+{Officer in training}
+Variable_QuestBook_15
+{A contract has been concluded}
+Variable_QuestBook_16
+{Semi-immortality}
+Variable_QuestBook_17
+{Level}
+Variable_QuestBook_18
+{Achievement}
+Variable_QuestBook_19
+{Description}
+Variable_QuestBook_20
+{Progress}
+Variable_QuestBook_21
+{Glasses}
+Variable_QuestBook_22
+{Level 1.}
+Variable_QuestBook_23
+{lvl}
+Variable_QuestBook_24
+{Character's rank:}
+Variable_QuestBook_25
+{Character's money:}
+Variable_QuestBook_26
+{Amount of deposits:}
+Variable_QuestBook_27
+{Treasures found:}
+Variable_QuestBook_28
+{Bleeding hits have been dealt:}
+Variable_QuestBook_29
+{Injurie hits have been dealt:}
+Variable_QuestBook_30
+{Sharp hits have been dealt:}
+Variable_QuestBook_31
+{Stun hits have been dealt:}
+Variable_QuestBook_32
+{Chests opened:}
+Variable_QuestBook_33
+{Port charges have been paid:}
+Variable_QuestBook_34
+{Bribes were given:}
+Variable_QuestBook_35
+{Murders committed:}
+Variable_QuestBook_36
+{Ships sunk:}
+Variable_QuestBook_37
+{Undead killed:}
+Variable_QuestBook_38
+{Poisonous hits have been applied:}
+Variable_QuestBook_39
+{Critical hits have been dealt:}
+Variable_QuestBook_40
+{Created items:}
+Variable_QuestBook_41
+{Books read:}
+Variable_QuestBook_42
+{Officers hired:}
+Variable_QuestBook_43
+{Ships in the squadron:}
+Variable_QuestBook_44
+{Medicinal potions have been drunk:}
+Variable_QuestBook_45
+{Eaten food:}
+Variable_QuestBook_46
+{Completed generator quests:}
+Variable_QuestBook_47
+{Colony building:}
+Variable_QuestBook_48
+{Tournaments won:}
+Variable_QuestBook_49
+{Duels won:}
+Variable_QuestBook_50
+{Ships ordered:}
+Variable_QuestBook_51
+{Ships investigated:}
+Variable_QuestBook_52
+{Golden fleets sunk:}
+Variable_QuestBook_53
+{Colonies have been robbed:}
+Variable_QuestBook_54
+{Collected cards:}
+Variable_QuestBook_55
+{Ships}
+Variable_QuestBook_56
+{Sunk by cannons}
+Variable_QuestBook_57
+{Sunk by boarding}
+Variable_QuestBook_58
+{Boarded and captured}
+Variable_QuestBook_59
+{Class#space#}
+Variable_QuestBook_60
+{Killed}
+Variable_QuestBook_61
+{Sabers}
+Variable_QuestBook_62
+{Pistols}
+Variable_QuestBook_63
+{Soldiers}
+Variable_QuestBook_64
+{Citizens}
+Variable_QuestBook_65
+{Undead}
+Variable_QuestBook_66
+{Others}
+Variable_QuestBook_67
+{Total}
+Variable_QuestBook_68
+{Events}
+Variable_QuestBook_69
+{Value}
+Variable_QuestBook_70
+{Ships sold}
+Variable_QuestBook_71
+{Ships purchased}
+Variable_QuestBook_72
+{Riots on the ship}
+Variable_QuestBook_73
+{Slave rebellion}
+Variable_QuestBook_74
+{Ships released}
+Variable_QuestBook_75
+{Goods messed up by rats}
+Variable_QuestBook_76
+{Health is spent}
+Variable_QuestBook_77
+{Sailors were killed}
+Variable_QuestBook_78
+{Treasure found}
+Variable_QuestBook_79
+{Events}
+Variable_QuestBook_80
+{England}
+Variable_QuestBook_81
+{Total}
+Variable_QuestBook_82
+{The forts have been defeated}
+Variable_QuestBook_83
+{Colonies have been captured}
+Variable_QuestBook_84
+{Colonies have been looted}
+Variable_QuestBook_85
+{Ships captured}
+Variable_QuestBook_86
+{Ships sunk}
+Variable_QuestBook_87
+{Expenses}
+Variable_QuestBook_88
+{Payments to the team}
+Variable_QuestBook_89
+{Credit in the city}
+Variable_QuestBook_90
+{Amount}
+Variable_QuestBook_91
+{Date}
+Variable_QuestBook_92
+{Term (mo.)}
+Variable_QuestBook_93
+{City with money}
+Variable_QuestBook_94
+{Amount}
+Variable_QuestBook_95
+{Date}
+Variable_QuestBook_96
+{Result}
+Variable_QuestBook_97
+{Photo}
+Variable_QuestBook_98
+{Class}
+Variable_QuestBook_99
+{Ship}
+Variable_QuestBook_100
+{Captain}
+Variable_QuestBook_101
+{City}
+Variable_QuestBook_102
+{Location}
+Variable_QuestBook_103
+{Parking date}
+Variable_QuestBook_104
+{Price per month}
+Variable_QuestBook_105
+{Officer in training}
+Variable_QuestBook_106
+{Skeleton Reef, Bay of the Damned}
+Variable_QuestBook_107
+{Chapter}
+Variable_QuestBook_108
+{Indefinitely}
+Variable_QuestBook_109
+{Nation}
+Variable_QuestBook_110
+{Storage type}
+Variable_QuestBook_111
+{Location}
+Variable_QuestBook_112
+{Workload}
+Variable_QuestBook_113
+{Rent}
+Variable_QuestBook_114
+{Merchant's Warehouse}
+Variable_QuestBook_115
+{PA,}
+Variable_QuestBook_116
+{The usurer's cell}
+Variable_QuestBook_117
+{Pack}
+Variable_QuestBook_118
+{Weight}
+Variable_QuestBook_119
+{Name of the item}
+Variable_QuestBook_120
+{Weight pc.}
+Variable_QuestBook_121
+{Quantity}
+Variable_QuestBook_122
+{Total weight}
+Variable_QuestBook_123
+{Photo}
+Variable_QuestBook_124
+{Type of Ship}
+Variable_QuestBook_125
+{Class}
+Variable_QuestBook_130
+{No cannons}
+Variable_QuestBook_131
+{Ship ID:#space#}
+Variable_QuestBook_132
+{Ship ID:#space#}
+Variable_QuestBook_133
+{Name of the items}
+Variable_QuestBook_133.1
+{Dmg min/max}
+Variable_QuestBook_134
+{Weapon class}
+Variable_QuestBook_135
+{Weight}
+Variable_QuestBook_136
+{Additional properties}
+Variable_QuestBook_137
+{Name of the items}
+Variable_QuestBook_138
+{Cartridges, requirements}
+Variable_QuestBook_139
+{Precision}
+Variable_QuestBook_140
+{Recharge}
+Variable_QuestBook_141
+{Name of the items}
+Variable_QuestBook_141.1
+{Health/Energy}
+Variable_QuestBook_142
+{The "Antidote"}
+Variable_QuestBook_143
+{Weight}
+Variable_QuestBook_144
+{Name of the items}
+Variable_QuestBook_145
+{Description}
+Variable_QuestBook_146
+{unarmed}
+Variable_QuestBook_147
+{qualities}
+Variable_QuestBook_148
+{rifle butt#space#}
+Variable_QuestBook_149
+{Yes.}
+Variable_QuestBook_149.1
+{Skill 'Shooter' required.}
+Variable_QuestBook_149.2
+{Skill 'Musketeer' required.}
+Variable_QuestBook_149.3
+{Doesn't require any skills.}
+Variable_QuestBook_149.4
+{Block pierce chance +}
+Variable_QuestBook_149.5
+{Crit chance +}
+Variable_QuestBook_149.6
+{Cuirass pierce chance +}
+Variable_QuestBook_149.7
+{Sharp hit chance +}
+Variable_QuestBook_149.8
+{Stunning chance +}
+Variable_QuestBook_149.9
+{Injury chance +}
+Variable_QuestBook_149.10
+{Bleeding chance +}
+Variable_QuestBook_149.11
+{Poisoning chance +}
+Variable_QuestBook_150
+{Encyclopedia of all ships}
+Variable_QuestBook_151
+{Encyclopedia of all melee weapon}
+Variable_QuestBook_152
+{Encyclopedia of all guns}
+Variable_QuestBook_153
+{Encyclopedia of Food and Potions}
+Variable_QuestBook_154
+{Encyclopedia of bonus items}
+Variable_QuestBook_155
+{Encyclopedia of in-game quests}
+Variable_QuestBook_155
+{Successful}
+Variable_QuestBook_156
+{Waiting...}
+Variable_QuicklyTrade_1
+{Planks}
+Variable_QuicklyTrade_2
+{Canvas}
+Variable_SailsGerald_1
+{The Master}
+Variable_SailsGerald_2
+{It is impossible to install a coat of arms on this ship}
+Variable_SailsGerald_3
+{The color of the sails}
+Variable_SailsGerald_4
+{The material of the sails}
+Variable_SailsGerald_5
+{Choose the symbols for the sail}
+Variable_SailsGerald_6
+{Current}
+Variable_SailsGerald_7
+{Current}
+Variable_SailsGerald_8
+{#space#(current)}
+Variable_SailsGerald_9
+{Price:#space#}
+Variable_save_load_1
+{Enter the name of the saved game:}
+Variable_save_load_2
+{England}
+Variable_save_load_3
+{France}
+Variable_save_load_4
+{Holland}
+Variable_save_load_5
+{Spain}
+Variable_save_load_6
+{Brethren}
+Variable_save_load_7
+{No}
+Variable_save_load_8
+{Unknown}
+Variable_save_load_9
+{Unknown}
+Variable_save_load_10
+{Location:#space#}
+Variable_save_load_11
+{Nation}
+Variable_save_load_13
+{Difficulty:#space#}
+Variable_save_load_14
+{Money:#space#}
+Variable_save_load_15
+{Rank:#space#}
+Variable_selectCharacter_1
+{Attention!}
+Variable_selectCharacter_2
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_3
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_4
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_5
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_6
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_7
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_8
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_9
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_10
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_11
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_12
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_13
+{The number of incorrect clicks:#space#}
+Variable_selectCharacter_14
+{Random nation and character}
+Variable_ship_1
+{Goods in the hold}
+Variable_ship_2
+{Quantity}
+Variable_ship_3
+{Weight}
+Variable_ship_4
+{Pack}
+Variable_ship_5
+{Pack weight}
+Variable_ship_6
+{Squadron deadweight: Free:#space#}
+Variable_ship_6.1
+{с. | Taken:#space#}
+Variable_ship_6.2
+{с. | Max:#space#}
+Variable_ship_7
+{c.}
+Variable_ship_8
+{Class#space#}
+Variable_ship_9
+{Maintenance of the ship:#space#}
+Variable_ship_10
+{Bottom pollution:}
+Variable_ship_11
+{Speed penalty:#space#}
+Variable_ship_12
+{Maneuver penalty:#space#}
+Variable_ship_13
+{Type:#space#}
+Variable_ship_14
+{Caliber:#space#}
+Variable_ship_15
+{Range:#space#}
+Variable_ship_16
+{Recharge:#space#}
+Variable_ship_17
+{sec.}
+Variable_ship_18
+{Weight:#space#}
+Variable_ship_19
+{c.}
+Variable_ship_20
+{Maximum number of crew, taking into account overflow:#space#}
+Variable_ship_21
+{Repair#space#}
+Variable_ship_22
+{#space#pieces of planks}
+Variable_ship_23
+{Repair#space#}
+Variable_ship_24
+{pieces of canvas}
+Variable_ship_25
+{Loaded:#space#}
+Variable_ship_26
+{, pack#space#}
+Variable_ship_27
+{Throw it away?}
+Variable_ship_28
+{Weight in the hold}
+Variable_ship_28.1
+{Quantity in the hold}
+Variable_ship_29
+{Switch to ship-to-ship exchange mode?}
+Variable_ship_30
+{During the battle, the exchange with ships is only possible side to side.}
+Variable_ship_31
+{Using the 'lifeboat rescue' ability allows you to exchange with ships in battle. Continue?}
+Variable_ship_32
+{An exchange with this companion's ship is not possible.}
+Variable_ship_33
+{The exchange is impossible. The hero doesn't have a ship.}
+Variable_ship_34
+{Cannons in the hold}
+Variable_ship_35
+{Quantity}
+Variable_ship_36
+{Distan.}
+Variable_ship_37
+{Damage}
+Variable_ship_38
+{Time}
+Variable_ship_39
+{Current date:#space#}
+Variable_ship_40
+{Date of the previous payment:#space#}
+Variable_ship_41
+{Shares in the current month:}
+Variable_ship_42
+{The captain's share:#space#}
+Variable_ship_43
+{The proportion of officers:#space#}
+Variable_ship_44
+{The proportion of sailors:#space#}
+Variable_ship_45
+{The debt of the current month:#space#}
+Variable_ship_46
+{Last month's debt:#space#}
+Variable_ship_47
+{ERROR: the sorting attribute was not found '}
+Variable_ship_48
+{' by the ship '}
+Variable_shipyard_sell
+{The goods from the ship will be sold to the store.#enter#The contraband is loaded onto the flagship, the excess cargo is thrown away.#enter#The guns are automatically removed and sold to the shipyard.#enter#When the flagship is sold, the contraband is thrown away, and the team leaves for the tavern.}
+Variable_shipyard_1
+{When choosing the option "Distribute to the maximum team by ships", in case of sale of the ship, the remaining team on it is distributed to all other ships in turn, starting with the flagship. In this case, the command is filled up to overflow. The skills and morale of the team are recalculated at the same time.}
+Variable_shipyard_2
+{When choosing the option "Distribute to the optimal team by ships", in case of sale of the ship, the remaining team on it is distributed to all other ships in turn, starting with the flagship. At the same time, the command is filled to the optimum, without overloading.  The skills and morale of the team are recalculated at the same time.}
+Variable_shipyard_3
+{When choosing the option "Dismiss to the tavern" in case of sale of the ship, the remaining team on it goes to the tavern, merging in skills with the applicants for the team already present there.}
+Variable_shipyard_4
+{Firing the team}
+Variable_shipyard_5
+{Class#space#}
+Variable_shipyard_6
+{Type:#space#}
+Variable_shipyard_7
+{Caliber:#space#}
+Variable_shipyard_8
+{Range:#space#}
+Variable_shipyard_9
+{Recharge:#space#}
+Variable_shipyard_10
+{sec.}
+Variable_shipyard_11
+{Weight:#space#}
+Variable_shipyard_12
+{c.}
+Variable_shipyard_13
+{Maximum number of crew, taking into account overflow:#space#}
+Variable_shipyard_14
+{Loaded:#space#}
+Variable_shipyard_15
+{Dismantling will take hours: at least#space#}
+Variable_shipyard_16
+{, the upgrade will take hours: at least#space#}
+Variable_shipyard_17
+{Upgrade}
+Variable_shipyard_18
+{Dismantling}
+Variable_shipyard_19
+{Maximum upgrades}
+Variable_shipyard_20
+{Maximum upgrades, hours to withdraw: at least#space#}
+Variable_shipyard_21
+{Dismantling}
+Variable_shipyard_22
+{Upgrade is not possible for this ship}
+Variable_shipyard_23
+{Upgrade is not possible for this ship}
+Variable_shipyard_24
+{Upgrade is not possible for this ship}
+Variable_shipyard_25
+{Class}
+Variable_shipyard_27
+{Ship}
+Variable_shipyard_28
+{Price}
+Variable_shipyard_29
+{Cann}
+Variable_shipyard_30
+{DeadWt}
+Variable_shipyard_34
+{Buy a ship for#space#}
+Variable_shipyard_35
+{Buy a ship for#space#}
+Variable_shipyard_35.1
+{Team surplus will be fired in the tavern.}
+Variable_shipyard_36
+{Sell the ship for#space#}
+Variable_shipyard_37
+{What should we do with the remaining crew on the ship?}
+Variable_shipyard_38
+{Painting}
+Variable_shipyard_39
+{You don't have enough funds.}
+Variable_shipyard_40
+{I will use my experience and best judgment to apply a new paint job to your ship. It will cost you in#space#}
+Variable_shipyard_41
+{#space#piastres. Do you agree?}
+Variable_shipyard_42
+{Unfortunately, I cannot provide you with this service now. I sincerely apologize.}
+Variable_shipyard_43
+{For the sale of goods from the ship:}
+Variable_shipyard_44
+{A companion took the money for his ship.}
+Variable_shipyard_45
+{Part of the crew from the sold ship has transferred to your ship.}
+Variable_shipyard_46
+{The crew from the sold ship has transferred to your ship.}
+Variable_shipyard_47
+{Part of the crew from the sold ship transferred to the ship of companion#space#}
+Variable_shipyard_48
+{The crew from the sold ship transferred to the ship of companion#space#}
+Variable_shipyard_49
+{The remaining crew from the sold ship went on leave.}
+Variable_shipyard_50
+{Part of the crew from the sold ship has transferred to your ship.}
+Variable_shipyard_51
+{The crew from the sold ship has transferred to your ship.}
+Variable_shipyard_52
+{Part of the crew from the sold ship transferred to the ship of companion#space#}
+Variable_shipyard_53
+{The crew from the sold ship transferred to the ship of companion#space#}
+Variable_shipyard_54
+{The remaining crew from the sold ship went on leave.}
+Variable_shipyard_55
+{hours:#space#}
+Variable_shipyard_55.1
+{#space#| minutes:#space#}
+Variable_shipyard_56
+{Already improved}
+Variable_shipyard_57
+{It can be improved}
+Variable_shipyard_58
+{Upgrade is not possible for this ship}
+Variable_shipyard_59
+{Upgrade is not possible}
+Variable_shipyard_60
+{Already improved}
+Variable_shipyard_61
+{It can be improved}
+Variable_shipyard_62
+{Already improved}
+Variable_shipyard_63
+{It can be improved}
+Variable_shipyard_64
+{Upgrade is not possible for this ship}
+Variable_shipyard_65
+{Upgrade is not possible}
+Variable_shipyard_66
+{Already improved}
+Variable_shipyard_67
+{It can be improved}
+Variable_shipyard_68
+{Already improved}
+Variable_shipyard_69
+{It can be improved}
+Variable_shipyard_70
+{Upgrade is not possible for this ship}
+Variable_shipyard_71
+{Upgrade is not possible}
+Variable_shipyard_72
+{Already improved}
+Variable_shipyard_73
+{It can be improved}
+Variable_shipyard_74
+{Maximum number of upgrades}
+Variable_shipyard_75
+{Unique ship upgrades}
+Variable_shipyard_76
+{Upgrades:#space#}
+Variable_shipyard_77
+{Hull painting#space#}
+Variable_shipyard_78
+{Price:#space#}
+Variable_shipyard_79
+{Price:#space#}
+Variable_shipyard_80
+{This cabin is not the right size for the ship.}
+Variable_shipyard_81
+{This is your cabin.}
+Variable_sAdd_1
+{#enter#hull:}
+Variable_sAdd_2
+{#enter#masts:}
+Variable_sAdd_3
+{#enter#speed:}
+Variable_sAdd_4
+{#enter#maneuverability:}
+Variable_sAdd_5
+{#enter#backwind:}
+Variable_sAdd_6
+{#enter#deadweight:}
+Variable_sAdd_7
+{#enter#crew:}
+Variable_sAdd_8
+{#enter#caliber:}
+Variable_cannons_price
+{Cannons price:#space#}
+Variable_shipyard1_1
+{Order}
+Variable_shipyard1_2
+{Construction time:#space#}
+Variable_shipyard1_3
+{d.}
+Variable_shipyard1_4
+{Type:#space#}
+Variable_shipyard1_5
+{Caliber:#space#}
+Variable_shipyard1_6
+{Range:#space#}
+Variable_shipyard1_7
+{Recharge:#space#}
+Variable_shipyard1_8
+{sec.}
+Variable_shipyard1_9
+{Weight:#space#}
+Variable_shipyard1_10
+{c.}
+Variable_shipyard1_11
+{Maximum number of crew, taking into account overflow:#space#}
+Variable_shipyard1_12
+{Loaded:#space#}
+Variable_shipyard1_13
+{Ship}
+Variable_shipyard1_14
+{Class}
+Variable_shipyard1_15
+{Cannons}
+Variable_shipyard1_16
+{DeadWt}
+Variable_shipyard1_17
+{Speed}
+Variable_shipyard1_18
+{Crew}
+Variable_shipyard1_19
+{#space#(an English patent is needed)}
+Variable_shipyard1_20
+{(a Spanish patent is needed)}
+Variable_shipyard1_21
+{#space#(a Fran patetnt is needed)}
+Variable_shipyard1_22
+{(a patent is needed)}
+Variable_shipyard1_23
+{Order}
+Variable_shipyard1_24
+{Order}
+Variable_shipyard1_25
+{there is no patent}
+Variable_shipyard1_26
+{Order a ship for#space#}
+Variable_shipyard1_27
+{In addition, for special improvements to the ship, I will need to deliver the following materials:}
+Variable_shipyard1_28
+{pcs.,#space#}
+Variable_shipyard1_29
+{pcs.,#space#}
+Variable_shipyard1_30
+{chests of coins-}
+Variable_shipyard1_31
+{pcs.}
+Variable_shipyard1_32
+{Ship price:#space#}
+Variable_shipyard1_33
+{Material}
+Variable_shipyard1_34
+{Quantity}
+Variable_shipyard1_35
+{Advance payment for upgrades:#space#}
+Variable_shipyard1_36
+{Total cost:#space#}
+Variable_shipyard1_37
+{
+Shipwright Mastery:#enter##enter#Improvement Limits:#enter##enter#Improvement Points:#enter##enter#Available Upgrades:
+}
+Variable_shipyard2_1
+{Order}
+Variable_shipyard2_2
+{Construction time:#space#}
+Variable_shipyard2_3
+{d.}
+Variable_shipyard2_4
+{Type:#space#}
+Variable_shipyard2_5
+{Caliber:#space#}
+Variable_shipyard2_6
+{Range:#space#}
+Variable_shipyard2_7
+{Recharge:#space#}
+Variable_shipyard2_8
+{sec.}
+Variable_shipyard2_9
+{Weight:#space#}
+Variable_shipyard2_10
+{c.}
+Variable_shipyard2_11
+{Maximum number of crew, taking into account overflow:#space#}
+Variable_shipyard2_12
+{Taken:#space#}
+Variable_shipyard2_13
+{Ship}
+Variable_shipyard2_14
+{Class}
+Variable_shipyard2_15
+{Cannons}
+Variable_shipyard2_16
+{DeadWt}
+Variable_shipyard2_17
+{Speed}
+Variable_shipyard2_18
+{Crew}
+Variable_shipyard2_19
+{Order a ship for#space#}
+Variable_shipyard2_20
+{In addition, for special improvements to the ship, I will need to deliver the following materials:}
+Variable_shipyard2_21
+{pcs.,#space#}
+Variable_shipyard2_22
+{pcs.,#space#}
+Variable_shipyard2_23
+{chests of coins-}
+Variable_shipyard2_24
+{pcs.}
+Variable_shipyard2_25
+{Ship price:#space#}
+Variable_shipyard2_26
+{Material}
+Variable_shipyard2_27
+{Quantity}
+Variable_shipyard2_28
+{Advance payment for upgrades:#space#}
+Variable_shipyard2_29
+{Total cost:#space#}
+Variable_shipyard2_30
+{
+Shipwright Mastery:#enter##enter#Improvement Limits:#enter##enter##enter##enter#Available Improvements:
+}
+Variable_Speak_1
+{piastres.}
+Variable_Speak_2
+{piastres}
+Variable_storage_1
+{Weight}
+Variable_storage_2
+{Pack}
+Variable_storage_3
+{Weight}
+Variable_storage_4
+{The interface of transshipment to the warehouse or from the warehouse to the ship}
+Variable_storage_6
+{Total load of the warehouse:#space#}
+Variable_storage_7
+{c.}
+Variable_storage_8
+{, pack#space#}
+Variable_storage_9
+{Unload to the warehouse}
+Variable_storage_10
+{Load into the hold}
+Variable_store_1
+{Weight}
+Variable_store_2
+{Pack}
+Variable_store_3
+{Pack weight}
+Variable_store_4
+{Total weight}
+Variable_store_5
+{Filters}
+Variable_store_6
+{Ship's Goods: Shows only those goods that are on your ship.}
+Variable_store_7
+{All goods: standard, shows the goods both on the ship and in the store.}
+Variable_store_8
+{Store Items: shows only those items that are in the store.}
+Variable_store_9
+{Trading Interface}
+{Colors of the goods type:}
+Variable_store_12
+{- green : colonial goods}
+Variable_store_13
+{- blue : imported goods}
+Variable_store_14
+{- red : contraband goods}
+Variable_store_15
+{- brown : goods of aggressive demand}
+Variable_store_16
+{Food:#space#}
+Variable_store_17
+{d}
+Variable_store_18
+{Rum:#space#}
+Variable_store_19
+{d}
+Variable_store_20
+{, pack#space#}
+Variable_store_21
+{Money#space#}
+Variable_store_22
+{, weight#space#}
+Variable_store_23
+{c.}
+Variable_store_24
+{c.}
+Variable_store_25
+{c.}
+Variable_store_26
+{There is no treasurer. There is no one to make purchases!}
+Variable_store_27
+{There is no treasurer. There is no one to make purchases!}
+Variable_store_good_old_1
+{Weight}
+Variable_store_good_old_2
+{Pack}
+Variable_store_good_old_3
+{Pack weight}
+Variable_store_good_old_4
+{Total weight}
+Variable_store_good_old_5
+{Ship: '}
+Variable_store_good_old_6
+{Filters}
+Variable_store_good_old_7
+{Ship's Goods: Shows only those goods that are on your ship.}
+Variable_store_good_old_8
+{All goods: standard, shows the goods both on the ship and in the store.}
+Variable_store_good_old_9
+{Store Items: shows only those items that are in the store.}
+Variable_store_good_old_10
+{Trading Interface}
+Variable_store_good_old_12
+{Colors of the goods type:}
+Variable_store_good_old_13
+{- green : colonial goods}
+Variable_store_good_old_14
+{- blue : imported goods}
+Variable_store_good_old_15
+{- red : contraband goods}
+Variable_store_good_old_16
+{- brown : goods of aggressive demand}
+Variable_store_good_old_17
+{Food:#space#}
+Variable_store_good_old_17.1
+{Food:#space#}
+Variable_store_good_old_18
+{d}
+Variable_store_good_old_19
+{Rum:#space#}
+Variable_store_good_old_20
+{d}
+Variable_store_good_old_21
+{, pack#space#}
+Variable_store_good_old_22
+{Sell}
+Variable_store_good_old_23
+{Gold#space#}
+Variable_store_good_old_24
+{, weight#space#}
+Variable_store_good_old_25
+{c.}
+Variable_store_good_old_26
+{Buy}
+Variable_store_good_old_27
+{Gold#space#}
+Variable_store_good_old_28
+{, weight#space#}
+Variable_store_good_old_29
+{c.}
+Variable_store_good_old_30
+{There is no treasurer. There is no one to make purchases!}
+Variable_store_good_old_31
+{There is no treasurer. There is no one to make purchases!}
+Variable_TavernWait_1
+{#space#and#space#}
+Variable_TavernWait_2
+{The Clock}
+Variable_TavernWait_3
+{Minutes}
+Variable_TavernWait_4
+{Rest}
+Variable_TavernWait_5
+{The Clock}
+Variable_TavernWait_6
+{Days}
+Variable_TavernWait_7
+{#space#and#space#}
+Variable_TavernWait_8
+{Days:#space#}
+Variable_TavernWait_9
+{#space#and#space#}
+Variable_TavernWait_10
+{Days:#space#}
+Variable_TavernWait_11
+{#space#and#space#}
+Variable_TavernWait_12
+{Days:#space#}
+Variable_TavernWait_13
+{#space#hours}
+Variable_TavernWait_14
+{#space#hour}
+Variable_TavernWait_15
+{#space#hours}
+Variable_TavernWait_16
+{#space#hours}
+Variable_TavernWait_17
+{#space#minutes}
+Variable_TavernWait_18
+{#space#minute}
+Variable_TavernWait_19
+{#space#minutes}
+Variable_TavernWait_20
+{#space#minutes}
+Variable_TavernWait_21
+{#space#minutes}
+Variable_TavernWait_22
+{#space#minutes}
+Variable_TavernWait_23
+{#space#minutes}
+Variable_TradeBook_1
+{Nation}
+Variable_TradeBook_2
+{City}
+Variable_TradeBook_3
+{Location}
+Variable_TradeBook_4
+{Relevance}
+Variable_TradeBook_5
+{Type}
+Variable_TradeBook_6
+{Pack}
+Variable_TradeBook_7
+{Pack weight}
+Variable_TradeBook_8
+{Total weight}
+Variable_TradeBook_9
+{Colors of the goods type indicator :}
+Variable_TradeBook_10
+{- green : colonial goods}
+Variable_TradeBook_11
+{- blue : imported goods}
+Variable_TradeBook_12
+{- red : contraband goods}
+Variable_TradeBook_13
+{- brown : goods of aggressive demand}
+Variable_transfer_main_1
+{Quantity}
+Variable_transfer_main_2
+{Weight}
+Variable_transfer_main_3
+{Goods}
+Variable_transfer_main_4
+{Quantity}
+Variable_transfer_main_5
+{Weight}
+Variable_transfer_main_5.1
+{Pack/Weight}
+Variable_transfer_main_6
+{#space#It's time to inform him about the five surrendered vessels.}
+Variable_transfer_main_7
+{#space#There's only one vessel left.}
+Variable_transfer_main_8
+{#space#}
+Variable_transfer_main_9
+{#space#vessels left.}
+Variable_transfer_main_10
+{Victory! The ship '}
+Variable_transfer_main_11
+{' surrendered without a fight. Blackbeard will be pleased.}
+Variable_transfer_main_11.1
+{Number of items to be transferred (click to enter, ENTER to confirm)}
+Variable_transfer_main_12
+{Pirates on a desert island}
+Variable_transfer_main_13
+{Explosion on an enemy ship}
+Variable_transfer_main_14
+{Pirates on a desert island}
+Variable_transfer_main_15
+{Maintenance of the ship:#space#}
+Variable_transfer_main_16
+{Type:#space#}
+Variable_transfer_main_17
+{Caliber:#space#}
+Variable_transfer_main_18
+{Range:#space#}
+Variable_transfer_main_19
+{Recharge:#space#}
+Variable_transfer_main_20
+{sec.}
+Variable_transfer_main_21
+{Weight:#space#}
+Variable_transfer_main_22
+{c.}
+Variable_transfer_main_23
+{Maximum number of crew, taking into account overflow:#space#}
+Variable_transfer_main_24
+{Loaded:#space#}
+Variable_transfer_main_25
+{Type:#space#}
+Variable_transfer_main_26
+{Caliber:#space#}
+Variable_transfer_main_27
+{Range:#space#}
+Variable_transfer_main_28
+{Recharge:#space#}
+Variable_transfer_main_29
+{sec.}
+Variable_transfer_main_30
+{Weight:#space#}
+Variable_transfer_main_31
+{c.}
+Variable_transfer_main_32
+{Maximum number of crew, taking into account overflow:#space#}
+Variable_transfer_main_33
+{Loaded:#space#}
+Variable_transfer_main_34
+{, pack#space#}
+Variable_transfer_main_35
+{Throw it away?}
+Variable_transfer_main_36
+{Weight in the hold}
+Variable_transfer_main_37
+{Remove the captain?}
+Variable_transfer_main_38
+{This captain cannot be removed at the moment.}
+Variable_transfer_main_39
+{This captain cannot be taken off at the moment.}
+Variable_transfer_main_40
+{There can only be eight ships in a hero's squadron.}
+Variable_transfer_main_41.0
+{Crew#enter#min:}
+Variable_transfer_main_41
+{, opt.#space#}
+Variable_transfer_main_42
+{, max.#space#}
+Variable_transfer_main_43
+{Those who want to join our team}
+Variable_transfer_main_43.1
+{Food on the ship:#enter#for}
+Variable_transfer_main_43.2
+{Rum on the ship:#enter#for}
+Variable_utilite_1
+{Protection#space#}
+Variable_utilite_2
+{#space#percent.}
+Variable_utilite_3
+{When shooting, the following are used:#space#}
+Variable_utilite_4
+{min damage#space#}
+Variable_utilite_5
+{#space#max#space#}
+Variable_utilite_6
+{Weapon:#space#}
+Variable_utilite_7
+{Recharge time#space#}
+Variable_utilite_8
+{#space#sec., accuracy#space#}
+Variable_utilite_9
+{When shooting, the following are used:#enter#}
+Variable_utilite_10
+{min damage#space#}
+Variable_utilite_11
+{#space#max#space#}
+Variable_utilite_12
+{Weapon:#space#}
+Variable_utilite_13
+{Recharge time#space#}
+Variable_utilite_14
+{#space#sec., accuracy#space#}
+Variable_utilite_15
+{When shooting, the following are used:#enter#}
+Variable_utilite_16
+{The 'Shooter' perk is required to use.}
+Variable_utilite_17
+{The 'Musketeer' perk is required for use.}
+Variable_utilite_18
+{Does not require special perks.}
+Variable_utilite_19
+{Approximately read#space#}
+Variable_utilite_20
+{min#space#}
+Variable_utilite_21
+{max#space#}
+Variable_utilite_22
+{min#space#}
+Variable_utilite_26
+{Price#space#}
+Variable_utilite_27
+{/ Weight}
+Variable_utilite_28
+{damage min/max#space#}
+Variable_dmg_x
+{Damage: x}
+Variable_overload_crew
+{The size of the crew may be higher than the maximum, but this causes overflow and living conditions on the ship become terrible, which leads to a daily drop in morale. On average, up to 25% more sailors can be taken on board.}
+Variable_check_cannons
+{Double-click or Enter on this field causes a view of the equipment of the guns on the sides.}
+Variable_quick_sell
+{Quick sale of everything: up/down arrows on the list, Shift + right, Enter}
+Variable_guide_trade
+{
+Double-clicking the mouse or Enter on the rows of the table opens the product purchase/sale form.
+Shift + left/right on the rows of the table automatically open a form with a preset number of purchases/sales to the maximum.
+Entering a positive amount from the keyboard establishes the purchase of the product, and a negative (minus) sale.
+The left/right arrows change the quantity by packs, and Shift + left/right to the maximum available. Pressing Enter on the form is equivalent to OK, and Esc is Cancel.
+While in form mode and swinging the list in the table up/down arrows, you can view the product description under the cursor of the table.
+}
+Variable_fast_transshipment
+{Fast transshipment of all goods: up/down arrows in the list, Shift + right, Enter}
+Variable_fast_take
+{Fast take everything: up/down arrows on the list, Shift + right, Enter}
+Variable_fast_give_away
+{Fast give everything away: up/down arrows on the list, Shift + right, Enter}
+Variable_game_version
+{Game version on start:#enter#}
+Variable_cheats
+{#enter#Used cheats:}
+Variable_no_cheats
+{#enter#No cheats were used!}
+Variable_pirate_ship_man
+{pirate#space#}
+Variable_pirate_ship_woman
+{pirate#space#}
+Variable_which_on
+{, which on#space#}
+Variable_days_with_space
+{#space#days}
+Variable_days_with_space_voc
+{#space#days}
+Variable_couple_hours
+{a few hours}
+Variable_check_relations_1
+{Relations between MC and#space#}
+Variable_check_relations_2
+{#space#are#space#}
+Variable_check_relations_3
+{Relations between base hero nation and#space#}
+Variable_check_relations_4
+{Relations between#space#}

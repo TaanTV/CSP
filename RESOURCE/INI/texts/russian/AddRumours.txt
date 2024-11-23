@@ -1,0 +1,1288 @@
+Variable_Arena_1
+{Слыхали}
+Variable_Arena_2
+{Знаете ли вы}
+Variable_Arena_3
+{Невероятно}
+Variable_Arena_4
+{, капитан#space#}
+Variable_Arena_5
+{потерпел}
+Variable_Arena_6
+{потерпела}
+Variable_Arena_7
+{#space#поражение в дуэли, что проходила в качестве соревнований на Арене!}
+Variable_Arena_8
+{Слыхали}
+Variable_Arena_9
+{Знаете ли вы}
+Variable_Arena_10
+{Невероятно}
+Variable_Arena_11
+{, некий капитан#space#}
+Variable_Arena_12
+{оказался}
+Variable_Arena_13
+{оказалась}
+Variable_Arena_14
+{#space#сильнее в дуэли, что проходила в качестве соревнований на Арене!}
+Variable_Arena_15
+{Слыхали}
+Variable_Arena_16
+{Знаете ли вы}
+Variable_Arena_17
+{Невероятно}
+Variable_Arena_18
+{, некий капитан#space#}
+Variable_Arena_19
+{не справился}
+Variable_Arena_20
+{не справилась}
+Variable_Arena_21
+{#space#со страшными монстрами на соревнованиях Арены!}
+Variable_Arena_22
+{Слыхали}
+Variable_Arena_23
+{Знаете ли вы}
+Variable_Arena_24
+{Невероятно}
+Variable_Arena_25
+{, капитан#space#}
+Variable_Arena_26
+{сумел}
+Variable_Arena_27
+{сумела}
+Variable_Arena_28
+{#space#справиться со страшными монстрами на соревнованиях Арены!}
+Variable_Arena_29
+{Слыхали}
+Variable_Arena_30
+{Знаете ли вы}
+Variable_Arena_31
+{Невероятно}
+Variable_Arena_32
+{, капитан#space#}
+Variable_Arena_33
+{участвовший}
+Variable_Arena_34
+{участвовшая}
+Variable_Arena_35
+{#space#в последнем турнире на Арене,#space#}
+Variable_Arena_36
+{не смог его выиграть.}
+Variable_Arena_37
+{не смогла его выиграть.}
+Variable_Arena_38
+{Слыхали}
+Variable_Arena_39
+{Знаете ли вы}
+Variable_Arena_40
+{Невероятно}
+Variable_Arena_41
+{, в последнем турнире, проходящем на Арене, сильнее всех#space#}
+Variable_Arena_42
+{оказался}
+Variable_Arena_43
+{оказалась}
+Variable_Arena_44
+{#space#капитан#space#}
+Variable_Arena_45
+{Слыхали}
+Variable_Arena_46
+{Знаете ли вы}
+Variable_Arena_47
+{Невероятно}
+Variable_Arena_48
+{, даже капитан#space#}
+Variable_Arena_49
+{не смог}
+Variable_Arena_50
+{не смогла}
+Variable_Arena_51
+{#space#правильно указать победителя одной из дуэлей, недавно проходившей на Арене и#space#}
+Variable_Arena_52
+{проиграл}
+Variable_Arena_53
+{проиграла}
+Variable_Arena_54
+{#space#свои деньги.}
+Variable_Arena_55
+{Слыхали}
+Variable_Arena_56
+{Знаете ли вы}
+Variable_Arena_57
+{Невероятно}
+Variable_Arena_58
+{, капитан#space#}
+Variable_Arena_59
+{указал}
+Variable_Arena_60
+{указала}
+Variable_Arena_61
+{#space#победителя одной из дуэлей, недавно проходившей на Арене и#space#}
+Variable_Arena_62
+{выиграл}
+Variable_Arena_63
+{выиграла}
+Variable_Arena_64
+{#space#деньги!}
+Variable_Arena_65
+{Поговаривают, что в Поселении Фехтовальщиков на Доминике дней через 20 начнётся очередная серия соревнований.}
+Variable_Arena_66
+{Поговаривают, что на Доминике в Поселении Фехтовальщиков недавно начались соревнования. Эх, будь я половчее - непременно попытал бы счастья там.}
+Variable_Colony_1
+{Слыхали}
+Variable_Colony_2
+{Знаете ли вы}
+Variable_Colony_3
+{Невероятно}
+Variable_Colony_4
+{, в колонии#space#}
+Variable_Colony_5
+{#space#вспыхнул мятеж? Пришлось разбираться самому владельцу колонии - капитану#space#}
+Variable_Colony_6
+{Слыхали}
+Variable_Colony_7
+{Знаете ли вы}
+Variable_Colony_8
+{Невероятно}
+Variable_Colony_9
+{, в колонии#space#}
+Variable_Colony_10
+{#space#вспыхнул мятеж? Но гарнизону, охраняющему колонию, удалось разобраться с мятежниками.}
+Variable_Colony_11
+{Слыхали}
+Variable_Colony_12
+{Знаете ли вы}
+Variable_Colony_13
+{Невероятно}
+Variable_Colony_14
+{, в колонии#space#}
+Variable_Colony_15
+{#space#вспыхнул мятеж? И что вы думали? Гарнизон потерпел поражение!}
+Variable_Colony_16
+{Слыхали}
+Variable_Colony_17
+{Знаете ли вы}
+Variable_Colony_18
+{Невероятно}
+Variable_Colony_19
+{, на колонию#space#}
+Variable_Colony_20
+{#space#напали? На помощь гарнизону пришёл сам владелец колонии и дал жару нападавшим мерзавцам!}
+Variable_Colony_21
+{Слыхали}
+Variable_Colony_22
+{Знаете ли вы}
+Variable_Colony_23
+{Невероятно}
+Variable_Colony_24
+{, на колонию#space#}
+Variable_Colony_25
+{#space#было совершено нападение? К счастью, подготовленный гарнизон справился с нападавшими.}
+Variable_Colony_26
+{Слыхали}
+Variable_Colony_27
+{Знаете ли вы}
+Variable_Colony_28
+{Невероятно}
+Variable_Colony_29
+{, на колонию#space#}
+Variable_Colony_30
+{#space#было совершено нападение? Нападавшим удалось прорвать оборонительные редуты гарнизона и разграбить колонию.}
+Variable_Colony_31
+{Слыхали}
+Variable_Colony_32
+{Знаете ли вы}
+Variable_Colony_33
+{Невероятно}
+Variable_Colony_34
+{, на колонию#space#}
+Variable_Colony_35
+{#space#было совершено нападение эскадрой под флагом#space#}
+Variable_Colony_36
+{. На подмогу прибыл сам владелец колонии! Нападавшая эскадра потерпела поражение и отправилась на дно.}
+Variable_Colony_37
+{Слыхали}
+Variable_Colony_38
+{Знаете ли вы}
+Variable_Colony_39
+{Невероятно}
+Variable_Colony_40
+{, на колонию#space#}
+Variable_Colony_41
+{#space#было совершено нападение эскадрой под флагом#space#}
+Variable_Colony_42
+{. Но охрана береговой линии не сплоховала и оправила мерзавцев, нарушивших спокойствие колонии, к праотцам.}
+Variable_Colony_43
+{Слыхали}
+Variable_Colony_44
+{Знаете ли вы}
+Variable_Colony_45
+{Невероятно}
+Variable_Colony_46
+{, на колонию#space#}
+Variable_Colony_47
+{#space#было совершено нападение#space#}
+Variable_Colony_48
+{. И вполне удачно - оборона не выдержала мощного натиска и пала перед врагом.}
+Variable_Colony_49
+{Слыхали}
+Variable_Colony_50
+{Знаете ли вы}
+Variable_Colony_51
+{Невероятно}
+Variable_Colony_52
+{, в колонии#space#}
+Variable_Colony_53
+{#space#вспыхнул мятеж? Мятежники с легкостью овладели ситуацией, потому что владелец колонии не удосужился укрепить колонию!}
+Variable_Colony_54
+{Слыхали}
+Variable_Colony_55
+{Знаете ли вы}
+Variable_Colony_56
+{Невероятно}
+Variable_Colony_57
+{, на колонию#space#}
+Variable_Colony_58
+{#space#было совершено нападение! Напавшие очень удивились, когда не обнаружили у стен колонии охраняющего отряда. А колония была разграблена.}
+Variable_Colony_59
+{Слыхали}
+Variable_Colony_60
+{Знаете ли вы}
+Variable_Colony_61
+{Невероятно}
+Variable_Colony_62
+{, на колонию#space#}
+Variable_Colony_63
+{#space#было совершено силами#space#}
+Variable_Colony_64
+{?! Напавшие очень удивились, когда не обнаружили у стен в водах колонии кораблей охраны. Колония была разграблена.}
+Variable_Colony_65
+{Слыхали}
+Variable_Colony_66
+{Знаете ли вы}
+Variable_Colony_67
+{Невероятно}
+Variable_Colony_68
+{, на рудниках колонии#space#}
+Variable_Colony_69
+{#space#вспыхнул мятеж. Из-за отсутствия необходимого гарнизона, мятежники легко справились с остальными и обратились в бегство.}
+Variable_Colony_70
+{Слыхали}
+Variable_Colony_71
+{Знаете ли вы}
+Variable_Colony_72
+{Невероятно}
+Variable_Colony_73
+{, на рудники колонии#space#}
+Variable_Colony_74
+{#space#было совершено нападение?! Самое интересное, что рудники почти никто не охранял!}
+Variable_Colony_75
+{Слыхали}
+Variable_Colony_76
+{Знаете ли вы}
+Variable_Colony_77
+{Невероятно}
+Variable_Colony_78
+{, на плантации, принадлежащей колонии#space#}
+Variable_Colony_79
+{#space#вспыхнул мятеж?! Мятежники тут же праздновали победу, потому что охраняемого гарнизона почти не было!}
+Variable_Colony_80
+{Поговаривают}
+Variable_Colony_81
+{Говорят}
+Variable_Colony_82
+{Ходят слухи}
+Variable_Colony_83
+{, что капитан#space#}
+Variable_Colony_84
+{построил}
+Variable_Colony_85
+{построила}
+Variable_Colony_86
+{#space#свою колонию на острове Кайман.}
+Variable_Colony_87
+{Поговаривают}
+Variable_Colony_88
+{Говорят}
+Variable_Colony_89
+{Ходят слухи}
+Variable_Colony_90
+{, что недавно капитан#space#}
+Variable_Colony_91
+{расширил}
+Variable_Colony_92
+{расширила}
+Variable_Colony_93
+{#space#свою колонию, которая называется '}
+Variable_Colony_94
+{Поговаривают}
+Variable_Colony_95
+{Говорят}
+Variable_Colony_96
+{Ходят слухи}
+Variable_Colony_97
+{, что колония '}
+Variable_Colony_98
+{', хозяином которой является некий капитан#space#}
+Variable_Colony_99
+{, недавно обзавелась собственной плантацией!}
+Variable_Colony_100
+{Поговаривают}
+Variable_Colony_101
+{Говорят}
+Variable_Colony_102
+{Ходят слухи}
+Variable_Colony_103
+{, что колония '}
+Variable_Colony_104
+{', хозяином которой является некий капитан#space#}
+Variable_Colony_105
+{, недавно обзавелась собственными рудниками!}
+Variable_Colony_106
+{Поговаривают}
+Variable_Colony_107
+{Говорят}
+Variable_Colony_108
+{Ходят слухи}
+Variable_Colony_109
+{, что известный в Карибах капитан#space#}
+Variable_Colony_110
+{#space#приказал архитектору, возводившему его колонию, соорудить защитную базу для отражения вражеских атак.}
+Variable_GenerateQuests_1
+{Слыхали}
+Variable_GenerateQuests_2
+{Знаете ли вы}
+Variable_GenerateQuests_3
+{Невероятно}
+Variable_GenerateQuests_4
+{, капитан#space#}
+Variable_GenerateQuests_5
+{вызвался}
+Variable_GenerateQuests_6
+{вызвалась}
+Variable_GenerateQuests_7
+{#space#на дуэль за другого человека и#space#}
+Variable_GenerateQuests_8
+{выиграл её.}
+Variable_GenerateQuests_9
+{выиграла её.}
+Variable_GenerateQuests_10
+{Слыхали}
+Variable_GenerateQuests_11
+{Знаете ли вы}
+Variable_GenerateQuests_12
+{Невероятно}
+Variable_GenerateQuests_13
+{, капитан#space#}
+Variable_GenerateQuests_14
+{вызвался}
+Variable_GenerateQuests_15
+{вызвалась}
+Variable_GenerateQuests_16
+{#space#на дуэль за другого человека и#space#}
+Variable_GenerateQuests_17
+{выиграл её}
+Variable_GenerateQuests_18
+{выиграла её}
+Variable_GenerateQuests_19
+{Слыхали}
+Variable_GenerateQuests_20
+{Знаете ли вы}
+Variable_GenerateQuests_21
+{Невероятно}
+Variable_GenerateQuests_22
+{, капитан#space#}
+Variable_GenerateQuests_23
+{вызвался}
+Variable_GenerateQuests_24
+{вызвалась}
+Variable_GenerateQuests_25
+{#space#на дуэль за другого человека и#space#}
+Variable_GenerateQuests_26
+{выиграл её}
+Variable_GenerateQuests_27
+{выиграла её}
+Variable_GenerateQuests_28
+{Слыхали}
+Variable_GenerateQuests_29
+{Знаете ли вы}
+Variable_GenerateQuests_30
+{Невероятно}
+Variable_GenerateQuests_31
+{, некий капитан#space#}
+Variable_GenerateQuests_32
+{встретил}
+Variable_GenerateQuests_33
+{встретила}
+Variable_GenerateQuests_34
+{#space#в море потерпевший крушение корабль. Но вместо того, чтобы оказать помощь,#space#}
+Variable_GenerateQuests_35
+{он его утопил}
+Variable_GenerateQuests_36
+{она его утопила}
+Variable_Mines_1
+{Слыхали}
+Variable_Mines_2
+{Знаете ли вы}
+Variable_Mines_3
+{Невероятно}
+Variable_Mines_4
+{, на рудниках, что принадлежат колонии#space#}
+Variable_Mines_5
+{#space#вспыхнул мятеж. Если бы не сам владелец колонии, то ещё неизвестно, смог бы гарнизон справится с мятежниками.}
+Variable_Mines_6
+{Слыхали}
+Variable_Mines_7
+{Знаете ли вы}
+Variable_Mines_8
+{Невероятно}
+Variable_Mines_9
+{, на рудниках, что принадлежат колонии#space#}
+Variable_Mines_10
+{#space#вспыхнул мятеж. Но тамошний гарнизон справился с мятежниками.}
+Variable_Mines_11
+{Слыхали}
+Variable_Mines_12
+{Знаете ли вы}
+Variable_Mines_13
+{Невероятно}
+Variable_Mines_14
+{, на рудниках, что принадлежат колонии#space#}
+Variable_Mines_15
+{#space#вспыхнул мятеж. И надо сказать, закончился печально для тамошнего гарнизона - мятежники смогли прорваться и обратились в бегство.}
+Variable_Mines_16
+{Слыхали}
+Variable_Mines_17
+{Знаете ли вы}
+Variable_Mines_18
+{Невероятно}
+Variable_Mines_19
+{, на рудники, принадлежащие колонии#space#}
+Variable_Mines_20
+{#space#напали. Помочь уничтожению врага прибыл сам владелец колонии!}
+Variable_Mines_21
+{Слыхали}
+Variable_Mines_22
+{Знаете ли вы}
+Variable_Mines_23
+{Невероятно}
+Variable_Mines_24
+{, на рудники, принадлежащие колонии#space#}
+Variable_Mines_25
+{#space#напали. Но нападавшие ничего не смогли поделать с охранявшими рудники силами и пали в бою.}
+Variable_Mines_26
+{Слыхали}
+Variable_Mines_27
+{Знаете ли вы}
+Variable_Mines_28
+{Невероятно}
+Variable_Mines_29
+{, на рудники, принадлежащие колонии#space#}
+Variable_Mines_30
+{#space#напали. Как оказалось - не зря. Гарнизон был в слишком ослабленном состоянии не смог ничего противопоставить нападавшим.}
+Variable_Plantation_1
+{Слыхали}
+Variable_Plantation_2
+{Знаете ли вы}
+Variable_Plantation_3
+{Невероятно}
+Variable_Plantation_4
+{, на плантации, которая принадлежит колонии#space#}
+Variable_Plantation_5
+{#space#вспыхнул мятеж. Усмирить мятежников прибыл сам владелец колонии. Мало не показалось никому.}
+Variable_Plantation_6
+{Слыхали}
+Variable_Plantation_7
+{Знаете ли вы}
+Variable_Plantation_8
+{Невероятно}
+Variable_Plantation_9
+{, на плантации, которая принадлежит колонии#space#}
+Variable_Plantation_10
+{#space#вспыхнул мятеж. Гарнизон легко справился с мятежниками.}
+Variable_Plantation_11
+{Слыхали}
+Variable_Plantation_12
+{Знаете ли вы}
+Variable_Plantation_13
+{Невероятно}
+Variable_Plantation_14
+{, на плантации, которая принадлежит колонии#space#}
+Variable_Plantation_15
+{#space#вспыхнул мятеж. Казалось бы, гарнизон легко справится с мятежниками, но не тут то было! Гарнизон, охранявший плантацию, умудрился проиграть в этом бою, а бунтари обратились в бегство.}
+Variable_Quests_1
+{Слыхали}
+Variable_Quests_2
+{Знаете ли вы}
+Variable_Quests_3
+{Невероятно}
+Variable_Quests_4
+{, некий капитан#space#}
+Variable_Quests_5
+{#space#смог победить в сложнейшей игре 'Дозор', и получил заслуженный приз.}
+Variable_utils_1
+{Ходят слухи, что на Доминике вновь распахнуло свои ворота Поселение Фехтовальщиков. Говорят, что там собираются самые умелые из тех, кто обладает сим искусством.}
+Variable_LSC_Q2Utilite_1
+{Капитан#space#}
+Variable_LSC_Q2Utilite_2
+{' сейчас в городе. Кажется, его зовут#space#}
+Variable_LSC_Q2Utilite_3
+{. Он сейчас должнен быть у начальника порта.}
+Variable_LSC_Q2Utilite_4
+{Вы знаете, капитана#space#}
+Variable_LSC_Q2Utilite_5
+{' сейчас можно застать у начальника порта.}
+Variable_LSC_Q2Utilite_6
+{Если вы хотите пообщаться с капитаном#space#}
+Variable_LSC_Q2Utilite_7
+{', то идите прямоком к начальнику порта.#space#}
+Variable_LSC_Q2Utilite_8
+{#space#сейчас находится там...}
+Variable_LSC_Q2Utilite_9
+{Капитан#space#}
+Variable_LSC_Q2Utilite_10
+{' стоит в порту на рейде. Кажется, его зовут#space#}
+Variable_LSC_Q2Utilite_11
+{. Странный тип, скажу я вам, на берег не сходит вообще.}
+Variable_LSC_Q2Utilite_12
+{Вы знаете, капитана#space#}
+Variable_LSC_Q2Utilite_13
+{' сейчас можно встретить, только если выйти на шлюпке в порт. Корабль стоит на рейде, но капитан в город не выходит, предпочитает оставаться на корабле. И не надоело ему?..}
+Variable_LSC_Q2Utilite_14
+{Если вы хотите пообщаться с капитаном#space#}
+Variable_LSC_Q2Utilite_15
+{', то выходите в порт.#space#}
+Variable_LSC_Q2Utilite_16
+{#space#вроде бы его зовут... В общем, он бросил якорь в порту, но на берег не сходит. Настоящий морской волк, даже с палубной качкой расставаться не хочет.}
+Variable_LSC_Q2Utilite_17
+{Капитан#space#}
+Variable_LSC_Q2Utilite_18
+{' в городе. Кажется, его зовут#space#}
+Variable_LSC_Q2Utilite_19
+{Вы знаете, капитана#space#}
+Variable_LSC_Q2Utilite_20
+{' сейчас можно застать в городе.}
+Variable_LSC_Q2Utilite_21
+{Если вы хотите пообщаться с капитаном#space#}
+Variable_LSC_Q2Utilite_22
+{', то поищите его в на улицах.#space#}
+Variable_LSC_Q2Utilite_23
+{#space#вроде бы его зовут...}
+Variable_LSC_Q2Utilite_24
+{Капитан#space#}
+Variable_LSC_Q2Utilite_25
+{' находится в порту на рейде. Кажется, его зовут#space#}
+Variable_LSC_Q2Utilite_26
+{Вы знаете, капитана#space#}
+Variable_LSC_Q2Utilite_27
+{' сейчас можно застать в нашем порту. Его корабль стоит на рейде.}
+Variable_LSC_Q2Utilite_28
+{Если вы хотите пообщаться с капитаном#space#}
+Variable_LSC_Q2Utilite_29
+{', то поищите его корабль в нашем порту.#space#}
+Variable_LSC_Q2Utilite_30
+{#space#вроде бы его зовут...}
+Variable_LSC_Q2Utilite_31
+{Вы слышали, что Чад Каппер потерял какой-то важный для него ключ. Теперь бегает по всему Городу, ищет...}
+Variable_Quests_1_1
+{Слыхали}
+Variable_Quests_1_2
+{Знаете ли вы}
+Variable_Quests_1_3
+{Невероятно}
+Variable_Quests_1_4
+{, некий капитан#space#}
+Variable_Quests_1_5
+{#space#смог победить в сложнейшей игре 'Дозор', и получил заслуженный приз.}
+Variable_angelika_tich_line_functions_1
+{Пираты захватили испанскую колонию Ла Вега, а заодно предприняли попытку атаковать ещё и Санто-Доминго. Правда, им это не удалось, их всех перебили у стен города.}
+Variable_angelika_tich_line_functions_2
+{Ужасные новости, пираты устроили резню в нашей колонии Ла Вега, говорят, не пощадили никого. Слава богу, возмездие их уже настигло, все мерзавцы полегли под стенами Санто-Доминго при неудачной попытке взять город с суши.}
+Variable_quests_reaction_1
+{О, сожри меня акула! Так вы и есть#space#}
+Variable_quests_reaction_2
+{тот самый капитан}
+Variable_quests_reaction_3
+{та морячка}
+Variable_quests_reaction_4
+{который взял}
+Variable_quests_reaction_5
+{которая взяла}
+Variable_quests_reaction_6
+{#space#'Летучего Голландца'?! Разрази меня гром! Знатная, наверное, была баталия! Скажите, правду говорят, что его бывший капитан водил дружбу с самим Морским Дьяволом? А в команде у него были сплошь проклятые и отвергнутые Господом демоны, питающиеся кровью своих жертв?}
+Variable_quests_reaction_7
+{Капитан, а вы здесь весьма известны! Ходят слухи, что это вы упокоили старого Дейви Джонса и команду его мертвецов. Кто бы мог подумать, что 'Летучий Голландец' перестанет быть призраком! Меняются времена, что ни говори... вот и ещё одной легендой в этом мире стало меньше, хе-хе. Выпьем же за те тайны, которые океан хранит ещё в своих пучинах...}
+Variable_quests_reaction_8
+{Слыхали, что 'Летучий Голландец' - этот неуловимый и непонятный человеку ужас морских стихий, нашёл свой конец? И заметьте - от вполне смертных людей! Слышал я, один капитан смог разрушить проклятие и взял старого Дьявола призом, как простого купца... Вот так-то, в общем, бесславно и закончились бесчинства легендарного Корабля-Призрака.}
+Variable_quests_reaction_9
+{А вот давеча баталия у маяка была. Какой-то капитан пытался продать крупную партию контрабанды, так его патрульная эскадра за энтим делом накрыла. С поличным, значит.#space#}
+Variable_quests_reaction_10
+{Грохоту было - весь город переполошился, а в местной лавке крышу ядром проломило! Да только без толку всё. Местные-то - скупщики значит, в джунглях спрятались, а капитан морем ушёл. Как есть, с носом нашу эскадру оставил! Так из бухты вырулил - любой лоцман позавидует!}
+Variable_quests_reaction_11
+{А вот давеча баталия у маяка была. Какой-то капитан пытался продать крупную партию контрабанды, так его патрульная эскадра за энтим делом накрыла. С поличным, значит.#space#}
+Variable_quests_reaction_12
+{Грохоту было - весь город переполошился, а в местной лавке крышу ядром проломило! Да только без толку всё. Местные-то - скупщики значит, в джунглях спрятались, а капитан морем ушёл. Как есть, с носом нашу эскадру оставил! Так из бухты вырулил - любой лоцман позавидует!}
+Variable_quests_reaction_13
+{Вы слышали, капитан#space#}
+Variable_quests_reaction_14
+{#space#втупил в бой с бандитом по имени#space#}
+Variable_quests_reaction_15
+{Его}
+Variable_quests_reaction_16
+{Её}
+Variable_quests_reaction_17
+{#space#хотели ограбить, а#space#}
+Variable_quests_reaction_18
+{он}
+Variable_quests_reaction_19
+{она}
+Variable_quests_reaction_20
+{не захотел платить}
+Variable_quests_reaction_21
+{не захотела платить}
+Variable_quests_reaction_22
+{Смелый кэп}
+Variable_quests_reaction_23
+{Смелая девушка}
+Variable_quests_reaction_24
+{он просто его убил.}
+Variable_quests_reaction_25
+{она просто его убила.}
+Variable_quests_reaction_26
+{Вы знаете, недавно за городом была схватка - на капитана по имени#space#}
+Variable_quests_reaction_27
+{#space#напали бандиты, ограбить хотели... А-а, так вы же и есть#space#}
+Variable_quests_reaction_28
+{тот капитан}
+Variable_quests_reaction_29
+{та девушка}
+Variable_quests_reaction_30
+{кто отправил}
+Variable_quests_reaction_31
+{кто отправила}
+Variable_quests_reaction_32
+{#space#к праотцам этого мародера по имени#space#}
+Variable_quests_reaction_33
+{! Прекрасная работа, скажу я вам...}
+Variable_quests_reaction_34
+{Вы не слышали о том, что местная шайка бандитов под предводительством негодяя#space#}
+Variable_quests_reaction_35
+{#space#напала на капитана по имени#space#}
+Variable_quests_reaction_36
+{Тот отказался платить}
+Variable_quests_reaction_37
+{Та отказалась платить}
+Variable_quests_reaction_38
+{#space#и#space#}
+Variable_quests_reaction_39
+{перебил бандитов.}
+Variable_quests_reaction_40
+{перебила бандитов.}
+Variable_quests_reaction_41
+{Вы слышали, кто-то убил в джунглях несчастную девушку по имени#space#}
+Variable_quests_reaction_42
+{. Отловить бы мерзавца и вздёрнуть!}
+Variable_quests_reaction_43
+{Вы знаете, капитан#space#}
+Variable_quests_reaction_44
+{, кто-то убил несчастную девушку по имени#space#}
+Variable_quests_reaction_45
+{, когда та по делам отправилась за город. Как жаль, она была такой хорошей...}
+Variable_quests_reaction_46
+{Её звали#space#}
+Variable_quests_reaction_47
+{, и она погибла в джунглях. И ничего удивительного, скажу я вам, за городом так неспокойно...}
+Variable_quests_reaction_48
+{Вы слышали,#space#}
+Variable_quests_reaction_49
+{какой-то капитан}
+Variable_quests_reaction_50
+{какая-то морячка}
+Variable_quests_reaction_51
+{спас}
+Variable_quests_reaction_52
+{спасла}
+Variable_quests_reaction_53
+{#space#девушку по имени#space#}
+Variable_quests_reaction_54
+{#space#от бандитов, буквально#space#}
+Variable_quests_reaction_55
+{вытащил её из их лап!}
+Variable_quests_reaction_56
+{вытащила её из их лап!}
+Variable_quests_reaction_57
+{Вы знаете, капитан#space#}
+Variable_quests_reaction_58
+{спас}
+Variable_quests_reaction_59
+{спасла}
+Variable_quests_reaction_60
+{#space#девушку по имени#space#}
+Variable_quests_reaction_61
+{#space#от насильников в джунглях... А-а, так это же вы!! Я вами восхищаюсь...}
+Variable_quests_reaction_62
+{Девушке по имени#space#}
+Variable_quests_reaction_63
+{#space#здорово повезло - недавно на нее напали бандиты в джунглях, хотели изнасиловать, видать. Но ничего у них не вышло, хе-хе, и благодарить она должна капитана#space#}
+Variable_quests_reaction_64
+{Да уж, капитан#space#}
+Variable_quests_reaction_65
+{, никто не думал, что вы способны оставить беззащитную женщину на поругание бандитам. Бедная#space#}
+Variable_quests_reaction_66
+{, у меня нет слов...}
+Variable_quests_reaction_67
+{Знаете, капитан,#space#}
+Variable_quests_reaction_68
+{вы форменный мерзавец}
+Variable_quests_reaction_69
+{не ожидал от вас такого}
+Variable_quests_reaction_70
+{. Как вы могли бросить беззащитную девушку в джунглях? Вы хоть представляете себе, что они с ней сделали? Бедная#space#}
+Variable_quests_reaction_71
+{, её теперь никто не возьмет замуж...}
+Variable_quests_reaction_72
+{Вы слышали, какой-то капитан убил в джунглях несчастную девушку по имени#space#}
+Variable_quests_reaction_73
+{. Отловить бы мерзавца и вздёрнуть!}
+Variable_quests_reaction_74
+{Вы знаете, капитан#space#}
+Variable_quests_reaction_75
+{, кто-то убил несчастную девушку по имени#space#}
+Variable_quests_reaction_76
+{, когда та по делам отправилась за город. Как жаль, она была такой хорошей...}
+Variable_quests_reaction_77
+{Её звали#space#}
+Variable_quests_reaction_78
+{, и она погибла в джунглях. И ничего удивительного, скажу я вам, за городом так неспокойно...}
+Variable_quests_reaction_79
+{Недавно за городом нашли мертвым нашего офицера и приданных ему солдат. Кто мог их убить? Зачем?..}
+Variable_quests_reaction_80
+{Наш комендат постоянно отправляет за город патрули, но теперь даже не знаю, как будет дальше. Недавно солдат нашли метрвыми в джунглях...}
+Variable_quests_reaction_81
+{Чёрт возьми, кто-то за городом перебил наши солдат, что патрулировали территорию...}
+Variable_quests_reaction_82
+{Говорят, что капитан#space#}
+Variable_quests_reaction_83
+{#space#нарвался в джунглях на солдат#space#}
+Variable_quests_reaction_84
+{#space#и всех их перебил. Хех,#space#}
+Variable_quests_reaction_85
+{#space#- никуда не годные вояки...}
+Variable_quests_reaction_86
+{Вы слышали, капитана#space#}
+Variable_quests_reaction_87
+{#space#проверял наш патруль за городом...}
+Variable_quests_reaction_88
+{Хм, насколько я знаю, вас недавно проверил наш патруль за городом. Не знаю, насколько эта мера эффективна...}
+Variable_quests_reaction_89
+{Наш комендант усилит патрулирование прилегающей к городу территории. Ну вы и сами об этом знаете, вас же недавно проверяли в джунглях...}
+Variable_quests_reaction_90
+{Вы знаете, губернатор#space#}
+Variable_quests_reaction_91
+{#space#поручил неко}
+Variable_quests_reaction_92
+{ему капитану}
+Variable_quests_reaction_93
+{й морячке}
+Variable_quests_reaction_94
+{#space#уничтожить известного бандита по имени#space#}
+Variable_quests_reaction_95
+{. И, кажется, что#space#}
+Variable_quests_reaction_96
+{капитан выполнил}
+Variable_quests_reaction_97
+{она выполнила}
+Variable_quests_reaction_98
+{#space#задание губернатора...}
+Variable_quests_reaction_99
+{Какой-то смелый капитан вызвался}
+Variable_quests_reaction_100
+{Какая-то смелая девушка вызвалась}
+Variable_quests_reaction_101
+{#space#найти и уничтожить местного бандита по имени#space#}
+Variable_quests_reaction_102
+{. И, похоже, он}
+Variable_quests_reaction_103
+{а}
+Variable_quests_reaction_104
+{#space#сделал}
+Variable_quests_reaction_105
+{а}
+Variable_quests_reaction_106
+{#space#это!}
+Variable_quests_reaction_107
+{Ха, наконец-то наш губернатор взялся за наведение порядка в джунглях - он поручил капитану#space#}
+Variable_quests_reaction_108
+{#space#разыскать в джунглях и убить наиболее известного бандита. И вы знате, этот бандит,#space#}
+Variable_quests_reaction_109
+{#space#- мертв!}
+Variable_quests_reaction_110
+{Вы знаете, губернатор#space#}
+Variable_quests_reaction_111
+{поручил некоему капитану}
+Variable_quests_reaction_112
+{поручил некой морячке}
+Variable_quests_reaction_113
+{#space#найти в городе вражеского лазутчика. И вы знаете,#space#}
+Variable_quests_reaction_114
+{он}
+Variable_quests_reaction_115
+{она}
+Variable_quests_reaction_116
+{#space#его#space#}
+Variable_quests_reaction_117
+{наш}
+Variable_quests_reaction_118
+{нашла}
+Variable_quests_reaction_119
+{#space#и#space#}
+Variable_quests_reaction_120
+{убил}
+Variable_quests_reaction_121
+{убила}
+Variable_quests_reaction_122
+{Наш губернатор дал задание капитану#space#}
+Variable_quests_reaction_123
+{#space#разыскать в городе вражеского агента. И#space#}
+Variable_quests_reaction_124
+{этот капитан нашёл и прикончил}
+Variable_quests_reaction_125
+{она нашла и прикончила}
+Variable_quests_reaction_126
+{#space#лазутчика! Прекрасная работа, скажу я вам...}
+Variable_quests_reaction_127
+{Вы знаете, губернатор#space#}
+Variable_quests_reaction_128
+{#space#поручил#space#}
+Variable_quests_reaction_129
+{некоему капитану}
+Variable_quests_reaction_130
+{некой морячке}
+Variable_quests_reaction_131
+{#space#найти и уничтожить контрабандистов. И скажу я вам,#space#}
+Variable_quests_reaction_132
+{он}
+Variable_quests_reaction_133
+{она}
+Variable_quests_reaction_134
+{это сделал}
+Variable_quests_reaction_135
+{это сделала}
+Variable_quests_reaction_136
+{Наш губернатор#space#}
+Variable_quests_reaction_137
+{#space#дал задание капитану#space#}
+Variable_quests_reaction_138
+{#space#разыскать контрабандистов в окрестностях города.#space#}
+Variable_quests_reaction_139
+{Он нашёл}
+Variable_quests_reaction_140
+{Она нашла}
+Variable_quests_reaction_141
+{#space#их и#space#}
+Variable_quests_reaction_142
+{убил}
+Variable_quests_reaction_143
+{убила}
+Variable_quests_reaction_144
+{, значит цены у торговцев скоро подскочат...}
+Variable_quests_reaction_145
+{Вы слышали о недавнем бое капитана#space#}
+Variable_quests_reaction_146
+{#space#с пиратами? Говорят, что пираты сумели ускользнуть#space#}
+Variable_quests_reaction_147
+{от него}
+Variable_quests_reaction_148
+{от нее}
+Variable_quests_reaction_149
+{Капитан, как вы могли упустить этих пиратов?! М-да, очень и очень жаль...}
+Variable_quests_reaction_150
+{Эх, капитан#space#}
+Variable_quests_reaction_151
+{, как же это вы упустили этих пиратов, а? Ищи теперь ветра в поле...}
+Variable_quests_reaction_152
+{Вы знаете, губернатор#space#}
+Variable_quests_reaction_153
+{#space#поручил некоему капитану#space#}
+Variable_quests_reaction_154
+{#space#найти и уничтожить пирата, который занимался грабежом в окрестных водах. Так вот,#space#}
+Variable_quests_reaction_155
+{кэп нашёл}
+Variable_quests_reaction_156
+{ла}
+Variable_quests_reaction_157
+{#space#и#space#}
+Variable_quests_reaction_158
+{потопил}
+Variable_quests_reaction_159
+{потопила}
+Variable_quests_reaction_160
+{Какой-то смелый капитан вызвался}
+Variable_quests_reaction_161
+{Какая-то смелая морячка вызвалась}
+Variable_quests_reaction_162
+{#space#найти и уничтожить пирата, грабящего наших торговцев. И, похоже,#space#}
+Variable_quests_reaction_163
+{он}
+Variable_quests_reaction_164
+{она}
+Variable_quests_reaction_165
+{сделал}
+Variable_quests_reaction_166
+{сделала}
+Variable_quests_reaction_167
+{#space#это -#space#}
+Variable_quests_reaction_168
+{потопил}
+Variable_quests_reaction_169
+{потопила}
+Variable_quests_reaction_170
+{Ха, наконец-то наш губернатор взялся за обеспечение безопасного плавания в водах#space#}
+Variable_quests_reaction_171
+{#space#- он поручил капитану#space#}
+Variable_quests_reaction_172
+{#space#разыскать пирата, не дававшего покоя нашим торговцам. И вы знаете,#space#}
+Variable_quests_reaction_173
+{этот капитан}
+Variable_quests_reaction_174
+{эта девушка}
+Variable_quests_reaction_175
+{потопил}
+Variable_quests_reaction_176
+{потопила}
+Variable_quests_reaction_177
+{Вы знаете, губернатор#space#}
+Variable_quests_reaction_178
+{#space#поручил некоему капитану#space#}
+Variable_quests_reaction_179
+{#space#найти и уничтожить пирата, что грабит торговцев у нас под носом. И что вы думаете, он ограбил и капитана#space#}
+Variable_quests_reaction_180
+{#space#тоже!}
+Variable_quests_reaction_181
+{Капитан, как вам путешествие на пиратском корабле? Нормально? Вас там не обижали? Ха-ха-ха!!}
+Variable_quests_reaction_182
+{О-о-о, капитан, я слышал вам здорово досталось недавно, хи-хи... Как вам местные пираты? Не хотите ещё их поискать? Ха-ха-ха!!}
+Variable_quests_reaction_183
+{Вы слышали, было совершено нападение на Сесил Галард!}
+Variable_quests_reaction_184
+{Говорят, что вы спасли Сесил Галард, когда на неё напали.}
+Variable_quests_reaction_185
+{На Сесил Галард напали в её же доме, на налеоне 'Эва'!}
+Variable_quests_reaction_186
+{Хорошо, что вы спасли бедную Сесил! Куда смотрит адмирал, непонятно...}
+Variable_quests_reaction_187
+{М-да, если так пойдет дальше, то нам придётся отбиваться от бандитов у себя в домах, как это сделала Сесил Галард.}
+Variable_quests_reaction_188
+{Вы слышали, Сесил Галард убили в её же доме!}
+Variable_quests_reaction_189
+{Говорят, что вы не сумели защитить бедную Сесил Галард...}
+Variable_quests_reaction_190
+{М-да, очередная темная история с убийством. Знаете, как только вы появились в Городе, убийства следуют одно за другим. Теперь вот и Сесил Галард...}
+Variable_quests_reaction_191
+{Жаль, что вам не удалось спасти Сесил. Она была очень хорошим человеком...}
+Variable_quests_reaction_192
+{Очередное убийство. Теперь, вот, Сесил Галард мертва. А ведь она была старейшим жителем Города...}
+Variable_reaction_functions_1
+{А,#space#}
+Variable_reaction_functions_2
+{сударь}
+Variable_reaction_functions_3
+{сударыня}
+Variable_reaction_functions_4
+{! Вы же ещё не знаете главной новости! Бывший владелец местного магазина - Паскаль Вуазье сбежал! Оказывается, он скупал все товары, что местные пираты добывали с торговых судов. Для этого дела у него целый пакгауз отведён был. А когда торгаши прознали и наняли охотников за его головой - спешно всё продал и подался в бега, ха-ха-ха. Вот делов-то было! почитай неделю без рому сидели, пока этот пройдоха Бенджамин Франклин дело к своим рукам не прибрал.}
+Variable_reaction_functions_5
+{Да что толку - торгаш с него никудышный - всё никак не найдёт простофилю, который бы согласился склад прежнего хозяина арендовать... В политику бы ему - там таким ушлым самое место, хе-хе...}
+Variable_reaction_functions_6
+{Капитан#space#}
+Variable_reaction_functions_7
+{', которого зовут#space#}
+Variable_reaction_functions_8
+{, опять ушёл в море. По слухам, он двинулся в#space#}
+Variable_reaction_functions_9
+{Вы знаете, капитана#space#}
+Variable_reaction_functions_10
+{'? Так вот, он направился в#space#}
+Variable_reaction_functions_11
+{Если вам нужен капитан#space#}
+Variable_reaction_functions_12
+{', то вам придётся отправится в#space#}
+Variable_reaction_functions_13
+{#space#ушёл именно туда.}
+Variable_reaction_functions_14
+{Капитан#space#}
+Variable_reaction_functions_15
+{', которого зовут#space#}
+Variable_reaction_functions_16
+{, опять ушёл в море. По слухам, он двинулся в#space#}
+Variable_reaction_functions_17
+{Вы знаете, капитана#space#}
+Variable_reaction_functions_18
+{'? Так вот, он направился в#space#}
+Variable_reaction_functions_19
+{Если вам нужен капитан#space#}
+Variable_reaction_functions_20
+{', то вам придётся отправится в#space#}
+Variable_reaction_functions_21
+{#space#ушёл именно туда.}
+Variable_reaction_functions_22
+{Капитан#space#}
+Variable_reaction_functions_23
+{', которого зовут#space#}
+Variable_reaction_functions_24
+{, опять ушёл в море. По слухам, он двинулся в#space#}
+Variable_reaction_functions_25
+{Вы знаете, капитана#space#}
+Variable_reaction_functions_26
+{'? Так вот, он направился в#space#}
+Variable_reaction_functions_27
+{Если вам нужен капитан#space#}
+Variable_reaction_functions_28
+{', то вам придётся отправится в#space#}
+Variable_reaction_functions_29
+{#space#ушёл именно туда.}
+Variable_reaction_functions_30
+{Будте очень острожны с Августо Брамсом. Чёртов чернокнижник...}
+Variable_reaction_functions_31
+{Я вам рекомендую держаться подальше от Августо Брамса. Это - страшный человек...}
+Variable_reaction_functions_32
+{Вы знаете, муж Элис Тейлор попал в тюрьму, адмирал посадил его за дебош у него в резиденции. И теперь бедняга Элис просит помочь ей вызволить супруга.}
+Variable_reaction_functions_33
+{Леа Тоорс недавно вспоминала Лейтона Декстера. Пропал человек буквально в никуда...}
+Variable_reaction_functions_34
+{Вы знаете, Доминик Легро ищет бутылку вина. Я не понимаю, как будто сложно её купить где-нибудь.}
+Variable_reaction_functions_35
+{Говорят, что вы убили всех 'нарвалов'! Вот это да!..}
+Variable_reaction_functions_36
+{Н-да, благодаря вам клана 'Нарвал' более не существует. Ну что же, граждане благодарны вам.}
+Variable_reaction_functions_37
+{Хм, вы, конечно, герой и всё такое, но, может быть, не стоило так радикально с 'нарвалами' разбираться?..}
+Variable_reaction_functions_38
+{Дайте посмотреть на человека, который внес свое имя в летописи Города! 'Нарвалы' здорово меня утомили, скажу я вам.}
+Variable_reaction_functions_39
+{Благодаря вам 'Веласко' теперь свободен.}
+Variable_reaction_functions_40
+{Честно говоря, я сильно сомневаюсь, что именно клан 'Нарвал' был причастен к убийству миллиционера и Лабора. Очень сомневаюсь...}
+Variable_reaction_functions_41
+{После уничтожения 'нарвалов' трудно предположить, как поведут себя 'касперы'...}
+Variable_reaction_functions_42
+{А вы герой, скажу я вам. Не успели появиться в городе, а уже такие дела вершите. Уничтожить целый клан 'Нарвалов'!...}
+Variable_reaction_functions_43
+{'Нарвалы' сами виноваты в своей судьбе. Я полностью одобряю решение адмирала уничтожить их. Так что, вы молодец.}
+Variable_reaction_functions_44
+{Как вы сумели справиться с 'нарвалами' - ума не приложу. Это были очень хорошие бойцы, очень...}
+Variable_reaction_functions_45
+{Вы слышали, Хилл Брюннер убит!!!}
+Variable_reaction_functions_46
+{Вы слышали последние ужасные известия? Нет? Хилл Брюннер убит!}
+Variable_reaction_functions_47
+{Хилл Брюннер, хозяин нашей таверны, был найден в своем погребе мертвым. Вот так!..}
+Variable_reaction_functions_48
+{Кто-то убил хозяина таверны Хилла Брюннера! Сначала Андрэ Лабор, теперь вот Хилл Брюннер. М-да, ужасные новости!..}
+Variable_reaction_functions_49
+{А вы знаете, что Хилла Брюннера убили? Зарезали в его же винном погребе!!}
+Variable_reaction_functions_50
+{Хилл Брюннер мертв! Очень и очень жаль этого человека. С его уходом в мир иной Город многое потерял, ведь он был старейшим жителем!}
+Variable_reaction_functions_51
+{Вы знаете, Хилл Брюннер мертв! Что теперь будет с таверной?..}
+Variable_reaction_functions_52
+{Вы слышали, Хилл Брюннер убит!!!}
+Variable_reaction_functions_53
+{Вы слышали последние ужасные известия? Нет? Хилл Брюннер убит!}
+Variable_reaction_functions_54
+{Хилл Брюннер, хозяин нашей таверны, был найден в своем погребе мертвым. Вот так!..}
+Variable_reaction_functions_55
+{Кто-то убил хозяина таверны Хилла Брюннера! Сначала Андрэ Лабор, теперь вот Хилл Брюннер. М-да, ужасные новости!..}
+Variable_reaction_functions_56
+{А вы знаете, что Хилла Брюннера убили? Зарезали в его же винном погребе!!}
+Variable_reaction_functions_57
+{Хилл Брюннер мертв! Очень и очень жаль этого человека. С его уходом в мир иной Город многое потерял, ведь он был старейшим жителем!}
+Variable_reaction_functions_58
+{Вы знаете, Хилл Брюннер мертв! Что теперь будет с таверной?..}
+Variable_reaction_functions_59
+{Говорят, что вы убили всех 'касперов'! Однако...}
+Variable_reaction_functions_60
+{Не скажу, что мне жаль этих отморозков 'касперов'. Туда им и дорога...}
+Variable_reaction_functions_61
+{Однако, вы лихой вояка! Сначала 'нарвалы', потом 'касперы'! Лихо...}
+Variable_reaction_functions_62
+{Да, неплохо вы поработали шпагой. Клан 'Каспер' канул в лету... Что же, отлично!}
+Variable_reaction_functions_63
+{Знаете, 'касперы' особо мне не досаждали. Поэтому их массовая гибель мне не так уж и приятна....}
+Variable_reaction_functions_64
+{Говорят, что вчера ночью кто-то дрался на флейте 'Церес Смити'.}
+Variable_reaction_functions_65
+{Элис Тейлор, хозяйка флейта 'Церес Смити', слышала вчера ночью возню на палубе. Всё это очень напоминало серьезную рубку...}
+Variable_reaction_functions_66
+{Вы слышали, убили бедную Армо Дюлин! Эх, какая хорошая девушка была...}
+Variable_reaction_functions_67
+{Боже мой, теперь, вот, и Армо мертва. Пожалуй, пора искать надежное убежище...}
+Variable_reaction_functions_68
+{Куда смотрит адмирал?! Убиты уже несколько человек, а теперь вот и бедняжка Армо...}
+Variable_reaction_functions_69
+{Погода портиться. Видимо опять будет шторм.}
+Variable_reaction_functions_70
+{М-да, кажется опять шторм надвигается.}
+Variable_reaction_functions_71
+{Ох, как же надоели эти штормы! Вот, кажется снова начинается...}
+Variable_reaction_functions_72
+{Погода испортилась. Видимо, будет шторм.}
+Variable_reaction_functions_73
+{Начинается шторм. Опять несколько дней будем сидеть по домам.}
+Variable_reaction_functions_74
+{Говорят, что кто-то ограбил хозяина магазина Эрика Йоста...}
+Variable_reaction_functions_75
+{Представляешь, какой-то безумец в одиночку вырезал половину гарнизона в Ле Франсуа!}
+Variable_GenQuests_1
+{Вы слышали, что служанку#space#}
+Variable_GenQuests_2
+{#space#хозяйка выгнала только за то, что та не смогла собрать в джунглях её рассыпавшиеся жемчужины? Совсем народ стыд потерял!.. а совести и не имел никогда.}
+Variable_GenQuests_3
+{а}
+Variable_GenQuests_4
+{Вы слышали, какая-то шлюха пыталась без документов проникнуть на корабль? Её поймали и отвели назад в бордель. Говорят она задолжала хозяйке кругленькую сумму.}
+Variable_GenQuests_5
+{Слыхали? у нас в порту поймали какую-то шлюху без документов. Говорят, из борделя сбежала, предварительно почистив сундуки тамошней хозяйки. Давно бы следовало прикрыть этот разносчик заразы и воровства. Ведь наши дети всё это видят, чему они могут научиться?}
+Variable_GenQuests_6
+{Капитан, как вам путешествие на пиратском корабле? Нормально? Вас там не обижали? Ха-ха-ха!!}
+Variable_GenQuests_7
+{О-о-о, капитан, я слышал вам здорово досталось недавно.... Вы, батенька, теперь голодранец! Ха-ха-ха!!}
+Variable_GenQuests_8
+{Вы слышали,#space#}
+Variable_GenQuests_9
+{, недавно арестовали капитана патрульного#space#}
+Variable_GenQuests_10
+{. Оказывается, он подрабатывал контрабандой. Подумать только, до чего довёл колонию нынешний губернатор! Те, кто должен ловить пиратов, сами же нас и обворовывают!.. Поговаривают, что через неделю он будет казнён. Вот и поделом ему.}
+Variable_GenQuests_11
+{Поговаривают, что капитан патрульного#space#}
+Variable_GenQuests_12
+{#space#оказался организатором шайки контрабандистов. Его поймали и скоро повесят. Похоже,#space#}
+Variable_GenQuests_13
+{, наш губернатор всерьёз взялся за наведение порядка в колонии.}
+Variable_GenQuests_14
+{Вы представляете! Начальник форта разоблачил тайную организацию контрабандистов, которой удалось завербовать в свои ряды даже офицеров флота. Одного из них,#space#}
+Variable_GenQuests_15
+{, уже поймали и вскоре повесят. О,#space#}
+Variable_GenQuests_16
+{, я всегда говорил, что наш губернатор рано или поздно наведёт порядок в поселении.}
+Variable_GenQuests_17
+{Вы уже знаете, что капитана патрульного#space#}
+Variable_GenQuests_18
+{#space#арестовали? Властям стало известно, что он укрыл крупную партию товара, который конфисковывал у проходящих в акватории судов. Похоже, виселицы ему не избежать. А ведь, скажу я вам, он был одним из лучших в патрульной эскадре. Кто бы мог подумать...}
+Variable_GenQuests_19
+{Вы слышали,#space#}
+Variable_GenQuests_20
+{, недавно повесили бывшего капитана патрульного#space#}
+Variable_GenQuests_21
+{. Говорят, он ограбил какого-то купца. Вот ведь, как бывает, никому верить нельзя... И всю команду с ним за одно казнили. Сговор значит...}
+Variable_GenQuests_22
+{Вы уже знаете,#space#}
+Variable_GenQuests_23
+{, что бывший капитан патрульного#space#}
+Variable_GenQuests_24
+{#space#казнён? Поговаривают, что он пустил ко дну какое-то важное судно, а товар спрятал. И ведь никто из команды не признался где тайник. Так их всех и повесили...}
+Variable_GenQuests_25
+{Вы представляете,#space#}
+Variable_GenQuests_26
+{? Один из капитанов патрульной эскадры занимался морским разбоем. Так его недавно казнили вместе со всей командой. Говорят, что они грабили и пускали ко дну торговые суда.}
+Variable_GenQuests_27
+{Недавно казнили бывшего капитана#space#}
+Variable_GenQuests_28
+{#space#вместе с командой его патрульного#space#}
+Variable_GenQuests_29
+{. Поговаривают, что они укрыли крупную партию товара, который конфисковывали у проходящих в акватории судов. А ведь это был один из лучших патрульных экипажей. Я думаю,#space#}
+Variable_GenQuests_30
+{, что их намеренно оклеветали. Ведь товар так и не нашли..}
+Variable_MerchantOnMap_1
+{Прошёл слух, что#space#}
+Variable_MerchantOnMap_2
+{лихой пират}
+Variable_MerchantOnMap_3
+{лихая морская разбойница}
+Variable_MerchantOnMap_4
+{угодил}
+Variable_MerchantOnMap_5
+{угодила}
+Variable_MerchantOnMap_6
+{#space#в западню, в которую#space#}
+Variable_MerchantOnMap_7
+{его}
+Variable_MerchantOnMap_8
+{её}
+Variable_MerchantOnMap_9
+{#space#заманили власти#space#}
+Variable_MerchantOnMap_10
+{. Они подослали к#space#}
+Variable_MerchantOnMap_11
+{нему}
+Variable_MerchantOnMap_12
+{ней}
+Variable_MerchantOnMap_13
+{#space#'торговое' судно, в трюме которого спрятались вооруженные до зубов солдаты. Но#space#}
+Variable_MerchantOnMap_14
+{#space#не#space#}
+Variable_MerchantOnMap_15
+{растерялся}
+Variable_MerchantOnMap_16
+{растерялась}
+Variable_MerchantOnMap_17
+{, и попросту их#space#}
+Variable_MerchantOnMap_18
+{перебил}
+Variable_MerchantOnMap_19
+{перебил}
+Variable_MerchantOnMap_20
+{#space#- всех до единого! Вот#space#}
+Variable_MerchantOnMap_21
+{какой}
+Variable_MerchantOnMap_22
+{какая}
+Variable_MerchantOnMap_23
+{удалой пират наш}
+Variable_MerchantOnMap_24
+{удалая деваха наша}
+Variable_MerchantOnMap_25
+{Люди говорят, что#space#}
+Variable_MerchantOnMap_26
+{дерзкий пират}
+Variable_MerchantOnMap_27
+{дерзкая морская разбойница}
+Variable_MerchantOnMap_28
+{повадился}
+Variable_MerchantOnMap_29
+{повадилась}
+Variable_MerchantOnMap_30
+{#space#грабить торговые корабли#space#}
+Variable_MerchantOnMap_31
+{. И тогда наш Генерал-губернатор решил покончить с ним. Он снарядил  корабль, замаскированный под торговца с несколькими десятками хорошо обученных солдат, из Европы, и подослал к нему. Но#space#}
+Variable_MerchantOnMap_32
+{кровожадный пират перебил}
+Variable_MerchantOnMap_33
+{эта отчаянная деваха перебила}
+Variable_MerchantOnMap_34
+{#space#их всех и вновь#space#}
+Variable_MerchantOnMap_35
+{улизнул}
+Variable_MerchantOnMap_36
+{улизнула}
+Variable_MerchantOnMap_37
+{#space#от правосудия!}
+Variable_Blue_Bird_1.1
+{Вы знаете, местный торговец,#space#}
+Variable_Blue_Bird_1.2
+{, опять отправляет собственный флейт '}
+Variable_Blue_Bird_1.3
+{' в Старый Свет за товаром. Недавно флейт вышел из порта.}
+Variable_Blue_Bird_2.1
+{Хм, а дела у нашего негоцианта доморощенного идут неплохо!#space#}
+Variable_Blue_Bird_2.2
+{#space#вновь отправил собственный флейт '}
+Variable_Blue_Bird_2.3
+{' за товаром, тот только что вышел из нашего порта.}
+Variable_Blue_Bird_3.1
+{М-да, а#space#}
+Variable_Blue_Bird_3.2
+{#space#всё богатеет и богатеет. Только вчера его парусник стоял под разгрузкой в порту, а сегодня порт уже попрощался с ним. Флейт '}
+Variable_Blue_Bird_3.3
+{' ушёл опять за товаром, так то!}

@@ -1,0 +1,289 @@
+money_1{First million}
+money_1_descr{Accumulate 1 million piastres}
+money_icon{AchMoney}
+money_2{An impressive amount}
+money_2_descr{Accumulate 5 million piastres}
+money_3{Millionaire}
+money_3_descr{Accumulate 15 million piastres}
+rank_1{Beginner}
+rank_1_descr{Raise the rank of the main character to 10}
+rank_icon{AchLvlUp}
+rank_2{Based on experience}
+rank_2_descr{Raise the rank of the main character to 25}
+rank_3{Anything is possible}
+rank_3_descr{Raise the rank of the main character to 40}
+bank_money_3{Huge contribution}
+bank_money_3_descr{Make deposits to banks totaling 50 million}
+bank_money_icon{AchVklad}
+taxes_1{First taxes}
+taxes_1_descr{Pay 10 port fees}
+taxes_icon{AchShipPortman}
+taxes_2{Tribute to the state}
+taxes_2_descr{Pay 50 port fees}
+taxes_3{Honest navigator}
+taxes_3_descr{Pay 100 port fees}
+AchVzyatka_1{Give it to the paw}
+AchVzyatka_1_descr{Give 10 bribes to the guards}
+AchVzyatka_icon{AchVzyatka}
+AchVzyatka_2{Bribe giver}
+AchVzyatka_2_descr{Give 25 bribes to the guards}
+AchVzyatka_3{Corrupt official}
+AchVzyatka_descr{Give 50 bribes to the guards}
+AchTreasure_1{Lucky Captain}
+AchTreasure_1_descr{Find 5 treasures}
+AchTreasure_icon{AchTreasure}
+AchTreasure_2{In search of treasures}
+AchTreasure_2_descr{Find 15 treasures}
+AchTreasure_3{Treasure Hunter}
+AchTreasure_3_descr{Find 30 treasures}
+AchChest_1{Hacking Specialist}
+AchChest_1_descr{Hack 5 chests}
+AchChest_icon{AchChest}
+AchChest_2{Cracker}
+AchChest_2_descr{Hack 15 chests}
+AchChest_3{Bear trap}
+AchChest_3_descr{Hack 30 chests}
+kills_1{Violent man}
+kills_1_descr{Commit 50 murders}
+kills_icon{AchKillAll}
+kills_2{Bloody Path}
+kills_2_descr{Commit 150 murders}
+kills_3{Serial killer}
+kills_3_descr{Commit 500 murders}
+ship_kills_1{Real Corsair}
+ship_kills_1_descr{Sink 10 ships in battle}
+ship_kills_icon{AchShipDead}
+ship_kills_2{Sea wolf}
+ship_kills_2_descr{Sink 35 ships in battle}
+ship_kills_3{Terror of the Seas}
+ship_kills_3_descr{Sink 70 ships in battle}
+skel_kills_1{Cleansing from the dark forces}
+skel_kills_1_descr{Kill 30 undead}
+skel_kills_icon{AchSkeletDead}
+skel_kills_2{Holy warrior}
+skel_kills_2_descr{Kill 75 undead}
+skel_kills_3{Paladin}
+skel_kills_3_descr{Kill 150 undead}
+poisons_1{Dangerous liquid}
+poisons_1_descr{Apply 50 poison hits}
+poisons_icon{AchPoison}
+poisons_2{Poisoned blade}
+poisons_2_descr{Inflict 100 poisonous hits}
+poisons_3{Poison specialist}
+poisons_3_descr{Inflict 150 poisonous hits}
+criticals_1{Vulnerable place}
+criticals_1_descr{Deal 100 critical hits}
+criticals_icon{AchCritical}
+criticals_2{Fatal hits}
+criticals_2_descr{Deal 250 critical hits}
+criticals_3{Anatomy expert}
+criticals_3_descr{Deal 500 critical hits}
+AchBlood_1{Slight wound}
+AchBlood_1_descr{Apply 50 bleeding wounds}
+AchBlood_icon{AchBlood}
+AchBlood_2{A bleeding cut}
+AchBlood_2_descr{Apply 100 bleeding wounds}
+AchBlood_3{Sea of blood}
+AchBlood_3_descr{Apply 200 bleeding wounds}
+AchTravma_1{Lumberjack surgeon}
+AchTravma_1_descr{Inflict 50 injuries}
+AchTravma_icon{AchTravma}
+AchTravma_2{Fracture wizard}
+AchTravma_2_descr{Inflict 150 injuries}
+AchTravma_3{Bonecrusher}
+AchTravma_3_descr{Inflict 300 injuries}
+AchStanS_1{Fast as the wind}
+AchStanS_1_descr{Apply 50 sharp hits}
+AchStanS_icon{AchStanS}
+AchStanS_2{Flutter like a butterfly}
+AchStanS_2_descr{Apply 150 sharp hits}
+AchStanS_3{Sorry as a bee}
+AchStanS_3_descr{Apply 300 sharp hits}
+AchStanH_1{Powerful hit}
+AchStanH_1_descr{Apply 50 stunning hits}
+AchStanH_icon{AchStanH}
+AchStanH_2{Heavy Hands}
+AchStanH_2_descr{Apply 150 stunning hits}
+AchStanH_3{Viking}
+AchStanH_3_descr{Deliver 300 stunning hits}
+craft_1{Constructor}
+craft_1_descr{Create 300 items}
+craft_icon{AchCraft}
+craft_2{Mechanic}
+craft_2_descr{Create 500 items}
+craft_3{Crafter}
+craft_3_descr{Create 1000 items}
+books_1{Initial Training}
+books_1_descr{Read 3 books}
+books_icon{AchBooksRead}
+books_2{Reader}
+books_2_descr{Read 6 books}
+books_3{Bookworm}
+books_3_descr{Read 10 books}
+officers_1{Helpers won't hurt}
+officers_1_descr{Hire 3 officers in the tavern}
+officers_icon{AchOfficers}
+officers_2{Assignment of responsibilities}
+officers_2_descr{Hire 6 officers in the tavern}
+officers_3{Squad of officers}
+officers_3_descr{Hire 10 officers in the tavern}
+ships_3{Squadron}
+ships_3_descr{Assemble a squadron of 8 ships, under the control of the main character}
+ships_icon{AchEscadr}
+heal_bottles_1{First aid}
+heal_bottles_1_descr{Drink 50 medicinal potions}
+heal_bottles_icon{AchHealth}
+heal_bottles_2{Amateur Healer}
+heal_bottles_2_descr{Drink 100 medicinal potions}
+heal_bottles_3{Self-medication professional}
+heal_bottles_3_descr{Drink 200 medicinal potions}
+AchFood_1{Food lover}
+AchFood_1_descr{Eat 50 units of food}
+AchFood_icon{AchFood}
+AchFood_2{Insatiable}
+AchFood_2_descr{Eat 150 units of food}
+AchFood_3{Glutton}
+AchFood_3_descr{Eat 300 units of food}
+AchTurnir_1{Newbie}
+AchTurnir_1_descr{Win 1 tournament}
+AchTurnir_icon{AchTurnir}
+AchTurnir_2{Winner}
+AchTurnir_2_descr{Win 3 tournaments}
+AchTurnir_3{Champion}
+AchTurnir_3_descr{Win 7 tournaments}
+AchDuelyant_1{Easy Job}
+AchDuelyant_1_descr{Win 5 duels on the 'Duelist' quest}
+AchDuelyant_icon{AchDuelyant}
+AchDuelyant_2{Amateur to interfere}
+AchDuelyant_2_descr{Win 10 duels on the 'Duelist' quest}
+AchDuelyant_3{Pacifier}
+AchDuelyant_3_descr{Win 20 duels on the 'Duelist' quest}
+AchShipOrder_1{New order}
+AchShipOrder_1_descr{Order 5 ships at the shipyard}
+AchShipOrder_icon{AchShipOrder}
+AchShipOrder_2{Your own only}
+AchShipOrder_2_descr{Order 10 ships at the shipyard}
+AchShipOrder_3{Ideal option}
+AchShipOrder_3_descr{Order 20 ships at the shipyard}
+AchSityRobbery_1{Robber}
+AchSityRobbery_1_descr{Rob 5 colonies}
+AchSityRobbery_icon{AchSityRobbery}
+AchSityRobbery_2{Destroyer}
+AchSityRobbery_2_descr{Rob 10 colonies}
+AchSityRobbery_3{Marauder}
+AchSityRobbery_3_descr{Rob 15 colonies}
+AchGoldFleet_1{To board}
+AchGoldFleet_1_descr{Destroy 1 Spanish Golden Fleet}
+AchGoldFleet_icon{AchGoldFleet}
+AchGoldFleet_2{Gold will be mine}
+AchGoldFleet_2_descr{Destroy 3 Spanish Gold Fleets}
+AchGoldFleet_3{Collapse of Spain}
+AchGoldFleet_3_descr{Destroy 7 Spanish Gold Fleets}
+AchBuildColony_1{Own hideout}
+AchBuildColony_1_descr{Build a Level 1 colony}
+AchBuildColony_icon{AchBuildColony}
+AchBuildColony_2{Own city}
+AchBuildColony_2_descr{Build a colony of 2 levels}
+AchBuildColony_3{Own island}
+AchBuildColony_3_descr{Upgrade your colony with a security base and complete all the buildings}
+AchShipSearch_1{Ship Connoisseur}
+AchShipSearch_1_descr{Explore 50 types of ships, except quest ships}
+AchShipSearch_icon{AchShipSearch}
+AchShipSearch_2{Ship Expert}
+AchShipSearch_2_descr{Explore 95 types of ships, except quest ships}
+AchShipSearch_3{Ship Explorer}
+AchShipSearch_3_descr{Explore 124 types of ships, except quest ships}
+AchOrion_3{Escort}
+AchOrion_3_descr{Complete a line of quests 'to accompany the "Orion" fluyt'}
+AchOrion_icon{AchOrion}
+AchRabotorg_3{Good Money}
+AchRabotorg_3_descr{Complete a number of tasks on the 'Slave Trader' quest}
+AchRabotorg_icon{AchRabotorg}
+AchKondotier_3{Cold-blooded}
+AchKondotier_3_descr{Complete a number of tasks on the 'Condottiere' quest}
+AchKondotier_icon{AchKondotier}
+AchTich_3{Black Beard}
+AchTich_3_descr{Complete a series of tasks from 'Edward Teach'}
+AchTich_icon{AchTich}
+AchRagnar_3{Viking Uprising}
+AchRagnar_3_descr{Complete the 'Shard of the Past' quest}
+AchRagnar_icon{AchRagnar}
+AchSalazar_3{Demon in the Night}
+AchSalazar_3_descr{End the 'Armando Salazar' event}
+AchSalazar_icon{AchSalazar}
+AchKaskos_3{Cleaner}
+AchKaskos_3_descr{End the 'Alberto Cascos' event}
+AchKaskos_icon{AchKaskos}
+AchUmSamil_3{Ancient Evil}
+AchUmSamil_3_descr{End the 'Yum Samil' event}
+AchUmSamil_icon{AchUmSamil}
+AchMapMaker_3{Cartographer}
+AchMapMaker_3_descr{Collect all the maps in a Cartographic Atlas}
+AchMapMaker_icon{AchMapMaker}
+gen_quests_1{On the right track}
+gen_quests_1_descr{Complete 10 generator quests for city residents}
+gen_quests_icon{AchGenQuestComlite}
+gen_quests_2{Invaluable help}
+gen_quests_2_descr{Complete 20 generator quests for city residents}
+gen_quests_3{Patron}
+gen_quests_3_descr{Complete 40 generator quests of city residents}
+LSC_quest_3{In the City of Abandoned Ships}
+LSC_quest_3_descr{Complete the quest 'In the City of Abandoned Ships'}
+LSC_quest_icon{AchBlackPearl}
+Teno_quest_3{Tenotchitlan}
+Teno_quest_3_descr{Complete the 'Tenotchitlan' quest}
+Teno_quest_icon{AchTenochtitlan}
+Killbeggars_quest_3{Kill all the beggars}
+Killbeggars_quest_3_descr{Complete the 'Kill All Beggars' quest}
+Killbeggars_quest_icon{AchQuestComlite}
+Ghostship_quest_3{Ghost Ship}
+Ghostship_quest_3_descr{Complete the 'Ghost Ship' quest}
+Ghostship_quest_icon{AchFlyingDutchman}
+Bluebird_quest_3{Merchant defender}
+Bluebird_quest_3_descr{Complete the quest 'Destroy the Xebec 'Bluebird'}
+Bluebird_quest_icon{AchQuestComlite}
+Berglarsgang_quest_3{Austin's gang}
+Berglarsgang_quest_3_descr{Complete the 'Austin Gang' quest}
+Berglarsgang_quest_icon{AchQuestComlite}
+Mummydust_quest_3{Search for Mummy Powder}
+Mummydust_quest_3_descr{Complete the quest 'Searching for Mummy Powder'}
+Mummydust_quest_icon{AchQuestComlite}
+Enchantcity_quest_3{Enchanted City}
+Enchantcity_quest_3_descr{Complete the 'Enchanted City' quest}
+Enchantcity_quest_icon{AchFregatQueen}
+AchDozor_3{Watcher}
+AchDozor_3_descr{Complete the 'Watch' quest}
+AchDozor_icon{AchDozor}
+AchZagadochniyOstrov_3{Mysterious Island}
+AchZagadochniyOstrov_3_descr{Complete quest 'Mysterious Island'}
+AchZagadochniyOstrov_icon{AchZagadochniyOstrov}
+AchNasledstvo_3{Unexpected inheritance}
+AchNasledstvo_3_descr{Complete quest 'Unexpected inheritance'}
+AchNasledstvo_icon{AchNasledstvo}
+AchStrannyeDela_3{Strange things}
+AchStrannyeDela_3_descr{Complete quest 'Strange things are happening in the archipelago'}
+AchStrannyeDela_icon{AchStrannyeDela}
+Isabella_quest_3{Story of the beautiful Isabella}
+Isabella_quest_3_descr{Complete the quest 'The Story of the Beautiful Isabella'}
+Isabella_quest_icon{AchQuestComlite}
+CapBladLine_3{Captain Blood}
+CapBladLine_3_descr{Complete a series of Captain Blood line quests}
+CapBladLine_icon{AchQuestComlite}
+WhisperLine_3{Future is already near}
+WhisperLine_3_descr{Complete a series of Whisper line quests}
+WhisperLine_icon{AchQuestComlite}
+Nation_quest_E_3{In the service of England}
+Nation_quest_E_3_descr{Complete a series of quests for England}
+Nation_quest_E_icon{AchAngQuestComlite}
+Nation_quest_F_3{In the service of France}
+Nation_quest_F_3_descr{Complete a series of quests for France}
+Nation_quest_F_icon{AchFraQuestComlite}
+Nation_quest_H_3{In the service of Holland}
+Nation_quest_H_3_descr{Complete a series of quests for Holland}
+Nation_quest_H_icon{AchHolQuestComlite}
+Nation_quest_S_3{In the service of Spain}
+Nation_quest_S_3_descr{Complete a series of quests for Spain}
+Nation_quest_S_icon{AchSpaQuestComlite}
+Nation_quest_P_3{In the service of the Brethren}
+Nation_quest_P_3_descr{Complete a series of quests for the Brethren}
+Nation_quest_P_icon{AchPirQuestComlite}

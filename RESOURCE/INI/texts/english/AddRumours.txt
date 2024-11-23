@@ -1,0 +1,1288 @@
+Variable_Arena_1
+{Have you heard}
+Variable_Arena_2
+{Do you know}
+Variable_Arena_3
+{Unbelievable}
+Variable_Arena_4
+{, сaptain#space#}
+Variable_Arena_5
+{suffered}
+Variable_Arena_6
+{suffered}
+Variable_Arena_7
+{#space#defeat in a duel that was held as a competition in the Arena!}
+Variable_Arena_8
+{Have you heard}
+Variable_Arena_9
+{Do you know}
+Variable_Arena_10
+{Unbelievable}
+Variable_Arena_11
+{, a certain captain#space#}
+Variable_Arena_12
+{turned out to be}
+Variable_Arena_13
+{it turned out to be}
+Variable_Arena_14
+{#space#stronger in the duel that took place as a competition in the Arena!}
+Variable_Arena_15
+{Have you heard}
+Variable_Arena_16
+{Do you know}
+Variable_Arena_17
+{Unbelievable}
+Variable_Arena_18
+{, a certain captain#space#}
+Variable_Arena_19
+{failed}
+Variable_Arena_20
+{failed}
+Variable_Arena_21
+{#space#with scary monsters in the Arena competition!}
+Variable_Arena_22
+{Have you heard}
+Variable_Arena_23
+{Do you know}
+Variable_Arena_24
+{Unbelievable}
+Variable_Arena_25
+{, сaptain#space#}
+Variable_Arena_26
+{managed to}
+Variable_Arena_27
+{managed to}
+Variable_Arena_28
+{#space#deal with scary monsters in the Arena competitions!}
+Variable_Arena_29
+{Have you heard}
+Variable_Arena_30
+{Do you know}
+Variable_Arena_31
+{Unbelievable}
+Variable_Arena_32
+{, captain#space#}
+Variable_Arena_33
+{involved}
+Variable_Arena_34
+{participating}
+Variable_Arena_35
+{#space#in the last tournament in the Arena,#space#}
+Variable_Arena_36
+{couldn't win it.}
+Variable_Arena_37
+{couldn't win it.}
+Variable_Arena_38
+{Have you heard}
+Variable_Arena_39
+{Do you know}
+Variable_Arena_40
+{Unbelievable}
+Variable_Arena_41
+{, in the last tournament held in the Arena, the strongest#space#}
+Variable_Arena_42
+{turned out to be}
+Variable_Arena_43
+{turned out to be}
+Variable_Arena_44
+{#space#captain#space#}
+Variable_Arena_45
+{Have you heard}
+Variable_Arena_46
+{Do you know}
+Variable_Arena_47
+{Unbelievable}
+Variable_Arena_48
+{, even the captain#space#}
+Variable_Arena_49
+{couldn't}
+Variable_Arena_50
+{couldn't}
+Variable_Arena_51
+{#space#to indicate the winner of one of the duels that recently took place in the Arena correctly and#space#}
+Variable_Arena_52
+{lost}
+Variable_Arena_53
+{lost}
+Variable_Arena_54
+{#space#your money.}
+Variable_Arena_55
+{Have you heard}
+Variable_Arena_56
+{Do you know}
+Variable_Arena_57
+{Unbelievable}
+Variable_Arena_58
+{, сaptain#space#}
+Variable_Arena_59
+{indicated}
+Variable_Arena_60
+{indicated}
+Variable_Arena_61
+{#space#the winner of one of the duels that recently took place in the Arena and#space#}
+Variable_Arena_62
+{won}
+Variable_Arena_63
+{won}
+Variable_Arena_64
+{#space#Money!}
+Variable_Arena_65
+{It is rumored that the next series of competitions will begin in the Fencing Settlement on Dominica in 20 days.}
+Variable_Arena_66
+{It is rumored that competitions have recently begun in the Fencing Settlement in Dominica. Oh, if I were more mature, I would certainly try my luck there.}
+Variable_Colony_1
+{Have you heard}
+Variable_Colony_2
+{Do you know}
+Variable_Colony_3
+{Unbelievable}
+Variable_Colony_4
+{, in the colony#space#}
+Variable_Colony_5
+{#space#has a rebellion broken out? The owner of the colony, had to figure it out himself, captain#space#}
+Variable_Colony_6
+{Have you heard}
+Variable_Colony_7
+{Do you know}
+Variable_Colony_8
+{Unbelievable}
+Variable_Colony_9
+{, in the colony#space#}
+Variable_Colony_10
+{#space#has a rebellion broken out? But the garrison guarding the colony managed to deal with the rebels.}
+Variable_Colony_11
+{Have you heard}
+Variable_Colony_12
+{Do you know}
+Variable_Colony_13
+{Unbelievable}
+Variable_Colony_14
+{, in the colony#space#}
+Variable_Colony_15
+{#space#has a rebellion broken out? And what did you think? The garrison has been defeated!}
+Variable_Colony_16
+{Have you heard}
+Variable_Colony_17
+{Do you know}
+Variable_Colony_18
+{Unbelievable}
+Variable_Colony_19
+{, to the colony#space#}
+Variable_Colony_20
+{#space#attacked? The owner of the colony himself came to the aid of the garrison and gave heat to the attacking scoundrels!}
+Variable_Colony_21
+{Have you heard}
+Variable_Colony_22
+{Do you know}
+Variable_Colony_23
+{Unbelievable}
+Variable_Colony_24
+{, to the colony#space#}
+Variable_Colony_25
+{#space#was there an attack? Fortunately, the prepared garrison coped with the attackers.}
+Variable_Colony_26
+{Have you heard}
+Variable_Colony_27
+{Do you know}
+Variable_Colony_28
+{Unbelievable}
+Variable_Colony_29
+{, to the colony#space#}
+Variable_Colony_30
+{#space#was there an attack? The attackers managed to break through the defensive redoubts of the garrison and rob the colony.}
+Variable_Colony_31
+{Have you heard}
+Variable_Colony_32
+{Do you know}
+Variable_Colony_33
+{Unbelievable}
+Variable_Colony_34
+{, to the colony#space#}
+Variable_Colony_35
+{#space#an attack was carried out by a squadron under the flag of#space#}
+Variable_Colony_36
+{. The owner of the colony himself came to the rescue! The attacking squadron was defeated and went to the bottom.}
+Variable_Colony_37
+{Have you heard}
+Variable_Colony_38
+{Do you know}
+Variable_Colony_39
+{Unbelievable}
+Variable_Colony_40
+{, to the colony#space#}
+Variable_Colony_41
+{#space#an attack was carried out by a squadron under the flag of#space#}
+Variable_Colony_42
+{. But the protection of the coastline did not fail and sent the scoundrels who violated the peace of the colony to their forefathers.}
+Variable_Colony_43
+{Have you heard}
+Variable_Colony_44
+{Do you know}
+Variable_Colony_45
+{Unbelievable}
+Variable_Colony_46
+{, to the colony#space#}
+Variable_Colony_47
+{#space#an attack has been committed#space#}
+Variable_Colony_48
+{. And quite successfully - the defense could not withstand the powerful onslaught and fell before the enemy.}
+Variable_Colony_49
+{Have you heard}
+Variable_Colony_50
+{Do you know}
+Variable_Colony_51
+{Unbelievable}
+Variable_Colony_52
+{, in the colony#space#}
+Variable_Colony_53
+{#space#has a rebellion broken out? The rebels easily took over the situation because the owner of the colony did not bother to strengthen the colony!}
+Variable_Colony_54
+{Have you heard}
+Variable_Colony_55
+{Do you know}
+Variable_Colony_56
+{Unbelievable}
+Variable_Colony_57
+{, to the colony#space#}
+Variable_Colony_58
+{#space#an attack has been committed! The attackers were very surprised when they did not find a guard unit at the walls of the colony. And the colony was looted.}
+Variable_Colony_59
+{Have you heard}
+Variable_Colony_60
+{Do you know}
+Variable_Colony_61
+{Unbelievable}
+Variable_Colony_62
+{, to the colony#space#}
+Variable_Colony_63
+{#space#it was committed by the forces#space#}
+Variable_Colony_64
+{?! The attackers were very surprised when they did not find any guard ships near the walls in the waters of the colony. The colony was looted.}
+Variable_Colony_65
+{Have you heard}
+Variable_Colony_66
+{Do you know}
+Variable_Colony_67
+{Unbelievable}
+Variable_Colony_68
+{, at the mines of the colony#space#}
+Variable_Colony_69
+{#space#a mutiny broke out. Due to the lack of the necessary garrison, the rebels easily coped with the rest and fled.}
+Variable_Colony_70
+{Have you heard}
+Variable_Colony_71
+{Do you know}
+Variable_Colony_72
+{Unbelievable}
+Variable_Colony_73
+{, to the mines of the colony#space#}
+Variable_Colony_74
+{#space#was there an attack?! The most interesting thing is that almost no one guarded the mines!}
+Variable_Colony_75
+{Have you heard}
+Variable_Colony_76
+{Do you know}
+Variable_Colony_77
+{Unbelievable}
+Variable_Colony_78
+{, on a plantation owned by the colony#space#}
+Variable_Colony_79
+{#space#has a mutiny broken out?! The rebels immediately celebrated the victory, because there was almost no guarded garrison!}
+Variable_Colony_80
+{There is talk}
+Variable_Colony_81
+{They say}
+Variable_Colony_82
+{There are rumors}
+Variable_Colony_83
+{, that the captain#space#}
+Variable_Colony_84
+{built}
+Variable_Colony_85
+{built}
+Variable_Colony_86
+{#space#colony on Cayman Island.}
+Variable_Colony_87
+{There is talk}
+Variable_Colony_88
+{They say}
+Variable_Colony_89
+{There are rumors}
+Variable_Colony_90
+{, that the captain recently#space#}
+Variable_Colony_91
+{expanded}
+Variable_Colony_92
+{expanded}
+Variable_Colony_93
+{#space#colony, which is called '}
+Variable_Colony_94
+{There is talk}
+Variable_Colony_95
+{They say}
+Variable_Colony_96
+{There are rumors}
+Variable_Colony_97
+{, that colony '}
+Variable_Colony_98
+{', the owner of which is a certain captain#space#}
+Variable_Colony_99
+{, recently got his own plantation!}
+Variable_Colony_100
+{There is talk}
+Variable_Colony_101
+{They say}
+Variable_Colony_102
+{There are rumors}
+Variable_Colony_103
+{, that colony '}
+Variable_Colony_104
+{', the owner of which is a certain captain#space#}
+Variable_Colony_105
+{, recently got his own mines!}
+Variable_Colony_106
+{There is talk}
+Variable_Colony_107
+{They say}
+Variable_Colony_108
+{There are rumors}
+Variable_Colony_109
+{, that famous Caribbean captain#space#}
+Variable_Colony_110
+{#space#he ordered the architect who built his colony to build a defensive base to repel enemy attacks.}
+Variable_GenerateQuests_1
+{Have you heard}
+Variable_GenerateQuests_2
+{Do you know}
+Variable_GenerateQuests_3
+{Unbelievable}
+Variable_GenerateQuests_4
+{, сaptain#space#}
+Variable_GenerateQuests_5
+{volunteered}
+Variable_GenerateQuests_6
+{volunteered}
+Variable_GenerateQuests_7
+{#space#to duel for another person and#space#}
+Variable_GenerateQuests_8
+{won it.}
+Variable_GenerateQuests_9
+{won it.}
+Variable_GenerateQuests_10
+{Have you heard}
+Variable_GenerateQuests_11
+{Do you know}
+Variable_GenerateQuests_12
+{Unbelievable}
+Variable_GenerateQuests_13
+{, сaptain#space#}
+Variable_GenerateQuests_14
+{volunteered}
+Variable_GenerateQuests_15
+{volunteered}
+Variable_GenerateQuests_16
+{#space#to duel for another person and#space#}
+Variable_GenerateQuests_17
+{won it}
+Variable_GenerateQuests_18
+{won it}
+Variable_GenerateQuests_19
+{Have you heard}
+Variable_GenerateQuests_20
+{Do you know}
+Variable_GenerateQuests_21
+{Unbelievable}
+Variable_GenerateQuests_22
+{, сaptain#space#}
+Variable_GenerateQuests_23
+{volunteered}
+Variable_GenerateQuests_24
+{volunteered}
+Variable_GenerateQuests_25
+{#space#to duel for another person and#space#}
+Variable_GenerateQuests_26
+{won it}
+Variable_GenerateQuests_27
+{won it}
+Variable_GenerateQuests_28
+{Have you heard}
+Variable_GenerateQuests_29
+{Do you know}
+Variable_GenerateQuests_30
+{Unbelievable}
+Variable_GenerateQuests_31
+{, a certain captain#space#}
+Variable_GenerateQuests_32
+{met}
+Variable_GenerateQuests_33
+{met}
+Variable_GenerateQuests_34
+{#space#there is a shipwrecked ship at sea. But instead of helping,#space#}
+Variable_GenerateQuests_35
+{he drowned him.}
+Variable_GenerateQuests_36
+{she drowned him.}
+Variable_Mines_1
+{Have you heard}
+Variable_Mines_2
+{Do you know}
+Variable_Mines_3
+{Unbelievable}
+Variable_Mines_4
+{, at the mines that belong to the colony#space#}
+Variable_Mines_5
+{#space#a mutiny broke out. If it were not for the owner of the colony himself, it remains to be seen whether the garrison would have been able to cope with the rebels.}
+Variable_Mines_6
+{Have you heard}
+Variable_Mines_7
+{Do you know}
+Variable_Mines_8
+{Unbelievable}
+Variable_Mines_9
+{, at the mines that belong to the colony#space#}
+Variable_Mines_10
+{#space#a mutiny broke out. But the garrison there coped with the rebels.}
+Variable_Mines_11
+{Have you heard}
+Variable_Mines_12
+{Do you know}
+Variable_Mines_13
+{Unbelievable}
+Variable_Mines_14
+{, at the mines that belong to the colony#space#}
+Variable_Mines_15
+{#space#a mutiny broke out. And I must say, it ended sadly for the garrison there - the rebels were able to break through and fled.}
+Variable_Mines_16
+{Have you heard}
+Variable_Mines_17
+{Do you know}
+Variable_Mines_18
+{Unbelievable}
+Variable_Mines_19
+{, to the mines belonging to the colony#space#}
+Variable_Mines_20
+{#space#they attacked. The owner of the colony himself has arrived to help destroy the enemy!}
+Variable_Mines_21
+{Have you heard}
+Variable_Mines_22
+{Do you know}
+Variable_Mines_23
+{Unbelievable}
+Variable_Mines_24
+{, to the mines belonging to the colony#space#}
+Variable_Mines_25
+{#space#they attacked. But the attackers could not do anything about the forces guarding the mines and fell in battle.}
+Variable_Mines_26
+{Have you heard}
+Variable_Mines_27
+{Do you know}
+Variable_Mines_28
+{Unbelievable}
+Variable_Mines_29
+{, to the mines belonging to the colony#space#}
+Variable_Mines_30
+{#space#they attacked. As it turned out, it was not in vain. The garrison was in too weakened a state to be able to oppose the attackers.}
+Variable_Plantation_1
+{Have you heard}
+Variable_Plantation_2
+{Do you know}
+Variable_Plantation_3
+{Unbelievable}
+Variable_Plantation_4
+{, on a plantation that belongs to the colony#space#}
+Variable_Plantation_5
+{#space#a mutiny broke out. The owner of the colony himself arrived to pacify the rebels. It didn't seem enough to anyone.}
+Variable_Plantation_6
+{Have you heard}
+Variable_Plantation_7
+{Do you know}
+Variable_Plantation_8
+{Unbelievable}
+Variable_Plantation_9
+{, on a plantation that belongs to the colony#space#}
+Variable_Plantation_10
+{#space#a mutiny broke out. The garrison easily dealt with the rebels.}
+Variable_Plantation_11
+{Have you heard}
+Variable_Plantation_12
+{Do you know}
+Variable_Plantation_13
+{Unbelievable}
+Variable_Plantation_14
+{, on a plantation that belongs to the colony#space#}
+Variable_Plantation_15
+{#space#a mutiny broke out. It would seem that the garrison could easily cope with the rebels, but that was not the case! The garrison guarding the plantation managed to lose in this battle, and the rebels fled.}
+Variable_Quests_1_1
+{Have you heard}
+Variable_Quests_1_2
+{Do you know}
+Variable_Quests_1_3
+{Unbelievable}
+Variable_Quests_1_4
+{, a certain captain#space#}
+Variable_Quests_1_5
+{#space#was able to win the most difficult game 'Watch', and received a well-deserved prize.}
+Variable_utils_1
+{There are rumors that a Fencing Settlement has reopened its gates in Dominica. It is said that the most skilled of those who possess this art gather there.}
+Variable_LSC_Q2Utilite_1
+{Captain#space#}
+Variable_LSC_Q2Utilite_2
+{' in town now. I think his name is#space#}
+Variable_LSC_Q2Utilite_3
+{. He should be at the portmaster's right now.}
+Variable_LSC_Q2Utilite_4
+{You know the captain#space#}
+Variable_LSC_Q2Utilite_5
+{'We can catch you at the portmaster's now.}
+Variable_LSC_Q2Utilite_6
+{If you want to talk to the captain#space#}
+Variable_LSC_Q2Utilite_7
+{'Then go straight to the portmaster.#space#}
+Variable_LSC_Q2Utilite_8
+{#space#he is there now...}
+Variable_LSC_Q2Utilite_9
+{Captain#space#}
+Variable_LSC_Q2Utilite_10
+{'it's in the harbor on the roadstead. I think his name is#space#}
+Variable_LSC_Q2Utilite_11
+{. A strange type, I'll tell you, does not go ashore at all.}
+Variable_LSC_Q2Utilite_12
+{You know the captain#space#}
+Variable_LSC_Q2Utilite_13
+{'now you can only meet if you go out on a boat to the port. The ship is in the roadstead, but the captain does not go out to the city, prefers to stay on the ship. And didn't he get tired of it?..}
+Variable_LSC_Q2Utilite_14
+{If you want to talk to the captain#space#}
+Variable_LSC_Q2Utilite_15
+{', then go out to the port.#space#}
+Variable_LSC_Q2Utilite_16
+{#space#I think his name is... In general, he anchored in the port, but does not go ashore. A real sea wolf, he doesn't even want to part with the deck rolling.}
+Variable_LSC_Q2Utilite_17
+{Captain#space#}
+Variable_LSC_Q2Utilite_18
+{'in the city. I think his name is#space#}
+Variable_LSC_Q2Utilite_19
+{You know the captain#space#}
+Variable_LSC_Q2Utilite_20
+{'you can be caught in the city now.}
+Variable_LSC_Q2Utilite_21
+{If you want to talk to the captain#space#}
+Variable_LSC_Q2Utilite_22
+{', then look for him in the streets.#space#}
+Variable_LSC_Q2Utilite_23
+{#space#I think his name is...}
+Variable_LSC_Q2Utilite_24
+{Captain#space#}
+Variable_LSC_Q2Utilite_25
+{' is in port on the roadstead. I think his name is#space#}
+Variable_LSC_Q2Utilite_26
+{You know the captain#space#}
+Variable_LSC_Q2Utilite_27
+{'you can be caught in our port now. His ship is in the roadstead.}
+Variable_LSC_Q2Utilite_28
+{If you want to talk to the captain#space#}
+Variable_LSC_Q2Utilite_29
+{', then look for his ship in our port.#space#}
+Variable_LSC_Q2Utilite_30
+{#space#I think his name is...}
+Variable_LSC_Q2Utilite_31
+{You heard that Chad Capper lost some key that was important to him. Now he's running all over the City, looking for...}
+Variable_Quests_1
+{Have you heard}
+Variable_Quests_2
+{Do you know}
+Variable_Quests_3
+{Unbelievable}
+Variable_Quests_4
+{, a certain captain#space#}
+Variable_Quests_5
+{#space#was able to win the most difficult game 'Watch', and received a well-deserved prize.}
+Variable_angelika_tich_line_functions_1
+{Pirates captured the Spanish colony of La Vega, and at the same time attempted to attack Santo Domingo. However, they did not succeed, they were all killed at the walls of the city.}
+Variable_angelika_tich_line_functions_2
+{Terrible news, pirates have staged a massacre in our colony of La Vega, they say, they did not spare anyone. Thank God, retribution has already overtaken them, all the scoundrels died under the walls of Santo Domingo in an unsuccessful attempt to take the city from the land.}
+Variable_quests_reaction_1
+{Oh, eat me shark! That's you are#space#}
+Variable_quests_reaction_2
+{that captain}
+Variable_quests_reaction_3
+{that girl}
+Variable_quests_reaction_4
+{who took it}
+Variable_quests_reaction_5
+{who took it}
+Variable_quests_reaction_6
+{#space#the Flying Dutchman?! God damn me! It must have been a great battle! Tell me, is it true that his former captain was friends with the Sea Devil himself? And did he have all the cursed and rejected demons in his team, feeding on the blood of their victims?}
+Variable_quests_reaction_7
+{Captain, you are quite famous here! Rumor has it that you're the one who put old Davy Jones and his team of dead to rest. Who would have thought that the Flying Dutchman would stop being a ghost! Times are changing, no matter what you say... that's another legend in this world has become less, hehe. Let's drink to those secrets that the ocean still keeps in its depths...}
+Variable_quests_reaction_8
+{Have you heard that the 'Flying Dutchman' - this elusive and incomprehensible horror of the sea elements, has found its end? And note - from quite mortal people! I heard that one captain was able to break the curse and took the old Devil as a prize, as a simple merchant... That's how, in general, the outrages of the legendary Ghost Ship ended ingloriously.}
+Variable_quests_reaction_9
+{But there was a battle at the lighthouse just now. Some captain was trying to sell a large shipment of contraband, so patrol squadron covered up the case. Red-handed, then.#space#}
+Variable_quests_reaction_10
+{There was a roar - the whole city was alarmed, and the roof of the local store was broken by a ball! But it's no use. The locals are buyers, so they hid in the jungle, and the captain left by sea. As it is, he left our squadron with a nose! So I taxied out of the bay - any pilot will envy!}
+Variable_quests_reaction_11
+{But there was a battle at the lighthouse just now. Some captain was trying to sell a large shipment of contraband, so patrol squadron caught up with him. Red-handed, then.#space#}
+Variable_quests_reaction_12
+{There was a roar - the whole city was alarmed, and the roof of the local store was broken by a ball! But it's no use. The locals are buyers, so they hid in the jungle, and the captain left by sea. As it is, he left our squadron with a nose! So I taxied out of the bay - any pilot will envy!}
+Variable_quests_reaction_13
+{Did you hear that сaptain#space#}
+Variable_quests_reaction_14
+{#space#got into a fight with a bandit named#space#}
+Variable_quests_reaction_15
+{His}
+Variable_quests_reaction_16
+{Her}
+Variable_quests_reaction_17
+{#space#they wanted to rob him, huh#space#}
+Variable_quests_reaction_18
+{he}
+Variable_quests_reaction_19
+{she}
+Variable_quests_reaction_20
+{didn't want to pay}
+Variable_quests_reaction_21
+{didn't want to pay}
+Variable_quests_reaction_22
+{Brave Cap}
+Variable_quests_reaction_23
+{Brave girl}
+Variable_quests_reaction_24
+{he just killed him.}
+Variable_quests_reaction_25
+{she just killed him.}
+Variable_quests_reaction_26
+{You know, there was a fight outside the city recently-for a captain named#space#}
+Variable_quests_reaction_27
+{#space#bandits attacked, they wanted to rob... Ah, so you are#space#}
+Variable_quests_reaction_28
+{that captain}
+Variable_quests_reaction_29
+{that girl}
+Variable_quests_reaction_30
+{who sent it}
+Variable_quests_reaction_31
+{who sent it}
+Variable_quests_reaction_32
+{#space#to the forefathers of this marauder named#space#}
+Variable_quests_reaction_33
+{! Great job, I'll tell you...}
+Variable_quests_reaction_34
+{Have you not heard that a local gang of bandits led by a scoundrel#space#}
+Variable_quests_reaction_35
+{#space#attacked the captain by name#space#}
+Variable_quests_reaction_36
+{He refused to pay}
+Variable_quests_reaction_37
+{She refused to pay}
+Variable_quests_reaction_38
+{#space#and#space#}
+Variable_quests_reaction_39
+{killed the bandits.}
+Variable_quests_reaction_40
+{killed the bandits.}
+Variable_quests_reaction_41
+{Did you hear that someone killed an unfortunate girl named in the jungle?#space#}
+Variable_quests_reaction_42
+{. Catch the bastard and hang him!}
+Variable_quests_reaction_43
+{You know, сaptain#space#}
+Variable_quests_reaction_44
+{, someone killed an unfortunate girl named#space#}
+Variable_quests_reaction_45
+{, when she went out of town on business. What a pity, she was so good...}
+Variable_quests_reaction_46
+{Her name was#space#}
+Variable_quests_reaction_47
+{, and she died in the jungle. And no wonder, I'll tell you, it's so restless outside the city...}
+Variable_quests_reaction_48
+{You heard,#space#}
+Variable_quests_reaction_49
+{some kind of captain}
+Variable_quests_reaction_50
+{some kind of sailor girl}
+Variable_quests_reaction_51
+{#space#saved}
+Variable_quests_reaction_52
+{#space#saved}
+Variable_quests_reaction_53
+{#space#a girl named#space#}
+Variable_quests_reaction_54
+{#space#from bandits, literally#space#}
+Variable_quests_reaction_55
+{got her out of their clutches!}
+Variable_quests_reaction_56
+{got her out of their clutches!}
+Variable_quests_reaction_57
+{You know, сaptain#space#}
+Variable_quests_reaction_58
+{#space#saved}
+Variable_quests_reaction_59
+{#space#saved}
+Variable_quests_reaction_60
+{#space#a girl named#space#}
+Variable_quests_reaction_61
+{#space#from rapists in the jungle... Ah, so it's you!! I admire you...}
+Variable_quests_reaction_62
+{A girl named#space#}
+Variable_quests_reaction_63
+{#space#she was very lucky - recently she was attacked by bandits in the jungle, they wanted to rape her, apparently. But they didn't work out, hehe, and she should thank the captain#space#}
+Variable_quests_reaction_64
+{Yeah, сaptain#space#}
+Variable_quests_reaction_65
+{, No one thought that you were capable of leaving a defenseless woman to be abused by bandits. Poor#space#}
+Variable_quests_reaction_66
+{, I have no words...}
+Variable_quests_reaction_67
+{You know, сaptain,#space#}
+Variable_quests_reaction_68
+{you're a total bastard.}
+Variable_quests_reaction_69
+{I didn't expect this from you}
+Variable_quests_reaction_70
+{. How could you leave a defenseless girl in the jungle? Do you have any idea what they did to her? Poor#space#}
+Variable_quests_reaction_71
+{, No one will marry her now...}
+Variable_quests_reaction_72
+{Did you hear that some captain killed an unfortunate girl named in the jungle?#space#}
+Variable_quests_reaction_73
+{. Catch the bastard and hang him!}
+Variable_quests_reaction_74
+{You know, сaptain#space#}
+Variable_quests_reaction_75
+{, someone killed an unfortunate girl named#space#}
+Variable_quests_reaction_76
+{, when she went out of town on business. What a pity, she was so good...}
+Variable_quests_reaction_77
+{Her name was#space#}
+Variable_quests_reaction_78
+{, and she died in the jungle. And no wonder, I'll tell you, it's so restless outside the city...}
+Variable_quests_reaction_79
+{Recently, our officer and the soldiers attached to him were found dead outside the city. Who could have killed them? Why...?}
+Variable_quests_reaction_80
+{Our commandant constantly sends patrols outside the city, but now I don't even know what will happen next. Recently, soldiers were found dead in the jungle...}
+Variable_quests_reaction_81
+{Damn it, someone outside the city killed our soldiers who were patrolling the territory...}
+Variable_quests_reaction_82
+{They say that the captain#space#}
+Variable_quests_reaction_83
+{#space#ran into soldiers in the jungle#space#}
+Variable_quests_reaction_84
+{#space#and killed them all. Heh,#space#}
+Variable_quests_reaction_85
+{#space#- good-for-nothing warriors...}
+Variable_quests_reaction_86
+{Did you hear the captain?#space#}
+Variable_quests_reaction_87
+{#space#was checking our patrol outside the city...}
+Variable_quests_reaction_88
+{Hmm, as far as I know, you were recently checked by our patrol outside the city. I don't know how effective this measure is...}
+Variable_quests_reaction_89
+{Our commandant will strengthen the patrolling of the territory adjacent to the city. Well, you know about it yourself, you were recently tested in the jungle...}
+Variable_quests_reaction_90
+{You know, Governor#space#}
+Variable_quests_reaction_91
+{#space#instructed by someone}
+Variable_quests_reaction_92
+{to him the captain}
+Variable_quests_reaction_93
+{to the sailor}
+Variable_quests_reaction_94
+{#space#destroy a famous bandit named#space#}
+Variable_quests_reaction_95
+{. And it seems that#space#}
+Variable_quests_reaction_96
+{captain has fulfilled}
+Variable_quests_reaction_97
+{she did}
+Variable_quests_reaction_98
+{#space#the governor's assignment...}
+Variable_quests_reaction_99
+{Some brave captain volunteered}
+Variable_quests_reaction_100
+{Some brave girl volunteered}
+Variable_quests_reaction_101
+{#space#find and destroy a local bandit named#space#}
+Variable_quests_reaction_102
+{. And it looks like he}
+Variable_quests_reaction_103
+{}
+Variable_quests_reaction_104
+{#space#did it}
+Variable_quests_reaction_105
+{}
+Variable_quests_reaction_106
+{#space#This!}
+Variable_quests_reaction_107
+{Ha, finally our governor has taken up the task of restoring order in the jungle - he instructed the captain#space#}
+Variable_quests_reaction_108
+{#space#find the most famous bandit in the jungle and kill him. And you know, this bandit,#space#}
+Variable_quests_reaction_109
+{#space#- dead!}
+Variable_quests_reaction_110
+{You know, Governor#space#}
+Variable_quests_reaction_111
+{assigned to a certain captain}
+Variable_quests_reaction_112
+{entrusted to a certain sailor}
+Variable_quests_reaction_113
+{#space#find an enemy spy in the city. And you know,#space#}
+Variable_quests_reaction_114
+{he}
+Variable_quests_reaction_115
+{she}
+Variable_quests_reaction_116
+{#space#found him#space#}
+Variable_quests_reaction_117
+{}
+Variable_quests_reaction_118
+{}
+Variable_quests_reaction_119
+{#space#and#space#}
+Variable_quests_reaction_120
+{killed}
+Variable_quests_reaction_121
+{killed}
+Variable_quests_reaction_122
+{Our governor has given a task to the captain#space#}
+Variable_quests_reaction_123
+{#space#find an enemy agent in the city. And#space#}
+Variable_quests_reaction_124
+{this captain found and killed}
+Variable_quests_reaction_125
+{she found it and killed it.}
+Variable_quests_reaction_126
+{#space#A spy! It's a great job, I'll tell you...}
+Variable_quests_reaction_127
+{You know, Governor#space#}
+Variable_quests_reaction_128
+{#space#instructed#space#}
+Variable_quests_reaction_129
+{to a certain captain}
+Variable_quests_reaction_130
+{a certain sailor girl}
+Variable_quests_reaction_131
+{#space#find and destroy the smugglers. And I'll tell you,#space#}
+Variable_quests_reaction_132
+{he}
+Variable_quests_reaction_133
+{she}
+Variable_quests_reaction_134
+{did it}
+Variable_quests_reaction_135
+{did it}
+Variable_quests_reaction_136
+{Our Governor#space#}
+Variable_quests_reaction_137
+{#space#gave the task to the captain#space#}
+Variable_quests_reaction_138
+{#space#to find the smugglers in the vicinity of the city.#space#}
+Variable_quests_reaction_139
+{He found}
+Variable_quests_reaction_140
+{She found}
+Variable_quests_reaction_141
+{#space#them and#space#}
+Variable_quests_reaction_142
+{killed}
+Variable_quests_reaction_143
+{killed}
+Variable_quests_reaction_144
+{, so the prices of merchants will soon jump...}
+Variable_quests_reaction_145
+{Have you heard about the captain's recent fight?#space#}
+Variable_quests_reaction_146
+{#space#with pirates? They say that the pirates managed to escape#space#}
+Variable_quests_reaction_147
+{from him}
+Variable_quests_reaction_148
+{from her}
+Variable_quests_reaction_149
+{Captain, how could you miss these pirates?! M-yes, it's very, very sorry...}
+Variable_quests_reaction_150
+{Eh, captain#space#}
+Variable_quests_reaction_151
+{, how did you miss these pirates, huh? Now look for the wind in the field...}
+Variable_quests_reaction_152
+{You know, Governor#space#}
+Variable_quests_reaction_153
+{#space#assigned to a certain captain#space#}
+Variable_quests_reaction_154
+{#space#find and destroy the pirate who was robbing in the surrounding waters. So,#space#}
+Variable_quests_reaction_155
+{Cap found it}
+Variable_quests_reaction_156
+{}
+Variable_quests_reaction_157
+{#space#and#space#}
+Variable_quests_reaction_158
+{sunk}
+Variable_quests_reaction_159
+{sunk}
+Variable_quests_reaction_160
+{Some brave captain volunteered}
+Variable_quests_reaction_161
+{Some brave sailor volunteered}
+Variable_quests_reaction_162
+{#space#find and destroy the pirate robbing our merchants. And it looks like#space#}
+Variable_quests_reaction_163
+{he}
+Variable_quests_reaction_164
+{she}
+Variable_quests_reaction_165
+{did it}
+Variable_quests_reaction_166
+{did it}
+Variable_quests_reaction_167
+{#space#this is-#space#}
+Variable_quests_reaction_168
+{sunk}
+Variable_quests_reaction_169
+{sunk}
+Variable_quests_reaction_170
+{Ha, finally our governor has taken up the task of ensuring safe navigation in the waters#space#}
+Variable_quests_reaction_171
+{#space#- he instructed the captain#space#}
+Variable_quests_reaction_172
+{#space#to find the pirate who haunted our merchants. And you know,#space#}
+Variable_quests_reaction_173
+{this captain}
+Variable_quests_reaction_174
+{this girl}
+Variable_quests_reaction_175
+{sunk}
+Variable_quests_reaction_176
+{sunk}
+Variable_quests_reaction_177
+{You know, Governor#space#}
+Variable_quests_reaction_178
+{#space#assigned to a certain captain#space#}
+Variable_quests_reaction_179
+{#space#find and destroy the pirate who is robbing merchants under our noses. And what do you think, he robbed the captain too#space#}
+Variable_quests_reaction_180
+{#space#too!}
+Variable_quests_reaction_181
+{Captain, how was your trip on the pirate ship? Is it okay? Have you been bullied there? Ha ha ha!!}
+Variable_quests_reaction_182
+{Oh, captain, I heard you had a great time recently, hee-hee... How do you like the local pirates? Don't you want to look for them yet? Ha ha ha!!}
+Variable_quests_reaction_183
+{You heard there was an attack on Cecil Galard!}
+Variable_quests_reaction_184
+{They say you saved Cecil Galard when she was attacked.}
+Variable_quests_reaction_185
+{Cecil Galard was attacked in her own house, on naleon 'Eva'!}
+Variable_quests_reaction_186
+{It's good that you saved poor Cecil! It's unclear where the admiral is looking...}
+Variable_quests_reaction_187
+{Well, if this goes on, then we will have to fight off bandits in our homes, as Cecil Galard did.}
+Variable_quests_reaction_188
+{You heard Cecil Galard was murdered in her own house!}
+Variable_quests_reaction_189
+{They say that you failed to protect poor Cecil Galard...}
+Variable_quests_reaction_190
+{Yeah, another dark murder story. You know, as soon as you show up in the City, the murders follow one after another. Now here's Cecil Galard...}
+Variable_quests_reaction_191
+{It's a pity that you couldn't save Cecil. She was a very good person...}
+Variable_quests_reaction_192
+{Another murder. Now, Cecil Galard is dead. But she was the oldest resident of the City...}
+Variable_reaction_functions_1
+{Ah,#space#}
+Variable_reaction_functions_2
+{Sir}
+Variable_reaction_functions_3
+{Madam}
+Variable_reaction_functions_4
+{! You don't know the main news yet! The former owner of the local store, Pascal Voisier, has escaped! It turns out that he bought up all the goods that local pirates extracted from merchant ships. He had a whole warehouse set aside for this case. And when the merchants found out and hired hunters for his head, he hurriedly sold everything and went on the run, ha ha ha. That was the way it was! We've been sitting without rum for a week, until that rascal Benjamin Franklin got his hands on the case.}
+Variable_reaction_functions_5
+{But what's the point - he's a lousy salesman - he still can't find a simpleton who would agree to rent the warehouse of the former owner... He should go into politics - there's a place for such smart people, hehe...}
+Variable_reaction_functions_6
+{Captain#space#}
+Variable_reaction_functions_7
+{'whose name is#space#}
+Variable_reaction_functions_8
+{, he went to sea again. According to rumors, he moved to#space#}
+Variable_reaction_functions_9
+{You know the captain#space#}
+Variable_reaction_functions_10
+{'? So, he went to#space#}
+Variable_reaction_functions_11
+{If you need a captain#space#}
+Variable_reaction_functions_12
+{', then you will have to go to#space#}
+Variable_reaction_functions_13
+{#space#that's where he went.}
+Variable_reaction_functions_14
+{Captain#space#}
+Variable_reaction_functions_15
+{'whose name is#space#}
+Variable_reaction_functions_16
+{, he went to sea again. According to rumors, he moved to#space#}
+Variable_reaction_functions_17
+{You know the captain#space#}
+Variable_reaction_functions_18
+{'? So, he went to#space#}
+Variable_reaction_functions_19
+{If you need a captain#space#}
+Variable_reaction_functions_20
+{', then you will have to go to#space#}
+Variable_reaction_functions_21
+{#space#that's where he went.}
+Variable_reaction_functions_22
+{Captain#space#}
+Variable_reaction_functions_23
+{'whose name is#space#}
+Variable_reaction_functions_24
+{, he went to sea again. According to rumors, he moved to#space#}
+Variable_reaction_functions_25
+{You know the captain#space#}
+Variable_reaction_functions_26
+{'? So, he went to#space#}
+Variable_reaction_functions_27
+{If you need a captain#space#}
+Variable_reaction_functions_28
+{', then you will have to go to#space#}
+Variable_reaction_functions_29
+{#space#that's where he went.}
+Variable_reaction_functions_30
+{Be very careful with Augusto Brahms. Damn warlock...}
+Variable_reaction_functions_31
+{I recommend that you stay away from Augusto Brahms. This is a terrible man...}
+Variable_reaction_functions_32
+{You know, Alice Taylor's husband went to prison, the admiral put him in jail for brawling at his residence. And now poor Alice is asking for help to rescue her husband.}
+Variable_reaction_functions_33
+{Lea Toors recently recalled Leighton Dexter. A man has literally disappeared into nowhere...}
+Variable_reaction_functions_34
+{You know, Dominic Legro is looking for a bottle of wine. I don't understand, as if it's hard to buy it anywhere.}
+Variable_reaction_functions_35
+{They say that you killed all the narwhals! Wow!..}
+Variable_reaction_functions_36
+{Well, thanks to you, the Narwhal clan no longer exists. Well, the citizens are grateful to you.}
+Variable_reaction_functions_37
+{Hmm, of course you're a hero and all that, but maybe you shouldn't have dealt with narwhals so radically?..}
+Variable_reaction_functions_38
+{Let's see the man who put his name in the annals of the City! The narwhals have really tired me out, I can tell you.}
+Variable_reaction_functions_39
+{Thanks to you, Velasco is now free.}
+Variable_reaction_functions_40
+{To be honest, I strongly doubt that it was the Narwhal clan that was involved in the murder of the millionaire and the Laborator. I doubt it very much...}
+Variable_reaction_functions_41
+{After the destruction of the narwhals, it is difficult to imagine how the Caspers will behave...}
+Variable_reaction_functions_42
+{And you're a hero, I'll tell you. You have not had time to appear in the city, but you are already doing such things. Destroy an entire clan of 'Narwhals'!...}
+Variable_reaction_functions_43
+{Narwhals are to blame for their own fate. I fully approve of the Admiral's decision to destroy them. So, you're doing great.}
+Variable_reaction_functions_44
+{How you managed to cope with the narwhals is beyond me. They were very good fighters, very...}
+Variable_reaction_functions_45
+{You heard Hill Brunner was killed!!!}
+Variable_reaction_functions_46
+{Have you heard the latest terrible news? No? Hill Brunner has been killed!}
+Variable_reaction_functions_47
+{Hill Brunner, the owner of our tavern, was found dead in his cellar. That's it!..}
+Variable_reaction_functions_48
+{Someone killed the tavern owner Hill Brunner! First Andre Labor, now Hill Brunner. Oh, yes, terrible news!..}
+Variable_reaction_functions_49
+{Did you know that Hill Brunner was murdered? Stabbed to death in his own wine cellar!!}
+Variable_reaction_functions_50
+{Hill Brunner is dead! I am very, very sorry for this man. With his passing, the City lost a lot, because he was the oldest resident!}
+Variable_reaction_functions_51
+{You know Hill Brunner is dead! What will happen to the tavern now?..}
+Variable_reaction_functions_52
+{You heard Hill Brunner was killed!!!}
+Variable_reaction_functions_53
+{Have you heard the latest terrible news? No? Hill Brunner has been killed!}
+Variable_reaction_functions_54
+{Hill Brunner, the owner of our tavern, was found dead in his cellar. That's it!..}
+Variable_reaction_functions_55
+{Someone killed the tavern owner Hill Brunner! First Andre Labor, now Hill Brunner. Oh, yes, terrible news!..}
+Variable_reaction_functions_56
+{Did you know that Hill Brunner was murdered? Stabbed to death in his own wine cellar!!}
+Variable_reaction_functions_57
+{Hill Brunner is dead! I am very, very sorry for this man. With his passing, the City lost a lot, because he was the oldest resident!}
+Variable_reaction_functions_58
+{You know Hill Brunner is dead! What will happen to the tavern now?..}
+Variable_reaction_functions_59
+{They say that you killed all the 'Caspers'! However...}
+Variable_reaction_functions_60
+{I will not say that I feel sorry for these scumbags 'Casper'. That's where they go...}
+Variable_reaction_functions_61
+{However, you are a dashing soldier! First the narwhals, then the Caspers! Famously...}
+Variable_reaction_functions_62
+{Yes, you did a good job with your sword. The Casper clan has sunk into oblivion... Well, that's great!}
+Variable_reaction_functions_63
+{You know, the 'caspers' didn't bother me much. Therefore, their mass death is not so pleasant to me....}
+Variable_reaction_functions_64
+{They say someone was fighting on the Ceres Smithy fluyt last night.}
+Variable_reaction_functions_65
+{Alice Taylor, the owner of the Ceres Smithy fluyt, heard a commotion on deck last night. It all looked very much like a serious cabin...}
+Variable_reaction_functions_66
+{You heard, poor Armo Dulin was killed! Eh, what a good girl she was...}
+Variable_reaction_functions_67
+{My God, now Armo is dead. Perhaps it's time to look for a safe haven...}
+Variable_reaction_functions_68
+{Where is the admiral looking?! Several people have already been killed, and now here's poor Armo...}
+Variable_reaction_functions_69
+{The weather is deteriorating. Apparently there will be a storm again.}
+Variable_reaction_functions_70
+{Yeah, it looks like the storm is coming again.}
+Variable_reaction_functions_71
+{Oh, how tired of these storms! Here it seems to be starting again...}
+Variable_reaction_functions_72
+{The weather has deteriorated. There's probably going to be a storm.}
+Variable_reaction_functions_73
+{The storm is starting. We'll be staying at home for a few days again.}
+Variable_reaction_functions_74
+{They say that someone robbed the owner of the store, Eric Yost...}
+Variable_reaction_functions_75
+{Imagine, some madman single-handedly slaughtered half of the garrison in Le Francois!}
+Variable_GenQuests_1
+{Did you hear that the maid#space#}
+Variable_GenQuests_2
+{#space#was kicked out by hostess just because she couldn't collect her scattered pearls in the jungle? The people have completely lost their shame!.. and I never had a conscience.}
+Variable_GenQuests_3
+{}
+Variable_GenQuests_4
+{Did you hear that some whore tried to enter the ship without documents? She was caught and taken back to the brothel. They say she owes the landlady a tidy sum.}
+Variable_GenQuests_5
+{Have you heard? Some kind of undocumented whore was caught in our port. They say she escaped from the brothel after cleaning the chests of the local hostess. This peddler of infection and theft should have been shut down long ago. After all, our children see all this, what can they learn?}
+Variable_GenQuests_6
+{Captain, how was your trip on the pirate ship? Is it okay? Have you been bullied there? Ha ha ha!!}
+Variable_GenQuests_7
+{Oh, captain, I heard you had a great time recently.... You, my dear, are now a starving bastard! Ha ha ha!!}
+Variable_GenQuests_8
+{You heard,#space#}
+Variable_GenQuests_9
+{, the patrol captain was recently arrested#space#}
+Variable_GenQuests_10
+{. It turns out that he worked as a smuggler. Just think what the current governor has brought the colony to! Those who are supposed to catch pirates are robbing us themselves!.. It is rumored that he will be executed in a week. It serves him right.}
+Variable_GenQuests_11
+{Rumor has it that the captain of the patrol#space#}
+Variable_GenQuests_12
+{#space#he turned out to be the organizer of a gang of smugglers. He was caught and will be hanged soon. It looks like#space#}
+Variable_GenQuests_13
+{, our governor has seriously taken up the task of restoring order in the colony.}
+Variable_GenQuests_14
+{Can you imagine! The head of the fort exposed a secret organization of smugglers, which managed to recruit even naval officers into its ranks. One of them,#space#}
+Variable_GenQuests_15
+{, they have already been caught and will be hanged soon. Oh,#space#}
+Variable_GenQuests_16
+{, I always said that our governor would sooner or later restore order to the settlement.}
+Variable_GenQuests_17
+{You already know that the patrol captain#space#}
+Variable_GenQuests_18
+{#space#arrested? The authorities learned that he had hidden a large consignment of goods, which he confiscated from ships passing in the water area. It looks like he can't escape the gallows. But I'll tell you, he was one of the best in the patrol squadron. Who would have thought...}
+Variable_GenQuests_19
+{You heard,#space#}
+Variable_GenQuests_20
+{, a former patrol captain was recently hanged#space#}
+Variable_GenQuests_21
+{. They say he robbed some merchant. That's because, as it happens, you can't trust anyone... And the whole team was executed with him for one thing. Collusion means...}
+Variable_GenQuests_22
+{You already know,#space#}
+Variable_GenQuests_23
+{, that the former captain of the patrol#space#}
+Variable_GenQuests_24
+{#space#executed? Rumor has it that he sank some important vessel and hid the goods. And after all, none of the team admitted where the cache was. That's how they were all hanged...}
+Variable_GenQuests_25
+{Can you imagine,#space#}
+Variable_GenQuests_26
+{? One of the captains of the patrol squadron was engaged in sea robbery. So he was recently executed along with the entire team. They are said to have robbed and sunk merchant ships.}
+Variable_GenQuests_27
+{A former captain was recently executed#space#}
+Variable_GenQuests_28
+{#space#along with his patrolman's team#space#}
+Variable_GenQuests_29
+{. It is rumored that they hid a large consignment of goods, which were confiscated from ships passing in the water area. But it was one of the best patrol crews. I think,#space#}
+Variable_GenQuests_30
+{, that they were deliberately slandered. After all, the product was never found..}
+Variable_MerchantOnMap_1
+{There was a rumor that#space#}
+Variable_MerchantOnMap_2
+{The dashing pirate}
+Variable_MerchantOnMap_3
+{the dashing sea robber}
+Variable_MerchantOnMap_4
+{pleased}
+Variable_MerchantOnMap_5
+{pleased}
+Variable_MerchantOnMap_6
+{#space#into the trap into which#space#}
+Variable_MerchantOnMap_7
+{his}
+Variable_MerchantOnMap_8
+{her}
+Variable_MerchantOnMap_9
+{#space#lured by the authorities#space#}
+Variable_MerchantOnMap_10
+{. They sent to#space#}
+Variable_MerchantOnMap_11
+{to him}
+Variable_MerchantOnMap_12
+{her}
+Variable_MerchantOnMap_13
+{#space#a 'merchant' vessel with heavily armed soldiers hiding in its hold. But#space#}
+Variable_MerchantOnMap_14
+{#space#don 't#space#}
+Variable_MerchantOnMap_15
+{confused}
+Variable_MerchantOnMap_16
+{confused}
+Variable_MerchantOnMap_17
+{, and simply their#space#}
+Variable_MerchantOnMap_18
+{interrupted}
+Variable_MerchantOnMap_19
+{interrupted}
+Variable_MerchantOnMap_20
+{#space#every single one of them! Here#space#}
+Variable_MerchantOnMap_21
+{which one}
+Variable_MerchantOnMap_22
+{which one}
+Variable_MerchantOnMap_23
+{our dashing pirate}
+Variable_MerchantOnMap_24
+{our brave girl}
+Variable_MerchantOnMap_25
+{People say that#space#}
+Variable_MerchantOnMap_26
+{the daring pirate}
+Variable_MerchantOnMap_27
+{the daring sea robber}
+Variable_MerchantOnMap_28
+{got into the habit}
+Variable_MerchantOnMap_29
+{got into the habit}
+Variable_MerchantOnMap_30
+{#space#robbing merchant ships#space#}
+Variable_MerchantOnMap_31
+{. And then our Governor-General decided to end it. He equipped a ship disguised as a merchant with several dozen well-trained soldiers from Europe, and sent them to him. But#space#}
+Variable_MerchantOnMap_32
+{the bloodthirsty pirate interrupted}
+Variable_MerchantOnMap_33
+{this desperate girl interrupted}
+Variable_MerchantOnMap_34
+{#space#all of them and again#space#}
+Variable_MerchantOnMap_35
+{slipped away}
+Variable_MerchantOnMap_36
+{slipped away}
+Variable_MerchantOnMap_37
+{#space#from justice!}
+Variable_Blue_Bird_1.1
+{You know, local merchant#space#}
+Variable_Blue_Bird_1.2
+{, sends his fluyt '}
+Variable_Blue_Bird_1.3
+{' in Old World for goods again. Fluyt recently left port.}
+Variable_Blue_Bird_2.1
+{You know, our local merchant is doing well!#space#}
+Variable_Blue_Bird_2.2
+{#space#sent his own fluyt '}
+Variable_Blue_Bird_2.3
+{' for goods again, it just left our port.}
+Variable_Blue_Bird_3.1
+{Uh,#space#}
+Variable_Blue_Bird_3.2
+{#space#gets richer and richer. Only yesterday his sailboat was under discharge in the port, and today the port has already said goodbye to him. Fluyt '}
+Variable_Blue_Bird_3.3
+{' sailed for goods again, that's it!}

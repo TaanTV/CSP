@@ -1,0 +1,136 @@
+QUEST_MESSAGE1 {El Caymano Colony has been recouped.}
+QUEST_MESSAGE2 {El Caymano colony captured.}
+QUEST_MESSAGE3	{You are already too old to resist the curse of Aztec gold...}
+QUEST_MESSAGE4	{You've found a treasure!}
+QUEST_MESSAGE5 {Nigel Blythe attacked the smugglers' corvette!}
+QUEST_MESSAGE6	{Nigel Blythe is missing!}
+QUEST_MESSAGE7 {Captain, the Black Pearl is on the horizon!}
+QUEST_MESSAGE8 {Great job, you killed the Teacher!}
+QUEST_MESSAGE9	{You are now one on one with this cruel world!}
+QUEST_MESSAGE10	{A pirate without a sense of mercy}
+QUEST_MESSAGE11 {a special reward is intended!}
+QUEST_MESSAGE12 {Unfortunately, you have already hired too many officers! You will be able to hire a new one only after firing one of the officers!}
+Address_Form_Eng {Sir}
+Address_FormFEng {Miss}
+Address_FormEngW	{Mrs.}
+Address_Form_Fra {Monsieur}
+Address_FormFFra {Mademoiselle}
+Address_FormFraW {Madam}
+Address_Form_Spa {Senior}
+Address_FormFSpa {Senorita}
+Address_FormSpaW	{Seсora}
+Address_Form_Hol {Minher}
+Address_FormFHol {My Lady}
+Address_FormHolW {Lady}
+Address_FormPir {Cap}
+Address_FormFPir {Dear}
+Address_FormPirW {Hostess}
+Address_Form_Por {Senior}
+Swear_1 {Burst my spleen!}
+Swear_2		{Damn it!}
+Swear_3 {Oh my God!}
+Swear_4 {Damn you!}
+Swear_5 {A thousand devils!}
+Swear_6 {Anchor in my stern!}
+Swear_7 {Oh, the powers of heaven!}
+Swear_8		{Аргхх!!!}
+Swear_9 {A thousand sharks!}
+Swear_10 {Devil!!}
+Swear_11 {Holy Madonna!}
+Swear_12 {Oh my God!}
+Swear_13 {Oh, heavens!}
+TimeGreeting {Good afternoon}
+TimeGreeting_2 {Good Morning}
+TimeGreeting_3 {I'm sorry}
+TimeGreeting_4 {Glorious Night}
+TimeGreeting_5 {Hello}
+Antigua {Antigua}
+Barbados {Barbados}
+Curacao {Curacao}
+Dominica {Dominica}
+Grenada {Grenada}
+Guadeloupe {Guadeloupe}
+Hispaniola {Hispaniola}
+IslaMona {Isla Mona}
+Jamaica {Jamaica}
+MarieGalante {Maria Galante}
+Martinique {Martinique}
+Montserrat {Montserrat}
+Nevis {Nevis}
+PuertoRico {Puerto Rico}
+StEustatius {Saint Eustathius}
+StKitts {Holy Kitts}
+StMartin {Saint Martin}
+Tortuga {Tortuga}
+LaVega			{La Vega}
+SantoDomingo {Santo Domingo}
+PetitGoave {Petit Goave}
+Bridgetown {Bridgetown}
+SanJuan {San Juan}
+SantiagoVega {Santiago Vega}
+OFFIC_TYPE_NAVIGATOR {Navigator}
+OFFIC_TYPE_BOATSWAIN {Boatswain}
+OFFIC_TYPE_CANNONEER	{Cannoneer}
+OFFIC_TYPE_FIRSTMATE	{Doctor}
+OFFIC_TYPE_QMASTER		{Quartermaster}
+England {Englishman}
+France {French}
+Spain {Spaniard}
+Holland {Dutch}
+Pirate {Pirate}
+Smuggler {Smuggler}
+Title_0 {None}
+Title_1_Pir {Pirate}
+Title_1_Hol {Filibuster}
+Title_1_Eng	{Privateer}
+Title_1_Fra	{Privateer}
+Title_1_Spa	{Corsair}
+Title_2 {Commander}
+Title_3 {Captain}
+Title_4		{Commander}
+Title_5 {Admiral}
+NationKingsCrownEng		{English throne}
+NationKingsCrownFra		{French crown}
+NationKingsCrownSpa		{Spanish crown}
+NationKingsCrownHol		{Kingdom of the Netherlands}
+NationKingsCrownPir		{Brotherhood of the Coast}
+NationKingsNameEng		{His Majesty Karl II Stuart}
+NationKingsNameFra		{His Majesty Louis XIV}
+NationKingsNameSpa		{His Catholic Majesty Karl II Hapsburg}
+NationKingsNameHol		{His Majesty Wilhelm III of Orange}
+NationKingsNamePir		{Brotherhood of the Coast}
+NationNameManEng		{Englishman}
+NationNameManFra		{Frenchman}
+NationNameManSpa		{Spanish crown}
+NationNameManHol		{Dutch}
+NationNameManPir		{Pirate}
+NationNamePeopleEng		{English}
+NationNamePeopleFra		{French}
+NationNamePeopleSpa		{Spanish}
+NationNamePeopleHol		{Dutch}
+NationNamePeoplePir		{Pirates}
+NationNamePeopleEngAcc	{by the English}
+NationNamePeopleFraAcc	{by the French}
+NationNamePeopleSpaAcc	{by the Spanish}
+NationNamePeopleHolAcc	{by the Dutch}
+NationNamePeoplePirAcc	{by the pirates}
+NationNameAblativeEng	{England}
+NationNameAblativeFra	{France}
+NationNameAblativeSpa	{Spain}
+NationNameAblativeHol	{the Netherlands}
+NationNameAblativePir	{pirates}
+NationNameNominativeEng	{England}
+NationNameNominativeFra	{France}
+NationNameNominativeSpa	{Spain}
+NationNameNominativeHol	{the Netherlands}
+NationNameNominativePir {Brethren}
+NationNameGenitiveEng	{England}
+NationNameGenitiveFra	{France}
+NationNameGenitiveSpa	{Spain}
+NationNameGenitiveHol	{Holland}
+NationNameGenitivePir	{pirates}
+NationEuropaTownEng		{London}
+NationEuropaTownFra		{La Rochelle}
+NationEuropaTownSpa		{Seville}
+NationEuropaTownPir		{Tortuga}
+NationEuropaTownHol		{Amsterdam}

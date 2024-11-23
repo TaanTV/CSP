@@ -1,0 +1,78 @@
+sea_Moor			{Dock}
+sea_SailTo {Sail to}
+sea_Map {Map}
+sea_Cancel			{Cancel}
+sea_Cabin			{Cabin}
+sea_Board {Boarding}
+sea_LandTroops {Landing}
+sea_Attack {Attack}
+sea_Abordage {Boarding}
+sea_Defend {Protection}
+sea_SailAway {Sail away}
+sea_HeaveToDrift {Lower the sails}
+sea_Reload {Exchange}
+sea_Charge			{Recharge}
+sea_Speed {Sails}
+SEA_COMMAND {Order}
+sea_Ability			{Ability}
+sea_ImmediateDeath {Destroy!}
+sea_InstantBoarding {cheat boarding}
+sea_Speak {Conversation}
+sea_Sneak			{Sneak into the city}
+sea_Repair			{Repair}
+worldmap_sea		{Going to sea}
+sea_SailDir {Sail away on ..}
+	sea_SailNW {Northwest}
+	sea_SailN {North}
+	sea_SailNE {Northeast}
+	sea_SailE			{East}
+	sea_SailSE {Southeast}
+	sea_SailS {South}
+	sea_SailSW {Southwest}
+	sea_SailW {West}
+sea_Brander {Brander}
+sea_ImmediateReload {Recharge}
+sea_LightRepair {Easy repair}
+sea_InstantRepair {Quick Fix}
+sea_SandbankManeuver {Maneuvers in shallow water}
+sea_Turn180 {Maneuverable turn of the ship}
+sea_Boat {Lower the boat}
+Se_cabin {Cabin}
+land_DeadBox			{Body search}
+land_UseFood			{Restore energy}
+land_TalkSelf {Thoughts out loud}
+land_ItemsDead {Corpse}
+land_FastReload {Fast Travel}
+land_ItemsUse {Use}
+land_DialogStart {Conversation}
+land_ItemsChange {Exchange}
+land_TakeItem {Take}
+land_PlaceItem {Put}
+land_OutDoor			{Open}
+land_UseBox {Open}
+land_ActivateRush {Rush}
+land_ActivateCabine {Captain's cabin}
+land_DeActivateCabine {Land}
+land_Look {Watch}
+land_Exit {Sea}
+go_port			{Port}
+go_store {Store}
+go_shipyard {Shipyard}
+go_tavern {Tavern}
+go_residence {Residence}
+go_loanshark {Usurer}
+go_usurer {Usurer}
+go_church {Church}
+go_prison {Prison}
+go_brothel {Brothel}
+go_portman {Port Authority}
+go_duel {Duel}
+go_townexit		{Outer Gate}
+go_fort {Fort}
+go_storehouse {Warehouse}
+go_graveyard {Graveyard}
+go_GWIK			{Office of DWIC}
+go_Inquisition {Inquisition}
+go_planthouse {Plantation manager's house}
+go_forthouse {Head's of the security base house}
+go_minehouse {Mine Manager's house}

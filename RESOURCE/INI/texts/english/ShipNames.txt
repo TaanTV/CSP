@@ -1,0 +1,68 @@
+Variable_Quests_1
+{Watcher}
+Variable_Quests_2
+{Black Pearl}
+Variable_LSC_Q2Utilite_1
+{Mary Celeste}
+Variable_Quests_1
+{Watcher}
+Variable_Quests_2
+{Red Devil}
+Variable_black_sails_functions_1
+{Walrus}
+Variable_quests_reaction_1
+{Favorite}
+Variable_quests_reaction_2
+{Santa Agueda}
+Variable_quests_reaction_3
+{La Rochelle}
+Variable_quests_reaction_4
+{Cominte}
+Variable_quests_reaction_5
+{Desperate}
+Variable_quests_reaction_6
+{Swift}
+Variable_quests_reaction_7
+{Desdechado}
+Variable_quests_reaction_8
+{Enthusiastic}
+Variable_quests_reaction_9
+{Mephisto}
+Variable_quests_reaction_10
+{Lucky Tulip}
+Variable_reaction_functions_1
+{Blue Bird}
+Variable_reaction_functions_2
+{Leon}
+Variable_reaction_functions_3
+{Elusive}
+Variable_reaction_functions_4
+{Normandy}
+Variable_reaction_functions_5
+{Bacchus}
+Variable_reaction_functions_6
+{Septima}
+Variable_reaction_functions_7
+{Death's Head}
+Variable_reaction_functions_8
+{Adelaide}
+Variable_reaction_functions_9
+{Adelaide}
+Variable_reaction_functions_10
+{Lover of Luck}
+Variable_whisper_line_functions_1
+{Unicorn}
+Variable_whisper_line_functions_2
+{Revelation}
+Variable_whisper_line_functions_3
+{The Act of the Holy Apostles}
+Variable_whisper_line_functions_4
+{The Gospel}
+Variable_whisper_line_functions_5
+{Jeremiah the Executioner}
+Variable_whisper_line_functions_6
+{Proverbs}
+Variable_whisper_line_functions_7
+{Psalms}
+Variable_whisper_line_functions_8
+{Genesis}

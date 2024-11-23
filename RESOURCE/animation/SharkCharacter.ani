@@ -1,0 +1,174 @@
+animation = SharkCharacter.an
+
+[stand]
+start_time = 0
+end_time = 1
+type = pingpong
+
+[Shark_Swim]
+start_time = 2
+end_time = 26
+
+[Shark_Jump]
+start_time = 26
+end_time = 73
+
+[idle_1]
+	speed = 0.3
+	loop = true
+	type = normal
+	start_time = 74
+	end_time = 98
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_2]
+	speed = 0.5
+	loop = true
+	type = normal
+	start_time = 74
+	end_time = 98
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_3]
+	speed = 0.3
+	loop = true
+	type = normal
+	start_time = 2
+	end_time = 26
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_4]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 1
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_5]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 1
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_6]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 1
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_7]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 1
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_8]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 1
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_9]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 1
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_10]
+	speed = 0.2
+	loop = true
+	type = reverse
+	start_time = 74
+	end_time = 98
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[run]
+start_time = 2
+end_time = 26
+speed = 2.2
+data = "Walk speed", "3.9"		; m/sec
+data = "Turn speed", "3.5"		; rad/sec
+
+[walk]
+start_time = 2
+end_time = 26
+speed = 1.0
+data = "Walk speed", "2.5"		; m/sec
+data = "Turn speed", "3.5"		; rad/sec
+
+[swim]
+start_time = 2
+end_time = 26
+
+speed = 1.3
+
+data = "Walk speed", "3.0"          ; m/sec
+data = "Turn speed", "3.5"          ; rad/sec
+
+event = "swim", 3, normal
+
+;===================================================================================
+;Дополнительные Анимации IG Baron
+;===================================================================================
+;получает по Щщам справа
+[damage_1] 
+	type = normal
+	start_time = 98
+	end_time = 110
+	speed = 1.2
+	loop = false	
+	
+;получает по Щщам слева
+[damage_2] 
+	type = normal
+	start_time = 110
+	end_time = 122
+	speed = 1.2
+	loop = false
+	
+;смерть
+[death] 
+	type = normal
+	start_time = 122
+	end_time = 180
+	speed = 1.0
+	loop = false
+	
+;Плавающая мертвая тушка
+[dead_body] 
+	type = rpingpong
+	start_time = 160
+	end_time = 190
+	speed = 0.6
+	loop = true

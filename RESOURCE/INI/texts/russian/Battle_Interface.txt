@@ -1,0 +1,100 @@
+Variable_BattleInterface_1
+{Выход на карту закрыт.}
+Variable_BattleInterface_2
+{Выслать шлюпку}
+Variable_BattleInterface_3
+{Каюта}
+Variable_BattleInterface_4
+{Спустить мину}
+Variable_BattleInterface_5
+{#space#порт}
+Variable_BattleInterfaceUpdates_1
+{ERROR: ГГ без корабля}
+Variable_ispyglass_1
+{Мэри Селест}
+Variable_ispyglass_2
+{Пушки 8 фт.}
+Variable_ispyglass_3
+{Пушки 10 фт.}
+Variable_ispyglass_4
+{Пушки 12 фт.}
+Variable_ispyglass_5
+{Пушки 16 фт.}
+Variable_ispyglass_6
+{Пушки 20 фт.}
+Variable_ispyglass_7
+{Пушки 24 фт.}
+Variable_ispyglass_8
+{Пушки 28 фт.}
+Variable_ispyglass_9
+{Пушки 32 фт.}
+Variable_ispyglass_10
+{Пушки 36 фт.}
+Variable_ispyglass_11
+{Пушки 42 фт.}
+Variable_ispyglass_12
+{Пушки 48 фт.}
+Variable_ispyglass_13
+{Кулеврины 8 фт.}
+Variable_ispyglass_14
+{Кулеврины 10 фт.}
+Variable_ispyglass_15
+{Кулеврины 12 фт.}
+Variable_ispyglass_16
+{Кулеврины 16 фт.}
+Variable_ispyglass_17
+{Кулеврины 20 фт.}
+Variable_ispyglass_18
+{Кулеврины 24 фт.}
+Variable_ispyglass_19
+{Кулеврины 28 фт.}
+Variable_ispyglass_20
+{Кулеврины 32 фт.}
+Variable_ispyglass_21
+{Кулеврины 36 фт.}
+Variable_ispyglass_22
+{Нет брони}
+Variable_ispyglass_23
+{Нация:#space#}
+Variable_ispyglass_24
+{Пол:#space#}
+Variable_ispyglass_25
+{Группа:#space#}
+Variable_ispyglass_26
+{Template:#space#}
+Variable_ispyglass_27
+{Стейт:#space#}
+Variable_LandInterface_1
+{Обыск тела}
+Variable_LandInterface_2
+{Мысли в слух}
+Variable_LandInterface_3
+{Крафтинг}
+Variable_LandInterface_4
+{Кайман}
+Variable_LandInterface_5
+{Кайман}
+Variable_LandInterface_6
+{Для быстрого перехода используйте клавиши:}
+Variable_LandInterface_7
+{1-Порт, 2-Магазин, 3-Верфь, 4-Таверна}
+Variable_LandInterface_8
+{5-Резиденция, 6-Ростовщик, 7-Церковь}
+Variable_LandInterface_9
+{8-Бордель, 9-Портовое управление, 0-Тюрьма}
+Variable_LandInterface_10
+{Труп для обыска}
+Variable_LandInterface_11
+{Кладбище}
+Variable_LandInterface_12
+{Дом управляющего плантацией}
+Variable_LandInterface_13
+{Дом главы охраны}
+Variable_LandInterface_14
+{Офис ГВИК}
+Variable_LandInterface_15
+{Дом управляющего плантацией}
+Variable_LandInterface_16
+{Инквизиция}
+Variable_LandInterface_17
+{Фернандо Диффиндур}

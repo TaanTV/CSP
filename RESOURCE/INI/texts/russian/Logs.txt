@@ -1,0 +1,1894 @@
+Variable_Debuger_1
+{Дамп аттрибутов ближайшего персонажа}
+Variable_Debuger_1.1
+{Убили персонажа с ID ==#space#}
+Variable_Debuger_1.2
+{Нельзя убить персонажа с ID ==#space#}
+Variable_Debuger_2
+{Нет брони}
+Variable_Debuger_3
+{Нация:#space#}
+Variable_Debuger_4
+{Пол:#space#}
+Variable_Debuger_5
+{Группа:#space#}
+Variable_Debuger_6
+{Темплейт:#space#}
+Variable_Debuger_7
+{Стейт:#space#}
+Variable_globals_1
+{ОШИБКА: Неверный индекс для персонажа! Неправильный индекс#space#}
+Variable_log.t_1
+{И снова с глупыми хвалебными речами, ничего не меняется в этом мире... Е}
+Variable_log.t_2
+{#space#некогда поделился с вами бесценными сокровищами своей богословской библиотеки, а сейчас поручил мне заехать за ними, если будет оказия.}
+Variable_log.t_3
+{#space#попросил у меня на время несколько богословских трудов и древних рукописей из церковной библиотеки. Так как просьба была подкреплена требованием архиепископа не препятствовать распространению благостного света знаний, отказать я не мог, хотя и предполагал, что сложность морских путешествий не позволит ему вернуть рукописи в срок...Не могли бы вы поспособствовать разрешению этой проблемы?}
+Variable_log.t_4
+{#space#и вернуть ему судовой журнал. Вы сделали это?}
+Variable_log.t_5
+{У меня в журнале целый список пассажиров, которые ждут попутных судов. Но боюсь, среди них не найдётся идиота, который бы согласился путешествовать под вашим началом. Репутация, знаете ли, штука тонкая, а дурная слава на Карибах разлетается, как волны в пруду...}
+Variable_log.t_6
+{У меня забыл судовой журнал один капитан. Это же надо быть таким разиней!.. В общем, нужно его догнать и вернуть пропажу.}
+Variable_log.t_7
+{Отлично, вот его журнал... Уф-ф, прямо груз с плеч долой! Потеря судового журнала - штука неприятная, переживаю я за таких капитанов.}
+Variable_log.t_8
+{Если проект имеет новые технологические решения, о которых мне неизвестно, то сумма будет достаточно велика. В обратном случае размер гонорара будет невысок... Ну что, вы согласны взяться за это дело?}
+Variable_log.t_9
+{Извините, сейчас заказов нет. Заходите через#space#}
+Variable_log.t_10
+{Одну минуту, сейчас найду свой журналВот, что мне нужно сейчас доставить. Груз#space#}
+Variable_log.t_11
+{Одну минуту, сейчас найду свой журналВот, что мне нужно сейчас доставить. Выбирайте, какой заказ вам больше всего подходит.}
+Variable_log.t_12
+{Я вынужден извиниться перед вами,#space#}
+Variable_seadogs_1
+{Загружена старая сохраненная запись.}
+Variable_seadogs_2
+{Возможна нестабильная работа программы.}
+Variable_seadogs_3
+{Загружена сохраненная запись версии#space#}
+Variable_seadogs_4
+{Возможна нестабильная работа программы.}
+Variable_seadogs_5
+{Эскадра, зарядить ядра!}
+Variable_seadogs_6
+{Эскадра, зарядить картечь!}
+Variable_seadogs_7
+{Эскадра, зарядить книпели!}
+Variable_seadogs_8
+{Эскадра, зарядить бомбы!}
+Variable_seadogs_9
+{Эскадра, зарядка по усмотрению!}
+Variable_seadogs_10
+{Эскадра, уплыть!}
+Variable_seadogs_11
+{Эскадра, спустить паруса!}
+Variable_seadogs_12
+{Эскадра, защищать флагман!}
+Variable_seadogs_13
+{В данный момент запрещено использовать эликсиры.}
+Variable_seadogs_14
+{Не найдено никаких лечебных средств.}
+Variable_seadogs_15
+{Не найдено никаких лечебных средств.}
+Variable_seadogs_16
+{Офицеры, в атаку!}
+Variable_seadogs_17
+{Офицеры, вольно!}
+Variable_seadogs_18
+{Офицеры, за мной!}
+Variable_seadogs_19
+{Офицеры, стоять!}
+Variable_seadogs_20
+{Замедление времени заблокировано.}
+Variable_seadogs_21
+{В данный момент запрещены манипуляции временным потоком.}
+Variable_seadogs_22
+{В данный момент запрещены манипуляции временным потоком.}
+Variable_seadogs_23
+{В данный момент запрещены манипуляции временным потоком.}
+Variable_seadogs_24
+{''Громила'' активирован.}
+Variable_seadogs_25
+{''Громила'' деактивирован.}
+Variable_seadogs_26
+{В данный момент запрещено использовать эликсиры.}
+Variable_seadogs_27
+{Использовано противоядие}
+Variable_seadogs_28
+{Навык не доступен!}
+Variable_seadogs_29
+{Навык не доступен!}
+Variable_seadogs_30
+{Навык не доступен!}
+Variable_seadogs_31
+{Навык не доступен!}
+Variable_seadogs_32
+{Некого обыскивать}
+Variable_seadogs_33
+{В данный момент запрещено использовать еду.}
+Variable_Academy_1
+{Тренировка началась. Необходимо ликвидировать соперника!}
+Variable_Academy_2
+{Вы проиграли. Тренировка завершена.}
+Variable_Academy_3
+{Вы выиграли. Тренировка завершена.}
+Variable_Academy_4
+{Возможность тренировок заблокирована на#space#}
+Variable_Academy_5
+{#space#дней.}
+Variable_Academy_6
+{Возможность тренировок включена.}
+Variable_Academy_7
+{Тренировка началась. Необходимо ликвидировать соперника!}
+Variable_Academy_8
+{Тренировка началась. Необходимо ликвидировать соперника!}
+Variable_Arena_1
+{Персонаж#space#}
+Variable_Arena_2
+{#space#получил кирасу#space#}
+Variable_Arena_3
+{#space#раунд!}
+Variable_Arena_4
+{На данный момент счёт в поединке -#space#}
+Variable_Arena_5
+{Удаляем персонажа для дуэли.}
+Variable_Arena_6
+{Все этапы пройдены!}
+Variable_Arena_7
+{Этап#space#}
+Variable_Arena_8
+{#space#завершён!}
+Variable_Arena_9
+{Этап#space#}
+Variable_Arena_10
+{#space#начат!}
+Variable_Arena_11
+{В этом раунде победитель#space#}
+Variable_Arena_12
+{В этом раунде победитель#space#}
+Variable_Arena_13
+{На этот момент счёт в поединке -#space#}
+Variable_Arena_14
+{Удаляем персонажа для турнира:#space#}
+Variable_Arena_15
+{Вы сделали ставку на этот поединок. На дуэлянта по имени#space#}
+Variable_Arena_16
+{В этом раунде победу одержал#space#}
+Variable_Arena_17
+{В этом раунде победу одержал#space#}
+Variable_Arena_18
+{На этот момент счёт в поединке -#space#}
+Variable_Arena_19
+{Кто победил:#space#}
+Variable_Arena_20
+{Вы сделали ставку на дуэлянта по имени#space#}
+Variable_Arena_21
+{#space#и не прогадали! Ваш выигрыш составил#space#}
+Variable_Arena_22
+{#space#золотых.}
+Variable_Arena_23
+{Вы сможете получить выигрыш после соревнований.}
+Variable_Arena_24
+{Вы сделали ставку на дуэлянта по имени#space#}
+Variable_Arena_25
+{#space#и проиграли.}
+Variable_Arena_26
+{Удаляем персонажа для турнира:#space#}
+Variable_Arena_27
+{Через#space#}
+Variable_Arena_28
+{#space#дней на арене сгенерируются новые соревнования.}
+Variable_Arena_29
+{На арене сгенерировались новые соревнования.}
+Variable_Colony_1
+{ИЗМЕНЕНИЕ ЖИЗНИ В КОЛОНИИ.}
+Variable_Colony_2
+{Мораль после изменения:#space#}
+Variable_Colony_3
+{Народу после изменения:#space#}
+Variable_Colony_4
+{Ваша колония не имеет управляющего - сбор налога не производится.}
+Variable_Colony_5
+{Прибавили денег колонии за эту неделю:#space#}
+Variable_Colony_6
+{Стало денег в колонии:#space#}
+Variable_Colony_7
+{Вести из колонии#space#}
+Variable_Colony_8
+{Вести из колонии#space#}
+Variable_Colony_9
+{Вести из колонии#space#}
+Variable_Colony_10
+{Вести из колонии#space#}
+Variable_Colony_11
+{Готовим нападение на колонию.}
+Variable_Colony_12
+{Строится ли что то:#space#}
+Variable_Colony_13
+{Планируется ли нападение:#space#}
+Variable_Colony_14
+{Тип нападения:#space#}
+Variable_Colony_15
+{Никакие нападения не сгенерились.}
+Variable_Colony_16
+{Готовится нападение с суши.}
+Variable_Colony_17
+{Готовится нападение с моря.}
+Variable_Colony_18
+{Готовится нападение с суши.}
+Variable_Colony_19
+{Готовится мятеж в колонии.}
+Variable_Colony_20
+{Мятежа не будет, так как мало населения.}
+Variable_Colony_21
+{Мятежа не будет, так как повезло.}
+Variable_Colony_22
+{Мятежа не будет, так как идёт стройка какая-то или какой либо тип нападения уже создан.}
+Variable_Colony_23
+{Строится ли что то:#space#}
+Variable_Colony_24
+{Планируется ли нападение:#space#}
+Variable_Colony_25
+{Тип нападения:#space#}
+Variable_Colony_26
+{Кол-во мятежников:#space#}
+Variable_Colony_27
+{Кол-во солдат:#space#}
+Variable_Colony_28
+{Вести из колонии#space#}
+Variable_Colony_29
+{Вести из колонии#space#}
+Variable_Colony_30
+{Вести из колонии#space#}
+Variable_Colony_31
+{Нападения с суши не будет, так как повезло.}
+Variable_Colony_32
+{Нападения с суши не будет, так как охранная база отпугнула вражину.}
+Variable_Colony_33
+{Команда противника:#space#}
+Variable_Colony_34
+{Построена охранная база. Команда противника стала:#space#}
+Variable_Colony_35
+{Вести из колонии#space#}
+Variable_Colony_36
+{Вести из колонии#space#}
+Variable_Colony_37
+{Вести из колонии#space#}
+Variable_Colony_38
+{Нападения с моря не будет, так как повезло.}
+Variable_Colony_39
+{Вести из колонии#space#}
+Variable_Colony_40
+{Вести из колонии#space#}
+Variable_Colony_41
+{Вести из колонии#space#}
+Variable_Colony_42
+{Склад разграблен.}
+Variable_Colony_43
+{#space#в количестве#space#}
+Variable_Colony_44
+{#space#шт.}
+Variable_Colony_45
+{Авто-закупка для#space#}
+Variable_Colony_46
+{#space#не может быть произведена, так как в казне недостаточно денег.}
+Variable_Colony_47
+{Авто-закупка необходимого провианта и медикаментов для вашей колонии ''}
+Variable_Colony_48
+{'' выполнена.}
+Variable_Colony_49
+{Цена составила:#space#}
+Variable_Colony_50
+{#space#пиастров.}
+Variable_Colony_51
+{Авто-закупка необходимого провианта и медикаментов для ваших рудников выполнена.}
+Variable_Colony_52
+{Цена составила:#space#}
+Variable_Colony_53
+{#space#пиастров.}
+Variable_Colony_54
+{Авто-закупка необходимого провианта, медикаментов и инструментов для вашей плантации выполнена.}
+Variable_Colony_55
+{Цена составила:#space#}
+Variable_Colony_56
+{#space#пиастров.}
+Variable_ColonyGuarding_1
+{Ваша колония не имеет достаточных средств, чтобы обеспечить базовое комплектование кораблей охраны береговой линии.}
+Variable_ColonyGuarding_2
+{Все корабли охраны береговой линии были укомплектованы.}
+Variable_ColonyGuarding_3
+{Гарнизон колонии был пополнен#space#}
+Variable_ColonyGuarding_4
+{#space#солдатами за#space#}
+Variable_ColonyGuarding_5
+{#space#золотых.}
+Variable_ColonyGuarding_6
+{Гарнизон рудников был пополнен#space#}
+Variable_ColonyGuarding_7
+{#space#солдатами за#space#}
+Variable_ColonyGuarding_8
+{#space#золотых.}
+Variable_ColonyGuarding_9
+{Гарнизон плантации был пополнен#space#}
+Variable_ColonyGuarding_10
+{#space#солдатами за#space#}
+Variable_ColonyGuarding_11
+{#space#золотых.}
+Variable_GenerateQuests_1
+{Ген.квест Дуэлянт: Награда:#space#}
+Variable_GenerateQuests_2
+{Ген.квест Дуэлянт: Вариант:#space#}
+Variable_GenerateQuests_3
+{Ген.квест Дуэлянт: Наймёт ли обидчик наёмника:#space#}
+Variable_GenerateQuests_4
+{Ген.квест Дуэлянт: Вероятность родственников:#space#}
+Variable_GenerateQuests_5
+{Сгенерирован квест ''Дуэлянт''. Должен подойти кто-то.}
+Variable_GenerateQuests_6
+{Удаляем квест ''Дуэлянт''.}
+Variable_GenerateQuests_7
+{Временная блокировка на ген.квест ''Дуэлянт'' снята.}
+Variable_GenerateQuests_8
+{Сгенерирован квест 'Кораблекрушение'. На карте подплывёт корабль.}
+Variable_GenerateQuests_9
+{Убили крушённый корабль.}
+Variable_GenerateQuests_10
+{Квест 'Кораблекрушение' - блокировка снята.}
+Variable_GenerateQuests_11
+{Удаляем квест 'Кораблекрушение' по истечении времени, по прохождении или игнора.}
+Variable_Mines_1
+{По вашим рудникам пронеслась эпидемия.}
+Variable_Mines_2
+{Благодаря имеющимся медикаментам количество погибших рабов удалось существенно сократить. Количество погибших рабов:#space#}
+Variable_Mines_3
+{Количество погибших рабов:#space#}
+Variable_Mines_4
+{На ваших рудниках закончился провиант. От голода умерло рабов:#space#}
+Variable_Mines_5
+{На ваших рудниках закончился провиант. От голода умерло надсмотрщиков:#space#}
+Variable_Mines_6
+{На ваших рудниках закончились медикаменты. От болезней умерло рабов:#space#}
+Variable_Mines_7
+{Ваши рудники не имеют управляющего. Добыча не производится.}
+Variable_Mines_8
+{В связи с расширением рудника, добыча#space#}
+Variable_Mines_9
+{#space#руды приостановлена.}
+Variable_Mines_10
+{Нападения на рудники не будет, т.к. стоит запрет.}
+Variable_Mines_11
+{Нападения на рудники не будет, т.к. повезло.}
+Variable_Mines_12
+{Генерируем мятеж на рудниках.}
+Variable_Mines_13
+{Мятежа на рудниках не будет, т.к. рабов слишком мало.}
+Variable_Mines_14
+{Мятежа на рудниках не будет, т.к. рабов слишком мало по отношению к охране.}
+Variable_Mines_15
+{Вести с рудников, принадлежащих колонии#space#}
+Variable_Mines_16
+{Вести с рудников, принадлежащих колонии#space#}
+Variable_Mines_17
+{Вести с рудников, принадлежащих колонии#space#}
+Variable_Mines_18
+{Нападения с суши не будет, так как повезло.}
+Variable_Mines_19
+{Нападения с суши не будет, так как охранная база отпугнула вражину.}
+Variable_Mines_20
+{Команда противника:#space#}
+Variable_Mines_21
+{Построена охранная база. Команда противника стала:#space#}
+Variable_Mines_22
+{Вести с рудников, принадлежащих колонии#space#}
+Variable_Mines_23
+{Вести из колонии#space#}
+Variable_Mines_24
+{Вести из колонии#space#}
+Variable_Mines_25
+{#space#в количестве#space#}
+Variable_Mines_26
+{#space#было продано за#space#}
+Variable_Mines_27
+{#space#золотых.}
+Variable_Plantation_1
+{В связи с расширением плантации добыча товаров приостановлена.}
+Variable_Plantation_2
+{По вашей плантации пронеслась эпидемия.}
+Variable_Plantation_3
+{Благодаря имеющимся медикаментам количество погибших рабов удалось существенно сократить. Количество погибших рабов:#space#}
+Variable_Plantation_4
+{Количество погибших рабов:#space#}
+Variable_Plantation_5
+{На вашей плантации инструменты в количестве#space#}
+Variable_Plantation_6
+{#space#шт. пришли в негодность.}
+Variable_Plantation_7
+{На вашей плантации осталось мало инструментов.}
+Variable_Plantation_8
+{На вашей плантации нет инструментов.}
+Variable_Plantation_9
+{Необходимо срочно доставить новые инструменты, иначе скорость добычи упадёт в несколько раз.}
+Variable_Plantation_10
+{На вашей плантации закончился провиант. От голода умерло рабов:#space#}
+Variable_Plantation_11
+{На вашей плантации закончился провиант. От голода умерло надсмотрщиков:#space#}
+Variable_Plantation_12
+{На вашей плантации закончились медикаменты. От болезней умерло рабов:#space#}
+Variable_Plantation_13
+{Ваша плантация не имеет управляющего. Добыча не производится.}
+Variable_Plantation_14
+{Генерируем мятеж на плантации.}
+Variable_Plantation_15
+{Мятежа на рудниках не будет, т.к. рабов слишком мало по отношению к охране.}
+Variable_Plantation_16
+{Вести с плантации, принадлежащей колонии#space#}
+Variable_Plantation_17
+{Товар ''}
+Variable_Plantation_18
+{'' в количестве#space#}
+Variable_Plantation_19
+{#space#был продан за#space#}
+Variable_Plantation_20
+{#space#золотых.}
+Variable_Quests_3
+{Вы положили амулет в волшебный сундук}
+Variable_utils_1
+{Ожидайте прогрузки, игра не зависнет.}
+Variable_utils_2
+{Время строительства Капитула должно было подойти к концу.}
+Variable_utils_3
+{Считываем тип абордажа.}
+Variable_utils_4
+{Сменили локаторы для локации абордажа:#space#}
+Variable_utils_5
+{Имя файла локаторов для локации абордажа:#space#}
+Variable_CharacterUtilite_1
+{Добавлено#space#}
+Variable_CharacterUtilite_2
+{#space#золотых}
+Variable_CharacterUtilite_3
+{Потрачено#space#}
+Variable_CharacterUtilite_4
+{#space#золотых}
+Variable_CharacterUtilite_5
+{Всего очков достижений у вас:#space#}
+Variable_CharacterUtilite_6
+{Открыто достижение '}
+Variable_CharacterUtilite_7
+{#space#очков)}
+Variable_CharacterUtilite_8
+{Выполнено достижение: ''}
+Variable_CharacterUtilite_9
+{Начато чтение книги. Ориентировочно, это займёт#space#}
+Variable_CharacterUtilite_10
+{#space#дней.}
+Variable_CharacterUtilite_11
+{Десант корабля#space#}
+Variable_CharacterUtilite_12
+{#space#составляет#space#}
+Variable_CharacterUtilite_13
+{#space#человек.}
+Variable_CharacterUtilite_14
+{Десант корабля#space#}
+Variable_CharacterUtilite_15
+{#space#составляет#space#}
+Variable_CharacterUtilite_16
+{#space#человек.}
+Variable_CharacterUtilite_17
+{Срок Вашего займа истек}
+Variable_CharacterUtilite_18
+{#space#добавлена в атлас}
+Variable_CharacterUtilite_19
+{Лиларкор вызвал в вас приступ неудержимой ярости!}
+Variable_GeneratorUtilite_1
+{Персонаж#space#}
+Variable_GeneratorUtilite_2
+{#space#получил кирасу#space#}
+Variable_GeneratorUtilite_3
+{Персонаж#space#}
+Variable_GeneratorUtilite_4
+{#space#получил кирасу#space#}
+Variable_GeneratorUtilite_5
+{Бонус к уровню игрока за перевес в численности:#space#}
+Variable_GeneratorUtilite_6
+{Бонус к уровню врагов за перевес в численности:#space#}
+Variable_LSC_Q2Utilite_1
+{Сработало на остров.}
+Variable_LSC_Q2Utilite_2
+{Сработало на город.}
+Variable_LSC_Q2Utilite_3
+{Звуки борьбы были услышаны на барке 'Сан Габриэль'.}
+Variable_LSC_Q2Utilite_4
+{Заклятие огня снято}
+Variable_LSC_Q2Utilite_5
+{Открыт каменный сундук}
+Variable_LSC_Q2Utilite_6
+{Заклятие огня снято}
+Variable_LSC_Q2Utilite_7
+{Заклятие огня снято}
+Variable_LSC_Q2Utilite_8
+{Открыт каменный сундук}
+Variable_QuestsUtilite_1
+{Сообщение из Ада: ваши жизненные силы были окончательно отобраны в счет оплаты наших услуг. Добро пожаловать в Ад.}
+Variable_QuestsUtilite_2
+{Адское уведомление о штрафных санкциях. Пожалуйста, ознакомьтесь!}
+Variable_QuestsUtilite_3
+{Устанавливаем сундуки}
+Variable_QuestsUtilite_4
+{У этого кэпа в сундуке будет ключ Моргана!}
+Variable_QuestsUtilite_5
+{Вы пробудили проклятых!}
+Variable_QuestsUtilite_6
+{Потусторонняя аура пошатнула ваше здоровье.}
+Variable_QuestsUtilite_7
+{Вы пробудили проклятых!}
+Variable_QuestsUtilite_8
+{Вы пробудили проклятых!}
+Variable_QuestsUtilite_9
+{Вы нашли вторую часть записки.}
+Variable_QuestsUtilite_10
+{Вы обнаружили сундучок.}
+Variable_QuestsUtilite_11
+{Это что ещё за шум?}
+Variable_QuestsUtilite_12
+{Похоже, что это и есть клад.}
+Variable_RPGUtilite_1
+{Вы получили новый уровень!}
+Variable_RPGUtilite_2
+{#space#получает новый уровень!}
+Variable_RPGUtilite_3
+{Кажись отпустило}
+Variable_RPGUtilite_4
+{Вы овладели ''Мародёрством''.}
+Variable_RPGUtilite_5
+{Здоровье стало лучше}
+Variable_RPGUtilite_6
+{Здоровье стало хуже}
+Variable_RPGUtilite_7
+{#space#увеличила награду за Вашу голову}
+Variable_RPGUtilite_8
+{#space#снизила награду за Вашу голову}
+Variable_RPGUtilite_9
+{Локаций проверено всего:#space#}
+Variable_RPGUtilite_10
+{Железных жил создано:#space#}
+Variable_RPGUtilite_11
+{Серебряных жил создано:#space#}
+Variable_RPGUtilite_12
+{Золотых жил создано:#space#}
+Variable_RPGUtilite_13
+{Угольных жил создано:#space#}
+Variable_TravelMap_1
+{, количество попыток#space#}
+Variable_hotkey_travel_1
+{Вы во враждебном городе!}
+Variable_Islands_loader_1
+{Корабль '}
+Variable_Islands_loader_2
+{' перегружен.}
+Variable_Islands_loader_3
+{На корабле '}
+Variable_Islands_loader_4
+{' нет минимального экипажа.}
+Variable_Islands_loader_5
+{На корабле '}
+Variable_Islands_loader_6
+{' перегруз экипажа больше допустимого.}
+Variable_Islands_loader_7
+{Дальнейшее путешествие невозможно.}
+Variable_itemLogic_1
+{Вы не установили идол}
+Variable_itemLogic_2
+{Ловушка!}
+Variable_items_utilite_1
+{Потребление еды поставлено в очередь.}
+Variable_items_utilite_2
+{Очередь:}
+Variable_items_utilite_3
+{Потребление еды поставлено в очередь.}
+Variable_items_utilite_4
+{Очередь:}
+Variable_items_utilite_5
+{#space#изучил}
+Variable_items_utilite_6
+{а}
+Variable_items_utilite_7
+{#space#книгу '}
+Variable_items_utilite_8
+{' и увеличил}
+Variable_items_utilite_9
+{а}
+Variable_items_utilite_10
+{#space#навык '}
+Variable_items_utilite_11
+{Минимальный урон клинка повышен с#space#}
+Variable_items_utilite_12
+{#space#до#space#}
+Variable_items_utilite_13
+{Максимальный урон клинка повышен с#space#}
+Variable_items_utilite_14
+{#space#до#space#}
+Variable_items_utilite_15
+{Вес клинка снижен с#space#}
+Variable_items_utilite_16
+{#space#до#space#}
+Variable_items_utilite_17
+{Вы получили оберег ''Святая Чаша''.}
+Variable_items_utilite_18
+{Прерывание на нахождение входа в пещеру сработало.}
+Variable_locations_loader_1
+{Что-то я перепил...}
+Variable_locations_loader_2
+{Ох, что-то штормит меня сегодня...}
+Variable_LAi_boarding_1
+{Исследован корабль:#space#}
+Variable_LAi_boarding_2
+{. Исследовано -#space#}
+Variable_LAi_boarding_3
+{#space#кораблей!}
+Variable_LAi_boarding_4
+{Наших до оружия#space#}
+Variable_LAi_boarding_5
+{Наших с оружием#space#}
+Variable_LAi_boarding_6
+{#space#Врагов#space#}
+Variable_LAi_boarding_7
+{Мушкетным залпом убито#space#}
+Variable_LAi_boarding_8
+{#space#человек команды противника.}
+Variable_LAi_boarding_9
+{Мушкетным залпом убито#space#}
+Variable_LAi_boarding_10
+{#space#человек нашей команды.}
+Variable_LAi_boarding_11
+{Из-за нехватки медикаментов от ран умерли#space#}
+Variable_LAi_boarding_12
+{#space#матросов}
+Variable_LAi_boarding_13
+{На корабле#space#}
+Variable_LAi_boarding_14
+{#space#осталось мало медикаментов}
+Variable_LAi_boarding_15
+{----- в конце стало#space#}
+Variable_LAi_boarding_16
+{#space#матросов ---}
+Variable_LAi_boarding_17
+{Выключить шума абордажа#space#}
+Variable_LAi_boarding_18
+{#space#х#space#}
+Variable_LAi_boarding_19
+{#space#х#space#}
+Variable_LAi_boarding_20
+{На капитане кираса#space#}
+Variable_LAi_boarding_21
+{Вы находите журнал капитана.}
+Variable_LAi_boarding_22
+{Вы получили#space#}
+Variable_LAi_boarding_23
+{Вы потеряли#space#}
+Variable_LAi_boarding_24
+{#space#морали.}
+Variable_LAi_character_1
+{Кровотечение прекратилось.}
+Variable_LAi_character_2
+{Вы восстановились после резкого удара.}
+Variable_LAi_character_3
+{Травма прошла.}
+Variable_LAi_character_4
+{Очередь остановлена.}
+Variable_LAi_character_5
+{Очередь остановлена.}
+Variable_LAi_character_6
+{Можно кушать.}
+Variable_LAi_character_7
+{Автоюз.}
+Variable_LAi_character_8
+{В данный момент запрещено использовать еду.}
+Variable_LAi_events_1
+{Идеальный блок.}
+Variable_LAi_events_2
+{Ваш блок был пробит.}
+Variable_LAi_events_3
+{Вы пробили блок.}
+Variable_LAi_fightparams_1
+{#space#избежал удара!}
+Variable_LAi_fightparams_2
+{Оружие противника было сломано.}
+Variable_LAi_fightparams_3
+{Ваше оружие было сломано.}
+Variable_LAi_fightparams_4
+{Критический удар был предотвращен!}
+Variable_LAi_fightparams_5
+{#space#заблокировал крит!}
+Variable_LAi_fightparams_6
+{#space#хитов}
+Variable_LAi_fightparams_7
+{Вы вызвали кровотечение.}
+Variable_LAi_fightparams_8
+{Вам нанесли кровоточащую рану.}
+Variable_LAi_fightparams_9
+{Вы вызвали кровотечение.}
+Variable_LAi_fightparams_10
+{Кровотечение предотвращено.}
+Variable_LAi_fightparams_11
+{Вам нанесли кровоточащую рану.}
+Variable_LAi_fightparams_12
+{Вы нанесли глубокую рану.}
+Variable_LAi_fightparams_13
+{Вам нанесли глубокую рану.}
+Variable_LAi_fightparams_14
+{Вы вызвали кровотечение.}
+Variable_LAi_fightparams_15
+{Кровотечение предотвращено.}
+Variable_LAi_fightparams_16
+{Вам нанесли кровоточащую рану.}
+Variable_LAi_fightparams_17
+{Вы нанесли глубокую рану.}
+Variable_LAi_fightparams_18
+{Вам нанесли глубокую рану.}
+Variable_LAi_fightparams_19
+{Вы нанесли резкий удар.}
+Variable_LAi_fightparams_20
+{Вам был нанесён резкий удар.}
+Variable_LAi_fightparams_21
+{Вы нанесли глубокую рану.}
+Variable_LAi_fightparams_22
+{Вам нанесли глубокую рану.}
+Variable_LAi_fightparams_23
+{Вы нанесли резкий удар.}
+Variable_LAi_fightparams_24
+{Вам нанесён резкий удар.}
+Variable_LAi_fightparams_25
+{Вы нанесли глубокую рану.}
+Variable_LAi_fightparams_26
+{Вам нанесли глубокую рану.}
+Variable_LAi_fightparams_27
+{Удар оглушил противника.}
+Variable_LAi_fightparams_28
+{Вас оглушили!}
+Variable_LAi_fightparams_29
+{Вы травмировали противника.}
+Variable_LAi_fightparams_30
+{Вы получили травму.}
+Variable_LAi_fightparams_31
+{Вы получили тяжелую травму}
+Variable_LAi_fightparams_32
+{Пробитие блока.}
+Variable_LAi_fightparams_33
+{Ваш блок пробит.}
+Variable_LAi_fightparams_34
+{Пробитие блока.}
+Variable_LAi_fightparams_35
+{Ваш блок пробит.}
+Variable_LAi_fightparams_36
+{Пробитие блока.}
+Variable_LAi_fightparams_37
+{Ваш блок пробит.}
+Variable_LAi_fightparams_38
+{топор}
+Variable_LAi_fightparams_39
+{Вы пробили кирасу.}
+Variable_LAi_fightparams_40
+{Ваша кираса была пробита.}
+Variable_LAi_fightparams_41
+{тяж}
+Variable_LAi_fightparams_42
+{Вы пробили кирасу.}
+Variable_LAi_fightparams_43
+{Ваша кираса была пробита.}
+Variable_LAi_fightparams_44
+{Вы пробили кирасу.}
+Variable_LAi_fightparams_45
+{Ваша кираса была пробита.}
+Variable_LAi_fightparams_46
+{Уклонился от выстрела!}
+Variable_LAi_fightparams_47
+{Ваша кираса заблокировала урон от выстрела.}
+Variable_LAi_fightparams_48
+{Выстрел из мушкета оглушил противника.}
+Variable_LAi_fightparams_49
+{Вас оглушили выстрелом из мушкета.}
+Variable_LAi_fightparams_50
+{Кираса противника была пробита выстрелом}
+Variable_LAi_fightparams_51
+{Ваша кираса была пробита выстрелом противника}
+Variable_LAi_fightparams_52
+{Урон от выстрела был снижен кирасой}
+Variable_LAi_fightparams_53
+{Критический выстрел}
+Variable_LAi_fightparams_54
+{Мазила!}
+Variable_LAi_login_1
+{Спавн бродящих пгг заблокирован}
+Variable_LAi_login_2
+{Тут бродящие ПГГ не спавнятся}
+Variable_LAi_login_3
+{ПГГ бродит неподалёку}
+Variable_LAi_monsters_1
+{Новая травка выросла в локаторе#space#}
+Variable_LAi_monsters_2
+{Девица в джунглях : сгенерился вариант 1}
+Variable_LAi_monsters_3
+{Девица в джунглях : сгенерился вариант 2}
+Variable_LAi_monsters_4
+{Девица в джунглях : сгенерился вариант 3}
+Variable_LAi_monsters_5
+{Каторжане: сгенерился квест}
+Variable_LAi_monsters_6
+{Пираты на необитайке: сгенерился квест}
+Variable_LAi_monsters_7
+{Кораблекрушенцы: сгенерился квест}
+Variable_LAi_utilites_1
+{Картоторговец должен быть в таверне}
+Variable_LAi_utilites_2
+{Картоторговец должен быть в таверне}
+Variable_LAi_utilites_3
+{Часовой на подходе к поселению успел поднять тревогу, и весь жемчужный промысел скрылся в джунглях.}
+Variable_LAi_utils_1
+{Судьба даёт вам второй шанс!}
+Variable_LAi_utils_2
+{#space#получает второй шанс!}
+Variable_LAi_utils_3
+{Абордажник#space#}
+Variable_LAi_utils_4
+{#space#без сознания!}
+Variable_LAi_utils_5
+{Абордажник#space#}
+Variable_LAi_utils_6
+{#space#без сознания!}
+Variable_LAi_utils_7
+{Хенрик Ведекер погиб. Скидки колонии анулированы}
+Variable_LAi_utils_8
+{Персонаж#space#}
+Variable_LAi_utils_9
+{#space#получил кирасу#space#}
+Variable_LAi_utils_10
+{Собраны чёрные жемчужины}
+Variable_LAi_utils_11
+{Вас безуспешно попытались отравить.}
+Variable_LAi_utils_12
+{Персонаж#space#}
+Variable_LAi_utils_13
+{#space#неуязвим к отравлению.}
+Variable_LAi_utils_14
+{Персонаж#space#}
+Variable_LAi_utils_15
+{#space#отравлен.}
+Variable_LAi_LSCout_1
+{Темплейт:#space#}
+Variable_LAi_LSCout_2
+{#space#  Стейт:#space#}
+Variable_LAi_player_1
+{Осталось здоровья -#space#}
+Variable_LAi_player_2
+{#space#из#space#}
+Variable_LAi_warrior_1
+{Ричард Соукинс заметил, что вы подло напали на него. Теперь его пираты будут атаковать вас.}
+Variable_Quests_1.Q
+{Найдите мекахром.}
+Variable_Quests_2.Q
+{Сундук открыт!}
+Variable_Common_church.t_1
+{ыня}
+Variable_Common_Mayor.t_1
+{ыня}
+Variable_Common_Mayor.t_2
+{ыня}
+Variable_Common_Mayor.t_3
+{ыня}
+Variable_Common_Prison.t_1
+{ыня}
+Variable_Common_Prison.t_2
+{ыня}
+Variable_Common_Prison.t_3
+{ыня}
+Variable_angelika_tich_line_functions_1
+{Я на месте. Грот должен быть где-то здесь.}
+Variable_angelika_tich_line_functions_2
+{Держу курс на Санто-Доминго!}
+Variable_angelika_tich_line_functions_3
+{С пиратами воевать нет смысла!}
+Variable_angelika_tich_line_functions_4
+{Мне нужно оторваться от них!}
+Variable_black_sails_functions_1
+{Линейка ЧП завершена.}
+Variable_black_sails_functions_2
+{Флинт выходит из#space#}
+Variable_black_sails_functions_3
+{#space# в#space#}
+Variable_black_sails_functions_4
+{, дней до прибытия:#space#}
+Variable_black_sails_functions_5
+{После нескольких глотков, вы ощущаете лёгкое головокружение.}
+Variable_black_sails_functions_6
+{Вы чувствуете, как сознание покидает вас.}
+Variable_black_sails_functions_7
+{На подмогу Флинту приходит один из его офицеров!}
+Variable_black_sails_functions_8
+{На подмогу Флинту приходит ещё несколько офицеров!}
+Variable_black_sails_functions_9
+{Виспер приходит к вам на подмогу!}
+Variable_black_sails_functions_10
+{Вся кают-компания собралась здесь чтобы помочь Флинту!}
+Variable_mainhero_prologues_functions_1
+{Тестовый запуск для разработчиков}
+Variable_mainhero_prologues_functions_2
+{Вы получили обноски}
+Variable_quests_1
+{В энциклопедию добавлена новая запись.}
+Variable_quests_2
+{Была закрыта запись в судовом журнале. (}
+Variable_quests_reaction_Leif
+{За свое тело я иcкромсаю всех лягушатников на этом острове!}
+Variable_quests_reaction_1
+{#space#поднял}
+Variable_quests_reaction_2
+{ся}
+Variable_quests_reaction_3
+{ась}
+Variable_quests_reaction_4
+{#space#на борт.}
+Variable_quests_reaction_5
+{#space#сдался в плен.}
+Variable_quests_reaction_6
+{Призрак уничтожен, теперь он не вернется.}
+Variable_quests_reaction_7
+{Призрак уничтожен, но может ли он вернуться?}
+Variable_quests_reaction_8
+{Мы отбились!}
+Variable_quests_reaction_9
+{Задание церкви выполнено!}
+Variable_quests_reaction_10
+{Бренные тела бунтовщиков отправлены в последнее морское путешествие}
+Variable_quests_reaction_11
+{Восстание было подавлено}
+Variable_quests_reaction_12
+{Город#space#}
+Variable_quests_reaction_13
+{#space#теперь наш!}
+Variable_quests_reaction_14
+{Кто-то порылся в карманах.}
+Variable_quests_reaction_15
+{Флинт выходит из#space#}
+Variable_quests_reaction_16
+{#space# в#space#}
+Variable_quests_reaction_17
+{, дней до прибытия:#space#}
+Variable_quests_reaction_18
+{Перк спас от патруля}
+Variable_quests_reaction_19
+{Время для поставки груза истекло.}
+Variable_quests_reaction_20
+{Вы не вернули деньги должника работодателю.}
+Variable_quests_reaction_21
+{Вы не доставили кредит по назначению.}
+Variable_quests_reaction_22
+{ГГ думает, что на этом острове нужной банды нету.}
+Variable_quests_reaction_23
+{Часового необходимо уничтожить!}
+Variable_quests_reaction_24
+{Часового необходимо уничтожить!}
+Variable_quests_reaction_25
+{должен быть звук}
+Variable_quests_reaction_26
+{ПГГ ушёл}
+Variable_quests_reaction_27
+{Схватка с голландскими защитниками у стен Форт Оранжа.}
+Variable_quests_reaction_28
+{На штурм, орлы!}
+Variable_quests_reaction_29
+{Схватка с голландскими защитниками в порту Форт Оранжа.}
+Variable_quests_reaction_30
+{На штурм, орлы!}
+Variable_quests_reaction_31
+{Схватка с голландскими защитниками внутри Форт Оранжа.}
+Variable_quests_reaction_32
+{На рейде Порт Рояля установлен фрегат Морриса Уильямса.}
+Variable_quests_reaction_33
+{Первая встреча с боцманом Уильямса.}
+Variable_quests_reaction_34
+{Успел выйти в море за два часа игрового времени. Пинас должен быть на месте.}
+Variable_quests_reaction_35
+{Не успел выйти в море за два часа игрового времени. Пинаса не будет.}
+Variable_quests_reaction_36
+{Пинас не появится, не успел за 16 дней.}
+Variable_quests_reaction_37
+{Пинас установлен между фортом и кораблями охранения.}
+Variable_quests_reaction_38
+{Пинас взят на абордаж, деньги найдены.}
+Variable_quests_reaction_39
+{Пинас взят на абордаж, деньги не найдены. Миссия провалена.}
+Variable_quests_reaction_40
+{Пинас потоплен.}
+Variable_quests_reaction_41
+{Не сумел взять пинас. Пинаса больше нет.}
+Variable_quests_reaction_42
+{Вторая встреча с боцманом Уильямса.}
+Variable_quests_reaction_43
+{Диалог и сразу боевка. Снова диалог с Эттербери и на выход.}
+Variable_quests_reaction_44
+{Диалоговый буканьер убран из форта.}
+Variable_quests_reaction_45
+{Установлено прерывание на появление галеона возле Кубы.}
+Variable_quests_reaction_46
+{Не успел доплыть до Кубы. Галеон снят с бухты Сантьяго.}
+Variable_quests_reaction_47
+{Галеон находится в бухте возле Сантьяго. Галеон идёт вглубь бухты в город.}
+Variable_quests_reaction_48
+{Письмо найдено и помещено в предметы.}
+Variable_quests_reaction_49
+{Письмо не найдено.}
+Variable_quests_reaction_50
+{Галеон потоплен.}
+Variable_quests_reaction_51
+{Галеон снят.}
+Variable_quests_reaction_52
+{Эскадра Пардаля установлена, будет рубилово.}
+Variable_quests_reaction_53
+{Эскадра Пардаля разбита.}
+Variable_quests_reaction_54
+{Эскадра Пардаля снята.}
+Variable_quests_reaction_55
+{Испанская эскадра установлена, будет крутое рубилово.}
+Variable_quests_reaction_56
+{Испанская эскадра разбита.}
+Variable_quests_reaction_57
+{Свалил с поля боя, линейке конец.}
+Variable_quests_reaction_58
+{Выручаем Аарона из беды.}
+Variable_quests_reaction_59
+{Установлены английские корабли.}
+Variable_quests_reaction_60
+{Не успел прибыть вовремя, Форт Оранж разорён.}
+Variable_quests_reaction_61
+{Английская эскадра разбита, теперь очередь за десантом.}
+Variable_quests_reaction_62
+{Схватка с английским десантом в порту.}
+Variable_quests_reaction_63
+{Английский десант уничтожен.}
+Variable_quests_reaction_64
+{Схватка с английским десантом у стен Форт Оранжа.}
+Variable_quests_reaction_65
+{Английский десант уничтожен.}
+Variable_quests_reaction_66
+{Засада испанцев, к бою.}
+Variable_quests_reaction_67
+{Встреча с незнакомцем.}
+Variable_quests_reaction_68
+{Бриг найден, на абордаж!}
+Variable_quests_reaction_69
+{Военный галеон найден, на абордаж!}
+Variable_quests_reaction_70
+{Нужно спасти фрегат де Графа!}
+Variable_quests_reaction_71
+{Испанская эскадра установлена, будет крутое рубилово.}
+Variable_quests_reaction_72
+{Испанская эскадра разбита.}
+Variable_quests_reaction_73
+{Свалил с поля боя, линейке конец.}
+Variable_quests_reaction_74
+{Опаздал. Мариго захвачен испанцами.}
+Variable_quests_reaction_75
+{Испанская эскадра установлена, будет крутое рубилово.}
+Variable_quests_reaction_76
+{Испанская эскадра разбита.}
+Variable_quests_reaction_77
+{Свалил с поля боя, линейке конец.}
+Variable_quests_reaction_78
+{Встреча с Франциско.}
+Variable_quests_reaction_79
+{Люггер найден, на абордаж!}
+Variable_quests_reaction_80
+{Яков здесь.}
+Variable_quests_reaction_81
+{Со скелетами надо подраться.}
+Variable_quests_reaction_82
+{Корвет Рока найден, на абордаж!}
+Variable_quests_reaction_83
+{На штурм, орлы!}
+Variable_quests_reaction_84
+{Вперед на перехват!}
+Variable_quests_reaction_85
+{Спасаем Пардаля, он не должен быть потоплен.}
+Variable_quests_reaction_86
+{Флибустьерскся эскадра эскадра разбита.}
+Variable_quests_reaction_87
+{Свалил с поля боя, очень плохо.}
+Variable_quests_reaction_88
+{Опаздал. Кумана разорена.}
+Variable_quests_reaction_89
+{Пиратская эскадра установлена.}
+Variable_quests_reaction_90
+{Пиратская эскадра разбита.}
+Variable_quests_reaction_91
+{Свалил с поля боя, очень плохо.}
+Variable_quests_reaction_92
+{Засада пиратов, к бою.}
+Variable_quests_reaction_93
+{Столкновение с офицером на выходе из резиденции.}
+Variable_quests_reaction_94
+{Пиратская эскадра установлена.}
+Variable_quests_reaction_95
+{Пиратская эскадра разбита.}
+Variable_quests_reaction_96
+{Свалил с поля боя, линейке конец.}
+Variable_quests_reaction_97
+{Успел выбежать из таверны.}
+Variable_quests_reaction_98
+{Не успел выбежать из таверны, рулим в бухту Пальмовый берег.}
+Variable_quests_reaction_99
+{Успел выбежать.}
+Variable_quests_reaction_100
+{Не успел, рулим в бухту Пальмовый берег.}
+Variable_quests_reaction_101
+{Успел выбежать.}
+Variable_quests_reaction_102
+{Не успел, рулим в бухту Пальмовый берег.}
+Variable_quests_reaction_103
+{Успел выбежать.}
+Variable_quests_reaction_104
+{Не успел, рулим в бухту Пальмовый берег.}
+Variable_quests_reaction_105
+{Успел выбежать.}
+Variable_quests_reaction_106
+{Не успел, рулим в бухту Пальмовый берег.}
+Variable_quests_reaction_107
+{Галеон найден, на абордаж!}
+Variable_quests_reaction_108
+{Испанская эскадра установлена.}
+Variable_quests_reaction_109
+{Испанская эскадра разбита.}
+Variable_quests_reaction_110
+{Свалил с поля боя, очень плохо.}
+Variable_quests_reaction_111
+{Испанец установлен.}
+Variable_quests_reaction_112
+{Испанская эскадра установлена. Это будет великая битва...}
+Variable_quests_reaction_113
+{Испанская эскадра разбита.}
+Variable_quests_reaction_114
+{Свалил с поля боя, линейке конец.}
+Variable_quests_reaction_115
+{Засада Сальватора.}
+Variable_quests_reaction_116
+{Не успел к бригу у Порто Белло. Изабелла погибла.}
+Variable_quests_reaction_117
+{Бриг найден, на абордаж!}
+Variable_quests_reaction_118
+{Засада Сальватора.}
+Variable_quests_reaction_119
+{Последняя подляна Сальватора.}
+Variable_quests_reaction_120
+{Время строительства колонии на острове Кайман должно подойти к концу. Стоит навестить место работы.}
+Variable_quests_reaction_121
+{Время расширения колонии ''}
+Variable_quests_reaction_122
+{'' должно подойти к концу.}
+Variable_quests_reaction_123
+{Время строительства охранной базы близ колонии ''}
+Variable_quests_reaction_124
+{'' должно подойти к концу.}
+Variable_quests_reaction_125
+{Магазин открыт.}
+Variable_quests_reaction_126
+{Верфь открыта.}
+Variable_quests_reaction_127
+{Таверна открыта.}
+Variable_quests_reaction_128
+{Церковь открыта.}
+Variable_quests_reaction_129
+{Дом ростовщика открыт.}
+Variable_quests_reaction_130
+{Портовое управление открыто.}
+Variable_quests_reaction_131
+{Экспедиции проведены.}
+Variable_quests_reaction_132
+{Плантация построена.}
+Variable_quests_reaction_133
+{Плантация расширена.}
+Variable_quests_reaction_134
+{Склад построен.}
+Variable_quests_reaction_135
+{Золотой рудник построен.}
+Variable_quests_reaction_136
+{Серебряный рудник построен.}
+Variable_quests_reaction_137
+{Железный рудник построен.}
+Variable_quests_reaction_138
+{Золотой рудник расширен.}
+Variable_quests_reaction_139
+{Серебряный рудник расширен.}
+Variable_quests_reaction_140
+{Железный рудник расширен.}
+Variable_quests_reaction_141
+{Склад расширен.}
+Variable_quests_reaction_142
+{Запрет на мятежи на плантации снят.}
+Variable_quests_reaction_143
+{Запрет на нападения на рудники снят.}
+Variable_quests_reaction_144
+{Вы получили отравление}
+Variable_quests_reaction_145
+{У вас началось кровотечение}
+Variable_quests_reaction_146
+{Скелеты атакуют!!!}
+Variable_quests_reaction_147
+{Вы потеряли часть команды}
+Variable_quests_reaction_148
+{Кажется, индейцы разгневались!}
+Variable_quests_reaction_150
+{Жаквин погиб!}
+Variable_quests_reaction_157
+{Лорд Чёрное Солнце слабеет!!!}
+Variable_quests_reaction_158
+{Нельзя давать ему передышки!!!}
+Variable_quests_reaction_160
+{Вы сняли карнавальную маску}
+Variable_quests_reaction_161
+{Вам нужно найти девушку за 120 секунд}
+Variable_quests_reaction_162
+{Девушка прячется в локаторе#space#}
+Variable_quests_reaction_163
+{Время вышло, девушка ушла по своим делам}
+Variable_quests_reaction_164
+{Правило нарушено, девушка больше не играет с нами в прятки}
+Variable_quests_reaction_165
+{Вы получили призовой сундук.}
+Variable_quests_reaction_166
+{Потусторонняя аура давит на вас ещё сильнее.}
+Variable_quests_reaction_167
+{Потусторонняя аура практически лишает вас всех сил.}
+Variable_quests_reaction_168
+{Хранитель грота был пробуждён.}
+Variable_quests_reaction_169
+{Вы чувствуете как гнетущее ощущение присутствия зла в этом месте слабеет.}
+Variable_quests_reaction_170
+{От постамента в храме грота исходит странное сияние.}
+Variable_quests_reaction_171
+{Перес где-то здесь... Надо отыскать его...}
+Variable_quests_reaction_172
+{Вы подобрали Макуауитль!}
+Variable_reaction_functions_1
+{Потоплено#space#}
+Variable_reaction_functions_2
+{#space#флейтов. Этого должно хватить, чтобы торговцы изменили своё решение.}
+Variable_reaction_functions_3
+{Фрегат Леон установлен.}
+Variable_reaction_functions_4
+{Искомый баттлшип не будет установлен. Не успел вовремя выйти в море.}
+Variable_reaction_functions_5
+{Искомый баттлшип начал движение.}
+Variable_reaction_functions_6
+{Бумаги не взяты!!}
+Variable_reaction_functions_7
+{Рассеянный кэп#space#}
+Variable_reaction_functions_8
+{#space#вышел из#space#}
+Variable_reaction_functions_9
+{#space#и направился в:#space#}
+Variable_reaction_functions_10
+{Кэп-вор#space#}
+Variable_reaction_functions_11
+{#space#вышел из:#space#}
+Variable_reaction_functions_12
+{#space#и направился в:#space#}
+Variable_reaction_functions_13
+{Кол-во ночей в охране:#space#}
+Variable_reaction_functions_14
+{Искомый кэп#space#}
+Variable_reaction_functions_15
+{#space#вышел из:#space#}
+Variable_reaction_functions_16
+{#space#и направился в:#space#}
+Variable_reaction_functions_17
+{Кэп с мушкетом вышел из:#space#}
+Variable_reaction_functions_18
+{#space#и направился в:#space#}
+Variable_reaction_functions_19
+{#space#и направился в:#space#}
+Variable_reaction_functions_20
+{Кэп фрегата Месть Королевы Анны вышел из:#space#}
+Variable_reaction_functions_21
+{#space#и направился в:#space#}
+Variable_reaction_functions_22
+{Оружие:}
+Variable_reaction_functions_23
+{Сейчас у ГГ заберут саблю!}
+Variable_reaction_functions_24
+{Офицер#space#}
+Variable_reaction_functions_25
+{#space#сбежал с кораблём#space#}
+Variable_reaction_functions_26
+{Офицер#space#}
+Variable_reaction_functions_27
+{#space#сбежал с корабля#space#}
+Variable_reaction_functions_28
+{Офицер#space#}
+Variable_reaction_functions_29
+{#space#сбежал с кораблём#space#}
+Variable_reaction_functions_30
+{Офицер#space#}
+Variable_reaction_functions_31
+{#space#сбежал с корабля#space#}
+Variable_reaction_functions_32
+{Тревога!! Враг в городе!!}
+Variable_reaction_functions_33
+{Что-то здесь не так...}
+Variable_reaction_functions_34
+{Жаквин де Массе пришёл к вам на помощь!}
+Variable_reaction_functions_35
+{Вы нашли пергамент с текстом на латыни}
+Variable_reaction_functions_36
+{Вы нашли пергамент с текстом на латыни и половинку карты}
+Variable_reaction_functions_37
+{На трупе был кусок пергамента}
+Variable_reaction_functions_38
+{В сундуке пусто}
+Variable_reaction_functions_39
+{Офицер#space#}
+Variable_reaction_functions_40
+{#space#напуган}
+Variable_reaction_functions_41
+{а}
+Variable_reaction_functions_42
+{#space#и убегает!}
+Variable_reaction_functions_43
+{Офицер#space#}
+Variable_reaction_functions_44
+{#space#переборол}
+Variable_reaction_functions_45
+{а}
+Variable_reaction_functions_46
+{#space#свой страх!}
+Variable_reaction_functions_47
+{#space#непоколебим}
+Variable_reaction_functions_48
+{, его}
+Variable_reaction_functions_49
+{а, её}
+Variable_reaction_functions_50
+{#space#невозможно напугать!}
+Variable_reaction_functions_51
+{Кажется я на месте...}
+Variable_reaction_functions_52
+{Кажется я на месте...}
+Variable_reaction_functions_53
+{Вы не успели выполнить задание}
+Variable_reaction_functions_54
+{Вас поймали на горячем! Вы не смогли выполнить задание!!!}
+Variable_reaction_functions_55
+{Что ещё за команда CSP? Выкину-ка я эту записку от греха подальше...}
+Variable_whisper_line_functions_1
+{Опа}
+Variable_whisper_line_functions_2
+{Первая -#space#}
+Variable_whisper_line_functions_3
+{Вторая -#space#}
+Variable_whisper_line_functions_4
+{Третья -#space#}
+Variable_whisper_line_functions_5
+{Четвертая -#space#}
+Variable_whisper_line_functions_6
+{Пятая -#space#}
+Variable_whisper_line_functions_7
+{#space#- Ожидайте -#space#}
+Variable_whisper_line_functions_8
+{Титаник уплыл в}
+Variable_whisper_line_functions_9
+{Похоже, что солдаты из форта уже сдались англичанам.}
+Variable_whisper_line_functions_10
+{Отступать уже поздно. Нужно дать бой испанцам.}
+Variable_whisper_line_functions_11
+{Я не могу встать на якорь пока не уничтожу эскадру врага целиком.}
+Variable_whisper_line_functions_12
+{Некогда отступать. Нужно дать бой испанцам в бухте проклятых.}
+Variable_colony_siege_1
+{Из-за нехватки медикаментов от ран умерли#space#}
+Variable_colony_siege_2
+{#space#матросов}
+Variable_colony_siege_3
+{На корабле#space#}
+Variable_colony_siege_4
+{#space#осталось мало медикаментов}
+Variable_colony_siege_5
+{Силы противника подавлены! Путь свободен.}
+Variable_colony_siege_6
+{Наш город#space#}
+Variable_colony_siege_7
+{#space#в осаде!}
+Variable_colony_siege_8
+{Осада снята!}
+Variable_colony_siege_9
+{Наш город#space#}
+Variable_colony_siege_10
+{#space#в осаде!}
+Variable_colony_siege_11
+{Наш город#space#}
+Variable_colony_siege_12
+{#space#захвачен.}
+Variable_companions_1
+{Корабль#space#}
+Variable_companions_2
+{#space#начинает абордаж#space#}
+Variable_companions_3
+{Наш корабль '}
+Variable_companions_4
+{' взят на абордаж}
+Variable_companions_5
+{Корабль '}
+Variable_companions_6
+{' под флагом#space#}
+Variable_companions_7
+{#space#взят на абордаж}
+Variable_companions_8
+{Наш корабль '}
+Variable_companions_9
+{' проиграл абордаж}
+Variable_companions_10
+{Корабль '}
+Variable_companions_11
+{' под флагом#space#}
+Variable_companions_12
+{#space#проиграл абордаж}
+Variable_companions_13
+{#space#обменял свой корабль на#space#}
+Variable_CompanionTravel_1
+{Компаньон оправляется до#space#}
+Variable_CompanionTravel_2
+{Компаньон оправляется до#space#}
+Variable_CompanionTravel_3
+{Компаньон оправляется до#space#}
+Variable_CompanionTravel_4
+{Компаньон оправляется до#space#}
+Variable_CompanionTravel_5
+{Компаньон оправляется до#space#}
+Variable_CompanionTravel_6
+{Сколько будет в свободном плавании -#space#}
+Variable_CompanionTravel_7
+{#space#дней}
+Variable_CompanionTravel_8
+{Шанс, что компаньон не дойдет до места назначения -#space#}
+Variable_CompanionTravel_9
+{Дойдет ли компаньон до места назначения (0 - не дойдет, 1 - дойдет) -#space#}
+Variable_CompanionTravel_10
+{Обработка компаньона-путешественника#space#}
+Variable_CompanionTravel_11
+{Критический баг: не найден один из атрибутов у компаньона-путешественника#space#}
+Variable_CompanionTravel_12
+{#space#слишком долго ждал в колонии и свалил.}
+Variable_CompanionTravel_13
+{#space#не дошло до места назначения.}
+Variable_CompanionTravel_14
+{Поставлен корабль кэпа -#space#}
+Variable_CompanionTravel_15
+{, группы -#space#}
+Variable_CompanionTravel_16
+{#space#в колонию -#space#}
+Variable_CompanionTravel_17
+{База -#space#}
+Variable_crew_1
+{Доход составил#space#}
+Variable_crew_2
+{Доля команды#space#}
+Variable_crew_3
+{. Долг перед командой#space#}
+Variable_duel_1
+{#space#группы#space#}
+Variable_food_1
+{Крысы на#space#}
+Variable_food_2
+{#space#испортили#space#}
+Variable_food_3
+{#space#повредили#space#}
+Variable_food_4
+{#space#уничтожили#space#}
+Variable_food_5
+{На#space#}
+Variable_food_6
+{'' от болезней умерло#space#}
+Variable_food_7
+{На#space#}
+Variable_food_8
+{'' осталось мало медикаментов!}
+Variable_food_9
+{На#space#}
+Variable_food_10
+{'' от болезней умерло#space#}
+Variable_food_11
+{На#space#}
+Variable_food_12
+{'' закончились запасы рома!}
+Variable_food_13
+{На#space#}
+Variable_food_14
+{'' продовольствия осталось на#space#}
+Variable_food_15
+{Нужно срочно пополнить запасы!}
+Variable_food_16
+{Рабы подняли восстание!}
+Variable_food_17
+{На#space#}
+Variable_food_18
+{'' матросы голодают. Мораль команды падает!}
+Variable_food_19
+{Матросы умирают от голода}
+Variable_food_20
+{Рабы умирают от голода}
+Variable_food_21
+{На#space#}
+Variable_food_22
+{'' произошёл бунт!}
+Variable_food_23
+{На#space#}
+Variable_food_24
+{'' произошёл бунт!}
+Variable_food_25
+{Корабль выходит из эскадры}
+Variable_GameModeCondition_1
+{Игрок подобрал заскриптованный предмет. Скрипт -#space#}
+Variable_GenQuests_1
+{В бухте будут ждать солдаты.}
+Variable_GenQuests_2
+{В бухте солдат не будет.}
+Variable_GenQuests_3
+{Человек окажется предателем.}
+Variable_GenQuests_4
+{В ходе квеста не выясниться, что человек - предатель.}
+Variable_GenQuests_5
+{Контрабандистов убили.}
+Variable_GenQuests_6
+{Вот я и нашёл обручальное кольцо девушки из#space#}
+Variable_GenQuests_7
+{. Нужно отнести его ей.}
+Variable_GenQuests_8
+{Зашли в локацию с бандюгами}
+Variable_GenQuests_9
+{Бандитов замочили. Нужно обыскать трупики и найти украденное (квест пройден по короткому варианту).}
+Variable_GenQuests_10
+{Время вышло, Вы не смогли отыскать грабителей - квест провален.}
+Variable_GenQuests_11
+{Генерим пиратский корабль на глобалке.}
+Variable_GenQuests_12
+{Блокируем выход на глобалку, ожидаем встречи с матросом}
+Variable_GenQuests_13
+{Сокровища где-то рядом!}
+Variable_GenQuests_14
+{Генерим лакея}
+Variable_GenQuests_15
+{Сокровища где-то рядом!}
+Variable_GenQuests_16
+{Пираты на необитайке: сгенерились стражи клада}
+Variable_GenQuests_17
+{Пираты на необитайке: пришли поздно, ничего не найдем}
+Variable_GenQuests_18
+{Пираты на необитайке: зарубили пиратов, можно лезть в сундук}
+Variable_GenQuests_19
+{Капитан! У нас эпидемия!}
+Variable_GenQuests_20
+{На борту корабля#space#}
+Variable_GenQuests_21
+{#space#человек уже мертвы}
+Variable_GenQuests_22
+{Добро пожаловать в преисподнюю !!}
+Variable_GenQuests_23
+{взорвал}
+Variable_GenQuests_24
+{взорвала}
+Variable_GenQuests_25
+{#space#крюйт камеру.}
+Variable_GenQuests_26
+{Генерируем саквояж}
+Variable_GenQuests_27
+{Генерим управляющего}
+Variable_GenQuests_28
+{Выкупили раба}
+Variable_GenQuests_29
+{Идем освобождать раба}
+Variable_GenQuests_30
+{Пиратские корабли установлены, будет крутое рубилово.}
+Variable_GenQuests_31
+{Пиратская эскадра разбита.}
+Variable_GenQuests_32
+{Свалил с поля боя, очень плохо.}
+Variable_GenQuests_33
+{вариант 1}
+Variable_GenQuests_34
+{вариант 2}
+Variable_GenQuests_35
+{вариант 3}
+Variable_GenQuests_36
+{Отработало прерывание на постановку корабля в бухту}
+Variable_GenQuests_37
+{Отработало прерывание на бегство капитана}
+Variable_GenQuests_38
+{Кораблекрушенцы: кэп вышел из#space#}
+Variable_GenQuests_39
+{#space#и направился в:#space#}
+Variable_GenQuests_40
+{доставили каторжан в поселение}
+Variable_GenQuests_41
+{Блокируем выход на глобалку, ожидаем встречи с матросом}
+Variable_GenQuests_42
+{Сокровища где-то рядом!}
+Variable_GoldFleet_1
+{Этот кэп будет вооружен морганой !}
+Variable_GoldFleet_2
+{Штормовая эскадра разработчиков решила поживиться награбленным!}
+Variable_Other_Quests_1
+{Сгенерилась пиратская эскадра.}
+Variable_Other_Quests_2
+{Мартина убили}
+Variable_PsHero_1
+{#space#пропускает апдейт.}
+Variable_PsHero_2
+{#space#прибывает в}
+Variable_PsHero_3
+{#space#уходит из игры :(}
+Variable_PsHero_4
+{#space#уходит из игры :(((}
+Variable_PsHero_5
+{#space#уходит из игры :(((}
+Variable_PsHero_6
+{#space#выжил :)))}
+Variable_PsHero_7
+{Смертей ПГГ :#space#}
+Variable_PsHero_8
+{#space#сопровождает торговца.}
+Variable_PsHero_9
+{#space#выходит на охоту за ГГ!}
+Variable_PsHero_10
+{#space#отправляется в#space#}
+Variable_PsHero_11
+{#space#выбрана колония#space#}
+Variable_PsHero_12
+{, количество попыток#space#}
+Variable_PsHero_13
+{Выбран ПГГ#space#}
+Variable_PsHero_14
+{ПГГ не выбран.}
+Variable_Rumour_Init_1
+{Слухи!}
+Variable_ShipsUtilites_1
+{ОШИБКА 1500-404 - сделайте скрин и отправьте разработчикам краткое описание ситуации и сохранение}
+Variable_Siege_1
+{рандом#space#}
+Variable_Siege_2
+{мочим тех, у кого колоний много#space#}
+Variable_Siege_3
+{Ссорим#space#}
+Variable_Siege_4
+{#space#и#space#}
+Variable_Siege_5
+{#space#для осады!}
+Variable_Siege_6
+{Сила эскадры:#space#}
+Variable_Siege_7
+{#space#процентов}
+Variable_Siege_8
+{Сила колонии:#space#}
+Variable_Siege_9
+{#space#процентов}
+Variable_Siege_10
+{По карте!}
+Variable_Siege_11
+{Была снята осада с#space#}
+Variable_Siege_12
+{. Примерно через неделю при логине форта должны перезаселиться сторожевики, если форт падал.}
+Variable_time_events_1
+{Офицер#space#}
+Variable_time_events_2
+{#space#выздоровел.}
+Variable_time_events_3
+{Офицер#space#}
+Variable_time_events_4
+{#space#выздоровел.}
+Variable_time_events_5
+{Офицер#space#}
+Variable_time_events_6
+{#space#выздоровел.}
+Variable_time_events_7
+{Офицер}
+Variable_time_events_8
+{оправился от тяжелой травмы}
+Variable_time_events_9
+{Вы оправились от травмы}
+Variable_time_events_10
+{Вы оправились от тяжелой травмы}
+Variable_Treasure_1
+{Локация:#space#}
+Variable_Treasure_2
+{Локатор:#space#}
+Variable_Treasure_3
+{Сокровища где-то рядом!}
+Variable_Treasure_4
+{Вас встретит ПГГ#space#}
+Variable_Treasure_5
+{О чудо! Я жив!}
+Variable_Treasure_6
+{Вы нашли очень странный предмет.}
+Variable_utils_1
+{Дипломат выполнил свою работу.}
+Variable_utils_2
+{Персонаж#space#}
+Variable_utils_3
+{#space#получил кирасу#space#}
+Variable_AIFort_1
+{Разрушенный форт#space#}
+Variable_AIFort_2
+{#space#был восстановлен. Должны родиться новые сторожевики.}
+Variable_AISeaGoods_1
+{Подобрали шлюпку с потерпевшим кораблекрушение}
+Variable_AISeaGoods_2
+{Подобрали бочку с неизвестным содержимым}
+Variable_AIShip_sunk.1
+{#space#был потоплен#space#}
+Variable_AIShip_sunk.2
+{#space#была потоплена#space#}
+Variable_AIShip_1
+{взорвал}
+Variable_AIShip_2
+{взорвала}
+Variable_AIShip_3
+{#space#крюйт камеру.}
+Variable_AIShip_4
+{Дистанция:#space#}
+Variable_AIShip_5
+{#space#  Атаки:#space#}
+Variable_AIShip_6
+{Я (}
+Variable_AIShip_7
+{) ухожу от форта.}
+Variable_AIShip_8
+{Ловцы жемчуга на тартане#space#}
+Variable_AIShip_9
+{#space#отдали вам#space#}
+Variable_AIShip_10
+{#space#малых и#space#}
+Variable_AIShip_11
+{#space#больших жемчужин.}
+Variable_AIShip_12
+{Требуется:#space#}
+Variable_AIShip_13
+{Сойти за друга не удалось -#space#}
+Variable_AIShip_14
+{#space#распознали в нас врага.}
+Variable_AIShip_15
+{#space#спас}
+Variable_AIShip_16
+{ся}
+Variable_AIShip_17
+{лась}
+Variable_AIShip_18
+{#space#на шлюпке.}
+Variable_AIShip_19
+{#space#спас}
+Variable_AIShip_20
+{ся}
+Variable_AIShip_21
+{лась}
+Variable_AIShip_22
+{#space#на шлюпке.}
+Variable_AIShip_23
+{был захвачен!}
+Variable_AIShip_24
+{был захвачен, но отпущен после грабежа.}
+Variable_AIShip_25
+{пробитие пушки#space#}
+Variable_AIShip_26
+{#space#Броня#space#}
+Variable_AIShip_27
+{#space#прошедший урон#space#}
+Variable_AIShip_28
+{На корабле#space#}
+Variable_AIShip_29
+{#space#сдетонировал весь пороховой запас.}
+Variable_AIShip_30
+{На корабле#space#}
+Variable_AIShip_31
+{#space#сдетонировал весь пороховой запас.}
+Variable_AIShip_32
+{Получен пиратский флаг}
+Variable_AIShip_33
+{Получен английский флаг}
+Variable_AIShip_34
+{Получен испанский флаг}
+Variable_AIShip_35
+{Получен французский флаг}
+Variable_AIShip_36
+{Получен голландский флаг}
+Variable_sea_1
+{Недостаточно денег на оплату портового сбора. Вход невозможен.}
+Variable_sea_2
+{Вам необходимо ещё#space#}
+Variable_sea_3
+{#space#пиастров.}
+Variable_sea_4
+{Пропуск в порт колонии бесплатен благодаря патенту.}
+Variable_sea_5
+{Оплачен портовый сбор в размере#space#}
+Variable_sea_6
+{#space#пиастров}
+Variable_sea_7
+{Получен пропуск в город на два дня.}
+Variable_sea_8
+{Корабль '}
+Variable_sea_9
+{' перегружен.}
+Variable_sea_10
+{На корабле '}
+Variable_sea_11
+{' нет минимального экипажа.}
+Variable_sea_12
+{На корабле '}
+Variable_sea_13
+{' перегруз экипажа больше допустимого.}
+Variable_sea_14
+{Выход на карту невозможен.}
+Variable_sea_15
+{ГГ атакует !}
+Variable_StoreUtilite_1
+{ТОВАР:#space#}
+Variable_StoreUtilite_2
+{КОЛ-ВО:#space#}
+Variable_StoreUtilite_3
+{ЗАГРУЖЕНО ДО ЭТОГО:#space#}
+Variable_StoreUtilite_4
+{ЗАГРУЖЕНО ПОСЛЕ ЭТОГО:#space#}
+Variable_StoreUtilite_5
+{Все вклады у ростовщика в городе#space#}
+Variable_StoreUtilite_6
+{#space#пропали.}
+Variable_StoreUtilite_7
+{Обновление цен в}
+Variable_StoreUtilite_8
+{Обновление цен в}
+Variable_WhrSea_1
+{Шторм включен, волны по Мах разрешены}
+Variable_WhrWeather_1
+{ПОГОДА:#space#}
+Variable_WhrWeather_2
+{ПОГОДА:#space#}
+Variable_WhrWeather_3
+{#space#ОСВЕЩЕНИЕ:#space#}
+Variable_worldmap_coords_1
+{Текущие координаты :#space#}
+Variable_worldmap_coords_2
+{Достигли искомой точки - 70 гр. з.д. 15 гр. с.ш.}
+Variable_worldmap_encgen_1
+{Фрегат Леон удален.}
+Variable_worldmap_encgen_2
+{Энкаунтер баттлшипа удален.}
+Variable_worldmap_encgen_3
+{Бригантина Мэри Селест вышла из#space#}
+Variable_worldmap_encgen_4
+{#space#и направилась в#space#}
+Variable_worldmap_encgen_5
+{Пираты на необитайке: кэп вышел из#space#}
+Variable_worldmap_encgen_6
+{#space#и направился в:#space#}
+Variable_worldmap_encgen_7
+{Пиратский корабль дошёл до места назначения.}
+Variable_worldmap_encgen_8
+{Энканутер рассеянного кэпа#space#}
+Variable_worldmap_encgen_9
+{#space#дошёл до места назначения.}
+Variable_worldmap_encgen_10
+{Энканутер кэпа-вора#space#}
+Variable_worldmap_encgen_11
+{#space#дошёл до места назначения.}
+Variable_worldmap_encgen_12
+{Энканутер кэпа#space#}
+Variable_worldmap_encgen_13
+{#space#дошёл до места назначения.}
+Variable_worldmap_encgen_14
+{Энканутер кэпа с мушкетом дошёл до места назначения.}
+Variable_worldmap_encgen_15
+{Энканутер кэпа Чёрная Борода дошёл до места назначения.}
+Variable_worldmap_globals_1
+{Прошло дней :#space#}
+Variable_pcs_with_spaces
+{#space#шт.#space#}
+Variable_place_duelist_tavern
+{Ставим дуэлянтa(ов) в локатор#space#}

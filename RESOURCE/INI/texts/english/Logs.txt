@@ -1,0 +1,1886 @@
+Variable_Debuger_1
+{Dump attributes of the nearest character}
+Variable_Debuger_1.1
+{Killed a character with ID ==#space#}
+Variable_Debuger_1.2
+{Cannot kill a character with ID ==#space#}
+Variable_Debuger_2
+{No armor}
+Variable_Debuger_3
+{The nation:#space#}
+Variable_Debuger_4
+{Gender:#space#}
+Variable_Debuger_5
+{Group:#space#}
+Variable_Debuger_6
+{Template:#space#}
+Variable_Debuger_7
+{State:#space#}
+Variable_globals_1
+{ERROR: Invalid index for the character! Incorrect index#space#}
+Variable_log.t_1
+{And again with silly eulogies, nothing changes in this world... E}
+Variable_log.t_2
+{once he shared with you the priceless treasures of his theological library, and now he has instructed me to pick them up if there is an opportunity.}
+Variable_log.t_3
+{He asked me for a few theological works and ancient manuscripts from the church library. Since the request was supported by the archbishop's demand not to hinder the spread of the benevolent light of knowledge, I could not refuse, although I assumed that the complexity of sea travel would not allow him to return the manuscripts on time...Could you contribute to solving this problem?}
+Variable_log.t_4
+{and return the logbook to him. Did you do it?}
+Variable_log.t_5
+{I have a whole list of passengers in my magazine who are waiting for passing ships. But I'm afraid there's not an idiot among them who would agree to travel under your command. Reputation, you know, is a delicate thing, and notoriety in the Caribbean spreads like waves in a pond...}
+Variable_log.t_6
+{A captain forgot my logbook. It's necessary to be so open-minded!.. In general, I need to catch up with him and return the loss.}
+Variable_log.t_7
+{Great, here's his magazine... Ugh, just a load off my shoulders! The loss of a ship's log is an unpleasant thing, I worry about such captains.}
+Variable_log.t_8
+{If the project has new technological solutions that I am not aware of, then the amount will be quite large. Otherwise, the fee will be low... Well, do you agree to take up this case?}
+Variable_log.t_9
+{Sorry, there are no orders right now. Come in through#space#}
+Variable_log.t_10
+{Just a minute, I'm going to find my magazine, which I need to deliver now. Cargo#space#}
+Variable_log.t_11
+{Just a minute, I'm going to find my magazine, which I need to deliver now. Choose which order suits you best.}
+Variable_log.t_12
+{I have to apologize to you,}
+Variable_seadogs_1
+{An old saved record has been uploaded.}
+Variable_seadogs_2
+{The program may be unstable.}
+Variable_seadogs_3
+{A saved version record has been uploaded#space#}
+Variable_seadogs_4
+{The program may be unstable.}
+Variable_seadogs_5
+{Squadron, load the balls!}
+Variable_seadogs_6
+{Squadron, load the grapeshot!}
+Variable_seadogs_7
+{Squadron, load the knipels!}
+Variable_seadogs_8
+{Squadron, load the bombs!}
+Variable_seadogs_9
+{Squadron, load at discretion!}
+Variable_seadogs_10
+{Squadron, sail away!}
+Variable_seadogs_11
+{Squadron, lower the sails!}
+Variable_seadogs_12
+{Squadron, defend the flagship!}
+Variable_seadogs_13
+{It is currently forbidden to use elixirs.}
+Variable_seadogs_14
+{No medicinal goods have been found.}
+Variable_seadogs_15
+{No medicinal goods have been found.}
+Variable_seadogs_16
+{Officers, attack!}
+Variable_seadogs_17
+{Officers, at ease!}
+Variable_seadogs_18
+{Officers, follow me!}
+Variable_seadogs_19
+{Officers, stop!}
+Variable_seadogs_20
+{Time dilation is blocked.}
+Variable_seadogs_21
+{Manipulation of the time stream is currently prohibited.}
+Variable_seadogs_22
+{Manipulation of the time stream is currently prohibited.}
+Variable_seadogs_23
+{Manipulation of the time stream is currently prohibited.}
+Variable_seadogs_24
+{Thug is activated.}
+Variable_seadogs_25
+{The Bully has been deactivated.}
+Variable_seadogs_26
+{It is currently forbidden to use elixirs.}
+Variable_seadogs_27
+{An antidote has been used}
+Variable_seadogs_28
+{The skill is not available!}
+Variable_seadogs_29
+{The skill is not available!}
+Variable_seadogs_30
+{The skill is not available!}
+Variable_seadogs_31
+{The skill is not available!}
+Variable_seadogs_32
+{There is no one to search}
+Variable_seadogs_33
+{It is currently forbidden to use food.}
+Variable_Academy_1
+{The training has begun. It is necessary to eliminate the opponent!}
+Variable_Academy_2
+{You've lost. The training is over.}
+Variable_Academy_3
+{You've won. The training is over.}
+Variable_Academy_4
+{The possibility of training is blocked on#space#}
+Variable_Academy_5
+{days.}
+Variable_Academy_6
+{The training option is enabled.}
+Variable_Academy_7
+{The training has begun. It is necessary to eliminate the opponent!}
+Variable_Academy_8
+{The training has begun. It is necessary to eliminate the opponent!}
+Variable_Arena_1
+{Character#space#}
+Variable_Arena_2
+{#space#got a cuirass}
+Variable_Arena_3
+{#space#round!}
+Variable_Arena_4
+{At the moment, the score in the duel is -#space#}
+Variable_Arena_5
+{Removing the character for the duel.}
+Variable_Arena_6
+{All the stages have been completed!}
+Variable_Arena_7
+{Stage#space#}
+Variable_Arena_8
+{#space#completed!}
+Variable_Arena_9
+{Stage#space#}
+Variable_Arena_10
+{#space#started!}
+Variable_Arena_11
+{There is a winner in this round:#space#}
+Variable_Arena_12
+{There is a winner in this round:#space#}
+Variable_Arena_13
+{At this point, the score in the duel is -#space#}
+Variable_Arena_14
+{Removing a character for the tournament:#space#}
+Variable_Arena_15
+{You bet on this fight. A duelist named#space#}
+Variable_Arena_16
+{Winner of this round#space#}
+Variable_Arena_17
+{Winner of this round#space#}
+Variable_Arena_18
+{At this point, the score in the duel is-}
+Variable_Arena_19
+{Winner:#space#}
+Variable_Arena_20
+{You bet on a duelist named#space#}
+Variable_Arena_21
+{#space#and you didn't lose it! Your winnings amounted to#space#}
+Variable_Arena_22
+{#space#gold.}
+Variable_Arena_23
+{You will be able to get the winnings after the competition.}
+Variable_Arena_24
+{You bet on a duelist named#space#}
+Variable_Arena_25
+{#space#and lost.}
+Variable_Arena_26
+{Removing a character for the tournament:#space#}
+Variable_Arena_27
+{Through#space#}
+Variable_Arena_28
+{New competitions will be generated in the arena in a few days.}
+Variable_Arena_29
+{New competitions have been generated in the arena.}
+Variable_Colony_1
+{CHANGING LIFE IN THE COLONY.}
+Variable_Colony_2
+{The moral after the change:#space#}
+Variable_Colony_3
+{To the people after the change:#space#}
+Variable_Colony_4
+{Your colony does not have a manager - no tax is collected.}
+Variable_Colony_5
+{Added money to the colony this week:#space#}
+Variable_Colony_6
+{There was no money in the colony:#space#}
+Variable_Colony_7
+{News from the colony#space#}
+Variable_Colony_8
+{News from the colony#space#}
+Variable_Colony_9
+{News from the colony#space#}
+Variable_Colony_10
+{News from the colony#space#}
+Variable_Colony_11
+{We are preparing an attack on the colony.}
+Variable_Colony_12
+{Is something being built:#space#}
+Variable_Colony_13
+{Is an attack planned:}
+Variable_Colony_14
+{Type of attack:#space#}
+Variable_Colony_15
+{No attacks have been generated.}
+Variable_Colony_16
+{A land attack is being prepared.}
+Variable_Colony_17
+{An attack from the sea is being prepared.}
+Variable_Colony_18
+{A land attack is being prepared.}
+Variable_Colony_19
+{A mutiny is being prepared in the colony.}
+Variable_Colony_20
+{There will be no mutiny, as there is a small population.}
+Variable_Colony_21
+{There will be no mutiny, because we are lucky.}
+Variable_Colony_22
+{There will be no mutiny, as some kind of construction is underway or some type of attack has already been created.}
+Variable_Colony_23
+{Is something being built:#space#}
+Variable_Colony_24
+{Is an attack planned:}
+Variable_Colony_25
+{Type of attack:#space#}
+Variable_Colony_26
+{Number of rebels:#space#}
+Variable_Colony_27
+{Number of soldiers:#space#}
+Variable_Colony_28
+{News from the colony#space#}
+Variable_Colony_29
+{News from the colony#space#}
+Variable_Colony_30
+{News from the colony#space#}
+Variable_Colony_31
+{There will be no attack from the land, as we are lucky.}
+Variable_Colony_32
+{There will be no attack from the land, as the security base scared off the enemy.}
+Variable_Colony_33
+{The opposing team:#space#}
+Variable_Colony_34
+{A security base has been built. The opposing team became:#space#}
+Variable_Colony_35
+{News from the colony#space#}
+Variable_Colony_36
+{News from the colony#space#}
+Variable_Colony_37
+{News from the colony#space#}
+Variable_Colony_38
+{There will be no attack from the sea, as we are lucky.}
+Variable_Colony_39
+{News from the colony#space#}
+Variable_Colony_40
+{News from the colony#space#}
+Variable_Colony_41
+{News from the colony#space#}
+Variable_Colony_42
+{The warehouse has been looted.}
+Variable_Colony_43
+{#space#in quantity#space#}
+Variable_Colony_44
+{pcs.}
+Variable_Colony_45
+{Autobuy for#space#}
+Variable_Colony_46
+{it cannot be produced because there is not enough money in the treasury.}
+Variable_Colony_47
+{Autobuy of necessary food and medicines for your colony#space#}
+Variable_Colony_48
+{completed.}
+Variable_Colony_49
+{The price was:#space#}
+Variable_Colony_50
+{piastres.}
+Variable_Colony_51
+{Autobuy of necessary food and medicines for your mines has been completed.}
+Variable_Colony_52
+{The price was:#space#}
+Variable_Colony_53
+{piastres.}
+Variable_Colony_54
+{Autobuy of necessary food, medicines and tools for your plantation has been completed.}
+Variable_Colony_55
+{The price was:#space#}
+Variable_Colony_56
+{piastres.}
+Variable_ColonyGuarding_1
+{Your colony does not have sufficient funds to provide basic manning of coast guard ships.}
+Variable_ColonyGuarding_2
+{All the coast guard ships were manned.}
+Variable_ColonyGuarding_3
+{The colony's garrison has been replenished#space#}
+Variable_ColonyGuarding_4
+{#space#soldiers for#space#}
+Variable_ColonyGuarding_5
+{gold.}
+Variable_ColonyGuarding_6
+{The garrison of the mines has been replenished#space#}
+Variable_ColonyGuarding_7
+{#space#soldiers for#space#}
+Variable_ColonyGuarding_8
+{gold.}
+Variable_ColonyGuarding_9
+{The plantation garrison has been replenished}
+Variable_ColonyGuarding_10
+{#space#soldiers for#space#}
+Variable_ColonyGuarding_11
+{gold.}
+Variable_GenerateQuests_1
+{Gen.Quest Duelist: Reward:#space#}
+Variable_GenerateQuests_2
+{Gen. Quest Duelist: Option:#space#}
+Variable_GenerateQuests_3
+{Gen. quest Duelist: Will the offender hire a mercenary:#space#}
+Variable_GenerateQuests_4
+{Gen. Quest Duelist: Probability of relatives:#space#}
+Variable_GenerateQuests_5
+{The Duelist quest has been generated. Someone has to come up.}
+Variable_GenerateQuests_6
+{Deleting the Duelist quest.}
+Variable_GenerateQuests_7
+{The temporary lock on the Duelist gene quest has been lifted.}
+Variable_GenerateQuests_8
+{The 'Shipwreck' quest has been generated. A ship will sail up on the map.}
+Variable_GenerateQuests_9
+{A wrecked ship was killed.}
+Variable_GenerateQuests_10
+{Shipwreck Quest - the lock has been lifted.}
+Variable_GenerateQuests_11
+{We delete the 'Shipwreck' quest after the expiration of time, after passing or ignoring.}
+Variable_Mines_1
+{An epidemic has swept through your mines.}
+Variable_Mines_2
+{Thanks to the available medicines, the number of dead slaves has been significantly reduced. The number of slaves killed:#space#}
+Variable_Mines_3
+{The number of slaves killed:#space#}
+Variable_Mines_4
+{Your mines have run out of food. Slaves died of starvation:#space#}
+Variable_Mines_5
+{Your mines have run out of food. The overseers died of hunger:#space#}
+Variable_Mines_6
+{Your mines have run out of medicines. Slaves died of diseases:#space#}
+Variable_Mines_7
+{Your mines do not have a manager. No mining is being done.}
+Variable_Mines_8
+{Due to the expansion of the mine, mining#space#}
+Variable_Mines_9
+{ore is suspended.}
+Variable_Mines_10
+{There will be no attack on the mines, because there is a ban.}
+Variable_Mines_11
+{There will be no attack on the mines, because we are lucky.}
+Variable_Mines_12
+{Generating a mutiny in the mines.}
+Variable_Mines_13
+{There will be no mutiny in the mines, because there are too few slaves.}
+Variable_Mines_14
+{There will be no mutiny in the mines, because there are too few slaves in relation to the guards.}
+Variable_Mines_15
+{News from the mines belonging to the colony#space#}
+Variable_Mines_16
+{News from the mines belonging to the colony#space#}
+Variable_Mines_17
+{News from the mines belonging to the colony#space#}
+Variable_Mines_18
+{There will be no attack from the land, as we are lucky.}
+Variable_Mines_19
+{There will be no attack from the land, as the security base scared off the enemy.}
+Variable_Mines_20
+{The opposing team:#space#}
+Variable_Mines_21
+{A security base has been built. The opposing team became:#space#}
+Variable_Mines_22
+{News from the mines belonging to the colony#space#}
+Variable_Mines_23
+{News from the colony#space#}
+Variable_Mines_24
+{News from the colony#space#}
+Variable_Mines_25
+{#space#in quantity#space#}
+Variable_Mines_26
+{#space#was sold for#space#}
+Variable_Mines_27
+{gold.}
+Variable_Plantation_1
+{Due to the expansion of the plantation, the extraction of goods has been suspended.}
+Variable_Plantation_2
+{An epidemic has swept through your plantation.}
+Variable_Plantation_3
+{Thanks to the available medicines, the number of dead slaves has been significantly reduced. The number of slaves killed:#space#}
+Variable_Plantation_4
+{The number of slaves killed:#space#}
+Variable_Plantation_5
+{There are a lot of tools on your plantation#space#}
+Variable_Plantation_6
+{the pcs have fallen into disrepair.}
+Variable_Plantation_7
+{There are few tools left on your plantation.}
+Variable_Plantation_8
+{There are no tools on your plantation.}
+Variable_Plantation_9
+{It is urgently necessary to deliver new tools, otherwise the production rate will drop several times.}
+Variable_Plantation_10
+{Your plantation has run out of food. Slaves died of starvation:#space#}
+Variable_Plantation_11
+{Your plantation has run out of food. The overseers died of hunger:#space#}
+Variable_Plantation_12
+{Your plantation has run out of medicines. Slaves died of diseases:#space#}
+Variable_Plantation_13
+{Your plantation does not have a manager. No mining is being done.}
+Variable_Plantation_14
+{Generating a mutiny on the plantation.}
+Variable_Plantation_15
+{There will be no mutiny in the mines, because there are too few slaves in relation to the guards.}
+Variable_Plantation_16
+{News from the plantation belonging to the colony#space#}
+Variable_Plantation_17
+{Goods#space#}
+Variable_Plantation_18
+{#space#in quantity#space#}
+Variable_Plantation_19
+{#space#was sold for#space#}
+Variable_Plantation_20
+{gold.}
+Variable_Quests_1.Q
+{Found the mekachrome.}
+Variable_Quests_2.Q
+{The chest is open!}
+Variable_Quests_3.Q
+{You put the amulet in the magic chest.}
+Variable_utils_1
+{Wait for loading, the game isn't freeze.}
+Variable_utils_2
+{The time of building the Chapter House should have come to an end.}
+Variable_utils_3
+{Reading the boarding type.}
+Variable_utils_4
+{The locators for the boarding location have been changed:#space#}
+Variable_utils_5
+{The name of the locator file for the boarding location:#space#}
+Variable_CharacterUtilite_1
+{Added#space#}
+Variable_CharacterUtilite_2
+{#space#gold}
+Variable_CharacterUtilite_3
+{Spent#space#}
+Variable_CharacterUtilite_4
+{#space#gold}
+Variable_CharacterUtilite_5
+{Total achievement points:#space#}
+Variable_CharacterUtilite_6
+{Achievement unlocked '}
+Variable_CharacterUtilite_7
+{#space#points)}
+Variable_CharacterUtilite_8
+{Achievement completed: '}
+Variable_CharacterUtilite_9
+{The reading of the book has begun. Approximately, it will take#space#}
+Variable_CharacterUtilite_10
+{#space#days.}
+Variable_CharacterUtilite_11
+{Landing force of ship#space#}
+Variable_CharacterUtilite_12
+{#space#is#space#}
+Variable_CharacterUtilite_13
+{#space#people.}
+Variable_CharacterUtilite_14
+{Landing force of ship#space#}
+Variable_CharacterUtilite_15
+{#space#is#space#}
+Variable_CharacterUtilite_16
+{#space#people.}
+Variable_CharacterUtilite_17
+{Your loan has expired}
+Variable_CharacterUtilite_18
+{#space#added to the atlas}
+Variable_CharacterUtilite_19
+{Lilarkor has caused an uncontrollable rage in you!}
+Variable_GeneratorUtilite_1
+{Character#space#}
+Variable_GeneratorUtilite_2
+{#space#got a cuirass}
+Variable_GeneratorUtilite_3
+{Character#space#}
+Variable_GeneratorUtilite_4
+{#space#got a cuirass}
+Variable_GeneratorUtilite_5
+{Bonus to the player's level for outnumbering:#space#}
+Variable_GeneratorUtilite_6
+{Enemy level bonus for outnumbering:#space#}
+Variable_LSC_Q2Utilite_1
+{It worked for the island.}
+Variable_LSC_Q2Utilite_2
+{It worked for the city.}
+Variable_LSC_Q2Utilite_3
+{Sounds of fighting were heard on the barque San Gabriel.}
+Variable_LSC_Q2Utilite_4
+{The fire spell has been lifted}
+Variable_LSC_Q2Utilite_5
+{The stone chest is open}
+Variable_LSC_Q2Utilite_6
+{The fire spell has been lifted}
+Variable_LSC_Q2Utilite_7
+{The fire spell has been lifted}
+Variable_LSC_Q2Utilite_8
+{The stone chest is open}
+Variable_QuestsUtilite_1
+{A message from Hell: Your life force has been finally taken away to pay for our services. Welcome to Hell.}
+Variable_QuestsUtilite_2
+{A hell of a penalty notice. Please check it out!}
+Variable_QuestsUtilite_3
+{Setting up the chests}
+Variable_QuestsUtilite_4
+{This cap will have Morgan's key in his chest!}
+Variable_QuestsUtilite_5
+{You've awakened the damned!}
+Variable_QuestsUtilite_6
+{The otherworldly aura has shaken your health.}
+Variable_QuestsUtilite_7
+{You've awakened the damned!}
+Variable_QuestsUtilite_8
+{You've awakened the damned!}
+Variable_QuestsUtilite_9
+{You found the second part of the note.}
+Variable_QuestsUtilite_10
+{You found the chest.}
+Variable_QuestsUtilite_11
+{What kind of noise is that?}
+Variable_QuestsUtilite_12
+{It looks like this is the treasure.}
+Variable_RPGUtilite_1
+{You've got a new level!}
+Variable_RPGUtilite_2
+{#space#gets a new level!}
+Variable_RPGUtilite_3
+{It seems to have let go}
+Variable_RPGUtilite_4
+{You've opened 'Looting' ability.}
+Variable_RPGUtilite_7
+{increased the bounty on your head}
+Variable_RPGUtilite_8
+{lowered the bounty on your head}
+Variable_RPGUtilite_9
+{Total locations checked:#space#}
+Variable_RPGUtilite_10
+{Iron veins have been created:#space#}
+Variable_RPGUtilite_11
+{Silver veins have been created:#space#}
+Variable_RPGUtilite_12
+{Gold veins have been created:#space#}
+Variable_RPGUtilite_13
+{Coal veins have been created:#space#}
+Variable_TravelMap_1
+{, number of attempts#space#}
+Variable_hotkey_travel_1
+{You are in a hostile city!}
+Variable_Islands_loader_1
+{The ship '}
+Variable_Islands_loader_2
+{' is overloaded.}
+Variable_Islands_loader_3
+{On the ship '}
+Variable_Islands_loader_4
+{' is no minimal crew}
+Variable_Islands_loader_5
+{On the ship '}
+Variable_Islands_loader_6
+{' crew overflow is more than acceptable}
+Variable_Islands_loader_7
+{Further travel is impossible.}
+Variable_itemLogic_1
+{You'ven't set an idol}
+Variable_itemLogic_2
+{A trap!}
+Variable_items_utilite_1
+{Food consumption is queued up.}
+Variable_items_utilite_2
+{Queue:}
+Variable_items_utilite_3
+{Food consumption is queued up.}
+Variable_items_utilite_4
+{Queue:}
+Variable_items_utilite_5
+{#space#studied#space#}
+Variable_items_utilite_6
+{}
+Variable_items_utilite_7
+{a book '}
+Variable_items_utilite_8
+{' and increased#space#}
+Variable_items_utilite_9
+{}
+Variable_items_utilite_10
+{skill '}
+Variable_items_utilite_11
+{Minimum blade damage increased from#space#}
+Variable_items_utilite_12
+{#space#before#space#}
+Variable_items_utilite_13
+{Maximum blade damage increased from#space#}
+Variable_items_utilite_14
+{#space#before#space#}
+Variable_items_utilite_15
+{The weight of the blade has been reduced from#space#}
+Variable_items_utilite_16
+{#space#before#space#}
+Variable_items_utilite_17
+{You've received the Holy Chalice charm.}
+Variable_items_utilite_18
+{The interruption to find the cave entrance has worked.}
+Variable_locations_loader_1
+{I've been drinking too much...}
+Variable_locations_loader_2
+{Oh, something is storming me today...}
+Variable_LAi_boarding_1
+{Ship has been explored:#space#}
+Variable_LAi_boarding_2
+{. Learned -#space#}
+Variable_LAi_boarding_3
+{#space#ships!}
+Variable_LAi_boarding_4
+{Our people are up to arms#space#}
+Variable_LAi_boarding_5
+{Ours with weapon#space#}
+Variable_LAi_boarding_6
+{#space#Enemies#space#}
+Variable_LAi_boarding_7
+{Musket salvo killed#space#}
+Variable_LAi_boarding_8
+{#space#people of the enemy team.}
+Variable_LAi_boarding_9
+{Musket salvo killed#space#}
+Variable_LAi_boarding_10
+{#space#people of your team.}
+Variable_LAi_boarding_11
+{Due to lack of medicines, they died of wounds#space#}
+Variable_LAi_boarding_12
+{sailors}
+Variable_LAi_boarding_13
+{On the ship#space#}
+Variable_LAi_boarding_14
+{there are few medicines left}
+Variable_LAi_boarding_15
+{----- in the end it became#space#}
+Variable_LAi_boarding_16
+{#space#sailors ---}
+Variable_LAi_boarding_17
+{Turn off the boarding noise#space#}
+Variable_LAi_boarding_18
+{#space#x#space#}
+Variable_LAi_boarding_19
+{#space#x#space#}
+Variable_LAi_boarding_20
+{Cuirass on cap#space#}
+Variable_LAi_boarding_21
+{You find captain's log.}
+Variable_LAi_boarding_22
+{You gained#space#}
+Variable_LAi_boarding_23
+{You lose#space#}
+Variable_LAi_boarding_24
+{#space#morale.}
+Variable_LAi_character_1
+{Bleeding has stopped.}
+Variable_LAi_character_2
+{You've recovered from the sharp hit.}
+Variable_LAi_character_3
+{The injury has passed.}
+Variable_LAi_character_4
+{The queue is stopped.}
+Variable_LAi_character_5
+{The queue is stopped.}
+Variable_LAi_character_6
+{You can eat.}
+Variable_LAi_character_7
+{Autohouse.}
+Variable_LAi_character_8
+{It is currently forbidden to use food.}
+Variable_LAi_events_1
+{Perfect block!}
+Variable_LAi_events_2
+{Your block was avoided.}
+Variable_LAi_events_3
+{You hit through block!}
+Variable_LAi_fightparams_1
+{#space#avoided the hit!}
+Variable_LAi_fightparams_2
+{The enemy's weapon was broken.}
+Variable_LAi_fightparams_3
+{Your weapon was broken.}
+Variable_LAi_fightparams_4
+{Critical hit has been averted!}
+Variable_LAi_fightparams_5
+{#space#blocked crit hit!}
+Variable_LAi_fightparams_6
+{#space#hits}
+Variable_LAi_fightparams_7
+{You caused bleeding.}
+Variable_LAi_fightparams_8
+{You've suffered a bleeding wound.}
+Variable_LAi_fightparams_9
+{You caused bleeding.}
+Variable_LAi_fightparams_10
+{Bleeding has been prevented.}
+Variable_LAi_fightparams_11
+{You're bleeding.}
+Variable_LAi_fightparams_12
+{You've applied a deep wound.}
+Variable_LAi_fightparams_13
+{You've been deeply wounded.}
+Variable_LAi_fightparams_14
+{You caused bleeding.}
+Variable_LAi_fightparams_15
+{Bleeding has been prevented.}
+Variable_LAi_fightparams_16
+{You're bleeding.}
+Variable_LAi_fightparams_17
+{You applied a deep wound.}
+Variable_LAi_fightparams_18
+{You've been deeply wounded.}
+Variable_LAi_fightparams_19
+{You dealt a sharp hit.}
+Variable_LAi_fightparams_20
+{You got a sharp hit.}
+Variable_LAi_fightparams_21
+{You applied a deep wound.}
+Variable_LAi_fightparams_22
+{You've been deeply wounded.}
+Variable_LAi_fightparams_23
+{You dealt a sharp hit.}
+Variable_LAi_fightparams_24
+{You got a sharp hit.}
+Variable_LAi_fightparams_25
+{You applied a deep wound.}
+Variable_LAi_fightparams_26
+{You've been deeply wounded.}
+Variable_LAi_fightparams_27
+{You stunned the opponent.}
+Variable_LAi_fightparams_28
+{You've been stunned!}
+Variable_LAi_fightparams_29
+{You injured the opponent.}
+Variable_LAi_fightparams_30
+{You got injured.}
+Variable_LAi_fightparams_31
+{You suffered a serious injury}
+Variable_LAi_fightparams_32
+{You pierced the block.}
+Variable_LAi_fightparams_33
+{Your block was pierced.}
+Variable_LAi_fightparams_34
+{You pierced the block.}
+Variable_LAi_fightparams_35
+{Your block was pierced.}
+Variable_LAi_fightparams_36
+{You pierced the block.}
+Variable_LAi_fightparams_37
+{Your block was pierced.}
+Variable_LAi_fightparams_39
+{You pierced the cuirass.}
+Variable_LAi_fightparams_40
+{Your cuirass was pierced.}
+Variable_LAi_fightparams_42
+{You pierced the cuirass.}
+Variable_LAi_fightparams_43
+{Your cuirass was pierced.}
+Variable_LAi_fightparams_44
+{You pierced the cuirass.}
+Variable_LAi_fightparams_45
+{Your cuirass was pierced.}
+Variable_LAi_fightparams_46
+{Dodged the shot!}
+Variable_LAi_fightparams_47
+{Your cuirass blocked the damage from the shot.}
+Variable_LAi_fightparams_48
+{Musket shot stunned the enemy.}
+Variable_LAi_fightparams_49
+{You were stunned by a musket shot.}
+Variable_LAi_fightparams_50
+{Enemy's cuirass was pierced by a shot}
+Variable_LAi_fightparams_51
+{Your cuirass was pierced by an enemy shot}
+Variable_LAi_fightparams_52
+{Damage from the shot was reduced by cuirass}
+Variable_LAi_fightparams_53
+{Critical shot!}
+Variable_LAi_fightparams_54
+{You missed!}
+Variable_LAi_login_1
+{Spawn of wandering PMC is blocked}
+Variable_LAi_login_2
+{Wandering PGGS won't spawn here}
+Variable_LAi_login_3
+{PMC is wandering around}
+Variable_LAi_monsters_1
+{New weed has grown in the locator}
+Variable_LAi_monsters_2
+{The girl in the jungle: option 1 was generated}
+Variable_LAi_monsters_3
+{The girl in the jungle: option 2 was generated}
+Variable_LAi_monsters_4
+{The girl in the jungle: Option 3 has been generated}
+Variable_LAi_monsters_5
+{Convicts: a quest has been generated}
+Variable_LAi_monsters_6
+{Pirates on a desert island: a quest has been generated}
+Variable_LAi_monsters_7
+{Shipwrecks: a quest has been generated}
+Variable_LAi_utilites_1
+{The card dealer should be in the tavern}
+Variable_LAi_utilites_2
+{The card dealer should be in the tavern}
+Variable_LAi_utilites_3
+{The sentry on the approach to the settlement managed to raise the alarm, and the entire pearl fishery disappeared into the jungle.}
+Variable_LAi_utils_1
+{Fate gives you a second chance!}
+Variable_LAi_utils_2
+{#space#gets a second chance!}
+Variable_LAi_utils_3
+{Fighter#space#}
+Variable_LAi_utils_4
+{#space#is unconscious!}
+Variable_LAi_utils_5
+{Fighter#space#}
+Variable_LAi_utils_6
+{#space#is unconscious!}
+Variable_LAi_utils_7
+{Henrik Wedeker is dead. Colony discounts are cancelled}
+Variable_LAi_utils_8
+{Character#space#}
+Variable_LAi_utils_9
+{#space#got a cuirass}
+Variable_LAi_utils_10
+{Black pearls are collected}
+Variable_LAi_utils_11
+{They tried unsuccessfully to poison you.}
+Variable_LAi_utils_12
+{Character#space#}
+Variable_LAi_utils_13
+{#space#is immune to poisoning.}
+Variable_LAi_utils_14
+{Character#space#}
+Variable_LAi_utils_15
+{#space#is poisoned.}
+Variable_LAi_LSCout_1
+{Template:#space#}
+Variable_LAi_LSCout_2
+{#space#State:#space#}
+Variable_LAi_player_1
+{Health is left -#space#}
+Variable_LAi_player_2
+{#space#from#space#}
+Variable_LAi_warrior_1
+{Richard Sawkins noticed that you viciously attacked him. Now his pirates will attack you.}
+Variable_Common_church.t_1
+{}
+Variable_Common_Mayor.t_1
+{}
+Variable_Common_Mayor.t_2
+{}
+Variable_Common_Mayor.t_3
+{}
+Variable_Common_Prison.t_1
+{}
+Variable_Common_Prison.t_2
+{}
+Variable_Common_Prison.t_3
+{}
+Variable_angelika_tich_line_functions_1
+{I'm here. The grotto must be here somewhere.}
+Variable_angelika_tich_line_functions_2
+{Heading for Santo Domingo!}
+Variable_angelika_tich_line_functions_3
+{There's no point fighting pirates!}
+Variable_angelika_tich_line_functions_4
+{I need to get away from them!}
+Variable_black_sails_functions_1
+{The line of emergency is completed.}
+Variable_black_sails_functions_2
+{Flint is coming out of#space#}
+Variable_black_sails_functions_3
+{#space#in#space#}
+Variable_black_sails_functions_4
+{, days before arrival:#space#}
+Variable_black_sails_functions_5
+{After a few sips, you feel a little dizzy.}
+Variable_black_sails_functions_6
+{You feel like consciousness is leaving you.}
+Variable_black_sails_functions_7
+{One of Flint's officers is coming to help him!}
+Variable_black_sails_functions_8
+{More officers are coming to help Flint!}
+Variable_black_sails_functions_9
+{Whisper is coming to your rescue!}
+Variable_black_sails_functions_10
+{The entire cabin crew is here to help Flint!}
+Variable_mainhero_prologues_functions_1
+{Test run for developers}
+Variable_mainhero_prologues_functions_2
+{You got the rags}
+Variable_quests_1
+{A new entry has been added to the encyclopedia.}
+Variable_quests_2
+{The entry in the ship's log was closed. (}
+Variable_quests_reaction_Leif
+{I'll murder all Frogs on this island for my body!}
+Variable_quests_reaction_1
+{#space#came#space#}
+Variable_quests_reaction_2
+{}
+Variable_quests_reaction_3
+{}
+Variable_quests_reaction_4
+{on board.}
+Variable_quests_reaction_5
+{#space#surrendered.}
+Variable_quests_reaction_6
+{The ghost has been destroyed, now it will not return.}
+Variable_quests_reaction_7
+{The ghost has been destroyed, but can it return?}
+Variable_quests_reaction_8
+{We fought back!}
+Variable_quests_reaction_9
+{The task of the church has been completed!}
+Variable_quests_reaction_10
+{The mortal bodies of the rebels have been sent on their last sea voyage}
+Variable_quests_reaction_11
+{The uprising was suppressed}
+Variable_quests_reaction_12
+{The City#space#}
+Variable_quests_reaction_13
+{It's ours now!}
+Variable_quests_reaction_14
+{Someone's been rummaging in your pockets.}
+Variable_quests_reaction_15
+{Flint is coming out#space#}
+Variable_quests_reaction_16
+{#space#in#space#}
+Variable_quests_reaction_17
+{, days before arrival:#space#}
+Variable_quests_reaction_18
+{Perk saved from patrol}
+Variable_quests_reaction_19
+{The time for the delivery of the cargo has expired.}
+Variable_quests_reaction_20
+{You've not returned the debtor's money to the employer.}
+Variable_quests_reaction_21
+{You did not deliver the loan to its intended destination.}
+Variable_quests_reaction_22
+{MC thinks that there is no gang on this island.}
+Variable_quests_reaction_23
+{The sentry must be destroyed!}
+Variable_quests_reaction_24
+{The sentry must be destroyed!}
+Variable_quests_reaction_25
+{there must be a sound}
+Variable_quests_reaction_26
+{PMC is gone}
+Variable_quests_reaction_27
+{The battle with the Dutch defenders at the walls of Fort Orange.}
+Variable_quests_reaction_28
+{On the assault, eagles!}
+Variable_quests_reaction_29
+{The battle with the Dutch defenders in the port of Fort Orange.}
+Variable_quests_reaction_30
+{On the assault, eagles!}
+Variable_quests_reaction_31
+{Skirmish with Dutch defenders inside Fort Orange.}
+Variable_quests_reaction_32
+{The Morris Williams frigate is installed in the Port Royal roadstead.}
+Variable_quests_reaction_33
+{First meeting with Williams' boatswain.}
+Variable_quests_reaction_34
+{I managed to go to sea in two hours of playing time. The pinnace should be in place.}
+Variable_quests_reaction_35
+{I didn't have time to go to sea in two hours of playing time. There will be no Pinnace.}
+Variable_quests_reaction_36
+{Pinnace won't show up, he didn't make it in 16 days.}
+Variable_quests_reaction_37
+{The pinnace is installed between the fort and the guard ships.}
+Variable_quests_reaction_38
+{The pinnace has been boarded, the money has been found.}
+Variable_quests_reaction_39
+{The pinnace was boarded, the money was not found. The mission has failed.}
+Variable_quests_reaction_40
+{The pinnace is sunk.}
+Variable_quests_reaction_41
+{I failed to take the pinnace. The pinnace is gone.}
+Variable_quests_reaction_42
+{Second meeting with Williams' boatswain.}
+Variable_quests_reaction_43
+{A dialogue and a fight at once. Again the dialogue with Atterbury and out.}
+Variable_quests_reaction_44
+{The dialogue Buccaneer has been removed from the fort.}
+Variable_quests_reaction_45
+{An interruption has been established for the appearance of a galleon near Cuba.}
+Variable_quests_reaction_46
+{I didn't manage to swim to Cuba. The galleon has been removed from Santiago Bay.}
+Variable_quests_reaction_47
+{The galleon is located in a bay near Santiago. The galleon goes deep into the bay to the city.}
+Variable_quests_reaction_48
+{The letter was found and placed in the items.}
+Variable_quests_reaction_49
+{The email was not found.}
+Variable_quests_reaction_50
+{The galleon has been sunk.}
+Variable_quests_reaction_51
+{The galleon has been removed.}
+Variable_quests_reaction_52
+{Pardal's squadron has been established, it will be rubilovo.}
+Variable_quests_reaction_53
+{Pardal's squadron is defeated.}
+Variable_quests_reaction_54
+{Pardal's squadron has been withdrawn.}
+Variable_quests_reaction_55
+{The Spanish squadron has been established, there will be a steep rubilovo.}
+Variable_quests_reaction_56
+{The Spanish squadron is defeated.}
+Variable_quests_reaction_57
+{I got off the battlefield, the line is over.}
+Variable_quests_reaction_58
+{Helping Aaron out of trouble.}
+Variable_quests_reaction_59
+{English ships have been installed.}
+Variable_quests_reaction_60
+{Did not arrive on time, Fort Orange is devastated.}
+Variable_quests_reaction_61
+{The British squadron has been defeated, now it's the turn for the landing.}
+Variable_quests_reaction_62
+{The battle with the British landing in the port.}
+Variable_quests_reaction_63
+{The English landing force has been destroyed.}
+Variable_quests_reaction_64
+{The battle with the British landing force at the walls of Fort Orange.}
+Variable_quests_reaction_65
+{The English landing force has been destroyed.}
+Variable_quests_reaction_66
+{Spanish ambush, ready for battle.}
+Variable_quests_reaction_67
+{Meeting a stranger.}
+Variable_quests_reaction_68
+{The brig has been found, board it!}
+Variable_quests_reaction_69
+{War galleon found, boarding!}
+Variable_quests_reaction_70
+{I need to save de Graf's frigate!}
+Variable_quests_reaction_71
+{The Spanish squadron has been established, there will be a steep rubilovo.}
+Variable_quests_reaction_72
+{The Spanish squadron is defeated.}
+Variable_quests_reaction_73
+{I'm off the battlefield, the line is over.}
+Variable_quests_reaction_74
+{I'm late. Marigo has been captured by the Spaniards.}
+Variable_quests_reaction_75
+{The Spanish squadron has been established, there will be a steep rubilovo.}
+Variable_quests_reaction_76
+{The Spanish squadron is defeated.}
+Variable_quests_reaction_77
+{I'm off the battlefield, the line is over.}
+Variable_quests_reaction_78
+{Meeting with Francisco.}
+Variable_quests_reaction_79
+{Lugger found, board!}
+Variable_quests_reaction_80
+{Yakov is here.}
+Variable_quests_reaction_81
+{Skeletons need to be fought.}
+Variable_quests_reaction_82
+{The Corvette of Doom has been found, boarding!}
+Variable_quests_reaction_83
+{On the assault, eagles!}
+Variable_quests_reaction_84
+{Forward to intercept!}
+Variable_quests_reaction_85
+{Saving the Pardal, it must not be sunk.}
+Variable_quests_reaction_86
+{The filibuster squadron has been defeated.}
+Variable_quests_reaction_87
+{Knocked off the battlefield, very bad.}
+Variable_quests_reaction_88
+{I'm late. Cumana is ruined.}
+Variable_quests_reaction_89
+{The pirate squadron is established.}
+Variable_quests_reaction_90
+{The pirate squadron is defeated.}
+Variable_quests_reaction_91
+{Knocked off the battlefield, very bad.}
+Variable_quests_reaction_92
+{Pirate ambush, ready to fight.}
+Variable_quests_reaction_93
+{Collision with an officer at the exit of the residence.}
+Variable_quests_reaction_94
+{The pirate squadron is established.}
+Variable_quests_reaction_95
+{The pirate squadron is defeated.}
+Variable_quests_reaction_96
+{I'm off the battlefield, the line is over.}
+Variable_quests_reaction_97
+{I managed to run out of the tavern.}
+Variable_quests_reaction_98
+{I didn't have time to run out of the tavern, we steer into Palm Beach Bay.}
+Variable_quests_reaction_99
+{I managed to run out.}
+Variable_quests_reaction_100
+{I didn't have time, we're steering to Palm Beach Bay.}
+Variable_quests_reaction_101
+{I managed to run out.}
+Variable_quests_reaction_102
+{I didn't have time, we're steering to Palm Beach Bay.}
+Variable_quests_reaction_103
+{I managed to run out.}
+Variable_quests_reaction_104
+{I didn't have time, we're steering to Palm Beach Bay.}
+Variable_quests_reaction_105
+{I managed to run out.}
+Variable_quests_reaction_106
+{I didn't have time, we're steering to Palm Beach Bay.}
+Variable_quests_reaction_107
+{Galleon found, boarding!}
+Variable_quests_reaction_108
+{The Spanish squadron is established.}
+Variable_quests_reaction_109
+{The Spanish squadron is defeated.}
+Variable_quests_reaction_110
+{Knocked off the battlefield, very bad.}
+Variable_quests_reaction_111
+{The Spaniard is installed.}
+Variable_quests_reaction_112
+{The Spanish squadron has been established. It's going to be a great battle...}
+Variable_quests_reaction_113
+{The Spanish squadron is defeated.}
+Variable_quests_reaction_114
+{I got off the battlefield, the line is over.}
+Variable_quests_reaction_115
+{Salvator's ambush.}
+Variable_quests_reaction_116
+{I didn't make it to the brig at Porto Bello. Isabella is dead.}
+Variable_quests_reaction_117
+{The brig has been found, board!}
+Variable_quests_reaction_118
+{Salvator's ambush.}
+Variable_quests_reaction_119
+{Salvator's last trick.}
+Variable_quests_reaction_120
+{The time for the construction of a colony on Cayman Island should come to an end. It's worth visiting the place of work.}
+Variable_quests_reaction_121
+{The time of colony expansion#space#}
+Variable_quests_reaction_122
+{it should be coming to an end.}
+Variable_quests_reaction_123
+{The time of construction of a security base near the colony#space#}
+Variable_quests_reaction_124
+{it has to come to an end.}
+Variable_quests_reaction_125
+{The store is open.}
+Variable_quests_reaction_126
+{The shipyard is open.}
+Variable_quests_reaction_127
+{The tavern is open.}
+Variable_quests_reaction_128
+{The church is open.}
+Variable_quests_reaction_129
+{The usurer's house is open.}
+Variable_quests_reaction_130
+{The port authority is open.}
+Variable_quests_reaction_131
+{The expeditions have been carried out.}
+Variable_quests_reaction_132
+{The plantation is built.}
+Variable_quests_reaction_133
+{The plantation has been expanded.}
+Variable_quests_reaction_134
+{The warehouse is built.}
+Variable_quests_reaction_135
+{The gold mine is built.}
+Variable_quests_reaction_136
+{The silver mine has been built.}
+Variable_quests_reaction_137
+{An iron mine has been built.}
+Variable_quests_reaction_138
+{The gold mine has been expanded.}
+Variable_quests_reaction_139
+{The silver mine has been expanded.}
+Variable_quests_reaction_140
+{The iron mine has been expanded.}
+Variable_quests_reaction_141
+{The warehouse has been expanded.}
+Variable_quests_reaction_142
+{The ban on mutinies on the plantation has been lifted.}
+Variable_quests_reaction_143
+{The ban on attacks on mines has been lifted.}
+Variable_quests_reaction_144
+{You got poisoned}
+Variable_quests_reaction_145
+{You started bleeding.}
+Variable_quests_reaction_146
+{Skeletons are attacking!!!}
+Variable_quests_reaction_147
+{You've lost part of the team}
+Variable_quests_reaction_148
+{It seems the Indians are angry!}
+Variable_quests_reaction_150
+{Jacqueline is dead!}
+Variable_quests_reaction_157
+{Lord Black Sun is getting weaker!!!}
+Variable_quests_reaction_158
+{You can't give him a break!!!}
+Variable_quests_reaction_160
+{You took off the carnival mask}
+Variable_quests_reaction_161
+{You need to find a girl in 120 seconds}
+Variable_quests_reaction_162
+{The girl is hiding in the locator}
+Variable_quests_reaction_163
+{Time is up, the girl has gone about her business}
+Variable_quests_reaction_164
+{The rule is broken, the girl is no longer playing hide-and-seek with us}
+Variable_quests_reaction_165
+{You've received a prize chest.}
+Variable_quests_reaction_166
+{The otherworldly aura presses on you even more.}
+Variable_quests_reaction_167
+{The otherworldly aura practically robs you of all your powers.}
+Variable_quests_reaction_168
+{The keeper of the grotto has been awakened.}
+Variable_quests_reaction_169
+{You can feel the oppressive feeling of the presence of evil in this place fading.}
+Variable_quests_reaction_170
+{A strange radiance emanates from the pedestal in the temple of the grotto.}
+Variable_quests_reaction_171
+{Perez is here somewhere... I need to find him...}
+Variable_quests_reaction_172
+{You picked up a Macquahuitl!}
+Variable_reaction_functions_1
+{Sunk#space#}
+Variable_reaction_functions_2
+{fluyts. This should be enough for the merchants to change their mind.}
+Variable_reaction_functions_3
+{Frigate Leon is installed.}
+Variable_reaction_functions_4
+{The desired battleship will not be installed. I didn't manage to go to sea in time.}
+Variable_reaction_functions_5
+{The desired battleship has started moving.}
+Variable_reaction_functions_6
+{The papers are not taken!!}
+Variable_reaction_functions_7
+{The Absent-minded Cap#space#}
+Variable_reaction_functions_8
+{#space#out of#space#}
+Variable_reaction_functions_9
+{#space#and headed to:#space#}
+Variable_reaction_functions_10
+{Cap Thief}
+Variable_reaction_functions_11
+{#space#out of:#space#}
+Variable_reaction_functions_12
+{#space#and headed to:#space#}
+Variable_reaction_functions_13
+{Number of nights in security:#space#}
+Variable_reaction_functions_14
+{The desired cap#space#}
+Variable_reaction_functions_15
+{#space#out of:#space#}
+Variable_reaction_functions_16
+{#space#and headed to:#space#}
+Variable_reaction_functions_17
+{Cap with a musket came out of:#space#}
+Variable_reaction_functions_18
+{#space#and headed to:#space#}
+Variable_reaction_functions_19
+{#space#and headed to:#space#}
+Variable_reaction_functions_20
+{The cap of the frigate Queen Anne's Revenge came out of:#space#}
+Variable_reaction_functions_21
+{#space#and headed to:#space#}
+Variable_reaction_functions_22
+{Weapon:}
+Variable_reaction_functions_23
+{They're going to take the saber away from MC now!}
+Variable_reaction_functions_24
+{Officer#space#}
+Variable_reaction_functions_25
+{escaped with the ship}
+Variable_reaction_functions_26
+{Officer#space#}
+Variable_reaction_functions_27
+{escaped from the ship}
+Variable_reaction_functions_28
+{Officer#space#}
+Variable_reaction_functions_29
+{escaped with the ship}
+Variable_reaction_functions_30
+{Officer#space#}
+Variable_reaction_functions_31
+{escaped from the ship}
+Variable_reaction_functions_32
+{Alarm!! The enemy is in the city!!}
+Variable_reaction_functions_33
+{Something is wrong here...}
+Variable_reaction_functions_34
+{Jacqueline de Masset has come to your rescue!}
+Variable_reaction_functions_35
+{You found a parchment with a text in Latin}
+Variable_reaction_functions_36
+{You found a parchment with Latin text and half a map}
+Variable_reaction_functions_37
+{There was a piece of parchment on the corpse}
+Variable_reaction_functions_38
+{The chest is empty}
+Variable_reaction_functions_39
+{Officer#space#}
+Variable_reaction_functions_40
+{#space#scared#space#}
+Variable_reaction_functions_41
+{}
+Variable_reaction_functions_42
+{and running away!}
+Variable_reaction_functions_43
+{Officer#space#}
+Variable_reaction_functions_44
+{#space#overcame}
+Variable_reaction_functions_45
+{}
+Variable_reaction_functions_46
+{#space#the fear!}
+Variable_reaction_functions_47
+{#space#is unshakeable,}
+Variable_reaction_functions_48
+{#space#he#space#}
+Variable_reaction_functions_49
+{#space#she#space#}
+Variable_reaction_functions_50
+{can't be scared!}
+Variable_reaction_functions_51
+{I think I'm in place...}
+Variable_reaction_functions_52
+{I think I'm in place...}
+Variable_reaction_functions_53
+{You didn't have time to complete the task}
+Variable_reaction_functions_54
+{You've been caught in the act! You failed to complete the task!!!}
+Variable_reaction_functions_55
+{What the hell is a CSP team? I'm going to throw this note away...}
+Variable_whisper_line_functions_1
+{Oops.}
+Variable_whisper_line_functions_2
+{The first one -}
+Variable_whisper_line_functions_3
+{The second -#space#}
+Variable_whisper_line_functions_4
+{The third -#space#}
+Variable_whisper_line_functions_5
+{The fourth -#space#}
+Variable_whisper_line_functions_6
+{The fifth -#space#}
+Variable_whisper_line_functions_7
+{#space#- Expect -#space#}
+Variable_whisper_line_functions_8
+{The Titanic sailed away in}
+Variable_whisper_line_functions_9
+{It looks like the soldiers from the fort have already surrendered to the British.}
+Variable_whisper_line_functions_10
+{It's too late to retreat. We have to fight the Spaniards. }
+Variable_whisper_line_functions_11
+{I cannot anchor until I have destroyed the entire enemy squadron. }
+Variable_whisper_line_functions_12
+{There is no time to retreat. The Spaniards must fight in the bay of the damned. }
+Variable_colony_siege_1
+{Due to lack of medicines, they died of wounds#space#}
+Variable_colony_siege_2
+{sailors}
+Variable_colony_siege_3
+{On the ship#space#}
+Variable_colony_siege_4
+{#space#are few medicines left}
+Variable_colony_siege_5
+{Enemy's force is suppressed! The way is clear.}
+Variable_colony_siege_6
+{Our city#space#}
+Variable_colony_siege_7
+{#space#is under the siege!}
+Variable_colony_siege_8
+{The siege is lifted!}
+Variable_colony_siege_9
+{Our city#space#}
+Variable_colony_siege_10
+{under siege!}
+Variable_colony_siege_11
+{Our city#space#}
+Variable_colony_siege_12
+{captured.}
+Variable_companions_1
+{The ship#space#}
+Variable_companions_2
+{#space#boarding begins#space#}
+Variable_companions_3
+{Our ship '}
+Variable_companions_4
+{' was boarded}
+Variable_companions_5
+{Ship '}
+Variable_companions_6
+{' under the flag of#space#}
+Variable_companions_7
+{#space#was boarded.}
+Variable_companions_8
+{Our ship '}
+Variable_companions_9
+{' lost the boarding}
+Variable_companions_10
+{Ship '}
+Variable_companions_11
+{' under the flag of#space#}
+Variable_companions_12
+{#space#lost boarding}
+Variable_companions_13
+{#space#swapped ship for#space#}
+Variable_CompanionTravel_1
+{Companion leaves for the#space#}
+Variable_CompanionTravel_2
+{Companion leaves for the#space#}
+Variable_CompanionTravel_3
+{Companion leaves for the#space#}
+Variable_CompanionTravel_4
+{Companion leaves for the#space#}
+Variable_CompanionTravel_5
+{Companion leaves for the#space#}
+Variable_CompanionTravel_6
+{How much will there be in free swimming-}
+Variable_CompanionTravel_7
+{#space#days}
+Variable_CompanionTravel_8
+{The chance that the companion will not reach the destination-}
+Variable_CompanionTravel_9
+{Will the companion reach the destination (0 - will not reach, 1 - will reach) -#space#}
+Variable_CompanionTravel_10
+{Processing a travel companion#space#}
+Variable_CompanionTravel_11
+{Critical bug: one of the attributes of the travel companion was not found#space#}
+Variable_CompanionTravel_12
+{I waited too long in the colony and left.}
+Variable_CompanionTravel_13
+{it didn't reach its destination.}
+Variable_CompanionTravel_14
+{Cap's ship has been delivered-}
+Variable_CompanionTravel_15
+{, groups -#space#}
+Variable_CompanionTravel_16
+{#space#to the colony-}
+Variable_CompanionTravel_17
+{Base -#space#}
+Variable_crew_1
+{The income was#space#}
+Variable_crew_2
+{Team Share#space#}
+Variable_crew_3
+{. Duty to the team#space#}
+Variable_duel_1
+{#space#groups#space#}
+Variable_food_1
+{On#space#}
+Variable_food_2
+{#space#rats ruined#space#}
+Variable_food_3
+{#space#rats damaged#space#}
+Variable_food_4
+{#space#rats destroyed#space#}
+Variable_food_5
+{On#space#}
+Variable_food_6
+{#space#died of diseases#space#}
+Variable_food_7
+{On#space#}
+Variable_food_8
+{#space#are few medicines left!}
+Variable_food_9
+{On#space#}
+Variable_food_10
+{#space#died of diseases#space#}
+Variable_food_11
+{On#space#}
+Variable_food_12
+{' rum supply has run out!}
+Variable_food_13
+{On#space#}
+Variable_food_14
+{' food is left for#space#}
+Variable_food_15
+{We need to restock urgently!}
+Variable_food_16
+{The slaves are in revolt!}
+Variable_food_17
+{On#space#}
+Variable_food_18
+{' sailors are starving. The morale of the team is falling!}
+Variable_food_19
+{Sailors are dying of hunger!}
+Variable_food_20
+{Slaves are dying of hunger!}
+Variable_food_21
+{On#space#}
+Variable_food_22
+{#space#has been a riot!}
+Variable_food_23
+{On#space#}
+Variable_food_24
+{#space#has been a riot!}
+Variable_food_25
+{The ship is leaving the squadron}
+Variable_GameModeCondition_1
+{The player picked up a scripted item. The script -#space#}
+Variable_GenQuests_1
+{There will be soldiers waiting in the bay.}
+Variable_GenQuests_2
+{There will be no soldiers in the bay.}
+Variable_GenQuests_3
+{The man will turn out to be a traitor.}
+Variable_GenQuests_4
+{During the quest, it does not turn out that the person is a traitor.}
+Variable_GenQuests_5
+{The smugglers were killed.}
+Variable_GenQuests_6
+{So I found the engagement ring of a girl from#space#}
+Variable_GenQuests_7
+{. I need to take it to her.}
+Variable_GenQuests_8
+{We went to a location with bandits}
+Variable_GenQuests_9
+{The bandits were killed. It is necessary to search the corpses and find the stolen items (the quest has been completed according to the short version).}
+Variable_GenQuests_10
+{Time is up, you couldn't find the robbers - the quest has failed.}
+Variable_GenQuests_11
+{Generate a pirate ship on the global.}
+Variable_GenQuests_12
+{We are blocking access to the global, we are waiting for a meeting with a sailor}
+Variable_GenQuests_13
+{The treasure is somewhere nearby!}
+Variable_GenQuests_14
+{Generate a footman}
+Variable_GenQuests_15
+{The treasure is somewhere nearby!}
+Variable_GenQuests_16
+{Pirates on a desert island: the guardians of the treasure were generated}
+Variable_GenQuests_17
+{Pirates on a desert island: we came late, we won't find anything}
+Variable_GenQuests_18
+{Pirates on a desert island: cut down the pirates, you can climb into the chest}
+Variable_GenQuests_19
+{Captain! We have an epidemic!}
+Variable_GenQuests_20
+{On board the ship}
+Variable_GenQuests_21
+{The man is already dead}
+Variable_GenQuests_22
+{Welcome to the underworld!!}
+Variable_GenQuests_23
+{blew up}
+Variable_GenQuests_24
+{blew up}
+Variable_GenQuests_25
+{#space#the powder cellar.}
+Variable_GenQuests_26
+{Generating a valise}
+Variable_GenQuests_27
+{Generate a manager}
+Variable_GenQuests_28
+{Bought a slave}
+Variable_GenQuests_29
+{Let's go free the slave}
+Variable_GenQuests_30
+{Pirate ships are installed, there will be a steep rubilovo.}
+Variable_GenQuests_31
+{The pirate squadron is defeated.}
+Variable_GenQuests_32
+{Knocked off the battlefield, very bad.}
+Variable_GenQuests_33
+{Option 1}
+Variable_GenQuests_34
+{option 2}
+Variable_GenQuests_35
+{Option 3}
+Variable_GenQuests_36
+{The interruption for putting the ship into the bay has worked out}
+Variable_GenQuests_37
+{The captain's escape interruption has worked out}
+Variable_GenQuests_38
+{Shipwrecks: Cap's out#space#}
+Variable_GenQuests_39
+{#space#and headed to:#space#}
+Variable_GenQuests_40
+{the convicts were taken to the settlement}
+Variable_GenQuests_41
+{We are blocking access to the global, we are waiting for a meeting with a sailor}
+Variable_GenQuests_42
+{The treasure is somewhere nearby!}
+Variable_GoldFleet_1
+{This cap will be armed with a morgana!}
+Variable_GoldFleet_2
+{The storm squadron of developers decided to profit from the loot!}
+Variable_Other_Quests_1
+{A pirate squadron has been generated.}
+Variable_Other_Quests_2
+{Martin was killed}
+Variable_PsHero_1
+{skipping the update.}
+Variable_PsHero_2
+{#space#arrives in}
+Variable_PsHero_3
+{#space#quits the game :(}
+Variable_PsHero_4
+{#space#quits the game :(((}
+Variable_PsHero_5
+{#space#quits the game :(((}
+Variable_PsHero_6
+{#space#survived :)))}
+Variable_PsHero_7
+{Deaths of PMC :#space#}
+Variable_PsHero_8
+{#space#escorting a merchant.}
+Variable_PsHero_9
+{out on the hunt for MC!}
+Variable_PsHero_10
+{#space#goes to#space#}
+Variable_PsHero_11
+{#space#a colony has been selected#space#}
+Variable_PsHero_12
+{, number of attempts#space#}
+Variable_PsHero_13
+{PMC selected#space#}
+Variable_PsHero_14
+{PMC is not selected.}
+Variable_Rumour_Init_1
+{Rumors!}
+Variable_ShipsUtilites_1
+{ERROR 1500-404 - make a screenshot and send the developers a brief description of the situation and save}
+Variable_Siege_1
+{random#space#}
+Variable_Siege_2
+{we wet those who have a lot of colonies#space#}
+Variable_Siege_3
+{Quarreling#space#}
+Variable_Siege_4
+{#space#and#space#}
+Variable_Siege_5
+{for the siege!}
+Variable_Siege_6
+{Squadron strength:#space#}
+Variable_Siege_7
+{percentages}
+Variable_Siege_8
+{The strength of the colony:#space#}
+Variable_Siege_9
+{percentages}
+Variable_Siege_10
+{On the map!}
+Variable_Siege_11
+{The siege was lifted from#space#}
+Variable_Siege_12
+{. In about a week, at the login of the fort, the guards should be resettled if the fort was falling.}
+Variable_time_events_1
+{Officer#space#}
+Variable_time_events_2
+{#space#recovered.}
+Variable_time_events_3
+{Officer#space#}
+Variable_time_events_4
+{#space#recovered.}
+Variable_time_events_5
+{Officer#space#}
+Variable_time_events_6
+{#space#recovered.}
+Variable_time_events_7
+{Officer}
+Variable_time_events_8
+{#space#recovered from a severe injury}
+Variable_time_events_9
+{You've recovered from the injury}
+Variable_time_events_10
+{You've recovered from a severe injury}
+Variable_Treasure_1
+{Location:#space#}
+Variable_Treasure_2
+{Locator:#space#}
+Variable_Treasure_3
+{The treasure is somewhere nearby!}
+Variable_Treasure_4
+{The PMC will meet you#space#}
+Variable_Treasure_5
+{Oh, a miracle! I'm alive!}
+Variable_Treasure_6
+{You've found a very strange object.}
+Variable_utils_1
+{The diplomat has done his job.}
+Variable_utils_2
+{Character#space#}
+Variable_utils_3
+{#space#got a cuirass}
+Variable_AIFort_1
+{The Ruined Fort}
+Variable_AIFort_2
+{#space#has been restored. New guardsmen should be born.}
+Variable_AISeaGoods_1
+{They picked up a boat with a castaway}
+Variable_AISeaGoods_2
+{A barrel with unknown contents was picked up}
+Variable_AIShip_sunk.1
+{#space#was sunk#space#}
+Variable_AIShip_sunk.2
+{#space#was sunk#space#}
+Variable_AIShip_1
+{blew up}
+Variable_AIShip_2
+{blew up}
+Variable_AIShip_3
+{#space#the powder cellar.}
+Variable_AIShip_4
+{Distance:#space#}
+Variable_AIShip_5
+{#space#Attacks:#space#}
+Variable_AIShip_6
+{I (}
+Variable_AIShip_7
+{) I'm leaving the fort.}
+Variable_AIShip_8
+{Pearl fishermen on tartan}
+Variable_AIShip_9
+{#space#they gave it to you#space#}
+Variable_AIShip_10
+{#space#small and#space#}
+Variable_AIShip_11
+{big pearls.}
+Variable_AIShip_12
+{Required:#space#}
+Variable_AIShip_13
+{We couldn't pass for a friend-}
+Variable_AIShip_14
+{, they recognized us as the enemy.}
+Variable_AIShip_15
+{#space#saved#space#}
+Variable_AIShip_16
+{}
+Variable_AIShip_17
+{}
+Variable_AIShip_18
+{on the boat.}
+Variable_AIShip_19
+{#space#saved#space#}
+Variable_AIShip_20
+{}
+Variable_AIShip_21
+{}
+Variable_AIShip_22
+{on the boat.}
+Variable_AIShip_23
+{was captured!}
+Variable_AIShip_24
+{was captured, but released after the robbery.}
+Variable_AIShip_25
+{breaking through the cannon#space#}
+Variable_AIShip_26
+{#space#Armor#space#}
+Variable_AIShip_27
+{#space#past damage#space#}
+Variable_AIShip_28
+{On the ship#space#}
+Variable_AIShip_29
+{the entire powder supply has detonated.}
+Variable_AIShip_30
+{On the ship#space#}
+Variable_AIShip_31
+{#space#the entire powder supply has detonated.}
+Variable_AIShip_32
+{Pirate Flag Received}
+Variable_AIShip_33
+{English flag received}
+Variable_AIShip_34
+{Spanish flag received}
+Variable_AIShip_35
+{French flag received}
+Variable_AIShip_36
+{Dutch flag received}
+Variable_sea_1
+{There is not enough money to pay the port fee. Entry is not possible.}
+Variable_sea_2
+{You need#space#}
+Variable_sea_3
+{#space#piastres more.}
+Variable_sea_4
+{Access to the colony's port is free thanks to the patent.}
+Variable_sea_5
+{Port fee has been paid in the amount of#space#}
+Variable_sea_6
+{piastres}
+Variable_sea_7
+{I have received a pass to the city for two days.}
+Variable_sea_8
+{Ship '}
+Variable_sea_9
+{' is overloaded.}
+Variable_sea_10
+{On the ship '}
+Variable_sea_11
+{' is no minimal crew}
+Variable_sea_12
+{On the ship '}
+Variable_sea_13
+{' crew overflow is more than acceptable.}
+Variable_sea_14
+{Access to the map is not possible.}
+Variable_sea_15
+{MC is attacking!}
+Variable_StoreUtilite_1
+{PRODUCT:#space#}
+Variable_StoreUtilite_2
+{QUANTITY:#space#}
+Variable_StoreUtilite_3
+{UPLOADED BEFORE:#space#}
+Variable_StoreUtilite_4
+{UPLOADED AFTER THAT:#space#}
+Variable_StoreUtilite_5
+{The usurer has all the deposits in the city#space#}
+Variable_StoreUtilite_6
+{gone.}
+Variable_StoreUtilite_7
+{Price update in}
+Variable_StoreUtilite_8
+{Price update in}
+Variable_WhrSea_1
+{The storm is on, Max waves are allowed}
+Variable_WhrWeather_1
+{WEATHER:#space#}
+Variable_WhrWeather_2
+{WEATHER:#space#}
+Variable_WhrWeather_3
+{#space#LIGHTING:#space#}
+Variable_worldmap_coords_1
+{Current coordinates :#space#}
+Variable_worldmap_coords_2
+{We have reached the desired point - 70 gr. s.d. 15 gr. s.s.}
+Variable_worldmap_encgen_1
+{Frigate Leon has been removed.}
+Variable_worldmap_encgen_2
+{The battleship encounter has been deleted.}
+Variable_worldmap_encgen_3
+{The Brigantine Mary Celeste came out of#space#}
+Variable_worldmap_encgen_4
+{#space#and headed to#space#}
+Variable_worldmap_encgen_5
+{Pirates on a desert island: Cap is out#space#}
+Variable_worldmap_encgen_6
+{#space#and headed to:#space#}
+Variable_worldmap_encgen_7
+{The pirate ship has reached its destination.}
+Variable_worldmap_encgen_8
+{The Encanuter of the scattered cap#space#}
+Variable_worldmap_encgen_9
+{I have reached my destination.}
+Variable_worldmap_encgen_10
+{Encanuter of the cap thief#space#}
+Variable_worldmap_encgen_11
+{I have reached my destination.}
+Variable_worldmap_encgen_12
+{Encanuter cap#space#}
+Variable_worldmap_encgen_13
+{I have reached my destination.}
+Variable_worldmap_encgen_14
+{Cap's encanuter with a musket has reached its destination.}
+Variable_worldmap_encgen_15
+{Cap Blackbeard's encanuter has reached its destination.}
+Variable_worldmap_globals_1
+{Days have passed :#space#}
+Variable_pcs_with_spaces
+{#space#pcs.#space#}
+Variable_place_duelist_tavern
+{Placing duelist/s in locator:#space#}

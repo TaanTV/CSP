@@ -1,0 +1,221 @@
+
+
+KoltsoLodet						{Josephine Lodet's Ring}
+KoltsoLodet_Lvl					{1}
+KoltsoLodet_Desc				{Taken from an old lady walking the streets of Basse-Terre.}
+KoltsoLodet_Spec				{}
+
+ProklyatayaJara					{Goddamn heat}
+ProklyatayaJara_Lvl				{1}
+ProklyatayaJara_Desc			{Taken from a soldier on duty at Fort de France.}
+ProklyatayaJara_Spec			{}
+
+NaitiTorgovtsa					{Find a townswoman's husband}
+NaitiTorgovtsa_Lvl				{1}
+NaitiTorgovtsa_Desc				{Taken from a woman on the streets of Willemstad.}
+NaitiTorgovtsa_Spec				{}
+
+DengiRost						{Money in growth}
+DengiRost_Lvl					{1}
+DengiRost_Desc					{Taken from usurer in Willemstad.}
+DengiRost_Spec					{}
+
+SpastiMuja						{Rescue of a townswoman's husband from captivity}
+SpastiMuja_Lvl					{1}
+SpastiMuja_Desc					{Taken from a woman walking the streets of Port-au-Prince.}
+SpastiMuja_Spec					{}
+
+Aptekar							{Pharmacist}
+Aptekar_Lvl						{1}
+Aptekar_Desc					{Taken at a pharmacy in Marigo.}
+Aptekar_Spec					{}
+
+NaitiMushket					{Find a double-barrel musket}
+NaitiMushket_Lvl				{1}
+NaitiMushket_Desc				{Taken from a retired musketeer who lives in a house with a staircase on the second floor in Port of Spain.}
+NaitiMushket_Spec				{}
+
+ClanLambrini					{Lambrini Clan}
+ClanLambrini_Lvl				{1}
+ClanLambrini_Desc				{Taken from a smuggler in a tavern in Port of Spain.}
+ClanLambrini_Spec				{Requires a reputation no lower than "Man of Honor".}
+
+Rimalie							{Rimalie}
+Rimalie_Lvl						{1}
+Rimalie_Desc					{Taken from a hermit on the desert island of Tobago.}
+Rimalie_Spec					{}
+
+OpasnyGruz						{Dangerous cargo}
+OpasnyGruz_Lvl					{1}
+OpasnyGruz_Desc					{Taken from the commandant of the fort in Cumana.}
+OpasnyGruz_Spec					{}
+
+Ascold							{Search for Mummy Powder}
+Ascold_Lvl						{1}
+Ascold_Desc						{Taken from a storekeeper in any colony.}
+Ascold_Spec						{}
+
+Rabotorgovets					{Slavetrader}
+Rabotorgovets_Lvl				{1}
+Rabotorgovets_Desc				{Taken from a random usurer in archipelago.}
+Rabotorgovets_Spec				{}
+
+ShamankaChani					{Shaman Chani}
+ShamankaChani_Lvl				{1}
+ShamankaChani_Desc				{Taken from a shaman in an Indian village on West Main.}
+ShamankaChani_Spec				{}
+
+PomoshElen						{Help to Helen}
+PomoshElen_Lvl					{1}
+PomoshElen_Desc					{Taken from a beauty on the street in Puerto Principe.}
+PomoshElen_Spec					{Requires a reputation no lower than "Honest Captain."}
+
+TravlyaKrys						{Rat baiting}
+TravlyaKrys_Lvl					{1}
+TravlyaKrys_Desc				{Taken from the head of any pirate settlement.}
+TravlyaKrys_Spec				{}
+
+Looser							{Losing player}
+Looser_Lvl						{1}
+Looser_Desc						{Taken from a random player in tavern.}
+Looser_Spec						{Could be taken randomly with an 8% probability.}
+
+StroitelstvoKolonii				{Colony construction}
+StroitelstvoKolonii_Lvl			{1}
+StroitelstvoKolonii_Desc		{It is taken from a German old man walking the streets of Charlestown. After fulfilling his request, he will settle in one of the houses of Port Royal.}
+StroitelstvoKolonii_Spec		{}
+
+ProklyatyIdol					{Cursed idol}
+ProklyatyIdol_Lvl				{3}
+ProklyatyIdol_Desc				{Taken from a pirate in La Vega tavern.}
+ProklyatyIdol_Spec				{}
+
+NeputyovyKaznachey				{Wayward Treasurer}
+NeputyovyKaznachey_Lvl			{3}
+NeputyovyKaznachey_Desc			{Taken from a man with glasses walking the streets of Willemstad.}
+NeputyovyKaznachey_Spec			{}
+
+Dozor							{The Watch}
+Dozor_Lvl						{3}
+Dozor_Desc						{Taken from a man on streets of Bernudes.}
+Dozor_Spec						{Requires to pay 20,000 piastres.}
+
+Ostin							{Austin's Gang}
+Ostin_Lvl						{3}
+Ostin_Desc						{Taken from bandits on the street in certain cities: St. John's, Santa Catalina, Cartagena, Panama, Fort de France, Marigo.}
+Ostin_Spec						{}
+
+SpasenieNaRifah					{Miraculous rescue on the reefs}
+SpasenieNaRifah_Lvl				{5}
+SpasenieNaRifah_Desc			{Taken from a merchant with glasses, walking the streets of Port Royal.}
+SpasenieNaRifah_Spec			{}
+
+SinyaPtitsa						{Destroy Xebec 'Blue Bird'}
+SinyaPtitsa_Lvl					{5}
+SinyaPtitsa_Desc				{Taken from a shopkeeper of any settlement other than pirate.}
+SinyaPtitsa_Spec				{}
+
+KotVMeshke						{Cat in a Bag}
+KotVMeshke_Lvl					{5}
+KotVMeshke_Desc					{Taken from a fisherman near the pier in Santo Domingo.}
+KotVMeshke_Spec					{}
+
+Kuali							{Macuahuitl for Kuali}
+Kuali_Lvl						{5}
+Kuali_Desc						{Taken from an indian in an Indian village in West Main.}
+Kuali_Spec						{}
+
+FleitOrion						{Accompaniment of the 'Orion' fluyt}
+FleitOrion_Lvl					{5}
+FleitOrion_Desc					{Taken from innkeeper in Fort de France tavern.}
+FleitOrion_Spec					{}
+
+OskolokProshlogo				{Shard of the past}
+OskolokProshlogo_Lvl			{10}
+OskolokProshlogo_Desc			{Taken from any pirate head.}
+OskolokProshlogo_Spec			{}
+
+Nasledstvo						{Unexpected inheritance}
+Nasledstvo_Lvl					{10}
+Nasledstvo_Desc					{Taken from a young woman on the streets of Basse-Terre.}
+Nasledstvo_Spec					{Requires to pay 7,000 piastres.}
+
+Kondotier						{Condottiere}
+Kondotier_Lvl					{10}
+Kondotier_Desc					{Taken from a smuggler in any tavern other than pirate.}
+Kondotier_Spec					{}
+
+KorablPrizrak					{Ghost Ship}
+KorablPrizrak_Lvl				{10}
+KorablPrizrak_Desc				{Taken from a drunks in taverns.}
+KorablPrizrak_Spec				{}
+
+Satanisty						{Strange things are happening in the archipelago}
+Satanisty_Lvl					{10}
+Satanisty_Desc					{Taken from women in a gazebo on the grounds of the governor's residence in Marigo.}
+Satanisty_Spec					{}
+
+ZacharovanyGorod				{Magic City}
+ZacharovanyGorod_Lvl			{10}
+ZacharovanyGorod_Desc			{Taken from any citizen in Caracas from 9:00 to 20:00.}
+ZacharovanyGorod_Spec			{}
+
+OhotaNaVedmu					{Witch Hunt}
+OhotaNaVedmu_Lvl				{15}
+OhotaNaVedmu_Desc				{Taken from a nobleman walking the streets of Belize.}
+OhotaNaVedmu_Spec				{}
+
+ZagadochnyOstrov				{Mysterious Island}
+ZagadochnyOstrov_Lvl			{15}
+ZagadochnyOstrov_Desc			{Taken from a beggar in a Bridgetown tavern.}
+ZagadochnyOstrov_Spec			{}
+
+UbitVsehNishih					{Kill all beggars}
+UbitVsehNishih_Lvl				{15}
+UbitVsehNishih_Desc				{Taken from a bold man walking the streets of Port Royal.}
+UbitVsehNishih_Spec				{}
+
+GPK								{In the City of Abandoned Ships}
+GPK_Lvl							{15}
+GPK_Desc						{Needed to swim on the global map to the top left of the map.}
+GPK_Spec						{Requires to complete "Kill all beggars" quest.}
+
+ChernayaBoroda					{Blackbeard}
+ChernayaBoroda_Lvl				{20}
+ChernayaBoroda_Desc				{Taken from drunks in tavern.}
+ChernayaBoroda_Spec				{}
+
+Salazar							{Salazar}
+Salazar_Lvl						{20}
+Salazar_Desc					{Taken from drunks in tavern.}
+Salazar_Spec					{}
+
+IstoriyaIzabely					{Story of the beautiful Isabella}
+IstoriyaIzabely_Lvl				{20}
+IstoriyaIzabely_Desc			{Taken from a pirate walking the streets of Bermudes.}
+IstoriyaIzabely_Spec			{Main Character has to be a man.}
+
+ChernyeParusa					{Black Sails}
+ChernyeParusa_Lvl				{25}
+ChernyeParusa_Desc				{Taken from Guthrie in Bermudes store.}
+ChernyeParusa_Spec				{Requires to complete "Destroy Xebec Blue Bird" quest.}
+
+Teno							{Tenochitlan}
+Teno_Lvl						{?}
+Teno_Desc						{Taken from a sailor in Mosquitos bay what's on West Main.}
+Teno_Spec						{}
+
+IstoriaDavneyDrujby				{Story of a long-standing friendship}
+IstoriaDavneyDrujby_Lvl			{?}
+IstoriaDavneyDrujby_Desc		{Taken from a man walking streets of La Vega.}
+IstoriaDavneyDrujby_Spec		{Requires a patent of any nation.}
+
+NovayaRodina					{In search of a new homeland}
+NovayaRodina_Lvl				{?}
+NovayaRodina_Desc				{Taken from a old pirate sitting in Puerto Principe tavern.}
+NovayaRodina_Spec				{Requires spanish patent.}
+
+SilverFleet						{Silver Fleet} // СФ
+SilverFleet_Lvl					{?}
+SilverFleet_Desc				{After receiving an invitation from an English officer at Port Royal, the quest is given by Governor General Thomas Madiford.}
+SilverFleet_Spec				{Requires unlocking the "Sea Wolf" achievement and a good reputation.}

@@ -1,0 +1,397 @@
+Antigua {Antigua}
+Bahames {Bahamas}
+Barbados {Barbados}
+Bermudes {Bermudes}
+Beliz {Yucatan}
+Cuba {Cuba}
+Cuba1 {Cuba}
+Cuba2 {Cuba}
+Caiman {Caiman}
+Cumana {Cumana}
+Caracas			{Caracas}
+Curacao {Curacao}
+Cartahena {Cartagena}
+Dominica {Dominica}
+Guadeloupe {Guadeloupe}
+Hispaniola		{Hispaniola}
+MariaGalante {Maria Galante}
+Jamaica {Jamaica}
+Maracaibo {Maracaibo}
+Martinique {Martinique}
+SentMartin {San Martin}
+Nevis {Nevis}
+PuertoRico {Puerto Rico}
+PortoBello {Porto Bello}
+Pearl {Pearl Coast}
+Panama			{Panama}
+SantaCatalina {Santa Catalina}
+Terks {Turks}
+Tortuga {Tortuga}
+Trinidad {Trinidad}
+Tobago	{Tobago}
+Reefs {Skeleton Reef}
+KhaelRoa {Khael Roa}
+Mein {Main}
+StLucia {Santa Lucia}
+Tenotchitlan {lake Tescoco}
+SentJons_town {St. John's}
+Nassau_town {Nassau}
+Pirates_town {Pirate Settlement}
+Bridge_town {Bridgetown}
+Beliz_town {Belize}
+Santiago_town {Santiago}
+PuertoPrincipe_town {Puerto Principe}
+Havana_town {Havana}
+Cumana_town {Cumana}
+Caracas_town {Caracas}
+Villemstad_town {Willemstad}
+Cartahena_town {Cartagena}
+BasTer_town {Bass Ter}
+SantoDomingo_town {Santo Domingo}
+LaVega_town			{La Vega}
+PortPax_town {Port-au-Prince}
+PortRoyal_town {Port Royal}
+FortOrange_town {Fort Orange}
+Maracaibo_town {Maracaibo}
+DesMoines_town		{Des Moines}
+LeFransua_town {Le Francois}
+Marigo_town {Marigo}
+Charles_town {Charlestown}
+SanJuan_town {San Juan}
+PortoBello_town {Porto Bello}
+Panama_town			{Panama}
+SantaCatalina_town {Santa Catalina}
+Tortuga_town {Tortuga}
+PortSpein_town {Port of Spain}
+Tenotchitlantown {Tenochtitlan}
+Estate {Oglethorpe Estate, England}
+Caiman_town {Caiman}
+Duel Field {Duel Field}
+Shore1 {Cape Boone}
+Shore2 {Willoughby Bay}
+Shore3 {Rune Bay}
+Shore4 {Cape Harrison}
+Shore5 {Ragged Point Cape}
+Shore6 {Cape Katoche}
+Shore7 {Cozumel Bay}
+Shore8 {Chetumal Bay}
+Shore9 {Amatike Bay}
+Shore10 {Karataska Lagoon}
+Shore11 {Cape Camaguey}
+Shore12 {Anna Maria Bay}
+Shore13 {Batabano Bay}
+Shore14 {Juventud Bay}
+Shore15 {Cape San Antonio}
+Shore16 {Deserted Beach}
+Shore17 {Esmeralda Bay}
+Shore18 {shore of Boca de la Sierra}
+Shore19 {Karupano Bay}
+Shore20 {Los Teques Beach}
+Shore21 {Cape Aruba}
+Shore22 {Palm Beach}
+Shore23 {Calvinist Cape}
+Shore24 {Shore Smuggler's Shelter}
+Shore25 {Covenas Bay}
+Shore26 {Castle Timber Beach}
+Shore27 {Cape Scots Head}
+Shore28 {Morne l'o Bay}
+Shore29 {Capster Beach}
+Shore30 {Grand Bour Bay}
+Shore31 {Cape Inaccessible}
+Shore32 {Cape Isabela}
+Shore33 {Samana Bay}
+Shore34 {Gonaive Bay}
+Shore36 {Portland Bay}
+Shore37 {Guajira Bay}
+Shore38 {La Manten Beach}
+Shore39 {Le Maren Bay}
+Shore40 {Coast of Salvation}
+Shore41 {Stormy Wind Bay}
+Shore42 {Newcastle Bay}
+Shore43 {Bath Beach}
+Shore44 {Aguadilla Bay}
+Shore45 {Fajardo Beach}
+Shore46 {Chiriki Lagoon}
+Shore47 {Mosquitos Bay}
+Shore48 {Darien Bay}
+Shore49 {Papagayo Bay}
+Shore50 {Nikoya Bay}
+Shore51 {Coronado Bay}
+Shore52 {Gulf of Golfo Dulce}
+Shore53 {Mosquito Coast}
+Shore54 {Cape Perlas}
+Shore55 {San Juan del Norte Bay}
+Shore56 {North Gulf}
+Shore57 {South Gulf}
+Shore58 {Fish Eye Beach}
+Shore59 {Scarborough Bay}
+Shore60 {Cape Galera}
+Shore61 {Tepeyakak}
+Shore62 {Istapalapu}
+Shore63 {San Miguel Bay}
+Shore64 {Khael Roa Beach}
+Shore64_1	{}
+Shore65 {Buccaneer Bay}
+Shore66 {Cape Pelican}
+Shore68 {Privateer's Bay}
+Shore69 {Corsair Beach}
+Shore_ship1 {Shipwreck Shore}
+Shore_ship2 {Gulf of Doom}
+Shore_ship3 {Cape of Unfulfilled hopes}
+Mayak1 {Trinidad Lighthouse}
+Mayak2 {Barbados Lighthouse}
+Mayak3 {Port Royal Lighthouse}
+Mayak4 {Guadeloupe Lighthouse}
+Mayak5 {Nevis Lighthouse}
+Mayak6 {Tortuga Lighthouse}
+Mayak7 {Port-au-Prince Lighthouse}
+Mayak8 {Santo Domingo Lighthouse}
+Mayak9 {Santiago Lighthouse}
+Mayak10 {Havana Lighthouse}
+Mayak11 {Cartagena Lighthouse}
+Mayak12 {Cayman Lighthouse}
+Boarding fortyard {Courtyard}
+Boarding bastion1 {Bastion}
+Boarding bastion2 {Bastion}
+Bridgetown {Bridgetown}
+Bridgetown Town {Bridgetown}
+Bridgetown Fort {Bridgetown fort}
+Bridgetown Port {Bridgetown port}
+SanJuan {San Juan}
+SanJuan Town {San Juan}
+SanJuan Fort {San Juan fort}
+SanJuan Port {San Juan port}
+Santiago {Santiago}
+Santiago Town {Santiago}
+Santiago Fort {Santiago fort}
+Santiago Port {Santiago port}
+PuertoPrincipe {Puerto Principe}
+PuertoPrincipe Town {Puerto Principe}
+PuertoPrincipe Fort {Puerto Principe fort}
+PuertoPrincipe Port {Puerto Principe port}
+SentJons {St. John's}
+SentJons Town {St. John's}
+SentJons Fort {St. John's fort}
+SentJons Port {St. John's port}
+PortRoyal {Port Royal}
+PortRoyal Town {Port Royal}
+PortRoyal Fort {Port Royal fort}
+PortRoyal Port {Port Royal port}
+FortOrange {Fort Orange}
+FortOrange Town {Fort Orange}
+FortOrange Fort {Fort Orange fort}
+FortOrange Port {Fort Orange port}
+Villemstad {Willemstad}
+Villemstad Town {Willemstad}
+Villemstad Fort {Willemstad fort}
+Villemstad Port {Willemstad port}
+BasTer {Basse-Terre}
+BasTer Town {Basse-Terre}
+BasTer Fort {Basse-Terre fort}
+BasTer Port {Basse-Terre port}
+LaVega {La Vega}
+LaVega Town			{La Vega}
+LaVega Fort {La Vega fort}
+LaVega Port {La Vega port}
+SantoDomingo Town {Santo Domingo}
+SantoDomingo Fort {Santo Domingo fort}
+SantoDomingo Port {Santo Domingo port}
+PortPax {Port-au-Prince}
+PortPax Town {Port-au-Prince}
+PortPax Fort {Port-au-Prince fort}
+PortPax Port {Port-au-Prince port}
+Pirates {Pirate Settlement}
+Pirates Town {Pirate Settlement}
+Pirates Port {Pirate Settlement port}
+FortFrance {Fort de France}
+FortFrance Town {Fort de France}
+FortFrance Fort {Fort de France fort}
+FortFrance Port {Fort de France port}
+LeFransua {Le Francois}
+LeFransua Town {Le Francois}
+LeFransua Port {Le Francois port}
+Havana {Havana}
+Havana Town {Havana}
+Havana Fort {Havana fort}
+Havana Port {Havana port}
+Charles {Charlestown}
+Charles Town {Charlestown}
+Charles Fort {Charlestown fort}
+Charles Port {Charlestown port}
+PortoBello Town {Porto Bello}
+PortoBello Fort {Porto Bello fort}
+PortoBello Port {Porto Bello port}
+PortSpein {Port of Spain}
+PortSpein Town {Port of Spain}
+PortSpein Fort {Port of Spain fort}
+PortSpein Port {Port of Spain port}
+Tortuga {Tortuga}
+Tortuga Town {Tortuga}
+Tortuga Fort {Tortuga fort}
+Tortuga Port {Tortuga port}
+Marigo {Marigo}
+Marigo Town {Marigo}
+Marigo Fort {Marigo fort}
+Marigo Port {Marigo port}
+Nassau {Nassau}
+Nassau Town {Nassau}
+Nassau Fort {Nassau fort}
+Nassau Port {Nassau port}
+Panama Town			{Panama}
+Panama Fort {Panama fort}
+Panama Port {Panama port}
+Cartahena Town {Cartagena}
+Cartahena Fort {Cartagena fort}
+Cartahena Port {Cartagena port}
+Maracaibo Town {Maracaibo}
+Maracaibo Fort {Maracaibo fort}
+Maracaibo Port {Maracaibo port}
+DesMoines			{Des Moines}
+DesMoines Town		{Des Moines}
+DesMoines Fort		{Des Moines fort}
+DesMoines Port		{Des Moines port}
+FortFrance_town {Fort de France}
+Caracas Town {Caracas}
+Caracas Fort {Caracas fort}
+Caracas Port {Caracas port}
+Cumana Town {Cumana}
+Cumana Fort {Cumana fort}
+Cumana Port {Cumana port}
+SantaCatalina Town {Santa Catalina}
+SantaCatalina Fort {Santa Catalina fort}
+SantaCatalina Port {Santa Catalina port}
+Beliz Town {Belize}
+Beliz Fort {Belize fort}
+Beliz Port {Belize port}
+Caiman {Caiman}
+Caiman Town {Caiman}
+Caiman Fort {Caiman fort}
+Caiman Port {Caiman port}
+Boarding deck		{Upper deck}
+Fort inside {Fort}
+Sea {Sea}
+Jungle {Jungle}
+Street {Streets}
+ExitTown			{Exit to the jungle}
+Graveyard {Graveyard}
+Keeperhouse {Caretaker's House}
+Crypt {Crypt}
+CryptBig2 {Crypta}
+Chapel {Chapel}
+Port {Port}
+Tavern {Tavern}
+Store {Store}
+Shipyard {Shipyard}
+Townhall {Residence}
+TownhallRoom {A room in the residence}
+Residence {Residence}
+PortOffice			{Port Authority}
+Church {Church}
+Incquisitio			{The Inquisition}
+Incas Temple {Inca Temple}
+Labirint {Labyrinth}
+Usurer House {Usurer's house}
+GWIK {Office of the Dutch West India Trading Company}
+GWIKshort			{Office of DWIC}
+House {House}
+Room {Room}
+Cabinet {Cabinet}
+Bedroom {Bedroom}
+Apteka {Pharmacy}
+Exit				{Exit}
+The cavern			{The cave}
+?????				{?????}
+Passage {Bridge}
+Beach {beach}
+Cave {Cave}
+Cave entrance		{Entrance to the cave}
+Grot {Grotto}
+Prison {Prison}
+Lighthouse Inside {lighthouse inside}
+Mines {Mines}
+Dungeon {Dungeon}
+Gate				{Getting Outer Gate}
+Brothel {Brothel}
+Brothel Room {Privacy Room}
+Village {Village}
+Plantation {Plantation}
+UnderWater			{Under water}
+Alcove {Alcove}
+Ruins {Ruins} 
+dungeon_02 {Dungeon}
+BuilderHouse {Architect's house}
+Canyon {Canyon}
+Mines2 {Mines}
+CaimanSmall {Caiman}
+Caiman Mines {Mines}
+Caiman Mines Exit			{Entrance to the mines}
+Caiman Plantation {Plantation}
+Cayman Mines Office {Mine manager's house}
+Caiman Plantation Office {Plantation manager's house}
+Caiman Store House {Warehouse}
+packhouse {Warehouse}
+Arena {Arena}
+FencingTown					{Fencing Town}
+Land Guarding Port {Security base port}
+Land Guarding Fort {Security base fort}
+Land Guarding Head House {House of security base head}
+Reefs {Northern Reefs}
+Grotto {Grotto}
+cabine {Cabin}
+My_Campus {Cabin company}
+My_Deck_Medium {Gun deck}
+My_Deck {Hold}
+Orlop deck {Lower deck}
+Morgan's House {Morgan's House}
+Morris's House {John Morris House}
+Aaron's House {Aaron Mendes Chumaceiro House}
+Comendant's House {Commandant's of Havana house}
+DEstre House {Anri d'Estre's house}
+InesHouse {Ines de Las Sierras house}
+Olone House {House of Francois Olone}
+Ascold House {Askold's house}
+Isabella's House {Isabella's house}
+Rosita's House {Rosita Fernandez's house}
+Loy_House {Edward Law's house}
+Orry_House {Orry Bruce's house}
+MK_House {Master's of Keys house}
+LostShipsCity {LSC}
+LostShipsCity Town {LSC}
+LSC South {South of the City of Abandoned Ships}
+LSC North {North of the City of Abandoned Ships}
+LSC Town			{LSC streets}
+Ava Cabin {Galleon 'Eva'}
+Caroline cabin {Frigate 'Carolina'}
+CeresSmithy cabin {Fluyt 'Ceres Smithy'}
+EsmeraldaStoreBig cabin {Galleon 'Esmeralda'}
+FenixPlatform cabin {Phoenix platform}
+FernandaDiffIndoor cabin {Fluyt 'Fernando Diffindoor'}
+FleuronTavern cabin {Caravel 'Fleuron'}
+FurieShipInside2 cabin {Pinnace 'Fury'}
+GloriaChurch cabin {Galleon 'Gloria'}
+PlutoStoreSmall cabin {Fluyt 'Pluto'}
+ProtectorFisher cabin {Corvette 'Protector'}
+SanAugustineResidence cabin {Varship 'San Augustine'}
+Sangabrielmechanical cabin {Bark 'San Gabriel'}
+SantaFlorentinaShipInside4 cabin {Brig 'Santa Florentina'}
+TartarusPrison cabin {Battleship 'Tartarus'}
+VelascoShipInside1 cabin {Galleon 'Velasco'}
+Tenochtitlan_town {Tenochtitlan}
+Xochiquetzal {Xochiquetzal Temple}
+Mictlantecuhtli {Temple of Mictlantecuhtli}
+Quetzalcoatl {Quetzalcoatl Temple}
+Mixcoatl {Mishcoatl Temple}
+Tezcatlipoca {Tezcatlipoca Temple}
+Chalchiuhtlicue {Chalchiuhtlicue Temple}
+Huitzilopochtli {Huitzilopochtli Temple}
+Tlaloc {Tlaloc Temple}
+Mayahuel {Mayahuel Temple}
+Tonacatecuhtli {Tonacatecuhtli Temple}
+TempleGreatInside {Temple of the Great Life Force}
+TempleRoundInside {Temple of the White Gods}
+TempleSecondInside {Sacrificial Temple}
+TempleUnderwater {Labyrinth}
+DeckWithReefs {Bay of the Damned}
+Reefs_Chapter {Chapter}
+MountainPath {Devil's Gorge}
+WreckedShip {Wrecked Ship}

@@ -1,0 +1,22 @@
+Animation
+{Animations}
+SelectedCostume
+{Selected costume}
+Default
+{common}
+CirassO
+{1'st cirass}
+CirassTw
+{2'nd cirass}
+CirassTh
+{3'rd cirass}
+CirassFo
+{4'th cirass}
+CirassFi
+{5'th cirass}
+SuitO
+{rags}
+SuitTw
+{merchant}
+SuitTh
+{nobleman}

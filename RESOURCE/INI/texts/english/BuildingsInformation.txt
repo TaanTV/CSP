@@ -1,0 +1,27 @@
+newline{}
+Store {Store}
+Store_Info {Opening this building gives the player the opportunity to automatically purchase essential supplies and sell goods extracted from mines and plantations.}
+Shipyard {Shipyard}
+Shipyard_Info	{Opening of the shipyard allows you to repair the ships of your squadron for free.}
+Tavern			{Ttavern}
+Tavern_Info {An open tavern will attract sailors and provide free overnight accommodation.}
+Bank			{Usurer's House}
+Bank_Info {Opening a bank allows residents of the city to take out loans and deposit money.}
+Church {Church}
+Church_Info {Opening a church provides residents with a place to pray and reduces the likelihood of a riot.}
+HeadPort		{Port Authority}
+HeadPort_Info	{Open Port Authority will allow you to store your ships completely free of charge.}
+Expedition {Expedition}
+Expedition_Info	{Expedition will allow the construction of buildings such as a plantation and mines to begin. The opportunity to conduct an expedition appears after the expansion of the colony.}
+StoreHouse {Warehouse}
+StoreHouse_Info	{You can store any goods in the warehouse. In addition, the warehouse can be expanded for greater capacity. Warehouse expansion is available after colony expansion.}
+Plantation {Plantation}
+Plantation_Info	{Plantation allows you to extract sugar and coffee. To begin its construction, you must first make an expedition. In addition, it is possible to expand the plantation for more sugar, slaves and overseers. It is after the expansion that coffee extraction is available.}
+GoldMine {Gold Mine}
+GoldMine_Info	{Construction of this mine will allow the extraction of gold ore along with silver and iron. It is available for construction after the expedition. In addition, it is possible to expand the mine for more mined ore, slaves and overseers.}
+SilverMine {Silver Mine}
+SilverMine_Info	{Construction of this mine will allow the extraction of silver ore along with gold and iron. It is available for construction after the expedition. In addition, it is possible to expand the mine for more mined ore, slaves and overseers.}
+IronMine {Iron Mine}
+IronMine_Info	{Construction of this mine will allow the extraction of iron ore along with silver and gold. It is available for construction after the expedition. In addition, it is possible to expand the mine for more mined ore, slaves and overseers.}
+AllInfo {General information}
+				{Opening each of the main buildings in the colony will improve the morale of the colony. In addition, closed buildings will negatively affect the morale of the population, while open ones, on the contrary, will have a positive effect.}
