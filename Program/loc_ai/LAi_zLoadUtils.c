@@ -1,0 +1,1010 @@
+//новый файл, для усиления защиты
+
+//Город погибших кораблей
+void CreateLostShipsCity(aref loc)
+{
+	int i;
+	if (loc.id == "LostShipsCity_town" && isDay())
+	{
+		ref sld;
+		string sTemp, sLocator;
+		int locNum, n, Index;
+		int qtyTavern = 0;
+		int qtyResidence = 0;
+		int qtyChurch = 0;
+		int qtyPrison = 0;
+		int qtyStore = 0;
+		for(i=0; i<MAX_CHARACTERS; i++)
+		{
+			makeref(sld, characters[i]);
+			if (sld.location == "FleuronTavern") qtyTavern++;
+			if (sld.location == "SanAugustineResidence") qtyResidence++;
+			if (sld.location == "GloriaChurch") qtyChurch++;
+			if (sld.location == "TartarusPrison") qtyPrison++;
+			if (sld.location == "EsmeraldaStoreBig") qtyStore++;
+		}
+		//размещаем нпс
+		for(i=0; i<MAX_CHARACTERS; i++)
+		{
+			makeref(sld, characters[i]);
+			if (CheckAttribute(sld, "city") && sld.city == "LostShipsCity")
+			{
+				//////// если это адмирал /////////
+				if (sld.cityTape == "mayor")
+				{
+					if (GetNpcQuestPastTimeParam(sld, "location") > sti(sld.location.hours))
+					{
+						DeleteAttribute(sld, "location.going"); //снимаем флаг
+						//--> вечером организовываем толпу в таверне
+						if (GetTime() > 19.0 && rand(1))
+						{
+							if (qtyTavern < LSC_MAX_TAVERN)
+							{
+								sld.location.going = "toTavern"; //флаг генерации в таверне
+								qtyTavern++;
+							}
+							continue;
+						}
+						//<-- вечером организовываем толпу в таверне
+						if (sld.location == "SanAugustineResidence") //если адмирал в резиденции
+						{
+							if (rand(1))	//вероятность выхода из резиденции
+							{
+								SaveCurrentNpcQuestDateParam(sld, "location");
+								sld.location.hours = rand(5)+1;
+								if (rand(1))
+								{	//выходим на улицы
+									//проверим занятость локатора
+									if (!LAi_CheckLocatorFree("goto", sld.location.baseLocator))
+									{	//выберем незанятый
+										sTemp = sld.location.baseLocator;
+										sTemp = strcut(sTemp, 4, 5);
+										for (n=0; n<=9; n++)
+										{
+											sLocator = "goto" + sTemp + "_" + n;
+											if (LAi_CheckLocatorFree("goto", sLocator))
+											{
+												LAi_SetLSCoutTypeNoGroup(sld);
+												ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sLocator);
+												break;
+											}
+										}
+									}
+									else
+									{
+										LAi_SetLSCoutTypeNoGroup(sld);
+										ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sld.location.baseLocator);
+									}
+								}
+								else
+								{	//в таверну
+									if (qtyTavern < LSC_MAX_TAVERN)
+									{
+										sld.location.going = "toTavern"; //флаг генерации в таверне
+										qtyTavern++;
+									}
+								}
+							}
+						}
+						else
+						{	//рулим в резиденцию
+							LAi_SetHuberTypeNoGroup(sld); //садим за стол
+							ChangeCharacterAddressGroup(sld, "SanAugustineResidence", "sit", "sit1");
+						}
+					}
+				}
+				//////// если это менты /////////
+				if (sld.cityTape == "ment")
+				{
+					if (GetNpcQuestPastTimeParam(sld, "location") > sti(sld.location.hours))
+					{
+						DeleteAttribute(sld, "location.going"); //снимаем флаг
+						//if (rand(1)) LAi_SetLoginTime(sld, 6.0, 21.99);
+						//else LAi_RemoveLoginTime(sld);
+						//--> вечером организовываем толпу в таверне
+						if (GetTime() > 20.0 && rand(1))
+						{
+							if (qtyTavern < LSC_MAX_TAVERN)
+							{
+								sld.location.going = "toTavern"; //флаг генерации в таверне
+								qtyTavern++;
+							}
+							continue;
+						}
+						//<-- вечером организовываем толпу в таверне
+						if (sld.location == "LostShipsCity_town") //если мент на улице
+						{
+							if (rand(1))
+							{
+								SaveCurrentNpcQuestDateParam(sld, "location");
+								sld.location.hours = rand(5)+1;
+								switch (rand(2))
+								{
+								case 0: //в резиденцию к шефу
+									if (qtyResidence < LSC_MAX_RESIDENCE)
+									{
+										qtyResidence++;
+										LAi_SetWarriorTypeNoGroup(sld);
+										ChangeCharacterAddressGroup(sld, "SanAugustineResidence", "goto", "goto"+qtyResidence);
+									}
+									break;
+								case 1: //в таверну
+									if (qtyTavern < LSC_MAX_TAVERN)
+									{
+										sld.location.going = "toTavern"; //флаг генерации в таверне
+										qtyTavern++;
+									}
+									break;
+								case 2: //в тюрьму
+									if (qtyPrison < LSC_MAX_PRISON)
+									{
+										qtyPrison++;
+										LAi_SetWarriorTypeNoGroup(sld);
+										ChangeCharacterAddressGroup(sld, "TartarusPrison", "goto", "goto"+qtyPrison);
+									}
+									break;
+								}
+							}
+						}
+						else
+						{	//возвращемся на варшип
+							//проверим занятость локатора
+							if (!LAi_CheckLocatorFree("goto", sld.location.baseLocator))
+							{	//выберем незанятый
+								sTemp = sld.location.baseLocator;
+								sTemp = strcut(sTemp, 4, 5);
+								for (n=0; n<=9; n++)
+								{
+									sLocator = "goto" + sTemp + "_" + n;
+									if (LAi_CheckLocatorFree("goto", sLocator))
+									{
+										LAi_SetLSCoutTypeNoGroup(sld);
+										ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sLocator);
+										break;
+									}
+								}
+							}
+							else
+							{
+								LAi_SetLSCoutTypeNoGroup(sld);
+								ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sld.location.baseLocator);
+							}
+						}
+					}
+				}
+				//////// если внешний горожанин /////////
+				if (sld.cityTape == "citizen")
+				{
+					if (GetNpcQuestPastTimeParam(sld, "location") > sti(sld.location.hours))
+					{
+						DeleteAttribute(sld, "location.going"); //снимаем флаг
+						LAi_SetLoginTime(sld, 6.0, 21.99);
+						//--> вечером организовываем толпу в таверне
+						if (GetTime() > 19.0 && sld.sex == "man" && rand(1))
+						{
+							if (qtyTavern < LSC_MAX_TAVERN)
+							{
+								sld.location.going = "toTavern"; //флаг генерации в таверне
+								qtyTavern++;
+							}
+							continue;
+						}
+						//<-- вечером организовываем толпу в таверне
+						if (sld.location == "LostShipsCity_town") //если горожанин на улице
+						{
+							if (rand(1))
+							{
+								SaveCurrentNpcQuestDateParam(sld, "location");
+								sld.location.hours = rand(3)+1;
+								switch (rand(2))
+								{
+								case 0: //в церковь
+									if (qtyChurch < LSC_MAX_CHURCH)
+									{
+										sld.location.going = "toChurch"; //флаг генерации в церкви
+										qtyChurch++;
+									}
+									break;
+								case 1: //в таверну
+									if (qtyTavern < LSC_MAX_TAVERN)
+									{
+										sld.location.going = "toTavern"; //флаг генерации в таверне
+										qtyTavern++;
+									}
+									break;
+								case 2: //в магазин
+									if (qtyStore < LSC_MAX_STORE)
+									{
+										sld.location.going = "toStore"; //флаг генерации в магазине
+										qtyStore++;
+									}
+									break;
+								}
+							}
+						}
+						else
+						{	//возвращемся на свой корабль
+							//проверим занятость локатора
+							if (!LAi_CheckLocatorFree("goto", sld.location.baseLocator))
+							{	//выберем незанятый
+								sTemp = sld.location.baseLocator;
+								sTemp = strcut(sTemp, 4, 5);
+								for (n=0; n<=9; n++)
+								{
+									sLocator = "goto" + sTemp + "_" + n;
+									if (LAi_CheckLocatorFree("goto", sLocator))
+									{
+										LAi_SetLSCoutTypeNoGroup(sld);
+										ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sLocator);
+										break;
+									}
+								}
+							}
+							else
+							{
+								LAi_SetLSCoutTypeNoGroup(sld);
+								ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sld.location.baseLocator);
+							}
+						}
+					}
+				}
+				//////// если домашний горожанин /////////
+				if (sld.cityTape == "citizenHome")
+				{
+					if (GetNpcQuestPastTimeParam(sld, "location") > sti(sld.location.hours))
+					{
+						DeleteAttribute(sld, "location.going"); //снимаем флаг
+						LAi_SetLoginTime(sld, 6.0, 21.99);
+						//--> вечером организовываем толпу в таверне
+						if (GetTime() > 19.0 && sld.sex == "man" && rand(1))
+						{
+							if (qtyTavern < LSC_MAX_TAVERN)
+							{
+								sld.location.going = "toTavern"; //флаг генерации в таверне
+								qtyTavern++;
+							}
+							continue;
+						}
+						//<-- вечером организовываем толпу в таверне
+						if (sld.location == sld.location.baseLocation) //если горожанин у себя дома
+						{
+							if (rand(1))
+							{
+								SaveCurrentNpcQuestDateParam(sld, "location");
+								sld.location.hours = rand(6)+1;
+								switch (rand(3))
+								{
+								case 0: //в церковь
+									if (qtyChurch < LSC_MAX_CHURCH)
+									{
+										sld.location.going = "toChurch"; //флаг генерации в церкви
+										qtyChurch++;
+									}
+									break;
+								case 1: //в таверну
+									if (qtyTavern < LSC_MAX_TAVERN)
+									{
+										sld.location.going = "toTavern"; //флаг генерации в таверне
+										qtyTavern++;
+									}
+									break;
+								case 2: //в магазин
+									if (qtyStore < LSC_MAX_STORE)
+									{
+										sld.location.going = "toStore"; //флаг генерации в магазине
+										qtyStore++;
+									}
+									break;
+								case 3: //на улицы
+									//проверим занятость локатора
+									if (!LAi_CheckLocatorFree("goto", sld.location.baseLocator))
+									{	//выберем незанятый
+										sTemp = sld.location.baseLocator;
+										sTemp = strcut(sTemp, 4, 5);
+										for (n=0; n<=9; n++)
+										{
+											sLocator = "goto" + sTemp + "_" + n;
+											if (LAi_CheckLocatorFree("goto", sLocator))
+											{
+												LAi_SetLSCoutTypeNoGroup(sld);
+												ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sLocator);
+												break;
+											}
+										}
+									}
+									else
+									{
+										LAi_SetLSCoutTypeNoGroup(sld);
+										ChangeCharacterAddressGroup(sld, "LostShipsCity_town", "goto", sld.location.baseLocator);
+									}
+									break;
+								}
+							}
+						}
+						else
+						{	//возвращемся на свой корабль
+							LAi_SetOwnerTypeNoGroup(sld);
+							ChangeCharacterAddressGroup(sld, sld.location.baseLocation, "barmen", "stay");
+						}
+					}
+				}
+			}
+		}
+	}
+	//------------------- таверна ------------------------
+	if (loc.id == "FleuronTavern")
+	{
+		for(i=0; i<MAX_CHARACTERS; i++)
+		{
+			makeref(sld, characters[i]);
+			if (CheckAttribute(sld, "location.going") && sld.location.going == "toTavern")
+			{
+				DeleteAttribute(sld, "location.going");
+				LAi_RemoveLoginTime(sld);
+				if (sld.sex == "man")
+				{
+					DeleteAttribute(sld, "nonTable");
+					LAi_SetSitTypeNoGroup(sld);
+					if (sld.id == "LSCMayor")
+						ChangeCharacterAddressGroup(sld, loc.id, "quest", "head_sit");
+					else
+						PlaceCharacter(sld, "sit", "random_free");
+				}
+				else
+				{
+					LAi_SetCitizenTypeNoGroup(sld);
+					PlaceCharacter(sld, "goto", "random_free");
+				}
+			}
+		}
+	}
+	//------------------- церковь ------------------------
+	if (loc.id == "GloriaChurch")
+	{
+		//сам падре
+		if (!isDay())
+		{
+			Index = GetCharacterIndex("LSC_Priest");
+			if (Index != -1)
+			{
+				sld = &characters[Index];
+				LAi_SetSitTypeNoGroup(sld);
+				PlaceCharacter(sld, "quest", "priest");
+			}
+		}
+		else
+		{
+			for(i=0; i<MAX_CHARACTERS; i++)
+			{
+				makeref(sld, characters[i]);
+				//падре днём
+				if (sld.id == "LSC_Priest")
+				{
+					LAi_SetPriestTypeNoGroup(sld);
+					ChangeCharacterAddressGroup(sld, sld.location, "barmen",  "stay");
+				}
+				//граждане
+				if (CheckAttribute(sld, "location.going") && sld.location.going == "toChurch")
+				{
+					DeleteAttribute(sld, "location.going");
+					if (sld.sex == "woman")
+					{
+						LAi_SetCitizenTypeNoGroup(sld);
+						PlaceCharacter(sld, "goto", "random_free");
+					}
+					else
+					{
+						sld.nonTable = true;
+						LAi_SetSitTypeNoGroup(sld);
+						PlaceCharacter(sld, "sit", "random_free");
+					}
+				}
+			}
+		}
+	}
+	//------------------- магазин ------------------------
+	if (loc.id == "EsmeraldaStoreBig")
+	{
+		for(i=0; i<MAX_CHARACTERS; i++)
+		{
+			makeref(sld, characters[i]);
+			if (CheckAttribute(sld, "location.going") && sld.location.going == "toStore")
+			{
+				DeleteAttribute(sld, "location.going");
+                LAi_SetStayTypeNoGroup(sld);
+				PlaceCharacter(sld, "goto", "random_free");
+			}
+		}
+	}
+	//------------------- тюрьма -------------------
+	if (loc.id == "TartarusPrison")
+	{
+		Index = GetCharacterIndex("LSC_PrisonerHead");
+		if (Index != -1)
+		{
+			sld = &characters[Index];
+			if (GetNpcQuestPastDayParam(sld, "location") > sti(sld.location.days))
+			{
+				SaveCurrentNpcQuestDateParam(sld, "location");
+				if (rand(1))
+				{
+					LAi_SetHuberTypeNoGroup(sld);
+					ChangeCharacterAddressGroup(sld, loc.id, "sit", "sit1");
+				}
+				else
+				{
+					LAi_SetWarriorTypeNoGroup(sld);
+					PlaceCharacter(sld, "goto", "random_free");
+				}
+			}
+		}
+		Index = GetCharacterIndex("LSC_Prisoner1");
+		if (Index != -1)
+		{
+			sld = &characters[Index];
+			if (GetNpcQuestPastTimeParam(sld, "location") > sti(sld.location.hours))
+			{
+				SaveCurrentNpcQuestDateParam(sld, "location");
+				if (rand(1))
+				{
+					LAi_SetSitTypeNoGroup(sld);
+					ChangeCharacterAddressGroup(sld, loc.id, "sit", "sit2");
+				}
+				else
+				{
+					LAi_SetWarriorTypeNoGroup(sld);
+					PlaceCharacter(sld, "goto", "random_free");
+				}
+			}
+		}
+	}
+}
+
+void CreatPlantation(aref loc)
+{
+	if (loc.id == "Plantation_Sp1")
+	{
+		bool ok = false;
+		if (CheckAttribute(Pchar,"questTemp.CapBloodLine") && Pchar.questTemp.CapBloodLine == false) ok = true;
+		if (startHeroType != 1 || ok)
+		{
+			if (!CheckAttribute(pchar,"AlreadyPlantRuler"))
+			{
+				ref ch = GetCharacter(NPC_GenerateCharacter("PlantRuler", "off_eng_"+(rand(1)+1), "man", "man", 30, ENGLAND, 1, true));
+				ch.greeting = "soldier_common";
+				ch.name 	= GetConvertStr("Variable_LAi_zLoadUtils_0.1", "Names.txt");
+				ch.lastname = GetConvertStrWithReplace("Variable_LAi_zLoadUtils_1", "Names.txt", "#space#", " ");
+				ch.City = "Bridgetown";
+				ch.Dialog.Filename = "PlantRuler.c";
+				ch.dialog.currentnode   = "Meet";
+				LAi_SetCitizenType(ch);
+				LAi_group_MoveCharacter(ch, "ENGLAND_CITIZENS");
+				LAi_SetImmortal(ch, true);
+				DeleteAttribute(ch,"lifeDay");
+				pchar.AlreadyPlantRuler = true;
+				ch.SlavesLimit = 250+rand(750);
+				ChangeCharacterAddressGroup(ch, pchar.location, "goto",  "goto1");
+			}
+		}
+		return;
+	}
+    if (loc.id != "Bridgetown_Plantation") return;
+    if(LAi_IsCapturedLocation) // fix нефиг грузить, когда город трупов или боевка
+	{
+		return;
+	}
+	if (GetNpcQuestPastDayWOInit(loc, "Plantation_date") < 2) return;
+
+	int iColony = -1;
+	int iNation = -1;
+
+    iColony = FindColony("Bridgetown");
+
+	if(iColony == -1)
+	{
+		return;
+	}
+
+	iNation = GetCityNation("Bridgetown");
+
+	if(iNation == -1)
+	{
+		return;
+	}
+	SaveCurrentNpcQuestDateParam(loc, "Plantation_date");
+	int iCitizensQuantity, iModel;
+	ref chr;
+	aref st;
+	int iChar, i, iSex;
+	string slai_group, locatorName, sType;
+    slai_group = GetNationNameByType(iNation)  + "_citizens";
+	int num, iRank;
+	string sAnime;
+	object models;
+	// просто работники
+    models.s0 = "prizon_1";
+    models.s1 = "prizon_2";
+    models.s2 = "prizon_3";
+    models.s3 = "prizon_4";
+    models.s4 = "prizon_5";
+    models.s5 = "prizon_6";
+    models.s6 = "prizon_7";
+	models.s7 = "prizon_8";
+    models.s8 = "pirate_1";
+    models.s9 = "prison_5";
+    models.s10 = "pirate_1";
+    models.s11 = "pirate_11";
+    models.s12 = "pirate_12";
+    models.s13 = "pirate_13";
+    models.s14 = "pirate_14";
+    models.s15 = "pirate_15";
+    models.s16 = "pirate_16";
+    models.s17 = "pirate_21";
+    models.s18 = "pirate_25";
+    models.s19 = "PKM_rab_1";
+    models.s20 = "PKM_rab_2";
+    models.s21 = "PKM_rab_3";
+    models.s22 = "PKM_rab_4";
+	RandomShuffle(&models);
+    num = rand(3) + 7; //количество
+    for (i = 0; i < num; i++)
+    {
+		sType = "s" + (i % 23);
+		sAnime = "man";
+		chr = GetCharacter(NPC_GenerateCharacter("Slave_"+i, models.(sType), "man", sAnime, 7, ENGLAND, 2, false));
+		//chr.dialog.Filename = "Pearl_dialog.c";
+		chr.dialog.filename = "Quest\CapBloodLine\questNPC.c";
+		//chr.dialog.currentnode = "PearlMan";
+		chr.greeting = "Gr_slave";
+		chr.CityType = "citizen";
+		chr.city = Colonies[iColony].id;
+		LAi_SetLoginTime(chr, 6.0, 22.99);
+
+		PlaceCharacter(chr, "goto", "random_free");
+		LAi_SetCitizenType(chr);
+		LAi_group_MoveCharacter(chr, slai_group);
+    }
+	if (checkAttribute(loc, "soldiers") && CheckAttribute(loc, "locators.soldiers"))
+	{
+ 		if(iNation == PIRATE)
+		{
+            sType = "mushketer_" + (rand(4)+1);
+		}
+		else
+		{
+            sType = NationShortName(iNation) + "_mush_" + (rand(2)+1);
+		}
+		chr = GetCharacter(NPC_GenerateCharacter("GenChar_", sType, "man", "mushketer", sti(pchar.rank), iNation, 2, false));
+		chr.id = "GenChar_" + chr.index;
+		chr.reputation = 10 + rand(80);// репа всем горожанам
+		chr.City = Colonies[iColony].id;
+        chr.CityType = "soldier";
+		chr.greeting = "soldier_common";
+		chr.MusketerDistance = 0;
+		LAi_SetLoginTime(chr, 6.0, 23.0); //а ночью будет беготня от патруля :)
+
+		LAi_SetPatrolType(chr);
+        if (sti(Colonies[iColony].HeroOwn) == true)
+		{
+			LAi_group_MoveCharacter(chr, LAI_GROUP_PLAYER_OWN);
+			chr.greeting = "pirat_guard";
+		}
+		else
+		{
+			LAi_group_MoveCharacter(chr, slai_group);
+		}
+		chr.dialog.filename = "Common_Soldier.c";
+		chr.dialog.currentnode = "first time";
+		ChangeCharacterAddressGroup(chr, pchar.location, "soldiers", "soldier1");
+	}
+	// солдаты <--
+	// патруль -->
+	if (checkAttribute(loc, "soldiers") && CheckAttribute(loc, "locators.patrol"))
+	{
+		makearef(st, loc.locators.patrol);
+		iCitizensQuantity = GetAttributesNum(st);
+		if(iCitizensQuantity > 10)
+		{
+			iCitizensQuantity = 10;
+		}
+		for (i=0; i<iCitizensQuantity-3; i++)
+		{
+            if(iNation != PIRATE && LAi_IsCapturedLocation == 0)
+			{
+                sType = "soldier";
+				iChar = NPC_GeneratePhantomCharacter("soldier", iNation, MAN, 2);
+			}
+			else
+			{
+                sType = "pirate";
+				iChar = NPC_GeneratePhantomCharacter("pirate", iNation, MAN, 2);
+			}
+			chr = &characters[iChar];
+			SetNPCModelUniq(chr, sType, MAN);
+			chr.City = Colonies[iColony].id;
+            chr.CityType = "soldier";
+            SetFantomParamFromRank(chr, sti(pchar.rank)+MOD_SKILL_ENEMY_RATE*3, true); // бравые орлы
+			chr.RebirthPhantom = true;
+			LAi_CharacterReincarnation(chr, true, true);
+			LAi_SetReincarnationRankStep(chr, MOD_SKILL_ENEMY_RATE*3+2); //задаем шаг на увеличение ранга фантомам на реинкарнацию
+			LAi_SetLoginTime(chr, 0.0, 24.0);
+			LAi_SetPatrolType(chr);
+
+            if (sti(Colonies[iColony].HeroOwn) == true)
+			{
+				LAi_group_MoveCharacter(chr, LAI_GROUP_PLAYER_OWN);
+				chr.greeting = "pirat_guard";
+			}
+			else
+			{
+				LAi_group_MoveCharacter(chr, slai_group);
+				chr.greeting = "soldier_common";
+			}
+			PlaceCharacter(chr, "patrol", "random_free");
+			if(CheckAttribute(Pchar, "questTemp.CapBloodLine") && Pchar.questTemp.CapBloodLine == true)  // Линейка Блада
+			{
+                chr.dialog.filename = "Quest\CapBloodLine\questNPC.c";
+            }
+            else
+            {
+                chr.dialog.filename = "Common_Soldier.c";
+            }
+			chr.dialog.currentnode = "first time";
+		}
+	}
+	// патруль <--
+	// грузчики -->
+	if (loc.type == "town" && CheckAttribute(loc, "carrier") && IsLoginTime())
+	{
+		int iTemp;
+		int iQtyCarrier = rand(2) + 2;
+		string locReload[5];
+		locReload[0] = "houseSp1";
+		locReload[1] = "houseS1";
+		locReload[2] = "houseF1";
+		locReload[3] = "houseF2";
+		locReload[4] = "houseS2";
+		string CarrierName[10];
+		CarrierName[0] = "GenresBag1";
+		CarrierName[1] = "GenresBag2";
+		CarrierName[2] = "GenresBarrel1";
+		CarrierName[3] = "GenresBarrel2";
+		CarrierName[4] = "GenresBarrelTop1";
+		CarrierName[5] = "GenresBarrelTop2";
+		CarrierName[6] = "GenresBottle1";
+		CarrierName[7] = "GenresBottle2";
+		CarrierName[8] = "GenresChest1";
+		CarrierName[9] = "GenresChest2";
+		for (i=iQtyCarrier; i>0; i--)
+		{
+			//выберем уникальную для этой локации модельку
+			iSex = 1;
+			while (iSex == 1)
+			{
+				iTemp = rand(9);
+				if (CarrierName[iTemp] != "") iSex = 0;
+			}
+			chr = GetCharacter(NPC_GenerateCharacter("Carrier", CarrierName[iTemp], "man", "genres", 35, iNation, 2, false));
+			chr.id = chr.id + "_" + chr.index;
+			aref aLocator;
+			makearef(aLocator, loc.locators.reload);
+			CarrierName[iTemp] = ""; //имя модельки уберем из списка
+			LAi_SetImmortal(chr, true);
+			iSex = 1;
+			while (iSex == 1)
+			{
+				iTemp = rand(4);
+				if (CheckAttribute(aLocator, locReload[iTemp]) && locReload[iTemp] != "")
+				{
+					chr.firstLoc = locReload[iTemp];
+					chr.firstLoc.timer = rand(7) + 3;
+					locReload[iTemp] = "";
+					iSex = 0;
+				}
+			}
+			ChangeCharacterAddressGroup(chr, loc.id, "reload", "gate");
+			LAi_SetCarrierType(chr);
+			LAi_SetLoginTime(chr, 6.0, 23.0);//homo ночью пусть спят
+			LAi_group_MoveCharacter(chr, slai_group);
+		}
+	}
+	// грузчики <--
+}
+
+void CreatUnderwater(aref loc)
+{
+	if (loc.type == "underwater")
+	{
+		if (CheckAttribute(loc, "type.LSC"))
+		{
+			LocatorReloadEnterDisable("LostShipsCity_town", "reload73", true);
+			pchar.questTemp.LSC.immersions.pay = false; //оплаченное погружение использовано
+			pchar.questTemp.LSC.immersions = sti(pchar.questTemp.LSC.immersions);
+			SetShowTimer(400.0); //таймер
+			for (int i=1; i<=22; i++)
+			{
+				if (GetCharacterIndex("Crab_"+i) == -1)
+				{
+					sld = GetCharacter(NPC_GenerateCharacter("Crab_"+i, "crabBig", "crab", "crabBig", 40+(MOD_SKILL_ENEMY_RATE*3), PIRATE, -1, false));
+					GiveItem2Character(sld, "unarmed");
+					EquipCharacterbyItem(sld, "unarmed");
+					LAi_SetWarriorType(sld);
+					LAi_warrior_SetStay(sld, true);
+					LAi_warrior_DialogEnable(sld, false);
+					LAi_group_MoveCharacter(sld, LAI_GROUP_MONSTERS);
+					PlaceCharacter(sld, "goto", "random_free");
+				}
+			}
+		}
+		else
+		{
+			SetShowTimer(80.0); //таймер
+		}
+	}
+}
+
+void CreatTenochtitlan(aref loc)
+{
+	if (loc.id == "Tenochtitlan")
+	{
+		int i;
+		//проверяем наличие тотемов у ГГ, чтобы купленным дать shown
+		if (locations[reload_cur_location_index].id == "Tenotchitlan_Jungle_06")
+		{	//срабатывает только, если заходим из джунглей
+			ref itm;
+			string sTemp;
+			for (i=1; i<=15; i++)
+			{
+				if (i == 11) continue;
+				sTemp = "Totem_" + i;
+				if (CheckCharacterItem(pchar, sTemp))
+				{
+					itm = ItemsFromID(sTemp);
+					//если тотем ещё не использован, то помечаем на укладку в button
+					if (!CheckAttribute(itm, "shown.used"))
+					{
+						itm.shown = 0;
+					}
+				}
+			}
+		}
+		else
+		{
+			//близнецов расставим иначе
+			int iTemp;
+			for (i=1; i<=2; i++)
+			{
+				iTemp = GetCharacterIndex("AztecCitizen_"+i);
+				if (iTemp != -1)
+				{
+					PlaceCharacter(&characters[iTemp], "goto", "random_free");
+				}
+			}
+		}
+	}
+}
+
+void CreatTenochtitlanInside(aref loc)
+{
+	if (loc.type == "teno_inside")
+	{
+		ref chr;
+		int modelQty, warriorQty, warriorRank, i, n;
+		object models;
+		string sLocator;
+		//----------------- генерим войнов в малых храмах богов -----------------
+		if (CheckAttribute(loc, "smallGodTemple"))
+		{
+			LAi_group_Delete("EnemyFight");
+			chrDisableReloadToLocation = true;
+			//определим кол-во войнов в храме
+			//Boyer mod: 3 warriors is very difficult, they will always outrank, have poison and very deadly weapon...and is enough.  At 10 = Impossible, there will be 4
+			//#20170318-33
+			warriorQty = makeint(MOD_SKILL_ENEMY_RATE*3 / 2.5);
+			if (warriorQty < 3) warriorQty = 3;
+			//определим ранг войнов. обработаем от сложности, но не менее 15 уровня
+			warriorRank = GetCoffDiff(sti(pchar.rank), 1000);
+			if (warriorRank < 11) warriorRank = 11;
+			//инкремент на кол-во посещений
+			loc.smallGodTemple = sti(loc.smallGodTemple) + 1;
+			warriorRank = warriorRank + sti(loc.smallGodTemple) * 4;
+
+			//генерим ацтеков с неповторяемыми модельками
+			modelQty = 5;
+		    models.s0 = "AztecWarrior1";
+			models.s1 = "AztecWarrior2";
+			models.s2 = "AztecWarrior3";
+			models.s3 = "AztecWarrior4";
+			models.s4 = "AztecWarrior5";
+			RandomShuffle(&models);
+
+			for (i = 0; i < warriorQty; i++)
+			{
+				sLocator = "s" + (i % modelQty);
+				chr = GetCharacter(NPC_GenerateCharacter("AztecWarrior"+loc.index+"_"+i, models.(sLocator), "skeleton", "man", warriorRank, PIRATE, 0, true));
+				SetFantomParamFromRank(chr, warriorRank, true);
+				while (FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE) != "")
+				{
+					TakeItemFromCharacter(chr, FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE));
+				}
+				while (FindCharacterItemByGroup(chr, GUN_ITEM_TYPE) != "")
+				{
+					TakeItemFromCharacter(chr, FindCharacterItemByGroup(chr, GUN_ITEM_TYPE));
+				}
+				GiveItem2Character(chr, "toporAZ");
+				EquipCharacterbyItem(chr, "toporAZ");
+				SetCharacterPerk(chr, "Energaiser");
+				if (sti(loc.smallGodTemple) > 3 && MOD_SKILL_ENEMY_RATE*3 > 1)
+				{
+					SetCharacterPerk(chr, "SwordplayProfessional");
+					SetCharacterPerk(chr, "AdvancedDefense");
+					SetCharacterPerk(chr, "CriticalHit");
+					SetCharacterPerk(chr, "Sliding");
+					TakeNItems(chr,"potion1", rand(MOD_SKILL_ENEMY_RATE)+1);
+				}
+				PlaceCharacter(chr, "goto", "random_free");
+				LAi_SetWarriorType(chr);
+				LAi_group_MoveCharacter(chr, "EnemyFight");
+			}
+			LAi_group_SetRelation("EnemyFight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups("EnemyFight", LAI_GROUP_PLAYER, false);
+			LAi_group_SetCheck("EnemyFight", "OpenTheDoors");
+		}
+		//----------------- генерим войнов в большом храме -----------------
+		if (CheckAttribute(loc, "greatTemple") && locations[reload_cur_location_index].id == "Tenochtitlan")
+		{
+			//определим кол-во войнов в храме
+			//warriorQty = 4;
+			//if (MOD_SKILL_ENEMY_RATE > 2) warriorQty = 5;
+			//if (MOD_SKILL_ENEMY_RATE <= 1) warriorQty = 3;
+			//Boyer mod: 3 warriors is very difficult, they will always outrank, have poison and very deadly weapon...and is enough.  At 10 = Impossible, there will be 4
+			//#20170318-33
+			warriorQty = makeint(MOD_SKILL_ENEMY_RATE*3 / 2.5);
+			if (warriorQty < 3) warriorQty = 3;
+			warriorRank = GetCoffDiff(sti(pchar.rank), 1000);
+			if (warriorRank < 20) warriorRank = 20;
+
+			//генерим ацтеков с неповторяемыми модельками
+			modelQty = 5;
+		    models.s0 = "AztecWarrior1";
+			models.s1 = "AztecWarrior2";
+			models.s2 = "AztecWarrior3";
+			models.s3 = "AztecWarrior4";
+			models.s4 = "AztecWarrior5";
+
+			for (n=1; n<=7; n++)
+			{
+				RandomShuffle(&models);
+
+                for (i = 0; i < warriorQty; i++)
+                {
+					sLocator = "s" + (i % modelQty);
+					chr = GetCharacter(NPC_GenerateCharacter("AztecWarrior"+loc.index+"_"+n+""+i, models.(sLocator), "skeleton", "man", warriorRank, PIRATE, 0, true));
+					SetFantomParamFromRank(chr, 15, true);
+					while (FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE) != "")
+					{
+						TakeItemFromCharacter(chr, FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE));
+					}
+					while (FindCharacterItemByGroup(chr, GUN_ITEM_TYPE) != "")
+					{
+						TakeItemFromCharacter(chr, FindCharacterItemByGroup(chr, GUN_ITEM_TYPE));
+					}
+					GiveItem2Character(chr, "toporAZ");
+					EquipCharacterbyItem(chr, "toporAZ");
+					SetCharacterPerk(chr, "Energaiser");
+					if (MOD_SKILL_ENEMY_RATE > 1)
+					{
+						SetCharacterPerk(chr, "SwordplayProfessional");
+						SetCharacterPerk(chr, "AdvancedDefense");
+						SetCharacterPerk(chr, "CriticalHit");
+						SetCharacterPerk(chr, "Sliding");
+						TakeNItems(chr,"potion1", rand(MOD_SKILL_ENEMY_RATE)+1);
+					}
+					sLocator = "monster"+n;
+					ChangeCharacterAddressGroup(chr, loc.id, "monsters", sLocator+(i+1));
+					LAi_SetWarriorType(chr);
+					LAi_warrior_SetStay(chr, true);
+					LAi_warrior_DialogEnable(chr, false);
+					LAi_group_MoveCharacter(chr, LAI_GROUP_MONSTERS);
+				}
+			}
+			//#20191011-01
+			LAi_group_SetRelation(LAI_GROUP_MONSTERS, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+		}
+	}
+}
+
+void CreatDesMoines(aref loc)
+{
+	ref chr;
+	bool bImmortal, bNoSkeletons;
+	int i;
+	string sSex, sNode, sModel, sAttr;
+	object models;
+	if (pchar.questTemp.MC != "Incquisitio" && CheckAttribute(pchar, "questTemp.MCzagadka"))
+	{
+		bNoSkeletons = (GetHour() > 6.0) && (GetHour() < 21.99);
+		bNoSkeletons = bNoSkeletons || (pchar.questTemp.MC == "over");
+		
+		if (bNoSkeletons)
+		{
+			sld = CharacterFromID("Fernando Torres");
+			sld.sex = "man";
+			sld.dialog.filename = "Quest\MagicCity.c";
+			sld.dialog.currentnode = "DMCitizHead";
+			sld.model	= "reservist_8";
+			sld.model.animation = "man";
+			
+			sld = CharacterFromID("DesMoines_tavernkeeper");
+			sld.model	= "barmen_11";
+			sld.model.animation = "man";
+		}
+		else
+		{
+			sld = CharacterFromID("Fernando Torres");
+			sld.sex = "man";
+			sld.dialog.filename = "Quest\MagicCity.c";
+			sld.dialog.currentnode = "DMSkelHead";
+			sld.model	= "skeletcap";
+			sld.model.animation = "man";
+			
+			sld = CharacterFromID("DesMoines_tavernkeeper");
+			sld.model	= "skel2";
+			sld.model.animation = "skeleton";
+		}
+		
+		if (loc.id == "DesMoines_town")
+		{
+			if (bNoSkeletons)
+			{
+				models.s0 = "citiz_11";
+				models.s1 = "citiz_3";
+				models.s2 = "citiz_5";
+				models.s3 = "citiz_9";
+				models.s4 = "citiz_11";
+				models.s5 = "shipowner_1";
+				models.s6 = "shipowner_12";
+				models.s7 = "shipowner_2";
+				models.s8 = "trader_4";
+				models.s9 = "barmen_6";
+				sSex = "man";
+				sNode = "DMCitiz";
+				sModel = "Hobart";
+				bImmortal = false;
+			}
+			else
+			{
+				models.s0 = "skel1";
+				models.s1 = "skel2";
+				models.s2 = "skel3";
+				models.s3 = "skel4";
+				models.s4 = "skel1";
+				models.s5 = "skel2";
+				models.s6 = "skel3";
+				models.s7 = "skel4";
+				models.s8 = "skel1";
+				models.s9 = "skel2";
+				sSex = "skeleton"
+				sNode = "DMSkel";
+				sModel = "skeletcap";
+				bImmortal = true;
+			}
+			RandomShuffle(&models);
+			for(i=0; i < 8; i++)
+			{
+				sAttr = "s" + i;
+				chr = GetCharacter(NPC_GenerateCharacter("MCCitiz_"+i, models.(sAttr), sSex, "man", 15, SPAIN, 0, true));
+				chr.dialog.filename = "Quest\MagicCity.c";
+				chr.dialog.currentnode = sNode;
+				chr.greeting = "cit_common";
+				chr.city = "DesMoines";
+				LAi_RemoveLoginTime(chr);
+				LAi_SetImmortal(chr, bImmortal);
+				LAi_LoginInCaptureTown(chr, true);
+				PlaceCharacter(chr, "goto", "random_free");
+				LAi_SetCitizenType(chr);
+				LAi_group_MoveCharacter(chr, "SPAIN_CITIZENS");
+			}
+		}
+	}
+}

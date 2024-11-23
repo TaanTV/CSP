@@ -1,0 +1,682 @@
+#QUEST	Tutorial_Eng
+
+Help: What is going on in England?
+
+#TEXT	1
+
+    England has been going through hard times for about a hundred years. King Henry VIII of England could not divorce his first wife Catherine of Aragon, the Pope did not allow him to do so. But then the English Archbishop Cranmer stepped in, he offered Henry to give himself a divorce, since he was "the anointed of God", and in 1534 Henry VIII declared himself "the head of the church" by a parliamentary statute, thus separating the English church from the power of Rome. Henry VIII was not satisfied with one divorce, he had six wives in total, two of whom, Anne Boleyn and her cousin Catherine Howard, shamelessly sent to the block. Since then, there has been no peace on English soil. Mary Tudor tried to bring the church back under the authority of the Pope, but Jean Calvin changed England, it became Puritanical.
+
+    The civil war between Charles I and Oliver Cromwell ended with the execution of the King of England. The Independent Republic (1649-1660) did not bring peace to England, ten years of Puritanical power tired all Englishmen in the Old World. And in the spring of 1660, they returned the English throne to Charles II Stuart, the son of the executed Charles I.
+
+    Truly, one cannot entrust the fate of the state to religious fanatics! Was it worth shedding rivers of blood, depriving the king of power and head, in order to return the throne to his son in ten years?
+
+    The recent war between England and Spain in 1655 battered both powers, but the Spaniards to a greater extent, they even lost Jamaica. So there is now peace between Spain and England and the letters of marque issued by the British have been annulled. It's just nonsense, the Spaniards were robbed before, they are robbed now, there is too much innocent blood on them.
+
+    Since 1664, the Governor of Jamaica, Sir Thomas Madiford, has been running everything here. Upon arrival in Port Royal, he had clear orders from Charles II to curb piracy and maintain good trade relations with Spain. But he is not going to carry out the order of the King of England, although he pretends to do so.
+
+    Sir Thomas Madiford was previously the Governor of Barbados. When Cromwell came to power, Barbados, through Madiford's efforts, did not recognize the new British government. I see, he wanted independence. But Cromwell is not the Oliver who forgives such tricks, he sent a squadron to pacify. Madiford resisted for show, but quickly reached an agreement with the Puritans and returned Barbados to the bosom of the metropolis. And after the coronation of Charles II to the British throne, Sir Thomas Madiford was appointed governor of Jamaica, they say, at the suggestion of influential relatives from Charles's entourage.
+
+    Well, Sir Thomas Madiford, the governor of Jamaica is a big fan of the yellow devil. His favorites include the leader of the Buccaneers, the Dutchman from Curacao, Edward Mansfield, but Henry Morgan is not deprived of attention either. Who would refuse the mountains of Spanish gold that Henry brings from every trip to the Spanish settlements?
+
+
+#QUEST	Tutorial_Fra
+
+Help: What is going on in France?
+
+#TEXT	1
+
+    On March 10, 1661, Cardinal Mazarin died and the young king Louis XIV assumed full power. In a very short time, Louis brings order to the state, he cares about everything. This is a ruler who wants to "know and be able to do everything": the king addresses questions to ministers in order to better understand state affairs, to the chairman of parliament in order to learn how to manage, to judges in order not to miss a single detail, and to ladies in order not to lag behind in gallant sciences. France is truly lucky to have a monarch.
+
+    Moreover, this is not just a king, this is the Sun King, surrounded by the most refined worship compared to other European monarchs. As the king himself explains, As the sun directs its heat and light to the earth and therefore everything around owes its life to him, so the Sun King warms the people of France with his divine radiance.
+
+    The free corsair is disgusted by such sycophancy, but it must be admitted that almost four years of reforms carried out by Louis XIV had a very fruitful effect on France as a whole and the economy in the first place.
+
+    In 1664, the Comptroller General of Finance, Jean Baptiste Colbert, who enjoyed the unlimited confidence of the king, presented his famous reform program to Louis XIV. First of all, Colbert directed his efforts to reduce the terrible budget deficit of the state. He even published in the press the balance of the French budget for the year, which the aristocracy will never forgive him. Colbert, an official himself, knows perfectly well that when the state does not have enough money, it means that officials steal this money.
+
+    Colbert chooses 23 intendents of police, justice and finance among the numerous masters of law. Quartermasters with military functions contribute to the process of creating a regular royal army and navy. The influence is gradually decreasing, and the powers of provincial governors are being reduced.
+
+    The power of the French navy is all right, Jean Baptiste Colbert takes care of that too. A three-deck 1st class battleship with terrifying firepower, which is naturally called the "Sun King", is about to descend from the stocks of France.
+
+    In general, France behaves quite restrained in the Caribbean, as it has its hands full in Europe. The main thing for Louis XIV here is to ensure the security of French settlements and trade routes, and, of course, to counter the Spaniards in military power and the Dutch in trade. These goals can be easily achieved without investing a sou, but, on the contrary, getting benefits - I just need to support the filibusters.
+
+    The island of Tortuga is of great strategic importance, especially for the Spaniards. The struggle for this island went on for several decades, Tortuga was in the hands of the French, then in the hands of the Spaniards. In 1654, the Spaniards recaptured the island, but in 1659 the Brethren recaptured it under the command of Jeremy du Rosse, who forced the inhabitants to swear an oath to himself personally. In 1662, he temporarily transferred control to his nephew Frederic Deschamps de la Place, and he went to Europe to sell Tortuga. After two years in the Bastille for such an attempt, he sold Tortuga for the ridiculous price of fifteen thousand French livres to the French West India Company.
+
+    In 1664, Louis XIV officially gave Western Espallola (otherwise called Tortuga) to the French West India Company and appointed Bertrand d as governor of the territory.'Augeron, the former filibuster. Under the previous governors of Tortuga, the Brethren did not complain either, but now Tortuga is a paradise for filibusters. Governor d'Augeron gave the order to bring women from Europe to his island!!! A filibuster's paradise!
+
+
+#QUEST	Tutorial_Spa
+
+Help: What is going on in Spain?
+
+#TEXT	1
+
+    With the death of Philip IV, the last great Spanish monarch, the country entered a period of prolonged regency. The new king Charles II of Habsburg, four years old, is so weak and suffers from so many diseases that it is difficult to imagine how he even lives in this world. And no wonder, because his father Philip IV was already old when he married Maria Anna of Austria, and, they say, he was ill with "various diseases." So Marianne (as Anne of Austria was called in Spain) became her son's regent. What danger this could mean was shown by recent events in France - the speeches of the Fronde against Mazarin in 1650. Therefore, Philip IV prepared the regency in advance: to help the queen, he singled out a Government junta carefully selected from representatives of political, ecclesiastical and public authorities.
+
+    Despite this junta, Marianne, who was no longer able to cope with the burden of responsibilities, returned to the institution of favorites to provide support for the regency in the world power. The choice fell on the Austrian confessor, Jesuit father John Eberhard Nitgaard. Despite the warnings, the queen initially assigned him only nominal power as the Grand Inquisitor of Spain, thanks to which he automatically became a member of the Government Junta. Foreign origin and political propaganda cause serious hostility to him by the government and the general population, reinforced by the fact that Marianne and Neithard treated the experienced and authoritative half-brother of the English King Charles II, Don Juan. Don Juan is the most interesting man in Spain. He is the patron saint of such scientists as De la Falle, Camuel Lobkowitz or Juanini, and the owner of a huge library, the founder of Spanish reformist science. In addition, as a brave general and a proven governor, he took a decisive part in suppressing the uprisings in Naples and Barcelona. In contrast, in Flanders and Portugal between 1656 and 1663, his command was much less successful.
+
+    A certain pity is caused by poor Spain, which in a moment of weakness is attacked from all sides. But there is a reason why everyone hates Spaniards.
+
+    In Puerto Rico and nearby islets, buccaneers lived peacefully - ordinary cattle ranchers, mostly French, without disturbing anyone, when suddenly the Spaniards, not paying attention to the fact that the buccaneer craft was profitable for them, decided to drive them all off the island of San Domingo or, if possible, destroy them completely.
+
+    The beginning of the execution of this cruel and disastrous intention for the Spaniards themselves was very easy. Following the method they adopted so successfully against the American savages, they suddenly attacked the scattered, unsuspecting, innocent buccaneers, killed some of them, and dragged others into captivity. From that moment on, the hunters became more cautious, always went in small detachments, ready to resist, and if, despite this, they were attacked, they fought so desperately that they almost always overcame the Spaniards, despite the numerical superiority of the latter and forced them to seek safety in flight.
+
+    Then the Spaniards changed the method of warfare. The private persecution of Buccaneers, which killed more than one faithful Spaniard, stopped, and instead the Spaniards began to attack Buccaneers at night in buccaneers, killed masters and servants and did not spare even dogs. These rampages drove the Buccaneers into a frenzy. They joined forces and also waged an offensive war, and did not spare any enemy. It worked. Spaniards seemed to have stopped all hostile actions, and the Buccaneers began to flatter themselves that they would finally leave them alone. But their enemies were only waiting for reinforcements: as soon as it arrived from the Spanish colonies, the war broke out again. But the Buccaneers also acquired reinforcements: the French from Tortuga and other islands and many other adventurers and loot joined them. The enemies fought incessantly, and blood flowed all over the island. Until now, many tracts on San Domingo have retained the name "killing fields". All this happened between 1660 and 1665.
+
+
+    There are no more bloodthirsty devils than the Spaniards and Portuguese. It was only from 1535 to 1660 that so many precious metals were exported from America to Spain, as probably all the mines of the Old World combined for the entire time of their existence had not given half by that time.  Half of the indigenous population of the New World - according to the most conservative estimates, five or six million Indians - died in the first century and a half of Spanish rule, and a significant part of them - in the mines of Mexico and Peru.
+
+    There is a filibuster in the Brethren, his name is Montbarts the Destroyer. He never takes prizes from captured ships. Armed Spaniards, gold, goods, everything goes overboard, and his crew consists of Indians whom he freed from Spanish slavery.
+
+    Mercilessly plundering its overseas colonies, Spain established a fierce monopoly on trade with the New World. Since the beginning of the XVI century, Seville has become the only one of all Spanish ports that have the right to trade with all overseas territories. It was here that the looted wealth of the American continent arrived, sent through the port of Veracruz in Mexico, first through Nombre de Dios, and later through Puerto Bello, on the Atlantic coast of the Isthmus of Panama.
+
+    Since 1537, no Spanish merchant ship has crossed the Atlantic alone - this strict rule was dictated by the interests of the monopoly. And, in addition, from the very beginning of the XVI century, access to the waters washing the overseas possessions of the Spanish crown was closed to ships of other countries. At first, this system worked flawlessly - after all, Spain and Portugal had paved their way to India and the New World much earlier than all other European powers. In 1493, Pope Alexander VI divided the entire sublunary world between these two "neighbors", and a year later they concluded an agreement on the demarcation of the spheres of their future conquests, so that in the Spanish "half" of the globe there was all of America, with the exception of Brazil, and in the Portuguese - Brazil, Africa and Asia.
+
+    But the hour of reckoning has come. The blood and gold of the Spaniards is for the blood of millions of Indians, tens of thousands of French Buccaneers and English settlers.
+
+
+#QUEST	Tutorial_Hol
+
+Help: What's going on in Holland?
+
+#TEXT	1
+
+    Since 1556, the Spanish rule has been lasting, incredibly painful for the country.  The reason for Spain's attack on Holland was the "need" to preserve the "purity" of the Catholic faith, which led to exactly the opposite results. During the period of spiritual oppression and political violence in the Netherlands, a new religious doctrine, Calvinism, became widespread, opposing itself to the religious system of Catholicism. Engulfed by religious protest, the population of the Netherlands raised an iconoclastic uprising, during which icons, statues of saints and other objects of religious worship were exterminated. The punitive army sent by the Spaniards unleashed the most brutal terror. A nationwide war broke out, which became known as the 80-year War of Independence (1566-1648).
+
+    The liberation struggle was led by William of Orange. The struggle against the enslaved Spaniards contributed to the growth of national consciousness. It is during the period of the general revolutionary struggle that the Dutch become a single nation with a single language.
+
+    In 1581, the northern provinces declared their independence, becoming the Republic of the United Provinces of the Calvinist faith. Civil war has been declared, the Spanish monarch Philip II officially recognizes William I of Orange as an "enemy of the human race" and sets a reward for his head. William is dying at the hands of a Catholic. The war continues, but this does not prevent the successful completion of the formation of a new state. In 1648, Philip VI recognized the independence of the Republic of the United Provinces, which later became one of the most powerful European states of the XVII century.
+
+    In 1650, William II of Orange, the stadtholder of Holland, died, and in the same year, a few months after his death, his heir William III of Orange was born.
+
+    Jan de Witt has been the de facto ruler of the Republic of the United Provinces since 1650, and since 1653 the grand pensionary, a protege of the Dutch merchant oligarchy. He achieved the removal of the Princes of Orange from the government of the country and the abolition of the post of stadtholder (stathauder), the head of the executive branch in the Netherlands.
+
+    Surprisingly, after gaining independence, the Netherlands showed the world an unprecedented economic recovery. Now the merchant fleet of this country has more ships than the combined merchant fleet of England and France! But the Dutch cannot count on more than a merchant fleet - there is no way to build large ships, they have too shallow harbors, and modern warships have a very large displacement.
+
+    Trade is the strength and weakness of the Dutch. They are rich, but defenseless. The British really, really dislike the trading power of the Netherlands, more than one Anglo-Dutch trade war has already passed, and there will be others. And Spain, which still retains part of the Dutch territories, snaps like a wounded animal.
+
+    So I can't envy the Dutch. They are balancing on the edge of a knife, but this cannot last long.
+
+
+#QUEST  Tenochtitlan_info
+
+Reference: Tenochtitlan and the Aztecs
+
+#TEXT	1
+
+There is no other place in all of America that would have attracted pre-Columbian Indians as much as a small area on the coast of the Mexican lakes, or rather, one central lake - Texcoco. Tepespan man, primitive farmers, Teotihuacans and Toltecs all lived on or near the shores of this lake.
+
+And even before the Aztecs came to the Mexican Valley and Lake Texcoco, this small space was, so to speak, overpopulated. Dozens of towns and villages have grown up right on the shores of the lake and in its immediate vicinity: Sumpango, Chalco, Eyecatepec, Tecpayocan, Sitlaltepec, Cuatitlan, Popotla, Xochimilco, Tlacopan, Coyoacan and many others. Of these, for the later history of the Aztecs, three coastal cities were of the greatest importance, which at the time of the Aztecs' appearance in the Mexican Valley were the largest and most powerful: Ascapotzalco, Culuacan and Texcoco.
+
+Each of these cities represented an independent state, headed by the supreme leader of the tribe. Ascapotzalco, as I already know, was the center of the Tepanec state, in Texcoco the heirs of Xolotl ruled, by their origin the Chichimecs, and, finally, the inhabitants of Culuacan considered themselves (and, as I know, quite reasonably) descendants of the Toltecs, who at the time of the death of the Toltec state left Tula, moved south to the Mexican Valley And they founded this city on the shore of the lake. However, they themselves call their ancient Toltec tribe Akolua. Thus, I see that all the tribes that created city-states on the shores of Texcoco came here only shortly before the Aztecs, and moreover, all from the north. The Aztecs came here in the same way in the XIII century AD.
+
+The Aztecs themselves called themselves meshika in memory of the legendary ancient tribal leader Meshitli, who ruled them at the time when they left their legendary ancestral homeland Astlan (the word "Aztec" is formed from its name). Apparently, it was an island in the middle of a vast lake. The Meshiks lived on it until 1068. That year, according to the legends, they packed up their belongings and, together with eight other related tribes who lived in the neighborhood, moved south. All these and many other tribes of Mesoamerica spoke and still speak dialects of the same language - Nahuatl (Nahuatl). That is why I unite all these tribes by a common name - Nahua (Nahua).
+
+The future Aztecs, led by chief Meschitli, carried in front of them a statue of their tribal god Ucilopochtli (obviously one of the deified ancient leaders of the Meschiks), which allegedly possessed the gift of human speech and providence and indicated to the Meschiks where, which way and when they should go. Moving south to the central part of Mexico, according to Aztec legends, they repeatedly made stops - each time for at least a year. They found suitable land, plowed it and sowed it. When the fields yielded crops, and the women had time to raise children, they set off again.
+
+During one of these stops, the Meshiks lived for several years in their second, no less legendary ancestral homeland - Chikomostok (The Edge of the Seven Caves). It is possible that these seven caves symbolize the seven clans that made up the Meshik tribe at that time. But it is also possible that Chicomostok is just another name for Astlan.
+
+Of the further stops of the meshiks, the chroniclers also mention a place called Coattepec (Snake Mountain). Here, in 1143, the future Aztecs celebrated the end of the fifty-two-year cycle - the feast of the New Fire. Three years later, they reached Tula, which was already uninhabited by that time. And although the main city of the Toltec state had been dead for 86 years, communication with the Toltecs, who still lived in the vicinity of Tula (the Toltecs were close relatives of the Aztecs in the language, they also spoke Nahuatl), radically enriched the culture of the Aztecs. Here, not far from the ruins of Tula, the Meshiks settled for 20 years. And this twenty-year contact with the Toltec tradition has changed the North American semi-nomadic Indian tribe beyond recognition.
+
+In the 70s of the XII century, the Mexicans set off again to find their promised land. When they reached Lake Patzcuaro, it seemed to many that there was no more beautiful place in the whole world, and they expressed a desire to stay in this paradise forever. Those of them who were particularly attracted by the lake and who were more tired than others from the day's march, threw off their clothes and jumped into the water. Others, less determined, wanted to know the will of the tribal idol. But Huitzilopochtli said, "This is not yet the land I are looking for." And he ordered to continue the journey without delay. Then the Meshiks told him that many of their relatives were swimming in the lake and had sailed far from the shore. But Huitzilopochtli stood his ground and even ordered the bags to take the bathing clothes with them. And when the bathers got ashore, they found neither their clothes nor their tribe.
+
+So they stayed on the shores of Lake Patzcuaro and live here to this day. So, if I believe the Aztec legends, which cannot be denied the poetic charm, the tarascans already known to us were born.
+
+Also the Meshiks finally found a place that both they and their gods liked. When they reached the Mexican Valley in the XIII century, to the shores of Texcoco, they decided to finally settle here. But, as I know, dozens of cities already existed on the shores of this lake by that time. Fertile coastal land was no longer enough for everyone, and individual tribes fought a fierce battle among themselves. But they did not guard the approaches to the lakes. The Aztecs reached Texcoco unhindered and unexpectedly showed up here as uninvited guests.
+
+At that time, they were led by the tribal leader Tenoch. According to his name, the bags got their third name - tenochki. The Tenocha people settled on the shore of the lake, on Chapultepec Hill (Grasshopper Mountain).
+
+But the Meshiks knew perfectly well that the neighboring tribes would not hesitate to do everything possible to destroy their new rivals. Therefore, they tried to secure a "place in the sun" with the help of various marriage contracts. The Mexicans elect Huitzilihuitl, the son of a noble Aztec woman and one of the heirs of the ruler of the city of Sumpango, as their new leader. But that didn't help either. Soon, the lord of Kuluakan even orders the murder of Huitziliuitl.
+
+Tenoch and his tribe settled on Grasshopper Mountain in 1256. But even after a quarter of a century, the Aztecs failed to change their servile, semi-dependent position. They had to pay tribute to the surrounding cities, serve in the army of Kuluakan when the ruler of this city Chalchiutlatonak fought with the city of Xochimilco, etc. And even the victory that their help brought to the troops of Kuluakan did not improve the situation of the tenochki at all. Just the opposite. In 1325 (when Koshkostli ruled Kuluakan), the Kuluakans decided to finally deal with the uninvited guests and began to prepare for a night attack on the Aztec "quarter". However, the Mexicans learned in time about the deadly danger threatening them and left Kuluakan on a dark night in hundreds of boats. They wandered around the lake, looking for a safe haven on its shores. But the shores were inhabited everywhere, and an attempt to pass through the territory of any of the coastal city-states could end in the complete destruction of a very small and poorly armed tribe at that time.
+
+Thus, the Aztecs had only two options left: to die or to live literally on the water. They chose life. Circling the lake, the mexicans found a swampy uninhabited island and settled on it. It is only from this day, which is designated in the Aztec calendar as 1 tecpatl and corresponds to our year 1325, that the true history of the Aztecs begins.
+
+They gave their island settlement the name Tenochtitlan. First of all, they erected a temple dedicated to Huitzilopochtli in the very center of the island. Lines were drawn from the temple to the west, south, north and east, thus dividing the entire island into four roughly equal "quarters" - Cuepopan, Teopan, Moyotlan and Astacalco, where the four Aztec phratries who made up the tribe settled.
+
+The construction of Tenochtitlan was very difficult due to the lack of wood and stone, and therefore the Aztecs were forced to buy all the building materials from their more fortunate neighbors in the coastal cities. They paid with what the lake gave them: waterfowl, crayfish, reeds. On an unsightly island in the middle of the lake, there was also a lack of soil suitable for agriculture. Therefore, the Aztecs had to extract land for fields from the bottom of the lake. One of the most amazing inventions of the Aztecs - chinampa - floating gardens (artificial floating islands made of branches and twigs covered with fertile land) belongs to these times. These floating fields produced exceptionally high yields. Even in our time, the Aztec inhabitants of the suburbs of the current capital of the Mexican Republic - Xochimilco, Chalco and others - partially farm in this way.
+
+However, the Aztecs in their island emigration in the middle of the vast expanses of Lake Texcoco lacked not only land, but also drinking water. I had to build something like a tanker and bring water bought in Chapultepec to the island. So little by little the Aztecs overcame the difficulties associated with their stay on an inhospitable island in the middle of a salt lake. The powerful city-states, of course, watched with displeasure as a new city grew out of the waters of the lake, already decorated with many magnificent buildings, a city with a rapidly growing population. And since the island city was located in the part of the lake claimed by the city-state of Ascapotzalco, its ruler Acolnahuac forced the Mexicans to pay him a proper tribute. Thus, even after fleeing from the mainland, the Aztecs did not get rid of their dependent position. In 1338, thirteen years after the founding of Tenochtitlan, strife began between individual Aztec clans, and eventually the dissatisfied clans moved to the neighboring, hitherto empty island of Tlatelolco. But this second Aztec city also ended up under the rule of Ascapotzalco. The Tlatelolco Aztecs, who did not have their own tribal leader, themselves asked the new ruler Ascapotzalco Tesosomoc, the son of Acolnahuac, who had already died by that time, to give them one of their sons as their leader. Thus, Kaukaupitzahuac came to the throne of the Tlatelolco Aztecs.
+
+
+#TEXT 2
+
+Since that time, the Meshik tribe has been divided into two independent city-states for more than a hundred years. However, most of the Aztecs still remained in the much larger Tenochtitlan. 51 years after the founding of Tenochtitlan, the Aztecs elect their first true ruler. Until then, they were led by a tribal leader. The first real ruler of the Aztecs was Akamapichtli (1376-1395). And his election brought the Aztecs good luck. The mother of this leader was the daughter of the ruler of the powerful Kuluakan, the father was an Aztec. This kindred alliance provided the Aztecs with Kuluakan's help in the fight against the Ascapotzalco. And when, after the death of Akamapichtli, his fourth son, the second real leader of the Aztecs, Huitzilihuitl (Hummingbird Feather), became ruler, the tribute that the Aztecs had paid to Ascapotzalco up to that time was replaced by a purely symbolic offering of several fish.
+
+At the suggestion of the Aztec council, Huitzilihuitl married the daughter of the Ascapotzalque ruler, whose name was Ayaukihuatl. The child born from this marriage became the main "argument" that prompted Bishop Ascapotzalco to free Tenochtitlan from the humiliating tax.
+
+Meanwhile, on the shores of the lake, the feuds between individual powerful city-states were becoming more and more aggravated. The Tepanec Ascapotzalco was initially opposed by the Chichimec Texcoco. The Aztecs, to whom I will now focus our attention, were also related to Texcoco. The ruler of this city, Ishtlilshochitl (who should not be confused with his later namesake, on whose reports I rely here) married one of the daughters of the first ruler of the Meshiks, Akamapichtli. From this marriage was born the most prominent non-Aztec ruler in the entire Mexican Valley, the famous Nezahualcoyotl.
+
+The long-term war that the Texcoco Istlilxochitl waged with the Ascapotzal Tesosomok finally ended with an armistice.
+
+At that time, Huitzilihuitl was dying in Tenochtitlan, and the Mexicans chose Chimalpopoca (the Smoking Shield) as their ruler. His reign was influenced more than the changes in Tenochtitlan itself by external relations. The fact is that a war broke out again on the coast between the militant, but now elderly Tesosomok and Ishtlilshochitl, the ruler of Texcoco. Taking advantage of the fact that Ascapotzalco was occupied by the war, the Aztecs in a short time created one of their greatest creations - a dam connecting Tenochtitlan with the coast. Now they could cross the lake by land. In addition, the dam greatly facilitated the delivery of drinking water to the rapidly growing Aztec capital.
+
+So, the circle of isolation was broken. But retribution was not long in coming. When the warlike Tesosomoi died, his youngest son Mashtla became the ruler of the Tepanecs (until then he had been the ruler in the Tepanec city of Coyoacan). Being no less belligerent than his father, Mashtla also turned out to be treacherous and cruel. He sent out his men, ordering them to treacherously kill the rulers of all the cities that could stand in the way of the Tepanecs. And naturally, the first victim was (in 1428) the builder of the dam, the leader of the Meshiks of Chimalpopoca. His fate was to be shared by Nezahualcoyotl, the new ruler of Texcoco, the ruler of Culuacan and many others.
+
+All the endangered rulers of the cities gathered for Chimalpopoca's burial, and since they had already become aware of Mashtla's treacherous plan, they secretly agreed to join forces and, without wasting time, attack Ascapotzalco from several sides. Meanwhile, the Aztecs, not heeding the advice of Ascapotzalco, to whom they still obeyed, chose Itzcoatl (Obsidian Serpent) as their new leader. This provoked Mashtla's anger. But the Aztecs did not wait for him and his troops to invade Tenochtitlan, and they themselves began military operations.
+
+Itzcoatl sent ambassadors to all sides asking for support. This time, both Aztec cities acted together, since liberation from Ascapotzalco domination was also in the interests of the Tlatelolco mexicans. The third army against Ascapotzalco was fielded by Nezahualcoyotl, lord of Texcoco. The Allied forces suddenly attacked Ascapotzalco from three sides and, after a battle that lasted two days and two nights, destroyed it to the ground. Residents of other Tepanek-populated cities, including the largest of them, Tlacopan, sided with the victorious Mexicans.
+
+So, Tenochtitlan not only freed itself from the yoke of Ascapotzalco, but also immediately became one of the most powerful cities in the Mexican Valley. And the resourceful Aztecs, using the current situation, change tactics: from defense to offensive. Instead of paying tribute to Ascapotzalco, they now want to collect tribute themselves, to rule. But the Meshiks still do not have enough strength to carry out this plan. And so Itcoatl proposes to the Tlacopan Tepanecs and Texcoco to create a triple alliance both for defense and mainly for attack. So, in the 30s of the XV century, a military confederation arose, all three participants of which were formally equal, but, in fact, the Aztecs began to play the first role from the very beginning. Aztec Tenochtitlan becomes the main city of the confederation. In matters of internal life, in solving their own affairs, all three states remain independent. But foreign policy, and especially the solution of military and some other important issues, is mutually agreed upon.
+
+The affairs of the confederation were managed by a certain "supreme council", which was also located in Tenochtitlan. Its members were three Waitlatoani, that is, the rulers of three city-states, namely the Aztec ruler Kulua Tekuhtli (Kulua, as I know, were descendants of the Toltecs, and the Aztecs believed that they continued their family, since the mother of the first real Aztec ruler Akamapichtli came from this tribe), Chichimeca Tekuhtli (residents of Texcoco, as It is known that Tepaneca Tekuhtli, the ruler of the Tepanec city of Tlacopan, considered himself the heirs of the Chichimecs).
+
+The first three Waitlatoans divided among themselves, and thus among their successors, the responsibilities of managing the affairs of the confederation. Nezahualcoyotl, the ruler of Texcoco, assumed responsibility for legislation and public buildings, Totokihuatzin of Tlacopan for the development of arts and crafts, and Itzcoatl reserved for himself foreign policy issues, the resolution of disputes between members of the confederation and the post of supreme commander of the united forces. So from the very beginning, Itzcoatl (and in his person the Aztecs) became the head of the triple alliance. In the following years, Tlacopan faded into the background, and Texcoco turned into a kind of Mexican Paris: it was the haven of the muses, Mesic philosophers and jurists lived here.
+
+I have already met the supreme leader of the Meshiks, whom, without knowing the exact name, I call the ruler. But what exactly did Aztec society look like in those last hundred years of Tenochtitlan's existence, which turned the Aztecs into the most powerful force in pre-Columbian Mexico, and Tepochtitlan into the largest capital of Indian America? The entire Aztec society was divided primarily into two antagonistic classes. The Meshiks themselves, who usually used extremely lofty, complex, now sometimes indecipherable designations, in this case expressed themselves quite unambiguously: they called the privileged members of society tekuhtli - nobility, and all other people without privileges - maceualli (plural - maceualtin), which literally means "commoner".
+
+Let's start with the nobility, about whom the codices and the first chronicles tell us in much more detail. In later times, the title of tecuhtli was borne only by the highest dignitaries of Tenochtitlan, and in the province by the rulers of individual Aztec towns and villages. Tekuhtli, unlike other meshiks, were not taxed. The state entrusted them with high positions and endowed them with luxurious clothes and jewelry. Food, a beautiful dwelling, numerous servants and concubines for tekuhtli had to be supplied by the inhabitants of the city or village he ruled.
+
+Tekuhtli, a representative of the upper stratum of Aztec society, was honored with a particle of Qing added to his name, which can be compared with the English word "lord". For example, the famous Cuauhtemoc, the hero of the defense of Tenochtitlan during the fight against the Spaniards and the most famous opponent of Cortes, was also called Cuauhtemocin.
+
+In Tenochtitlan itself, these relationships between tekuhtli, on the one hand, and the city or village he ruled, on the other, did not exist. In Tenochtitlan, the position of tecuhtli corresponded to the position of calpullek, the leader of one of the twenty traditional Aztec clans - Calpulli. Over the last hundred years of Tenochtitlan's existence, Calpullek's election has become a mere formality, because the right to this important post was monopolized by members of privileged Aztec families. Only the son of a noble could now become a Calpullek (and beyond the city limits of Tenochtitlan - tekuhtli).
+
+Thus, nobility turns into a hereditary institution among the Meshiks. Hence, another Aztec designation for this privileged group is pilli, literally "sons". At the same time, it was the sons of notable persons who were meant. Later, however, this name began to be applied to the lower groups of the privileged strata. However, the Aztec tecuhtli or pilli, if he was not in the service, generally speaking, there was no use from his nobility. The fact is that the Aztecs had no private property in the modern sense of the word. The state provided maintenance for the noble. Of course, only as a salary for service.
+
+The Calpulli, as a family, communicated with the entire tribe through Tlatoani (speakers), who also came from the nobility. Each clan was represented in the Aztec Council by one delegate. (The Supreme Council met, as a rule, once a month, that is, once every twenty days.) All twenty Aztec clans were divided into four phratries. In Tenochtitlan, each of these phratries inhabited one of the four "quarters" of the city.
+
+
+#TEXT 3
+
+The Aztec Council - Tlatocan - elected "on behalf of the whole people" six senior representatives of the Aztec state. Among them, the main role was played by the person who led foreign policy (initially only Tenochtitlan, and later the entire confederation) and who at the same time was the commander-in-chief of the Aztec troops (for the warlike people this was most important). According to this main duty, the ruler of Tenochtitlan was called tlacatecuhtli. This title was held, for example, by Montezuma II, as well as all his previously mentioned predecessors. The position of Tlacatecuhtli was inherited by representatives of privileged Aztec families. It was with tlacatecuhtli that the first Spaniards dealt, since this person directed all relations with foreigners, declared war and concluded peace.
+
+The Aztec tlacatecuhtli appointed a successor during his lifetime (most often from among his closest relatives). However, formally, until the last days of the existence of the state, the ruler of the Mexicans (Aztecs) was elected. In this respect, the customs of Tenochtitlan differed sharply from the traditions of his ally Texcoco, where, according to the law, the son of his first wife became the new ruler. (Besides the main wife, the ruler had hundreds or even thousands of other wives. For example, the ruler of Texcoco, Nezahualpilli, the son of Nezahualcoyotl, allegedly had more than two thousand wives.)
+
+The next most important dignitary after tlacatecuhtli, this "emperor" according to European concepts, was sihuacoatl, literally - "snake woman". It was a genuine "viceroy" of the Meshiks. When tlacatecuhtli went on a campaign at the head of the confederate troops, Sihuacoatl replaced him and was the highest authority in all internal matters, he also stood at the head of the supreme court, which included thirteen other highly respected men.
+
+In addition to Tlacatecuhtli and Sihuacoatl, four other high dignitaries sat in the "council of State".
+
+At the bottom of the social ladder stood ordinary Aztecs - maceualtin (commoners). Each maceualli lived in one of the twenty calpulli of Tenochtitlan. The main occupation of the Meshiks was agriculture. From the communal land called calpoalli, the clan allocated to each maceualli a plot from which he and his family were fed.
+
+The main crop that the Meshiks cultivated was corn. Flour was made from it and tortillas were baked. Corn, the main food of the Aztecs, had its patroness, the goddess Sinteotl. Aztec peasants also cultivated agave, beans, and pepper, and from the conquered regions they received cocoa, from which beans a drink was prepared, which they called chocolatl. (Indeed, it was from the Aztecs, along with many other gifts, that humanity received the culture of cultivating cocoa trees, the method of cooking, and even the very name of chocolate.) The word tomato (tomatl) came to us from the Aztecs, because they were the first to grow tomatoes. The Aztecs smoked, and therefore grew tobacco. The peasants also kept some domestic animals that gave them meat, mainly dogs and turkeys.
+
+Some people think that the Indians were introduced to alcoholic beverages by Whites. This is not quite true. Made of agave leaves (the Aztecs called it magea) they received juice, which was fermented into a strong vodka called octli (now the Mexicans call it pulque). The Aztecs derived a lot of benefits from agave: they made needles and pins from its thorns, the roots were used for food, and they covered the roofs of their houses with agave leaves. The main agricultural tool of the Aztecs was the koa, a kind of wooden hoe.
+
+Along with farming, Maceualli's other main duty was to serve in the Confederate army. They fought willingly. And not only because participation in battle was for the Aztecs the most exciting game, the most honorable duty and the best way to glorify the gods, but also because only in the army a commoner with his courage could earn a reward that gave him access to the privileged strata of Aztec society.
+
+Even lower on the social ladder than the commoners were groups of people who enjoyed personal freedom, but were despised by Aztec society. First of all, tlalmaitl (literally, "the hand that has no land") belonged to them, that is, peasants, for some reasons that are not yet completely clear to us, deprived of the right to a land allotment and therefore forced to offer their services to happier tribesmen.
+
+And finally, the real slaves, in Aztec -tlatlacotin, stood below all. In one of the illustrations to the text of Saahun, I see a family of slaves, whose necks (including children) are clutched by a wooden yoke!
+
+There were actually two types of slaves in Tenochtitlan. The Mexicans themselves could become slaves either because they committed some crime, according to Aztec laws (for example, stealing a child and robbing a sanctuary were punished in this way), or even because they were too poor and sold themselves into slavery to their rich tribesmen. Aztec slaves could be redeemed at will after a certain period of time. The master released the slave after he swore in the presence of four reliable witnesses that he would reimburse the owner for his "cost" by a certain date.
+
+Aztec troops brought many more slaves to Tenochtitlan from their victorious campaigns. Most often, the prisoners were expected to die. Hundreds of them were sacrificed during bloody rituals. In later times, the Meshiks often demanded a certain number of slaves from the conquered tribes instead of tribute. And those who did this duty raided their neighbors. For example, Sumpango sent Tlapanec prisoners, Zihuatlan Cuitlatecs, etc. to Tenochtitlan.
+
+By the end of the XV century, the Mexicans began to understand the importance of forced labor for the economic development of Tenochtitlan. And although the sacrifice of slaves to the gods still takes place, there are more and more slaves - disenfranchised workers. There are even two special markets, one in Tlatelolco, the other in Ascapotzalco (now owned by the Mexicans), where there is a trade in captive slaves left alive.
+
+To a certain extent, one more privileged group remained outside the general social ladder and, most importantly, outside the strictly centralized state subordination of Aztec society, the importance of which has been increasing in the last century of Tenochtitlan's existence.
+
+They were merchants, Aztec for pochteca. They lived in special quarters of Tenochtitlan, married exclusively in their environment, and only their children could be merchants.
+
+Aztec merchants had their own patron god, Yakatekuhtli, who was depicted as a wandering merchant. And since the merchants were rich, they performed solemn rites dedicated to Yakatekuhtli in Ascapotzalco in the month of Pancetzalli, and at the same time sacrificed dozens of people to him. The Aztec merchants even had their own judges, independent of the central government. Merchants earned their privileges primarily by providing the Aztec generals with very valuable information about the military and economic situation of the countries they visited. Their contribution to the prosperity of Tenochtitlan was also taken into account. Merchants brought a lot of valuable goods from the areas that did not submit to the military might of the Aztecs. For example, the feathers of the sacred quetzal bird from distant Guatemala. The trade voyages of Aztec merchants were very long - usually more than a year. Various restrictions were imposed on the merchant's family during his absence. So, his wife and children were allowed to wash no more than once every 60 days.
+
+Merchants sold their goods in the markets of individual Aztec clans, as well as in the central market of Tenochtitlan. There were also specialized markets. In Cholula, for example, there was a kind of auction for the sale of precious stones, dogs were sold in Akolman, etc.
+
+The main trading center of the Mexicans was the second largest Aztec city of Tlatelolco. From here, even during the reign of chief Cuauhtlat (1428-1467), when both Aztec cities existed separately, the first caravans of merchants began to travel far, bringing many hitherto unknown goods and products to the Aztecs. Here, in Tlatelolco, for the first time in the history of Indian America, merchants united in a kind of guild, gaining an absolute monopoly on foreign trade. Later, this association played an extremely important role in the public life of Tlatelolco. It was headed by two persons called pochtecatlatohke (literally, "lords of trade"). They were granted the right to add the particle "qing" to their name.
+
+
+#TEXT 4
+
+When Tlatelolco was re-annexed to Tenochtitlan, similar associations that enjoyed benefits and privileges arose in this city. And by the time the first Spaniards arrived, similar merchant associations already existed in eight cities of the Mexican Valley.
+
+Merchants multiplied the wealth of the Aztec state. However, the main role in expanding the power and glory of Tenochtitlan and the entire confederation belonged to the army of the triple Alliance, in which, of course, the Mexicans themselves occupied a leading position from the beginning of its existence. Tenochtitlan constantly maintained small detachments of warriors. But a truly formidable army was created only during the war. Then all Aztec men capable of carrying weapons became warriors. Even the clergy were obliged to participate in the campaigns. Cortez's associates estimated the total number of the Aztec army at 150,000 people. At that time, no European power had such a number of soldiers. Members of the Aztec Calpulli (clan) formed a military unit. The Aztec army, which represented the main military force of the triple alliance, consisted, therefore, of twenty detachments, each of which had its own generic sign and its own military commander. Calpulli also provided supplies for his squad. Five such detachments made up a larger formation, a kind of "corps". There were four of these formations, according to the number of phratries. The commanders of the military units were called tlacateccatl (literally, "the one who trains people"). For most of them, war was their only occupation, and they enjoyed many privileges. According to their rank, Aztec military leaders wore certain uniforms decorated with yellow or green feathers, or even gold. The supreme ruler of the Aztecs (for example, Montezuma) wore a magnificent multicolored cloak made of bird feathers, studded with jade pendants. On the back of this cloak was decorated with an image of a butterfly with a golden body and wings made of feathers of green birds. The golden butterfly was a symbol of the Aztec god of war, Itzpapalotl. Ordinary soldiers wore simple cotton clothes.
+
+Warriors and military leaders of low-class origin who especially distinguished themselves in battle gained access to privileged strata. Aztec "knights of merit", trying to emphasize their bravery, called themselves "eagles" or "jaguars". Before the battle, they put on a jaguar skin or decorated themselves with eagle feathers. According to Aztec beliefs, they retained their privileges in the afterlife. The "Knights of merit" could even become the highest military leaders. However, only "genuine", hereditary nobility were awarded supreme military positions.
+
+War (in Aztec - yaoyotl) was considered by the Mexicans to be one of the types of service to the gods. Two signs - water plus fire, which denoted the concept of "war" in the Aztec codes and which in their combination formed the expression "atlacinolli" - in themselves indicate that in the Aztec representations war had some second, hidden mystical meaning.
+
+The conduct of the "holy war", of course, was subject to strict rules. The declaration of war itself was a complicated ceremony. If the triple alliance decided to subjugate an independent country or a tribe that had not yet been conquered, then three delegations were sent one after another to the rulers of that city or country, who had to persuade them to voluntarily join the confederation. At first, the Tenochtitlan embassy, headed by a specially appointed ambassador for negotiations, kakakhnotsin, was sent to the "pre-planned enemy". Kakakhnotsin appealed to the supreme council of the city concerned with a proposal to voluntarily join the triple alliance, promising his protection and demanding that his merchants be allowed access to his territory, place an image of the god Huitzilopochtli in his main temple and, without resistance, commit to regularly send a certain number of items as a "voluntary gift". And immediately kakhkakhnotsin handed over a list of required "gifts". If the city did not agree, the ambassador, on behalf of the confederation, donated shields and spears to him ("so that I could not say that I attacked I when I had nothing to defend yourself with").
+
+After a month (that is, 20 days later), a new confederate embassy visited the city, this time led by achkuatsin, the special envoy of Texcoco, the second member of the triple alliance. Achkuatsin repeated the same sentence. If the "enemy" persisted, the "war of nerves" reached its climax. Another 20 days later, a new embassy was sent, headed by the ruler of Tlacopan himself, the third member of the confederation. If this time the "enemy" refused to submit to the confederacy, war was declared.
+
+But even after that, military operations did not begin immediately, but only on the day that the soothsayer priests found particularly favorable.
+
+The advance of the Confederate forces was always carefully prepared. The strategic plans of the triple alliance were based on information received from merchants and reports from the "intelligence service". The Confederate army used an extensive network of infiltrators. In the Nahuatl language, they had a special name kimichtin, the primary meaning of which is "mice". Kimichtin in the clothes of one or another tribe hostile to the Aztecs penetrated into its territory and obtained the necessary information.
+
+During the war, the Aztecs most often used wooden spears with obsidian tips for close combat. Bernal Diaz, a member of the Cortez expedition, who met the Aztecs in battle dozens of times, notes in his chronicle that these obsidian arrowheads were more dangerous than the iron arrowheads of the Spaniards. In battle, the Aztec warrior defended himself with a wooden shield covered with leather. The military leaders also protected their heads with a wooden helmet. Bows and arrows were used to fight at a longer distance. But the Aztecs preferred to face their opponent in hand-to-hand combat one on one. In this case, each Aztec had the opportunity not only to show his personal military prowess, which was revered as the highest virtue, but also to capture his opponent. The prisoners were the most valuable military booty of the Aztecs. The acquisition of prisoners who could be sacrificed to the gods was, if not the main goal, then, in any case, one of the main goals of the Aztec military campaigns.
+
+However, I must perceive this so cruel, in our opinion, goal of the war in the general context of Aztec thinking, Aztec religious ideas. The prisoner did not resist his fate and never escaped from captivity. From the codices and stories of the first chroniclers, I know a number of cases when a prisoner, for some reason not sacrificed, himself sought the fulfillment of his destined destiny. This was the case with one of the Tlaxcalan leaders of Tlahuicole, who became famous for his exploits in battles with the Aztecs. In the end, the Mexicans captured him, but since the Aztecs revered courage above all other human qualities, they did not kill Tlahuicole and even entrusted him with the command of one of their own troops. Tlahuicole successfully participated in the victorious campaign against the Tarascans, but, returning to Tenochtitlan, demanded that he finally be killed on a sacrificial stone. And soon the blood of his heart sprinkled the faithful in the main temple of Tenochtitlan. If for some reason the prisoner was not put to death, it often happened that he himself committed suicide in order at least in this way to give his blood to the gods, this highest sacrifice in their eyes.
+
+A very special institution, by virtue of which prisoners were brought to the sacrificial stone, even at a time when the Aztecs were not fighting, was the so-called flower war. It was a cross between modern maneuvers and the jousting tournaments of the Middle Ages. In these war games, the "teams" of friendly cities competed with each other, for example Tenochtitlan and Texcoco, and the "team" defeated in a combat competition (by the way, flower wars often lasted for many years) was sacrificed to the gods. These flower wars can serve as the most undoubted proof that the Aztec war, along with its "usual" political and economic purpose, also pursued another extremely important goal - to be the most magnificent, the most massive and, consequently, the bloodiest worship.
+
+The "ordinary" war, according to the generally accepted "rules", stopped at the moment when the confederate troops captured the main temple of the enemy's capital. According to the Aztecs, this meant that their god of war Huitzilopochtli had defeated the gods of the enemies, that "justice had prevailed" and the enmity could be put to an end.
+
+Now the defeated side was sending its embassy. According to the ritual, which was again strictly observed, the vanquished informed the victors that they "admit their guilt" and ask the confederation and its gods to take their territory under their protection and control. For this "protection", the defeated expressed their willingness to send a certain number of "gifts" to Tenochtitlan. From that moment on, the "holy war" of the Aztecs loses its "divine sanctity", and the triumphant knights immediately turn into cruel exploiters. And only after the vanquished agreed to bear all the duties imposed on them by the triple alliance, peace came.
+
+I have already said that Aztec society was in all respects a class society. But while, for example, among the neighboring Maya, the exploitative aspirations of the ruling class were completely turned against their own society, against the "lower" of their own tribe, the main feature of the Aztec state was that the exploitative aspirations of the Aztec elite were directed not only against the commoners of their own tribe, but mainly against other tribes. The wealth of the Aztecs grew mainly as a result of conquests. With the exception of the Tlascalans, there is no tribe, nationality, or area in their neighborhood that would not fall under their military control and would not be subjected to cruel exploitation. At the same time, the Aztecs annexed new lands to their "empire" not as equal provinces, but only as colonies in the full sense of the word.
+
+
+#TEXT 5
+
+In the scientific literature, I sometimes read about the "vast empire" of the Aztecs. In fact, the colonies did not take any part in the public life of the Aztecs. The territory of the Aztec state, in fact, was limited to the city of Tenochtitlan and its immediate surroundings. Everything that was outside these limits, the Aztecs did not consider their territory, their state, it was only the lands they had conquered. Therefore, it is more correct to speak not about the great "empire" of the Aztecs, but about the vast territory over which they dominated.
+
+There were 38 tribes and states (from more or less large to very small) that were partially independent in matters of internal governance in this territory, which I can justifiably call protectorates. With the consent of the confederation, local chiefs ruled in these protectorates. In the main cities of the protectorates, of course, there were also Aztec governors - petacalcatl, who were obliged to ensure that local rulers and tribal leaders pursued a policy consistent with the interests of Tenochtitlan, and, most importantly, that the protectorates were regularly and within the prescribed time (every 20 or 80 days or every six months) sent to warehouses and granaries Tenochtitlan, Texcoco and Tlacopan prescribed tribute.
+
+To collect tribute, the confederation created an extensive apparatus of the so-called kalpishki - tax collectors who traveled throughout the territory dependent on the Aztecs. In the main city of each protectorate there was a kind of provincial tax administration, where, in addition to tax collectors, dozens of clerks were in the service, carefully recording all tax duties and their fulfillment.
+
+The total amount of tribute levied from all 38 protectorates of the confederation was enormous. In the second part of the so-called Mendoza Code, I can read the list of tax duties of the Aztec colonies for six months (in Spanish measures of that time). Among many other things, the colonies had to be sent to the exploiting city:
+
+corn - 140,000 phanegs (1 phaneg is equal to 55.5 liters)
+
+beans - 105,000 fans
+
+oilseeds (salvia chia) - 105,000 fans
+
+cocoa beans - 1260 bags
+
+salt - 6000 heads
+
+red pepper - 1600 bags
+
+vodka from agave - 2400 kugshin
+
+honey - 1700 jugs
+
+Meshik "cigars" - 36,000 bundles
+
+wood - 5400 bags
+
+logs - 5400 pieces
+
+planks - 10,800 pieces
+
+bamboo poles - 18,000 bundles
+
+painted pumpkins (vessels) - 27,600 pieces
+
+sleeping mats - 12,000 pieces
+
+lime - 19,200 bags
+
+cotton - 4800 bales
+
+bird feathers for jewelry - 32,880 bundles
+
+clothes for warriors - 600 sets
+
+clothes for senior officers decorated with the most valuable feather - 65 sets
+
+agave paper - 48,000 packs
+
+copal resin for religious ceremonies - 3600
+
+baskets of balls for ritual games - 16,000 pieces
+
+a particularly delicate feather used for religious ceremonies - 20 bags.
+
+The "obedience" of the inhabitants of these 38 protectorates was ensured by the garrisons of the armies of the Triple Alliance, stationed at strategic points.
+
+Thus, the population of the provinces of the Aztec "empire" knew only three representatives of the confederation: the governor, the occupation army and the particularly hated kalpishki. Already Bernal Diaz, the first chronicler of the Cortez expedition, recalls how the Aztec tax collectors treated the population of the conquered countries with arrogance and arrogance (Diaz first saw Aztec tax collectors on the coast of Mexico - on the Totonac land, in the city of Chiahuaistlan). And woe to those who had nothing to pay with! The Confederate military forces knew how to punish disobedient people.
+
+The beginning of the brutal yoke of the Aztecs - Tenochtitlan and its lesser confederate partners Texcoco and Tlacopan - is associated with the reign of tlacatecuhtli Itzcoatl. The confederate troops led by Itzcoatl gradually captured the entire coast of the lake. Cities that resisted Aztec rule (such as Xochimilco) were swept off the face of the earth. And when Itzcoatl died in 1440, his successor and nephew Montezuma the First (reigned 1440-1468), nicknamed Iluicamina (Heavenly Archer), took over power not only over the confederation, but also over the entire Mexican Valley. The only rival of the triple alliance that still resisted him, the confederation, which united 21 cities in the southern part of the Mexican Valley and was led by the city of Chalco, was destroyed by the Heavenly Archer. Having mastered the Mexican Valley, Montezuma was the first to take a swing at the whole of Mexico. He made several campaigns, subjugating Mexican tribes one after another to Aztec rule. His goal was to open a direct route to the sea for Tenochtitlan. He waged wars against Cholula, Tehuacan, Auilisapan (present-day Orizaba). And finally, the troops of the Mexicans approached the Gulf of Mexico and captured its coast.
+
+But Mexico lies between two oceans. Now the Aztec troops were trying to reach the Pacific coast. During the great march to the southwest, they decide to enter the territory of the Zapotecs and Mixtecs. After a series of battles, the Aztecs completely defeated the combined detachments of the Mixtecs and Zapotecs in the great battle of Huaxiacaca (present-day Oaxaca). This victory of Montezuma the First opens the confederacy's access to the Pacific Ocean.
+
+The Aztec troops thus become the true scourge of God for all neighboring lands. The grandson of Itzcoatl, the new ruler of Tenochtitlan, Ashayacatl (reigned 1468-1483) continued his grandfather's conquests, moving mainly in a southerly direction, and reached the isthmus of Tehuantepec, thereby connecting the Tenochtitlan Aztecs with the inhabitants of Soconusco related to them in language. Ashayacatl also reunited two branches of the Aztec tribe, the Tenochtitlan and Tlatelolco Meshiques. Formally independent of Tenochtitlan, Tlatelolco was now ruled by the nephew of Montezuma the First Moquiuish, whom he put on the Tlatelolco throne instead of the undesirable Cuauhtlat Tenochtitlan. However, Moquiuish wanted to be more than a mere puppet of Tenochtitlan. And while Ashayacatl was busy in the far south of Mexico with his next military enterprises, Moquihuish began to prepare an invasion of his kindred Tenochtitlan. Deciding to disregard the generally accepted rules of warfare, he planned to end Tenochtitlan's rule over Mexico, take over this city and become the ruler of both branches of the Aztec tree. His plans met with sympathy in a number of Aztec-dependent city-states, especially in Chalco, as well as among the only significant Native American tribe of inner Mexico that still resisted the Aztecs, the courageous Tlascalans. But this vast conspiracy was discovered, and Ashayacatl and his Tenochtitlan Aztecs managed to attack first. In early 1473, Aztec troops invaded Tlatelolco, and the city fell despite courageous resistance. This was the end of the independence of the second Aztec city. Tlatelolco was annexed to Tenochtitlan.
+
+
+#TEXT 6
+
+The military campaigns of the Aztecs (their goal now is no longer the seizure of new lands, but primarily the punishment of the recalcitrant and the pacification of the rebels) continued during the reign of the last Aztec rulers - Tisok, brother of Ashayakatl, who reigned for only three years (1483-1486), another brother of Ashayakatl - Auisotl (1486-1502), and finally, the famous Aztec ruler Montezuma II, nicknamed Shokoocin (the Younger).
+
+Detailed information about this last period of Aztec history can be found in the writings of the first chroniclers. Special attention should be paid to the fact that just before the arrival of the Spaniards, sharp contradictions were brewing within the confederation for the first time. One of the three cities of the confederation, Tlacopan, had already completely lost its importance, and the power of its ruler Totokihuatzin was, in fact, purely formal. The affairs of the entire confederation were run by the Aztecs - Tenochtitlan. As long as the third city-state of the triple alliance, Texcoco, was ruled by Non-Saualppi, everything was fine. However, during his lifetime, Nezahualpillp did not appoint any of his several dozen sons as his successor (as was previously customary in Texcoco). And so in 1515, when he died, a number of claimants to the throne appeared in Texcoco. Many of the most prominent representatives of the city-state wanted to be ruled by "Prince" Istlilxochitl, a relative and namesake of the author of two famous books on the history of Indian Mexico. However, the throne in Texcoco was occupied by another son of Nezahualpilli, a devoted Aztec Cacama, who was also the nephew of Montezuma II, who ruled in Tenochtitlan at that time.
+
+Everything seemed to be back to normal. But Ishtlilxochitl and his followers were only waiting for an opportunity to expel Kakama, the puppet of the Aztecs. The old state of affairs still remained: the Aztecs not only ruled the confederacy, but also dictated their will to dozens of dependent tribes throughout Mexico. However, any society whose power rests on coercion eventually weakens. When the Spaniards crossed their swords with the Obsidian swords of the Aztecs, the Mexicans could no longer rely on the help of the tribes under their control. And this affected the course and the final result of the fatal fight.
+
+Inter arma silent musae! When the guns roar, the muses are silent. That's what the ancient Romans said, whom I can compare in many ways with the Aztecs. Also I can say that not only swords rang among the Mexicans, but also songs, that the muses occupied a worthy place in Aztec society. I already know that the once semi-wild tenochki in their new homeland quickly absorbed the cultural heritage of the legendary Toltecs, and at the time of their conquests they assimilated the civilization of many other significant Indian peoples of pre-Columbian Mexico, especially the Mixtecs. Muses have accompanied every Aztec since adolescence. There were a kind of "public schools" in Tenochtitlan, and moreover of two types. The sons of ordinary members of society were brought up in the schools of the first type, telpuccalli in Aztec. Here, children were taught history (the main subject), agricultural work and crafts, and, quite naturally among such a warlike people, great attention was paid to "military training". In the second type of schools (they were called kalmekak), boys from privileged families were brought up, and above all those who were to enter the spiritual path or become military leaders and dignitaries of a clan or tribe. The main academic subjects here were Aztec religion, the organization and history of the Aztec state, writing, reading, counting, astronomy, astrology, versification and oratory.
+
+School attendance, at least in Tenochtitlan itself, was mandatory. In this regard, the tenochki were many years ahead of their European contemporaries, who came here at the beginning of the XVI century in order to "introduce them to civilization."
+
+Boys were admitted to schools of both these types - kalmekak and telpuchkalli - after the age of transition, usually at the age of fifteen. But the nature of their upbringing was very different. In the Kalmekaks that existed at the sanctuaries (hence their inaccurate name in terms of Americanist literature - monastic schools), monastic orders really prevailed. The educators, that is, the clergy, demanded from their students absolute obedience, decent behavior and great religious zeal. Since each of the students of kalmekak could become a priest after graduation, they sacrificed sleep at night and served the gods, and above all the protector of the priests, the god Quetzalcoatl, to whose priesthood they had already been ordained. At night, having retired to a deserted place, they lit a bonfire somewhere on the top of a hill in order to pay homage to the gods with fragrant smoke. At the same time, they sacrificed their own blood, tearing their skin (mainly earlobes) with sharp agave thorns.
+
+As for the students of telpuccalli, they had little chance of advancing in the future. It was a school for the common people. Neither abstinence nor noble manners were taught here. The teachers in telpuchkalli were warriors. But here they were taught not only to fight for the empire, but also to work for its good. The program included training in the construction of socially useful structures - canals, dams, fortifications.
+
+And since the "plebs" have the right not only to bread, but also to entertainment, the pupils of these schools went to their "clubs" after classes, called cuicacalco (houses of singing). Here they had fun not only singing and dancing. Tenochtptlan provided women (auyanime) at the disposal of his future soldiers, whose duty it was to entertain the young Aztecs and initiate them into the secrets of love.
+
+The Aztecs paid exceptionally great attention to the development of science. It was based on its own Aztec philosophy - one of the most remarkable phenomena of Indian civilization. Philosophy was practiced by the Tlamatini (wise), who were extremely respected by the Aztecs. The existence of a universal Aztec philosophical system is evidenced by dozens of poems recorded in the collection of Sahun. One of the most significant American studies of recent years, the work of Mexican Miguel Leon-Portilla "Philosophy of Nahuatl" ("La filosofia nahuatl") (it was published in Russian translation), is devoted to the study of the philosophical ideas of the Aztecs.
+
+Researchers are also amazed by the achievements of Aztec medicine, which in many ways surpassed the level of European medicine of the same time. Thousands of people were sacrificed in Tenochtitlan every year, and Aztec doctors knew human anatomy and the functions of individual organs much better than their European counterparts. Tenochtitlan also had its own midwives who helped women in labor not only during childbirth, but also throughout pregnancy and the postpartum period. However, only the wealthiest families could use their services.
+
+But astronomy held an absolutely exceptional place among the scientific disciplines that the Aztecs of the pre-Columbian era were engaged in. Based on the purely practical needs of agriculture, the Aztecs developed a very accurate calendar system based on their astronomical observations. The Aztec shihuitl solar year, like ours, had 365 days, but it was divided into 18 months of 20 days each, and at the end of the year 5 more so-called "unhappy" days were added to them. The beginning of the Aztec year corresponded to our February 12th, and the end to our February 11th. Each month of their year had its own name, even for each month of the Aztec month there was its own designation and name: 1st day - alligator, 2nd - wind, 3rd - house, 4th - lizard, 5th - snake, 6th - death, 7th - deer, 8th - rabbit, 9th - water, 10th - dog, 11th - monkey, 12th - reed, 13th - grass, 14th - ocelot, 15th - eagle, 16th - vulture, 17th - movement, 18th - knife, 19th - rain, 20th - flower. At the same time, the name of each day was associated with some kind of deity. Thus, the first day of the month - sipaktli (alligator) - was dedicated to the god Tonakatekuhtli, the second to Quetzalcoatl, the sixth to the rain god Tlaloc, etc. Every hour of the day and night (the Aztecs counted day and night separately) He also had his own name and his own god. The first hour of the day was the hour of the fire god Shiuhtekuhtli, the last hour of the night was the hour of the god Tlaloc, etc.
+
+But the Aztecs also had a second calendar - the "sacred calendar of the priests", called tonalpowally. Here, the year consisted of 260 days and was divided into 13 months of 20 days each. I can no longer explain the origin and meaning of this calendar.
+
+After the Sun and Moon, the main attention of Aztec astronomers was attracted by the movement of Venus. It is even possible that in ancient times the Aztecs adopted an annual number corresponding to the synodic period of the circulation of Venus, that is, 584 days.
+
+
+#TEXT 7
+
+The Aztec calendar system was completed in so-called cycles, each of which lasted four times for thirteen years, that is, 52 years. At the end of such a cycle, as I know from Mesic mythology, the Aztecs always expected a huge, devastating natural disaster. The Aztecs were preparing for this "end of the world" in the last five "unhappy" days of the fifty-second year of the cycle. Children and pregnant women were kept locked up these days. All the lights were going out. And most importantly, it was supposed to break all the household dishes without exception.
+
+In anticipation of the end of the "old cycle" (the last time it was celebrated in 1507), the inhabitants of Tenochtitlan gathered on a hill called Star Mountain. The end of the cycle came when the star Aldebaran (according to another version, a star from the constellation Pleiades) reached its zenith. The ruler then solemnly lit a new fire, and all over the country, all over Mexico, there was a grand celebration in honor of the New Fire - a celebration of the happy end of the old calendar cycle and the beginning of a new one. Lights were rekindled everywhere, pregnant women and children could leave their homes, and artisans began making new dishes.
+
+Now let's briefly touch on Aztec literature, as well as the question of how and on what the mexicans wrote. So, they wrote either on tanned buckskin or on Aztec paper made from magea (agave). Sheets of codices made of such paper were glued to each other; in this way, the Meshik scribes, who were deservedly considered artists, created a kind of our clamshell books. Aztec writing was pictographic, that is, it consisted of separate signs-drawings, and a combination of several such signs could denote a word or concept that had a completely different meaning than the same signs individually. The Aztecs borrowed pictographic writing from the Mixtecs. They also adopted numbers from them. They depicted one as a finger, but sometimes all the numbers from one to twenty were simply indicated by dots or dashes. Twenty was indicated by a flag. The last number of the 2nd digit (202) was depicted as a burning tree (which meant "as much as the hair on the head"). Finally, to designate 203, that is, 8 thousand, the Aztecs drew a bag (which meant "so many, how many cocoa beans are in a bag").
+
+The Aztecs created an amazingly rich, extraordinarily mature literature. Its best expert, Mexican American Angel Maria Garibay, names a number of literary genres known to critics: didactic treatises, dramatic works, prose. However, all these literary genres played only a secondary role among the Aztecs. By literature, the Aztecs, like the rest of the Nahuatl-speaking and writing tribes of pre-Columbian Mexico, meant mainly poetry. If I look into the Nahuatl dictionary, I will see that the word "kuikani" has two meanings - a poet and a singer. From this it can be concluded that Aztec poetry was intended mainly for public performance. The works of the poet-singers, which found a particularly wide response in Aztec society, were passed down from generation to generation thanks to oral tradition. In such poems and songs, the Kuikani often portrayed themselves...
+
+Look, it's me, the singer, composing poems, shining like precious jades, like the waves of the sea shimmering, I own my voice, I own the harmony of singing fleutes and the ringing of bells, the ringing of golden bells. I sing my fragrant song, similar to multicolored ornaments, a song sparkling with gems, shimmering with jade, I sing my hymn to the blooming spring.
+
+It will be appropriate to recall here that the extraordinary development of artistic literature in ancient Mexico was promoted primarily by the common language of the Mesic tribes - Nahuatl, whose dialects differ only slightly from each other. The widespread use of a single literary form of the Nahuatl language and the nobility of their classical language were owed by the Aztecs to a woman for whom Tenochtitlan was not even a homeland. It was at a time when the Aztecs did not yet own all of Mexico. At that time, a powerful and educated ruler of a large Texcoco city-state named Techotlala (1357-1409) married the daughter of the ruler of the city of Culuacan and adopted from her the Culuacan Nahuatl dialect. Thanks to his influence, this language then took a dominant position throughout Mexico. A special merit belongs here to one of the most significant figures in the history of Indian America - the ruler of Texcoco Nezahualcoyotl (1418-1472).
+
+Nezahualcoyotl was a model of a ruler and a man. He gave wise laws to his city-state, was a philosopher, which few can be called in pre-Columbian Mexico, and at the same time, perhaps, the largest religious reformer of ancient America known to us. He decorated Texcoco and its surroundings with magnificent buildings (I still admire his baths in Texcocinco today). But most importantly, he loved poetry. And one of his four "ministers" was specifically in charge of the sciences and arts.
+
+Nezahualcoyotl kept professional poets at court, not to celebrate the greatness and splendor of his reign, but out of love for poetry as such. To promote the development of poetry, he even established a kind of "state prizes", which were awarded to the winners at the national poetry competitions held annually in Texcoco at his behest.
+
+The golden age of Nahuatl literature begins with Nezahualcoyotl. Various genres are gradually forming in poetry. Certain types of poems appear: poems about flowers, military poems, spring poems (always full of philosophical reflections) and, finally, a special type of verse - chalcoayotl, which got its name after the city of Chalco, where it was widely distributed. But religious poems were considered the most significant genre among the Aztecs, and among them the most brilliant, truly pearls of world poetry were religious hymns (teocuicatl), partially preserved for us by Saahun. They were composed and sung in honor of the most important gods of the Aztec pantheon - Huitzilopochtli, Quetzalcoatl, Tlaloc and others.
+
+No less than poetry and drama, the mystics loved the visual arts. It must be said, however, that even at the time of the appearance of the first Spaniards in Mexico, the Aztecs were well aware that their ancestors were only some eight or ten generations ago were very primitive and often called them Chichimeca Azteca ("barbarians from Astlan"). As I know, the Chinchimeks in the eyes of the Aztecs were the personification of cruelty, ignorance, and primitiveness. The opposite pole was represented, from the point of view of the Aztecs, by the Toltecs, and everything that was associated with fine arts and crafts in Tenochtitlan was called Toltec by the Mexicans. The craftsmen themselves in the Aztec Nahuatl dialect were designated by the word Tolteca, and all kinds of art were called toltecayotl (Toltec things).
+
+Along with the influence of the Toltecs, it is necessary to mention the impact on Aztec crafts of the South Mexican Mixtecs, who certainly contributed to the development of gold coinage in Tenochtitlan and other cities of the Mexican Valley. The Mixtec coiners lived mainly in Ascapotzalco, which later became the most famous city in this regard in the whole Meseta. The Aztecs made magnificent jewelry from gold (a wonderful example of Aztec jewelry is kept in the Leningrad Hermitage) and various household items. Unfortunately, the vast majority of these magnificent products have not reached us. After all, the conquistadors valued not beauty, but wealth, and almost all the artistic relics obtained by robbery were melted down into gold bars. An incomplete list of art objects sent from Mexico to the Spanish King Charles V was found in the Spanish archives. Among many other things, there was a golden mirror in the shape of the sun, a mirror made of pure gold decorated with a tiger's head, five embossed butterflies (three of them gold, studded with precious stones), a skull made of pure gold, a golden turtle, two golden fleutes, some kind of golden object decorated with five hearts, three gold tiger, etc. But of all this splendor, only a stingy record remains.
+
+In 1520, some of the jewels from Montezuma's treasury, which Cortes sent to Charles V, were seen in Brussels by Albrecht Durer, the largest of the European artists of that time. He wrote: "I have never seen anything in my life that would please my heart more than these objects."
+
+A very popular artistic craft among the Aztecs was the manufacture of decorative embroideries, appliques and tiaras from hummingbird feathers and other birds playing with all the colors of the rainbow. The Aztecs painted their clothes with batik and in other ways. They also made wonderful pottery, although they did not yet know the potter's wheel. The Aztecs worked stone very skillfully, especially gems. Another artistic profession, which, however, already had a religious significance, was the decoration of human skulls with a mosaic of gems.
+
+
+#TEXT 8
+
+Architecture occupied a peculiar but extremely important place among the Aztec arts. Of the monumental works of Aztec architects, few have survived: the foundations of temples in Mexico City, the city walls in Huechotl, the round temple in Calistlahuac and, finally, the recently discovered temple in Malinalco. The entire temple, which had the shape of a traditional Aztec pyramid, was carved right into the rock. Its construction undoubtedly required a huge expenditure of physical strength of workers who used exclusively stone tools.
+
+The brilliant construction of Aztec architects and urban planners was the magnificent capital of the empire of Tenochtitlan, the largest city in America at that time, and probably the entire world at that time. On November 8, 1519, when Cortes first entered this beautiful city with his soldiers, there were about 650 thousand inhabitants in Tenochtitlan.
+
+When Cortez entered Tenochtitlan, he was struck by a fantastic sight. And apparently, that's why the conquistadors tried later, so that their victory would look more convincing, not to leave a trace of Tenochtitlan. Fortunately, one of Cortez's soldiers, Bernal Diaz, described everything he saw. Thanks to his description, the correctness of which was confirmed by fundamental archaeological excavations, I now know what this largest city of the then world was like.
+
+Tenochtitlan towered in the middle of a salt lake. It was located on interconnected islands, and some of its buildings stood on stilts. The city was connected to the land by three dams according to the number of city gates. One led to Tepeyac, another to Tlacopan, and the third to the beautiful coastal city of Chapultepec. Tenochtitlan was crossed not only by streets, but also by canals, and this gave rise to some historians to compare Tenochtitlan with Venice. The pride of the city, an expression of the power of the Aztecs and their rulers, was the palace of one of Montezuma II's predecessors, Ashayacatl, and to an even greater extent the palace of Montezuma II himself. According to the memoirs of the participants of the Spanish expedition, to whom Montezuma offered to settle in the palace of Ashayacatl, I know what this palace looked like. It consisted of several dozen stone one-story buildings, so that all seven thousand participants of the Cortez campaign were freely accommodated in it. Montezuma's palace was even more magnificent. Its attraction was a kind of zoological garden, which contained many thousands of different birds of the most colorful coloring and many animals. Montezuma's birds alone were cared for by three hundred servants; snakes, the object of special worship of the Aztecs, were kept in wooden cages lined with bright feathers of rare birds. Along with the strange birds and animals in Montezuma's palace, strange people were also "collected": dwarfs and all sorts of freaks in general. The situation of Montezuma's subjects is evidenced by the following fact: many parents themselves disfigured their children in order to provide them with food for life in this sad "anthropological" museum.
+
+Montezuma lived truly as the god of Aztec lore. Even the feudal splendor of the Madrid royal court faded in the eyes of the Spaniards when they saw the wealth and luxury of the palace of the mighty Montezuma. The day after their arrival in Tenochtitlan, Cortez and his associates were invited to Montezuma's feast, and therefore I know how Montezuma feasted. The dishes were served on the table by specially appointed representatives of the Aztec nobility. And Montezuma was served by the most beautiful girls, selected from all the tribes that inhabited his empire. Montezuma ate a lot of meat-wild game, turkeys, young dogs. Fresh fish was delivered to him daily from the Gulf of Mexico. He drank chocolatl (chocolate) from a gold cup. The tobacco pipe he smoked after dinner was also decorated with gilding. He was amused by buffoons and artists. In the evenings, his palace was illuminated by torches made of fragrant resinous wood.
+
+Montezuma had many wives, but he didn't pay too much attention to them. He changed his clothes several times a day and at the same time never put on clothes that had already been on him. Montezuma performed religious rites in a golden vestment. It is also known that he often bathed and, like all Aztecs, was extremely clean.
+
+A few days later, Montezuma showed the Spaniards the main temple of Tenochtitlan - teocalli, dedicated to the national god of the Aztecs, the god of war Huitzilopochtli. The temple was a pyramid about 30 meters high, on top of which there were two sanctuaries. In one stood a huge statue of Huitzilopochtli, decorated with a chain of gold and silver hearts. And on the altar, right in front of the statue of the god, the Spaniards saw three still bleeding hearts. The priests had just torn them from the breasts of the sacrificed people. Blood was sprayed all over the temple. The second sanctuary was apparently dedicated to Tezcatlipoca.
+
+In this regard, I will touch upon the religious beliefs of the Aztecs. Alfonso Caso, in his book "The Religion of the Aztecs" ("La religion de los Aztecas"), emphasizes: "The importance of religion among the Aztecs was so great that I can say without exaggerating: their whole life was closely connected with religion." They had countless gods and religious rituals performed in their honor. In this respect, the warlike Aztecs can be compared to the ancient Romans. Having captured a city, subjugating a foreign tribe, they, along with their loot and slaves, captured local gods, included them in their pantheon and began to worship them in Tenochtitlan.
+
+According to the Aztecs, the highest deities were the creator god Ometekuhtli and his divine consort. These were the "progenitors" of all the Aztec gods, and through them, the entire human race. Hence the second name of this creator god is Tonakatekuhtli (Lord of our flesh). This divine couple lived somewhere infinitely far away in the universe, in the farthest, thirteenth heaven and, being separated from people by space and time, did not interfere in their destinies in any way.
+
+Therefore, the Aztecs in their prayers turned only to those gods who arose from the marital union of these two extremely fertile higher beings. At the time when the Spaniards came to Mexico, three of these gods were the most revered. Firstly, the original tribal god of the Tenochki, the bloody god of war and hunting, already known to us Huitzilopochtli, is the main god of Tenochtitlan. Secondly, Quetzalcoatl (Feathered Serpent) is the god of knowledge, the god of the winds, the lord of the priests, the faithful patron of almost all Native American cultures of Mexico. And finally, the third most revered god of the Aztecs was Tezcatlipoca (Smoking Mirror) at that time. If it had not been for the invasion of the conquistadors, this Tezcatlipoca, the "enemy of Quetzalcoatl", invisible, omnipotent and at the time of the appearance of the Spaniards, certainly the supreme god of the Aztec pantheon, would undoubtedly have become the only god of the future monotheistic Aztec religion, the creation of which was already clearly underway. The divine Tezcatlipoca got his name from an obsidian mirror, which he allegedly always had with him and in which he could see everything that had ever happened in the past, was happening in the present or would happen in the future.
+
+
+#TEXT 9
+
+Along with these three main gods, the Aztecs had various gods and goddesses of harvest, fertility, rain, patrons of individual plants, etc. And among them, first of all, the god Tlaloc, or rather, many Tlalocs. Tlaloc, the rain god, was revered throughout Meseta long before the arrival of the Meshiks, and each community also had its own "local" Tlaloc. The wife of the main Tlaloc was the goddess of rivers and lakes Chalchihuitlicue. She was portrayed as a young, charming woman. Tlaloc's sister was the harvest goddess Chicomecoatl (Seven Snakes). The goddess of flowers was Xochiquetzal, who was also considered the patroness of artisans. But the highest place among the goddesses was occupied by the mistress of corn, Sinteotl. The goddess of agave was Mayauel, and four hundred of her divine sons patronized vodka - octli. Another god of vodka was Tepostecatl, he is the highest tribal god in Tepostlan. The patron deity of agriculture was probably originally the Aztec god of human sacrifice, Shipe Totek.
+
+The religious rituals of the Aztecs are also very interesting. The most important part of the Aztec ritual was sacrifice, and human blood was considered the highest sacrifice, because according to the religious beliefs of the Mexicans it was "the food of the gods." In the Aztec codes, the sign "blood" was sometimes replaced by the sign "gemstone" or the sign "flower". The Aztecs considered it their sacred duty to deliver this food to the gods - sacred blood with special magical power. It could be sacrificed to the gods drop by drop, but ritual murder was considered an incomparably more effective sacrifice. The one intended for this purpose was placed on a round sacrificial stone, after which the chief master of ceremonies cut the living victim's chest with an obsidian knife, tore out the heart and sprinkled the altar with this bleeding, still pulsating heart. When the Spaniards from the Cortez expedition entered the main temple of Tenochtitlan, they counted, according to their stories, 130 thousand human skulls there. All these people were sacrificed only a few years before the arrival of the Spaniards. Religious fanaticism was one of the main motives of the Aztec conquests. In battle, the Aztecs did not seek to kill the enemy. In their eyes, an enemy captured had a much higher price - he could be sacrificed to the gods.
+
+Sometimes the Aztecs themselves voluntarily sacrificed themselves to the gods in order to find "bliss in the afterlife." The people chosen by the clergy for the slaughter were surrounded with great honor, especially those who were destined to be sacrificed to Tezcatlipoca. A year before the sacrifice, the most handsome and high-born among the prisoners of war was chosen, and throughout that year eight priests taught him the imperious and majestic manners of a ruler. Everyone around him paid him divine honors. Accompanied by priests, he strolled through Tenochtitlan, playing the fluyt, and people greeted him respectfully. A month before the sacrifice, four of the most beautiful girls were chosen for him, who were obliged to fulfill his every wish. And then came the day of death. Accompanied by a solemn procession, the doomed man walked to the temple. Here he said goodbye to his wives, and the eight clergymen who had taken care of him all year slowly led him up the wide staircase. At each step of the temple, he broke the sacred fluyt. And now he's already upstairs. Here the priests seized him, and the high priest tore his heart out of his chest... But only the most distinguished prisoners of war were awarded such a solemn slaughter. Ordinary prisoners were sacrificed by the hundreds during less solemn local rituals.
+
+Sometimes a method was used for sacrifice, which the Spaniards later called "gladiatorial". The prisoner was tied to a heavy stone, leaving him, however, ample room for movement. The priests gave him wooden weapons, and the prisoner had to fight with several better-armed Aztec warriors, whose movements, naturally, were not hindered by anything.
+
+Children and women were sacrificed less often. Women - in honor of the goddess of the earth (at the same time, before the slaughter, in order to forget about the cruel fate that awaited them, they danced for several hours in a row until they fell into a state of ecstasy). Children were sacrificed to the glory of the fertility god Tlaloc. There is not entirely clear evidence of other sacrificial rites of the Aztecs. So, in honor of the god of fire, Huehueteotl bound prisoners of war were allegedly thrown into the fire and slowly burned.
+
+The Aztecs also paid homage to their gods with chanting, dancing and ritual religious dramas.
+
+The Aztecs believed that after a person's death, his soul goes to the solar kingdom of Tlalocan, but only the souls of those who fell in battle and were killed by lightning, as well as, of course, those who volunteered to sacrifice themselves, were awarded such a fate. The souls of the others migrated to the so-called Mictlan.
+
+The Aztec priests, the Tlamacascans, were also nicknamed by the name of the god they served. For example, the priest of Tlaloc was called Quetzalcoatl-Tlaloc-Tlamacaschi. The name of Quetzalcoatl was added because this god was considered the patron saint of the priests. As I can see, the religious beliefs of the Aztecs were very complex, and the ritual was extremely cruel.
+
+
+
+#QUEST	Tutorial_Sharp
+
+Background: Who is Captain Sharp?
+
+#TEXT	1
+
+    One of the most colorful figures of the filibuster epic was Captain Sharp, who became famous not so much as one of the organizers of the crossing of the Isthmus of Panama, but as the hero of several anecdotal and absurd stories.
+
+    On April 5, 1680, a pirate detachment of about four hundred people set off through the jungle to the west. This transition was largely made possible thanks to the support of local Indians, who had their own scores with the Spaniards.
+
+    The pirates stormed the small town of Santa Maria without much loss. The production, however, was small - the gold mined in the nearby mines was transported to Panama three days before the attack. The pirates decided to repeat Morgan's feat and take Panama by storm, and the pirates sent the poor loot captured in Santa Maria back across the isthmus under guard.
+
+
+    The inhabitants of Panama, however, were warned about the approach of the filibusters, and therefore the idea of storming the city had to be abandoned. Instead, the pirates engaged in battle with three Spanish galleons, many times superior in armament and manpower. Thanks to their bravery and skill, the filibusters managed to board the Spanish ships.
+
+    Only Captain Bartholomew Sharp, who was engaged in pearl robbery at that time, did not participate in the historic battle. Besides, his companions had found wine on a small island, and Sharp himself had found a beautiful Spanish woman, and therefore he was in no hurry to fight.
+
+    The next morning after the victory, the pirates split up. Seventy people, led by Admiral Coxon, left, and the rest were led by Admiral Sawkins. After a while, the pirates seized a ship carrying salaries to Panama, and each got two hundred and forty-seven coins. Inspired by the success, Sawkins attempted to storm the small town of Pueblo Nuevo, but the attempt was unsuccessful and the admiral himself died. Instead, the detachment was led by Sharp, who promised that every pirate would return from the campaign with a thousand pounds of loot.
+
+    However, another seventy pirates broke away after his election and, boarding a captured ship, left the camp. Subsequent events showed that they were right in their own way: Sharp turned out to be a lousy commander and, instead of capturing ships and cities, carried the pirates away in a fruitless search for Drake's treasures. Two months later, the pirates deposed him, choosing John Watling as Admiral. It happened on the island of Juan Fernandez, where pirates sailing in a hurry forgot the Indian William, who lived alone for several years until he was discovered by the ships of Davis and Swan.
+
+    Watling decided to storm the city of Arica, but, with only one hundred and forty men at his disposal, suffered a crushing defeat, dying during the assault. So Sharp became an admiral for the second time.
+
+    For several weeks after that, he cruised off the coast of South America on the galleon Trinity. He managed to capture the rich ship "St. Peter", and then another - "St. Rosario", the story associated with which made Sharp the subject of ridicule of all pirates of the Caribbean. After taking wine and chests of silver coins from the ship, Sharp's men found bars of some white metal in the hold, which they mistook for tin. The filibusters were about to load him onto their ship when the admiral noticed a Spanish lady on the captured ship, who begged him to let the ship go without further looting (the price of the issue, I think, is understandable, this pepper was very loving!). Sharp decided to limit himself to chests of coins and took only one ingot to pour bullets out of it.
+
+    The first person who saw the ingot in Antigua realized how Sharp had been deceived: he was in the holds of the St. Rosario... the largest cargo of silver that has ever fallen into the hands of pirates. It was also said that the beautiful lady received a rich reward from the owners of the silver.
+
+    Sharp's journey continued for several more months. He led his galleon around Cape Horn and reached the West Indies, where, fearing Morgan, who was hunting for his former comrades, the pirates abandoned the ship and reached England on other ships. There, at the request of the Spanish ambassador, they were all arrested. However, Sharp hired lawyers who managed to prove that their actions were protection from attacks by the Spaniards, and the pirates were acquitted. Sharp's fate is unknown, but, apparently, he lived safely in England on the looted Spanish gold.
+
+
+    And why in the game "Corsairs 1" did they make a cult of personality out of this figaro? Or is it humor like that? Although, apparently, Captain Sharp really had a lot of children in the archipelago.
+
+
+#QUEST	Tutorial_Dictonary
+
+Reference: Dictionary of Terms
+
+#TEXT	1
+
+BOARDING - to stick to the side, to stand side by side to the ship. To board a ship is to take it by assault, hand-to-hand.
+
+*
+
+BACKSTAY is a tailwind, between full (fordewind) and half wind (gulfwind), and the path itself, the course, the course of the ship by this wind, why the starboard or backboard, starboard or left tack, go to the backstay, depending on whether the wind is on the right or left side.
+
+*
+
+The TANK (goll. bak) is a superstructure in the bow of the deck, reaching the stem. The forecastle used to be called the bow of the upper deck (in front of the foremast). It serves to protect the upper deck from flooding by an oncoming wave, increase unsinkability, accommodate office space, etc.
+
+*
+
+A BARK is a three- or four-masted naval vessel with a straight sailing armament on the front masts and oblique ones on the rear (mizzen mast).
+
+*
+
+WINDWARD is the course of a sailing vessel, in which its diametrical plane is an angle of less than 90 degrees with the direction of the wind. To go behind the wind is to go almost with a different wind blowing somewhat to the right or left of the bow.
+
+*
+
+The MIZZEN MAST (from the Dutch mast) is a shipboard, vertical metal or wooden structure on the deck. The aft mast following the mainmast is called the mizzen mast.
+
+*
+
+A FIRE-ship is a vessel loaded with combustible and explosive substances; in the days of the sailing fleet it was used to set fire to an enemy ship.
+
+*
+
+A BRIG is a two-masted sailing vessel with a direct sailing armament, in fact, a two-masted reduced frigate.
+
+*
+
+A BRIGANTINE is a two-masted vessel with straight sails on the foremast and slanting sails on the rear.
+
+*
+
+BUCCANEERS (French boucaniers), pastoralists, many of whom later became filibusters, based on the islands of the West Indies. Spanish colonies in America, Spanish and other merchant ships were attacked.
+
+*
+
+The BOWSPRIT is an inclined round wooden beam protruding in front of the bow of the ship, one end of it is fixed on the ship. Together with its extension, the bulkhead serves to fasten the lower ends of the rods holding the foremast and its masts in front.
+
+*
+
+The shipyard (from the Netherlands werf) is an enterprise for the construction of ships.
+
+*
+
+DISPLACEMENT - the amount of water displaced by a floating vessel; characteristics of the size of the vessel. There is a mass displacement equal to the mass of the vessel, i.e. the mass of water placed in the volume of the underwater part of the vessel, and volumetric displacement (the volume of the vessel below the waterline).
+
+*
+
+The GALLEON is a large three-masted vessel of particularly sturdy construction, equipped with heavy artillery. These vessels served to transport goods from the Spanish and Portuguese colonies.
+
+*
+
+GALIOT (GALEOT) is a flat-bottomed Dutch vessel for coastal navigation.
+
+*
+
+Hals - the course of the ship relative to the wind (for example, the ship goes on the starboard tack when the wind blows into the starboard side of the ship).
+
+*
+
+Halfwind (Dutch: halfwind, lit. - half a wind) - the course of a sailing vessel, in which its longitudinal axis is perpendicular to the direction of the wind.
+
+*
+
+GAFF (from the Dutch. gaffel, letters. - pitchfork) - an inclined yard, fixed with the lower end on the upper part of the mast. It is used to raise the flag and signals; on sailing ships, the upper edge of the oblique sail is attached to the gaff.
+
+*
+
+The MAINMAST is the second mast from the bow of the ship.
+
+*
+
+CABLES are a nautical measure of length (185.2 meters), a tenth of a nautical mile.
+
+*
+
+Cabotage (French cabotage) - shipping between ports of the same country. There is a big coaster (between ports of different seas, for example, the Baltic and the Black) and a small coaster (between ports of one or two adjacent seas, for example, the Black and Azov).
+
+*
+
+COASTING is the course of a ship along the coast.
+
+*
+
+PRIVATEERING (from the Netherlands. kaper - sea robber) is an attack by armed private merchant ships of a belligerent state with its permission (so-called letters of marque) on enemy merchant ships or ships of neutral states carrying cargo for the enemy state. Prohibited by the Paris Declaration of Naval Warfare of 1856.
+
+*
+
+The QUARTERDECK (English quarter-deck, quarter -quarter, deck - deck) is the raised part of the upper deck in the aft part of the vessel.
+
+*
+
+KEEL (English kiel, English keel) is a beam running along the middle of the bottom of the vessel from bow to stern.
+
+*
+
+The JIB is the second of the oblique triangular sails on the bow of the ship.
+
+*
+
+A CORVETTE is a frigate modified to increase speed and maneuverability.
+
+*
+
+The STERN is the rear end of the vessel.
+
+*
+
+CORSAIR (from Italian. corsaro), or privateer - a private person or a naval officer who has a patent for seizing merchant ships of an enemy country.
+
+*
+
+A battleship is a combat vessel designed to conduct a naval battle in a linear or wake formation. Battleships are divided into classes depending on the number of cannon armament.
+
+*
+
+A LUGGER is a small high-speed two-masted vessel with slant sails.
+
+*
+
+THE NAUTICAL MILE is 1,852 meters.
+
+*
+
+TO FRAME THE YARDS - turn the yards into horizontal planes.
+
+*
+
+Overstag (English overstag) - turning a sailing vessel on the other tack with its nose against a headwind. Overstay turns are usually resorted to when the ship is steeply heading into the wind. The overstay is easier to perform on ships with oblique sailing armament, and more difficult with a straight one.
+
+*
+
+A SAIL is a panel or flexible plate for converting wind energy into ship motion energy. There are straight sails (in the form of an equilateral trapezoid) and oblique sails (3- and 4-angle). They are made of canvas, synthetic fabrics, mats (on junks), etc. A Latin sail is the same as a triangular oblique sail.
+
+*
+
+PIASTRE is the Italian name for an ancient Spanish peso or peseta coin.
+
+*
+
+PIRACY (from the Greek peirat?s - robber, robber) is a maritime robbery, in international law - the illegal seizure, robbery or sinking of merchant and other civilian vessels committed on the high seas by private or state-owned vessels.
+
+*
+
+MAST is the common name of all wooden devices for carrying sails.
+
+*
+
+REAL (letters. "royal") is a Spanish silver coin (from the XV century to the 70s of the XIX century).
+
+*
+
+The yard is a round spar tree that serves to carry sails.
+
+*
+
+TOPMAST is a beam that serves as an extension of the mast; fore-topmast is the topmast of the foremast.
+
+*
+
+The THALER is a silver coin minted for the first time in 1518 in Bohemia, weighing 28 g. Since 1555, it has been the monetary unit of the North German states, and then Prussia and Saxony. The name "thaler" was also applied to large silver coins of Italy, the Netherlands, Spain and other countries, in particular, the Spanish thaler was called dalero.
+
+*
+
+NODE is an off-system unit of speed used to determine the speed of ships. 1 node corresponds to 1 nautical mile per hour or 1,852 km/h - 0.5144 m/s.
+
+*
+
+A bulkhead is a spar tree, which is an extension of the bowsprit.
+
+*
+
+BULWARK is a light railing of the open deck.
+
+*
+
+A FLAGPOLE is a vertical pole used to raise a flag.
+
+*
+
+FILIBUSTERS are sea robbers who operated in the waters of the Caribbean Sea, robbing Spanish ships, coastal towns and settlements. The name itself comes from the English words "flyboat" - light vessels on which they will make their raids or "freeboaters" - free navigators. Buccaneers is another name for the Caribbean sea robbers, which is based on the word "buccan" borrowed from the American Indian language - an iron grill for drying the meat of bison and wild boar in the sun, the main food (along with corned beef) of pirates at sea. This is where the French "boucaniers" comes from, i.e. people drying meat in the sun like Indians.
+
+*
+
+FOREMAST is the foremast.
+
+*
+
+The stem is a bar forming the forward tip of the vessel (the continuation of the keel in the bow).
+
+*
+
+A FRIGATE is a three-masted vessel with direct sailing armament.
+
+*
+
+The QUARTERDECK is the uppermost platform or deck in the stern of a sailing vessel, where the officers of the watch were located and compasses were installed. Later, the quarter-deck was called the part of the upper deck of a warship between the main and mizzen masts. The quarterdeck was considered a place of honor on the ship: there, manifestos, orders, and sentences were read out in front of the ranks. On the quarterdeck, it was forbidden to sit down and smoke to everyone except the commander (captain) of the ship and the flagship.
+
+*
+
+WAIST (gol. schavot - shelving) - wide planks laid horizontally along the sides of a sailing vessel. They served for passage from the forecastle to the quarterdeck or quarterdeck.
+
+*
+
+A SLOOP is a single-masted vessel with an oblique sailing armament.
+
+*
+
+The frame (Dutch spanthout) is a transverse frame of a ship's set, providing the ship's hull with transverse strength.
+
+*
+
+A STAFF is a standing rigging tackle located in the longitudinal axial (diametrical) plane of the vessel and holding one of the mast parts in front.
+
+*
+
+A SQUADRON (frnc. escadre) is a combination of warships of various classes.
+
+*
+
+The POOP is the aft part of the deck. On many ships, it is located above the middle part of the deck, forming a "poop", which, in essence, is equivalent to a poop.
+

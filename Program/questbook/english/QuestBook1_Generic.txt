@@ -1,0 +1,2510 @@
+#QUEST Findship
+
+Ship Search
+
+#TEXT 1
+
+The head of the shipyard @<sCity> named @<sName> asked for help to find him a new vessel. One of his customers needs @<sShip>. The characteristics and condition of the ship are not important. The main thing is to deliver the ship of this type itself, and no later than two months. If successful, my fee will be one and a half times the sale price of the ship.
+
+#TEXT 2
+
+I was unable to find the required vessel on time. The task has failed.
+
+#TEXT 3
+
+The right ship has been found and delivered to the customer, a reward in the amount of @<sMoney> has been received.
+
+#QUEST CursedSkeleton
+
+Cursed captain
+
+#TEXT 1
+
+In the cave, I met@<sSex> an intimidating-looking skeleton, who demanded that I send @<sSex1> to the colony of @<scityName> and get@<sSex> a crystal skull for him. Better hurry up.
+
+#TEXT 2
+
+The job is done, I have the skull. Now I can take a break. I'll rent a room in a tavern.
+
+
+#QUEST ShipOrder
+
+Custom Ship
+
+#TEXT t1
+
+@<sName>, the head of the shipyard @<cityName>, agreed to build for me a @<sShipType> with characteristics to my taste. The work had to be paid in full in advance: @<money> gold. @<sName> warned that he would not return the advance if I changed my mind. The ship will be ready in @<time> days. @<TuningMaterial>
+
+#TEXT t2
+
+For shipmaster from @<cityName2>, it's left to bring: @<TuningMaterial2>.
+
+#TEXT End
+
+I have the ship. All the characteristics are exactly what they were promised. It's time to try it out.
+
+#TEXT Lose
+
+I refused@<sSex> the ordered ship. The money paid for its construction is irretrievably lost.
+
+
+#QUEST BurntShipQuest
+
+Burnt-out ship in @<cityName>
+
+#TEXT 1
+
+The head of the port authority @<portmanName> from @<cityName> suggested that I find an extraordinary vessel with a certain characteristic @<text>. He promised a substantial reward. I have six months of time.
+
+#TEXT 2
+
+Well, the head of the port authority @<portmanName> solved all the problems himself. I don't think he was in trouble.
+
+#TEXT 3
+
+The head of the port authority was not so simple and gave the insurance money to the usurer. Well, I still have the ship. Let's see how it ends.
+
+#TEXT 4
+
+I received@<sSex> an award for a unique vessel. Whole @<money> gold coins. For that kind of money, I can buy two similar ships. I must pay tribute - the head of the port authority knows his business and knows how to talk with insurers.
+
+#TEXT 5
+
+I decided@<sSex> to keep the ship for myself. It seemed to me that @<money> gold is too little for such a luxurious boat.
+
+
+#QUEST GiveShipLetters
+
+Documents found
+
+#TEXT 1
+
+A curious find! Someone was so distracted, or maybe in a hurry to get away, that he dropped a full set of ship's documents. I am sure@<sSex>, the owner will report the loss soon.
+
+#TEXT 2
+
+Well, it was quite easy for me to provide a service to nice people.
+
+#TEXT 3
+
+Well, the world is not without kind people. It's good that the owner will soon receive the loss!
+
+#TEXT 4
+
+Well, the world is not without kind people. I had a good look@<sSex> at the shipyard!
+
+#TEXT 5
+
+The income was quite small, but there were no worries either.
+
+#TEXT 6
+
+Perhaps it would be better this way. The income may not be great, but now the documents are not my concern.
+
+#TEXT 7
+
+It's nice when a product and a merchant find each other so well!
+
+#TEXT 8
+
+It's nice when the service is fully rewarded!
+
+#TEXT 9
+
+According to the deeds, it will be rewarded! The documents will soon find the owner, and the money has already found my pocket.
+
+#TEXT 10
+
+It was necessary to hand over the papers earlier, perhaps the owner would not have to correct new documents.
+
+
+#QUEST PrisonGun
+
+Guns for the fort
+
+#TEXT   1
+
+The commandant of the fort @<sCity>, @<sName>, suggested that I assemble @<sText> in the amount of @<sQty> pieces to replace the coastal battery. I set a condition - the entire batch as a whole and not earlier than in a month. I agreed with@<sSex>, considering that he is willing to pay for it with @<sSum> piastres.
+
+#TEXT   2
+
+The guns were delivered, the payment was received - however, not in cash, but in credit chests, but I was quite satisfied with that. And the commandant, I'm sure@<sSex>, was not at a disadvantage.
+
+#TEXT   3
+
+What a misfortune! The commandant refused to buy back the guns. Where should I put this pile of cast iron now? Except to sell it to the shipyard for a song...
+
+#TEXT   4
+
+I took too long@<sSex> searching for guns and @<sName> bought them elsewhere. I should have been quicker...
+
+
+#QUEST ReasonToFast
+
+Reason for haste
+
+#TEXT 1
+
+A pretty girl blabbed that the garrison officer was in such a hurry to go to some bay that it prevented his amorous pleasures.
+
+Maybe it's worth investigating what's going on?
+
+#TEXT 2
+
+Are there not enough chatterboxes in the world? Maybe I just imagined@<sSex> too much for myself?
+
+#TEXT 3
+
+Apparently, I gave in to@<sSex> the mood of an offended girl. I probably shouldn't have thought of anything...
+
+#TEXT 4
+
+What a misfortune! This guy appeared very inappropriately. It's too late to guess what they were up to now...
+
+#TEXT 5
+
+It turns out that a pirate messenger was following me. That's exactly what the patrolman was waiting for here. But I think I managed to impersonate the messenger @<sName>.
+
+#TEXT 6
+
+I tracked down a corrupt patrol sergeant and became convinced of his connections with the pirate leader. Unfortunately, it was not possible to arrest him.
+
+But he suffered the punishment he deserved.
+
+#TEXT 7
+
+I didn't get a chance to talk to the patrol officer. And to hell with it!...
+
+#TEXT 8
+
+What a misfortune! The patrol sergeant died, and the secret was lost with him...
+
+#TEXT 9
+
+The servant Judas is trying to get his 30 pieces of silver. I wonder what kind of service can cost such a bunch of @<sText>?
+
+#TEXT 10
+
+A dubious deal! But it's not for nothing that @<sName> hunted for this map?
+
+#TEXT 11
+
+@<sShipType> '@<sShipName>' with cargo @<sGoodsName> hanging out in the water area without protection. Useful information...
+
+#TEXT 12
+
+Does the governor keep valuables in his own boudoir? Oh, how careless....
+
+#TEXT 13
+
+thank god! I got@<sSex> out of this mess!
+
+#TEXT 14
+
+A good blade as a reward is always a pleasure! I should also check whether the received card is worth a whole handful of gems!
+
+#TEXT 15
+
+I got a pirate card. I should check as soon as possible whether it is worth the money spent!
+
+#TEXT 16
+
+Ooh... That's how faith in justice can turn into big trouble... I was almost suspected of attacking a patrol unit...
+
+#TEXT 17
+
+I chose@<sSex> from this opportunity, and it looks like a profit!
+
+#TEXT 18
+
+The patrolman's tip turned out to be correct! The luxury prize will more than cover my expenses.
+
+#TEXT 19
+
+How awkward it all turned out. I was unable to use the information I received for a lot of money.
+
+#TEXT 20
+
+I had to give up @<sText> in order not to hear the hot breathing of @<sName> behind my back. I'll be more careful about getting involved in this kind of adventure next time.
+
+#TEXT 21
+
+@<sName> does not want to part with @<sText> so easily. I need to get out of here as soon as possible.
+
+#TEXT 22
+
+It turns out that the pirates found out about the patrol officer's blunder. Well, so much the worse for him, he's probably already dead, and it's time for me to get out of here...
+
+There doesn't seem to be anyone else to report my antics to @<sName>...
+
+#TEXT 23
+
+The pirates knew that I had the @<sName> card. They even knew which island he had hidden the treasure on. It's good that they have much less intelligence than greed, and they didn't manage to find the treasure before me.
+
+#TEXT 24
+
+Given the too unequal forces, I had to give the treasure to the treasure hunters @<sName>. I'll be more careful about getting involved in such adventures next time.
+
+#TEXT 25
+
+I managed to sink a pirate ship, from which this operation was carried out with a patrol officer. The patrolman himself is probably already dead - pirates do not forgive such mistakes... Well, there doesn't seem to be anyone else to report my antics to @<sName>.
+
+#TEXT 26
+
+I managed to get away with this story with the patrolman. I don't think pirates will haunt me forever. They probably have other things to do.
+
+
+#QUEST PiratesOnUninhabited
+
+@<shoreName>
+
+#TEXT 1
+
+@<shoreName> I took on board @<count> sailors from the wrecked pirate @<shipTypeName>. They are asked to deliver them to any inhabited bay. Well, it's understandable - who is friendly with the law now?..
+
+#TEXT 2
+
+I delivered the@<sSex> wrecked pirates to @<toShore>. And even got@<sSex> a small reward. Of course it's a small thing, but it's nice...
+
+#TEXT 3
+
+I delivered@<sSex> pirates from a desert island @<toShore>. But these scoundrels also demanded to lend them money. I had to explain that I don't lend money...
+
+#TEXT 4
+
+I delivered@<sSex> pirates from a desert island @<toShore>. And I even lent@<sSex> some money to them... It's hard to imagine how I myself would@<sSex> choose@<sSex1> if I got into such a situation.
+
+#TEXT 5
+
+@<shoreName> I took on board @<count> sailors from the wrecked pirate @<shipTypeName>. They are asked to deliver them to any inhabited bay in return for a treasure map. Well, let's see what kind of map it is... Or just hand them over to the authorities? At least the profit will be guaranteed...
+
+#TEXT 6
+
+The rascal decided to cheat me. But he had to pay for it in full.
+
+#TEXT 7
+
+The rascal didn't have a map, but he told me where captain @<capName> hides his loot. I will need to visit @<toShore>.
+
+#TEXT 8
+
+I don't know if there was a treasure @<shore>. I couldn't find him. And God be with him, I didn't spend much.@<sSex>.
+
+#TEXT 9
+
+The pirate was right. In @<shore> I found really good treasure.
+
+#TEXT 10
+
+And this pirate is very difficult. As it turned out, he did not promise the treasure to me alone@<sSex>. But I still got it.
+
+#TEXT 11
+
+@<shoreName> I have taken on board @<count> sailors who were landed by captain of @<pirateName>. I need to get them to some inhabited bay. Or just hand it over to the authorities?..
+
+#TEXT 12
+
+I decided@<sSex> that it was better to have a tit in my hands and handed over the pirates to the governor @<mayorName>. I think it's more correct. At least the piastres are already jingling in my pockets.
+
+#TEXT 13
+
+@<shoreName> I took on board @<count> sailors who were landed by captain @<badCapName>. They claim that this pirate goes to @<ship> and trades in the slave trade. I agreed to find him. If I'm lucky, I'll get the contents of the hold, and they'll get the ship.
+
+#TEXT 14
+
+I boarded@<sSex> @<ship>, and there was indeed a batch of slaves in its hold. Well, friendship with pirates, it turns out, is sometimes useful too...
+
+#TEXT 15
+
+I had to drown the @<ship>, and at the same time put an end to the pirates. I think few people will be upset about this.
+
+#TEXT 16
+
+In the heat of battle, I drowned@<sSex> @<ship>. I had to compensate the pirates for its cost. I can't leave them without a livelihood, so to speak.
+
+
+#QUEST ShipWrecked
+
+Castaways
+
+#TEXT 1
+
+@<ShoreName> I took on board @<count> sailors from the wrecked @<ShipType> '@<ShipName>'. They must be delivered to any settlement @<sNation>.
+
+#TEXT 2
+
+@<ShoreName> I took on board @<count> sailors who were landed by a pirate @<sBadName>. They must be delivered to any settlement @<sNation>.
+
+#TEXT 3
+
+@<ShoreName> I took on board @<count> sailors from the shipwrecked @<ShipType> '@<ShipName>'. They must be delivered to any nearby settlement.
+
+#TEXT 4
+
+@<ShoreName> I have taken on board @<count> sailors landed by the pirate @<sBadName>. They must be delivered to any nearby settlement.
+
+#TEXT 5
+
+@<ShoreName> I met@<sSex> @<count> sailors from the shipwrecked @<ShipType> '@<ShipName>'. Their captain is a little out of his mind and demands to be taken to Dunkirk... I don't know what to do with them. So far, I've taken@<sSex> everyone on board, so don't leave them in this deserted place.
+
+#TEXT 6
+
+I delivered@<sSex> Captain @<sName> and his sailors to @<sCity>. And even got@<sSex> a small reward. Of course it's a small thing, but it's nice...
+
+#TEXT 7
+
+This crazy victim demands to be taken to Dunkirk and flatly refuses to leave the ship! His arrogance is becoming unbearable!.. I don't know how to get out of this situation..
+
+#TEXT 8
+
+This psycho finally asked for a knife. I simply had no other choice. He talked about some untold treasures, but he didn't even have a spoon. What a rascal!..
+
+#TEXT 9
+
+I finally managed to get rid of this victim. He even handed me a piece of a map. I need to get out of here as soon as possible before he realizes that I cheated on him@<sSex>. Hehe... Dunke-erk, Dunke-erk...
+
+#TEXT 10
+
+@<ShoreName> I met@<sSex> shipwrecked sailors. I will need to report them to the governor of the nearest settlement @<sNation>. I think the food he left will be enough until the expedition ship arrives.
+
+#TEXT 11
+
+@<ShoreName> I met@<sSex> sailors who were landed by the pirate @<sBadName>. I will need to report them to the governor of the nearest settlement @<sNation>. I think the food he left will be enough until the expedition ship arrives.
+
+#TEXT 12
+
+Business did not allow me to return to this ill-fated bay. It remains to be hoped that the unfortunate sailors were picked up by one of our fellow captains...
+
+#TEXT 13
+
+I informed@<sSex> Governor @<sCity> too late about the sailors left by me @<ShoreName>. I can only pray to the Lord that help will arrive in time...
+
+#TEXT 14
+
+I informed@<sSex> Governor @<sCity> about the sailors left by me @<ShoreName>. For which he even received@<sSex> a small reward. The governor was very glad that captain of the lost ship managed to survive. He hastily organizes a rescue expedition.
+
+#TEXT 15
+
+I delivered@<sSex> Captain @<sName> and his sailors to the nearest settlement. And I got@<sSex> is a very worthy gift, although it did not require a reward...
+
+#TEXT 16
+
+@<ShoreName> I have taken on board captain @<sName> and @<count> of his sailors. The captain claims that the pirate @<sBadName>, having incited the crew to mutiny, took away his ship and landed the unfortunate people on shore. I promised captain to find and return his ship '@<ShipName>', and I will get the hold.
+
+#TEXT 17
+
+As agreed, I delivered captain and the sailors from his team to the settlement. I received nothing but gratitude for this@<sSex>, but it didn't cost me anything...
+
+#TEXT 18
+
+I boarded@<sSex> @<ShipType> '@<ShipName>' and, according to our agreement, gave@<sSex> his @<sName>, after clearing the hold. Justice has been served.
+
+#TEXT 19
+
+During the battle, @<ShipType> '@<ShipName>' sank, and with it the contents of the hold went down. It was very uncomfortable in front of captain @<sName>. But there is nothing to be done.
+
+
+#QUEST JungleGirl
+
+Girl in the jungle
+
+#TEXT 1
+
+I promised@<sSex> @<sName> from the settlement of @<sCity> to bring @<sText1> large and @<sText2> small pearls for her mistress's necklace. I need to try to make it in 10 days, otherwise the work may be in vain.
+
+#TEXT 2
+
+In exchange for the pearls, I received@<sSex> from @<sName> is a very good amulet. That's it, I never know where I'll find it, where I'll lose it.
+
+#TEXT 3
+
+I did not manage to collect enough pearls for@<sSex>. It's a pity, of course, for the girl, but there's nothing to be done - there was nothing to hire such a capricious hostess...
+
+#TEXT 4
+
+@<sName> said she knows where the treasures of her father, the famous pirate @<sPirateName>, are hidden. This is @<sTreasureLoc>. I need to land at @<sShore>. After mining the treasure, it will have to be delivered back to the settlement @<sCity>.
+
+#TEXT 5
+
+@<sName> is dead, and I do not know the place where the chests are hidden... It's a pity, but I was unlucky this time.
+
+#TEXT 5_1
+
+I didn't@<sSex> get involved with Daddy's treasure hunt @<sName>. Let her sort out her treasure by herself.
+
+#TEXT 6
+
+There was a whole bunch of treasures in the @<sPirateName> treasure, I got@<sSex> half. Now I need to take @<sName> home to the settlement of @<sCity>.
+
+#TEXT 7
+
+@<sName> is dead... It's a pity for the girl, she just got rich and such a ridiculous death.
+
+#TEXT 8
+
+I brought@<sSex> @<sName> home with her treasures. As a token of gratitude, she gave me a nice present... Still, it's damn nice to make people happy.
+
+#TEXT 9
+
+The daughter of @<sText>, who is in the settlement of @<sCity>, ran away from home. He claims that he does not want to marry the son of a usurer and begs to take him to the chosen one @<sLover>. What should I do with it? "I don't know. And I don't want to spoil the girl's life, and I feel sorry for my parents...
+
+#TEXT 10
+
+@<sName> is dead. This is what disobedience to parents leads to...
+
+#TEXT 11
+
+I handed over the@<sSex> fugitive to the guards. Let them figure out where to put it...
+
+#TEXT 12
+
+In the settlement of @<sCity>, the girl ran away from me too. Well, I hope she finds her happiness, for which she is ready to sacrifice everything. Oh, youth...
+
+#TEXT 13
+
+I took@<sSex> the fugitive to her father, I think it's right. What could be worse than the grief of parents who have lost their child? Her father confirmed this with a generous reward.
+
+#TEXT 14
+
+I took the@<sSex> girl to her lover. Then let them figure it out for themselves, I'm not their babysitter.
+
+#TEXT 15
+
+I took@<sSex> to take the lovers to the settlement of @<sCity> to the parents of the newly-made groom. I think this is the right decision.
+
+#TEXT 16
+
+I delivered@<sSex> a couple in love, where I promised@<sSex>. I will need to go to @<sText> and get the payment from the groom's father. I wonder how glad he'll be to see me.
+
+#TEXT 17
+
+I didn't@<sSex> to bother the groom's parents, they have enough worries now without me. And my expenses in this enterprise were quite small.
+
+#TEXT 18
+
+The young man's father thanked me generously and made a substantial gift... Oh, I sincerely envy this couple.
+
+#TEXT 19
+
+I shouldn't have gone to this miser. It's a pity for the young ones - neither one nor the other was lucky with their parents... The people are completely stale in this hole, they don't want to understand anything except gold. But I am glad@<sSex1> that I was able to@<sSex1> help this couple, even if they live differently.
+
+#TEXT 20
+
+I took@<sSex> to take a girl who escaped from a brothel @<sBrothelCity> to her parents in the settlement of @<sCity>.
+
+#TEXT 21
+
+I took@<sSex> to bring the suitcase of the escaped from the brothel @<sName>. I need to look for him in the dating room. There's some money, documents, a decent dress and other belongings of the poor thing.
+
+#TEXT 22
+
+Business made me leave the girl at the tavern. I think she's smart enough to get herself out of this situation.
+
+#TEXT 23
+
+Everything that@<sSex> could do, I did@<sSex1>. All that remains is to wish @<sName> a successful trip home.
+
+#TEXT 24
+
+I delivered@<sSex> @<sName> to the settlement of @<sCity>. He did not accompany her to her parents@<sSex>, they won't be up to me right now...
+
+#TEXT 25
+
+I delivered @<sName> home. In gratitude, they gave me a good blade. In addition, I received deep moral satisfaction.
+
+#TEXT 26
+
+I delivered @<sName> home. In gratitude, they gave me an excellent musket. In addition, I received deep moral satisfaction.
+
+#TEXT 27
+
+I delivered @<sName> home. The enterprising brother of the fugitive offered a joint raid against the pirates, but I had to refuse.
+
+
+#QUEST ShipEpidemy
+
+Epidemic on the ship
+
+#TEXT 1
+
+I think I caught it.@<sSex> infection, apparently captain of the ship '@<sShipName>' was not joking about the epidemic. I need to communicate less with the team and continue to be more careful in such cases.
+
+#TEXT 2
+
+The crisis of the disease has passed. My appetite has returned, so, thanks to God's grace, I are on the mend.
+
+#TEXT 3
+
+There's an epidemic on board. Sailors are dying of disease. The captain of the boarding ship '@<sShipName>', damn him along with his ship and goods, was not joking at all... What should I do now?.. May the Blessed Virgin Mary save us.
+
+#TEXT 4
+
+The disease has receded. Glory to the Most Holy Theotokos!.. From now on, I need to be more careful in such cases...
+
+
+#QUEST ChurchGenQuest1
+
+Return the priest's manuscripts @<sCity>
+
+#TEXT	1
+
+Father @<sName> gave me an assignment: to bring precious theological manuscripts that he gave to the priest @<sOwnerCity> for the purpose of education (and by order of higher authorities) and not returned on time. I took@<sSex> to help solve this delicate problem.
+
+#TEXT 2
+
+Adults, servants of the Lord- but as children, by God. Well, anyway, the main thing is that I have the manuscripts! Now I need to take them back to @<sColony>.
+
+#TEXT 3_1
+
+I look at people and wonder! Everyone tries to hide their laziness and irresponsibility behind high intentions. How could I give such valuable things to an outsider completely without any guarantees? And a priest... Now chase this @<sCapName>, captain "@<sShipName>" all over the archipelago.
+
+#TEXT 3_2
+
+That's the problem: I'll have to look for a ship whose name I do not know. I must act immediately, before this God-fearing captain places precious books somewhere... and the first thing to do is to find out what is so SUBLIME that @<sCapName> wrote on board his vessel?
+
+#TEXT 4
+
+I wonder why I have to pay for someone's religious impulses?! A thousand gold pieces, damn it! I hope that around @<sColony> I will catch up with this tub of "@<sShipName>" with a God-fearing captain on the bridge and shake these pieces of paper out of him, for which the Lord may forgive me a couple of extra sins.
+
+#TEXT 5
+
+Failure again. But what a versatile man this @<sName> is, however: the priest trusts him so much that he has instructed him to deliver a valuable cargo, and port officials are shaking with hysteria at the very sound of his name. Let's see how things turn out when I finally meet at @<sColony>...
+
+#TEXT 6
+
+An interesting person, this captain. Well, it's time to meet him face to face, get the coveted books and deliver them to their rightful owner at @<sColony>.
+
+#TEXT 7
+
+Today I handed over@<sSex> to the priest @<sColony> his precious manuscripts and received@<sSex> a reward laced with a fervent warning against greed.
+
+#TEXT 7_2
+
+The old fool @<sCapName> owed money at the tavern for drinks and gave the innkeeper precious books and manuscripts as collateral. Expenses again: I will buy the manuscripts and finally deliver them to @<sColony>.
+
+#TEXT 8
+
+Another entry in the expense book: the debt of the old sperm whale under the name @<sName> in the tavern has been paid, the manuscripts of Father @<sColony> have been bought from the tavern keeper, and now it's time to show said Father and his beloved manuscripts and my expense book!
+
+#TEXT 9
+
+It turns out that there are disinterested tavern keepers in the world. I will hurry to @<sColony> to return the theological manuscripts, and also tell the story of how, in fulfillment of a vow, a man gave me these precious books for free.
+
+#TEXT 10
+
+Uff... I didn't think@<sSex> that such a simple task would take so much time and effort. I was only pleased with the God-fearing captain @<sCapName>, who without hesitation handed me precious manuscripts and almost kicked me out of his trough. It's time to go back to @<sColony>.
+
+
+#QUEST ChurchGenQuest2
+
+Church robbery @<sCity>
+
+#TEXT	1
+
+Steal the church cash register! Where is this world going?! While @<sName>'s father is casting curses on the heads of godless people, I should take more effective steps. For which, if not the Lord, then the padre will certainly reward me... Perhaps they couldn't have gone far...
+
+#TEXT	2
+
+There is a rumor in the city that some local bandits got hold of God's money, who also had the sense to lie low. I should visit their hunting grounds.
+
+#TEXT	3
+
+Truly, God gives everyone his own: the bandits got what they deserved, and I got the church treasury. It's time to visit the holy father.
+
+#TEXT	4
+
+That's how it would always be - and God pleased@<sSex>, and did not offend himself@<sSex>. Grace!
+
+#TEXT	5
+
+This is even more than I expected@<sSex>. After all, it's not so bad to run errands for the church!
+
+#TEXT	6
+
+Well, I'm cursed@<sSex> and rich@<sSex>. With that kind of money, I'm not even a brother to the devil.
+
+#TEXT	7
+
+The jungle is full of scum for every taste, but I still haven't found the ones I need. I'll go back to the city and try to find out more precisely where they might have gone.
+
+#TEXT	8
+
+The brave robbers of church goods turned out to be smarter than I thought@<sSex>, and took their feet out of the settlement. Rather, in @<sCity>, which is on @<sIsland>, before the rest of the coins flow into the clutches of city innkeepers and port whores!
+
+#TEXT	9
+
+My smugglers turned out to be compliant. They helped the scoundrels for money, and they were given out for money. It remains only to take a walk @<sShore>.
+
+#TEXT	10_1
+
+That's the story... Is @<sName>'s father really that treacherous? Still, I should talk to him before suspecting a possibly completely innocent person...
+
+#TEXT	10_2
+
+That's the story... Is @<sName>'s father really that treacherous? However, now that I've killed@<sSex> these scoundrels, no one except the padre himself will be able to either refute or confirm their words...
+
+#TEXT	11_1
+
+Well, finally I found scoundrels. Of course, @<sSex1> didn't get the Holy Grail, but still! It's time to go back.
+
+#TEXT	11_2
+
+I hope I have done a noble deed, and during the last judgment, the Almighty will credit me for sharing my property with the underprivileged in order to open the way for them to a righteous existence. By the way, it is necessary to please the holy Father that the church property seems to have gone for the same purpose...
+
+#TEXT	11_3
+
+Who would have thought that church supplies were so expensive... Well, at least I got something in exchange for money.@<sSex>. I'll take the cup to the padre, maybe it will ease his grief for the parish register.
+
+#TEXT	11_4
+
+There is no shame in being poor... It's a shame to lie!@<sSex> with anyone, from the king to the barber. And God rewarded such nobility: the scoundrels who insulted Him and me will now be defeated, the church property will be saved, and I will receive the reward due to me!
+
+#TEXT	12_1
+
+I want to believe that father's remorse was sincere. Of course, from a material point of view, I rendered@<sSex> at a loss, but what a moral satisfaction!
+
+#TEXT	12_2
+
+What a turn of events! It turns out that priests are no strangers to bouts of greed. But, as they say, everything that ends well is good. After all, @<sName>'s father managed to overcome the temptation and did not even forget to recoup my expenses.
+
+#TEXT	12_3
+
+What a turn of events! It turns out that priests are no strangers to bouts of greed. But still, @<sName>'s father managed to overcome the temptation. However, in his excitement he forgot to pay my expenses. I had to remind I...
+
+#TEXT	12_4
+
+In our greedy age, the Devil knows how to seduce even a church minister with the sound of gold, what can I say about ordinary people? It may look stupid, but I disdained@<sSex> the dirty money of a scoundrel in a cassock.
+
+#TEXT	12_5
+
+Truly, God is all-merciful if He allows sinners like Father @<sName> to deceive a trusting flock. I am not that good-natured@<sSex>, and I was@<sSex1> I would be glad to@<sSex1> hand over the fraudster to the authorities, but I have no solid evidence of collusion... I've had enough of exploits for the glory of God... It's already a good thing that I shook @<sSex2> out of this scoundrel for expenses.
+
+#TEXT	12_6
+
+Truly, God is all-merciful if He allows sinners like Father @<sName> to deceive a trusting flock. I am not that generous@<sSex>, and I was@<sSex1> I would be glad@<sSex1> to turn the fraudster over to the authorities, but I have no solid evidence of collusion... I've had enough of exploits for the glory of God - all expenses and disappointments...
+
+#TEXT	12_7
+
+I still haven't cleared@<sSex> of suspicions about @<sCity>'s father. Of course, the word of a priest means more than the word of a bandit, but this whole story smells bad. I've had enough of exploits for the glory of God – all expenses and disappointment...
+
+#TEXT	12_8
+
+The Holy Father adequately withstood the news that the church money went to the robbers to drink. Let him be comforted that my expenses did not pay off either.
+
+#TEXT	12_9
+
+Of course, I did@<sSex> is not exactly Christian... but the parish will not be impoverished, and my expenses will be paid off at least partially. The main thing is that the church purse did not go to the vile thieves...
+
+#TEXT	12_10
+
+To appropriate the church cash register, and then also receive a reward for it, of course, is not the most virtuous act, but if I do not urgently change the rigging, one of the sailors may fall off and fall to his death, and this sin will fall on my soul... And as for the holy father, I vow someday to donate three times more to this church than I took@<sSex>!
+
+#TEXT	12_11
+
+Will the Lord forgive me, who alone knows why I betrayed the trust of a simple-minded priest?.. I had already committed a sin, but it would have been even worse to accept the money with which, in his infinite kindness, he wanted to comfort me.
+
+#TEXT	12_12
+
+No money! No glory!! Yes, and vile suspicions about me!!! So that I can once again connect@<sSex> with the saints!!
+
+#TEXT	13
+
+The Bible says that God gives everyone a test according to their abilities... However, my strength seems to have been exhausted, and this cross is not up to me. I hope @<sName>'s father will understand me when I tell him that I could not@<sSex> complete his task.
+
+
+#QUEST CaptainComission1
+
+Captain's last words
+
+#TEXT	1
+
+Before his death, Captain @<sShipName> @<sCapName> asked me to tell @<sCharName> from the settlement @<sCity> that I did not have time to complete his assignment. I will need to find this person. After all, the last will of a dying man and all that...
+
+#TEXT	2
+
+I didn't@<sSex> wasting time on trifles. The petitioner must have forgotten his errand long ago.
+
+#TEXT	3
+
+@<sCharName> suggested that I deal with the ransom of my prisoner @<sCharType>. I did not take@<sSex> for this case, citing my busy schedule.
+
+#TEXT	4
+
+@<sCharName> from @<sCity> asked me to deliver 150,000 gold @<sPirateName> to @<sPirateCity> to return his @<sFamilyType> @<sSlaveName>, whom the pirates are holding for ransom. Upon my return, 40,000 gold pieces are waiting for me for my work.
+
+#TEXT	5
+
+I got into an unpleasant situation@<sSex>. It turns out that captain @<sCapName> was carrying @<sPirateName> to @<sPirateCity> a ransom for some prisoner @<sSlaveName> - 3 chests of gold. This type, @<sCharName>, categorically made it clear to me that the order remains in force. If I don't bring @<sSlaveName> to the @<sCity> tavern in 30 days, I promised to send hunters after me... But how could I@<sSex1> not find these chests in the cabin of the late captain?!
+
+#TEXT	6
+
+I failed@<sSex1> execute the assignment @<sCharName>. Of course it's@<sSex>, but let him forgive me. After all, I could have @<sSex2> died the same way as captain @<sCapName>.
+
+#TEXT	7
+
+Well, the time allotted for the prisoner's delivery is over. Let's see what the formidable Mr. @<sCharName> will do now.
+
+#TEXT	8
+
+I decided@<sSex> to refuse to complete the task @<sCharName>. Maybe he was offended, but I returned the money to him@<sSex>.
+
+#TEXT	9
+
+I took the@<sSex> prisoner. Now it remains to deliver it to the customer @<sCharName> in @<sCity>.
+
+#TEXT	10
+
+@<sName>, without waiting for a ransom, sold his prisoner on a plantation in Barbados. Well, that's for the best, a simple slave won't be worth it as a hostage. I must hurry to Barbados to see Colonel Bishop.
+
+#TEXT	11
+
+I paid@<sSex> for @<sName> @<sSum> gold. Now I need to hurry to @<sCity> to @<sCharName>. He's probably worried, poor guy. And it wouldn't hurt to get a reward.
+
+#TEXT	12
+
+The mistake with the trunks cost me dearly. I paid@<sSex> for @<sName> whole @<sSum> gold. But this prisoner turned out to be not at all simple and offered me to take him to @<sCity> in exchange for some valuable information. I agreed with @<sSex1>, especially since the customer does not seem to intend to pay at all.
+
+#TEXT	13
+
+The mistake with the trunks cost me dearly. I paid@<sSex> for @<sName> whole @<sSum> gold. It seems that the released one is not eager to meet with the customer, but that's not my business. I don't want to get in trouble for some poor bastard.
+
+#TEXT	14
+
+I delivered@<sSex> a former hostage, and now a free citizen @<sName> to his relative, for which I received@<sSex> promised reward of 40,000 gold in three credit chests.
+
+#TEXT	15
+
+I delivered the@<sSex> former hostage @<sName> to his relative. But the latter refused to compensate for the additional costs... How uncooperative people become when they don't need anything from I anymore.
+
+#TEXT	16
+
+I delivered the@<sSex> former prisoner to the customer. As it turned out, this is the @<sSpeciality> specialist that @<sNation> was after. As a reward, I was even given a valuable gift on behalf of the government.
+
+#TEXT	17
+
+During the escape, @<sName> died. I probably shouldn't have put him through such a test. What am I going to tell the customer now?
+
+#TEXT 	17_1
+
+@<sName> died in the jungle. I probably shouldn't have put him through such a test. What am I going to tell the customer now?
+
+#TEXT	18
+
+I managed to organize the escape of @<sName> from the plantations. It remains to find him and deliver him alive to the customer.
+
+#TEXT	19
+
+This prisoner turned out to be not at all simple and offered me to take him to @<sCity> in exchange for some valuable information. I agreed, especially since the customer does not seem to intend to pay at all.
+
+#TEXT	20
+
+It seems that the released one is not eager to meet with the customer, but that's not my business. I don't want to get in trouble for some poor bastard.
+
+#TEXT	21
+
+This captured engineer turned out to be very useful. It is difficult to overestimate the importance of the information received from him, even for a sophisticated soldier.
+
+#TEXT	22
+
+I informed@<sSex> @<sCharName> about the death of his relative @<sName>. I kept the money that he gave to the pirates for myself as compensation for expenses.
+
+#TEXT	23
+
+I informed@<sSex> @<sCharName> about the death of his relative @<sName> and returned to@<sSex> the 150,000 gold received from him to pay the deposit. It was possible, of course, to demand compensation for expenses, but not in this case.
+
+#TEXT	24
+
+@<sName> instructed me to sink two pirate ships '@<sShipName1>' and '@<sShipName2>', which went to @<sShoreName>, which is on @<sShoreType>. I need to make it in 15 days before they clear the cache.
+
+#TEXT	25
+
+The @<sName> assignment has been completed, '@<sShipName1>' and '@<sShipName2>' have been destroyed. Now I need to hurry to @<sCity> before @<sNameNom> sells the prisoner to slavers.
+
+#TEXT	26
+
+I didn't have time to catch up with the pirates. They've probably already cleaned out the cache. I'll have to go back to @<sName> with nothing.
+
+#TEXT	27
+
+I couldn't come to an agreement with@<sSex>. Now I don't even know if it's worth going back to @<sCity> to @<sCharName>. What am I going to tell him?
+
+#TEXT	28
+
+After my mistake with the task, @<sName> increased the ransom amount to 200,000 gold. I didn't@<sSex> lay out your money. Now I don't even know if it's worth going back to @<sCity> to @<sCharName>. What am I going to tell him?
+
+#TEXT	29
+
+After my mistake with the task, @<sName> increased the ransom amount to 200,000 gold. I had to lay out my money. Now I need to hurry to @<sCity> to @<sCharName>. Maybe the customer will compensate my expenses after all?
+
+#TEXT	30
+
+I didn't@<sSex> pay that kind of money. It's one thing to ransom a hostage, and quite another to buy a slave on a plantation... I wonder if Bishop has increased security after the famous events or is still saving money?
+
+#TEXT	31
+
+@<sName> does not want to give up his prisoner without ransom. Well, I'll have to look for money or spit on this assignment.
+
+#TEXT	32
+
+I told@<sSex> @<sName> about the death of the prisoner. It seems that he is now in the same hopeless position that he recently put me in.
+
+#TEXT	33
+
+I was unable to@<sSex> destroy the pirate ships @<sShipName1> and @<sShipName2>. I'll have to go back to @<sName> with nothing.
+
+#TEXT 	34
+
+Finally, @<sName is on board. Now I need to hurry to @<sCity> to @<sCharName>. Until he had a stroke.
+
+
+#QUEST CaptainComission2
+
+Captain's last words
+
+#TEXT	1
+
+Before his death, Captain @<sName> asked me to tell Captain @<sShipType> '@<sShipName>' @<sCapName> that he was going to be arrested at @<sCity1>. The authorities found out about something there... @<sShipTypeNom> is sailing from @<sCity2> and will anchor in port @<sCity11> in 10-15 days. I must try to make it in time. After all, the last will of a dying man and all that...
+
+#TEXT	2
+
+Business did not allow me to warn Captain @<sCapName> about the danger that threatened him. I think he'll get out on his own, if he has a head on his shoulders.
+
+#TEXT	3
+
+I did@<sSex> the order of captain @<sName>, but I did not help his friend@<sSex>, referring to employment. He's a smart guy and he'll figure out his own problems.
+
+#TEXT	4
+
+Captain @<sName> asked me to help him smuggle the cargo of @<sGoods> out of @<sShoreName>. And when I refused@<sSex>, he took my boat and threw me out on a deserted beach like a kitten. I'll have to start all over again... That's how I help people.
+
+#TEXT	5
+
+Captain @<sName> asked me to help him smuggle the cargo of @<sGoods> out of @<sShoreName>. And when I refused@<sSex> from this dubious event, I tried to take away my ship. He shouldn't have started it, I had to let him go to the bottom. I wish I knew where the stash was.
+
+#TEXT	6
+
+Captain @<sName> asked me to help him smuggle the cargo of @<sGoods> out of @<sShoreName>. And when I refused@<sSex> from this dubious event, I tried to take away my ship. I had to leave with all sails.
+
+#TEXT	7
+
+Captain @<sName> asked me to help smuggle the cargo of @<sGoods> out of @<sShoreName>. I'll get everything that won't fit in his hold... I will need to dock @<sShoreNameDat> right after midnight.
+
+#TEXT	8
+
+I have changed my mind@<sSex> to deal with Captain's questions @<sName>. Let him sort out the mess he's made himself.
+
+#TEXT	9
+
+It looks like an ambush was organized by @<sShoreName>, the patrolmen appeared too quickly. The captain @<sName> died in the fight. The sailors combed the entire bay, but they did not find the hiding place. Perhaps the authorities have already taken out all the cargo...
+
+#TEXT	10
+
+The goods are in the holds. I got @<sGoodsQuantity> pcs. @<sGoods>. Now captain and I are going our separate ways. I need to leave quickly before the authorities organize a chase.
+
+#TEXT	11
+
+The goods are in the holds. I got @<sGoodsQuantity> pcs. @<sGoods>. The captain @<sName> is afraid of being chased and asks to escort his ship to @<sShoreName>, which is on @<sShoreType>. I decided to help him, especially since he promises a solid reward in gold.
+
+#TEXT	12
+
+A patrol squadron was already waiting for us at the exit of the bay. I had to take the fight. @<sShipType> '@<sShipName>' with a full hold @<sGoods> sank, and with it captain @<sName>.
+
+#TEXT	13
+
+I joined the battle and @<sShipType> '@<sShipName>' sank with a full hold of @<sGoods>... Well, it's God's will. The brave Captain @<sName> I never had time to take advantage of the wealth that turned up so well...
+
+#TEXT	14
+
+Captain @<sName> and I decided that it was better for us to separate, so as not to bind each other with unnecessary obligations. He went to @<sShoreName>, and I went on about my business.
+
+#TEXT	15
+
+I did not manage to@<sSex1> escort @<sShipType> '@<sShipName>' on time, and captain @<sName> refused to pay the reward. But I didn't lose out.@<sSex>.
+
+#TEXT	16
+
+The captain @<sName> lured me into a trap and demanded to return the cargo or pay off with gold. @<sShoreName> a part of his heroic team was waiting for us. I had to take the fight.
+
+#TEXT	17
+
+The captain @<sName> lured me into a trap and demanded to return the cargo or pay off with gold. @<sShoreName> a part of his heroic team was waiting for us. I had to put out @<sSum> gold.
+
+#TEXT	18
+
+It turns out that captain of the patrol @<sShipType> @<sName> is associated with smugglers. Maybe I should visit him in the fort's casemates?
+
+#TEXT	19
+
+It turns out that captain of the patrol @<sShipType> @<sName> is involved in a bad story with some missing cargo. Maybe I should visit him in the fort's casemates?
+
+#TEXT	20
+
+I couldn't find Captain @<sName>'s hiding place. I think it's not worth bothering the governor about this @<sCity>.
+
+#TEXT	21
+
+Captain @<sName> agreed to show me the cache in exchange for half of its contents. First I need to hide the fugitive on board your ship, then everything else.
+
+#TEXT	22
+
+Captain @<sName> died, and with him the hope of finding a hiding place.
+
+#TEXT	23
+
+I so stupidly failed@<sSex> the governor's order... God, it's a shame...
+
+#TEXT	24
+
+Captain's hiding place @<sName> @<sShoreName>. I need to prepare the hold to accommodate @<sGoodsQuantity> pcs. @<sGoods>. I must hurry before the cache is found.
+
+#TEXT	25
+
+I missed it so badly.@<sSex> Captain @<sName>! But it was possible to earn good money.
+
+#TEXT	26
+
+I found a stash, @<sGoodsQuantity> pcs. @<sGoods> loaded into the hold. Of these, @<sSum1> belongs to captain @<sName>. In @<sDays> days, it must be delivered to @<sShoreName>, which is on @<sShoreType>. Now let the governor's bloodhounds try to find Captain @<sName> and his precious goods, and for one thing let them add me to the list.
+
+#TEXT	27
+
+Finally, Captain @<sName> opened his hiding place, but I thought@<sSex> that there was no need to share it with him. He tried to challenge this decision, for which he paid the price. But @<sGoodsQuantity> pieces of @<sGoods> now belong to me.
+
+#TEXT	28
+
+Finally, Captain @<sName> opened his hiding place, but his nerves could not stand the news that I intend to transfer all the goods into the hands of the authorities. It was necessary to apply surgical intervention, as a result of which captain died. All that remains is to inform the governor of @<sCity> about the location of the cache.
+
+#TEXT	29
+
+I didn't@<sSex> inform the authorities about the location of captain's hiding place @<sName>. I think they'll find him without me.
+
+#TEXT	30
+
+The task of the governor @<sCity> has been completed. Instead of a monetary reward, I received@<sSex> is a very good gift.
+
+#TEXT	31
+
+I were late, there were no buyers for @<sShoreName>. The captain @<sName> offered to buy out his share, but there is no reason for me to throw money away for the goods that are already in my hold. Our dispute was decided by a duel.
+
+#TEXT	32
+
+I were late, there were no buyers for @<sShoreName>. The captain @<sName> offered to buy out his share for @<sSum> gold. I agreed@<sSex>, in gratitude captain gave me a nice gift. I parted as friends.
+
+#TEXT	33
+
+It looks like Captain @<sName> couldn't share the loot with his team. I had to reduce the number of people who wanted to get his share. And he didn't last long either. This means that our contract is no longer valid due to the death of one of the partners. I keep all the cargo.
+
+#TEXT	34
+
+It looks like Captain @<sName> couldn't share the loot with his team. I had to reduce the number of people who wanted to get his share. In addition, captain offered to buy her back for @<sSum> gold. I agreed@<sSex>, in gratitude captain gave me a nice gift. I parted as friends.
+
+#TEXT	35
+
+It looks like Captain @<sName> couldn't share the loot with his team. I had to reduce the number of people who wanted to get his share. In addition, captain offered to buy her back for @<sSum> gold. That's what I did@<sSex>. He also asked to join my team, but I refused@<sSex>. He's too independent.
+
+#TEXT	36
+
+It looks like Captain @<sName> couldn't share the loot with his team. I had to reduce the number of people who wanted to get his share. In addition, captain offered to buy her back for @<sSum> gold. That's what I did@<sSex>. Also, I hired@<sSex> as his officer. Everyone needs such fighters.
+
+#TEXT	37
+
+I was late@<sSex>, captain of the patrol @<sShipType> @<sName> was executed along with his team. I need to find out more about this case.
+
+#TEXT	38
+
+I was late@<sSex>, captain of the patrol @<sShipType> @<sName> was executed along with his team. But he could have managed to bring the contents of the hold to shore @<sShipTypeQuest>.
+
+#TEXT	39
+
+It turns out that everything is not so simple here. The captain of the patrol @<sShipType> @<sName> was executed along with part of the team, and there is no evidence of a crime. I would like to meet with the shell-shocked @<sCharName>, the former gunner of @<sShipType> '@<sShipName>'.
+
+#TEXT	40
+
+The former gunner @<sShipType> '@<sShipName>' @<sName> told me the whole story of the death of @<sShipTypeQuest>'@<sShipNameQuest>'. But this shell-shocked man asked an exorbitant price for information about the cache. I didn't@<sSex> pay that kind of money.
+
+#TEXT	41
+
+The conversation with the former gunner @<sShipType> '@<sShipName>' turned out to be very fruitful. I urgently need to find @<sSum> gold, this is the amount that @<sName> requested for information about the cache.
+
+#TEXT	42
+
+I changed my mind@<sSex> to deal with Captain's hiding place @<sName>. Let the former gunner @<sCharName> forgive me, but he asked for too much money, and I have more important things to do.
+
+#TEXT	43
+
+So, the former gunner @<sShipType> '@<sShipName>' @<sName> told me the story of the death of @<sShipTypeQuest>'@<sShipNameQuest>'. It turns out that the cache really exists and the entire cargo is stored in it @<sShipTypeQuest> - @<sSum> pcs. @<sGoods>. I need to prepare the hold and come to @<sShoreName> after midnight, @<sName> will be waiting for me there.
+
+#TEXT	44
+
+I missed it so badly.@<sSex> a chance to clear captain's stash @<sName>! Maybe @<sCharName> didn't wait for me, or maybe he decided to cheat. In any case, it is a pity for the money and time spent...
+
+#TEXT	45
+
+The smugglers cleared captain's hiding place @<sName>. Or maybe it was @<sCharName> who decided to cheat me and worked on two fronts. In any case, it is a pity for the money and time spent...
+
+#TEXT	46
+
+The smugglers got to Captain @<sName>'s hiding place earlier. I had to fight off the load by force. It's a pity that the gunner @<sCharName> died. Ironically, all the members of the ill-fated @<sShipType> '@<sShipName>' team are dead, and none of them were able to benefit from their heroic enterprise... I took@<sSex> all the goods that got into the hold - @<sSum> pcs. @<sGoods>.
+
+#TEXT	47
+
+The smugglers got to Captain @<sName>'s hiding place earlier. I had to fight off the load by force. I took@<sSex> all the goods that got into the hold - @<sSum> pcs. @<sGoods>. It remains to deliver the gunner @<sCharName> to the settlement @<sCity>.
+
+#TEXT	48
+
+I parted with the former gunner @<sShipType> '@<sShipName>' @<sCharName> at the port of @<sCity>. In gratitude, he gave me a nice valuable thing. At least one of the ill-fated @<sShipType> team benefited from their risky venture.
+
+#TEXT	49
+
+It turns out that captain of the patrol @<sShipType> @<sName> was arrested for robbery at sea. Maybe I should visit him in the fort's casemates?
+
+#TEXT	50
+
+The case is taking an interesting turn. It turns out that captain of the patrol @<sShipType> @<sName> has been arrested for robbery at sea, and the governor @<sCity> is looking for his hiding place. I took@<sSex> to help him with this, for which I got @<sSex1> permission to meet with the arrested person.
+
+
+#QUEST Convict
+
+Convicts
+
+#TEXT	1
+
+In the jungle of @<sIslandType> I met @<sConvictNum> escaped convicts. I decided to@<sSex> take them on the team. Around midnight, I will need to dock @<sShoreName>.
+
+#TEXT	2
+
+The escaped convicts whom I met@<sSex> in the jungle @<sIslandType> asked to get a tartan or a longboat for them, promised to pay twice. The shell needs to be fitted with @<sShoreName>. The deadline is tomorrow morning.
+
+#TEXT	3
+
+I changed my mind@<sSex> to help escaped convicts. Let them get out on their own.
+
+#TEXT	4
+
+I delivered the@<sSex> boat to @<sShoreName>. The escaped convicts paid me back in full.
+
+#TEXT	5
+
+I delivered the@<sSex> boat to @<sShoreName>. But instead of money, the customers made me a good present. I'm not offended.
+
+#TEXT	6
+
+I delivered the@<sSex1> boat to @<sShoreName>. But the damned convicts decided to cheat me anyway. I had to explain to them what@<sSex> means. It is a pity that this science will no longer be useful to them...
+
+#TEXT	7
+
+Escaped convicts saw a ship called @<sShipName> loading last night. I loaded the cargo @<sGoodName>. Whoever it was, they couldn't have gone far.
+
+#TEXT	8
+
+In the jungle of @<sIslandType> I met @<sConvictNum> escaped convicts. They are asked to deliver them to the lighthouse @<sCity>. I agreed with@<sSex> for @<sSum> piastres. Around midnight, I will need to send a boat for them @<sShoreName>.
+
+#TEXT	9
+
+I refused to take the convicts on board, which caused them unhealthy aggression. I had to be calmed down...
+
+#TEXT	10
+
+The fugitives are on board, now I need to get out before the patrol arrives.
+
+#TEXT	11
+
+I delivered@<sSex> escaped convicts to @<sMayak>. For what I received@<sSex> full calculation - @<sSum> piastres in gold bars. Well, money, as I know, does not smell...
+
+#TEXT	12
+
+I delivered@<sSex> escaped convicts to @<sMayak>. But instead of money, they made me a good present. I'm not offended.
+
+#TEXT	13
+
+I delivered @<sSex1> escaped convicts to @<sMayak>. But they decided to cheat me anyway. I had to explain what@<sSex> means. It is a pity that this science will no longer be useful to them...
+
+
+#QUEST HoldQuest
+
+Captive captain
+
+#TEXT	1
+
+The captive captain @<sName> told me that a rich merchant carries @<sGoods> by the route @<sCityFrom> - @<sCityTo>. Sometimes he hires an escort. I can try to intercept his ship '@<sShipName>' on the approach to one of the ports, if captain did not lie, then the catch promises to be rich. The prisoner had to be released.
+
+#TEXT	2
+
+Before I could@<sSex> prepare an attack, the ship '@<sShipName>' took off its anchors and went on another voyage. I don't even hope to get another chance to track him down.
+
+#TEXT	3
+
+I failed to capture the ship '@<sShipName>' with the cargo of @<sGoods>. I don't even hope to get another chance to track him down.
+
+#TEXT	4
+
+I managed to capture the ship '@<sShipName>' with a cargo of @<sGoods>.
+
+#TEXT 	5
+
+During the battle, the ship '@<sShipName>' sank, and the entire cargo of @<sGoods> is now at the bottom of the sea!
+
+#TEXT	6
+
+The captive captain @<sName> says that his comrade @<sNameChar> lives in @<sCity>, who allegedly can give a large ransom for the release of his former companion. It will be necessary to visit this 'comrade'.
+
+#TEXT	7
+
+This captive captain @<sName> decided to trick me! Well, he won't get away with it! I'll have them hanged right now!
+
+#TEXT	8
+
+The owner of the tavern @<sCity> advised me to visit @<sFoundChar>, if I'm lucky, I'll find @<sName> there.
+
+#TEXT	9
+
+I missed it badly.@<sSex> @<sName>! But it was possible to get a good ransom for the prisoner.
+
+#TEXT	10
+
+This captive captain @<sName> decided to trick me! Well, he won't get away with it! I'll have them hanged right now!
+
+#TEXT	11
+
+The captive captain @<sName> did not deceive me. His friend @<sNameChar> paid @<sSum> without further ado. It will be necessary to arrange for the boatswain to send our sufferer ashore.
+
+#TEXT	12
+
+The captive captain @<sName> told me that there is a certain @<sNameChar> living in @<sCity> who is ready to sell the treasure map @<sPirateName>. I don't know how true this is, but the prisoner had to be released. I should visit this @<sNameChar> before he gets to the treasure himself.
+
+#TEXT	13
+
+I don't know if the captive captain @<sName> cheated on me, or it just happened, but @<sNameChar> - I am not our cardholder@<sSex>... And it looks like I won't find it anymore...
+
+#TEXT	14
+
+I missed it badly.@<sSex> @<sName>!
+
+#TEXT	15
+
+The map @<sPirateName> I traded@<sSex> for @<sSum> gold. It remains to be hoped that the treasure is still in place.
+
+#TEXT	16
+
+I didn't@<sSex> buy a card from @<sName>. @<sSum> - too expensive, considering that the treasure may no longer be there...
+
+#TEXT	17
+
+There was nothing worthwhile in the chest. Well, apparently the owner of the treasure has been here before... Or the rascal @<sName> came up with an original way to make money from simpletons.
+
+#TEXT	18
+
+The captive captain @<sCapName> did not deceive me. All the treasures are in place. What a stroke of luck!
+
+
+#QUEST SharpPearl
+
+Find the pearl fishing industry
+
+#TEXT   1
+
+I managed to find out from the brothel owner at @<sCity> that Sharp went to @<STarget>@<sAreal>.
+
+#TEXT   2
+
+I couldn't find Sharp at @<sOldTarget>. According to rumors, he went to @<STarget>@<sAreal>.
+
+#TEXT   3
+
+I've just been told that Captain Sharp left the port for sea just an hour ago. If I leave immediately, I'll be able to catch up with him.
+
+#TEXT   4
+
+I'm sorry, but I couldn't come to an agreement with Sharp. If I want to talk to him again, I guess I'll have to start looking for him in the brothels again.
+
+#TEXT   5
+
+I managed to@<sSex> to catch Sharp after all. @<sSex1> According to him, @<iDay> pearl fishermen will be fishing at @<sAreal>, in a place called @<STarget>.
+
+I must try to get there in time.
+
+#TEXT   6
+
+I went out to sea, but Sharp was already gone... It looks like I've lost track of him. I need to start looking at brothels again.
+
+#TEXT   7
+
+I managed to profit from the pearl fisheries. My loot from the raid is @<iSmall> small and @<iBig> large pearls.
+
+Not bad. If necessary, I need to find Sharp again...
+
+#TEXT   8
+
+I didn't manage to profit from the pearl fishermen. I arrived on time and even saw their tartans, but I couldn't catch up with anyone@<sSex1>. Sorry...
+
+Well, life goes on. Somehow, I need to find Sharp again and get a new lead on the fishery from him.
+
+#TEXT   9
+
+The devil! I did not manage to@<sSex> arrive at a place called @<STarget> in @<iDay>. Accordingly, this time I will not see the fishermen with their pearls, like my ears.
+
+But never mind, I need to try to find Sharp again and get a new lead on the fishery from him.
+
+#TEXT   10
+
+This time Sharp wanted money for the tip. I had to give up his services, I'll do without the pearls.
+
+#TEXT   11
+
+I managed to find out from a passing citizen that Captain Sharp was walking through the streets of the city. I need to find him before he gets out of here...
+
+#TEXT   12
+
+I was too slow@<sSex> to go to sea, Sharp had already left my line of sight. Sorry. Since I've lost@<sSex> his trail, I need to start looking for him in brothels again.
+
+#TEXT   13
+
+Sharp doesn't want to talk to me right now. Bad. I'll have to find him again sometime later through the brothel...
+
+
+#QUEST SharpPearl_SeekSpy
+
+Find Sharp's spy
+
+#TEXT   1
+
+So that's how clever Sharp learns the secrets of pearl fishermen!
+
+One of the elders of the pearl fishing settlement gave me the task to find a man among his people who informs Sharp about the location of the tartan hunters in the Caribbean Sea. My reward will be good combat gear, and I got the rat god.@<sSex> in advance!
+
+Not bad...
+
+#TEXT   2
+
+An Indian in a pearl settlement named @<sName> told me about Emilio Garcia. The Indians of my red-skinned friend's tribe saw this Emilio more than once at night in the caves of the San Juan del Norte Bay. He was talking to a stranger.
+
+Perhaps I should visit the caves of the bay until I intercept this Emilio there. I don't have any other leads.
+
+#TEXT   3
+
+My sixth sense tells me that luck is waiting for me in the bay this time. I need to search the caves carefully.
+
+#TEXT   4
+
+It's done! I managed to find out that Emilio Garcia was really behind the leak of information about the tartans of pearl fishermen. Now I can get the promised reward in the pearl fisheries.
+
+#TEXT   5
+
+I received@<sSex> a set of combat ammunition promised to me in the settlements of pearl fishermen.
+
+
+#QUEST  ShipyardsMap
+
+Industrial espionage
+
+#TEXT   1
+
+The owner of the shipyard @<sCity> is interested in me stealing the drawings of the new @<sShip> from the shipyard at @<STarget>.
+
+#TEXT   2
+
+The job is done, I have the drawings. Now I need to deliver them to the customer and receive a reward.
+
+#TEXT   3
+
+The devil! The owner of the shipyard @<sCity> refused to pay for the order! I was unlucky, apparently, I took@<sSex> something is wrong.
+
+#TEXT   4
+
+The owner of the shipyard @<sCity> liked the drawing I delivered. I received@<sSex> there is a good reward for it.
+
+#TEXT   5
+
+The entrance door to the shipyard @<sCity> will be open for the next 24 hours. I need to take advantage of this...
+
+
+#QUEST  SeekMayorsRing
+
+Looking for an engagement ring in a brothel
+
+#TEXT   1
+
+The governor of @<sCity> @<sName> instructed me to find an engagement ring he had lost in a brothel. It is completely unclear where to look for him, because the honorable governor spent so much fun there the day before that he does not really remember anything at all.
+
+It is necessary to find and return the ring to the owner within today.
+
+#TEXT   2
+
+The governor of @<sCity>, it turns out, gave it to a bordello girl named @<sName>! What just does not happen in a drunken case. I managed to buy the ring for 5 thousand, I can carry it to the governor.
+
+#TEXT   3
+
+The governor of @<sCity>, it turns out, gave it to a bordello girl named @<sName>! Well, I have the ring now, I can take it to the governor.
+
+#TEXT   4
+
+I did not manage to take the ring to the governor of @<sCity> in time. The task has failed.
+
+#TEXT   5
+
+I didn't find @<sCity> governor's ring. The task has not been completed.
+
+#TEXT   6
+
+The governor's ring @<sCity> has been found. Now I need to quickly take it to the owner.
+
+#TEXT   7
+
+The governor's ring @<sCity> has been delivered to the owner.
+
+
+#QUEST  SeekUsurersJewel
+
+Helping a usurer find a stone
+
+#TEXT   1
+
+A usurer named @<sCity> named @<sName> has given the task to find @<sJewType>, which he lost somewhere in the jungle just outside the city gates.
+
+#TEXT   2
+
+The usurer's stone has been found. Now I can get a reward for it.
+
+#TEXT   3
+
+Eh, it came easily, it went easily. I had to give the stone to the local beggars. They obviously need it more, judging by their appearance. Although they promised to thank me someday, it's hard to believe.
+
+#TEXT   4
+
+Eh, it came easily, it went easily. I had to give the stone to the local beggars. They obviously need it more, judging by their appearance. I couldn't believe how grateful I was, but they took and gave me a piece of the treasure map.
+
+#TEXT   5
+
+Eh, it came easily, it went easily. I had to give the stone to the local beggars. They obviously need it more, judging by their appearance. I couldn't believe how grateful I was, but they took and gave me a whole treasure map. What generosity!
+
+
+#QUEST  Church_DestroyGhost
+
+Church's task to clean @<sLocation> of evil spirits near @<sCity> 
+
+#TEXT   1
+
+According to the local priest, @<sLocation> near @<sCity> is a haven of evil spirits. It is necessary to go there, summon evil spirits and destroy it at the root.
+
+#TEXT   2
+
+Well, the evil spirits have appeared. Now it is necessary to clean up, destroy all the skeletons.
+
+#TEXT   3
+
+I reprimanded@<sSex> in front of the padre. The case is completely over.
+
+
+#QUEST  Church_NightGuard
+
+Night watch at the church @<sCity>
+
+#TEXT   1
+
+The Holy Father @<sCity> assigned me to serve as a watchman in the church building for three nights. He has a suspicion that a robbery of the parish is being prepared. I need to be in church from midnight to six in the morning.
+
+#TEXT   2
+
+I did not provide@<sSex> at midnight in the church, and this is a violation of the conditions for fulfilling the holy father's commission. The task has failed.
+
+#TEXT   3
+
+I left@<sSex> church during the night vigil, although I shouldn't have done so. The task has failed.
+
+#TEXT   4
+
+I've been on watch@<sSex> three nights in the church, the holy father's commission is fulfilled. Now I can go to him with a report.
+
+#TEXT   5
+
+I managed to wait for the church thieves! I'm afraid that the fight cannot be avoided...
+
+
+#QUEST  PortmansBook_Delivery
+
+@<sCity> portmaster's task to catch up with captain named @<sCapName>
+
+#TEXT   1
+
+The portmaster of @<sCity> gave me a small task. The fact is, captain @<sShipTypeName> '@<sShipName>' forgot his logbook at the port authority. I need to catch up with this absent-minded captain named @<sCapName> and return the logbook to him.
+
+According to the head of the port, @<sCapName2> headed to @<sTargetCity>@<sAreal>.
+
+#TEXT   2
+
+I managed to catch a slob in the sea on the way to @<sTargetCity>. @<sCity> portmaster's task has been completed.
+
+#TEXT   3
+
+I managed to find that captain in @<sCity> at the portmaster's house. @<sCity2> portmaster's task to has been completed.
+
+#TEXT   4
+
+From the rumors, I learned that captain @<sCapName> left the port of @<sCity> for @<sTargetCity>@<sAreal>.
+
+#TEXT   5
+
+The portmaster of @<sCity> told me that captain @<sCapName> on @<sShipTypeName> '@<sShipName>' @<sDate> of the year left for @<sTargetCity>@<sAreal>.
+
+
+#QUEST  Portmans_SeekShip
+
+@<sCity> portmaster's task to return the stolen ship
+
+#TEXT   1
+
+The portmaster of @<sCity> gave me a serious assignment. @<sShipTypeName> '@<sShipName>' has disappeared from the port parking lot, I need to search for the ship.
+
+I don't have any clues where to direct the search. I will have to be more careful at sea, and I need to interview people in cities more often. Perhaps the head of the port of some other city saw this sailboat in his raid.
+
+#TEXT   2
+
+The portmaster of @<sCity> told me that captain @<sCapName> on @<sShipTypeName> '@<sShipName>' @<sDate> left for @<sTargetCity>@<sAreal> for a year.
+
+#TEXT   3
+
+From the rumors, I learned that @<sShipTypeName> '@<sShipName>' @<sSexWord> from the port of @<sCity> to @<sTargetCity>@<sAreal>.
+
+#TEXT   4
+
+It looks like this is the @<sCity> @<sShipTypeName> stolen from the port. I managed to visit his deck, but captain kicked me out. I need to board the ship.
+
+#TEXT   5
+
+The stolen ship has been boarded. Now I can return it to the customer and receive your reward.
+
+#TEXT   6
+
+The job is done, the fee is received.
+
+#TEXT   7
+
+I had to give up the task of searching for the ship. This job is clearly beyond my strength.
+
+#TEXT   8
+
+The devil!!! I couldn't keep this ship afloat, it went down! Which ship will I hand over to the customer now?..
+
+#TEXT   9
+
+I managed to board the ship, but I couldn't keep it afloat. This is a complete failure. Which ship will I hand over to the customer now?..
+
+
+#QUEST Gen_CityCapture
+
+History of colonies capture
+
+#TEXT t1
+
+The city of @<sCity> has been captured by my forces for the glory of @<sNation>.
+
+#TEXT t2
+
+I looted the@<sSex> city of @<sCity>.
+
+#TEXT t3
+
+I have captured@<sSex> city @<sCity> for myself personally.
+
+#TEXT t3_1
+
+I have appointed@<sSex> officer @<sName> as the governor of the city of @<sCity>.
+
+#TEXT t3_2
+
+The governor of the city @<sCity> @<sName> has been removed from office.
+
+#TEXT t4
+
+My city @<sCity> has been taken over by @<sNation>.
+
+#TEXT t5
+
+The squadron of @<sNation> laid siege to my city @<sCity>. I have @<sDay> to lift the siege.
+
+#TEXT t5_1
+
+The landing party @<sNation> landed near my town @<sCity>. I have @<sDay> to lift the siege.
+
+#TEXT t6
+
+The squadron of @<sNation> is broken, my city @<sCity> is free.
+
+#TEXT t6_1
+
+The landing party @<sNation> has been defeated, my city @<sCity> is free.
+
+#TEXT t7
+
+With the help of an intermediary, I bought@<sSex> city @<sCity> at @<sNation>.
+
+#TEXT t8
+
+I have negotiated with the Governor-General of @<sNation> about the transfer of the city I captured to @<sCity>.
+
+
+#QUEST Gen_Contraband
+
+Sale of contraband
+
+#TEXT t1
+
+They will be waiting for me on the island of @<sIsland> in a place called @<sLoc>.
+
+#TEXT t1_1
+
+They will be waiting for me on the mainland at a place called @<sLoc>.
+
+
+#QUEST Gen_ContrabandTravel
+
+Sailing with smugglers
+
+#TEXT 1
+
+I found out@<sSex> that it will be possible to get to the place @<sLocTo> near @<sPlaceTo>. The smugglers' ship will be waiting for me at the @<sLoc> location via @<sDays>.
+
+I need to find @<sPrice> gold somewhere during this time.
+
+#TEXT 2
+
+I paid@<sSex> for the passage, it remains only not to be late for the ship.
+
+#TEXT 3
+
+I was late@<sSex> for a meeting. Now I have to wait for the next flight.
+
+#TEXT 4
+
+I got to the place. This is @<sLocTo>. I'm going ashore.
+
+#TEXT 5
+
+I reached our destination, but I decided@<sSex> that I should not miss our chance. Now the smugglers' ship is mine, and I'm afloat again.
+
+
+#QUEST Gen_StrangeInfo
+
+Strange rumors
+
+#TEXT 1
+
+I've heard rumors that @<sName> is going to meet with the smugglers at a place called @<sLoc>. I think it's against the law. Should I tell someone?
+
+
+#QUEST Gen_PGGQuest1
+
+Pirate's offer
+
+#TEXT q1_Tavern
+
+I met a strange pirate in the tavern, @<sPGGName>. He said he had an interesting offer for me. His ship "@<sShipName>" is in coastal waters, and he is waiting for me on board. Maybe it's worth a walk?..
+
+#TEXT q1_Tavern_1
+
+I met a strange pirate in the tavern, @<sPGGName>. I started talking, and I decided to@<sSex> offer him a joint deal. In order not to be overheard, he offered to board his ship "@<sShipName>"...
+
+#TEXT q1_Close
+
+I didn't like his offer, and I refused@<sSex>.
+
+#TEXT q1_Detail_A
+
+A caravan belonging to @<sNation> carrying @<sGoods> will pass near the island of @<sColony>. I can try to take a good load.
+
+#TEXT q1_Detail_B
+
+The caravan belonging to @<sNation>, carrying @<sGoods>, got into a storm near @<sColony> and went to the bottom, but they managed to save some of the cargo and landed in @<sShore> and are waiting for help to arrive.
+
+#TEXT q1_RefuseFight
+
+I refused@<sSex> to fight against @<sNation>, but @<sPsName> thought I wanted to pull off the case against @<sSex1>, and his officers attacked me. No sooner had I boarded than his ship opened fire on us.
+
+#TEXT q1_Accept
+
+I liked the offer. I only have @<nDays> to intercept the shipment.
+
+#TEXT q1_Accept_1
+
+He liked my suggestion. I only have @<nDays> to intercept the shipment. He just knows how to find this place quickly.
+
+#TEXT q1_PGGDeadNoShips
+
+Unfortunately, @<sPsName> died along the way. I do not know exactly where to look for the caravan... It's a pity, but this prey has left me.
+
+#TEXT q1_PGGDeadNoShips_1
+
+Unfortunately, @<sPsName> died along the way. I can't do it alone... It's a pity, but this prey has left me.
+
+#TEXT q1_PGGDeadShips
+
+Unfortunately, @<sPsName> died in the battle with the ships of the caravan. I'll have to keep all the loot for myself.
+
+#TEXT q1_PGGDead
+
+Unfortunately, @<sPsName> died on the way. I'll have to keep all the loot for myself.
+
+#TEXT q1_Time2Late
+
+I were too late, and the prey got away from us.
+
+#TEXT q1_Fail
+
+Our loot was not as rich as I thought.
+
+#TEXT q1_FailPay
+
+@<sPsName> said that it was all my fault@<sSex>, and I owe @<sSex1> him a penalty. Perhaps there is some truth in this. In order not to spoil the relationship, I paid@<sSex> to him.
+
+#TEXT q1_FailNotPay
+
+@<sPsName> said that it was all my fault@<sSex>, and I owe @<sSex1> him a penalty. I told@<sSex> to get the hell out.
+
+#TEXT q1_OkShare
+
+I divided the spoils according to the law of the Brethren. I hope this is not the last case.
+
+#TEXT q1_OkNotShare
+
+I thought@<sSex> that it's stupid to share the loot, it's better to cut a couple more throats and keep everything for myself.
+
+
+#QUEST Gen_PGGQuest1woman
+
+Pirate's offer
+
+#TEXT q1_Tavern
+
+I met a strange person in the tavern, @<sPGGName>. She said she had an interesting offer for me. Her ship "@<sShipName>" is in coastal waters, and she is waiting for me on board. Maybe it's worth a walk?..
+
+#TEXT q1_Tavern_1
+
+I met a strange person in the tavern, @<sPGGName>. I got to talking, and I decided to@<sSex> propose a joint deal to her. In order not to be overheard, she offered to board her ship "@<sShipName>"...
+
+#TEXT q1_Close
+
+I didn't like her offer, and I refused@<sSex>.
+
+#TEXT q1_Detail_A
+
+A caravan belonging to @<sNation> carrying @<sGoods> stopped near @<sColony> to replenish supplies. I can try to take a good load.
+
+#TEXT q1_Detail_B
+
+The caravan belonging to @<sNation>, carrying @<sGoods>, got into a storm near @<sColony> and went to the bottom, but they managed to save some of the cargo and landed in @<sShore> and are waiting for help to arrive.
+
+#TEXT q1_RefuseFight
+
+I refused@<sSex> to fight against @<sNation>, but @<sPsName> thought I wanted to pull off the case against @<sSex1>, and her officers attacked me. No sooner had I boarded than her ship opened fire on us.
+
+#TEXT q1_Accept
+
+I liked the offer. I only have @<nDays> to intercept the shipment.
+
+#TEXT q1_Accept_1
+
+He liked my suggestion. I only have @<nDays> to intercept the shipment. He just knows how to find this place quickly.
+
+#TEXT q1_PGGDeadNoShips
+
+Unfortunately, @<sPsName> died along the way. I do not know exactly where to look for the caravan... It's a pity, but this prey has left me.
+
+#TEXT q1_PGGDeadNoShips_1
+
+Unfortunately, @<sPsName> died along the way. I can't do it alone... It's a pity, but this prey has left me.
+
+#TEXT q1_PGGDeadShips
+
+Unfortunately, @<sPsName> died in the battle with the ships of the caravan. I'll have to keep all the loot for myself.
+
+#TEXT q1_PGGDead
+
+Unfortunately, @<sPsName> died on the way. I'll have to keep all the loot for myself.
+
+#TEXT q1_Time2Late
+
+I were too late, and the prey got away from us.
+
+#TEXT q1_Fail
+
+Our loot was not as rich as I thought.
+
+#TEXT q1_FailPay
+
+@<sPsName> said that it was all my fault@<sSex>, and I owe @<sSex1> her penalty. Perhaps there is some truth in this. In order not to spoil the relationship, I paid@<sSex> to him.
+
+#TEXT q1_FailNotPay
+
+@<sPsName> said that it was all my fault@<sSex>, and I owe @<sSex1> her penalty. I told@<sSex> to get the hell out.
+
+#TEXT q1_OkShare
+
+I divided the spoils according to the law of the Brethren. I hope this is not the last case.
+
+#TEXT q1_OkNotShare
+
+I thought@<sSex> that it's stupid to share the loot, it's better to cut a couple more throats and keep everything for myself.
+
+
+#QUEST Rumour_GoldFleet
+
+Spanish Golden Fleet
+
+#TEXT 1
+
+It is rumored that the flotilla, which annually transports gold and silver to the treasury of Spain, recently left the harbor of Porto Bello and headed for Havana. Perhaps the convoy has not yet arrived at its destination port. It's worth trying to intercept it.
+
+#TEXT 2
+
+A Spanish flotilla sailed from Porto Bello with a priceless cargo of gold and silver from the Incas and Aztecs. The convoy ships went to Havana. I can try to intercept them before the cargo goes to Spain.
+
+#TEXT 3
+
+A Spanish gold convoy sailed from Porto Bello to Havana with a cargo of gold and silver. The flotilla is under reliable protection. Should I intercept her?
+
+#TEXT 4
+
+The Spanish gold flotilla, which sailed from Porto Belo with a cargo of gold and silver, is now at the bottom of the sea. It was a difficult fight, but the loot was worth it.
+
+#TEXT 5
+
+Thanks to my efforts, the Spanish gold convoy traveling from Porto Belo to Havana never reached its destination. And his cargo is now in my hold.
+
+#TEXT 6
+
+I managed to destroy the golden fleet carrying untold treasures from Porto Belo and capture rich loot.
+
+#TEXT  7
+
+It is said that the Spanish gold convoy has arrived safely in Cuba. Now all the collected gold and silver will be sent to Spain under reliable protection.
+
+#TEXT 8
+
+It is said that the Spanish gold convoy has arrived safely in Cuba. Now all the collected gold and silver will be sent to Spain under reliable protection.
+
+#TEXT 9
+
+It is said that the Spanish gold convoy has arrived safely in Cuba. Now all the collected gold and silver will be sent to Spain under reliable protection.
+
+#TEXT 10
+
+I happened to know that the Spanish gold fleet is being equipped in Porto Bello. He should go to Cuba at the beginning of @<smonth>.
+
+#TEXT 11
+
+It is said that the equipment of the ships of the golden fleet is in full swing in Porto Bello. The convoy will leave for Cuba in the first half of @<smonth>.
+
+#TEXT 12
+
+At the beginning of @<smonth>, the dispatch of a gold convoy from Porto Bello to Cuba is scheduled. By this time, all the extracted gold will be loaded into the holds.
+
+#TEXT 13
+
+I've given the Spaniards a good beating-several ships will never return to the port of Havana. There could have been more loot, but I had to pull out of the fight.
+
+#TEXT 14
+
+During the attack on the Spanish golden fleet, I managed to recapture several ships from the squadron. I relieved them of their cargo and withdrew from the battle.
+
+#TEXT 15
+
+I managed to outwit the warships escorting the gold convoy and captured several ships with gold and silver.
+
+
+#QUEST MerchantOnMap
+
+Easy loot
+
+#TEXT 1
+
+I received@<sSex> information about the merchant ship "@<sShipName>" under the flag of @<snation>, sailing from the colony of @<sColony> with cargo @<sQuestGoodsIdx> to @<sNextColony>, possibly with a small escort. I think it's worth freeing him from this burden.
+
+#TEXT 2
+
+I recently learned@<sSex> about the ship "@<sShipName>" from the colony of @<sColony> with a hold full of @<sQuestGoodsIdx>. The ship is flying the flag of @<snation> in @<sNextColony>. What if I examine his hold?..
+
+#TEXT 3
+
+A trader on the ship "@<sShipName>" under the flag of @<snation> with a cargo of @<sQuestGoodsIdx> from the colony of @<sColony> goes to @<sNextColony>. But anything happens at sea - it may not come.
+
+#TEXT 4
+
+I managed to capture the ship @<snation> "@<sShipName>" with cargo @<sQuestGoodsIdx>.
+
+#TEXT 5
+
+During the battle, the ship '@<sShipName>' sank, and the entire cargo of @<sQuestGoodsIdx> is now at the bottom of the sea!
+
+#TEXT 6
+
+In the hold of "@<sShipName>" instead of @<sQuestGoodsIdx>, a squad of well-trained soldiers who had recently arrived from @<snation> was waiting for me. It looks like it was a trap!
+
+
+#QUEST	HeadHunter
+
+Bounty Hunters
+
+#TEXT HeadHunter_free
+
+When I appeared@<sSex> on the shore of @<sLoc>, I was already greeted warmly by the mercenaries of @<sNation>.
+
+I managed to convince them that they were mistaken.
+
+#TEXT HeadHunter_battle
+
+When I appeared@<sSex> on the shore @<sLoc>, I was already expecting a warm welcome from the mercenaries @<sNation>.
+
+I had to give them a fencing lesson.
+
+#TEXT HeadHunter_Buy
+
+When I appeared@<sSex> on the shore @<sLoc>, I was already expecting a warm welcome from the mercenaries @<sNation>.
+
+The money allowed me to avoid a fight.
+
+#TEXT HeadHunter_GiveUp
+
+When I appeared on the shore of @<sLoc>, I was already greeted warmly by the mercenaries of @<sNation>.
+
+I decided to follow their orders and surrendered.
+
+#TEXT HeadHunter_GiveUpFree
+
+In the prison of the city of @<sCity>, I managed to convince the commandant to let me go in peace. But the bounty on my head is an onerous burden.
+
+#TEXT HeadHunter_Sea
+
+In the sea, I ran into@<sSex> punishers @<sNation>.
+
+
+#QUEST ShipTuning
+
+Ship Improvement
+
+#TEXT t1
+
+@<sText>
+
+#TEXT End
+
+The ship has been improved successfully.
+
+#TEXT Lose
+
+I changed the ship, thereby terminating the contract.
+
+
+#QUEST	DELIVERY_TRADE_QUEST
+
+Cargo delivery for stores
+
+#TEXT	1
+
+From the @<sBaseColony> store, I was instructed to deliver a cargo of @<sGoodGen> in the amount of @<sGoodQty> to the store in the city of @<sTargetColony>@<island>. The delivery must be completed in @<sTermsDelivery>, the reward is @<sMoney>.
+
+#TEXT	2
+
+The task of delivering the cargo @<sGoodGen> to the store @<sTargetColony> was completed accurately and on time.
+
+#TEXT   3
+
+The cargo delivery task has failed. I was unable to deliver the @<sGoodGen> cargo to the @<sTargetColony> store on time. Now I need to go back to the employer to explain myself to him.
+
+#TEXT   4
+
+The owner of the store at @<sTargetColony> cheated me out of it. He refused to take the shipment prepared for him @<sGoodGen>, offering to keep it for himself.
+
+#TEXT   5
+
+I had to pay the store owner @<sTargetColony> the amount in @<sMoney>. This is a commercial penalty for late delivery of cargo @<sGoodGen>.
+
+But now I will be able to carry out tasks for the delivery of various goods again, my authority among merchants, though shaken, has not fallen.
+
+#TEXT   6
+
+The owner of the store at @<sTargetColony> took back the cargo of @<sGoodGen> in the amount of @<sGoodQty> For me, this is really a way out of the situation.
+
+#TEXT   7
+
+The owner of the store @<sTargetColony> demands @<sMoney> from me as a penalty for lost commercial profit.
+
+Until I return the required amount, I will not have to deliver the goods.
+
+#TEXT   8
+
+At the time of the settlement, I am missing @<sHaveNotQty> @<sGoodGen>.
+
+I'll have to supplement the shipment and deliver it in its entirety, otherwise I won't see any other cargo delivery tasks.
+
+#TEXT Late1Day
+
+I was a day late, and I only got half the promised price...
+
+
+#QUEST Gen_LoanFindCitizen
+
+Helping a usurer find a debtor
+
+#TEXT   1
+
+I need to repay the debt - @<sName>, who lives in @<sCity>, owes a usurer from @<sFromCity> @<sMoney>.
+
+The interest is @<sMyMoney> - this is my fee for the work.
+
+#TEXT   2
+
+Failure! The debtor did not give the money. I need to go back to the employer and report the failure of the mission. Otherwise, in a month he can take action, because he thinks that I have the money.
+
+#TEXT   3
+
+The job is done, I have the money. I need to return to the employer and repay the debt. Otherwise, in a month he may take action against me.
+
+#TEXT   4
+
+The money has been delivered to the employer.
+
+#TEXT   5
+
+I told off@<sSex> to the employer, saying that I couldn't get the money.
+
+#TEXT   6
+
+I refused@<sSex> the order, citing difficulties with the debtor.
+
+
+#QUEST Gen_LoanTakeChest
+
+Helping a usurer deliver gold
+
+#TEXT   1
+
+The usurer's assignment from @<sFromCity>.
+
+I need to deliver a credit - @<sQty> chest of gold to @<sCity> for a man named @<sName>. He's a local @<sType>.
+
+They will give I @<sMoney> for the job. This needs to be done for @<sDay>.
+
+#TEXT   2
+
+I failed to deliver the loan on time. Now I need to go to my employer and explain myself to him, otherwise no one will entrust me with such assignments anymore.
+
+#TEXT   3
+
+The loan has been delivered to the recipient.
+
+#TEXT   4
+
+I had to replace the chests of gold with a clean coin from my pocket.
+
+#TEXT   5
+
+I refused@<sSex> the assignment.
+
+
+#QUEST convoy_quest
+
+Merchant supporting
+
+#TEXT   1
+
+I took@<sSex> to escort the merchant to @<sCity> for @<sDay>. If successful, my fee will be @<sMoney>.
+
+#TEXT   2
+
+The merchant is tired of swimming with me and waiting for me to deign to accompany him. He left my squadron.
+
+#TEXT   3
+
+The merchant is dead. The task has completely failed.
+
+#TEXT   4
+
+The task is completed.
+
+#TEXT   5
+
+The merchant left my squadron. Well, it's my fault, I shouldn't have tried to attack him.
+
+
+#QUEST Gen_convoy_passenger
+
+Deliver a passenger named @<sName> to @<sCity>
+
+#TEXT   1
+
+I took@<sSex> to deliver a passenger named @<sName> to the tavern @<sCity> for @<sDay>. If successful, my fee will be @<sMoney>.
+
+#TEXT   2
+
+The passenger is tired of swimming with me and waiting for me to deign to take him. He left me.
+
+#TEXT   3
+
+The passenger died and, of course, was not delivered to his destination. The task has completely failed.
+
+#TEXT   4
+
+The task is completed.
+
+#TEXT   5
+
+I'm late completing my assignment. The passenger gave me a postponement for another week and reduced the fee due to the delay, now it is @<sMoney>.
+
+#TEXT   6
+
+I played a bad joke with the passenger - he is now my slave.
+
+
+#QUEST MayorsQuestsList
+
+Governor's assignments
+
+#TEXT   1
+
+The governor of @<ColonyName> @<MayorName> instructed me to find a gang in the vicinity of the city and destroy it. The leader of the gang is @<GangName>.
+
+All this must be done for @<sDay>, the reward is determined in the amount of @<sMoney>.
+
+#TEXT   2
+
+The task of the @<ColonyName> governor has been completed - @<GangName> is dead, his gang is no more. I think the governor @<MayorName> will be pleased. I can go for the reward.
+
+#TEXT   3
+
+The governor of @<ColonyName> @<MayorName> instructed me to find an enemy spy in the city.
+
+I need to conduct effective searches for @<sDay>, the reward is determined in the amount of @<sMoney>.
+
+#TEXT   4
+
+The task of the @<ColonyName> governor has been completed. An enemy spy was found in one of the houses of the city and destroyed. I think the governor @<MayorName> will be pleased. I can go for the reward.
+
+#TEXT   5
+
+The task of the @<ColonyName> governor has been completed. I found an enemy spy among the townspeople. I think the governor @<MayorName> will be pleased when I deliver the spy to him personally.
+
+#TEXT   6
+
+The governor of @<ColonyName> @<MayorName> instructed me to get into @<sCity>, which is on @<sIsland>, find a local @<sWho> there, named @<SpyName>, and get a package of documents from him.
+
+This package for @<sDay> must be delivered personally to the governor. The remuneration for this work is determined in the amount of @<sMoney>.
+
+An important detail is that I cannot raise alarms in @<sCity2>, otherwise the agent will not make contact, so as not to put himself at risk.
+
+#TEXT   7
+
+The task of the @<ColonyName> governor has been completed. In @<sCity>, I managed to find a @<sWho> named @<SpyName> and pick up the package the governor needed. Now I need to waste no time, @<MayorName> is waiting for these papers.
+
+#TEXT   8
+
+The governor of @<ColonyName> @<MayorName> gave me the task to find and destroy the smugglers who are fishing in the vicinity of the city.
+
+This work needs to be completed in @<sDay>. The reward is determined in the amount of @<sMoney>.
+
+#TEXT   9
+
+The task of the @<ColonyName> governor has been completed. In the vicinity of @<sCity>, I managed to track down and destroy a gang of smugglers. I think the governor @<MayorName> will be pleased, I can go for a reward.
+
+#TEXT   10
+
+The governor of @<ColonyName> @<MayorName> instructed me to find and destroy a pirate ship engaged in plundering merchant ships in the surrounding waters. The task is not easy, I will have to search directly at sea and check everyone I meet.
+
+This assignment must be completed in @<sDay>. The reward is determined in the amount of @<sMoney>.
+
+#TEXT   11
+
+The task of the @<ColonyName> governor has been completed, I managed to find and destroy @<ShipType>. I think the governor @<MayorName> will be pleased, I can go for a reward.
+
+#TEXT   12
+
+How, however, things turned out unpleasantly. Everything started so well, and ended in the bay @<Shore> so inglorious...
+
+#TEXT   20
+
+The task of the @<ColonyName> governor failed on time, I do not think that @<MayorName> will be pleased with this.
+
+#TEXT   21
+
+The task of the @<ColonyName> governor has failed. I managed to find the target, but I couldn't destroy it. @<MayorName> is very angry...
+
+#TEXT   22
+
+What the hell just happened? I must return to the governor for clarification...
+
+
+#QUEST GivePrisonFree
+
+Prison cases
+
+#TEXT   1
+
+I managed to free a prisoner named @<sName> from prison @<sCity>. I need to try to get him to the grotto on @<sIsland> alive, until then he will always be with me. In case of successful completion of the case, I will divide the treasure hidden on the island in half.
+
+#TEXT   2
+
+Failure! @<sName> is dead. Now I'm unlikely to get to his treasure...
+
+#TEXT   3_1
+
+I found the treasure that @<sName> was talking about and divided it equally. It's been a long time since I've seen such a pile of treasures!
+
+#TEXT   3_2
+
+I found the treasure that @<sName> was talking about and divided it equally. The cost of what I received will hardly cover my expenses for the expedition. The only consolation is that I found an ancient Indian artifact in the cache, which I got in excess of my share.
+
+#TEXT   3_3
+
+@<sName> tricked me to get freedom with my help. There was no treasure. Instead of treasures, @<sName> hid his combat gear here, which he gave to me for my efforts. Well, at least that's it.
+
+#TEXT   3_4
+
+There was no treasure. @<sName> used a piece of the treasure map, from which it is impossible to really understand where the treasure is, and, of course, he made the wrong island. I took this piece of paper to myself - I will try to find the missing fragment, and the treasure will go entirely to me.
+
+#TEXT   4
+
+It looks like @<sName> just tricked me. I didn't find any treasure. I need to be more discerning in your connections somehow.
+
+#TEXT   5
+
+I took@<sSex> to help a prison inmate @<sCity> named @<sName>. I need to talk to the head of the prison, maybe I can somehow resolve this issue.
+
+#TEXT   6
+
+The two days allotted to me have passed, and I have not been able to resolve the issue of the release of a prisoner named @<sName>. It's a pity, but he will have to stay in prison.
+
+#TEXT   7
+
+I was unable to free a prisoner named @<sName>. Well, anyway, I'll live without his treasure somehow.
+
+#TEXT   8
+
+In the prison @<sCity>, a prisoner named @<sName> asked me to deliver a thief's note to his friends in the city who are hiding in one of the houses. I agreed@<sSex>, I have the note. I have two days of time.
+
+#TEXT   9
+
+I was unable to deliver the note in the allotted time. The task failed on time.
+
+#TEXT   10
+
+I have successfully delivered a note to the friends of a prisoner named @<sName>. To my surprise, instead of a reward, they also tried to rob me. So trust the prisoners after that. I had to kill them all.
+
+#TEXT   11
+
+The deed is done, the thief's note has been delivered to the addressees. Out of the kindness of their hearts, the fraera unfastened my entire @<iMoney>. My happiness is immeasurable.
+
+#TEXT   13
+
+I managed to find out from the prisoner's friends on a safe basis that in the coming @<sDay> there will be two merchant ships off the coast of @<sShoreName> - '@<sShipName1>' and '@<sShipName2>', whose holds are full of @<sGoods>. I must try to intercept them.
+
+#TEXT   13_1
+
+I will arrive<sSex> on time! The ships '@<sShipName1>' and '@<sShipName2>' are within sight. Attack!
+
+#TEXT   13_2
+
+I was late@<sSex> and the merchant ships '@<sShipName1>' and '@<sShipName2>' have already gone somewhere unknown. Well, I'll be lucky another time...
+
+#TEXT   14
+
+I managed to find out from the prisoner's friends on a safe basis that in the coming @<sDay> a courier ship @<sText> called '@<sShipName>' carrying a large shipment of jewelry will be passing off the coast of @<sShoreName>. I must try to intercept him.
+
+#TEXT   14_1
+
+I will arrive<sSex> on time! The ship '@<sShipName>' is within sight. Attack!
+
+#TEXT   14_2
+
+I was late@<sSex> and the courier ship '@<sShipName>' has already gone somewhere unknown. Well, I'll be lucky another time...
+
+#TEXT   15
+
+I will arrive <sSex> on time, but I did not find any merchant ships '@<sShipName1>' and '@<sShipName2>' at the specified location@<sSex1>. The damned scoundrels deceived me-that's what it means to believe the scoundrels...
+
+#TEXT   16
+
+I have successfully delivered a note to the prisoner's friends. Instead of a reward, they offered to buy some information for a considerable sum. I refused@<sSex1> - their faces did not inspire confidence at all.
+
+#TEXT   17
+
+I successfully delivered a note to the prisoner's friends, but instead of a reward, they also robbed me. So trust the convicts after that...
+
+
+#QUEST	MyNotices
+
+My notes
+
+#TEXT	1
+
+@<sTextNum1> @<sTextNum2> @<sTextNum3> @<sTextNum4> @<sTextNum5> @<sTextNum6> @<sTextNum7> @<sTextNum8> @<sTextNum9> @<sTextNum10>
+
+#TEXT	2
+
+@<sTextNum1>
+
+@<sTextNum2>
+
+@<sTextNum3>
+
+@<sTextNum4>
+
+@<sTextNum5>
+
+@<sTextNum6>
+
+@<sTextNum7>
+
+@<sTextNum8>
+
+@<sTextNum9>
+
+@<sTextNum10>
+
+
+#QUEST	MY_COLONY
+
+Everyday life of the colony "@<sColonyName>"
+
+#TEXT	1
+
+A mutiny is being prepared in your colony. According to information sent from the colony, the garrison will be able to hold out @<sMutinyTime>.
+
+#TEXT	2
+
+The rebellion was suppressed.
+
+#TEXT	3
+
+The rebels managed to break the resistance of the garrison.
+
+#TEXT	4
+
+Your colony is expected to be attacked from land. According to information sent from the colony, the garrison will be able to hold out @<sLandBattleTime>.
+
+#TEXT	5
+
+The attack was repulsed.
+
+#TEXT	6
+
+Good news has come from the colony! The attack organized by the enemy was repulsed!
+
+#TEXT	7
+
+Bad news came from the colony... The colony was unable to defend itself and was looted.
+
+#TEXT	8
+
+The colony is expected to be attacked by a squadron under the flag of @<sNationName>. According to the information received, the guards will be able to hold out @<sSeaBattleTime>.
+
+#TEXT	9
+
+The bad news came from the colony. The attack committed by @<sNationName> could not be resisted. The colony was looted.
+
+#TEXT	10
+
+The colony is now called "@<sColonyName>".
+
+#TEXT	11
+
+An epidemic swept through your colony, but thanks to the medicines available in the colony, the population did not suffer great losses. The loss of population is @<sEpidemyDead> people.
+
+#TEXT	12
+
+An epidemic swept through your colony, and claimed the lives of @<sEpidemyDead> people.
+
+#TEXT	13
+
+Construction on Cayman Island is completed! It was decided to name the colony "@<sColonyName>".
+
+#TEXT	14
+
+Great news has been sent from the colony! The joint efforts of the colony's guards managed to fight back against the cursed @<sNationName>.
+
+#TEXT	15
+
+@<sDestroyBuild>.
+
+#TEXT	16
+
+There are not enough food in your colony. There is an urgent need to replenish supplies.
+
+#TEXT	17
+
+Due to the lack of food in your colony, a person died of starvation: @<sFoodNeed>. The morale of the population is falling.
+
+#TEXT	18
+
+The slaves broke the resistance of the garrison and fled, simultaneously taking food, medicines and mined ore.
+
+#TEXT	19
+
+A mutiny is being prepared in your mines. According to the information sent, the garrison will be able to hold out @<sMutinyTime>.
+
+#TEXT	20
+
+An attack is expected on your mines. According to the information sent, the garrison will be able to hold out @<sLandBattleTime>.
+
+#TEXT	21
+
+Good news has come from the colony! The attack organized by the enemy on the mines was repulsed!
+
+#TEXT	22
+
+Bad news came from the colony... The garrison defending the mines could not put up a decent resistance. The mines were looted.
+
+#TEXT	23
+
+A mutiny is being prepared on your plantation. According to the information sent, the garrison will be able to hold out @<sMutinyTime>.
+
+#TEXT	24
+
+The slaves broke the resistance of the garrison and fled, simultaneously taking food, medicines and obtained food.
+
+#TEXT	25
+
+Due to the lack of food in your colony, a soldier died of starvation. The morale of the population is falling.
+
+#TEXT	26
+
+A mutiny has broken out in your colony. Due to the lack of the necessary garrison, the rebels celebrated the victory.
+
+#TEXT	27
+
+Your colony has been attacked from land. Due to the lack of the necessary garrison, the attackers easily took the colony by battle and plundered it.
+
+#TEXT	28
+
+The colony was attacked by a squadron under the flag of @<sNationName> and due to the lack of decent protection of the coastline and garrison, the squadron plundered the colony.
+
+#TEXT	29
+
+A mutiny has broken out in your mines. Due to the lack of the necessary garrison, the rebels celebrated the victory and fled.
+
+#TEXT	30
+
+Your mines have been attacked. Due to the lack of the necessary garrison, the attackers easily took the mines by battle and looted them.
+
+#TEXT	31
+
+A mutiny has broken out on your plantation. Due to the lack of the necessary garrison, the rebels celebrated the victory and fled.
+
+#TEXT	32
+
+Until the store is reopened, I will not be able to use the supplies of the colony, plantation and mines. It will also be impossible to automatically sell goods extracted from mines and plantations.
+
+#TEXT	33
+
+The auto-sale of mined ore in your mines has replenished the treasury of the colony "@<sColonyName>" with @<sMoney> gold.
+
+#TEXT	34
+
+@<sOre> in the amount of @<sOreQty> was sold for @<sOreCost> gold.
+
+#TEXT	35
+
+The auto-sale of the extracted goods on your plantation has replenished the treasury of the colony "@<sColonyName>" with @<sMoney> gold.
+
+#TEXT	36
+
+The product "@<sGood>" in the amount of @<sGoodQty> was sold for @<sGoodCost> gold.
+
+
+#QUEST	ShipWreck
+
+Shipwreck
+
+#TEXT	1
+
+As it turned out, the ship got caught in a storm and cannot continue its voyage. The owner of the ship "@<sShipName>" - @<sCharacter> asked me for a favor. For a completely normal fee in @<sMoney> gold, I need to deliver his person to any city. As far as I understand, they have to organize a rescue ship...
+
+But one thought still haunts me - there is a certain cargo in the hold of this ship. It must be very valuable if captain is afraid to overload it in my hold. What if? If I take this cargo by force, my team is twice as large, I have a surprise factor. Of course, I will be @<sSex1>, but the sound of gold is much more pleasant than a crust of bread for lunch. I need to decide!
+
+#TEXT	2
+
+The decision was made - while the body of the messenger officer was being thrown overboard, I opened his envelope. What luck! The hold of this tub is literally filled with gold... I gave the order to approach@<sSex2>, the guns are loaded with a good share of grapeshot. Boarding will be easy, and the booty is royal!
+
+#TEXT	3
+
+The boarding party killed everyone. I had to personally kill this good-natured captain. And there was gold waiting for me in the hold of the ship. Of course, it won't be enough for old age, but it's still a good reward.
+
+#TEXT	4
+
+I have just dropped off a passenger at the port of one of the cities. I hope he finds the ship quickly.
+
+#TEXT	5
+
+The navigator of the ship, @<sNavigator>, met me on the deck. He claims that captain fell ill, and the ship was caught in a storm. I can hardly believe it. I noticed@<sSex2> blood on the deck, and the masts seemed to have been hacked with axes. Or maybe they were blown up by a small barrel of gunpowder. I don't know what happened on that damn ship, but I managed to@<sSex2> earn extra money. The stack of planks and canvas cost this rebel dearly. I hope the next patrol will sink this breeding ground of scum.
+
+#TEXT	6
+
+I hate rebels and traitors. A group of drunken scum raged on this ship for three days and slaughtered half of the crew. They paid for their rampage with their lives. I managed to save several members of the team, including captain.
+
+#TEXT	7
+
+I was met on deck by a team of mutineers led by a former navigator. I think I need thugs like that. And an extra ship wouldn't hurt. Having received the replenishment of the squadron, I sail on.
+
+#TEXT	8
+
+It turned out that there was a riot on this vessel. A group of losers led by some stupid bouncer cut the floor of the team and tried to dictate their terms to me. I quickly convinced@<sSex2> them, and these rats paid me a coin if only I would let@<sSex2> them live. I hope the nearest naval patrol will send this breeding ground of scum to the bottom.
+
+#TEXT	9
+
+The navigator of the ship, @<sNavigator>, met me on the deck. He claims that captain fell ill, and the ship was caught in a storm. I can hardly believe it. I noticed@<sSex2> blood on the deck, and the masts seemed to have been hacked with axes. Or maybe they were blown up by a small barrel of gunpowder. I don't know what happened on that damn ship, but I managed to@<sSex2> earn extra money. The stack of planks cost this rebel dearly. I hope the next patrol will sink this breeding ground of scum.
+
+#TEXT	10
+
+The navigator of the ship, @<sNavigator>, met me on the deck. He claims that captain fell ill, and the ship was caught in a storm. I can hardly believe it. I noticed@<sSex2> blood on the deck, and the masts seemed to have been hacked with axes. Or maybe they were blown up by a small barrel of gunpowder. I don't know what happened on that damn ship, but I managed to@<sSex2> earn extra money. The canvas cost this rebel dearly. I hope the next patrol will sink this breeding ground of scum.
+
+#TEXT	11
+
+The navigator of the ship, @<sNavigator>, met me on the deck. He claims that captain fell ill, and the ship was caught in a storm. I can hardly believe it. I noticed@<sSex2> blood on the deck, and the masts seemed to have been hacked with axes. Or maybe they were blown up by a small barrel of gunpowder. I don't know what happened on that damn ship. I hope the next patrol will sink this breeding ground of scum.
+
+
+#QUEST	QuestDuel
+
+Duelist
+
+#TEXT	1
+
+At the port of @<sColony>, for @<sMoney> piastres, I agreed to@<sSex> help one of the townspeople named @<sName>. He asked me to defend his interests in a duel with a certain person. I'm not bad@<sSex1> swordsmen@<sSex2>, let's see what happens.
+
+#TEXT	2
+
+One of the townspeople of the city @<sColony> begged me to dissuade her husband named @<sName> from a duel. She was crying so hard that I couldn't refuse. Besides, I will be paid @<sMoney> piastres. And according to the lady, her husband does not own a sword at all. It's up to me!
+
+#TEXT	3
+
+I failed to dissuade my husband, and now I have to duel with the offender. I have agreed to provide my fencing services to@<sSex> and will act in place of that lady's husband.
+
+#TEXT	4
+
+The duel took place outside the city gates. The offender also used the services of a mercenary, who very safely went to his forefathers. I admit, he was a good swordsman, but he was far from me. I received@<sSex> money and I think to forget about this case.
+
+#TEXT	5
+
+The duel took place outside the city gates. I had to fight with the abuser himself. It's a pity for the man, he had a lot of courage. Thanks and money I received@<sSex> in full – now I'll try to forget about this case.
+
+#TEXT	6
+
+Unfortunately, this was not the end of the whole story. I was found by two young men at the corpse of the offender - as it turned out later, the nephews of the murdered man. Without giving me time to justify myself, they rushed at me with weapons in their hands. I had to@<sSex> was@<sSex> defending myself and... killed@<sSex> both. If I had only known@<sSex> at first that I would end the lives of three people of the same blood, I would not have taken @<sSex1> for this case for any money.
+
+#TEXT	7
+
+I've been stalling for too long and I'm too late for the duel. The task has failed.
+
+
+#QUEST CompanionTravel
+
+Free-swimming companion
+
+#TEXT 1
+
+On my order, captain @<sCapName> at @<sShipInfo> will leave the squadron and go to @<sColony>, and upon arrival will wait for me there on the raid for a month. He will get there in @<sDays> days.
+
+#TEXT 2
+
+On my orders, Captain @<sCapName> at @<sShipInfo> is returning to the squadron.
+
+#TEXT 3
+
+Captain @<sCapName> on @<sShipInfo> @<sReason>.
+

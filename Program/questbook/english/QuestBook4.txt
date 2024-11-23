@@ -1,0 +1,3547 @@
+#QUEST ShamanChani
+
+Shaman Chani
+
+#TEXT 1
+
+In the Indian village, the shaman Chani asked for my help. I need to get 500 big pearls and give it to her to pay tribute to Manuel de Moreno, who wants to raze an Indian village.
+
+#TEXT 2
+
+I just have to bring Shaman Chani another @<iQty> big pearls.
+
+#TEXT 3
+
+Now that the village was saved, Chani gave me the Ashchel Tears Elixir. She also asked me to visit her a couple of weeks later.
+
+#TEXT 4
+
+Chani wants to protect the village from uninvited guests with voodoo magic and she sent her tribesman to find some rare concoction that cannibals use, but he has not returned. I think they have already eaten the poor man. I should try to look for these savages. As far as I know, cannibals attack reckless travelers under cover of night in the jungle. I don't think anyone would be upset if they were ten to two short.
+
+#TEXT 5
+
+On one of the cannibals I defeated I found strange flask with decoction. Now I need to return to the Indian village and give it to Chani.
+
+#TEXT 6
+
+Now that the voodoo ritual has been performed and the village protected, Chani has agreed to take me on a journey.
+
+#QUEST Rimalie
+
+Rimalie
+
+#TEXT 1
+
+On the deserted island of Tobago I found@<sSex> a hermit musketeer who has no equal in accuracy. He'll join my team if I can help resolve his conflict with local smugglers. I should stop by the tavern in Port of Spain.
+
+#TEXT 2
+
+The smuggler said that he would stop pursuing Rimalie. Once back on the island of Tobago and tell Rimalie the good news.
+
+#TEXT 3
+
+Rimalie gladly agreed to join my team as an officer.
+
+#QUEST CSP_KvM
+Cat in a bag
+#TEXT 1
+
+In Santo Domingo I met a@<sSex> fisherman, who asked me for help to find his cat Gatilio, who was carried to the sea along with the chest in which he slept. I need to swim that part of the shore the fisherman pointed to.
+
+#TEXT 2
+
+In the grotto I found missing cat Gatilio, who was sitting in a chest filled with fish inside. It remains to return Gatilio fisherman.
+
+#TEXT 3
+
+I returned@<sSex> cat Gatilio to its owner.
+
+#QUEST KSM_DVR
+
+Money in growth
+
+#TEXT	1
+
+A usurer in Willemstad told me that Simon Barton borrowed money from him, but is in no hurry to return it. I need to find Simon in Palm Beach Bay on Curacao and convince him to repay the loan.
+
+#TEXT	2
+
+Trying to talk to Simon didn't lead to anything good. The poor guy went completely crazy and set his gang on me. I had to kill them, when suddenly the usurer himself appeared and shot the madman.
+
+
+
+#QUEST KPS_MysteriousIsland
+
+Mysterious Island
+
+#TEXT	0
+
+I wonder what this strange beggar is doing in a Bridgetown tavern? Perhaps it's worth talking to him?
+
+#TEXT	1
+
+An interesting story was told to me by this old sailor. He seems to be telling the truth. I must try to collect this map, no matter what it costs me. I'll ask the innkeeper about him, because the old man comes here every day.
+
+#TEXT	2
+
+The innkeeper informed me that my new acquaintance, Jim Smith, often mentions the Charlestown Church in his drunken delirium.
+
+#TEXT	3
+
+Father @<sPriestName> strongly discouraged me from giving up this idea.
+
+#TEXT	4
+
+It turns out that Geoffrey Dubbin was also a member of that mysterious expedition. The case turned out to be much more complicated than I expected@<sSex>. Dubben managed to find the fourth of the surviving sailors of the Starfish. He is in prison in Santo Domingo, for a debt to a local usurer. I should pay a visit to this usurer and find out what's going on there.
+
+#TEXT	5
+
+I have paid@<sSex> Diego Marquez's debt and tomorrow I will see him at the house of a local usurer. Among other things, the usurer mentioned in conversation that Captain Davy Forser had visited him.
+
+#TEXT	6
+
+Geoffroy and I managed to put a map together. Soon I sail out to this mysterious island.
+
+#TEXT	7
+
+Damn it, there is no island! I have only one lead left-this is the usurer from Santo Domingo, because he mentioned that Captain Davy Forser visited his office. I think I should visit him again.
+
+#TEXT	9
+
+Captain Davy Forser was in this city yesterday. It is necessary to interview everyone in this town in search of information.
+
+#TEXT	10
+
+It looks like luck has smiled on us. The local shipbuilder informed us that Davy Forser was going to La Vega. It's a good thing Davy Forser doesn't know about Geoffroy and me searching, otherwise he wouldn't be so talkative.
+
+#TEXT	11
+
+Everything must be thoroughly searched, including the jungle - not even the slightest chance should be missed.
+
+#TEXT	12
+
+In the jungles of Hispaniola, near the cave, Geoffrey and I came across Captain Davy Forser. In the battle, Captain Davy Forser was killed. I found some kind of mysterious golden idol on his body. He also had a mysterious map with him. The map is clearly not simple. It looks like she will give us access to this mysterious place. I wonder who it came from? Perhaps I should visit the cave.
+
+#TEXT	13
+
+It turned out that an old Indian shaman named Monchitlan found his shelter in a vile cave! He explained to me the purpose of the idol found at Captain Davy Forser. It is necessary to find a wrecked ship on a mysterious island and put the idol on a sacred altar, only then the spell will be lifted and the gold can be exported. Geoffrey and I are going there.
+
+#TEXT 14
+ 
+There was a lot of gold in the chests. Quite a good score!
+Dubben turned out to be a decent jerk, and despite all our combined actions, he couldn’t handle his own greed, which he paid for.
+
+#TEXT	15
+
+Strange things are happening... Merchants have almost no equipment, potions, or food on sale!.. It seems that our friend Monchitlan made a serious mistake in something, or did he do it intentionally? I need to see him urgently.
+
+#TEXT	16
+
+I had to kill an Indian shaman. He cruelly deceived me. However, I myself am@<sSex> to blame for this@<sSex>. Monchitlan has our @<sSex2> mysterious golden amulet. I would venture to assume that he sent Davy Forser to the island for the first time. It is necessary to return the amulet to its place. The Indian mentioned something about the underground ruins under the village. It's worth looking for a magic chest there.
+
+#TEXT	17
+
+I have carried out my plan@<sSex> - the spell of the island has been restored. Now life in the cities should return to its former course. But I still wonder who was talking to me? I guess I'll never know. I think I'm going to get really drunk when I get home, but I swear by all that's holy, I'm not going to sit down with anyone.
+
+#TEXT	18
+
+There was a lot of gold in the chests. A very good jackpot!
+
+Dubben turned out to be a decent bastard, and despite all our joint actions, he could not cope with his own greed, for which he paid the price.
+
+
+
+#QUEST AT_PZD
+
+Dressmaker of a noble lady
+
+#TEXT 1
+
+That noble bitch, she considered my company not equal to herself! Yes, I have more noble bloodlines than the wife of the local governor. No, I don't believe it's just a coincidence, Becky came up with a dress of this cut herself, I can't find a second one like this in all the Caribbean.
+
+I need to collect my thoughts. The lady is undoubtedly Spanish, so she is not local. I can try to find out something about the ships that recently anchored here.
+
+#TEXT 2
+
+After cooling my head, I still decided not to continue the search. I think it was a wishful thinking attempt. The dress is really almost like Rebecca's, but most likely she has already seen a similar style somewhere.
+
+#TEXT 3
+
+There is not much information. It seems that I really should walk along the embankment after sunset, chat with local hard workers.
+
+#TEXT 4
+
+It turns out that the woman stayed with the local governor, who arranges costume parties so important to him that he left all his state affairs and does not accept anyone.
+
+By all means, I need to get there before this arrogant person leaves the island.
+
+Where would I get a suitable outfit for the occasion? If the guests really wear masks, then this can be used.
+
+#TEXT 5
+
+I'm inside. It turned out to be quite simple. It will be much more difficult to find a woman whom I have seen only once. In addition, she will be wearing a mask and, most likely, disguised. I also need to start a conversation somehow and mention her dressmaker.
+
+#TEXT 6
+
+A couple of people in the lobby are chatting casually with their ringing voices. It doesn't look like any of them are the same.
+
+#TEXT 7
+
+This girl is too young, most likely one of the governor's daughters. Definitely not the one I'm looking for.
+
+#TEXT 8
+
+A very successful acquaintance with a Spanish officer who introduced himself as Gabriel de Seguenza, so this is the same captain of the galleon 'Ernal Diaz' He promised to settle my question in exchange for asking me to keep the man at the table downstairs company.
+
+#TEXT 9
+
+While playing dice, I didn't even notice how time flew by. It's time to go out through the door behind the stage to the embankment. Gabriel is waiting for me there.
+
+#TEXT 10
+
+It turned out that the dress was made by Sofia de la Piedad. The girl I met the day before the Buccaneers attacked La Vega. I should be happy for her, but I can only be angry. Rebecca should have been in Sofia's place.
+
+
+
+#QUEST  SCQ_manSlave
+
+Revenge of a former slave from @<sCity> named @<sName>
+
+#TEXT   1
+
+A citizen of @<sCity> named @<sName> got into trouble a year ago. A certain captain named @<sCapName>, who went to @<sShipTypeName> '@<sShipName>', sold his passenger into slavery.
+
+Now @<sName2> wants revenge. I need to find and destroy this treacherous cap.
+
+#TEXT   2
+
+The portmaster of @<sCity> told me that captain @<sCapName> on @<sShipTypeName> '@<sShipName>' @<sDate> of the year left for @<sTargetCity>@<sAreal>.
+
+#TEXT   3
+
+From the rumors, I learned that captain @<sCapName> left the port of @<sCity> for @<sTargetCity>@<sAreal>.
+
+#TEXT   4
+
+The captain I'm looking for @<sCapName> is dead. The task is completed, I can go to the customer at @<sCity> for a reward.
+
+#TEXT   5
+
+It seems that this is captain I are looking for. I managed to talk to him on his ship. The question he was asked about the passengers remained unanswered, and only angered him. It seems that @<sName> is selling passengers into slavery.
+
+In general, the case is clear. I need to drown @<sShipTypeName>.
+
+#TEXT   10
+
+The ship was gone. Now I will not be able to take revenge on the offender.
+
+
+#QUEST  SCQ_womanHasband
+
+Find the missing merchant
+
+#TEXT   1
+
+A Willemstad townswoman named Irma Groen asked me to find her husband, a merchant captain who went to sea on business and has not yet returned. His name is Maurits Groen, he goes by the name 'Louise'. His ship was last seen south of Willemstad off the coast of Main. I hope he's okay.
+
+#TEXT   2
+
+The desired Maurits Group has been found. It turns out that he just works, bounces back and forth across the Caribbean, unable to turn down lucrative deals.
+
+Now I can collect my reward from my troubled wife in the church of Willemstad.
+
+Maurits also said that in the pirate settlement of Puerto Principe, under the window of their house to the left of the tavern, a good telescope is hidden in the ground. I should check it out.
+
+#TEXT   3
+
+The ship was gone. Now it won't work to find Irma Groen's husband.
+
+
+#QUEST  SCQ_manRapeWife
+
+Recapture a citizen's wife from a pirate @<sCity>
+
+#TEXT   1
+
+A citizen of @<sCity> named @<sName> had a misfortune - his wife was kidnapped by a pirate. I took@<sSex> to release her. The woman's name is @<sName2>. The pirate who kidnapped her is named @<sCapName>, goes by @<sShipTypeName> '@<sShipName>'.
+
+I hope that I will be able to meet the desired ship quickly enough.
+
+#TEXT   2
+
+The portmaster of @<sCity> told me that captain @<sCapName> on @<sShipTypeName> '@<sShipName>' @<sDate> of the year left for @<sTargetCity>@<sAreal>.
+
+#TEXT   3
+
+From the rumors, I learned that captain @<sCapName> left the port of @<sCity> for @<sTargetCity>@<sAreal>.
+
+#TEXT   4
+
+The captain I was looking for @<sCapName> died, and with him, obviously, the unfortunate woman. Now the task cannot be completed.
+
+#TEXT   5
+
+Captain @<sName> has been found. The kidnapped woman is in his cabin. Now I need to take @<sShipTypeName> on board, as it will definitely not work out in a good way with this cap...
+
+#TEXT   6
+
+In a boarding fight, I managed to save a woman named @<sName>. That's exactly what I needed. Now I can go back to @<sCity> to her husband.
+
+#TEXT   10
+
+The ship was missing. Now it will not work to help the unfortunate citizen find his wife.
+
+
+#QUEST  SCQ_manFriend
+
+Find a fellow citizen @<sCity>
+
+#TEXT   1
+
+I agreed@<sSex> to help a citizen of @<sCity> named @<sName>. I need to find his countryman in the area, a merchant captain whose name is @<sCapName>. He goes to @<sShipTypeName> '@<sShipName>'.
+
+I believe I can find this merchant without too much trouble.
+
+#TEXT   2
+
+The portmaster of @<sCity> told me that captain @<sCapName> on @<sShipTypeName> '@<sShipName>' @<sDate> of the year left for @<sTargetCity>@<sAreal>.
+
+#TEXT   3
+
+From the rumors, I learned that captain @<sCapName> left the port of @<sCity> for @<sTargetCity>@<sAreal>.
+
+#TEXT   4
+
+The captain I'm looking for @<sCapName> is dead. It is a pity, because now the task cannot be completed.
+
+#TEXT   5
+
+I managed to find captain I needed and tell him that a fellow countryman was looking for him. The task is completed, I can go to @<sCity> for my reward.
+
+#TEXT   10
+
+The ship was gone. Now it will not be possible to help a citizen find a fellow countryman.
+
+
+#QUEST  SCQ_womanRevenge
+
+Revenge of a rejected townswoman @<sCity>
+
+#TEXT   1
+
+I agreed@<sSex> to fulfill an unusual request for a woman from a townswoman @<sCity> named @<sName>. It is necessary to find captain, whose name is @<sCapName>. He goes to @<sShipTypeName> '@<sShipName>'.
+
+I need to find this captain, board him @<sShipTypeName2>, and finish him off. And before I send him to the next world, I definitely have to tell him that it was the lovely lady @<sName2> who ordered him.
+
+Yes, there is nothing worse than the revenge of a rejected woman...
+
+#TEXT   2
+
+The portmaster of @<sCity> told me that captain @<sCapName> on @<sShipTypeName> '@<sShipName>' @<sDate> of the year left for @<sTargetCity>@<sAreal>.
+
+#TEXT   3
+
+From the rumors, I learned that captain @<sCapName> left the port of @<sCity> for @<sTargetCity>@<sAreal>.
+
+#TEXT   4
+
+The captain I'm looking for @<sCapName> is dead. I was unable to talk to him, so the main condition of the customer was not fulfilled. He never found out what caused his death. The task has failed.
+
+#TEXT   5
+
+Captain @<sCapName> is dead. I managed to kill him on the terms of the customer. That is, before he died, he found out who caused it.
+
+The task of the evil fury has been completed. Now I can go to @<sCity> for my reward.
+
+#TEXT   10
+
+The ship was gone. Now it will not be possible to carry out the revenge of the rejected townswoman.
+
+
+#QUEST  SCQ_womanPirates
+
+Rescue of the husband of a townswoman
+
+#TEXT   1
+
+I have agreed to fulfill the request of a Port-au-Prince citizen named Liliana Labbe. Her husband is being held captive by a captain named Corey Ball. This captain sails on the schooner Colossus.
+
+I need to find captain, board his schooner and free the husband of the unfortunate woman, whose name is Vincent Labbe.
+
+The pirate ship was last seen near the uninhabited Turks Island.
+
+#TEXT   2
+
+The Captain I was looking for, Corey Ball, died, and with him, obviously, the husband of the unfortunate woman. The task has failed.
+
+#TEXT   3
+
+The schooner Colossus has been found. Now I have to board a pirate ship to free a prisoner.
+
+#TEXT   4
+
+In a boarding fight, I managed to free a prisoner named Vincent Labbe. The job is done, now I can return to Port-au-Prince to his wife.
+
+#TEXT   5
+
+For the release of her husband, Liliana Labbe thanked me with all the jewelry she had, and also told me about finding a great suit made according to the latest European fashion. It is hidden in a dungeon under the Tortuga in one of the dead ends.
+
+
+
+#QUEST SeekDoubleMushket
+
+Find a double-barrelled musket
+
+#TEXT   1
+
+Humphrey Douglas, a retired English Musketeer, asked me to find a lost double-barrelled musket. This weapon was taken from Humphrey during the pirate attack. It is not known what kind of corsairs they were. However, Humphrey heard the crew of his ship shouting about some kind of arrow. I can't do without the help of pirates. I need to ask the heads of the pirate settlements about this.
+
+If I manage to find this musket, then Humphrey will serve as an officer on my team.
+
+#TEXT   2
+
+Apparently, Humphrey's ship was attacked by a very unusual corsair Albert Sievert. He is not a member of the Brethren, so it is impossible to find him through pirates. Jackman said that this Sievert is constantly at sea and cruises between the bays of the islands.
+
+Jackman recommended that I keep a close eye on the passing ships. I need to find the brig 'Arrow'.
+
+#TEXT   2_2
+
+Apparently, Humphrey's ship was attacked by a very unusual corsair Albert Sievert. He is not a member of the Brethren, so it is impossible to find him through pirates. Bartholomew Rogers said that this Sievert is constantly at sea and cruises between the bays of the islands.
+
+Rogers recommended that I contact Rolando Pizarro, a former pirate and now the owner of a tavern in Porto Bello. He used to communicate with Sievert and probably knows something about him. In addition, I should carefully watch the passing ships. I need to find the brig 'Arrow'.
+
+#TEXT   3
+
+I managed to find and hand Humphrey Douglas his musket. Humphrey is my officer now, which is a good thing.
+
+#TEXT   4
+
+I managed to find out from Rolando Pizarro that the brig 'Arrow' went to a place called Mosquitos Bay. I need to go there...
+
+#TEXT   5
+
+Rolando Pizarro demanded as much as 100,000 piastres for information about the Arrow. I didn't have that kind of money. Well, I'll look for it on my own.
+
+#TEXT   6
+
+Rolando Pizarro demanded as much as 100,000 piastres for information about the Arrow. I refused@<sSex>. For that kind of money, I'll find this brig on my own.
+
+#TEXT   7
+
+Sheer bad luck! It took me too long to get to Porto Bello. Rolando knew the bay where the Arrow could be found, but time was lost - now there was no trace of it. I will search on my own...
+
+#TEXT   10
+
+The desired brig has disappeared. I won't be able to get a double-barrelled musket now.
+
+
+
+#QUEST Tenochtitlan
+
+Tenochtitlan
+
+#TEXT   1
+
+In a bay called the Mosquito Coast, I met the Spaniard Silvio Ricci. Screaming, he advised me to get away from this place. From his confused story, I understood@<sSex> that a certain don Esteban had assembled an expedition to some Indian city where Hernan Cortez himself was in charge 150 years ago! The expedition suffered a terrible death, only Silvio Ricci remained alive.
+
+#TEXT   2
+
+An Aztec named Montezuma met me on the shore in front of Tenochtitlan. After a long conversation, Montezuma offered me a deal - to bring him the jade skull of the god of the dead Mictlantecutli.
+
+First, I need to remove the fire spell from the dam that connects Tenochtitlan to the shore. According to Montezuma, there are two ways to do this.
+
+1. Find the Kamashtli totem, make your way through the fire into the city and insert this totem into the sacrificial stone.
+
+2. Find two totems - the goddess Tlasolteotl, the devourer of dirt, and the god of heaven and sun Tonatiu. Then insert them into the sacrificial stones that are on the shore in front of the dam.
+
+Montezuma is a very strange Indian. Everyone is hiding something. And now, he seems to know where these totems are. But he can't say for sure, referring to something unclear.
+
+However, he hinted where to look. I memorized@<sSex> everything verbatim.
+
+"The Kamashtli totem is closer than I think. The Tlasolteotl totem is located nearby, in the grass. And the Tonatiu totem is thrown into the jungle between two Spanish cities that are located on the isthmus between the continents."
+
+#TEXT   3
+
+I managed to break the fire spell. Further - more.
+
+Now I have to find 10 totems of Aztec gods. These totems should be placed on the altars of ten temples. The temples are located in small pyramids on both sides of the great pyramid, which is the temple of the Great Life Force.
+
+So, I need to find:
+
+1. The totem of Xochiquetzal, the goddess of flowers and love.
+
+2. The totem of Mictlantecutli, the god of the dead.
+
+3. The totem of Quetzalcoatl, the god of the morning star, the lord of the elements.
+
+4. The totem of Mishcoatl, the god of hunting.
+
+5. The totem of Tezcatlipoca, the patron saint of the priests.
+
+6. Totem of Chalchihuitlicue, goddess of the sea and lakes.
+
+7. The totem of Huitzilopochtli, the god of the blue clear sky.
+
+8. The totem of Tlaloc, the god of rain and thunderstorms.
+
+9. Totem of Mayahuel, the goddess of fertility.
+
+10. The totem of Tonakatekutli, the creator god who gives food to people.
+
+Montezuma this time dispensed with hints regarding the location of 10 totems. I need to look for all these totems everywhere around the world.
+
+Great...
+
+#TEXT   4
+
+Yeah, I had to do a lot of work today. First, I cut out an entire army of resurrected Aztecs, and then I had a chance to fight with the Aztec god of the kingdom of the dead himself. I managed to prove to him that corsairs are good fighters.
+
+I was@<sSex> released by@<sSex> to all four sides, and the jade skull remained with me as a load to freedom. Perfectly!
+
+By the way, Mictlantecutli told me that Montezuma, whom I know, is none other than the ghost of Montezuma the Second, the last leader of the Aztecs. This Montezuma is cursed by the gods, which is why he cannot retire to the realm of the dead and is forced to walk forever along the shores of Lake Texcoco around Tenochtitlan.
+
+Mictlantecutli added that the jade skull would help me.
+
+#TEXT   5
+
+Montezuma II demanded a jade skull from me. I refused to give it to@<sSex>, as the prospect of restoring the Aztec empire confused me somewhat.
+
+#TEXT   6
+
+Having a jade skull helped me send Montezuma to the realm of the dead. That is, Mictlantecutli did not deceive, the skull really helped me.
+
+#TEXT   7
+
+All 10 totems of the Aztec gods are activated. I managed to open a Temple of Great Vitality.
+
+
+
+#QUEST MagicCity
+
+Enchanted City
+
+#TEXT   1
+
+In the city of Caracas, a mob lynched one unfortunate man from Maracaibo. Before he died, he managed to tell me about some kind of curse that allegedly struck the whole city. I should find out what's going on there.
+
+#TEXT   2
+
+Everything seems to be in order in Maracaibo. In conversation, the tavern owner mentioned that there is a fishing town called Des Moines not far from Maracaibo. And strangely, fishermen from there have not been seen in the tavern for a long time...
+
+#TEXT   3
+
+It's amazing that I had to fight my way into this godforsaken town!
+
+#TEXT   4
+
+I have never seen such horror in my whole life@<sSex>! A city full of skeletons - br-r! My business is the sea, the ship and the wind... even skeletons, but not this nightmare of transformations. No, I preferred not to mess with the afterlife.
+
+But I can look into the Holy Inquisition...
+
+#TEXT   5
+
+A terrible secret was revealed to me in Des Moines. The city is struck by a terrible curse - its inhabitants turn into skeletons at night! And the most interesting thing is that the residents themselves have no idea why this misfortune has fallen on their heads.
+
+I felt sorry for the people of Des Moines, and I helped@<sSex> to help them. The head of the city, Fernando Torres, recommended that I find a certain young Englishwoman named Elizabeth Sheppard. Not so long ago, she visited Des Moines, asking about pirates, the skipper and the galleon "Queen". It was after the corsair showdown of the Queen's crew at the cape of Unfulfilled Hopes that this whistle with a curse began.
+
+#TEXT   6
+
+I found Elizabeth Sheppard. She turned out to be the daughter of a famous former filibuster, Captain Staton.
+
+Torres was right, the young lady is quite a lady. According to her, captain of the same galleon "Koroleva" came to her house at night, and she just screamed. I would have been woken up by such an image at night - I would have seriously scared @<sSex1>.
+
+In general, our goals with Ms. Sheppard are the same. She found out that she could lift the curse-the jade skull of the Aztec god of the dead. Now I need to get it in the abandoned Aztec capital of Tenochtitlan.
+
+#TEXT   7
+
+Elizabeth Sheppard sent me to look for the Queen galleon. Where this galleon sails is completely unknown. Well, I will have to look around carefully during sea trips.
+
+After I find the galleon, I need to deliver the jade skull to captain's cabin. I strongly doubt that this can be done in a peaceful way...
+
+#TEXT   8
+
+I managed to overtake the Queen galleon, board it and lift the curse. The captain of the galleon turned out to be Elizabeth's older sister. By the way, she agreed to join me as an officer. Not bad...
+
+#TEXT   9
+
+The curse on Des Moines has also been lifted, so everything is in perfect order.
+
+#TEXT   10
+
+The galleon was gone. Now it will not be possible to remove the curse of the Aztec god of the dead.
+
+
+
+#QUEST Slavetrader
+
+Slave Trader
+
+#TEXT   1
+
+The usurer from @<sCity>, @<sName>, offers me @<sSum> piastres for @<sQty> slaves. The pay is decent and the work is simple - I think I'll take up this case. It's not worth delaying, it looks like @<sName> is seriously engaged in the slave trade, and I can make good money on supplies...
+
+#TEXT   2
+
+The slaves have been delivered, the customer has paid off. In addition, @<sName> offered to visit him in three weeks for another assignment. I must definitely look in.
+
+#TEXT   3
+
+@<sName> instructed me to disrupt the competitors' deal. It is required to capture the ship '@<sShipName>', which went to @<sShoreName>, which is on @<sShoreType>. I need to make it in two weeks.
+
+#TEXT   3_1
+
+I made it@<sSex> on time! The captain of the galleon '@<sShipName>' transloads slaves onto the smugglers' ship. I need to board them both and pick up the goods.
+
+#TEXT	4
+
+The task is completed. Now I need to hurry to the customer.
+
+#TEXT	5
+
+The opponents turned out to be too strong and I had to withdraw from the fight. I'm afraid it's a failure.
+
+#TEXT	5_5
+
+Since I failed the@<sSex> assignment, @<sName> doesn't want to deal with me anymore. It's a pity that it turned out so badly...
+
+#TEXT	6
+
+@<sName> was pleased with my work. For the slaves brought by @<sQty>, he paid me @<sMoney> piastres. Besides, I need to go to him in a month for another assignment.
+
+#TEXT	6_1
+
+@<sName> was pleased with my work. For the 1,600 slaves he brought, he paid me 3,200,000 piastres. Besides, I need to go to him in a month for another assignment.
+
+#TEXT	7
+
+I was late@<sSex> to the specified place, and the galleon '@<sShipName>' has already gone somewhere unknown. I'll have to come back with nothing.
+
+#TEXT	7_1
+
+I was too slow@<sSex> to go to sea, and the pinnace '@<sShipName>' has already taken off the anchors. I don't know where to look for him now. I'll have to come back with nothing.
+
+#TEXT	7_2
+
+Despite all my efforts, I was unable to find '@<sShipName>'. I'll have to come back with nothing.
+
+#TEXT	8
+
+I refused@<sSex> the proposed assignment. Let him look for hunters for this case elsewhere.
+
+#TEXT	9
+
+That's what made me get in touch with this scoundrel! Now wait for the bounty hunters...
+
+#TEXT	10
+
+@<sName> gave me a rather dangerous task this time. It is necessary to board the pinas @<sShipName>, which is literally two steps away from here. I must be careful not to come under fire from the fort's guns.
+
+#TEXT	11
+
+The opponent turned out to be extremely strong. I was unable to@<sSex> capture the pin '@<sShipName>'. Perhaps it's better not to show up at the customer's place...
+
+#TEXT	12
+
+During the battle, pinas '@<sShipName>' drowned. Perhaps it's better not to show up at the customer's place...
+
+#TEXT	13
+
+Damn it! The pinnace '@<sShipName>' turned out to be a trap - there were no slaves in the hold. But there were heavily armed soldiers there. I need to go to the customer and shake the whole truth out of him. Apparently, it's time to introduce him to the wicks burning between his fingers...
+
+#TEXT	14
+
+It seems that @<sName> is not lying and he was really betrayed. This is confirmed by the words of the cap of the captured pinnace. The evidence is now on the brigantine '@<sShipName>', and it is heading towards the island of @<sIsland>, to the Governor-General. It is necessary to catch up with this ship and grab a package with evidence, otherwise there will be major troubles.
+
+#TEXT	15
+
+Damn it! I was unable to@<sSex> capture the brigantine '@<sShipName>'. Well, now there's only one way - to the diplomat...
+
+#TEXT	16
+
+I managed to overtake and capture the brigantine '@<sShipName>'. The papers were in captain's cabin in the locker. I can breathe easy.
+
+#TEXT	17
+
+I managed to catch up with the brigantine '@<sShipName>', but I never found and never will find the papers. Maybe they didn't exist? I must return to the usurer.
+
+#TEXT	18
+
+I should find and capture the heavy galleon '@<sShipName>', following the course of @<sAreal> to Santiago. I need to be very careful@<sSex> not to miss it. There are more than 3,000 slaves in the galleon's holds - truly fabulous loot.
+
+#TEXT	19
+
+An extremely unpleasant surprise awaited me. '@<sShipName>' turned out to be not a heavy galleon at all, but a real battleship, and even with a devilishly skillful captain. But I still managed to win this difficult fight.
+
+#TEXT	20
+
+@<sName> asked me to wait five days for the calculation - while he sells the slaves I brought, and gave me fifteen credit chests in advance. And although I have no special reason to trust this rascal, I do not think that he will decide to cheat at such a difficult time for himself.
+
+#TEXT	21
+
+@<sName> asked me to find and destroy the traitor who got us both into a lot of trouble. I'd love to strangle this rat. The scoundrel's name is Francois Gontier, and he was last seen in Panama. I'm going on a search.
+
+#TEXT	21_1
+
+I managed to find out from the Panamanian innkeeper that Gontier most likely went to Porto Bello.
+
+#TEXT	21_2
+
+Gontier purchased a corvette at the Porto Bello shipyard. I need to find out where he went.
+
+#TEXT	21_3
+
+According to information received from the Porto Bello Port Authority, Gontier left for Jamaica. His corvette is called '@<sShip>'.
+
+#TEXT	21_4
+
+Gontier was in Fort Orange, rented a room in a tavern for a while, but recently left for an unknown destination. It is unclear where to look for him.
+
+#TEXT	21_5
+
+The waitress from the Fort Orange Tavern knows where Gontier went, but asks for emerald pendants for this information. I must definitely get this piece of jewelry, otherwise I won't achieve anything.
+
+#TEXT	21_6
+
+The lost thread of the search has been restored. Gontier went to Havana. Great. I think I'll see him soon.
+
+#TEXT	21_7
+
+How interesting everything is! Gontier tried to get a Spanish letter of marque in Havana, but it didn't work out. According to the innkeeper, my friend Francois decided to hide under the wing of the French authorities. Well, I'm heading for Tortuga!
+
+#TEXT	21_8
+
+Something's not right here! The corvette did not dock at the port, and Gontier and his brothers, judging by the words of the innkeeper, are walking the streets. I need to search the city and the surrounding area thoroughly.
+
+#TEXT	21_9
+
+The rat was hiding in one of the houses. As soon as I entered there, I was immediately attacked by his friends. I had to send them to their forefathers - I think no one will grieve much about this. Gontier himself escaped. According to his mistress, the corvette was moored behind the Tortuga Lighthouse. Immediately into the sea, before he disappears again!
+
+#TEXT	21_10
+
+I was too slow@<sSex> to go to sea - Gontier's corvette disappeared without a trace. I don't have any more leads. I can go back to the usurer and report the failure of the mission.
+
+#TEXT	21_11
+
+This Gontier turned out to be too much for me, and I'm@<sSex> for the benefit of retiring. I can go back to the usurer and report the failure of the mission.
+
+#TEXT	21_12
+
+It's done! The bastard Gontier went into the stomach of the sharks, where he belongs.
+
+#TEXT	21_13
+
+For the destruction of the traitor, @<sName> presented me with an Atlaua statuette. That's great! In addition, he paid me a reward of 100,000 piastres and compensated me for expenses of 50,000 piastres. It seems that things have improved for my employer... I need to report to him in a month with a well-equipped squadron. A very serious matter is planned.
+
+#TEXT	21_14
+
+@<sName> upset about what I missed@<sSex> Gontier, but offered to come in a month later for another assignment, having a well-equipped squadron. A very serious matter is planned.
+
+#TEXT	22
+
+My assumptions were completely confirmed. The bark was wrecked, and the slaves took refuge in the lighthouse. Tamango and his militant henchmen attacked us without any preliminary negotiations, but I calmed them down. Forever. The rest of the fugitives did not try their luck and surrendered without a fight. In total, I managed to capture @<sQty> slaves.
+
+#TEXT	22_1
+
+@<sName> gave me an assignment to go to Curacao, where the largest slave riot in recent times took place. It is necessary to find out as much as possible about this incident.
+
+#TEXT	22_2
+
+From a very entertaining conversation with the innkeeper, I managed to find out all the details of the uprising, as well as the fact that a bark was stolen from the parking lot of ships. The innkeeper is sure that runaway slaves are involved in this.
+
+#TEXT	22_3
+
+At the port authority, I managed to find out the name of the barge on which the slaves supposedly disappeared - '@<sShipName>'. Unfortunately, that's all. I can't even imagine where to dig next...
+
+#TEXT	22_4
+
+From a conversation with a drunken sailor, I managed to find out quite unexpectedly that the bark with the fugitives had been seen @<sAreal>. Judging from the story, the ship was clearly wrecked. I should go there and search all the bays.
+
+#TEXT	22_5
+
+@<sName> was very pleased. He paid well for the slaves brought by @<sQty>: I received 330000@<sSex> for the fugitives from Curacao, and @<sMoney> for the others. As usual, I need to come back in a month for my next assignment.
+
+#TEXT	22_6
+
+@<sName> was very pleased. He paid @<sMoney> piastres for the slaves brought by @<sQty>. As usual, I need to come back in a month for my next assignment.
+
+#TEXT	24
+
+Damn it, I never would have thought@<sSex> that @<sName> was acting on such a large scale! Now I need to capture the fort of Havana, in which, according to the information received, there are at least 5,000 slaves. I'm on my way.
+
+#TEXT	25
+
+The usurer was right! Two battleships cruising off the coast of Havana are clearly unfriendly. I need to get rid of them before I start storming the fort.
+
+#TEXT	26
+
+The enemy battleships have been destroyed. Now let's storm Havana!
+
+#TEXT	26_1
+
+The enemy battleships were destroyed, but there were no forces left to take Havana. I have to leave@<sSex> with nothing. I think it's better not to return to the customer...
+
+#TEXT	27
+
+Havana is taken, the job is done. @<sQty> slaves are loaded into the holds. It's time to head back.
+
+#TEXT	27_1
+
+I failed the@<sSex> case by deciding to storm Havana from the land. The slaves were in the fort, and its defenders had time to prepare properly. I can't see any slaves. I think it's better not to return to the customer...
+
+#TEXT	28
+
+I couldn't@<sSex> get to Havana on time. All the slaves have probably already been taken out of the fort to the Cuban plantation. It is better not to show up to the customer...
+
+#TEXT	29
+
+Damn it! Not all the slaves moved the road, and the usurer needs 5,000 and no less! I need to get the missing amount, and no more than a week, or I'll be in big trouble.
+
+#TEXT	30
+
+I did not manage to deliver the slaves to the customer on time. Now I can take your time - I need to sell slaves, go to a diplomat and buy off bounty hunters...
+
+#TEXT	31
+
+I did not manage to collect the 5,000 slaves I needed in time. Now there is only one way - to the diplomat, to pay off the bounty hunters...
+
+#TEXT	32
+
+The slaves were handed over to a usurer for sale. I need to come back for the money in a week. I'll get more than a million for this operation! That's what it means to deal with serious people! I'm even afraid to imagine what the next task will be like. Yes, this business definitely brings royal profits!
+
+#TEXT	33
+
+The damned bastard tricked me! When I went to get the money, it turned out that my dear 'partner' had gone on the run, taking with him both my million and the money of his depositors. For the first time in my life, I was so cheated! The one who shamelessly deceives others in front of your eyes will sooner or later deceive I, no matter how much he assures I otherwise. Because he just doesn't know how to live any other way... But never mind, the earth is round, someday I will definitely meet this rat. And then he will answer for everything!
+
+
+
+#QUEST Headhunt
+
+Condottiere
+
+#TEXT   1
+
+Snakeman Young told me the story that a gang of pirates under the command of a certain Ja Preston terrorized the settlement of Le Francois, imposing exorbitant tribute on merchants and other entrepreneurs, and offered to destroy this gang for a decent reward. I gave@<sSex> my consent. My first task in this difficult case is to destroy Carlos Cashier, whom I can find at @<sCity>.
+
+#TEXT   1_1
+
+A smuggler from @<sCity> suggested that I visit his old friend, Snakeman Young, a innkeeper in the settlement of Le Francois, in Martinique. He may have some kind of assignment for me.
+
+#TEXT   2
+
+The first task is completed - Carlos the Cashier went to hell, where he was certainly welcomed with open arms. I can go back to Le Francois to see Snakeman.
+
+#TEXT   2_1
+
+I managed to anger Carlos Cashier and challenge him to a duel. I'll meet one-on-one, in an hour outside the city gates – I think it's not worth being late. And it's better not to take people with me – I'll finish everything quietly, and the guards won't find out anything.
+
+#TEXT   2_2
+
+I couldn't@<sSex> come to the duel with Carlos Cashier on time and he disappeared to no one knows where. The task has failed. I probably won't even go to Snakeman...
+
+#TEXT   3
+
+Snakeman Young paid me 5,000 piastres and 1 chest of gold for the head of Carlos the Cashier. As a compensation for travel expenses, it is very good. I should come back in ten days - Snakeman will try to get information about the next 'client' by this time.
+
+#TEXT   4
+
+The second designated target for destruction is the creepy African Hannibal Holm. According to available information, he is hiding somewhere in the English colonies. I should look for the ship "Deadhead".
+
+#TEXT   5
+
+I managed to get on the trail of Hannibal Holm – he's somewhere @<sCity>. The locals are wary of him, but attacking openly means turning the British authorities against themselves. I need to try to talk to the 'black lion' first.
+
+#TEXT   6
+
+I challenged@<sSex> Hannibal Holm to a naval duel.
+
+#TEXT   7
+
+The fight was hot-Hannibal Holm turned out to be a tough guy, and he had a good ship. But this fierce and proud savage has fallen by my hand, and it's time to return to Martinique.
+
+#TEXT   8
+
+The hill was too much for me. I had to run for my life. It's better not to show up to Snakeman after such a disgrace.
+
+#TEXT   9
+
+The reward for destroying the Hill has been received. This time, the compensation was 10,000 piastres and two chests of gold.
+
+#TEXT   10
+
+All imaginable and unimaginable deadlines for the search for the pinas Adelaide have passed. The trail is irrevocably lost. The task has failed. It's better not to show up at Le Francois...
+
+#TEXT   11
+
+The third 'client' is Mathias Green, nicknamed 'A rat.' According to Snakeman, the Rat is involved in numerous disappearances of merchant ships. Nothing more is known about him, and I will have to get all the information myself. Sneikman named three ports from where the last three ships disappeared: Willemstad on Curacao, Cartagena on the Main, and Port of Spain on the island of Trinidad and Tobago. I need to start looking from there – maybe I'll get on the trail.
+
+#TEXT   12_1
+
+In Cartagena, on the day when the missing ship "Happy Bride" sailed on its last voyage, there were the following ships: the galleon "San Juan Nepomacedo" and the pinnace "Adelaide". I continue the search.
+
+#TEXT   12_2
+
+The following ships were in Port of Spain on the day when the missing ship sailed on her last voyage: the schooner Jenny, the corvette Swift and the pinnace Adelaide. I continue to search.
+
+#TEXT   12_3
+
+In Willemstad, on the day when the missing ship Santa Anna sailed on her last voyage, there were the following ships: the pinnace Adelaide, the galleon Medemblink and the frigate Zultchen. I continue the search.
+
+#TEXT   13
+
+In all three cases, the pinas Adelaide was noted. This is clearly not for nothing. It is necessary to ask the sailors in the tavern in more detail about this ship.
+
+#TEXT   14
+
+No one knows the exact port of the mysterious pinnace with its ordinary-looking merchant captain. But, there is one clue – the sailors from the Adelaide discussed how they would have fun with the French women. What could it mean?
+
+#TEXT   15
+
+The Adelaide is in the Tortuga raid. I need to think about what actions to take.
+
+#TEXT   16
+
+It was a rash act on my part. There was only the first mate of the Rat on the ship, and the scoundrel himself was not there. Having started a fight with Adelaide, I scared off a Rat, and now I can't find him anymore. The task has failed. It's better not to show up at Snakeman's...
+
+#TEXT   17
+
+The pinnace will sail any day now. I must somehow lure the Rat out on ourselves, and preferably away from populated areas - the scoundrel is hanging out with d'Ogeron. It is necessary to buy more expensive goods, similar to what was on the missing ships, and 'casually' tell the Rat about it - fortunately, the scoundrel is in the tavern.
+
+#TEXT   17_1
+
+I've been driving@<sSex> for too long with the purchase of goods and the pinas Adelaide has already taken off the anchors. It is unclear where to look for him. The task has failed.
+
+#TEXT   18
+
+The fishing rod is abandoned. Now - I need to land in the Gulf of Doom so that the Rat believes the legend!
+
+#TEXT   19
+
+I'm in the Gulf of Doom. I should wait, periodically looking at the horizon - the rat may appear at any moment.
+
+#TEXT   19_1
+
+I landed@<sSex> in the Gulf of Doom, but the Rat didn't show up. Obviously, he was scared off by the imposing appearance of my squadron. Alas, the chance has been missed. The task has completely failed. I won't even go to Martinique...
+
+#TEXT   20
+
+I was too involved in extraneous matters and the Rat probably lost hope of finding me in the Gulf of Doom, and I lost it. The task has failed. I won't even go to Martinique...
+
+#TEXT   20_1
+
+I couldn't find the Rat ship at the Gulf of Doom. The task has failed. I won't even go to Martinique...
+
+#TEXT   21
+
+The rat appeared. Attack!
+
+#TEXT   22
+
+The opponent was too much for me. I had to retreat. The task has failed. I won't even go to Martinique...
+
+#TEXT   23
+
+I boarded the Rat and killed the Rat in the cabin. The task is completed. The rat tried to threaten me before he died - it's funny.
+
+#TEXT   24
+
+The Rat's pinnace sank with him. That's where he goes-to feed the crabs. The task is completed.
+
+#TEXT   25
+
+Snakeman Young was very pleased with my work. For the destruction of the Rat, he paid 20,000 piastres, two chests of gold and presented an Indian totem.
+
+#TEXT   26
+
+It was the turn of the fourth scoundrel, Martin van Halen. The situation is complicated by the fact that he is not just a pirate, but a Dutch privateer, and even Peter Stevesant's favorite. I'm moving to Curacao.
+
+#TEXT   26_1
+
+I spent@<sSex> it takes too long to get to Curacao. Halen is no longer to be found. The task has failed. I'm not even going to see Snakeman...
+
+#TEXT   27
+
+I managed to find out from the innkeeper that van Halen will be returning to Willemstad soon. Just wait for him. I rented a room in a tavern, and the innkeeper will immediately inform me when the 'client' arrives in the city. I can rest in peace.
+
+#TEXT   28
+
+While resting, I was woken up by an extraneous noise. Two unknown men entered my room and tried to kill me. The most unpleasant thing about this story is that they were sent by Ja Preston, the leader of the gang, which I am methodically destroying. It is obvious that not only Snakeman Yang is able to extract information - Ja has also opened the hunting season. On me....
+
+#TEXT   29
+
+Martin van Halen has already arrived in Willemstad and went to see Stevesant. His corvette "Lover of Luck" is on the raid. I can try to intercept Halen in the city, or I can try to intercept him at sea. There is no time to think - I must act harshly and decisively.
+
+#TEXT   30
+
+Halen was too much for me. I had to retreat. The task has failed. It's better not to show up in Martinique...
+
+#TEXT   31
+
+Martin van Halen is destroyed. Let him show his arrogance to the devils in hell now. As Snakeman used to say: 'one less scoundrel!'
+
+#TEXT   32
+
+The reward for Halen has been received.
+
+#TEXT   33
+
+Ja Preston got to me somehow. I have to find him before he strikes again. I'm going in search of his closest associate, Miko Pistollero. He must be somewhere in the pearl fishing settlements on the Main...
+
+#TEXT   34
+
+I couldn't get anything out of Miko Pistollero. He immediately realized who I was, and without much ado attacked and tried to kill me. The only thing I've been able to find out is that Jah is somewhere nearby...
+
+#TEXT   35
+
+I was waylaid by Ja's hirelings again. I must find him and destroy him, otherwise it will be repeated endlessly.
+
+#TEXT   36
+
+Right off the Bay of San Juan del Norte, the frigate Ja was waiting for me. What a stroke of luck! Attack!
+
+#TEXT   37
+
+I destroyed@<sSex> Ja Preston. Now I can breathe easy and return to Martinique to Sneikman for the reward.
+
+#TEXT   38
+
+Ja Preston will now serve on my team. Such an officer is worth much more than the money and ammunition promised by Snakeman.
+
+#TEXT   39
+
+Snakeman Young fulfilled his promise - for the destruction of the gang of Ja Preston, I received@<sSex> a set of magnificent ammunition and 100,000 piastres. I think this is quite a worthy reward for the work done.
+
+
+
+#QUEST GhostShipQuest
+
+Ghost Ship
+
+#TEXT	1
+
+In the tavern, I happened to hear a story about a ghost ship that has been plowing the waters of the archipelago for many years.
+
+#TEXT	2
+
+Rumors about the ghost ship, it turns out, are quite common. According to legend, this ship was called Flying Dutchman. The ship and its crew are charmed, or rather cursed, and cannot find rest, so they continue to raid peaceful ships and even cities, sparing no one.
+
+#TEXT   3
+
+They say HE was seen near the island of Khael Roa. Perhaps I should look at this "miracle of nature" with my own eyes... It's time to go to sea!
+
+#TEXT   3_1
+
+Today I met the legendary 'Flying Dutchman' at sea.
+
+#TEXT   4
+
+In the pearl fisheries among the Indians, I met a half-breed, whom everyone calls White Boy, although his age is far from young. His father was captain of some big ship, and his mother was the daughter of a tribal shaman.
+
+#TEXT   5
+
+The half-breed told me the story of the ghost ship's appearance and the secret of its resting place. I need to collect 666 black pearls and bring them to him, then he will give them to his shaman grandfather, and he will lift the curse, and the crew of the Flying Dutchman will become mortal.
+
+I can get the pearls only from the sailors of the ship themselves at the hour when they go ashore.
+
+#TEXT   6
+
+So, I delivered 666 black pearls to@<sSex>. Now I can prepare for your last date with the Flying Dutchman. I think I'll be able to finally deal with him. All that remains is to find him again.
+
+#TEXT   Survive_1
+
+Strangely, I survived@<sSex> after meeting this ghost. Yes, everything is very interesting, the ship can clearly be destroyed: it barely kept afloat, but sank me.
+
+I lost@<sSex> everything I had@<sSex>!! I need to figure out where I am, get a new ship, restore my shattered condition and continue the search...
+
+#TEXT   Survive_2
+
+It's becoming a good tradition to lose everything after encountering a ghost ship. It's amazing that I managed to survive again. Maybe it's not for nothing?
+
+#TEXT   Dead_1
+
+Hm... some kind of strange ghost - drowned like a darling. The battle was hot, the ship was spinning like a spinning top, but I coped@<sSex>. It just seems to me that our meeting will not be the last...
+
+#TEXT   Dead_2
+
+That's it! I did@<sSex> this! The legend of the ghost has now become exactly a legend. They became mortals and died under the blows of honest weapons, as mortals should.
+
+#TEXT   help_t1
+
+In the city of @<sCity>, I was asked to help defend the city from an attack by pirates from a ghost ship.
+
+The battle is already underway in the port, I need to hurry.
+
+#TEXT   help_t2
+
+It was a hot battle! But now my pockets are filled with black pearls.
+
+
+
+#QUEST Kuali
+
+Macuahuitl for Cuali
+
+#TEXT	1
+
+In an Indian village, an aborigine accosted me and asked me to return his weapon. As far as I could make out from his incoherent speech, he was selected by one of the local pearl fishermen who have a camp nearby. I'll try to look there. The Indian promised me something dubious in return, so I'll check it out.
+
+#TEXT	2
+
+So the poor guy's name is Perez. He no longer lives in the fields, but he still has a hut right next to the house of the local commandant. Let's go through his stuff.
+
+#TEXT	3
+
+There's nothing interesting in the house. Macouautl probably stayed with him. There is some kind of key, but it doesn't fit anything. Since Perez hadn't sailed anywhere, he was probably somewhere between the Indian village and the fisheries, stealing food from them. It's worth walking around a bit.
+
+#TEXT	4
+
+I can be considered lucky. There was a tramp, I didn't even have to beg him to give me this thing in a good way. Well, it's an abomination, however, it looks like he really started to rot alive, even the scavengers didn't touch him.
+
+#TEXT	5
+
+It's an interesting thing, this Macquautl. I think I'll need it more than a Kuali Indian.
+
+#TEXT	6
+
+The Indian gave me some elixirs in return for my service. At first glance, nothing special, except for a large bubble. I hope he didn't cheat me, and the deal is really worthwhile.
+
+
+
+#QUEST PomoshElen
+
+Help to Helen
+
+#TEXT	1
+
+In Puerto Principe, I met@<sSex> a girl who is looking for a job as an officer on a ship. But the catch is that some scoundrel is spreading bad rumors about her, and no one wants to hire her. I decided to@<sSex> help her. I need to look for the pirate carefully.
+
+#TEXT	2
+
+Helen was very grateful to me for offering me to become her officer for a modest sum. She's a good little devil!
+
+
+
+#QUEST PKM_Animists
+
+Strange things are happening in the archipelago
+
+#TEXT	1
+
+In Marigo, I found out@<sSex> that several local children were abducted last night. Their mothers tried to ask the governor for help, but he didn't even give them an audience. Maybe I can talk to him? I need to see if he's still there...
+
+#TEXT	2
+
+The governor suggested that I investigate this case and try to find the abducted children. I refused@<sSex> - the further away I am from such incidents, the longer I will live.
+
+#TEXT	3
+
+The governor invited me to investigate the case and promised to pay me well if successful. The only thing I know is that captain of a merchant ship saw a mysterious frigate sailing away from the island this morning. This captain is in the tavern now. I think I should ask him first.
+
+#TEXT	4
+
+I talked to this captain and found out@<sSex> that the black frigate was heading for Nevis. Maybe it's worth scaring captains of the ships that are currently in port?
+
+#TEXT	5
+
+I learned from captain of one of the ships@<sSex> that the black frigate really left under the cover of night. Now I have no doubt that the abducted children on board this black frigate - the sailors swear that they heard a child crying coming from her deck.
+
+#TEXT	6
+
+I managed to talk to the navigator of the ship that was attacked by the black frigate. He said that the frigate was called 'Mephisto', and that it was heading for Le Francois.
+
+#TEXT	7
+
+I managed to find out at Le Francois that the frigate had actually been here, and that members of her crew had even killed someone on shore. I also learned that the Fort de France church is also interested in the black frigate Mephisto.
+
+#TEXT	8
+
+Father Clermont hired me to deliver a letter to Padre Dominguez in Puerto Rico. At first glance, the task seems simple, but one messenger has already been killed by some people in red robes. For some reason, it seems to me that the thugs from that black frigate are somehow involved in this.
+
+I am not allowed to dock at the port, so as not to attract too much attention to myself. I'll land in one of the secluded coves.
+
+#TEXT	9
+
+I arrived@<sSex> in Puerto Rico and dropped off at the port. Sectarians in shapeless robes were waiting for me there. I found strange medallions on their bodies@<sSex>.
+
+#TEXT	10
+
+I arrived@<sSex> in Puerto Rico and landed in a secluded bay, as Father Clermont wished. Imagine my surprise when I saw several figures in shapeless robes clearly waiting for me. I found on their bodies@<sSex> strange medallions.
+
+#TEXT	11
+
+Strange people offered me to give them the letter in exchange for money, promising to return it immediately after reading it. They were very upset by my refusal, and they drew their weapons... I found strange medallions on the corpses.
+
+#TEXT	12
+
+Strange people offered me to give them the letter in exchange for money, and I agreed to this deal. After reading the letter, it was returned to me, sealed again, but, in my opinion, the seal did not come out very convincingly.
+
+#TEXT	13
+
+That holy man, Padre Dominguez, noticed that the letter had been opened. After he threatened me with excommunication, I told him everything@<sSex>. Thank God, everything went well.
+
+#TEXT	14
+
+That holy man, Padre Dominguez, noticed that the letter had been opened. But no matter how he tried to convict me of giving@<sSex> to someone to read the letter, I did not admit to @<sSex2> what I had done. Then he cursed me, or something like that. Well, anyway, I've never liked talking to churchmen.
+
+#TEXT	15
+
+After handing the letter to Padre Dominguez and telling him about the incident on @<sStr>, I received@<sSex> new task. I need to meet the bark Maenez off the coast of San Martin and escort him to Puerto Rico.
+
+#TEXT	16
+
+A thousand devils! The ship "Maenez", which I was supposed to escort to Puerto Rico, went into the depths of the sea, which means I don't have to return to Padre Dominguez.
+
+#TEXT	17
+
+I was almost too late@<sSex>! When I approached the shores of San Martin, the Maenez was already barely holding on to the water under the gunfire of an enemy vessel. My intervention was timely. Now I need to talk to captain of the Maenez.
+
+#TEXT	18
+
+I introduced@<sSex> to captain of the Maenez, who turned out to be a Maltese knight. I think it's time to hit the road to Puerto Rico and report on the successful completion of the mission to Padre Dominguez.
+
+#TEXT	19
+
+The Maenez is moored at the San Juan pier. Padre Dominguez is undoubtedly happy about this. Apparently, the Maltese knights who were on board the barque are valuable to him.
+
+My next assignment is again of a postal nature. This time I need to deliver a letter to Father Clermont in Martinique, and keep an eye out so that it does not fall into the wrong hands.
+
+#TEXT	20
+
+They were already waiting for me at the exit of the church. The same shapeless robes and wide sleeves hiding weapons. The request to give the letter was made on their part clearly for the sake of form, and, after a reasonable refusal, the guys bared their steel. I left them lying in the middle of an unnamed street in the slums of San Juan.
+
+#TEXT	21
+
+The letter has been delivered, and this, coupled with several gold coins that have replenished my wallet, warms my heart. Almost as much as the fact that now I know who put the sticks in my wheels all the time. Father Gareth. Who would have thought that he would be a traitor? However, it was he who organized the attacks on me, and the last time - right in the church.
+
+The Maltese knight Jacqueline de Masset arrived in the archipelago in order to assist in the destruction of the black sect. He looks like a seasoned warrior, and I am happy to accept him into my team.
+
+My new task is to find the lair of the pagans, and it turned out to be them, these people in robes. The reward for this will be truly royal, and besides, it was these people who kidnapped the children in Marigo and Padre Dominguez right after I sailed from San Juan. I'm thinking of starting the search from the place where Padre Dominguez was abducted.
+
+#TEXT	25
+
+After talking to the innkeeper in San Juan, I found out@<sSex> that a man in a red robe appeared on the island, who calls himself a Teacher. This Teacher has a great influence on the local youth and, in particular, on a certain Giordano, the son of a blacksmith. By the way, Giordano's father died under rather strange circumstances. I think I need to talk to this guy.
+
+#TEXT	26
+
+I found Giordano without much difficulty. I found out@<sSex1> that the Teacher temporarily left San Juan and went to Port-au-Prince, on the island of Hispaniola.
+
+#TEXT	27
+
+I found out from the tavern keeper@<sSex> that the man I'm looking for was arrested for sedition and imprisoned in Port-au-Prince.
+
+#TEXT	28
+
+I intimidated@<sSex> this bureaucrat by promising to put a bullet in his head, and thus got@<sSex> access to the prisoner.
+
+#TEXT	29
+
+Money solves a lot, if not everything. So in this case, for only forty thousand piastres, I received@<sSex> access to the prisoner. They didn't even shuffle in front of me.
+
+#TEXT	30
+
+I managed to convince the governor of the prison to let me see the prisoner.
+
+#TEXT	31
+
+The only way to find out where the sect's lair is is to free the prisoner, which I did@<sSex>. Now I have to go to San Juan, where he will decide what to do next. Hopefully it won't take too long.
+
+#TEXT	32
+
+I decided to interrogate the prisoner in his cell, but he died after only saying something about the island of Maria Galante. All I have to do is land there and burn out the infection with a hot iron.
+
+#TEXT	33
+
+The 'teacher' believed that I belonged to the number of adherents of his sect, and told me about the location of the lair. His death was quick and painless. And all I have to do is land on the island of Maria Galante and burn out the infection with a hot iron.
+
+#TEXT	34
+
+All the cultists are dead, but their leader managed to escape through a secret passage in the closet. That was strong, the infection! And now it's time to get out of these gloomy caves.
+
+#TEXT	35
+
+With the death of the sect, my problems did not end. 'Mephisto' frigate with black sails was already waiting for me in the bay. The devil take me if I don't let him go to the bottom, or grab him as a prize!
+
+#TEXT	36
+
+In this battle, I won a landslide victory! Now I still have to take the children to their parents in Marigo, report to the governor, drop Padre Dominguez off in San Juan, and even tell Father Clermont at Fort de France that his task has been completed.
+
+#TEXT	37
+
+The mothers were very happy when they heard the good news that their children had been saved, and immediately went towards the port to meet their babies.
+
+#TEXT	38
+
+I reported back@<sSex> to Governor Marigo about the successful completion of the task.
+
+#TEXT	39
+
+I reported back@<sSex> to Father Clermont about the successful completion of the task.
+
+#TEXT	40
+
+I dropped@<sSex> Padre Dominguez off in San Juan. He was very grateful that I defeated the evil forces that hunted in the Caribbean Archipelago.
+
+
+
+#QUEST AT_Mechty_Sbivautsya
+
+Dreams come true
+
+#TEXT 0.1
+
+After a little argument with Rebecca, I want to get some air and walk around town.
+
+#TEXT 0.2
+
+In the market square I met Gasten Cotes, who was not very polite to the senorita. I believe that he should be taught a lesson. Follow him!
+
+#TEXT 0.3
+
+Gasten Cotes got what he deserved. We should go back to town and ask that girl if she needs help.
+
+#TEXT 1
+
+This morning turned out to be eventful. The arrival of a ship from the Old World, probably the first in the last two months, acquaintance with the new commandant, I even participated in something like a duel. Not the most formidable opponent, but at some point his lunge scared me a lot, I did not expect such speed from Gasten, I hope he did not notice my trembling hands, otherwise this chatterbox will tarnish my reputation as a daredevil.
+
+Also, this girl with a difficult fate is a good opportunity to get rid of the scoundrel Arcadio's things. I need to go to Cape Isabela and pick them up from the grotto.
+
+#TEXT 2
+
+Someone attacked our fort. Rebecca and I waited out the attack in a grotto outside the city, although I were discovered here by a couple of the attackers, it seems that everything went well. Now the sounds of the battle have subsided, I need to check what is happening there now. Becky must have run there.
+
+#TEXT 3
+
+It's horrible. The fort is destroyed, the only person close to me is missing, and I am forced to flee with the few survivors. Gastin is right, the governor of Santo Domingo is my only hope, but every minute it becomes clearer that I will not see Becky again. This is the end of my whole old life.
+
+#TEXT 4
+
+I can't believe what happened, what one could only dream of turned into reality in an instant. I'm captain. Captain Angelica Remedios, or is it better to Teach? It's probably worth taking into account who I introduce myself to, then only time will put everything in its place.
+
+Also I'm scared, it's terrible and unfair. It seems that my prayers were answered, but not by our heavenly father, but by Mephistopheles. He fulfilled the wish the way he knows best – in the most insidious and vile way, exchanging my dream for my whole past life and for Becky's life.
+
+No, I'm not going to give up yet. Before going to Cuba, I need to find the strength to return to La Vega. If the Buccaneers have decided to settle there, then talk to their boss. While I think about the image and words, so that I have a chance to get out of there alive.
+
+Also, this bark, of course, keeps on the water and even has the right to be called a ship, but maybe it's worth using the money received more wisely?
+
+#TEXT 5
+
+It was the last straw I tried to cling to, but this guy really doesn't know anything, otherwise he would have figured me out.
+
+What the hell, he was trying with all his might to pretend that he was not surprised to hear the name that everyone was afraid of for hundreds of nautical miles around. I don't know how much he believed me, or even if he took what he heard seriously, but it seems he decided once again not to take the risk that my dad cares about me at least. Well, this can be used as a trump card up your sleeve.
+
+The visit to La Vega did not bring the expected results, but it taught me something.
+
+#TEXT 6
+
+The letter with the report was delivered, I received the answer to my question – it was decided to leave everything as it is. I am no longer bound by any obligations and I can do whatever I want, I just need to plot a course. Go ahead!
+
+#TEXT 7
+
+It's been too long. Sailing to Santo Domingo does not make sense, since the pirates have most likely already attacked the city. It remains to be hoped that the Spaniards repelled the attack, since Santo Domingo has high fortress walls with long-range cannons. What about me? I can do whatever I want, I just need to plot a course. Go ahead!
+
+
+
+#QUEST KSM_Spasenie_na_rifah
+
+Miraculous rescue on the reefs
+
+#TEXT 1
+
+It became known to me that a certain ship had landed on the rocks near the Skeleton Reef. I'll try to pick up the cargo and crew from this ship. I must hurry - in two weeks the supplies of the castaways will run out and it will be too late to save people. The unfortunate ones should be looked for in the southeast of the central rock, which looks like a high arch.
+
+#TEXT 2
+
+The wrecked ship turned out to be a trap set by a cunning pirate. After his death, I got the treasures that belonged to him.
+
+
+
+#QUEST	KIP_Looser
+
+Losing player
+
+#TEXT	1.1
+
+@<sName> lost a tidy sum at cards to the store owner. I agreed with@<sSex> to help the player get back the money he lost. I need to find 7 wallets with money.
+
+#TEXT	1.2
+
+@<sName> lost a tidy sum at cards to the owner of the shipyard. I agreed with@<sSex> to help the player get back the money he lost. I need to find 7 wallets with money.
+
+#TEXT	2
+
+The task has failed.
+
+#TEXT	3
+
+I found all 7 wallets. Now it is necessary to return to the customer.
+
+
+
+#QUEST WhisperTitanic
+
+Titanic
+
+#TEXT 1
+
+Alexus Bermudski said he could overhaul the War Dog, improving almost everything in it. But for his help, he wants me to sink some unsinkable ship called the Titanic. I think I've heard that name before in my past. A coincidence?
+
+Recently, this ship has been seen at @<sCity>. He laid siege to the city.
+
+#TEXT 2
+
+I can't believe it, I really managed to sink this floating fortress! It's time to remind Alexus of his promise to improve the "Dog".
+
+#TEXT 3
+
+After all I've been through, do I still have to pay? But I don't seem to have any options. Alexus wants a million for his services.
+
+#TEXT 4
+
+The repair is finished, it's time to test the "Dog" in action!
+
+#TEXT 5
+
+After looting @<sCity>, the Titanic sailed away in an unknown direction.
+
+#TEXT 6
+
+They say the Titanic was spotted in the waters of @<sCity>.
+
+
+
+#QUEST PGGWhisper
+
+Encroach on the sacred
+
+#TEXT 1
+
+I've seen all sorts of things in my life, but the militant churchmen really managed to surprise me. No less amazing and mysterious was the girl they were hunting. The case she offered me is truly daring and risky. Rob the Spanish Inquisition, and the whole of Santiago at the same time!
+
+To pull this off, I will need to prepare a ship capable of destroying the fort. Then, it is necessary to weaken the forces of the defenders by convincing the governor to send his men to capture this Whisper. But the governor will first have to be 'cajoled' a little so that he is more willing to listen to us. To do this, I will have to work a little for the Spanish crown in Santiago.
+
+#TEXT 2
+
+A step in the right direction has been taken. The governor has started to trust me a little more, but it's too early to move on to the next part of the plan. I'll wait a few more days and ask him about some work again.
+
+#TEXT 3
+
+I think now the governor is ready to believe almost anything I say. It's time to move on to the next part of the plan.
+
+#TEXT 4
+
+Whisper is already here. I must not delay - I must return to the ship and raise the Jolly Roger.
+
+#TEXT 5
+
+The treasures were in place, but Whisper was still unhappy. Maybe she's right, and the Spanish Inquisition will come back for us. But I don't care - the loot was worth it!
+
+#TEXT 6
+
+The governor didn't believe me. I think I can consider the plan a failure.
+
+
+
+#QUEST TheLastMass
+
+Last Mass
+
+#TEXT 1
+
+The Inquisition is hunting me again. This time they have a new leader and a new base, the location of which I do not know.
+
+#TEXT 1_1
+
+I was hunted by the Inquisition. Their Chapter house is in some secret place.
+
+#TEXT 2
+
+These fanatics are back, and I guess this won't be the last time I see them. It's worth interrogating the next inquisitor better if I still want to put an end to these visits.
+
+#TEXT 3
+
+Their lair is on Skeleton Reef, a couple of days east of Cayman. Surely this place is well fortified and under the protection of a serious squadron, so I should thoroughly prepare before climbing there.
+
+#TEXT 4
+
+The squadron is finished. It's time to land.
+
+#TEXT 5
+
+The job is done. The Inquisition won't be chasing me anymore, and I've managed to get a great place for my own base.
+
+#TEXT 6
+
+The job is done. The Inquisition won't be chasing me anymore, and I've managed to get a whole bunch of their stuff. I think any usurer would be happy to buy it all back from me.
+
+
+
+#QUEST PDM_Aptekar
+
+Pharmacist
+
+#TEXT 1
+
+Dr. Alumnus gave me the task to take the medicine to the patient, whose name is Budevin. He lives in Marigo on the high ground, next to the jungle.
+
+#TEXT 2
+
+I gave@<sSex> medicine to Budevin, and received@<sSex2> for this money. Dr. Alumnus asked me to drop by@<sSex2> for a new assignment.
+
+#TEXT 3
+
+Dr. Alumnus gave me a new task - to find a herb, but he doesn't even know its name, nothing! I just gave a short description of how it can be identified, namely, it emits the smells of cinnamon and anise. He also mentioned an Indian named Tuantuh, who lives in the Bahamas, on the seashore, on the rocks.
+
+#TEXT 4
+
+Tuantuch said that to get this herb, he needed a boat made of a unique tree called Teshkatali. I need to look for Teshkatali on the continent in the jungle not far from the Karataski lagoon.
+
+#TEXT 5
+
+I'm here, it's worth going deeper into the jungle and looking for the right tree.
+
+#TEXT 6
+
+The tree was Teshkatali from me. It is worth returning to Tuantuh so that he can start building a boat.
+
+#TEXT 7
+
+Tuantuch said it would take him a week to build a boat.
+
+#TEXT 8
+
+I finally have this stinky weed. It is worth taking it to Dr. Alumnus so that he can begin to provide medical care.
+
+
+
+#QUEST PDM_Proklyataya_Jara
+
+Goddamn heat
+
+#TEXT 1
+
+The guard asked me to buy him a bottle of wine. He is terribly thirsty because he is standing right in the scorching sun. He didn't say where to buy wine, but I suppose it can be done at a local tavern. Or is it better to report this incident to his commander, who should be somewhere in the fort?
+
+#TEXT 2
+
+I have a bottle of wine. It is worth taking it to the thirsty guard as soon as possible.
+
+#TEXT 3
+
+After I brought wine to the guard, his partner, seeing this gross violation of discipline, instead of pawning a drunken friend, asks us to buy a bottle of rum...
+
+#TEXT 4
+
+I have a bottle of rum. It's time to take it to the second guard.
+
+#TEXT 5
+
+Now a drunken guard guards our peace.
+
+#TEXT 6
+
+For my vigilance and honesty, the commander of the fort paid me a monetary reward.
+
+
+
+#QUEST PDM_Clan_Lambrini
+
+Lambrini Clan
+
+#TEXT 1
+
+In Port of Spain, Trinidad, I met an Italian smuggler named Octavio Lambrini. He offered me to eliminate an honest Spaniard in any way possible, who serves in the coast guard on Maracaibo. My target is Antonio de Galvez, and his ship is called the El Tiburon.
+
+#TEXT 2
+
+I found out from the tavern keeper@<sSex> that Antonio de Galvez walks around the city from 12 to 4 p.m.
+
+#TEXT 3
+
+Antonio de Galvez is eliminated. Now I have to go back to Lambrini for the promised reward.
+
+#TEXT 4
+
+I decided@<sSex> to hand over Lambrini to the Coast Guard. I concluded@An agreement with Antonio de Galvez, the only honest captain of the Coast Guard in Maracaibo. I'll tell Lambrini that I got rid of Antonio, and the unsuspecting smuggler will end up right in the hands of the Coast Guard captain. Antonio will be waiting for me at the church in Maracaibo from 9 a.m. to 2 p.m.
+
+#TEXT 5
+
+I said@<sSex> Lambrini, who eliminated@<sSex> captain of the Coast Guard. The smuggler took the bait, and is already about to sail to Maracaibo.
+
+#TEXT 6
+
+I need to scout the tavern.
+
+#TEXT 7
+
+I overheard@<sSex> Lambrini talking to his client. I need to tell Antonio about what I learned@<sSex>.
+
+#TEXT 8
+
+The devil @<sName> promised me a treasure if I set her free. It is worth visiting the governor of the prison in Maracaibo.
+
+#TEXT 9
+
+This is a creepy girl @<sName>. She screamed curses at me all the way to the boat. I hope she doesn't get out of prison, I don't want to feel her anger.
+
+#TEXT 10
+
+I think it's too late to visit the prison. I hope @<sName> is not offended, if she is still alive, of course.
+
+#TEXT 11
+
+@<sName> left, leaving me a strange locked chest@<sContinue>
+
+
+
+#QUEST UnexpectedInheritance
+
+Unexpected inheritance
+
+#TEXT 1
+
+The hot sun, yesterday's booze, a girl in need and I, impoverished by seven thousand. There's something in Latin in the battered diary. 
+
+I need to find someone who can read it.
+
+#TEXT 2
+
+They translated part of the text for me. A certain captain turns to his sons and asks them, forgetting their quarrels, to go together for their inheritance! Hmm, maybe my money wasn't wasted. The last fragment of the text is something similar to a psalm or a parable, it's curious! 
+
+"In the saint's left hand is a staff that points the way with its light. In his heart is righteous anger towards heretics." 
+
+The saint, the staff, the anger... It looks like the mystery leads to the lighthouse on Santiago.
+
+#TEXT 3
+
+I found next piece of parchment. That's what it says: 
+
+"Quod lux virgam fundit trans maria ad meridianam: captivis ab infidelium tyrannide in terras: et perterriti et capti sunt sancti gratia throni. Ibi post castellum, quod in promunturio nigro stat, intra cataracta praemium invenies". 
+
+I'll look for a priest or a banker.
+
+#TEXT 4
+
+"The light of the staff is pouring out across the seas to the south, into the lands of the infidels who have rejected the grace of the holy see. There, behind the fort that stands on Cape Cherny, I will find a reward inside the waterfall." 
+
+Judging by the description, the mystery points to Fort Orange.
+
+#TEXT 5
+
+Inside there was a half of the map and another parchment:
+
+"De callo infidelium, et de cordibus vestris unus sanctus taking his arcanum est, lumina in terram orientalem conversus fratris sui per fidem. Sanctus abieris hodie sermonem Domini".
+
+What a beautiful language the Romans had. It's a pity, I'll have to part with the money again, but I hope it's worth it.
+
+#TEXT 6
+
+"The hearts of the infidels are callous and the Saint, having taken away the innermost, turned his gaze to the east to the land of his brother in Faith. A saint who carries the message of God." 
+
+The East, a brother in faith, a preacher... hmm... Saint Dominic! Precisely! Let's go!
+
+#TEXT 7
+
+Hehe, luck is on my side. Some pirate decided to bury his savings in the cave. There's Latin in the parchment again: 
+
+"In terras, et principaliter Francorum, sanctum Dominicum dictum ad viam orientalem in castelli moenibus vestrum adprehendet vos".
+
+Something about the French, it's time to look for a translator.
+
+#TEXT 8
+
+"Saint Dominic pointed the way to the lands of the Franks, to the west, under the walls of the fortress I will find what I are looking for."
+
+Well, it's simple, I'm close, I can feel it!
+
+#TEXT 9
+
+Empty.
+
+So, I need to chill and think. It's only the military here, maybe the commandant knows something.
+
+#TEXT 10
+
+Don't put a finger in the commandant's mouth, he'll bite off his arm up to the elbow. The note is in French, it looks like it's almost the end of the road. 
+
+"This is the end of the journey, my children. By combining the halves of the card, I will find your inheritance, dispose of it according to your conscience and divide it like brothers."
+
+I do not know who these brothers are, but I will dispose of the treasure in good faith. Your conscience. The contours of the island are on the map, no coordinates, no markings. It looks like Turks. Let's go!
+
+#TEXT 11
+
+It's terrible, but it's over. It was worth a run.
+
+
+
+#QUEST PDM_Neputyovy_kaznachey
+
+Wayward Treasurer
+
+#TEXT	1
+
+I met a scared man on the street of Willimstad. His name is Andreas Fickler. He said that his former captain, Victor Bretier, wanted to kill him for the damage to his ship and cargo. Now Victor is getting drunk in a tavern out of anger.
+
+#TEXT	2
+
+Victor Bretier requested @<sMoney> as compensation for the damage caused to his ship and cargo.
+
+#TEXT	3
+
+I paid Victor Bretier the specified amount. Now Andreas Fickler is in no danger.
+
+#TEXT	4
+
+I had to kill Victor Bretier. Now Andreas Fickler is in no danger.
+
+#TEXT	5
+
+Andreas Fickler asked to become my treasurer, and I agreed@<sSex>.
+
+#TEXT	6
+
+Andreas Fickler asked to become my treasurer, but I refused@<sSex>.
+
+#TEXT	7
+
+Because of the treasurer, Victor Bretier suffered heavy monetary losses, and I decided@<sSex> not to interfere in their conflict.
+
+
+
+#QUEST PDM_Poteryanoe_Koltso
+
+Josephine Lodet's Ring
+
+#TEXT	1
+
+I met@<sSex> a very strange woman on the Basse-Terre square. She keeps saying that she lost her ring-but she can't even remember which stone was embedded in the ring. My first impression was that she had lost her mind.
+
+#TEXT	2
+
+I managed to find out that the crazy woman I met on the Basse-Terre square lost her son five years ago, during the siege of Santo Domingo. She had given him a ring shortly before, and at the news of his death, her mind left her. The ring was really very expensive - a magnificent sapphire in a gold frame. I feel sorry for this woman, she has suffered a heavy loss.
+
+#TEXT	3
+
+The ring is in the possession of a girl named Francesca, who is popular with sailors.
+
+#TEXT	4
+
+I took the@<sSex> ring from Francesca. Now I can go back to Basse-Terre and give the ring to Josephine Lodet.
+
+#TEXT	5
+
+While I were making love, I managed to@<sSex> discreetly remove the ring from Francesca. Now I can go back to Basse-Terre and give the ring to Josephine Lodet.
+
+
+
+#QUEST pirateVikingQuest
+
+Shard of the past
+
+#TEXT 1
+
+The governor of @<sCity> @<sName> instructed me to find a certain rogue pirate named Ragnar.
+
+I don't have any leads, so I think it's worth starting by looking for fresh rumors. If he's such a successful corsair, as @<sName> told me, they're probably talking about him in almost every port.
+
+#TEXT 2
+
+'Drakkar'. It seems to have a Scandinavian name, like this pirate. He robbed a merchant with a cargo of ebony, a large cargo, at least six hundred bundles. Interesting...
+
+Well, let's keep looking.
+
+#TEXT 3
+
+There are rumors about some Vikings again. This time they took away almost a full hold of silver, 400 quintals, and then sank the ship.
+
+#TEXT 4
+
+Again, I was told about shchebek and about captain of Scandinavian appearance. This time, the target was a large load of silk, a thousand rolls.
+
+#TEXT 5
+
+I think I have accumulated enough information. Viking hunts lone traders carrying large shipments of expensive goods. I'll have to take him for bait. I'll try to transfer to a merchant ship and fill its hold with a similar cargo, after which I'll look for a rumor about it in the tavern again. Maybe it will bite.
+
+#TEXT 6
+
+The pebble was seen in the surrounding waters. I'm taking off the anchor!
+
+#TEXT 7
+
+Ragnar Lothbrok went to Valhalla.
+
+It's time to get back to the employer.
+
+
+
+#QUEST PDM_Ohota_na_vedmu
+
+Witch Hunt
+
+#TEXT	1
+
+A man named Bartholomew Ulster came up to me on the street. He was looking for some Maria Carle from the tavern.
+
+#TEXT	2
+
+Maria was very worried when she learned that Bartholomew Ulster was looking for her. She immediately ran away in an unknown direction.
+
+#TEXT	3
+
+The Spanish officer wouldn't let me into the governor's residence. What happened there?
+
+#TEXT	4
+
+In the room I found@<sSex> the corpse of a man. As I got closer, I found out@<sSex> that this is Bartholomew Ulster, the one who was looking for Maria Carle.
+
+#TEXT	5
+
+The Governor of Belize has given me the task to investigate and find out who killed his secretary, Bartholomew Ulster. He was found strangled in bed. More recently, I met@<sSex1> with Bartholomew - he was asking in the town square about a girl named Maria Carle. I think I have to find this girl - maybe she knows something.
+
+#TEXT	6
+
+The tavern owner said he didn't know who Maria was. Although it's strange, because she recently worked here... I have no evidence to prove otherwise.
+
+#TEXT	7
+
+The man on the street told me that he saw Maria in the tavern. He suspects that she is a witch. I should look for her in the tavern, and at the same time threaten the innkeeper with holy justice - maybe then he will tell me something about Maria.
+
+#TEXT	8
+
+I pulled@<sSex> information about Maria from the innkeeper. He said she sailed away with a captain named Miguel Cuenda, but he doesn't know where exactly. It seems like she said something about a Spanish colony where there are two letters: "p" and "b".
+
+#TEXT	9
+
+I pulled@<sSex> information about Maria from the innkeeper. He said she sailed away with a captain named Miguel Cuenda, but he doesn't know where exactly. It seems like she said something about a Spanish colony where there are two letters: "m" and "b".
+
+#TEXT	10
+
+I pulled@<sSex> information about Maria from the innkeeper. He said she sailed away with a captain named Miguel Cuenda, but he doesn't know where exactly. It seems like she said something about a Spanish colony where there are two letters: "c" and "x".
+
+#TEXT	11
+
+This story with Maria Carle is becoming more and more mysterious. I met@<sSex> the boatswain from the ship that Maria escaped from. He considers Maria a witch because his captain Miguel Cuenda died shortly after taking her on board. The crew was against the woman on board, but he didn't listen to them. He died the moment the ship entered Santiago Harbor. At the same moment, Maria mysteriously disappeared from the ship.
+
+#TEXT	12
+
+I met@<sSex> that witch Maria again. It was a rather strange meeting. She told me her story, and I realized@<sSex> that she was innocent. I might go to hell for this, but I let@<sSex> get away with it. She gave me a gift. I didn't understand exactly what happened@<sSex>, but I became@<sSex> feeling much happier. It was the strangest gift of my life....
+
+#TEXT	13
+
+I need to find the head of the Inquisition to send the witch to the stake.
+
+#TEXT	14
+
+I told@<sSex> the inquisitor that Maria Carle is a witch. He promised me to take care of this matter and fulfilled his promise. Soon it was burned. It is necessary to report to the Governor of Belize on the successful completion of the task.
+
+#TEXT	15
+
+The Governor of Belize has generously thanked me for completing the task.
+
+
+
+#QUEST PDM_Novaya_Rodina
+
+In search of a new Homeland
+
+#TEXT	1
+
+I met@<sSex> an old pirate named Hugo Sawmill. He told me that he would like to receive a Spanish letter of marque, and asked me to put in a good word for him to the Spanish governor-General - for this he promised me 8000 gold. I'm heading for Havana.
+
+#TEXT	2
+
+Don Francisco gave me a Spanish letter of marque for Hugo. I have to go back to Puerto Principe to hand him the document.
+
+#TEXT	3
+
+The tavern owner told for 1000 gold that Hugo was found by English bounty hunters, and he had to flee. He is currently in La Vega.
+
+#TEXT	4
+
+Hugo was very happy when I handed it to him@<sSex> Spanish patent. In the future, I should visit Don Francisco and ask how the meeting with Hugo went.
+
+#TEXT	5
+
+Don Francisco says that the Sawmill serves the Spaniards well. He is an experienced soldier, and his tales of a pirate past gather crowds of listeners in a tavern in Havana.
+
+#TEXT	6
+
+I talked to my friend Sawmill. He told me an interesting thing. A heavy galleon under the English pennant stands near the island of Dominica. His rigging and body are damaged. If no one gets ahead of me, then I can take possession of his treasures!
+
+#TEXT	7
+
+It is written in the ship's log of the murdered captain that during the repair of the ship, a quarter of the treasure was transferred and hidden on the island, in a grotto. This was done just in case the pirates tried to seize the ship and its riches, then at least they would not get everything else. If I want to get all the other jewels, then I need to land at Scotts Head.
+
+#TEXT	8
+
+I didn't have time@<sSex>. The English galleon was repaired and sailed to Europe. Or someone else has captured him.
+
+#TEXT	9
+
+The British soldiers on the shore resisted us, but I prevailed. Now I need to look for a grotto where the remaining treasures could be hidden. Once the job is done, I can return to the Sawmill and boast of a successful hike.
+
+#TEXT	10
+
+While I was lingering@<sSex>, the British on the island managed to hide the treasures. Now I'll never get them! It's time to get back to the Sawmill.
+
+
+
+#QUEST PDM_Cursed_Idol
+
+Cursed idol
+
+#TEXT	1
+
+In the tavern of La Vega, I met a pirate captain named James Callow. He told me that he had recently taken away from a poor Indian a golden statuette of some deity, and since then he has been haunted by bad luck. He asked me to give this idol to the leader of the pirate settlement of Le Francois in Martinique, Bartholomew Roger.
+
+#TEXT	2
+
+It worked! I gave@<sSex> a gift to Roger, and he accepted it. I should get back to James with the good news as soon as possible.
+
+#TEXT	3
+
+On the street, an old Indian blocked my way and began to warn me of the impending danger... Suddenly, a walking dead man appeared out of nowhere, and I had to grind him into dust. I need to get out of this creepy place as soon as possible...
+
+#TEXT	4
+
+Roger didn't accept the idol! I must@<sSex1> get back to James and plan further actions with him.
+
+#TEXT	5
+
+I refused to help James, now he wants to meet me at sea.
+
+#TEXT	6
+
+James went to feed the sharks. He won't bother me anymore.
+
+#TEXT	7
+
+I decided@<sSex> not to get involved in the battle. I can't handle him.
+
+#TEXT	8
+
+I need to find a usurer on Tortuga to give him a golden statuette. If I delay, there's no telling what kind of trouble I might bring upon myself.
+
+#TEXT	9
+
+Finally! The cursed idol is finished. I can return to James with good news.
+
+#TEXT	10
+
+James was so happy that he agreed to become my officer.
+
+
+
+#QUEST WhisperContraband
+
+Bill's Unfinished Business
+
+#TEXT 1
+
+It is necessary to deliver a cargo of ebony, which is now in the hold in the amount of 100 units, to the owner of the store from Tortuga. It is better to hurry up, because if the product goes bad, I will have to buy the missing part myself.
+
+#TEXT 2
+
+The deal will take place on the beach, which is called the Eye of the Fish.
+
+#TEXT 3
+
+The transaction amount was 50,000. Not bad!
+
+#TEXT 4
+
+It's been too long, I don't think there's any point in going there anymore.
+
+
+
+#QUEST WhisperChardQuest
+
+Cards, money, two blades
+
+#TEXT 1
+
+The innkeeper from @<sCity> informed me that he has a guest renting a room who really wants to talk to captain of the War Dog.
+
+I wonder what it's about?
+
+#TEXT 2
+
+Michael Chard offered me a rather risky and potentially profitable scam - to find and rob the treasure of an English privateer.
+
+Maybe it's better to hand over this pirate and be done with it?
+
+Anyway, it's worth finding Ralph Portman first. It is worth starting the search with the port authorities in the colonies.
+
+#TEXT 3
+
+Portman is now sailing towards @<sTargetCity>. It's worth hurrying if I don't want to look for him again.
+
+#TEXT 4
+
+As I expected, Ralph offered a counter-deal-to kill Chard and return the book to him.
+
+#TEXT 5
+
+The reward turned out to be a very ornate axe. It's probably worth hundreds of thousands. Or maybe it's better to keep it for myself? For the collection.
+
+#TEXT 6
+
+Portman died before he could tell me his secret.
+
+#TEXT 7
+
+I have Portman's magazine, it's time to get back to Chard.
+
+#TEXT 8
+
+The treasure is buried in Dominica. Chard will sail there with me in his brig.
+
+#TEXT 9
+
+The game was definitely worth the candle, even in spite of the trap that the British set for me. I'll get out of it, not for the first time.
+
+
+
+#QUEST WhisperChinamanRelic
+
+Chinese relic
+
+#TEXT 1
+
+Today, at the tavern, Long Wei approached me with a request. His sword ended up in the hands of a usurer from @<sCity>. He says it's a family heirloom that's been around for over a thousand years. It's worth visiting this usurer, I want to take a look at this thing myself.
+
+#TEXT 2
+
+It looks like it won't be so easy to take this sword away. In return, the usurer wants three Toltec crystal skulls, or the emperor's axe. I have no idea where to look for these things.
+
+At least I'm not limited in time.
+
+#TEXT 3
+
+Long Wei died. I think I can stop looking.
+
+#TEXT 4
+
+On the Skeleton Reef, I found a bunch of useless junk for me, but quite expensive for others. I think the usurer will agree to exchange this pile for one Chinese sword.
+
+
+#QUEST WhisperQuestline
+
+In the new world
+
+#TEXT 1
+
+Among other honors, captain is entitled to a personal journal. I will write down my thoughts here before I forget who I am and where I come from.
+
+#TEXT 2
+
+To return home, I need to find a captain named @<sWhCapName>. He got his hands on all my gear, along with the time machine. But I have no idea where to look for him. To begin with, I should ask Antonio de Souza, who gave me a "warm" welcome at his inquisition. However, I shouldn't go straight in there. I'd rather wait for the right moment when he leaves his lair.
+
+But don't look so far ahead yet. First of all, I need to adjust to this world, save money and master the ship business.
+
+#TEXT 3
+
+The ship sank, and with it burned my chance to return home.
+
+#TEXT 4
+
+It seems that I have a chance to reach out to de Souza's henchmen, and therefore to him! They headed for the Dutch port. The meeting will certainly not be an easy one, so it's better to prepare properly.
+
+#TEXT 5
+
+The Inquisitors went to the cave on San Martin. I need to get there urgently!
+
+#TEXT 6
+
+De Souza's ship should be in one of the bays on this island!
+
+#TEXT 7
+
+It seems that I have a chance to return home. In a week, @<sWhCapName> will appear in the waters of Turks on his corvette. I must definitely board him!
+
+#TEXT 8
+
+Esteban didn't have a time machine and he never had time to tell me where he put it. It seems that my search has reached a dead end. I'll have to accept that I'm stuck in this time forever and try to move on.
+
+At least I snatched a decent corvette from this pirate, perhaps the best ship that can be obtained in this time period. So, it didn't end so badly.
+
+
+
+#QUEST Silence_Price
+
+Story of a long-standing friendship
+
+#TEXT 1
+
+Today in La Vega I met@<sSex> my old friend @<FriendName>. I had a good time in the tavern, remembering the past. In the end, Luke asked me to deliver a letter to his friend Maximilian at @<sCity2>. Well, let's go! Or haven't I discussed everything yet?
+
+#TEXT 2
+
+The letter has been delivered. This Maximilian seemed to me a very muddy type. And what could he have in common with Luke? Okay, I'll leave these thoughts for later. I got the money@<sSex>, now on the way back to the Luke.
+
+#TEXT 3
+
+I asked@<sSex> Luke about his rescue. He said that our enemies helped him get back on his feet for the promise. He also said that he would tell me what promise he had made to them after I returned from Maximilian.
+
+#TEXT 4
+
+I returned@<sSex> to the La Vega tavern, but there was no Luke in it. After talking with the innkeeper, I managed to find out that Luke, immediately after my departure, left with some pirates. I don't even know what to do next.
+
+#TEXT 5
+
+On the way out of the tavern, I was met by some strange guy. He knew I was looking for Luke, and he set up a meeting at midnight at Cape Isabella. I had no choice but to agree to his terms.
+
+#TEXT 5_1
+
+It's been too long, now I'm definitely not going to find Luke.
+
+#TEXT 5_2
+
+Ha! That bastard wanted to take my ship... But he got what he deserved. Besides, he let it slip that he knows where Luke is now. I'm heading to @<sCityName>.
+
+#TEXT 5_3
+
+Turns out Luke is some kind of spy. Oh, cool, he tricked me around his finger, lied out of the blue and disappeared. Maybe he's got a grudge against me? As Henri said, he is very cunning... I will keep this in mind and, without hesitation, I will go to @<sCityName>.
+
+#TEXT 6
+
+My old friend turned out to be a real "artist". It's so masterful to pretend that he values our friendship to this day, and behind my back make plans to take revenge on me... In the end, his friend Maximilian is dead, but he was able to leave on his own. No matter what, I'm going to find Luke, sooner or later. But now, I need to heal, Luke poisoned me with some strong poison, I feel terrible.
+
+#TEXT 6_1
+
+Hallelujah! They helped me get rid of the poison. Now I should mind my own business.
+
+
+
+#QUEST Xebeca_BlueBird
+
+Destroy the Xebec 'Blue Bird'
+
+#TEXT   1
+
+The owner of the store @<sCity> named @<sName> suggested that I find and destroy the elusive xebec 'Blue Bird'. The thing is that captain of this sailboat, unusual for local waters, got into the habit of robbing the ships of merchants owned by the storekeepers themselves, and therefore the profits of the latter fell below the waterline.
+
+During the conversation, I managed to figure out one very important thing in this case. The fact is that of all the traders in the Caribbean, only one has the incredible happiness of never having met a "Blue Bird" before. The name of this darling of Fortune is Pascal Voisier, the owner of a store on Bermudes. Fellow merchants revere him as a saint, as he supports everyone with money.
+
+I believe in luck, but Voisier's incredible happiness seems strange to me. I'll try to figure this out on the spot, that is, on Bermudes...
+
+#TEXT   2
+
+I tried@<sSex> to talk to Pascal Voisier about the Bluebird. Monsieur Voisier suddenly behaved quite rudely. Something is wrong here, I need to keep digging further...
+
+#TEXT   3
+
+I managed to find out from the owner of a tavern on Bermudes that the Xebec 'Blue Bird' is quite often seen near the island. He also said that the former owner of the local store, John Norton, had moved to Puerto Principe. I suppose I should visit him...
+
+#TEXT   4
+
+John Norton confirmed my suspicions about Pascal Voisier. John believes that Xebec belongs to Pascal, and he is behind all the attacks on merchants.
+
+If this is really the case, then I need to understand how Pascal takes the stolen goods. As far as I know, there is an underground passage at the shipyard of the Pirate Settlement that leads to the city directly from the bay...
+
+#TEXT   5
+
+Damn it, my guess about the shipyard dungeon turned out to be wrong. Indeed, it is easier for Pascal to take a tartan and calmly bring the loot directly to the port, without arousing suspicion from anyone, than to carry goods through this basement. Yeah, it's a challenge...
+
+However, one thing is clear - the transshipment base where the goods are stored is located somewhere on Bermudes. Firstly, Bermudes is a remote island, it's one thing to send a tartan to the other end of the island, and another to another island altogether. And secondly, xebec is seen quite often here.
+
+I need to look for Pascal Voisier's base on the island.
+
+#TEXT   6
+
+Yeah, I finally found Pascal's@<sSex> base. I managed to trace how a group of armed pirates, presumably the team of the Blue Bird xebec, dragged crates, barrels, bottles and so on through the cave on their shoulders. Without a doubt, this is another cargo seized from merchants.
+
+Well, the xebec 'Blue Bird' is nearby. I need to get out to sea as soon as possible and sink her! Or maybe it's better to board it?..
+
+#TEXT   7
+
+The Blue Bird's cap is dead. The job is done. Now I can go for the reward. Scared of some kind of consequences, huh, what can the merchant Voisier annoy me with?!
+
+#TEXT   8
+
+I was unable to overtake and sink the pirate. The task has failed.
+
+#TEXT   9
+
+Well, that's it! They refused to pay my fee on the grounds that I did not sink@<sSex> 'The Blue Bird.' Of course, I'm not @<sSex1> to sink such a ship.
+
+The merchants are afraid that I will rob them on this ship now. Well, let's turn their fears into reality! Hold on, I damn merchants!
+
+Now I need to find out where and when the merchant's own ships will leave the ports. I need to collect more rumors.
+
+#TEXT   10
+
+Finally, I got lucky at @<sCity>! From the rumors, I learned that a local merchant, @<sTradeName>, sent his fluyt for the goods. Fluyt @<sShipName> has just left the harbor @<sCity_2>.
+
+I need to go to sea urgently. I hope that the merchant's fluyt will not escape me in the waters of @<sIsland>.
+
+#TEXT   11
+
+Apparently, I went to sea too late. The sought-after fluyt near @<sIsland> is already gone. Well, it is necessary to try again to find out where the next merchant ship will come from.
+
+#TEXT   12
+
+I went out to sea at @<sIsland>, but I failed to overtake the desired fluyt and board it. Well, perhaps among the rumors I will again find information about the departure of the merchant ship. I will ask...
+
+#TEXT   13
+
+In the waters of @<sIsland>, I managed to sink the fluyt of a local merchant. Let's continue our promotions, I need to force the merchants to give me my money. Once again, I will have to collect rumors and be careful@<sSex>.
+
+#TEXT   13F
+
+In the waters of @<sIsland>, I managed to sink another fluyt of a local merchant. I think it's time to find out if the merchants are ready to pay me honestly. 
+
+#TEXT   14
+
+It's done, I got@<sSex> not 50, but 200 thousand for my deal with xebec. Now I'm satisfied@<sSex1>.
+
+
+
+#QUEST Andre_Abel_Quest
+
+Accompaniment of the ''Orion'' fluyt
+
+#TEXT 1
+
+In the Fort de France tavern, I met a man named Andre Abel. He is captain of the 'Orion' fluyt. Andre asked me to escort his ship to Port-au-Prince, I agreed@<sSex>.
+
+Andre will be waiting at the tavern, but in the meantime I need to finish my business in the city.
+
+#TEXT 2
+
+I've been solving my problems for too long. Andre has obviously already found another escort.
+
+#TEXT 3
+
+I finished my business in the city and informed Andre about it. I'm sailing immediately!
+
+#TEXT 4
+
+I did not manage to get to Port-au-Prince in 5 days. I probably won't see Andre anymore...
+
+#TEXT 5
+
+I couldn't@<sSex> protect Andre Abel. His ship went down.
+
+#TEXT 6
+
+I met a pirate squadron off the coast of Hispaniola. I couldn't@<sSex> protect Andre - his ship was sunk.
+
+#TEXT 7
+
+I met a pirate squadron off the coast of Hispaniola. After a short battle, I decided@<sSex> to leave the battlefield, leaving Andre to his fate...
+
+#TEXT 8
+
+I met a pirate squadron off the coast of Hispaniola. After a long battle, I were still able to defeat the pirates! Now all that remains is to land at the port of Port-au-Prince and receive the reward.
+
+#TEXT 9
+
+I talked to Andre at the port of Port-au-Prince and received@<sSex> your money. The task is completed.
+
+#TEXT 10
+
+After Andre paid me, I went to the tavern. There, Andre told me why the pirates were chasing him... He asked me to sort it out and I agreed@<sSex>. Now I need to go to Bermudes and talk about this with Jackman, who is arranging these chases...
+
+#TEXT 11
+
+The devil! After a short conversation, Jackman actually kicked me out! I'm not going to get anywhere on Bermudes... I think I need to go to Port Royal to see Morgan - maybe he can help deal with this problem - he is, after all, the admiral of pirates!
+
+#TEXT 12
+
+I refused@<sSex> to do Morgan's errand, so Morgan refused to help me. Now I can't help Andre.
+
+I think I should go back to the Port-au-Prince tavern and tell him about it.
+
+#TEXT 13
+
+Abel was not at the Port-au-Prince tavern. I asked@<sSex> about this tavern keeper. He told me that just two days ago, Abel was stabbed to death by two unknown people right on the porch of the tavern! There's definitely no way to help Abel now...
+
+#TEXT 14
+
+Morgan has agreed to help me if I deliver an official letter to the Governor General of Curacao, Peter Stuyvesant.
+
+The deadline for completion is 10 days, so I need to hurry up.
+
+#TEXT 15
+
+I didn't have time to@<sSex> deliver the letter to Peter Stuyvesant, now Morgan won't help me. I think the right thing to do is to go back to Port-au-Prince and talk to Andre.
+
+#TEXT 16
+
+Heck! After the Governor General read Morgan's letter, they tried to arrest me. @<sText>. Now I can go back to Morgan and please him with the completed assignment.
+
+#TEXT 17
+
+Heck! After the Governor General read Morgan's letter, I was arrested and imprisoned. The Governor General, when I talked to him, mentioned something about Fort Orange... But it doesn't matter anymore, the main thing now is to get out of this terrible place.
+
+#TEXT 18
+
+Martin and I got out from behind bars! Now I need to get back to our ship as soon as possible...
+
+#TEXT 19
+
+After I got out of prison, I persuaded@<sSex> Martin to join me as an officer.
+
+#TEXT 20
+
+I got@<sSex> to my ship. Now I need to go to Port Royal and please Morgan with the completed assignment.
+
+#TEXT 21
+
+I got@<sSex> to Port Royal and talked to Henry Morgan. After Henry heard that I had completed his assignment, he handed me a letter for Jackman, in which there is a conversation about Andre Abel.
+
+#TEXT 22
+
+I gave@<sSex> Jackman a letter from Morgan. After reading it, Jackman said that he would leave Andre alone because he had other things to do.
+
+I can go back to Abel for a reward.
+
+#TEXT 23
+
+I informed@<sSex> Andre about the completed assignment. He thanked me and handed me a trading license @<sNation>
+
+
+
+#QUEST zpq
+
+Dangerous cargo
+
+#TEXT 1
+
+The commandant of Fort Cumana asked for a shipment of gunpowder in the amount of 50,000 caps to be delivered to him. The reward of 300,000 piastres looks very tempting. I decided@<sSex> to take up this case, although so much gunpowder in the hold can cause great trouble.
+
+#TEXT 2
+
+The cargo was delivered, and despite the sclerosis of the greedy commandant of the fort, I managed to get all the reward due in full.
+
+#TEXT 3
+
+Who would have thought that the commandant of the fort would turn out to be an ordinary fraud. Taking advantage of his position, he paid me only half of the agreed amount! I reasoned@<sSex> that half is still better than nothing - there are too many guards with him...
+
+#TEXT 4
+
+This casemate woodlouse in an officer's uniform tried to deceive me and appropriate half of the remuneration due to me! I don't let anyone get away with this!! I had to remove the gold from the corpse.
+
+#TEXT 5
+
+This self-taught fraudster tried to pay me half as much as he promised. I had to explain which side the truth was on. My arguments turned out to be so convincing that the commandant gave me one and a half times the agreed amount. But something tells me that he didn't lose anyway...
+
+#TEXT 6
+
+I decided@<sSex> to give up this assignment. Although 300,000 piastres is a good amount, but health is more expensive.
+
+#TEXT 7
+
+When leaving the fort, the thugs were waiting for me, who politely asked me to give the gold I received. It can be seen that they were carrying out the assignment of this casemate rat. I had to upset him again...
+
+#TEXT 8
+
+When leaving the fort, the thugs were waiting for me, who politely asked me to give the gold I received. It can be seen that they were carrying out the assignment of this casemate rat. I didn't@<sSex> to mess with them, they were too well armed. I had to give the money back...
+
+
+
+#QUEST pSQ
+
+Rat baiting
+
+#TEXT 1
+
+The governor of @<sCity> @<sName> instructed me to find out who is selling slaves in the neighboring settlements. If everything goes smoothly, I will receive 10,000 piastres.
+
+#TEXT 2
+
+The tavern owner from the settlement @<sCity2> claims that the schooner Sentblue did not enter the port. It was not otherwise that the slaves were overloaded on the raid or in one of the secluded coves. This may well be the work of local smugglers.
+
+#TEXT 3
+
+The smugglers from the @<sCity2> settlement set up a meeting for me at a place called @<sShore>. They may have suspected something, but they know for sure about the slaves, since they know the customer.
+
+#TEXT 4
+
+When leaving the city, I was attacked by a local patrol! Apparently someone in the tavern heard our conversation and sent soldiers...
+
+#TEXT 5
+
+I found those who used the services of an informant. They were smugglers from the @<sCity2> settlement. They did not want to negotiate peacefully, so they had to give them a fencing lesson. @<sText>
+
+#TEXT 6
+
+On the corpse of one smuggler, I found printed letter, which mentions a certain Pfeiffer. I think there's a lead to the informant himself-Pfeiffer must be his contact. @<sName> should immediately find out about this and give me a reward. The letter also mentioned a certain fluyt 'Bacchus', who is due to approach the island tomorrow with 300 slaves on board. Interesting...
+
+#TEXT 7
+
+The last task left is to find Norman Vigo's lugger called Septima in the surrounding waters and sink it. For the elimination of this rat, @<sName> promised to pay me 15,000 piastres.
+
+#TEXT 8
+
+It's done! Norman Vigo and his ship are at the bottom of the sea, and I have to go back for the reward. @<sName> has probably been waiting for me.
+
+
+
+#QUEST	ColonyBuilding
+
+Colony construction
+
+#TEXT	0.1
+
+I introduced to a German constructor, Albrecht Zalpfer, on the island of Nevis, and hired@<sSex> him as a carpenter. He wanted to leave the island, and I gave him this opportunity.
+
+#TEXT	0.2
+
+Upon arrival at Port Royal, Albrecht Zalpfer immediately left my ship to start a new life here...
+
+#TEXT	1
+
+Today, in one of the houses of Port Royal, I came across Albrecht Zalpfer. It turned out that he was a well-known architect in these places. I decided@<sSex> to build my colony with my new companion, and now I need to inspect the uninhabited islands for the suitability of construction.
+
+#TEXT	2
+
+After carefully examining the Turks Island, Albrecht Zalpfer came to the conclusion that this island is not suitable for construction.
+
+#TEXT	3
+
+After visiting the island of Cayman, Albrecht Zalpfer came to the conclusion that this is exactly the place where it is worth starting construction.
+
+#TEXT	4
+
+To start construction, I need to deliver the following goods to Albrecht:
+
+Bricks - 500;
+
+Planks - 1000;
+
+Mahogany - 500;
+
+Ebony - 250;
+
+Slaves - 200;
+
+Food - 400.
+
+#TEXT	5
+
+I delivered the necessary goods and construction was started. According to Albrecht, the construction will take a little more than a month.
+
+#TEXT	6
+
+Construction on Cayman Island is completed!
+
+#TEXT	7
+
+After some thought, I decided to@<sSex> expand the colony of @<sColonyName>. Albrecht informed me that he was waiting for me at the bay to discuss everything related to construction work.
+
+#TEXT	8
+
+To start the construction work, I need to deliver the following goods to Albrecht:
+
+Bricks - 1000;
+
+Planks - 2000;
+
+Mahogany - 750;
+
+Ebony - 500;
+
+Slaves - 600;
+
+Food - 1500.
+
+#TEXT	9
+
+I delivered all the goods to Albrecht, and the expansion of the colony was started. According to Albrecht, the construction work will be carried out for more than a month and a half.
+
+#TEXT	10
+
+Colony expansion @<sColonyName> completed!
+
+#TEXT	11
+
+After carefully examining the island of Dominica, Albrecht came to the conclusion that this island is not suitable for construction.
+
+#TEXT	12
+
+My colony needs a serious fortification capable of protecting it during possible attacks from pirates and other robbers who encroached on my possessions. But, unfortunately, the terrain of the island does not allow for the construction of a powerful fortification, so the option was chosen to build a security base, which will include barracks, allowing to maintain an impressive garrison, as well as a port in the harbor, where ships protected by the coastline will be based.
+
+#TEXT	13
+
+To start the construction work, I need to deliver the following goods to Albrecht:
+
+Bricks - 2500;
+
+Planks - 2000;
+
+Mahogany - 300;
+
+Ebony - 200;
+
+Slaves - 500;
+
+Food - 1000.
+
+#TEXT	14
+
+All the necessary goods have been delivered. According to Albrecht, the construction work will take more than a month and a half.
+
+#TEXT	15
+
+The construction of the security base has been completed.
+
+
+
+#QUEST	Dozor
+
+The Watch
+
+#TEXT	1
+
+Well, let's see what kind of game this Patrol is. I got a Mekakhrom with the first task@<sSex>, which means it's time to get down to business.
+
+#TEXT	2
+
+The first riddle has been solved! I need to go to Fajardo beach.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	3
+
+Well, I have the second mekakhrom in my hands.
+
+#TEXT	4
+
+Apparently, I need to go to the South gulf, which is on Turks.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	5
+
+Heck! Where is the agent? The place seems to be right, so I need to look for it somewhere nearby.
+
+#TEXT	6
+
+In the grotto I found@<sSex> the third mekachrome. I had to mess around in the blood, though, before I found him@<sSex2>.
+
+#TEXT	7
+
+Mekakhrom showed that the next point of my path is tavern in Tortuga.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	8
+
+I have the fourth mecachrome.
+
+#TEXT	9
+
+So, the next place on my way is the store in Willemstad.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	10
+
+Riddle:
+
+
+First they visited Port Royal in Jamaica, then they broke into Hispaniola, in the Spanish town of Santo Domingo, then they visited San Juan, in Puerto Rico, after which they broke into the English Charlestown, Nevis Island. After visiting Nevis, the English colony of Antigua, they visited the penultimate island - Martinique, in the pirate Le Francois. But they couldn't solve the last task, can I imagine? They came across a very inaccessible task.
+
+
+In addition, the store owner said a very strange phrase that seems to be related to the puzzle: En el interior Del itinerario.
+
+#TEXT	11
+
+Ugh.. Now I have to@<sSex1> sail to the Maria Galante, cape Inaccessible.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	12
+
+Riddle:
+
+One day I heard three people talking in a tavern.:
+
+
+First - Hey, Joseph, have I heard the news? Our blacksmith is dead!
+
+The Second One - Died?! This can't be happening.
+
+The third one - How did he die?! Who killed him?
+
+The first one - Went to fix the roof, fell off and crashed.
+
+The second one - Yes, it's a pity for the guy, he wasn't twenty yet, was he?
+
+The third one - Was supposed to be completed in two months.
+
+The second one - Yeah, I remember, everyone in the tavern boasted that he would be twenty, he would go to the Main.
+
+The first one - Was his dream - to visit Main.
+
+The second one - Let's remember him, drink a mug of rum!
+
+The third one - And may he rest in peace.
+
+#TEXT	13
+
+My path lies on Golf of Doom, on North Main.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	14
+
+Damn it! Again, the agent is not in place!
+
+#TEXT	15
+
+I found fifth mecahrom.
+
+#TEXT	16
+
+Martinique, La Manten beach.
+
+Keyword: @<sKeyPhrase>
+
+#TEXT	17
+
+A ship called the Watcher! Damn it, do I have to board him to find the Mekachrome?
+
+#TEXT	18
+
+I failed to get the mekachrome... This game is over.
+
+#TEXT	19
+
+Apparently, I found@<sSex> the last mecahrom!
+
+#TEXT	20
+
+That's the end of this game. Fortunately, with a good outcome for me. The old man didn't cheat - I found really unique useful things and gold to boot.
+
+#TEXT	21
+
+I managed to get the mekachrom, but I forgot to take the key! This game is over.
+
+
+
+#QUEST Important_rumours
+
+Important rumors
+
+#TEXT	1
+
+Today I heard@<sSex> from the regulars of the tavern that there is a meeting of the undead on Skeleton Reef for the purpose of rebirth. Why don't I visit this place?
+
+#TEXT	2
+
+Today I heard@<sSex> from the regulars of the tavern that on March 3 of every year, a strange glow lights up in the house of the caretaker of the Devil's Gorge cemetery on Skeleton Reef. Why don't I take a look if I have time?
+
+#TEXT	3
+
+Today I heard@<sSex> from the regulars of the tavern that the Spanish Invasion is collecting information about the Skeleton Reef and a reward is promised for any important information. Surely I can tell I something after what happened?
+
+#TEXT	4
+
+Today I heard@<sSex> from the regulars of the tavern that the ship of Blackbeard himself was seen on the archipelago for the first time in years. According to rumors, he is looking for the luckiest pirate in the archipelago for some strange business. Should I try to find him?
+
+
+
+#QUEST	Romantic_Line
+
+Story of the beautiful Isabella
+
+#TEXT	1
+
+In response to my appearance in her bedroom, Donna Isabella made a fuss and called her husband, who refused to listen to me. I had to calm him down in another way-with sharp steel. I'm afraid further communication with the beautiful Spaniard is no longer possible...
+
+#TEXT	2
+
+In response to my appearance in her bedroom, Donna Isabella made a fuss and called her husband, but I had already met and resolved the incident peacefully.
+
+#TEXT	3
+
+Damn me if I don't get the treasure Salvator stole! But how to get into the house?  It would be nice to make friends with the owners in order to enter his wife's chambers without hindrance. Hmm, I can only dream that Don Salvator himself would be away - this would greatly simplify the situation. However, first I need to find their house. The senora probably goes to church. I'll try to ask the priest in the city of San Juan.
+
+#TEXT	4
+
+It seems that Don Salvator is having difficulty with money. It's very strange. Was it my imagination, or was there really something more than simple gratitude in Isabella's gaze?
+
+#TEXT   5
+
+Why did I come to San Juan? Oh, yes, Attila's jewels, I had completely forgotten about them... As for them, I forgot about everything in the world as soon as I saw this amazing woman.  What's wrong with me? I am ready to rush to the ends of the earth if only to win her favor...
+
+I think the storm drove the brig "Five Wounds of Christ" into some harbor. Perhaps he had to return to Cumana.
+
+#TEXT   6
+
+I found captain of the brig Five Wounds of Christ. The ship was really damaged in the storm, and I arranged to meet Miguel de Valdez at the port and take him to his sister.
+
+#TEXT   7
+
+Don Miguel de Valdez is aboard my ship. I am in a hurry to San Juan to see the beautiful Isabella and get the promised smile!
+
+#TEXT   8
+
+Events are taking a tragic turn. Unknown scammers robbed Isabella's father. I hope I can be useful to Isabella at this difficult time for her. She invited me to visit her tonight.
+
+#TEXT   9
+
+So, the mystery of the bills was revealed very quickly. Salvator robbed Isabella's father and killed her brother. I think I should talk to Isabella before I go to the authorities.
+
+#TEXT   10
+
+Yeah, well, gee! Salvator, the little scoundrel, accused me of murdering Isabella's brother, and he disappeared. I had to leave San Juan, otherwise I was in danger of arrest. I couldn't find Salvator. I don't know what to do next...
+
+On occasion, I need to tell Attila everything, after all, it all started with him...
+
+#TEXT   11
+
+Attila promised to find out everything about Salvator's whereabouts himself. He made an appointment at his house in two months.
+
+And maybe I should try to break into Isabella's house in San Juan again? It's not torture to try...
+
+#TEXT   12
+
+Assassins were waiting for me at Salvator's house.
+
+#TEXT   13
+
+Attila managed to find out that the scoundrel Salvator had managed to arrange for Isabella's removal from San Juan on the brig "Enthusiastic". The brig headed for Porto Bello.
+
+If I want to see Isabella alive, then I have to catch up with him near Porto Bello within 15-16 days.
+
+#TEXT   14
+
+I did not manage to catch up with the pirate brig with Isabella. My worst fears are starting to come true.
+
+#TEXT   15
+
+I caught up with the brig "Enthusiastic" off the coast of Porto Bello. During the battle, the brig sank, and the dark waters closed over my Isabella. Tragedy...
+
+#TEXT   16
+
+I overtook the brig "Enthusiastic" off the coast of Porto Bello, but I failed to board it. The brig managed to escape, and Isabella is now lost forever...
+
+#TEXT   17
+
+I managed to board the brig Enthusiastic. Isabella was on board, but our meeting was the worst. Isabella didn't believe a word I said and chose to die on a sinking ship. A sad ending to a romantic story...
+
+#TEXT   18
+
+I managed to board the brig Enthusiastic. Thank God Isabella was on board. I have explained ourselves, and now I need to deliver the beautiful Senora Isabella to her cousin Rosita Fernandez in Belize.
+
+But first I need to try to find someone who is waiting for Isabella in Porto Bello. Perhaps it's worth searching the city properly...
+
+#TEXT   19
+
+Isabella was taken to Fernandez's cousin in Belize. I have clarified our relationship and now it is completely clear to me that Isabella has feelings for me in return. Now I need to make her a widow quickly.
+
+Perhaps now only Attila can help me find Salvator, and I will go to him...
+
+#TEXT   20
+
+Atilla told me that Salvator went to Belize about two days ago! It looks like he's found out where Isabella is now. I have to hurry...
+
+#TEXT   21
+
+It seems that things couldn't be worse - Isabella disappeared from the house yesterday along with the maid. I need to search the city and the surrounding area immediately.
+
+#TEXT   22
+
+Salvator is finally dead. Isabella accepted my marriage proposal with a small condition - to give up privateering. I think I've had enough blood, and the bride is very pretty and honest. I have the money, so go ahead!
+
+In a month, Isabella will be waiting for me in San Juan, and I will get married at the local church. There are blessed times ahead...
+
+#TEXT   23
+
+I have to report to the local church tomorrow morning for the wedding ceremony. Isabella is an amazing woman...
+
+#TEXT   24
+
+I found the house where Salvator's mercenaries were hiding, waiting for the brig with Isabella. I managed to get rid of them, and besides, Isabella visited this house and saw with her own eyes what awaited her.
+
+#TEXT   25
+
+My heart is bursting with grief!.. At the most solemn moment of the wedding ceremony, a gang of bandits hired earlier by Salvator burst into the church. They killed my wife Isabella...
+
+I do not even know who to avenge her death - Salvator is already dead, the bandits were killed by me on the spot...
+
+Carramba, I am the most unhappy man in the world!!
+
+#TEXT   26
+
+Yes, it was hard to imagine! I were attacked in the church right at the wedding ceremony! I managed to fight back, I hope this is Salvator's last surprise...
+
+#TEXT   27
+
+I explained to the local governor about the altercation at the church. Everything is settled as well as possible, now I can go to Isabella.
+
+#TEXT   28
+
+Isabella turned out to be a tough nut to crack. The following conditions are set for me:
+
+1. To pay city and other taxes, bring @<IsabellaBuget> to the house monthly.
+
+2. Do not engage in privateering anymore. This means not to capture cities and forts, not to sink ships...
+
+Life, however, has changed dramatically.
+
+#TEXT   29
+
+The door is locked, they don't want to let me in the house! They lived to see it...
+
+I think I should contact Cousin Rosita, who lives in Belize. I'll find out from her what happened.
+
+#TEXT   30
+
+Well, Cousin Fernandez promised to make arrangements for Isabella to open the door for me after all. It seems that this problem was caused by my prolonged absence from home.
+
+#TEXT   31
+
+Yeah, well, gee! Salvator, the little scoundrel, accused me of murdering Isabella's brother, and he disappeared. I couldn't find Salvator. I don't know what to do next...
+
+On occasion, I need to tell Attila everything, after all, it all started with him...
+
+
+
+#QUEST   Ascold
+
+Search for Mummy Powder
+
+#TEXT   1
+
+@<sName>, the owner of the store that is located on @<sCity>, asked me for a favor. If I come across mummy powder anywhere, I need to deliver it to the store owner. He has a good customer for this very strange product.
+
+But it's probably a money matter. I think it's worth doing.
+
+#TEXT   2
+
+I have to deliver the found mummy powder to Askold, who lives on the island of Guadeloupe, in the city of Basse-Terre.
+
+#TEXT   3
+
+I agreed with@<sSex> to find three objects of Indian worship for Askold: a Tlaloc statuette, a ceremonial vessel and a ceremonial knife.
+Ascold also said that he was robbed the other day, and an Indian thief was imprisoned. You can look in the casemates out of curiosity to see the native before they hang him.
+
+#TEXT 3_1
+
+Tichingitu told me his sad story, and I realized@<sSex> that he was innocent. I need to talk to the commandant about his release.
+
+#TEXT 3_2
+
+Commandant said that if Ascold filed a petition for clemency, then the Indian would be released.
+
+#TEXT 3_3
+
+Now that I have the note, I have to take it to the commandant.
+
+#TEXT 3_4
+
+Tichingitu is free! And as a token of his gratitude, Tichingitu expressed his desire to serve me faithfully.
+
+#TEXT 3_5
+
+Tichingitu is free! I decided@<sSex> to let him go.
+
+#TEXT 3_6
+
+In Basse-Terre executed an Indian who stole from Ascold. That's what he wants.
+
+#TEXT   4
+
+Three Indian objects have been found. Askold asked me to look in on him from time to time, but for now he has no high-paying assignments for me.
+
+#TEXT   5
+
+Askold puzzled me again. I need to clarify the situation with the collection of objects of Indian worship in Havana. By the way, I need to get an inventory of these items.
+
+#TEXT   6
+
+From a conversation with the owner of the tavern, I managed to find out that the residents of Havana helped with the loading of some kind of man. What kind of man it was, and where he went is not clear.
+
+I need to look for someone who can clarify the situation. Askold was talking about some friends who informed him for money. I need to look for this informant friend.
+
+#TEXT   7
+
+From the Spanish officer Fernando Gonzalez, Askold's friend and informant, I managed to find out that the man I was looking for was heading for Amatique Bay, south of Belize. On the way, he has to make a stop at Cayman Island.
+
+In addition, he said that not far from the bay deep into the Main, the Spaniards found an Indian temple, and an expedition is working in it. Apparently, a massive export of valuables to Spain is being prepared, and Amatique Bay and Cayman Island are the collection point for Spanish ships.
+
+#TEXT   8
+
+I need to sink all the Spanish ships that have accumulated near the Cayman Island, as well as destroy all the Spaniards and near the ruins of the temple near Amatique Bay.
+
+#TEXT   9
+
+The Spanish squadron has been destroyed! Damn it, I did@<sSex> this!
+
+#TEXT   9_1
+
+The enemy turned out to be too much for me - I had to retreat without destroying the Spanish squadron. I'm going back to Askold.
+
+#TEXT   10
+
+I got the@<sSex> inventory list and delivered it to Askold.
+
+#TEXT   11
+
+Going inside the pyramid, I was ambushed by@<sSex>. If I manage to destroy these soldiers as well, then the job will be done.
+
+#TEXT   12
+
+I've done a lot of work, but I haven't received any money from Askold yet. He had to wait for the money to come to him from France from his patron.
+
+#TEXT   13
+
+Askold instructed me to find a certain tomb of the devil-knows-who on the island of Guadeloupe. I will look for it.
+
+I consider it inappropriate to fill in the ship's log with records of my relationship with Askold, so I stop dirtying the paper for nothing.
+
+#TEXT   14
+
+Spaniards at the pyramid have been destroyed.
+
+
+
+#QUEST   ContractWithHell
+
+Text of the contract with the Ada Department for the Registration of People
+
+#TEXT   1
+
+Contract.
+
+
+The Caribbean Sea.
+
+
+The Department of Hell for the Registration of people in the person of the demon Azzi, acting on the basis of the Regulation on the Status of Demons in the Human World, hereinafter referred to as the Contractor, on the one hand, and @<Conrtragent>, acting on the basis of their desires and their goodwill, hereinafter referred to as the Customer, on the other hand, have concluded this contract on the following:
+
+
+The subject of the contract:
+
+
+1. The subject of this contract is to ensure the invulnerability of the Customer's body by the Contractor.
+
+
+2. The Contractor is obliged to take all necessary actions to ensure the absolute immunity of the Customer's body to any physical influences, such as: exposure to cold steel, exposure to firearms, the fall of the Customer's body from a great height, the fall of various objects on the Customer's body and other physical influences. Also, within the framework of this contract, the Contractor undertakes to ensure the safety of the hull of the Customer's ship from mechanical damage.
+
+
+3. The Customer is obliged to provide the necessary amount of energy in a timely manner to comply with his duties by the Contractor. The required amount of energy is set to three people or units of evil spirits in caves and catacombs of the Caribbean Sea daily.
+
+
+4. Every day, at twelve o'clock at night, the Contractor withdraws energy in accordance with the terms of this contract. The Contractor is obliged to inform the Customer on a daily basis about the state of affairs by sending the current working balance under the contract to the Customer's orders.
+
+
+5. In case of non-fulfillment or improper fulfillment by the Customer of paragraph three of this contract, the Contractor, in order to fulfill his duties under paragraph one of this contract, provides the necessary replenishment of the daily energy standard at the expense of the Customer, that is, from his vital forces.
+
+
+6. The Customer has the right to provide the Contractor with energy in reserve. That is, all people or evil spirits killed by the Customer in excess of the prescribed norm are offset by the future norms of energy withdrawal by the Contractor.
+
+
+7. The Parties are prohibited from involving third parties in the performance of their obligations under this contract.
+
+
+8. The Contractor has the right to unilaterally change the daily energy standards of the Customer, depending on the needs of the Contractor and without prior notice to the Customer.
+
+
+9. This contract comes into force from the moment of its oral approval and is valid indefinitely. The parties may terminate this contract by mutual agreement without imposing penalties. The termination procedure is determined by the need for a personal meeting between the Customer and the Contractor.
+
+
+Legal details and oral statements of the Parties.
+
+
+
+#QUEST Azzy_HellSign
+
+Current distribution of messages to subscribers of the Ada Office
+
+#TEXT   1
+
+Sender: Ada Department of Human Accounting.
+
+The current balance for the fulfillment of the client's invulnerability contract @<sName>.
+
+The client's daily contract standard: @<DayQuota>.
+
+The contractual standard of everything within the framework of contractual obligations: @<AllQuota>.
+
+Killed by the client in total as part of contractual obligations: @<CurKilled>.
+
+Current settlement balance: @<CurBalance>.
+
+#TEXT   2
+
+For non-fulfillment of your contractual obligations, the following has been removed from your life: @<Penalty>.
+
+
+
+#QUEST BerglarsGang
+
+Austin's Gang
+
+#TEXT   1
+
+On the streets of the city @<sCity> I met a seemingly respectable citizen. When he found out my name, he wanted to discuss the matter of life and death. He did not want to go to the tavern and suggested the nearest dungeon, explaining that he wanted to communicate without unnecessary eyes and ears. He will wait until midnight of the current day in the nearest dungeon. I need to go.
+
+#TEXT   2
+
+The matter of life and death turned out to be a worked-out trap for the purpose of robbery and murder, and the barker turned out to be a seasoned bandit.
+
+#TEXT   3
+
+Something similar has already happened: a man in the city @<sCity> approached me, asked for my name, and made some very urgent mysterious offer. This guy is already the second one who makes an appointment for me in a secluded place in this way. He doesn't look like a bounty hunter, but given the experience of the first such date, I should be on your guard. He'll be waiting for me until midnight.
+
+#TEXT   4
+
+As expected, the scoundrel wanted to rob me. However, he was a little surprised to learn that he was not the first one on my account.
+
+#TEXT   5
+
+The situation is getting more interesting. On the streets of the city @<sCity> I met a man who was raving about optimates and a lot of other vague things. But what was my surprise when he said that I had managed to do it twice@<sSex> get out of the death trap?! How does he know that? And he also gave a mysterious name - Austin.
+
+#TEXT   6
+
+Damn, who was pulling my tongue. I should have listened to the fool! As soon as I mentioned to@<sSex> that I had already been assigned meetings in the dungeons, the scoundrel got scared and ran away from me...
+
+Now Austin is going to lie low, and I'll never be able to find him!
+
+#TEXT   7
+
+Another robber has been found in the city of @<sCity> and doesn't seem to know anything about me. The meeting place is in the dungeon and before midnight. Everything is as usual. I'll try to get something out of him about Austin.
+
+#TEXT   8
+
+It did not work out to come to an agreement. Perhaps next time there will be a more accommodating opponent.
+
+#TEXT   9
+
+Damn it... The dialogue with the bandit went in the wrong direction, and I clearly betrayed myself to@<sSex>. Of course, he ran away... 
+
+Now Austin is going to lie low, and I'll never be able to find him!
+
+#TEXT   10
+
+In the city of @<sCity>, another darling from Austin's pack took the bait in the form of me. As usual, I have to come to the nearest dungeon before midnight. I will hope that he will not be as stubborn as the previous one.
+
+#TEXT   11
+
+What is it! This one also decided not to give away the gang's secrets. Did Austin intimidate them so much or are they so loyal to him? I'll keep looking if I can.
+
+#TEXT   12
+
+Apparently, Austin finally figured out who arranged the massacre of Austenians in the Caribbean. Because this time in the city @<sCity> his assistant did not try to fool around and just told me that Austin himself wanted to meet with me. I have to come to the dungeon before midnight.
+
+#TEXT   13
+
+After a series of strange attacks, I finally got information about the approximate location of the leader of the gang of murderers. I need to look for Austin somewhere in the settlements on the pearl fisheries on the west coast of Main. I can get there either from Amatica Bay, the one south of Belize, or from San Juan del Norte Bay, south of Santa Catalina.
+
+#TEXT   14
+
+The job is done, Austin went to the next world after his gang. I have to give him credit for being good at persuading and manipulating people, but this trick didn't work out with me.
+
+#TEXT   15
+
+It seems to be in a hurry or due to inattention, but I did not show@<sSex> on time for the meeting in the dungeon. The deal has been canceled.
+
+
+
+#QUEST QuestionsMessages
+
+Location of the donated items
+
+#TEXT   1
+
+In Port of Spain, a man named @<sName> gave me a treasure map for answering a question. It's time to go on a quest!
+
+#TEXT   1_1
+
+In Port of Spain, a man named @<sName>, in response to a question, said that in the pirate settlement of La Vega, behind the house to the left of the gate, a matchlock musket is hidden in the ground. I should go and get him.
+
+#TEXT   2
+
+A funny thing happened to me in Willemstad. A woman named @<sName> asked me to answer a question. As a reward for the correct answer, she said that in the pirate settlement of Puerto Principe, behind the house to the left of the residence, there is a good telescope hidden in the ground. I should check it out.
+
+#TEXT   3
+
+Today, in Port-au-Prince, I can say that I got@<sSex> an excellent suit made according to the latest European fashion, the location of which was indicated to me by a woman named @<sName>. It is hidden in a dungeon under the Tortuga in one of the dead ends.
+
+#TEXT   4
+
+Today in Cumana, a man named @<sName> asked me to answer a question. For the correct answer, he told about an extraordinary statue that makes it easier to repair ships. According to him, this statue is located in the Chiriki lagoon near Porto Bello. He also asked not to be afraid to get your feet wet. What is he talking about?
+
+#TEXT   5
+
+In Port Royal, a woman named @<sName> told me where to find a guards cuirass for the correct answer to the question. It is hidden in Jamaica in Portland Bay.
+
+#TEXT   6
+
+In Santiago, a certain @<sName> asked me a question. For the correct answer, he gave me a place where I can get a great weapon - @<sBladeName>. This place is a grotto on the island of Cuba, near Santiago.
+
+
+
+#QUEST BSUrka
+
+Elusive 'Urca'
+
+#TEXT 1
+
+The mysterious British military, the missing Wayne, and a new partner in our one hundred and fifty million dollar deal. I need to check the information about the crashed Ranger and move to Bermudes. How not to miss the money galleon. Maxine said something about Fort Orange. I'm going there.
+
+#TEXT 2
+
+Broken masts, pieces of hull, torn rigging and other debris. I need to ask the locals about what happened. The tavern is the source of all the rumors in the archipelago.
+
+#TEXT 3
+
+Wayne is alive, got a new ship, and did his part in distracting the escort. What a corsair! I hope to see him on Bermudes. The job is done, I'm going to a meeting of companions.
+
+#TEXT 4
+
+The situation with the English raiders has become clearer. Wow. Admiralty intelligence! I need to warn Flint. Scarborough is still hunting somewhere and something needs to be done about it. On the way. To Bermudes.
+
+#TEXT 5
+
+I have indirectly accepted the offer of Bons, that is, Blackham, but first ‘Urka'! Such prey should not be missed. I need to write down the password for the meeting with the contact in Antigua. "Fishing was successful. The catch is a sight to behold."
+
+#TEXT 6
+
+Max gave important information. Spaniards foresaw the hunt for the galleon and confused the tracks. But chatty and lustful people ruin any plans and reveal any secrets. A note to yourself: "Don't talk in brothels!" Somewhere near Cape Calvinist, on Curacao, the coveted 'Urca De Lima' is waiting for reinforcements.
+
+#TEXT 7
+
+The hunt has dragged on, and my nerves are starting to give out. I need to get this sorted out quickly before I get into a fight. The ‘Urka' went towards the Main. I need to comb the bays off the south coast.
+
+#TEXT 8
+
+Finally! Here it is ‘Urka'.
+
+#TEXT 8_1
+
+The galleon was badly battered by the storm and the crew is not visible on board. I'm going ashore!
+
+#TEXT 9
+
+The most interesting thing remains – the division of the loot! It's time to go to Bermudes.
+
+#TEXT 10
+
+Wayne's in, I split the loot and catch Flint. I must try to keep him alive. It's time to go to Bermudes.
+
+#TEXT 11
+
+The Scarborough crew, along with the remaining pirate hunters, have fled or are feeding the fish. Now no one will stop us from dividing the gold.
+
+#TEXT 12
+
+Everything didn't go according to plan. The squadron has dispersed, and without Flint and the others, there is no point in trying to capture Urca.
+
+
+#QUEST BSHangover
+
+Severe hangover
+
+#TEXT 1
+
+Suddenly. But predictable. Flint fucked us all. Who would have thought? It's good that I managed to survive! I need to figure out what's going on. Damn, it's so sickening!
+
+#TEXT 2
+
+Flint couldn't disappear without a trace, and his way to Europe is blocked. Let's try to find out something with the help of Max's birds. To Port Royal!
+
+#TEXT 3
+
+Maxine will do the rumor gathering while I check on Wayne and Miss Guthrie. To Bermudes!
+
+#TEXT 4
+
+Guthrie and Wayne had a fight. Nothing new. The main thing is, I'm back in business. It's time to check on Max.
+
+#TEXT 5
+
+There is a clue that John Silver is splurging money and complaining about life in a brothel in Barbados. I need to get there before Flint and prepare an ambush!
+
+#TEXT 6
+
+No one has seen or wants to talk about Silver or Stinger or anyone like him. It remains to check the prison!
+
+#TEXT 7
+
+Well, let's see which fish took the bait!
+
+#TEXT 8
+
+A whole flock of fish took the bait! But the main salmon was not among them. The Walrus is still on the raid, I need to board it, and quickly, before the guards decide to see who is firing guns there.
+
+#TEXT 9
+
+Flint is caught! I tried to talk some nonsense about the Republic and free people. The way to Bermudes, there I will ask in more detail about the Republic, and most importantly – about one hundred and fifty million reasons to get involved in this adventure! Oh, yes! And I need to check on Max in Port Royal. A companion after all.
+
+#TEXT 10
+
+Flint slipped out of the hold like an eel and disappeared into nowhere. All that remained was his ship's log and an old, well-read book authored by the Roman emperor. It's worth persuading Silver to help with the decryption. And don't put pressure on him. I feel in my gut that Flint's escape was not complete without his participation.
+
+#TEXT 11
+
+Silver is busy decoding. Should I go for a drink? Or looking for Flint? Local currents can carry a small longboat or tartan anywhere, even into the open ocean. Or to hell with Flint. After all, a man like him deserves a chance. Yes, I will consider it a handicap out of respect. I'm going to have a drink!
+
+#TEXT 12
+
+It's time to check on our decoder!
+
+#TEXT 13
+
+Several hundred possible locations. Years of searching, decades will be spent on this. There is still something to occupy yourself with, treasures, fat merchants, duels and sieges of forts! I'm going to develop my colony or I'm going to become a Main Terror. But I'll always remember Captain James, his mother, Flint, and a hundred and fifty million reasons to hate or love him. The adventure turned out to be memorable! I have to give him his due.
+
+#TEXT 21
+
+It's hard to think when I'm constantly throwing up. But something has to be done. I'll try to connect the intelligence. What's the password? Something about fishing, it doesn't matter! In Antigua! On the way.
+
+#TEXT 22
+
+The message has been sent. I need to go back to Bermudes and look for Wayne. No matter how much he messed up.
+
+#TEXT 23
+
+The possible involvement of Eleanor's father? The West India Trading Company? Are Jack and Ann pious planters? Runaway slaves and Eleanor's quarrel with Max. Oh, and British military intelligence. All that's missing are the vengeful Spaniards, the cursed treasure and the ancient god of the local savages! Well, let's start with a simple one. Max. I'll check the tavern.
+
+#TEXT 24
+
+I'll take Maxine to Port Royal and let her gather rumors. And then I'll decide what to do next.
+
+#TEXT 25
+
+So, I'm at a crossroads. Looking for Wayne and the runaway slave camps? Or to find out how the British Navy can help? Or should I check out Eleanor's version with the hucksters? It's not worth spraying, there simply won't be enough time for everything at once. I'll mark the Dutch right away, even if it sounds logical, but the Company has its own intelligence, and Flint has spoiled a lot of their blood. So the search for Vane or the help of the fleet. It's time to decide!
+
+#TEXT 41
+
+The Ranger is not visible on the raid. I'll ask the locals.
+
+#TEXT 42
+
+The Ranger is anchored! Put the boat on the water!
+
+#TEXT 43
+
+The opportunity to follow Vane is lost, and without experienced guides, it is suicide to go into the jungle. Well, I'll wait here.
+
+#TEXT 44
+
+Flint is building his kingdom. That's the news. I wouldn't be surprised if he's a prince of the blood in exile or a royal bastard. Information about his cache is expensive. But I hope it's worth it. I are heading to Barbados. I need to think about attacking the plantation.
+
+#TEXT 45
+
+Do I look like Flint? What nonsense. I'll take a look around the city while my fighters get through the gate.
+
+#TEXT 46
+
+John Silver met on the streets of Bridgetown, says he ran away from Flint. He's a suspicious type, his eyes are running around and he's obviously not scared of me. Well, to hell with Silver. It's time to move on to the plantation.
+
+#TEXT 47
+
+The convicts have been repulsed. Not far from Barbados, the Scarborough was attacked, Captain Newm told about Billy's fate before his death. That's where the road goes. The way to Hispaniola, in La Vega, Coffey is waiting for his tribesmen.
+
+#TEXT 48
+
+Flint's lair has been found, and so has Flint himself. An impressive amount of money and an old book. The bastard disappeared. I have no idea what to do next. I'll get Charles to Bermudes and I'll talk about options with Guthrie.
+
+#TEXT 49
+
+Guthrie is arrested by Newm! Newm, sent by me to feed the fish! I'll hurry to Port Royal, maybe Maxine can help with something. And not telling Wayne, no matter what their relationship is, will do stupid things. Too hot. It is not worth going to the port, it is not known what will turn out there.
+
+#TEXT 50
+
+Am I becoming Flint? Maybe I should ignore everything on Max's advice and be content with little? How tired I am@<sSex>! I need to check the parking lots indicated by the Bonus.
+
+#TEXT 51
+
+The parking lot has been found, the squadron has been destroyed. Flint is not on board the Walrus. I'm landing in the bay, I need to check everything here. There's some nonsense in the ship's log, obviously a cipher.
+
+#TEXT 52
+
+Flint seemed to have disappeared through the ground. They killed a lot of mercenaries. What's next? Is the treasure buried somewhere here? What to do?
+
+#TEXT 53
+
+Who is this Flint? Maybe the devil himself? How did I become@<sSex> turn into him? An uncompromising, cruel, calculating bastard! Chasing his gold took away a part of me. Wise whore Maxine, I were right. I need to be content with what I have and not chase after someone else's, otherwise I risk losing what I have.
+
+#TEXT 61
+
+Wayne is a big boy, I hope he doesn't mess up. I'll check the tavern. The agent said that if he was not there, ask the peddler.
+
+#TEXT 62
+
+Gathering of fishermen from Dominica. I need to hurry.
+
+#TEXT 63
+
+Bones-Blackham is of little use, I need to explore a large piece of the coast of Main. But at least it's something. I'll start with the bay of Boca de la Sierra.
+
+#TEXT 64
+
+Empty. I'll keep looking. It is necessary to exclude the bays that are in sight of the forts, Flint would not take such a risk. I'll check the map. Yeah. Los Teques Beach, Guajira Bay, Covenas Bay, Mosquitos Bay. Well, let's go.
+
+#TEXT 65
+
+It looks like Newm's people. They are looking for clues at the site of the death of the Urca. I need to be on your guard.
+
+#TEXT 66
+
+Something has happened. Bones demands to arrive in Bridgetown urgently.
+
+#TEXT 67
+
+It's going to be a hot business. Flint is going to free the convicts for his army. A great opportunity to swat the bastard. But it's still worth remembering who I'm dealing with. I'll set up an ambush on the plantation.
+
+#TEXT 68
+
+Wayne. Damn I. I were my friend! And Bons, damn Bons. While I was looking@<sSex> don't get it, the British have staged a sweep. Guthrie is dead, Jack is in jail. Everything is going to the abyss! It remains to get even with Flint and I don't care what happens next!
+
+#TEXT 69
+
+Somewhere along the way, I made the wrong choice. What was the turning point? Eleanor, Jack, Charles. How would their fates have turned out if I had made other decisions? Would I become a soulless machine under Flint's leadership? Damn, my head hurts! I need to rest.
+
+
+#QUEST BSChaseBegun
+
+Chase has begun
+
+#TEXT 1
+
+It's time to go back to Bermudes. I think 'Ranger' Veyna has already managed to get there and is standing there on the raid. It's worth sending out a boat and finding out how things are going.
+
+#TEXT 2
+
+The meeting of the companions ended in a massacre. Jackman's men attacked us on the beach. Flint immediately came up with a plan to capture the settlement. It must be true that he was once a military officer. I'm moving out to Runa Bay and through the dungeon I'll try to get into the shipyard. Get to work!
+
+#TEXT 3
+
+There's a dungeon and a bunch of corpses behind. I have more and more questions for Jackman. Alexus, as always, is on his own wavelength. It's time to go to the settlement, I'm just in time. Go ahead!
+
+#TEXT 4
+
+A suicidal plan, as far as I'm concerned. But there will be no more opportunities to take the gold. To smash the Spaniards in full view of their fort. Ha, the legends will tell about it. I'm moving out as soon as I'm ready. Vane will lure out the guards, Flint will move out earlier and anchor out of sight of the fort. It's up to me.
+
+#TEXT 5
+
+Where's the damn galleon? I need to talk to Flint on his ship urgently! Wayne is also not visible, something went wrong.
+
+#TEXT 6
+
+Any plan goes to hell as soon as I start implementing it. But all is not lost yet! I'm going to visit Maxine in Port Royal, the port girls know a lot of things, and this one owes me. The debt is red in payment.
+
+#TEXT 7
+
+Flint died before he could explain to me what happened. I'm afraid the Urca gold is forever lost to me...
+
+
+#QUEST BSCourtlyPassions
+
+Courtly passions
+
+#TEXT 1
+
+Bermudes had a hot fight. What the hell are the English patrols doing here? Well, anyway, Flint will take care of this issue, my task is to get some of the code from Charles Wayne. I'm going to Martinique, I need to land in one of the bays, I never know what will happen there.
+
+#TEXT 2
+
+I feel like I can't do without a battle today. Just in case, I'll leave my ship in Le Maren Bay.
+
+#TEXT 3
+
+The girl has a page, the girl has pirates, pirates in a casket, a casket on an oak tree... Nothing is clear, but I should start with the tavern, find out about this Max and Wayne.
+
+#TEXT 4
+
+Vane's page, where to look for him, is unclear. That leaves only the whore. Let's play on the feelings of an offended woman.
+
+#TEXT 5
+
+At night in the Fort de France dungeon. The fight is going to be hot, I need to prepare. Oh, yes. And don't forget to take Maxine to Port Royal later...
+
+#TEXT 6
+
+Wayne tried to run away. But I can't get away from me that easily!
+
+#TEXT 7
+
+Wayne's been dealt with, now a whore. I need to pick her and Silver up at Le Maren at dawn.
+
+#TEXT 8
+
+A piece of code and a new ally. It's time to go to Bermudes.
+
+#TEXT 9
+
+Wayne's ship sank with the code. I'm afraid the Urca gold is forever lost to me...
+
+
+#QUEST BSOnTheHorizon
+
+Black sails on the horizon
+
+#TEXT 1
+
+Something urgent from Eleanor herself. It's better not to joke with this young lady. I'm on my way.
+
+#TEXT 2
+
+Eleanor Guthrie. The pirate storm. Now I need to find Flint the fuck himself and ingratiate myself with him! The case promises great benefits or death. Everything is as usual, however. It's worth stocking up on food and rum, because it won't be easy to find Flint. Or just? It runs between pirate settlements. Get to work!
+
+#TEXT 3
+
+The legendary Flint! This business will be profitable and interesting, I feel it in my gut! Let's go to Bermudes!
+
+#TEXT 4
+
+One hundred and fifty million pesos! One hundred and fifty fucking million fucking pesos!!! I'm in business! No matter how many Castilians I have to kill, I'm in! The way to Martinique, part of the code for decrypting the document on the route of the "Urca" by Charles Wayne. If it's true, everything I say about him will be either bloody or interesting. One hundred and fifty million!!!
+
+#TEXT 5
+
+Near Bermudes, I ran into English pirate hunters. I need to dock, fix the rigging, and talk to Flint. Patrols did not usually enter these waters.
+
+
+#QUEST BSPrologue
+
+Don't spit in the well
+
+#TEXT 1
+
+What a surprise. The merchants refuse to do business with me. They say that a certain Guthrie is to blame for this. Guthrie... hmm...
+
+A family of colonial merchants from Boston, sort of. What did they forget in the Caribbean? I need to find out.
+
+#TEXT 2
+
+That's the story! I need to deliver six hundred measures of gold to Eleanor Guthrie for a period of one month, otherwise my business is bad! Get to work!
+
+#TEXT 3
+
+That Guthrie is a toothy woman. I would not like to have problems with the rest of the family! The matter is settled, the purse is thin. I need a drink!
+
+#TEXT 4
+
+That bitch Guthrie sent hunters after me! Perhaps I should hurry up with her errand.
+
+#TEXT 5
+
+She's going to update the bounty on my head every month! It looks like I can't get out of it that easily.
+
+
+#QUEST DHRaceAgainstTime
+
+Racing against time
+
+#TEXT 1
+
+Finally, the issue of acquiring a ship was settled. No matter how ironic it may sound in my case, but now time is working against me, if I continue to delay the necessary steps, they will simply become meaningless. First of all, I need to visit the house in La Vega and pick her up... However , on the other hand ... She was the only person who had information about the storage location of the cell. Perhaps I should be careful?
+
+#TEXT 2
+
+An ambush! It looks like I've been overlaid pretty tightly. Now my hands are free. I can start looking for the person behind my problems through informants, in any case, now I know she is not here, which means that the attention that I will attract to my person will no longer be able to hit her. I wonder if she managed to leave the archipelago?
+
+#TEXT 3
+
+Time is lost. Even if the Inquisition had overlooked her, she should have already left the city and, moreover, the archipelago. I could follow her to Europe, but as long as the Inquisition may be on my tail, I won't risk doing it. Anyway, it is necessary to start searching for the person behind my problems through informants.
+
+#TEXT 4
+
+I'm on the spot. It remains to find a house.
+
+
+#QUEST DarkHumanIncquisitorJournal
+
+Inquisitor's Diary
+
+#TEXT 1
+
+I am starting to keep this diary with God's help and at the insistence of Father Antonio as a documentary evidence, as well as a truthful document about the struggle, to the best of my modest strength, with the messengers of the devil on earth.
+
+----
+
+(several torn pages)
+
+----
+
+Today is a great day. Father Antoninu is sending me to the mainland on a responsible mission. It is necessary to destroy the instrument of diabolical seduction, hidden by the servant of the unclean in the God-defying temple of the natives. I must find a certain metal vessel in the sanctuary at the top of the Aztec pyramid and destroy it in the name of the Heavenly Father and His Son.
+
+A detachment of ten faithful sons of the Church of Christ was placed under my command, each of them is undoubtedly an experienced fighter and tracker. Moreover, the mission is so important that it's not just anyone who will take us to Amatique Bay - Don Esteban himself on the War Dog. This shows the importance of this mission, and the degree of trust that Father Antonio has placed in me, I will not let him down!
+
+----
+
+The day has come. With God's help, I reached Amatike Bay, and then my group can only rely on themselves. However, before leaving, Don Esteban showed me something else.
+
+An envelope containing a letter from Father Antonio and a strange painting a little larger than the palm of his hand, surprisingly, eerily, finely executed. Now I know what a servant of Satan looks like, who was entrusted with preserving the vessel of his power.
+
+----
+
+I reached the pyramid, the path was difficult and long, but things are not waiting, unfortunately none of my companions ever called themselves by name, which is why I will not be able to mention them.
+
+It took us two days to open the pyramid, the entrance to which was blocked by a massive stone, however, the ardor in us did not fade, soon I will fulfill the task assigned to me.
+
+----
+
+I am writing these lines by a dying candle under the roof of a vile temple, while my companions are holding back the Indians. But I must finish my story, and therefore I will be brief.
+
+I found the vessel exactly where Father Antonio pointed it out to me. As stated in the instructions, the infernal creation responded with self-destructive rage to the shot from the musket, exploding like a hook camera. Two of my companions were killed by shrapnel. But what is much worse, this object summoned Satan's servants, godless pagan Indians, who, however, arrived too late. I were able to complete the task assigned to us - the vessel was DESTROYED! I am hiding this diary with no hope of getting out of the devil's trap alive, but with a sense of accomplishment.
+
+
+#QUEST DarkHumanQuestline
+
+Back to the Future
+
+#TEXT 1
+
+Succeeded, damn it, succeeded! It was almost impossible, but I was able to reproduce the capacitor with the right capacity. Unfortunately, the hydrogen battery is used up, I will not be able to get deuterium this century, fortunately there is a spare one. I'll have to print the cup in Curacao. But not all of it...
+
+#TEXT 2
+
+What the hell is the Inquisition? And they're also hunting me, I didn't cross their path. I need to search them and check the cache. The far left corner from the entrance...
+
+#TEXT 3
+
+Damn, it's empty. Almost... I need to read what the Spanish inquisitor wrote in his diary...
+
+#TEXT 4
+
+Fanatics! They destroyed the cell. How did they find out about her? I was so careful. Only two people knew, and one of them was me... however, let's not get into a fever, I need to find out the details. But first, it's worth getting out of here. The ship still has to wait.
+
+#TEXT 5
+
+Santa Catalina, I doubted I'd make it to it. However, it turned out. I need to get to the Curacao Bank. I don't think I have anything to do at the port authority, especially after recent events. Perhaps the smuggler can get me to my destination.
+
+#TEXT 6
+
+Another blunder, some kind of sheer bad luck. However, the skull is really interesting, I remember reading about them... I need to find money, of course I can sell the skull, but first I should look for a job. It's also worth going to the shipyard.
+
+
+#QUEST	SilverFleet
+Silver Fleet
+#TEXT QuestTaken
+The head of England's Caribbean colonies offered me the chance to strip the English 'Silver Convoy', with the reward of a million piastres a month on deposit in a Port Royal bank. Even if with money the bureaucrat exaggerates, but after all it is a matter of silver... In short, I've agreed to do the job for him. I need to find and completely destroy the squadron. Some information that can help me in this endeavor is to be provided by the head of the pirate settlement 'Le Francois', Bartholomew Rogers.
+#TEXT FirstMeetSilverFleet
+Finally the 'Silver Convoy' was in my path. Or me in his. We'll see who comes out of the battle having continued on their way.
+#TEXT FirstSilverFleetDeath
+The silver convoy is defeated! In general, the strength of the resistance is proportional to the amount of silver gained. I'll go tell my employer the news soon, and get my reward, of course.
+#TEXT FirstSilverFleetContinue
+It wasn't that simple. The reward is delayed. The guests from the misty albion are resisting and don't want to give up their position. But I've agreed to Madiford's plan - there's no room for argument. So we need to destroy another convoy - stronger, more prepared.
+#TEXT SecondMeetSilverFleet
+There he is! Bigger, stronger, meaner. You can't plan a battle like this. One mistake could decide everything.
+#TEXT SecondSilverFleetDeath
+The silver convoy has been defeated. That's the second one. It wasn't as easy as the first time. Not easy at all. If the damage I've done again isn't enough to discourage the metropolis from directly overseeing silver shipments, then how powerful the convoy could become after another reinforcement. On the way to Madiford, I'll wonder how a corsair like me might affect a man of his level.
+#TEXT PiratesAfterBattle
+No sooner had we moved away from the heavy fighting than a ship appeared on the horizon - it was the @<ShipType> of the pirates. Then two more ships of the same class appeared nearby. One of them headed in the opposite direction to me, while the others went straight for me. This behavior doesn't seem like an attempt to take advantage of the loss of combat power of the winner of a naval battle. Rather, the third ship left to deliver some information to someone, acting in a planned and coordinated manner.
+#TEXT SecondSilverFleetContinue
+As I suspected, that's not all. But Madiford has been convincing that we have one last push left. I believe him.
+#TEXT ThirdMeetSilverFleet
+It's a real armada! They're really pissed off. Well, let's see who's angrier! And there's the main target, the Silver Surfer.
+#TEXT ThirdSilverFleetDeathWithAbordage
+I did it! The third Silver Convoy has been defeated. Despite my promise to Madiford to go down with the ship should circumstances not be in my favor, I was almost captured for questioning, having prepared a trap.
+#TEXT ThirdSilverFleetDeath
+I did it! The third 'Silver Convoy' has been defeated.
+#TEXT SeaBattleFail
+It's stronger than me. I don't know why I signed up for this case. It's one thing to pinch lone traders, quite another to have a naval battle with a national military squadron.
+#TEXT SelfCancelingQuest
+I've decided to turn down the job. I am a free corsair, not a fleet admiral to do battle with national flotillas.
+#TEXT HeadHuntersFirstMeeting
+When I arrived on the shore of @<sLoc>, there were mercenaries waiting for me, acting on behalf of England. They said something about silver, so they were hired by the people in charge of the English 'Silver Convoy'.
+#TEXT HeadHuntersAgain
+Mercenaries again. I must bring Thomas Madiford's request to a victorious conclusion sooner rather than later.
+#TEXT QuestEnd
+Well, that's it. A well-deserved award is earned, and so are the unforgettable memories.
